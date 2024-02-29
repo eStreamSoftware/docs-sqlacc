@@ -1,0 +1,8 @@
+{
+    "label": "Interbank GIRO",
+    "position": 21,
+    "link": {
+        "type": "generated-index",
+        "description": "A quick guide on Interbank GIRO for SQL Account"
+    }
+}

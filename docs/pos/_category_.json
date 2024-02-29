@@ -1,0 +1,8 @@
+{
+    "label": "POS",
+    "position": 18,
+    "link": {
+        "type": "generated-index",
+        "description": "Special Tools for using SQL"
+    }
+}

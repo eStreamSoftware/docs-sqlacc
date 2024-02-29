@@ -1,0 +1,8 @@
+{
+    "label": "Singapore GST",
+    "position": 11,
+    "link": {
+        "type": "generated-index",
+        "description": "Special guideline for Singapore SQL user"
+    }
+}

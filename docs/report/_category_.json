@@ -1,0 +1,8 @@
+{
+    "label": "Report",
+    "position": 12,
+    "link": {
+        "type": "generated-index",
+        "description": "Report operations"
+    }
+}

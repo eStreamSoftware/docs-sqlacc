@@ -3,7 +3,7 @@ sidebar_position: 4
 id: customer-supplier-contra
 title: Customer contra and Supplier contra
 description: A guide on Customer contra ans Supplier contra for SQL Account
-slug: /customer-supplier-contra
+slug: /customer/customer-supplier-contra
 tags: ["SQL Account", "Customer contra", "Supplier contra"]
 ---
 
@@ -18,50 +18,59 @@ If you have an outstanding sales invoice for RM200 and a purchase invoice for RM
 same person or company, the actual amount owed to you is RM 50 and the contra entry amount
 is RM150.
 
-**Setting:**
+## Setting step
 
-    ![1](/img/customer/contra/1.png)
+![1](/img/customer/contra/1.png)
 
 1. Tools | Options
 
    ![2](/img/customer/contra/2.png)
 
-2) General Ledger | make sure you had chosen a valid Contra Account
+2. General Ledger | make sure you had chosen a valid Contra Account
 
-    **Step :**
+   **Step :**
 
-        ![3](/img/customer/contra/3.png)
+   ![3](/img/customer/contra/3.png)
 
-1. Go Customer | Customer Contra
+   1. Go Customer | Customer Contra
 
-   ![4](/img/customer/contra/4.png)
+      ![4](/img/customer/contra/4.png)
 
-2) Press on NEW
+   2. Press on NEW
 
-   ![5](/img/customer/contra/5.png)
+      ![5](/img/customer/contra/5.png)
 
-    2 a) Select your Customer Code  
-    2 b) Enter your Contra Amount  
-    2 c) Knock off your Invoice  
-    2 d) Press on SAVE Button  
-    2 e) System will auto generated a Contra Number, jot down the number and go **Supplier contra** to edit it.
+      1. Select your Customer Code
 
-    ![6](/img/customer/contra/6.png)
+      2. Enter your Contra Amount
 
-3. Go Supplier | Supplier Contra
+      3. Knock off your Invoice
 
-   ![7](/img/customer/contra/7.png)
+      4. Press on SAVE Button
 
-4. Look for the Same Contra Number (refer step 3e), EDIT it.
+      5. System will auto generated a Contra Number, jot down the number and go **Supplier contra** to edit it.
 
-   ![8](/img/customer/contra/8.png)
-    4a) Select your Supplier  
-    4b) Enter Contra Amount (Must be same as Customer Contra Amount)  
-    4c) Knock off your Supplier Invoice  
-    4d) Press on SAVE Button
+      ![6](/img/customer/contra/6.png)
+
+   3. Go Supplier | Supplier Contra
+
+      ![7](/img/customer/contra/7.png)
+
+   4. Look for the Same Contra Number (refer step 3e), EDIT it.
+
+      ![8](/img/customer/contra/8.png)
+      1. Select your Supplier
+
+      2. Enter Contra Amount (Must be same as Customer Contra Amount)
+
+      3. Knock off your Supplier Invoice
+
+      4. Press on SAVE Button
 
 After you post the contra entry:
 
-    - The outstanding amount on the sales invoice is RM50.
-    - The purchase invoice is fully knock off.
-    - When you receive the RM50, you can record this against the sales invoice using your normal Customer Payment entry.
+- The outstanding amount on the sales invoice is RM50.
+
+- The purchase invoice is fully knock off.
+
+- When you receive the RM50, you can record this against the sales invoice using your normal Customer Payment entry.

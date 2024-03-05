@@ -3,11 +3,11 @@ sidebar_position: 10
 id: banking
 title: User Guide SQL RHB Reflex Premium Plus
 description: A quick guide on RHB Reflex Premium Plus for SQL Account
-slug: /banking
+slug: /banking/banking
 tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 ---
 
-![3](/img/banking/3.png)
+<!-- ![3](/img/banking/3.png) -->
 
 <!-- **Table of Contents**
 
@@ -34,8 +34,10 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
 ### Create Database in SQL Account
 
-1. Launch SQL Accounting software.  
+1. Launch SQL Accounting software.
+
    Existing SQL user - Log on as usual  
+
    New SQL user - Click '![0](/img/banking/0.png)' to create database.
 
    ![1](/img/banking/1.png)
@@ -55,6 +57,7 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
    ![5](/img/banking/5.png)
 
 3. Fill in the information and click 'OK'.
+
    Blue box is the mandatory field.
 
    ![6](/img/banking/6.png)
@@ -73,13 +76,16 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
    ![9](/img/banking/9.png)
 
-4. Fill in the information  
-   A. Registered RHB Direct user email address and  
-   B. Account name/business name.
+4. Fill in the information
+
+   1. Registered RHB Direct user email address and
+
+   2. Account name/business name.
 
 5. Click 'Link'
 
    ![10](/img/banking/10.png)
+
    ![11](/img/banking/11.png)
 
 6. Login the registered email to verify the user linking within 10 minutes.
@@ -118,44 +124,55 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
 ### Maintain Supplier Details
 
-1.  Select Supplier menu - > 'Maintain Supplier'
+1. Select Supplier menu - > 'Maintain Supplier'
 
-    ![19](/img/banking/19.png)
+   ![19](/img/banking/19.png)
 
-2.  Click 'New'
+2. Click 'New'
 
-    ![20](/img/banking/20.png)
+   ![20](/img/banking/20.png)
 
-3.  Fill in supplier details and click 'Save'
+3. Fill in supplier details and click 'Save'
 
-    ![21](/img/banking/21.png)
+   ![21](/img/banking/21.png)
 
-4.  Select 'Bank Account' - > click '+'
+4. Select 'Bank Account' - > click '+'
 
-    ![22](/img/banking/22.png)
+   ![22](/img/banking/22.png)
 
-    i) Select Bank for RHB 3rd Party Transfer, IBG and Instant Transfer.  
-     Fill in information below:  
-     A. Bank account number  
-     B. Bank account name  
-     C. ID Type (Business Reg No / New IC / Old IC / Passport / Police ID / Army ID)  
-     D. ID number
+   1. Select Bank for RHB 3rd Party Transfer, IBG and Instant Transfer.  
 
-        ![23](/img/banking/23.png)
+      Fill in information below:  
 
-    ii) Select JomPAY for Bill Payment  
-     Fill in information below:  
-     A. JomPAY biller code  
-     B. JomPAY reference 1
+      1. Bank account number  
 
-        ![24](/img/banking/24.png)
+      2. Bank account name  
 
-    iii) Select DuitNow for DuitNow proxy transfer  
-     A. Beneficiary name  
-     B. DuitNow proxy ID type (NRIC/ Passport No./ Army ID/ Mobile No./ Business Reg No.)  
-     C. ID number
+      3. ID Type (Business Reg No / New IC / Old IC / Passport / Police ID / Army ID)  
 
-         ![25](/img/banking/25.png)
+      4. ID number
+
+         ![23](/img/banking/23.png)
+
+   2. Select JomPAY for Bill Payment
+
+      Fill in information below:
+
+      1. JomPAY biller code
+
+      2. JomPAY reference 1
+
+      ![24](/img/banking/24.png)
+
+   3. Select DuitNow for DuitNow proxy transfer
+
+      1. Beneficiary name
+
+      2. DuitNow proxy ID type (NRIC/ Passport No./ Army ID/ Mobile No./ Business Reg No.)
+
+      3. ID number2
+
+      ![25](/img/banking/25.png)
 
 ### Payment mode
 
@@ -166,11 +183,17 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
    ![26](/img/banking/26.png)
 
 2. Select Supplier Code : created in Maintain Supplier
+
 3. Select Supplier Bank : RHB crediting bank account
+
 4. Select Payment By : RHB bank account
+
 5. Select Date (Payment date)
+
    - Future dated payment will be submitted to Reflex if future date is selected.
+
 6. Click 'Save'.
+
 7. Reflex Online Banking will be pop-out, click 'Submit' to proceed.
 
    ![27](/img/banking/27.png)
@@ -179,9 +202,8 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
    ![28](/img/banking/28.png)
 
-9. Payment status will be populated after submission. Successful payment initiation
-   status is 'Pending', otherwise please refer to the error message is shown or refer
-   RHB Reflex for further details.
+9. Payment status will be populated after submission. Successful payment initiation status is 'Pending', otherwise please
+   refer to the error message is shown or refer RHB Reflex for further details.
 
    ![29](/img/banking/29.png)
 
@@ -196,12 +218,19 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
    ![26](/img/banking/26.png)
 
 2. Select Supplier Code : created in Maintain Supplier
+
 3. Select Supplier Bank : Non RHB crediting bank account
+
 4. Select Payment By : RHB bank account
+
 5. Select IBG payment mode.
+
 6. Select Date (Payment date)
+
    - Future dated payment will be submitted to Reflex if future date is selected.
+
 7. Click “Save”.
+
 8. Reflex Online Banking will be pop-out, click “Submit” to proceed.
 
    ![27](/img/banking/27.png)
@@ -210,8 +239,7 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
    ![28](/img/banking/28.png)
 
-10. Payment status will be populated. Successful payment initiation status is “Pending”,
-    otherwise please refer to the error message.
+10. Payment status will be populated. Successful payment initiation status is “Pending”, otherwise please refer to the error message.
 
     ![29](/img/banking/29.png)
 
@@ -226,12 +254,19 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
    ![26](/img/banking/26.png)
 
 2. Select Supplier Code : created in Maintain Supplier
+
 3. Select Supplier Bank : Non RHB crediting bank account
+
 4. Select Payment By : RHB bank account
+
 5. Select “Instant Transfer” payment mode.
+
 6. Select Date (Payment date)
+
    - Future dated payment will be submitted to Reflex if future date is selected.
+
 7. Click “Save”.
+
 8. Reflex Online Banking will be pop-out, click “Submit” to proceed.
 
    ![27](/img/banking/27.png)
@@ -241,6 +276,7 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
    ![28](/img/banking/28.png)
 
 10. Payment status will be populated. Successful payment initiation status is “Pending”,
+
     otherwise please refer to the error message.
 
     ![29](/img/banking/29.png)
@@ -251,19 +287,24 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
 ### Payment – DuitNow
 
-DuitNow transfer via proxy is supported includes IC Number, Business Registration Number &
-Mobile Number.
+DuitNow transfer via proxy is supported includes IC Number, Business Registration Number & Mobile Number.
 
 1. Select Supplier -> Supplier Payment -> click “New”
 
    ![26](/img/banking/26.png)
 
 2. Select Supplier Code : created in Maintain Supplier
+
 3. Select Supplier Bank : DuitNow
+
 4. Select Payment By : RHB bank account
+
 5. Select Date (Payment date)
+
    - Future dated payment will be submitted to Reflex if future date is selected.
+
 6. Click “Save”.
+
 7. Reflex Online Banking will be pop-out, click “Submit” to proceed.
 
    ![27](/img/banking/27.png)
@@ -273,6 +314,7 @@ Mobile Number.
    ![28](/img/banking/28.png)
 
 9. Payment status will be populated. Successful payment initiation status is “Pending”,
+
    otherwise please refer to the error message.
 
    ![29](/img/banking/29.png)
@@ -288,11 +330,17 @@ Mobile Number.
    ![26](/img/banking/26.png)
 
 2. Select Supplier Code : created in Maintain Supplier
+
 3. Select Supplier Bank : JomPAY
+
 4. Select Payment By : RHB bank account
+
 5. Select Date (Payment date)
+
    - Future dated payment will be submitted to Reflex if future date is selected.
+
 6. Click “Save”.
+
 7. Reflex Online Banking will be pop-out, click “Submit” to proceed.
 
    ![27](/img/banking/27.png)
@@ -312,13 +360,16 @@ Mobile Number.
 
 ## Payment Status Update
 
-To perform payment status update, click on the green icon.  
+To perform payment status update, click on the green icon.
+
 Success – Payment has successfully processed by the bank
 
-    ![31](/img/banking/31.png)
+   ![31](/img/banking/31.png)
 
 Unsuccess – Payment has rejected by the bank, please login to RHB Reflex for further details
-or contact RHB Reflex customer service @ +603-9206 8118, then select language and press
+
+or contact RHB Reflex customer service @ **+603-9206 8118**, then select language and press
+
 ‘ 3 ’ to speak to Reflex agent.
 
     ![32](/img/banking/32.png)
@@ -330,6 +381,7 @@ or contact RHB Reflex customer service @ +603-9206 8118, then select language an
    ![33](/img/banking/33.png)
 
 2. Select Bank Statement Date and Display Period
+
 3. Click “Apply”
 
    ![34](/img/banking/34.png)
@@ -338,22 +390,26 @@ or contact RHB Reflex customer service @ +603-9206 8118, then select language an
 
    ![35](/img/banking/35.png)
 
-5. Click Match to perform reconciliation between SQL and RHB bank statement transaction.  
-   A. Amount must be same  
-   B. The reference must be same  
+5. Click Match to perform reconciliation between SQL and RHB bank statement transaction.
+
+   A. Amount must be same
+
+   B. The reference must be same
+
    C. Click “Match” when both are matched
 
-:::note
-
-- Transaction initiated from SQL is will be matched automatically.
-- RHB bank statement update at 8am daily.
-  :::
+   :::note
+   - Transaction initiated from SQL is will be matched automatically.
+   - RHB bank statement update at 8am daily.
+   :::
 
 ## Unlink RHB Reflex Account
 
-User is required to unlink RHB Reflex account if  
- i. to change user email address &  
- ii. to tag a new RHB Reflex user with different user access.
+   User is required to unlink RHB Reflex account if
+
+      1. to change user email address &
+
+      2. to tag a new RHB Reflex user with different user access.
 
 1. Select '![39](/img/banking/39.png)' -> RHB Reflex
 
@@ -361,24 +417,28 @@ User is required to unlink RHB Reflex account if
 
 2. Click “Unlink”
 
-   ![37](/img/banking/37.png)  
+   ![37](/img/banking/37.png)
+
    ![38](/img/banking/38.png)
 
 ## Support Channel
 
-**RHB Reflex Online Banking Enquiries**
+### RHB Reflex Online Banking Enquiries
 
 1. Call 03-9206 8118
-2. Select Language (Only for 1st call.)
-3. Press '3' to speak to REFLEX agent directly or email to reflex.support@rhbgroup.com
 
-**SQL Accounting Enquiries**  
-Tel : +603 7890 1299 (Sales)  
-Tel : +603 7890 1300 (Support)  
+2. Select Language (Only for 1st call.)
+
+3. Press '3' to speak to REFLEX agent directly or email to [reflex.support@rhbgroup.com](mailto:reflex.support@rhbgroup.com).
+
+### SQL Accounting Enquiries
+
+Tel : +603 7890 1299 (Sales)
+
+Tel : +603 7890 1300 (Support)
+
 Fax : +603 5886 9913
 
 ## RHB Reflex User Linking User Guide
 
-Please refer below URL link for RHB User Linking user guide.
-
-https://www.rhbgroup.com/files/myreflex/premium/topic/all/RHB_SME_e_Solution_User_Reference_Guide_for_CBO.pdf
+Please refer below URL [link](https://www.rhbgroup.com/files/myreflex/premium/topic/all/RHB_SME_e_Solution_User_Reference_Guide_for_CBO.pdf) for RHB User Linking user guide.

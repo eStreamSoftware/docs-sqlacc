@@ -3,7 +3,7 @@ sidebar_position: 20
 id: woo
 title: WooCommerce
 description: A guide on WooCommerce for SQL Account
-slug: /woocommerce
+slug: /ecommerce/woocommerce
 tags: ["SQL Account", "WooCommerce"]
 ---
 
@@ -26,253 +26,261 @@ tags: ["SQL Account", "WooCommerce"]
 
 <!-- ## 1. WooCommerce -->
 
-## 1.1 Maintain Cloud Account
+## 1. Maintain Cloud Account
 
-1.1.1 Select - > Maintain Cloud Account (One Time Setting)
+    1. Select - > Maintain Cloud Account (One Time Setting)
 
-    ![1](/img/e-commerce/easyStore/1.png)
+        ![1](/img/e-commerce/easyStore/1.png)
 
 
-1.1.2 Click on NEW
+    2. Click on NEW
 
-    ![1](/img/e-commerce/woo/1.png)  
-    i) Enter **Description**  
-    ii) Select **Platform**  
-    iii) Click on **Link** Button
-    ![2](/img/e-commerce/woo/2.png)
-    iv) Enter store URL  
-    ![3](/img/e-commerce/woo/3.png)
-    v) Go to your shop website and copy this first part of the URL:  
-    ![4](/img/e-commerce/woo/4.png)
-    vi) Paste in you SQL Account and press GO
-    ![5](/img/e-commerce/woo/5.png)
-    vii) Login to your Woocommerce account.
+        ![1](/img/e-commerce/woo/1.png)
 
-1.1.3 Press on SAVE
+        1. Enter **Description**
 
-    ![6](/img/e-commerce/woo/6.png)
+        2. Select **Platform**
 
-- Once linking Successful, system will be returned status Linking Success
-    Message.
+        3. Click on **Link** Button
 
-## 1.2 Configure E Commerce Setting
+            ![2](/img/e-commerce/woo/2.png)
 
-1.2.1 GL -> Maintain Account
+        4. Enter store URL
 
-    i) Create Voucher / Discount Account Under Sales Adjustment
-    ![7](/img/e-commerce/woo/7.png)
-    ii) Create Shipping and Transaction Fee under Expenses
-    ![8](/img/e-commerce/woo/8.png)
+            ![3](/img/e-commerce/woo/3.png)
 
-    - It is up to company want to create under which category. Some of the
-        Company will create under Cost of Goods Sold.
+        5. Go to your shop website and copy this first part of the URL:
 
-1.2.2 Customer -> Maintain Customer
+            ![4](/img/e-commerce/woo/4.png)
 
-    ![9](/img/e-commerce/woo/9.png)
+        6. Paste in you SQL Account and press GO
 
-1.2.3 Stock -> Maintain Stock Group
-Create Shipping / Transaction / Voucher / Discount Stock Group
+            ![5](/img/e-commerce/woo/5.png)
 
-i) Create Discount Stock Group
-![10](/img/e-commerce/woo/10.png)
+        7. Login to your Woocommerce account.
 
-ii) Create Voucher Stock Group
-![11](/img/e-commerce/woo/11.png)
-- Repeat same step to create for Shipping, Transaction Fees and
-    Claim Stock Group
+    3. Press on SAVE
 
-1.2.4 Stock -> Stock Item
+        ![6](/img/e-commerce/woo/6.png)
 
-i) Create Discount Stock Item
-![12](/img/e-commerce/woo/12.png)
+        - Once linking Successful, system will be returned status Linking Success Message.
 
-ii) Create Voucher Item Code
-![13](/img/e-commerce/woo/13.png)
+## 2. Configure E Commerce Setting
 
-- Repeat same step to create for Shipping, Transaction Fees and
-    Claim Item Code
+    1. GL -> Maintain Account
 
-## 1.3 Account Tab
+        1. Create Voucher / Discount Account Under Sales Adjustment
 
-1.3.1 Click on '![39](/img/banking/39.png)'- > Woocommerce
+            ![7](/img/e-commerce/woo/7.png)
 
-1.3.2 Click on Account Tab -> Double click on your account
+        2. Create Shipping and Transaction Fee under Expenses
 
-    ![14](/img/e-commerce/woo/14.png)
+            ![8](/img/e-commerce/woo/8.png)
 
-1.3.2.1 Mapping Code
+            - It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
 
-    ![15](/img/e-commerce/woo/15.png)
+    2. Customer -> Maintain Customer
 
-1.3.2.2 Expiry Date
+        ![9](/img/e-commerce/woo/9.png)
 
-- Is the linking expired with both parties given by Woocommerce platform for
-security policy, once expired must relink with Woocommerce account to fetch
-the order.
+    3. Stock -> Maintain Stock Group
 
-## 1.4 Product Tab
+        Create Shipping / Transaction / Voucher / Discount Stock Group
 
-### 1.4.1 Step to download Product list from WooCommerce
+        1. Create Discount Stock Group
 
-1.4.1.1 Click on “Products” Tab, then click on “All Products”
+            ![10](/img/e-commerce/woo/10.png)
 
-    ![16](/img/e-commerce/woo/16.png)
+        2. Create Voucher Stock Group
 
-1.4.1.2 Click on the “Export” button
+            ![11](/img/e-commerce/woo/11.png)
 
-    ![17](/img/e-commerce/woo/17.png)
+            - Repeat same step to create for Shipping, Transaction Fees and Claim Stock Group
 
-1.4.1.3 Click “Generate CSV” once the export file has been generated. You
-will receive a file in .csv format.
+    4. Stock -> Stock Item
 
-    ![18](/img/e-commerce/woo/18.png)
+        1. Create Discount Stock Item
 
-1.4.1.4 Load the file into Microsoft Office. Then you can edit the details you
-need.
+            ![12](/img/e-commerce/woo/12.png)
 
-You can choose to have WooCommerce SKU as SQL Item Code by import to SQL, may contact your service agent to assist on this product import.
+        2. Create Voucher Item Code
 
-### 1.4.2 Fetch Product
+            ![13](/img/e-commerce/woo/13.png)
 
-1.4.2.1 Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
+            - Repeat same step to create for Shipping, Transaction Fees and Claim Item Code
 
-    ![19](/img/e-commerce/woo/19.png)
-    ![20](/img/e-commerce/woo/20.png)
+## 3 Account Tab
 
-1.4.2.2 Verify Status: Exist in Stock Item are meaning SQL and Seller SKU are having the same Item Code.
+    1. Click on '![39](/img/banking/39.png)'- > Woocommerce
 
-    ![21](/img/e-commerce/woo/21.png)
+    2. Click on Account Tab -> Double click on your account
 
-If you decide to use the same item code as Seller SKU, click on select All
-records -> press on Post button for the first time so system will remember the
-settings.
+        ![14](/img/e-commerce/woo/14.png)
 
-    ![22](/img/e-commerce/woo/22.png)
+        1. Mapping Code
 
+            ![15](/img/e-commerce/woo/15.png)
 
+        2. Expiry Date
 
-1.4.2.3 Verified Status: Success when posting done
+            - Is the linking expired with both parties given by Woocommerce platform for
+            security policy, once expired must relink with Woocommerce account to fetch
+            the order.
 
-    ![23](/img/e-commerce/woo/23.png)
+## 4 Product Tab
 
-:::note
-Once you post successful, system will keep the Shop SKU in Stock Item as Alternative Item
-:::
-![24](/img/e-commerce/woo/24.png)
+    1. Step to download Product list from WooCommerce
 
-1.4.2.4 You can still decide to map to different item code (system will auto ticked
-the record you change the item code), once done all, click on POST button.
+        1. Click on “Products” Tab, then click on “All Products”
 
-    ![25](/img/e-commerce/woo/25.png)
+            ![16](/img/e-commerce/woo/16.png)
 
+        2. Click on the “Export” button
 
-## 1.5 Orders Tab
+            ![17](/img/e-commerce/woo/17.png)
 
-- Click on Orders Tab  
-![26](/img/e-commerce/woo/26.png)
+        3. Click “Generate CSV” once the export file has been generated. You will receive a file in .csv format.
 
-### 1.5.1 Status
+            ![18](/img/e-commerce/woo/18.png)
 
-    ![27](/img/e-commerce/woo/27.png)
-    ![28](/img/e-commerce/woo/28.png)
+        4. Load the file into Microsoft Office. Then you can edit the details you need.
 
-:::tip
-Each order number will be posted once. You can delete the Invoice if you
-want to repost.
-:::
+        You can choose to have WooCommerce SKU as SQL Item Code by import to SQL, may contact your service agent to assist on this product import.
 
-### 1.5.2 Fetch Order
+    2. Fetch Product
 
-1.5.2.1 Select Date Range -> Click on Refresh Order
+        1. Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
 
-    ![29](/img/e-commerce/woo/29.png)
+            ![19](/img/e-commerce/woo/19.png)
+            ![20](/img/e-commerce/woo/20.png)
 
-Please be patient, system is on the way to fetch the order from WooCommerce
-![30](/img/e-commerce/woo/30.png)
+        2. Verify Status: Exist in Stock Item are meaning SQL and Seller SKU are having the same Item Code.
 
-System will return the message when Fetching Done, Press OK.
+            ![21](/img/e-commerce/woo/21.png)
 
-    ![31](/img/e-commerce/woo/31.png)
+            If you decide to use the same item code as Seller SKU, click on select All records -> press on Post button for the first time so system will remember the settings.
 
-### 1.5.3 Post Order
+            ![22](/img/e-commerce/woo/22.png)
 
-1.5.3.1 Click on the status you want to post the order, let us take an example on
-Completed - > Ticked all -> Click on Post
+        3. Verified Status: Success when posting done
 
-    ![32](/img/e-commerce/woo/32.png)
+            ![23](/img/e-commerce/woo/23.png)
 
-1.5.3.2 If you did not tick on any order when do the posting, system will raise a
-message: You have not selected any order. Would you like to select all? If
-you would like to post all -> Press Yes
+            :::note
+            Once you post successful, system will keep the Shop SKU in Stock Item as Alternative Item
+            :::
 
-    ![33](/img/e-commerce/woo/33.png)
+            ![24](/img/e-commerce/woo/24.png)
 
-Please be patient to wait for the order posting.
+        4. You can still decide to map to different item code (system will auto ticked the record you change the item code), once done all, click on POST button.
 
-    ![34](/img/e-commerce/woo/34.png)
+            ![25](/img/e-commerce/woo/25.png)
 
-1.5.3.3 Click on OK when done posting
+## 5. Orders Tab
 
-    ![35](/img/e-commerce/woo/35.png)
+    - Click on Orders Tab
 
+        ![26](/img/e-commerce/woo/26.png)
 
+    1. Status
 
-### 1.5.4 Verify Status
+        ![27](/img/e-commerce/woo/27.png)
 
-    ![36](/img/e-commerce/woo/36.png)
+        ![28](/img/e-commerce/woo/28.png)
 
-1.5.4.1 Posted
+        :::tip
+        Each order number will be posted once. You can delete the Invoice if you want to repost.
+        :::
 
-- Earlier Order posted before, system will ignore.
+    2. Fetch Order
 
+        1. Select Date Range -> Click on Refresh Order
 
-1.5.4.2 Success
+            ![29](/img/e-commerce/woo/29.png)
 
-- Order had been successfully Posting.
+            Please be patient, system is on the way to fetch the order from WooCommerce
 
-1.5.4.3 Failed – Missing Dataset Property
+            ![30](/img/e-commerce/woo/30.png)
 
-- Normally repost will be fine.
+            System will return the message when Fetching Done, Press OK.
 
-1.5.4.4 Failed – Missing Item Code
+            ![31](/img/e-commerce/woo/31.png)
 
-    - Is due to WooCommerce have inactive item code, user can manually map in
-    orders.  
-    Step 1: Click on Item Code Drop Down, user can manually map the item code  
-    ![37](/img/e-commerce/woo/37.png)
-    Step 2: Ticked on the record you want to post  
-    Step 3: Click on Post
+    3. Post Order
 
-### 1.5.5 Sales Invoice
+        1. Click on the status you want to post the order, let us take an example on Completed - > Ticked all -> Click on Post
 
-- Example of Sales Invoice posted from WooCommerce | Orders.
+            ![32](/img/e-commerce/woo/32.png)
 
-    ![38](/img/e-commerce/woo/38.png)
-    ![39](/img/e-commerce/woo/39.png)
-    ![40](/img/e-commerce/woo/40.png)
+        2. If you did not tick on any order when do the posting, system will raise a message: You have not selected any order. Would you like to select all? If you would like to post all -> Press Yes
 
+            ![33](/img/e-commerce/woo/33.png)
 
-### 1.5.6 Sales Credit Note (Refund)
+            Please be patient to wait for the order posting.
 
-- Refunds in WooCommerce are posted as sales credit notes in SQL Account.
-Example of Sales Credit Note posted from WooCommerce | Orders.
+            ![34](/img/e-commerce/woo/34.png)
 
-    ![41](/img/e-commerce/woo/41.png)
+        3. Click on OK when done posting
 
-Tick which orders key you want to post to sales credit note. If post is successful, the
-verify status should show “Success”. You can see a Sales credit Note has been created
-in Sales | Credit Note
+            ![35](/img/e-commerce/woo/35.png)
 
+    4. Verify Status
 
-    ![42](/img/e-commerce/woo/42.png)
+        ![36](/img/e-commerce/woo/36.png)
 
-For a refund voucher, a sales credit note will be created as well as a sales invoice.
+        1. Posted
 
-    ![43](/img/e-commerce/woo/43.png)
-    ![44](/img/e-commerce/woo/44.png)
+            - Earlier Order posted before, system will ignore.
 
-In the customer credit note, The CN knocks off the outstanding amount of the Invoice.
-Meaning the invoice has been cancelled off and there is not outstanding payment.
 
+        2. Success
 
+            - Order had been successfully Posting.
+
+        3. Failed – Missing Dataset Property
+
+            - Normally repost will be fine.
+
+        4. Failed – Missing Item Code
+
+            - Is due to WooCommerce have inactive item code, user can manually map in orders.
+
+            Step 1: Click on Item Code Drop Down, user can manually map the item code
+
+                ![37](/img/e-commerce/woo/37.png)
+            Step 2: Ticked on the record you want to post
+
+            Step 3: Click on Post
+
+    5. Sales Invoice
+
+        - Example of Sales Invoice posted from WooCommerce | Orders.
+
+            ![38](/img/e-commerce/woo/38.png)
+
+            ![39](/img/e-commerce/woo/39.png)
+
+            ![40](/img/e-commerce/woo/40.png)
+
+
+    6. Sales Credit Note (Refund)
+
+        - Refunds in WooCommerce are posted as sales credit notes in SQL Account.
+
+        Example of Sales Credit Note posted from WooCommerce | Orders.
+
+            ![41](/img/e-commerce/woo/41.png)
+
+        Tick which orders key you want to post to sales credit note. If post is successful, the verify status should show “Success”. You can see a Sales credit Note has been created in Sales | Credit Note
+
+            ![42](/img/e-commerce/woo/42.png)
+
+        For a refund voucher, a sales credit note will be created as well as a sales invoice.
+
+            ![43](/img/e-commerce/woo/43.png)
+
+            ![44](/img/e-commerce/woo/44.png)
+
+        In the customer credit note, The CN knocks off the outstanding amount of the Invoice.
+
+        Meaning the invoice has been cancelled off and there is not outstanding payment.

@@ -3,7 +3,7 @@ sidebar_position: 20
 id: shopee
 title: Shopee
 description: A guide on Shopee for SQL Account
-slug: /shopee
+slug: /ecommerce/shopee
 tags: ["SQL Account", "Shopee"]
 ---
 
@@ -37,418 +37,446 @@ tags: ["SQL Account", "Shopee"]
       4. [How system handle the situation when Shipping Fees charges higher than Seller Paid Amount cause escrow amount in negative?](#174-how-system-handle-the-situation-when-shipping-fees-charges-higher-than-seller-paid-amount-cause-escrow-amount-in-negative)
       5. [How to handle the order in Cancelled Status but earlier user in Shipped Status already posting the Invoice?](#175-how-to-handle-the-order-in-cancelled-status-but-earlier-user-in-shipped-status-already-posting-the-invoice) -->
 
-## 1.1 Maintain Cloud Account
+## 1. Maintain Cloud Account
 
-1.1.1 Select '![39](/img/banking/39.png)'- > Maintain Cloud Account (One Time Setting)
+    1. Select '![39](/img/banking/39.png)'- > Maintain Cloud Account (One Time Setting)
 
-    ![1](/img/e-commerce/easyStore/1.png)
+        ![1](/img/e-commerce/easyStore/1.png)
 
-1.1.2 Click on NEW
+    2. Click on NEW
 
-    ![1](/img/e-commerce/shopee/1.png)  
-    i) Enter **Description**  
-    ii) Select **Platform**  
-    iii) Click on **Link** Button
+        ![1](/img/e-commerce/shopee/1.png)
 
-1.1.3 Login Shopee Credential
+        1. Enter **Description**
 
-    ![2](/img/e-commerce/shopee/2.png)
+        2. Select **Platform**
 
-1.1.4 Click on Confirm Authorization
+        3. Click on **Link** Button
 
-    ![3](/img/e-commerce/shopee/3.png)
+    3. Login Shopee Credential
 
-1.1.5 Press SAVE
+        ![2](/img/e-commerce/shopee/2.png)
 
-    ![4](/img/e-commerce/shopee/4.png)
-    - Once linking Successful, system will be returned status Linking Success
-    Message.
+    4. Click on Confirm Authorization
 
-## 1.2 Configure E Commerce Setting
+        ![3](/img/e-commerce/shopee/3.png)
 
-1.2.1 GL -> Maintain Account  
- i) Create Shopee Payment Method
-![5](/img/e-commerce/shopee/5.png)
+    5. Press SAVE
 
-    ii) Create Shopee Voucher / Discount Account Under Sales Adjustment
-    ![6](/img/e-commerce/shopee/6.png)
+        ![4](/img/e-commerce/shopee/4.png)
 
-    iii) Create Shipping and Transaction Fee under Expenses
-    ![7](/img/e-commerce/shopee/7.png)
-    - It is up to company want to create under which category. Some of the
-    Company will create under Cost of Goods Sold.
+        - Once linking Successful, system will be returned status Linking Success Message.
 
-1.2.2 Customer -> Maintain Customer
+## 2. Configure E Commerce Setting
 
-    ![8](/img/e-commerce/shopee/8.png)
+    1. GL -> Maintain Account
 
-1.2.3 Stock -> Maintain Stock Group
-Create Lazada Shipping / Transaction / Voucher / Discount Stock Group
+        1. Create Shopee Payment Method
 
-    i) Create Discount Stock Group  
-    ![9](/img/e-commerce/shopee/9.png)
+            ![5](/img/e-commerce/shopee/5.png)
 
-    ii) Create Voucher Stock Group  
-    ![10](/img/e-commerce/shopee/10.png)
-    - Repeat same step to create for Shipping and Transaction Fees
-    Stock Group
+        2. Create Shopee Voucher / Discount Account Under Sales Adjustment
 
-1.2.4 Stock -> Stock Item  
- i) Create Discount Stock Item
-![11](/img/e-commerce/shopee/11.png)
+            ![6](/img/e-commerce/shopee/6.png)
 
-:::note
-Unticked Stock Control
-:::
+        3. Create Shipping and Transaction Fee under Expenses
 
-    ii) Create Voucher Item Code
-    ![12](/img/e-commerce/shopee/12.png)
-    - Repeat same step to create for Shipping and Transaction Fees Item
-    Code
+            ![7](/img/e-commerce/shopee/7.png)
 
-## 1.3 Account Tab
+            - It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
 
-1.3.1 Click on '![39](/img/banking/39.png)'- > Shopee  
-1.3.2 Click on Account Tab -> Double click on your account
+    2. Customer -> Maintain Customer
 
-    ![13](/img/e-commerce/shopee/13.png)
+        ![8](/img/e-commerce/shopee/8.png)
 
-1.3.2.1 Mapping Code
+    3. Stock -> Maintain Stock Group
 
-    ![14](/img/e-commerce/shopee/14.png)
+        Create Lazada Shipping / Transaction / Voucher / Discount Stock Group
 
-1.3.2.2 Expiry Date
+        1. Create Discount Stock Group
 
-- Is the linking expired with both parties given by Shopee platform for security
-  policy, once expired must relink with Shopee account to fetch the order.
+            ![9](/img/e-commerce/shopee/9.png)
 
-Video Link : https://www.youtube.com/watch?v=B9UmhTYjFHM
+        2. Create Voucher Stock Group
 
-## 1.4 Product Tab
+            ![10](/img/e-commerce/shopee/10.png)
 
-### 1.4.1 Step to download product list from Shopee
+            - Repeat same step to create for Shipping and Transaction Fees Stock Group
 
-1.4.1.1 Navigate to “My Products” under “Product” category.  
-1.4.1.2 Click on “Batch Tools” and select “Mass Update”
+    4. Stock -> Stock Item
 
-    ![15](/img/e-commerce/shopee/15.png)
+        1. Create Discount Stock Item
 
-1.4.1.3 Click on “Generate” to generate the product list.  
-1.4.1.4 Click on “Download” to get the generated product list.
+            ![11](/img/e-commerce/shopee/11.png)
 
-    ![16](/img/e-commerce/shopee/16.png)
+            :::note
+            Unticked Stock Control
+            :::
 
-You can choose to have Shopee SKU as SQL Item Code by import to SQL, may
-contact your service agent to assist on this product import.
+        2. Create Voucher Item Code
 
-### 1.4.2 Fetch product
+            ![12](/img/e-commerce/shopee/12.png)
 
-1.4.2.1 Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
+            - Repeat same step to create for Shipping and Transaction Fees Item Code
 
-    ![17](/img/e-commerce/shopee/17.png)
+## 3. Account Tab
 
-1.4.2.2 Verify Status: Exist in Stock Item are meaning SQL and Seller SKU are having the same Item Code.
+    1. Click on '![39](/img/banking/39.png)'- > Shopee
 
-    ![18](/img/e-commerce/shopee/18.png)
+    2. Click on Account Tab -> Double click on your account
 
-If you decide to use the same item code as Seller Sku, ticked on select All records -> press on Post button for the first time so system will remember the settings.
+        ![13](/img/e-commerce/shopee/13.png)
 
-    ![19](/img/e-commerce/shopee/19.png)
+        1. Mapping Code
 
-1.4.2.3 Verified Status: Success when posting done
+            ![14](/img/e-commerce/shopee/14.png)
 
-    ![20](/img/e-commerce/shopee/20.png)
+        2. Expiry Date
 
-:::note
-Once you post successful, system will keep the Shop SKU in Stock Item as Alternative Item
-:::
+        - Is the linking expired with both parties given by Shopee platform for security
+        policy, once expired must relink with Shopee account to fetch the order.
 
-![21](/img/e-commerce/shopee/21.png)
+        [Youtube Video Link](https://www.youtube.com/watch?v=B9UmhTYjFHM)
 
-1.4.2.4 You can still manually do the mapping on the item code (system will auto ticked the record you have change the item code), once done all, click on POST button.
+## 4. Product Tab
 
-    ![22](/img/e-commerce/shopee/22.png)
+    1. Step to download product list from Shopee
 
-Video Link : https://www.youtube.com/watch?v=B9UmhTYjFHM
+        1. Navigate to “My Products” under “Product” category.
 
-## 1.5 Orders Tab
+        2. Click on “Batch Tools” and select “Mass Update”
 
-- Click on Orders Tab  
-   ![23](/img/e-commerce/shopee/23.png)
+            ![15](/img/e-commerce/shopee/15.png)
 
-### 1.5.1 Status
+        3. Click on “Generate” to generate the product list.
 
-    ![24](/img/e-commerce/shopee/24.png)
-    ![25](/img/e-commerce/shopee/25.png)
+        4. Click on “Download” to get the generated product list.
 
-:::tip
-Each order number will be posted once. You can delete the Invoice if you want to repost.
-:::
+            ![16](/img/e-commerce/shopee/16.png)
 
-### 1.5.2 Fetch Order
+        You can choose to have Shopee SKU as SQL Item Code by import to SQL, may contact your service agent to assist on this product import.
 
-1.5.2.1 Select Date Range -> Click on Refresh Order
+    2. Fetch product
 
-    ![26](/img/e-commerce/shopee/26.png)
+        1. Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
 
-Please be patient, system is on the way to fetch the order from Shopee
+            ![17](/img/e-commerce/shopee/17.png)
 
-    ![27](/img/e-commerce/shopee/27.png)
+        2. Verify Status: Exist in Stock Item are meaning SQL and Seller SKU are having the same Item Code.
 
-System will return the message when Fetching Done, Press OK.
+            ![18](/img/e-commerce/shopee/18.png)
 
-    ![28](/img/e-commerce/shopee/28.png)
+            If you decide to use the same item code as Seller Sku, ticked on select All records -> press on Post button for the first time so system will remember the settings.
 
-### 1.5.3 Post Order
+            ![19](/img/e-commerce/shopee/19.png)
 
-1.5.3.1 Click on the status you want to post the order, let us take an example on Completed Status -> Ticked all -> Click on Post
+        3. Verified Status: Success when posting done
 
-    ![29](/img/e-commerce/shopee/29.png)
+            ![20](/img/e-commerce/shopee/20.png)
 
-1.5.3.2 If you did not tick on any order when do the posting, system will raise a message: You have not selected any order. Would you like to select all? If you would like to post all -> Press Yes
+            :::note
+            Once you post successful, system will keep the Shop SKU in Stock Item as Alternative Item
+            :::
 
-    ![30](/img/e-commerce/shopee/30.png)
+            ![21](/img/e-commerce/shopee/21.png)
 
-Please be patient to wait for the order posting.
+        4. You can still manually do the mapping on the item code (system will auto ticked the record you have change the item code), once done all, click on POST button.
 
-    ![30](/img/e-commerce/shopee/30.png)
+            ![22](/img/e-commerce/shopee/22.png)
 
-1.5.3.3 Click on OK when done posting
+        [Youtube Video Link](https://www.youtube.com/watch?v=B9UmhTYjFHM)
 
-    ![31](/img/e-commerce/shopee/31.png)
+## 5. Orders Tab
 
-### 1.5.4 Verify Status
+    - Click on Orders Tab
+        ![23](/img/e-commerce/shopee/23.png)
 
-    ![32](/img/e-commerce/shopee/32.png)
+    1. Status
 
-1.5.4.1 Posted
+        ![24](/img/e-commerce/shopee/24.png)
 
-- Earlier Order posted before, system will ignore.
+        ![25](/img/e-commerce/shopee/25.png)
 
-  1.5.4.2 Success
+        :::tip
+        Each order number will be posted once. You can delete the Invoice if you want to repost.
+        :::
 
-- Order had been successfully Posting.
+    2. Fetch Order
 
-  1.5.4.3 Failed – Missing Dataset Property
+        1. Select Date Range -> Click on Refresh Order
 
-- Normally repost will be fine.
+            ![26](/img/e-commerce/shopee/26.png)
 
-  1.5.4.4 Catastrophic Failure
+            Please be patient, system is on the way to fetch the order from Shopee
 
-- Normally repost will be fine (Can restart SQL if unable to post)
+            ![27](/img/e-commerce/shopee/27.png)
 
-  1.5.4.5 Failed – Missing Item Code - Is due to Shopee have inactive item code, user can manually map in orders.  
-   Step 1: Ticked on the order  
-   ![33](/img/e-commerce/shopee/33.png)
-  Step 2: Click on Item Code Drop Down, user can manually map the item code  
-   Step 3: Click on Post
+            System will return the message when Fetching Done, Press OK.
 
-### 1.5.5 Order Details
+            ![28](/img/e-commerce/shopee/28.png)
 
-1.5.1 Double click on the order which you want to view the detail.
+    3 Post Order
 
-    ![34](/img/e-commerce/shopee/34.png)
+        1. Click on the status you want to post the order, let us take an example on Completed Status -> Ticked all -> Click on Post
 
-1.5.2 Order details will be displayed.
+            ![29](/img/e-commerce/shopee/29.png)
 
-    ![35](/img/e-commerce/shopee/35.png)
+        2. If you did not tick on any order when do the posting, system will raise a message: You have not selected any order. Would you like to select all? If you would like to post all -> Press Yes
 
-### 1.5.6 Sales Invoice
+            ![30](/img/e-commerce/shopee/30.png)
 
-- Example of Sales Invoice posted from Shopee | Orders.
+            Please be patient to wait for the order posting.
 
-  ![36](/img/e-commerce/shopee/36.png)
+            ![30](/img/e-commerce/shopee/30.png)
 
-Formula to calc Shipping Fees:  
-Escrow Amount - ((Discounted Price \*Qty)- Other Fee - Discount - Voucher)  
-= RM 76.97 - (RM 87.60 - RM 5.63 - RM 0 - RM 5)  
-= RM 0
+        3. Click on OK when done posting
 
-:::note
-Escrow Amount will be Shopee release amount.
-:::
+            ![31](/img/e-commerce/shopee/31.png)
 
-![37](/img/e-commerce/shopee/37.png)
+    4. Verify Status
 
-:::note
-Missing no 10 Discount Item Code?
+        ![32](/img/e-commerce/shopee/32.png)
 
-- No, is due to Disc is 0, system will not be posting over.
+        1. Posted
 
-Missing no 12 Shipping Item Code?
+            - Earlier Order posted before, system will ignore.
 
-- No, is due to Shipping Fees is 0, system will not be posting over.
-  :::
+        2. Success
 
-### 1.5.7 Sales Credit Note
+            - Order had been successfully Posting.
 
-- Example of Sales Credit Note posted from Shopee | Orders.
+        3. Failed – Missing Dataset Property
 
-  ![38](/img/e-commerce/shopee/38.png)
+            - Normally repost will be fine.
 
-**Sales -> Invoice**
+        4. Catastrophic Failure
 
-    ![39](/img/e-commerce/shopee/39.png)
+            - Normally repost will be fine (Can restart SQL if unable to post)
 
-Escrow = RM 10.25(Escrow Amt) + 23.50(Product) = RM 33.75  
-Product = RM 23.50  
-Others = RM 1.50
+        5. Failed – Missing Item Code - Is due to Shopee have inactive item code, user can manually map in orders.
 
-Shipping Fees calc on CN will be different when have return refund amount.  
-= RM 33.75 – (RM23.50 – RM 1.50 – RM 0 – RM 0)  
-= RM 11.75
+            Step 1: Ticked on the order
 
-**Sales -> Credit Note**
+            ![33](/img/e-commerce/shopee/33.png)
 
-CN will be posting return product without Shipping and Transaction fees.
+            Step 2: Click on Item Code Drop Down, user can manually map the item code
 
-    ![40](/img/e-commerce/shopee/40.png)
+            Step 3: Click on Post
 
-**Customer -> Customer Credit Note**
+    5. Order Details
 
-    ![41](/img/e-commerce/shopee/41.png)
+        1. Double click on the order which you want to view the detail.
 
-:::note
-System will auto knockoff the Invoice.
-:::
+            ![34](/img/e-commerce/shopee/34.png)
 
-**Customer -> Customer Invoice**
+        2. Order details will be displayed.
 
-    ![42](/img/e-commerce/shopee/42.png)
-    - Outstanding Amount will be Shopee Release Amount
+            ![35](/img/e-commerce/shopee/35.png)
 
-### 1.5.8 Replace
+    6. Sales Invoice
 
-1.5.8.1 Select the order that need to be replaced and click on Replace.
+        - Example of Sales Invoice posted from Shopee | Orders.
 
-    ![43](/img/e-commerce/shopee/43.png)
-    ![44](/img/e-commerce/shopee/44.png)
+            ![36](/img/e-commerce/shopee/36.png)
 
-1.5.8.2 The order selected will be replaced.
+        Formula to calc Shipping Fees:
 
-    ![45](/img/e-commerce/shopee/45.png)
+        Escrow Amount - ((Discounted Price \*Qty)- Other Fee - Discount - Voucher)
 
-### 1.5.9 Print
+        = RM 76.97 - (RM 87.60 - RM 5.63 - RM 0 - RM 5)
 
-1.5.9.1 Click on Order No -> Print
+        = RM 0
 
-    ![46](/img/e-commerce/shopee/46.png)
+        :::note
+        Escrow Amount will be Shopee release amount.
+        :::
 
-1.5.9.2 Select Report -> Press OK
+        ![37](/img/e-commerce/shopee/37.png)
 
-    ![47](/img/e-commerce/shopee/47.png)
+        :::note
+        Missing no 10 Discount Item Code?
 
-Sample Report
+        - No, is due to Disc is 0, system will not be posting over.
 
-    ![48](/img/e-commerce/shopee/48.png)
+        Missing no 12 Shipping Item Code?
 
-Video Link: https://www.youtube.com/watch?v=jrts5wSRecA
+        - No, is due to Shipping Fees is 0, system will not be posting over.
+        :::
 
-## 1.6 Payment Tab
+    7. Sales Credit Note
 
-### 1.6.1 Step to download statement from Shopee
+        - Example of Sales Credit Note posted from Shopee | Orders.
 
-1.6.1.1 Navigate to “My Income” under “Finance” category.  
-1.6.1.2 Switch to “Released” tab under “Income Details”  
-1.6.1.3 Click on “Export” button and finally “Download” the file.
+            ![38](/img/e-commerce/shopee/38.png)
 
-    ![49](/img/e-commerce/shopee/49.png)
+        **Sales -> Invoice**
 
-### 1.6.2 Posting Payment
+            ![39](/img/e-commerce/shopee/39.png)
 
-1.6.2.1 Select Payment Tab -> Select Account (Only if you have more than 1 store)
+        Escrow = RM 10.25(Escrow Amt) + 23.50(Product) = RM 33.75
 
-1.6.2.2 Click Load Excel
+        Product = RM 23.50
 
-    ![50](/img/e-commerce/shopee/50.png)
+        Others = RM 1.50
 
-1.6.3 Select the statement download from Shopee
+        Shipping Fees calc on CN will be different when have return refund amount.
 
-    ![51](/img/e-commerce/shopee/51.png)
+        = RM 33.75 – (RM23.50 – RM 1.50 – RM 0 – RM 0)
 
-1.6.4 Check on Invoice No Column, make sure no blank Invoice No. It is advisable to post all the order first before do payment. Once done, click on Post
+        = RM 11.75
 
-    ![52](/img/e-commerce/shopee/52.png)
-    Blank Invoice No mean order yet do the posting.
+        **Sales -> Credit Note**
 
-1.6.5 Posting Payment, please be patient
+        CN will be posting return product without Shipping and Transaction fees.
 
-    ![53](/img/e-commerce/shopee/53.png)
+            ![40](/img/e-commerce/shopee/40.png)
 
-1.6.6 Payment Posting done
+        **Customer -> Customer Credit Note**
 
-    ![54](/img/e-commerce/shopee/54.png)
+            ![41](/img/e-commerce/shopee/41.png)
 
-1.6.7 Example of Customer Payment posted from Shopee | Payment
+        :::note
+        System will auto knockoff the Invoice.
+        :::
 
-System will group same payment date as 1 payment.  
-Release Amount will be Shopee release amount.  
-Example: On 7/12/2020, total payment received RM 1424.71
+        **Customer -> Customer Invoice**
 
-![55](/img/e-commerce/shopee/55.png)
+            ![42](/img/e-commerce/shopee/42.png)
 
-**Customer -> Customer Payment**
+            - Outstanding Amount will be Shopee Release Amount
 
-    ![56](/img/e-commerce/shopee/56.png)
+    8. Replace
 
-System will auto do the knockoff.
+        1. Select the order that need to be replaced and click on Replace.
 
-    ![57](/img/e-commerce/shopee/57.png)
+            ![43](/img/e-commerce/shopee/43.png)
 
-### 1.6.3 Withdrawal
+            ![44](/img/e-commerce/shopee/44.png)
 
-    - Shopee will release to Seller Wallet and will be released to your bank account through automated / manual withdrawal.
+        2. The order selected will be replaced.
 
-    i) Manual withdrawal  
-    ii) Automate Withdrawal:  
-    https://help.shopee.com.my/my/s/article/How-do-I-get-my-payment-1542969807960#:~:text=Orders%20can%20be%20completed%20by,account%20through%20automated%20%2F%20manual%20withdrawal.
+            ![45](/img/e-commerce/shopee/45.png)
 
-Both way had to manually reverse out from Shopee Bank Account.
+    9. Print
 
-1.6.3.1 GL -> Cash Book Entry -> New OR
+        1. Click on Order No -> Print
 
-    ![58](/img/e-commerce/shopee/58.png)
+            ![46](/img/e-commerce/shopee/46.png)
 
-Video Link: https://www.youtube.com/watch?v=PloG3CeHA1w
+        2. Select Report -> Press OK
 
-## 1.7 FAQ
+            ![47](/img/e-commerce/shopee/47.png)
 
-### 1.7.1 How to do if have multiple location for each store?
+        Sample Report
 
-- It is advisable user to create one Location called Ecommerce, use the stock
-  transfer from location A to Ecommerce, Location B to Ecommerce, in
-  Ecommerce | Shopee | Account | Location set to Ecommerce.
+            ![48](/img/e-commerce/shopee/48.png)
 
-### 1.7.2 How to do if i want to split Lazada and Shopee Sales?
+        [Youtube Video Link](https://www.youtube.com/watch?v=jrts5wSRecA)
 
-- Can set by project.
-  Tools | Maintain Project.
+## 6. Payment Tab
 
-### 1.7.3 How to handle Serial Number?
+    1. Step to download statement from Shopee
 
-Use **To Ship Status** Post to Quotation first, then manually transfer to Invoice, fill
-Invoice Doc No = Order No and Serial Number as well.
+        1. Navigate to “My Income” under “Finance” category.
 
-When post Payment in **Payment Tab**, system will auto edit Invoice and fill in
-Transaction Fees in order tally with Shopee Escrow Amount.
+        2. Switch to “Released” tab under “Income Details”
 
-### 1.7.4 How system handle the situation when Shipping Fees charges Seller Paid Amount cause escrow amount in negative?
+        3. Click on “Export” button and finally “Download” the file.
 
-    ![59](/img/e-commerce/shopee/59.png)
+            ![49](/img/e-commerce/shopee/49.png)
 
-This scenario system will post to **Sales CN** and **Customer Refund**.
+    2. Posting Payment
 
-In **Order Tab**, system will Post to Sales CN and set Qty in Negative.
+        1. Select Payment Tab -> Select Account (Only if you have more than 1 store)
 
-When Load in Income statement(.xls) files into **Payment Tab**, system will auto post
-to Customer Refund.
+        2. Click Load Excel
 
-### 1.7.5 How to handle the order in Cancelled Status but earlier user in Shipped Status already posting the Invoice. 
+            ![50](/img/e-commerce/shopee/50.png)
 
-It is due to seller sending few times to buyer. But nobody at home, so seller
-decided to cancel the order.
+        3. Select the statement download from Shopee
 
-Solution: Shopee will not handle any action in Cancelled Status, in this case
-user can either cancelled the invoice or transfer to CN.
+            ![51](/img/e-commerce/shopee/51.png)
 
-It is advising user to post when order completed.
+        4. Check on Invoice No Column, make sure no blank Invoice No. It is advisable to post all the order first before do payment. Once done, click on Post
+
+            ![52](/img/e-commerce/shopee/52.png)
+
+            Blank Invoice No mean order yet do the posting.
+
+        5. Posting Payment, please be patient
+
+            ![53](/img/e-commerce/shopee/53.png)
+
+        6. Payment Posting done
+
+            ![54](/img/e-commerce/shopee/54.png)
+
+        7. Example of Customer Payment posted from Shopee | Payment
+
+            System will group same payment date as 1 payment.
+
+            Release Amount will be Shopee release amount.
+
+            Example: On 7/12/2020, total payment received RM 1424.71
+
+            ![55](/img/e-commerce/shopee/55.png)
+
+            **Customer -> Customer Payment**
+
+                ![56](/img/e-commerce/shopee/56.png)
+
+            System will auto do the knockoff.
+
+                ![57](/img/e-commerce/shopee/57.png)
+
+    3. Withdrawal
+
+        - Shopee will release to Seller Wallet and will be released to your bank account through automated / manual withdrawal.
+
+        1. Manual withdrawal
+
+        2. [Automate Withdrawal](https://help.shopee.com.my/my/s/article/How-do-I-get-my-payment-1542969807960#:~:text=Orders%20can%20be%20completed%20by,account%20through%20automated%20%2F%20manual%20withdrawal)
+
+        Both way had to manually reverse out from Shopee Bank Account.
+
+        1. GL -> Cash Book Entry -> New OR
+
+            ![58](/img/e-commerce/shopee/58.png)
+
+        [Youtube Video Link](https://www.youtube.com/watch?v=PloG3CeHA1w)
+
+## 7 FAQ
+
+    1. How to do if have multiple location for each store?
+
+        - It is advisable user to create one Location called Ecommerce, use the stock transfer from location A to Ecommerce, Location B to Ecommerce, in Ecommerce | Shopee | Account | Location set to Ecommerce.
+
+    2. How to do if i want to split Lazada and Shopee Sales?
+
+        - Can set by project under Tools -> Maintain Project.
+
+    3. How to handle Serial Number?
+
+        1. Use **To Ship Status** Post to Quotation first, then manually transfer to Invoice, fill Invoice Doc No = Order No and Serial Number as well.
+
+        2. When post Payment in **Payment Tab**, system will auto edit Invoice and fill in Transaction Fees in order tally with Shopee Escrow Amount.
+
+    4 How system handle the situation when Shipping Fees charges Seller Paid Amount cause escrow amount in negative?
+
+        ![59](/img/e-commerce/shopee/59.png)
+
+        1. This scenario system will post to **Sales CN** and **Customer Refund**.
+
+        2. In **Order Tab**, system will Post to Sales CN and set Qty in Negative.
+
+        3. When Load in Income statement(.xls) files into **Payment Tab**, system will auto post to Customer Refund.
+
+    5. How to handle the order in Cancelled Status but earlier user in Shipped Status already post the Invoice?
+
+        1. It is due to seller sending few times to buyer. But nobody at home, so seller
+        decided to cancel the order.
+
+        2. Solution: Shopee will not handle any action in Cancelled Status, in this case
+        user can either cancelled the invoice or transfer to CN.
+
+        3. It is advise for user to post when order completed.

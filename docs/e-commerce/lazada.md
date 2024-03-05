@@ -3,7 +3,7 @@ sidebar_position: 20
 id: lazada
 title: Lazada
 description: A guide on Lazada for SQL Account
-slug: /lazada
+slug: /ecommerce/lazada
 tags: ["SQL Account", "Lazada"]
 ---
 
@@ -44,439 +44,462 @@ tags: ["SQL Account", "Lazada"]
 
 <!-- ## 1. Lazada -->
 
-## 1.1 Maintain Cloud Account
+## 1. Maintain Cloud Account
 
-1.1.1 Select - > **Maintain Cloud Account (One Time Setting)**
+  1. Select - > **Maintain Cloud Account (One Time Setting)**
 
-    ![1](/img/e-commerce/easyStore/1.png)
+      ![1](/img/e-commerce/easyStore/1.png)
 
-1.1.2 Click on NEW
+  2. Click on NEW
 
-    ![1](/img/e-commerce/lazada/1.png)
-    i) Enter **Description**
-    ii) Select **Platform**
-    iii) Click on **Link** Button
+      ![1](/img/e-commerce/lazada/1.png)
 
-1.1.3 Select Platform
+      1. Enter **Description**
 
-    ![2](/img/e-commerce/lazada/2.png)
+      2. Select **Platform**
 
-1.1.4 Login with your credentials
+      3. Click on **Link** Button
 
-    ![3](/img/e-commerce/lazada/3.png)
+  3. Select Platform
 
-1.1.5 Press on SAVE
+      ![2](/img/e-commerce/lazada/2.png)
 
-    ![4](/img/e-commerce/lazada/4.png)
-    - Once linking Successful, system will be returned status Linking Success Message.
+  4. Login with your credentials
 
-## 1.2 Configure E Commerce Setting
+      ![3](/img/e-commerce/lazada/3.png)
 
-1.2.1 GL -> Maintain Account  
-i) Create Lazada Voucher / Discount Account Under Sales Adjustment
+  5. Press on SAVE
 
-    ![5](/img/e-commerce/lazada/5.png)
+      ![4](/img/e-commerce/lazada/4.png)
 
-ii) Create Shipping and Transaction Fee under Expenses
+      - Once linking Successful, system will be returned status Linking Success Message.
 
-    ![6](/img/e-commerce/lazada/6.png)
+## 2. Configure E Commerce Setting
 
-:::info
+    1. GL -> Maintain Account
 
-- It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
-  :::
+        1. Create Lazada Voucher / Discount Account Under Sales Adjustment
 
-  1.2.2 Customer -> Maintain Customer
+            ![5](/img/e-commerce/lazada/5.png)
+
+        2. Create Shipping and Transaction Fee under Expenses
+
+            ![6](/img/e-commerce/lazada/6.png)
+
+            :::info
+
+            It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
+
+            :::
+
+    2. Customer -> Maintain Customer
 
         ![7](/img/e-commerce/lazada/7.png)
 
-  1.2.3 Stock -> Maintain Stock Group  
-   Create Lazada Shipping / Transaction / Voucher / Discount Stock Group  
-  i) Create Discount Stock Group
+    3. Stock -> Maintain Stock Group
 
-      ![8](/img/e-commerce/lazada/8.png)
+        Create Lazada Shipping / Transaction / Voucher / Discount Stock Group
 
-ii) Create Voucher Stock Group
+        1. Create Discount Stock Group
 
-    ![9](/img/e-commerce/lazada/9.png)
+            ![8](/img/e-commerce/lazada/8.png)
 
-- Repeat same step to create for Shipping and Transaction Fees Stock Group
+        2. Create Voucher Stock Group
 
-  1.2.4 Stock -> Stock Item  
-   i) Create Discount Stock Item
+            ![9](/img/e-commerce/lazada/9.png)
 
-          ![10](/img/e-commerce/lazada/10.png)
+            - Repeat same step to create for Shipping and Transaction Fees Stock Group
 
-      ii) Create Voucher Item Code
+    4. Stock -> Stock Item
 
-          ![11](/img/e-commerce/lazada/11.png)
+        1. Create Discount Stock Item
 
-- Repeat same step to create for Shipping and Transaction Fees Item
-  Code
+            ![10](/img/e-commerce/lazada/10.png)
 
-## 1.3 Account Tab
+        2. Create Voucher Item Code
 
-1.3.1 Click on -> Lazada  
-1.3.2 Click on Account Tab -> Double click on your account
+            ![11](/img/e-commerce/lazada/11.png)
 
-    ![12](/img/e-commerce/lazada/12.png)
+            - Repeat same step to create for Shipping and Transaction Fees Item Code
 
-1.3.2.1 Mapping Code
+## 3. Account Tab
 
-    ![13](/img/e-commerce/lazada/13.png)
+  1. Click on -> Lazada
 
-1.3.2.2 Expiry Date
+  2. Click on Account Tab -> Double click on your account
 
-- Is the linking expired with both parties given by Lazada platform for security
-  policy, once expired must relink with Lazada account to fetch the order.
+      ![12](/img/e-commerce/lazada/12.png)
 
-Video Link : https://www.youtube.com/watch?v=B9UmhTYjFHM
+      1. Mapping Code
 
-## 1.4 Product Tab
+          ![13](/img/e-commerce/lazada/13.png)
 
-### 1.4.1 Step to download Product list from Lazada
+      2. Expiry Date
 
-1.4.1.1 Click on “**Products**” Tab, then click on “**Manage Products**” and then click “**Bulk Manage**”
+          - Is the linking expired with both parties given by Lazada platform for security policy, once expired must relink with Lazada account to fetch the order.
 
-    ![14](/img/e-commerce/lazada/14.png)
+          [Youtube Video Link](https://www.youtube.com/watch?v=B9UmhTYjFHM)
 
-1.4.1.2 Select “Bulk Edit” option
+## 4. Product Tab
 
-    ![15](/img/e-commerce/lazada/15.png)
+  1. Step to download Product list from Lazada
 
-1.4.1.3 Press “**Export Excel Template**” and save it to your computer location.
+      1. Click on “**Products**” Tab, then click on “**Manage Products**” and then click “**Bulk Manage**”
 
-    ![16](/img/e-commerce/lazada/16.png)
+          ![14](/img/e-commerce/lazada/14.png)
 
-You can choose to have Lazada SKU as SQL Item Code by import to SQL. May contact your service
-agent to assist on this product import.
+      2. Select “Bulk Edit” option
 
-### 1.4.2 Fetch Product
+          ![15](/img/e-commerce/lazada/15.png)
 
-1.4.2.1 Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
+      3. Press “**Export Excel Template**” and save it to your computer location.
 
-    ![17](/img/e-commerce/lazada/17.png)
+          ![16](/img/e-commerce/lazada/16.png)
 
-1.4.2.2 Verify Status: Exist in Stock Item are meaning SQL and Seller SKU are having the same Item Code.
+          You can choose to have Lazada SKU as SQL Item Code by import to SQL. May contact your service agent to assist on this product import.
 
-    ![18](/img/e-commerce/lazada/18.png)
+  2. Fetch Product
 
-:::info
-If you decide to use the same item code as Seller Sku, click on select All records -> press on Post button for the first time so system will remember the settings.
-:::
+      1. Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
 
-    ![19](/img/e-commerce/lazada/19.png)
+          ![17](/img/e-commerce/lazada/17.png)
 
-1.4.2.3 Verified Status: Success when posting done
+      2. Verify Status: Exist in Stock Item are meaning SQL and Seller SKU are having the same Item Code.
 
-    ![20](/img/e-commerce/lazada/20.png)
+          ![18](/img/e-commerce/lazada/18.png)
 
-:::note
-Once you post successful, system will keep the Shop SKU in Stock Item as Alternative Item
-:::
+          :::info
+          If you decide to use the same item code as Seller Sku, click on select All records -> press on Post button for the first time so system will remember the settings.
+          :::
 
-![21](/img/e-commerce/lazada/21.png)
+          ![19](/img/e-commerce/lazada/19.png)
 
-1.4.2.4 You can still decide to map to different item code (system will auto ticked the record you change the item code), once done all, click on POST button.
+      3. Verified Status: Success when posting done
 
-    ![22](/img/e-commerce/lazada/22.png)
+          ![20](/img/e-commerce/lazada/20.png)
 
-Video Link : https://www.youtube.com/watch?v=B9UmhTYjFHM
+          :::note
+          Once you post successful, system will keep the Shop SKU in Stock Item as Alternative Item
+          :::
 
-## 1.5 Orders Tab
+          ![21](/img/e-commerce/lazada/21.png)
+
+      4. You can still decide to map to different item code (system will auto ticked the record you change the item code), once done all, click on POST button.
+
+          ![22](/img/e-commerce/lazada/22.png)
+
+          [Youtube Video Link](https://www.youtube.com/watch?v=B9UmhTYjFHM)
+
+## 5. Orders Tab
 
     - Click on Orders Tab
-    ![23](/img/e-commerce/lazada/23.png)
 
-### 1.5.1 Status – Default Post Action
+      ![23](/img/e-commerce/lazada/23.png)
 
-![24](/img/e-commerce/lazada/24.png)
-![25](/img/e-commerce/lazada/25.png)
+  1. Status – Default Post Action
 
-Remark: Each order number will be posted once. You can delete the Invoice if you
-want to repost.
+      ![24](/img/e-commerce/lazada/24.png)
 
-### 1.5.2 Fetch Order
+      ![25](/img/e-commerce/lazada/25.png)
 
-1.5.2.1 Select Date Range -> Click on Refresh Order
+      Remark: Each order number will be posted once. You can delete the Invoice if you want to repost.
 
-![26](/img/e-commerce/lazada/26.png)
-Please be patient, system is on the way to fetch the order from Lazada
+  2. Fetch Order
 
-![27](/img/e-commerce/lazada/27.png)
-![28](/img/e-commerce/lazada/28.png)
-System will return the message when Fetching Done, Press OK.
+      1. Select Date Range -> Click on Refresh Order
 
-### 1.5.3 Post Order
+          ![26](/img/e-commerce/lazada/26.png)
 
-1.5.3.1 Click on the status you want to post the order, let us take an example on Delivered Status -> Ticked all -> Click on Post
+          Please be patient, system is on the way to fetch the order from Lazada
 
-![29](/img/e-commerce/lazada/29.png)
+          ![27](/img/e-commerce/lazada/27.png)
 
-1.5.3.2 If you did not tick on any order when do the posting, system will raise a message: You have not selected any order. Would you like to select all? If you would like to post all -> Press Yes
+          ![28](/img/e-commerce/lazada/28.png)
 
-![30](/img/e-commerce/lazada/30.png)
+          System will return the message when Fetching Done, Press OK.
 
-Please be patient to wait for the order posting.
+  3. Post Order
 
-![31](/img/e-commerce/lazada/31.png)
+      1. Click on the status you want to post the order, let us take an example on Delivered Status -> Ticked all -> Click on Post
 
-1.5.3.3 Click on OK when done posting
+          ![29](/img/e-commerce/lazada/29.png)
 
-![32](/img/e-commerce/lazada/32.png)
+      2. If you did not tick on any order when do the posting, system will raise a message: You have not selected any order. Would you like to select all? If you would like to post all -> Press Yes
 
-### 1.5.4 Verify Status
+          ![30](/img/e-commerce/lazada/30.png)
 
-![33](/img/e-commerce/lazada/33.png)
+          Please be patient to wait for the order posting.
 
-1.5.4.1 Posted
+          ![31](/img/e-commerce/lazada/31.png)
 
-- Earlier Order posted before, system will ignore.
+      3. Click on OK when done posting
 
-  1.5.4.2 Success
+          ![32](/img/e-commerce/lazada/32.png)
 
-- Order had been successfully Posting.
+  4. Verify Status
 
-  1.5.4.3 Failed – Missing Dataset Property
+      ![33](/img/e-commerce/lazada/33.png)
 
-- Normally repost will be fine.
+      1. Posted
 
-![34](/img/e-commerce/lazada/34.png)
+          - Earlier Order posted before, system will ignore.
 
-1.5.4.4 Failed – Missing Item Code
+      2. Success
 
-- Is due to Lazada have inactive item code, user can manually map in orders.  
-  Step 1: Click on Item Code Drop Down, user can manually map the item code  
-  ![35](/img/e-commerce/lazada/35.png)
-  Step 2: Ticked on the record you want to post  
-  Step 3: Click on Post
+          - Order had been successfully Posting.
 
-### 1.5.5 Sales Invoice
+      3. Failed – Missing Dataset Property
 
-- Example of Sales Invoice posted from Lazada | Orders.
-  ![36](/img/e-commerce/lazada/36.png)
-  ![37](/img/e-commerce/lazada/37.png)
+          - Normally repost will be fine.
 
-### 1.5.6 Sales Credit Note
+          ![34](/img/e-commerce/lazada/34.png)
 
-- Example of Sales Credit Note posted from Lazada | Orders.
-  ![38](/img/e-commerce/lazada/38.png)
+      4. Failed – Missing Item Code
 
-Returned Sales will be posted to 1 document only.
+          - Is due to Lazada have inactive item code, user can manually map in orders.
 
-In this scenario it is posted to Sales Invoice.
+          Step 1: Click on Item Code Drop Down, user can manually map the item code
 
-Select **“Post”** to post it to sales invoice.
-![39](/img/e-commerce/lazada/39.png)
-![40](/img/e-commerce/lazada/40.png)
+            ![35](/img/e-commerce/lazada/35.png)
 
-Video Link: https://www.youtube.com/watch?v=jrts5wSRecA
+          Step 2: Ticked on the record you want to post
 
-### 1.5.7 Status – Others than Default POST Action
+          Step 3: Click on Post
 
-- Beside the post button, press the black triangle, and select ”Post” to post it to sales invoice.
-  ![41](/img/e-commerce/lazada/41.png)
-  ![42](/img/e-commerce/lazada/42.png)
+  5. Sales Invoice
 
-## 1.6 Payment Tab
+      - Example of Sales Invoice posted from Lazada | Orders.
 
-### 1.6.2 Step to Download statement from Lazada
+        ![36](/img/e-commerce/lazada/36.png)
 
-1.6.1.1 Click on Seller Center -> Finance Tab on left menu -> Account Statement - > Statement Period
-:::note
-The new version of Lazada Seller Center, has changed the settlement period from weekly to daily.
-:::
-![43](/img/e-commerce/lazada/43.png)
+        ![37](/img/e-commerce/lazada/37.png)
 
-1.6.2.2 At your Statement Overview, go to Settlement Report to see the weekly statement.
+  6. Sales Credit Note
 
-![44](/img/e-commerce/lazada/44.png)
+      - Example of Sales Credit Note posted from Lazada | Orders.
 
-1.6.2.3 Click “Download” and download the file of the weekly statement that contains the payments that you want to export.
+        ![38](/img/e-commerce/lazada/38.png)
 
-![45](/img/e-commerce/lazada/45.png)
+        Returned Sales will be posted to 1 document only.
 
-### 1.6.3 Posting Payment
+        In this scenario it is posted to Sales Invoice.
 
-1.6.3.1 Select Account (Only if you have more than 1 store)
+        Select **“Post”** to post it to sales invoice.
 
-1.6.3.2 Click Load CSV (Statement downloaded from Step 1.6)
+          ![39](/img/e-commerce/lazada/39.png)
 
-![46](/img/e-commerce/lazada/46.png)
+          ![40](/img/e-commerce/lazada/40.png)
 
-1.6.3.3 Select the statement download from Lazada
+        [Youtube Video Link](https://www.youtube.com/watch?v=jrts5wSRecA)
 
-![47](/img/e-commerce/lazada/47.png)
+  7. Status – Others than Default POST Action
 
-1.6.3.4 Click on Post
+      - Beside the post button, press the black triangle, and select ”Post” to post it to sales invoice.
 
-![48](/img/e-commerce/lazada/48.png)
+        ![41](/img/e-commerce/lazada/41.png)
 
-1.6.3.5 Error in Red: Please sync all orders before posting payment.
+        ![42](/img/e-commerce/lazada/42.png)
 
-- Due to some order yet posting to Invoice. Before you do the posting, you can check on Invoice No column, post the orders with empty Invoice No.
+## 6. Payment Tab
 
-![49](/img/e-commerce/lazada/49.png)
+  1. Step to Download statement from Lazada
 
-:::info
-Lazada required you to sync all order before can posting payment due to have to tally with bank recon.
-:::
-1.6.3.6 Once you check all the order have been posting (without empty Invoice No), click on Post
+      1. Click on Seller Center -> Finance Tab on left menu -> Account Statement - > Statement Period
 
-![50](/img/e-commerce/lazada/50.png)
+          :::note
+          The new version of Lazada Seller Center, has changed the settlement period from weekly to daily.
+          :::
 
-1.6.3.7 Posting Payment / Editing Invoice for Lazada Fees, please be patient
+          ![43](/img/e-commerce/lazada/43.png)
 
-![51](/img/e-commerce/lazada/51.png)
+      2. At your Statement Overview, go to Settlement Report to see the weekly statement.
 
-1.6.3.8 Cheque number already exists
+          ![44](/img/e-commerce/lazada/44.png)
 
-- Press **Yes**, system capture Lazada Payment ref ID as Cheque number.
-  ![52](/img/e-commerce/lazada/52.png)
+      3. Click “Download” and download the file of the weekly statement that contains the payments that you want to export.
 
-User can choose to turn off prompt duplicate cheque number at Tools -> Option -> Miscellaneous -> Unticked Prompt Duplicate Cheque Number.
+          ![45](/img/e-commerce/lazada/45.png)
 
-![53](/img/e-commerce/lazada/53.png)
+  2. Posting Payment
 
-1.6.3.9 Posting done
+      1. Select Account (Only if you have more than 1 store)
 
-![54](/img/e-commerce/lazada/54.png)
+      2. Click Load CSV (Statement downloaded from Step 1.6)
 
-1.6.3.10 System will skip posting when Item Price is 0
+          ![46](/img/e-commerce/lazada/46.png)
 
-![55](/img/e-commerce/lazada/55.png)
+      3. Select the statement download from Lazada
 
-1.6.3.11 Example of Sales Invoice with added in Transaction Fees Posted from Lazada | Payment
+          ![47](/img/e-commerce/lazada/47.png)
 
-![56](/img/e-commerce/lazada/56.png)
+      4. Click on Post
 
-:::note
-Version 794 – 801 will post to Sales CN  
-Version 802 & above is Edit Sales Invoice and added in
-:::
+          ![48](/img/e-commerce/lazada/48.png)
 
-1.6.3.12 Example of Customer Payment posted from Lazada | Payment
+      5. Error in Red: Please sync all orders before posting payment.
 
-- System will auto do the knockoff
-  ![57](/img/e-commerce/lazada/57.png)
+          - Due to some order yet posting to Invoice. Before you do the posting, you can check on Invoice No column, post the orders with empty Invoice No.
 
-:::note
-Same Transaction Date will be posting as 1 Customer Payment.
-:::
+          ![49](/img/e-commerce/lazada/49.png)
 
-1.6.3.13 Example of Bank Deposit posted from Lazada | Payment
+          :::info
+          Lazada required you to sync all order before can posting payment due to have to tally with bank recon.
+          :::
 
-- 7 Days of payment will group as 1 row in bank recon for easier bank recon.
-  ![58](/img/e-commerce/lazada/58.png)
+      6. Once you check all the order have been posting (without empty Invoice No), click on Post
 
-:::note
-Bank Slip No is Lazada Payment Ref ID
-:::
+          ![50](/img/e-commerce/lazada/50.png)
 
-Example of Bank Recon
+      7. Posting Payment / Editing Invoice for Lazada Fees, please be patient
 
-![59](/img/e-commerce/lazada/59.png)
+          ![51](/img/e-commerce/lazada/51.png)
 
-Video Link: https://www.youtube.com/watch?v=PloG3CeHA1w
+      8. Cheque number already exists
 
-### 1.6.4 Verify Status
+          - Press **Yes**, system capture Lazada Payment ref ID as Cheque number.
 
-1.6.4.3 Not Paid
+          ![52](/img/e-commerce/lazada/52.png)
 
-- Paid Status is status for user to know the order have or have not pay to seller.
-- Not paid status will not posting to Customer payment.
-  ![60](/img/e-commerce/lazada/60.png)
+          User can choose to turn off prompt duplicate cheque number at Tools -> Option -> Miscellaneous -> Unticked Prompt Duplicate Cheque Number.
 
-  1.6.4.4 Payment ref id not found
+          ![53](/img/e-commerce/lazada/53.png)
 
-- Lazada allows seller to forward date download finance statement, without Payment ref ID which mean Lazada yet release payment to Seller, SQL will not posting without payment ref ID.
-  ![61](/img/e-commerce/lazada/61.png)
+      9. Posting done
 
-## 1.7 FAQ
+          ![54](/img/e-commerce/lazada/54.png)
 
-### 1.7.1 How to do if have multiple location for each store?
+      10. System will skip posting when Item Price is 0
 
-- It is advisable user to create one Location called Ecommerce, use the stock
-  transfer from location A to Ecommerce, Location B to Ecommerce, in
-  Ecommerce | Shopee | Account | Location set to Ecommerce.
+          ![55](/img/e-commerce/lazada/55.png)
 
-### 1.7.2 How to do if I want to split Lazada and Shopee Sales?
+      11. Example of Sales Invoice with added in Transaction Fees Posted from Lazada | Payment
 
-- Can separate by Project
-- Tools -> Maintain Project
+          ![56](/img/e-commerce/lazada/56.png)
 
-### 1.7.3 How system handle Lazada Marketing Fees?
+          :::note
+          Version 794 – 801 will post to Sales CN
 
-When load in Payment file(.csv) file in **Payment Tab** with marketing fees, if the
-amount is in positive, system will raise IV and payment, else system will post to Sales
-CN and Customer Refund.
+          Version 802 & above is Edit Sales Invoice and added in
+          :::
 
-Marketing Fees will post to Transaction Item Code.
+      12. Example of Customer Payment posted from Lazada | Payment
 
-### 1.7.4 Error sending data : (12002) The operation timed out.
+          - System will auto do the knockoff
+            ![57](/img/e-commerce/lazada/57.png)
 
-1. User Internet unstable. Please check your internet connection. May try on
-   others wifi or using mobile data.
-2. Lazada server down, please try again later.
+            :::note
+            Same Transaction Date will be posting as 1 Customer Payment.
+            :::
 
-### 1.7.5 How system handle Reversal Item Price and Adjustment Item Charge?
+      13. Example of Bank Deposit posted from Lazada | Payment
 
-- When load payment file, once the lazada payment release more than
-  Outstanding Invoice amount, will deleted CN.
+          - 7 Days of payment will group as 1 row in bank recon for easier bank recon.
 
-### 1.7.6 How system handle Opening Invoice?
+            ![58](/img/e-commerce/lazada/58.png)
 
-- Load in payment, when order date before system conversion date, right click Select Check Past Invoice, Click on Post Past Invoice
-  ![62](/img/e-commerce/lazada/62.png)
-- User required to post the past invoice in Order
+            :::note
+            Bank Slip No is Lazada Payment Ref ID
+            :::
 
-### 1.7.7 Order Not Post when load in payment, how do I know the Order Date?
+            Example of Bank Recon
 
-- Make sure in payment choose the correct **store name**, right click select **Check Past Invoice**
-- Look for Order Date, system will show the Order Date on Verify Status with Order Not Posted
-  ![63](/img/e-commerce/lazada/63.png)
+            ![59](/img/e-commerce/lazada/59.png)
 
-### 1.7.8 How system handle for the scenario when first release payment in negative due to overcharge on shipping fees
+            [Youtube Video Link](https://www.youtube.com/watch?v=PloG3CeHA1w)
 
-- When load payment, once release amount is in negative, system will delete
-  earlier Invoice, and raise CN(amount will be exactly same as Payment file)
-  and Refund.
-- When 2nd payment(Adjustment), if the amount is in negative, append to
-  CN and Refund, if in positive, will raise Invoice(Adjustment value) and
-  Payment.
+  3. Verify Status
 
-### 1.7.9 Fetch Order raise error : E097 : Offset and limit sum 5100 must less than 5000, request id : 2101235d16xxxx
+      1. Not Paid
 
-![64](/img/e-commerce/lazada/64.png)
+          - Paid Status is status for user to know the order have or have not pay to seller.
 
-- Lazada API Returned error as too huge transaction being fetched, the only
-  way is to shorten the date period.
+          - Not paid status will not posting to Customer payment.
 
-### 1.8.0 The specified access token is invalid or expired.
+            ![60](/img/e-commerce/lazada/60.png)
 
-![65](/img/e-commerce/lazada/65.png)
+      2. Payment ref id not found
 
-- Lazada API link expired, you are required to go back maintain cloud and
-  link again with Lazada platform (Refer Step 1.1.3 – 1.1.5)
+          - Lazada allows seller to forward date download finance statement, without Payment ref ID which mean Lazada yet release payment to Seller, SQL will not posting without payment ref ID.
+            ![61](/img/e-commerce/lazada/61.png)
 
-### 1.8.1 API access frequently exceeds the limit. This ban will last 1 seconds.
+## 7. FAQ
 
-![66](/img/e-commerce/lazada/66.png)
+  1. How to do if have multiple location for each store?
 
-- Error appears after click Fetch. Solution, close your Lazada tab in SQL
-  Account -> re-open it -> click “Fetch” button again
+      - It is advisable user to create one Location called Ecommerce, use the stock transfer from location A to Ecommerce, Location B to Ecommerce, in Ecommerce | Shopee | Account | Location set to Ecommerce.
 
-### 1.8.2 How system handle “Failed Delivery" in SQL?
+  2. How to do if I want to split Lazada and Shopee Sales?
 
-![67](/img/e-commerce/lazada/67.png)
+      - Can separate by Project
 
-Orders with “Failed Delivery” in Lazada will be fetch into SQL with the status as
-**canceled**.
+      - Tools -> Maintain Project
 
-If the order has transaction fees to offset, the canceled order can be posted as
-Cancelled Sales Invoice.
+  3. How system handle Lazada Marketing Fees?
 
-![68](/img/e-commerce/lazada/68.png)
+      When load in Payment file(.csv) file in **Payment Tab** with marketing fees, if the amount is in positive, system will raise IV and payment, else system will post to Sales CN and Customer Refund.
 
-To post as invoice, click the black arrow beside the “Post” button and select “Post as
-Cancelled Sales Invoice”.
+      Marketing Fees will post to Transaction Item Code.
+
+  4. Error sending data : (12002) The operation timed out
+
+      1. User Internet unstable. Please check your internet connection. May try on others wifi or using mobile data.
+
+      2. Lazada server down, please try again later.
+
+  5. How system handle Reversal Item Price and Adjustment Item Charge?
+
+      - When load payment file, once the lazada payment release more than Outstanding Invoice amount, will deleted CN.
+
+  6. How system handle Opening Invoice?
+
+      - Load in payment, when order date before system conversion date, right click Select Check Past Invoice, Click on Post Past Invoice
+
+        ![62](/img/e-commerce/lazada/62.png)
+
+      - User required to post the past invoice in Order
+
+  7. Order Not Post when load in payment, how do I know the Order Date?
+
+      - Make sure in payment choose the correct **store name**, right click select **Check Past Invoice**
+
+      - Look for Order Date, system will show the Order Date on Verify Status with Order Not Posted
+
+        ![63](/img/e-commerce/lazada/63.png)
+
+  8. How system handle for the scenario when first release payment in negative due to overcharge on shipping fees
+
+      - When load payment, once release amount is in negative, system will delete earlier Invoice, and raise CN(amount will be exactly same as Payment file) and Refund.
+
+      - When 2nd payment(Adjustment), if the amount is in negative, append to CN and Refund, if in positive, will raise Invoice(Adjustment value) and Payment.
+
+  9. Fetch Order raise error : E097 : Offset and limit sum 5100 must less than 5000, request id : 2101235d16xxxx
+
+      ![64](/img/e-commerce/lazada/64.png)
+
+      - Lazada API Returned error as too huge transaction being fetched, the only way is to shorten the date period.
+
+  10. The specified access token is invalid or expired
+
+      ![65](/img/e-commerce/lazada/65.png)
+
+      - Lazada API link expired, you are required to go back maintain cloud and link again with Lazada platform (Refer Step 1.1.3 – 1.1.5)
+
+  11. API access frequently exceeds the limit. This ban will last 1 seconds
+
+      ![66](/img/e-commerce/lazada/66.png)
+
+      - Error appears after click Fetch. Solution, close your Lazada tab in SQL Account -> re-open it -> click “Fetch” button again
+
+  12. How system handle “Failed Delivery" in SQL?
+
+      ![67](/img/e-commerce/lazada/67.png)
+
+      Orders with “Failed Delivery” in Lazada will be fetch into SQL with the status as **canceled**.
+
+      If the order has transaction fees to offset, the canceled order can be posted as
+      Cancelled Sales Invoice.
+
+      ![68](/img/e-commerce/lazada/68.png)
+
+      To post as invoice, click the black arrow beside the “Post” button and select “Post as
+      Cancelled Sales Invoice”.

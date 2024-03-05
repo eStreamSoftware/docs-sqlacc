@@ -3,7 +3,7 @@ sidebar_position: 20
 id: easystore
 title: EasyStore
 description: A guide on EasyStore for SQL Account
-slug: /easystore
+slug: /ecommerce/easystore
 tags: ["SQL Account", "EasyStore"]
 ---
 
@@ -30,245 +30,257 @@ tags: ["SQL Account", "EasyStore"]
       5. [The specified access token is invalid or expired.](#165-the-specified-access-token-is-invalid-or-expired)
       6. [API access frequently exceeds the limit. This ban will last 1 second.](#166-api-access-frequently-exceeds-the-limit-this-ban-will-last-1-second) -->
 
-## 1.1 Maintain Cloud Account
+## 1. Maintain Cloud Account
 
-    1.1.1 Select - > **Maintain Cloud Account (One Time Setting)**
+    1. Select - > **Maintain Cloud Account (One Time Setting)**
 
         ![1](/img/e-commerce/easyStore/1.png)
 
-    1.1.2 Click on NEW
+    2. Click on NEW
 
         ![2](/img/e-commerce/easyStore/2.png)
 
-    i) Enter Description "**EasyStore**"
-    ii) Select **Platform**
-    iii) Click on **Link** Button
+        1. Enter Description "**EasyStore**"
 
-    1.1.3 Paste your Easy Store URL and press **GO**
+        2. Select **Platform**
+
+        3. Click on **Link** Button
+
+    3. Paste your Easy Store URL and press **GO**
 
         ![3](/img/e-commerce/easyStore/3.png)
 
-    1.1.4 **Login** with your credentials and then press **Install**
+    4. **Login** with your credentials and then press **Install**
 
         ![4](/img/e-commerce/easyStore/4.png)
+
         ![5](/img/e-commerce/easyStore/5.png)
 
-    1.1.5 : Press SAVE
+    5. Press SAVE
 
         ![6](/img/e-commerce/easyStore/6.png)
+
         - Once linking Successful, system will be returned status Linking Success Message.
 
-## 1.2 Configure E Commerce Setting
+## 2. Configure E Commerce Setting
 
-    1.2.1 GL -> Maintain Account
+    1. GL -> Maintain Account
 
-        i) Create EasyStore Voucher / Discount Account Under Sales Adjustment
+        1. Create EasyStore Voucher / Discount Account Under Sales Adjustment
 
             ![7](/img/e-commerce/easyStore/7.png)
 
 
-        ii) Create Shipping and Transaction Fee under Expenses
+        2. Create Shipping and Transaction Fee under Expenses
 
             ![8](/img/e-commerce/easyStore/8.png)
 
-:::info
-It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
-:::
+            :::info
+            It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
+            :::
 
-    1.2.2 Customer -> Maintain Customer
+    2. Customer -> Maintain Customer
 
         ![9](/img/e-commerce/easyStore/9.png)
 
-    1.2.3 Stock -> Maintain Stock Group
-    Create EasyStore Shipping / Transaction / Voucher / Discount Stock Group
+    3. Stock -> Maintain Stock Group
 
-    i) Create Discount Stock Group
+        Create EasyStore Shipping / Transaction / Voucher / Discount Stock Group
 
-        ![10](/img/e-commerce/easyStore/10.png)
+        1. Create Discount Stock Group
 
-    ii) Create Voucher Stock Group
+            ![10](/img/e-commerce/easyStore/10.png)
 
-        ![11](/img/e-commerce/easyStore/11.png)
-        - Repeat same step to create for Shipping and Transaction Fees Stock Group
+        2. Create Voucher Stock Group
 
-    1.2.4 Stock -> Stock Item
+            ![11](/img/e-commerce/easyStore/11.png)
 
-        i) Create Discount Stock Item
+            - Repeat same step to create for Shipping and Transaction Fees Stock Group
+
+    4. Stock -> Stock Item
+
+        1. Create Discount Stock Item
 
             ![12](/img/e-commerce/easyStore/12.png)
 
-        ii) Create Voucher Item Code
+        2. Create Voucher Item Code
 
             ![13](/img/e-commerce/easyStore/13.png)
+
             - Repeat same step to create for Shipping and Transaction Fees Item Code
 
-## 1.3 Account Tab
+## 3. Account Tab
 
-    1.3.1 Click on - >Easy Store
+    1. Click on - >Easy Store
 
         ![14](/img/e-commerce/easyStore/14.png)
+
         ![15](/img/e-commerce/easyStore/15.png)
 
-    1.3.2 Click on Account Tab -> Double click on your account
-        1.3.2.1 Mapping Code
+    2. Click on Account Tab -> Double click on your account
+
+        1. Mapping Code
 
             ![16](/img/e-commerce/easyStore/16.png)
 
-## 1.4 Product Tab
+## 4. Product Tab
 
-### 1.4.1 Fetch Product
+    1. Fetch Product
 
-        1.4.1.1 Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
+        1. Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
 
             ![17](/img/e-commerce/easyStore/17.png)
 
-        1.4.1.2 Verify Status: Exist in Stock Item are meaning SQL and EasyStore Shop SKU are having the same Item Code.
+        2. Verify Status: Exist in Stock Item are meaning SQL and EasyStore Shop SKU are having the same Item Code.
 
             ![18](/img/e-commerce/easyStore/18.png)
 
-        If you decide to use the same item code as EasyStore Shop SKU, click on select All records -> press on Post button for the first time so system will remember the settings.
+            If you decide to use the same item code as EasyStore Shop SKU, click on select All records -> press on Post button for the first time so system will remember the settings.
 
             ![19](/img/e-commerce/easyStore/19.png)
 
-        1.4.1.3 Verify Status: Success when posting done
+        3. Verify Status: Success when posting done
 
             ![20](/img/e-commerce/easyStore/20.png)
 
-:::note
-Once you post successful, system will keep the ID in Stock Item as Alternative Item
-:::
-![21](/img/e-commerce/easyStore/21.png)
+            :::note
+            Once you post successful, system will keep the ID in Stock Item as Alternative Item
+            :::
 
-        1.4.1.4 You can still decide to map to different item code (system will auto ticked the record you change the item code), once done all, click on POST button.
+            ![21](/img/e-commerce/easyStore/21.png)
+
+        4. You can still decide to map to different item code (system will auto ticked the record you change the item code), once done all, click on POST button.
 
             ![22](/img/e-commerce/easyStore/22.png)
 
-## 1.5 Orders Tab
+## 5. Orders Tab
 
     - Click on Orders Tab
 
         ![23](/img/e-commerce/easyStore/23.png)
 
-### 1.5.1 Status – Default Post Action
+    1. Status – Default Post Action
 
-    ![24](/img/e-commerce/easyStore/24.png)
-    ![25](/img/e-commerce/easyStore/25.png)
+        ![24](/img/e-commerce/easyStore/24.png)
 
-:::tip
-Each order number will be posted once. You can delete the Invoice if you want to repost.
-:::
+        ![25](/img/e-commerce/easyStore/25.png)
 
-### 1.5.2 Fetch Order
+        :::tip
+        Each order number will be posted once. You can delete the Invoice if you want to repost.
+        :::
 
-1.5.2.1 Select Date Range -> Click on Refresh Order
+    2. Fetch Order
 
-    ![26](/img/e-commerce/easyStore/26.png)
+        1. Select Date Range -> Click on Refresh Order
 
-Please be patient, system is on the way to fetch the order from EasyStore
+            ![26](/img/e-commerce/easyStore/26.png)
 
-    ![27](/img/e-commerce/easyStore/27.png)
+            Please be patient, system is on the way to fetch the order from EasyStore
 
-System will return the message when Fetching Done, Press OK.
+            ![27](/img/e-commerce/easyStore/27.png)
 
-### 1.5.3 Post Order
+            System will return the message when Fetching Done, Press OK.
 
-1.5.3.1 Click on the status you want to post the order, let us take an example on Paid Status -> Ticked all -> Click on Post
+    3. Post Order
 
-    ![28](/img/e-commerce/easyStore/28.png)
+        1. Click on the status you want to post the order, let us take an example on Paid Status -> Ticked all -> Click on Post
 
-1.5.3.2 If you did not tick on any order when do the posting, system will raise a message: You have not selected any order. Would you like to select all? If you would like to post all -> Press Yes
+            ![28](/img/e-commerce/easyStore/28.png)
 
-    ![29](/img/e-commerce/easyStore/29.png)
+        2. If you did not tick on any order when do the posting, system will raise a message: You have not selected any order. Would you like to select all? If you would like to post all -> Press Yes
 
-Please be patient to wait for the order posting.
+            ![29](/img/e-commerce/easyStore/29.png)
 
-    ![30](/img/e-commerce/easyStore/30.png)
+            Please be patient to wait for the order posting.
 
-1.5.3.3 Click on OK when done posting
+            ![30](/img/e-commerce/easyStore/30.png)
 
-    ![31](/img/e-commerce/easyStore/31.png)
+        3. Click on OK when done posting
 
-### 1.5.4 Verify Status
+            ![31](/img/e-commerce/easyStore/31.png)
 
-    ![32](/img/e-commerce/easyStore/32.png)
+    4. Verify Status
 
-1.5.4.1 Posted
+        ![32](/img/e-commerce/easyStore/32.png)
 
-- Earlier Order posted before, system will ignore.
+        1. Posted
 
-  1.5.4.2 Success
+            - Earlier Order posted before, system will ignore.
 
-- Order had been successfully Posting.
+        2. Success
 
-  1.5.4.3 Failed – Missing Dataset Property
+            - Order had been successfully Posting.
 
-- Normally repost will be fine.
+        3. Failed – Missing Dataset Property
 
-  1.5.4.4 Failed – Missing Item Code
+            - Normally repost will be fine.
 
-- Is due to EasyStore have inactive item code, user can manually map in orders.  
-  Step 1: Click on Item Code Drop Down, user can manually map the item code  
-  Step 2: Ticked on the record you want to post  
-  Step 3: Click on Post
+       4. Failed – Missing Item Code
 
-      ![33](/img/e-commerce/easyStore/33.png)
+            - Is due to EasyStore have inactive item code, user can manually map in orders.
 
-### 1.5.5 Sales Invoice
+            Step 1: Click on Item Code Drop Down, user can manually map the item code
 
-- Example of Sales Invoice posted from EasyStore | Orders.
+            Step 2: Ticked on the record you want to post
 
-  ![34](/img/e-commerce/easyStore/34.png)
-  ![35](/img/e-commerce/easyStore/35.png)
+            Step 3: Click on Post
 
-### 1.5.6 Status – Others than Default POST Action
+                ![33](/img/e-commerce/easyStore/33.png)
 
-- Beside the post button, press the black triangle, and select “Post” to post it to sales invoice.
+    5. Sales Invoice
 
-  ![36](/img/e-commerce/easyStore/36.png)
-  ![37](/img/e-commerce/easyStore/37.png)
+        - Example of Sales Invoice posted from EasyStore | Orders.
 
-## 1.6 FAQ
+        ![34](/img/e-commerce/easyStore/34.png)
 
-### 1.6.1 How to get my EasyStore domain?
+        ![35](/img/e-commerce/easyStore/35.png)
 
-### 1. Login to your EasyStore account and go to Channls -> and click Online Store
+    6. Status – Others than Default POST Action
 
-    ![38](/img/e-commerce/easyStore/38.png)
+        - Beside the post button, press the black triangle, and select “Post” to post it to sales invoice.
 
-2. Then click Domains and copy the “easy.co” domain.
+        ![36](/img/e-commerce/easyStore/36.png)
 
-   ![39](/img/e-commerce/easyStore/39.png)
-   ![40](/img/e-commerce/easyStore/40.png)
+        ![37](/img/e-commerce/easyStore/37.png)
 
-### 1.6.2 How to do if have multiple location for each store?
+## 6. FAQ
 
-- It is advisable user to create one Location called Ecommerce, use the stock
-  transfer from location A to Ecommerce, Location B to Ecommerce, in
-  Ecommerce | Shopee | Account | Location set to Ecommerce.
+    1. How to get my EasyStore domain?
 
-### 1.6.3 Error sending data : (12002) The operation timed out.
+        1. Login to your EasyStore account and go to Channls -> and click Online Store
 
-1. User Internet unstable. Please check your internet connection. May try on
-   others wifi or using mobile data.
-2. EasyStore server down, please try again later.
+            ![38](/img/e-commerce/easyStore/38.png)
 
-### 1.6.4 Fetch Order raise error : E097 : Offset and limit sum 5100 must less than 5000, request id : 2101235d16xxxx
+        2. Then click Domains and copy the “easy.co” domain.
 
-    ![41](/img/e-commerce/easyStore/41.png)
+            ![39](/img/e-commerce/easyStore/39.png)
 
-- EasyStore API Returned error as too huge transaction being fetched, the
-  only way is to shorten the date period.
+            ![40](/img/e-commerce/easyStore/40.png)
 
-### 1.6.5 The specified access token is invalid or expired.
+    2. How to do if have multiple location for each store?
 
-    ![42](/img/e-commerce/easyStore/42.png)
+        - It is advisable user to create one Location called Ecommerce, use the stock transfer from location A to Ecommerce, Location B to Ecommerce, in Ecommerce | Shopee | Account | Location set to Ecommerce.
 
-- EasyStore API link expired, you are required to go back maintain cloud
-  and link again with EasyStore platform (Refer Step 1.1.3 – 1.1.5)
+    3. Error sending data : (12002) The operation timed out.
 
-### 1.6.6 API access frequently exceeds the limit. This ban will last 1 seconds.
+        1. User Internet unstable. Please check your internet connection. May try on others wifi or using mobile data.
 
-    ![43](/img/e-commerce/easyStore/43.png)
+        2. EasyStore server down, please try again later.
 
-- Error appears after click Fetch. Solution, close your EasyStore tab in
-  SQL Account -> re-open it -> click “Fetch” button again
+    4. Fetch Order raise error : E097 : Offset and limit sum 5100 must less than 5000, request id : 2101235d16xxxx
+
+        ![41](/img/e-commerce/easyStore/41.png)
+
+        - EasyStore API Returned error as too huge transaction being fetched, the only way is to shorten the date period.
+
+    5. The specified access token is invalid or expired.
+
+        ![42](/img/e-commerce/easyStore/42.png)
+
+        - EasyStore API link expired, you are required to go back maintain cloud and link again with EasyStore platform (Refer Step 1.1.3 – 1.1.5)
+
+    6. API access frequently exceeds the limit. This ban will last 1 seconds.
+
+        ![43](/img/e-commerce/easyStore/43.png)
+
+        - Error appears after click Fetch. Solution, close your EasyStore tab in SQL Account -> re-open it -> click “Fetch” button again

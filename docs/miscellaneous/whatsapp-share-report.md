@@ -3,11 +3,11 @@ sidebar_position: 16
 id: whatsapp-share-report
 title: Whatsapp Share - Report
 description: A quick guide on Whatsapp Share - Report for SQL Account
-slug: /whatsapp-share-report
+slug: /miscellaneous/whatsapp-share-report
 tags: ["SQL Account", "Whatsapp", "Report"]
 ---
 
-![1](/img/miscellaneous/whatsapp-share-report/1.png)
+<!-- ![1](/img/miscellaneous/whatsapp-share-report/1.png) -->
 
 ## WhatsApp Share
 
@@ -20,7 +20,9 @@ Preview report | Click drop down arrow
    ![3](/img/miscellaneous/whatsapp-share-report/3.png)
 
 :::info
+
 Might prompt a message ask to install Microsoft Web, click OK to install
+
 :::
 
 Show WhatsApp web | Linked Devices by scanning the QR Code
@@ -33,8 +35,7 @@ Once linked, you will see this screen
 
 ## Customer / Supplier
 
-If you have updated your Customer or Supplier mobile number In Maintain Customer or Maintain
-Supplier, system will auto tick the relevant Customer or Supplier name
+If you have updated your Customer or Supplier mobile number In Maintain Customer or Maintain Supplier, system will auto tick the relevant Customer or Supplier name
 
     ![6](/img/miscellaneous/whatsapp-share-report/6.png)
 
@@ -54,14 +55,16 @@ Message and attachment will send to your customer/supplier directly without expo
 
 Click Phonebook, these are the contact number from your own mobile contact book
 
-    ![10](/img/miscellaneous/whatsapp-share-report/10.png)  
+    ![10](/img/miscellaneous/whatsapp-share-report/10.png)
+
     *Tick on the check box | Click Send
 
 ### Group
 
 Click Group, there are your WhatsApp Group
 
-    ![11](/img/miscellaneous/whatsapp-share-report/11.png)  
+    ![11](/img/miscellaneous/whatsapp-share-report/11.png)
+
     *tick on the check box | Click Send
 
 ### New Contact

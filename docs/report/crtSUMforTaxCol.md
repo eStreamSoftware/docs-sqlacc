@@ -3,38 +3,48 @@ sidebar_position: 13
 id: crtSUMforTaxCol
 title: Guideline to Create SUM Variable for TAX Column
 description: Guild on creating variable of SUM Amount, Local Amt and Amt Include Tax
-slug: /crtSUMforTaxCol
+slug: /report/crtSUMforTaxCol
 tags: ["Report", "ReportBuilder"]
 ---
 
-# Guideline to Create SUM Variable for TAX Column
+## Steps & Instructions
+
 ![1](/img/report/crtSUMforTaxCol/1.png)
 
-1. Click on the variable icon 
-2. Click on where you want to create a new variable, right click on the variable created > go calculations , Insert the Query below accordingly 
-3. Click on the variable created, and make sure choose it to DOUBLE.
+1. Click on the variable icon
 
-**<ins>Formula for Sub Total</ins>**
+2. Click on where you want to create a new variable, right click on the variable created > go calculations , Insert the [QUERY](#query) below accordingly
 
-<mark>Variable1</mark>.DisplayFormat := Option.GetFieldValue('AccountingValueDisplayFormat');  
-Value := GetAggregateValue(agSUM, Document_Detail, 'DocKey', 'Amount');   
-<mark>*** Refer above picture on how to Check the variable field name and replace it accordingly</mark>
+3. Click on the variable created, and make sure choose it to **DOUBLE**.
 
+## Query
 
-**<ins>Formula for Total Exclude GST (RM)</ins>**
+:::info[note]
+Refer to the [IMAGE](#steps--instructions) above on how to check the variable field name and replace it accordingly
+:::
 
-<mark>Variable2</mark>.DisplayFormat := Option.GetFieldValue('AccountingValueDisplayFormat');  
-Value := GetAggregateValue(agSUM, Document_Detail, 'DocKey', 'LocalAmount');   
-<mark>*** Refer above picture on how to Check the variable field name and replace it accordingly</mark>
+- **Formula for Sub Total**
 
-**<ins>Formula for Total of Tax Amt (RM)</ins>**
+    >**Variable1**.DisplayFormat := Option.GetFieldValue('AccountingValueDisplayFormat');
+    >
+    >Value := GetAggregateValue(agSUM, Document_Detail, 'DocKey', 'Amount');
+    >
 
-<mark>Variable5</mark>.DisplayFormat := Option.GetFieldValue('AccountingValueDisplayFormat');  
-Value := GetAggregateValue(agSUM, Document_Detail, 'DocKey', 'LocalTaxAmt');  
-<mark>*** Refer above picture on how to Check the variable field name and replace it accordingly</mark>
+- **Formula for Total Exclude GST (RM)**
 
-**<ins>Formula for Total Include GST (RM)</ins>**
+    >**Variable2**.DisplayFormat := Option.GetFieldValue('AccountingValueDisplayFormat');
+    >
+    >Value := GetAggregateValue(agSUM, Document_Detail, 'DocKey', 'LocalAmount');
+    >
 
-<mark>Variable6</mark>.DisplayFormat := Option.GetFieldValue('AccountingValueDisplayFormat');  
-Value := GetAggregateValue(agSUM, Document_Detail, 'DocKey', 'LocalAmountWithTax');  
-<mark>*** Refer above picture on how to Check the variable field name and replace it accordingly</mark>
+- **Formula for Total of Tax Amt (RM)**
+
+    >**Variable5**.DisplayFormat := Option.GetFieldValue('AccountingValueDisplayFormat');
+    >
+    >Value := GetAggregateValue(agSUM, Document_Detail, 'DocKey', 'LocalTaxAmt');
+
+- **Formula for Total Include GST (RM)**
+
+    >**Variable6**.DisplayFormat := Option.GetFieldValue('AccountingValueDisplayFormat');
+    >
+    >Value := GetAggregateValue(agSUM, Document_Detail, 'DocKey', 'LocalAmountWithTax');

@@ -3,35 +3,36 @@ sidebar_position: 1
 id: add-fromDocNo-fromDocDate
 title: Add FromDocNo and FromDocDate Variable in Report Design
 description: A guide to add FromDocNo and FromDocDate Var in Report Design
-slug: /add-fromDocNo-fromDocDate
+slug: /report/add-fromDocNo-fromDocDate
 tags: ["Report", "ReportBuilder"]
 ---
 
-# Add FromDocNo and FromDocDate Variable in Report Design
+## Instruction
+
 1. Go in Report Design | Click on ![1](/img/report/add-fromDocNo-fromDocDate/1.png) then place at the grid – refer below Pic
-   
+
    ![2](/img/report/add-fromDocNo-fromDocDate/2.png)
 
-   1.1 Right Click on Variable2 | Select Calculation | 
+   1. Right Click on Variable2 | Select Calculation |
 
-   ![3](/img/report/add-fromDocNo-fromDocDate/3.png)
+      ![3](/img/report/add-fromDocNo-fromDocDate/3.png)
 
-   After Done press OK
+      After Done press OK
 
-2. If you preview saw the date is appearing
+2. If the date is not appearing in report preview
 
    ![4](/img/report/add-fromDocNo-fromDocDate/4.png)
 
-   2.1 Click on Calc Tab
+   1. Click on **Calc Tab**
 
-   2.2 Menu bar click View | Select Events
+   2. **Menu bar** | click **View** | Select **Events**
 
-   2.3 Look for Variable
+   3. Look for ***Variable***
 
-   2.4 22.4 Click on OnPrint
+   4. Click on **OnPrint**
 
-   2.5 Click on Document_Detail
+   5. Click on **Document_Detail**
 
-   2.6 FromDocNo
+   6. Click on **FromDocNo**
 
-   2.7 Drag from Fromdocno to the query box.
+   7. Drag from **FromDocNo** to the query box.

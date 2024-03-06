@@ -3,39 +3,44 @@ sidebar_position: 14
 id: disbQryinRpt
 title: How to Disable Query in Report
 description: Steps to disable query for deleted field in report designer
-slug: /disbQryinRpt
-tags: ["Report", "ReportBuilder"]
+slug: /report/disbQryinRpt
+tags: ["Report", "ReportBuilder", "Query"]
 ---
 
-# How to Disable Query in Report
-![1](/img/report/disbQryinRpt/1.png) 
+## Steps & Instructions
 
-1. If you had deleted any field in report designer with Query, then u will get above message, click Ok 
+1. If you had deleted any field in report designer with Query, then u will get the below message, click **OK**
 
-![2](/img/report/disbQryinRpt/2.png) 
+   ![1](/img/report/disbQryinRpt/1.png)
 
 2. Click on the blue colour report name to enter in report designer page
 
-![3](/img/report/disbQryinRpt/3.png) 
+   ![2](/img/report/disbQryinRpt/2.png)
 
-3. Before delete the field, click on the field and see left bottom, you can see the field name or if you had deleted the field refer step 4.
+3. Click on the field, the field name will be shown at the left bottom of the application as shown below. If you had deleted the field, refer to step 4.
 
-![4](/img/report/disbQryinRpt/4.png) 
+   ![3](/img/report/disbQryinRpt/3.png)
 
-4. Click on CALC, go View > Modules 
+4. Click on **CALC**, go View > Modules
 
-![5](/img/report/disbQryinRpt/5.png) 
+   ![4](/img/report/disbQryinRpt/4.png)
 
-5. 1. Click on Event Handlers
-   2. go procedure DetailBeforePrint
-   3. you will see the error on bottom , u have to just double click on it .. and system will bring you to the row with 
-error 
-6) Enter <mark>//</mark> as above screen 
+5. Follow the steps below:
 
-![6](/img/report/disbQryinRpt/6.png) 
+   1. Click on **Event Handlers**
 
-7) Right click and compile , make sure no error > save > close the preview screen and try preview again. 
+   2. Go to **procedure DetailBeforePrint**
+
+   3. An error will be shown at the bottom, double click on it, and the system will redirect to the row with the error
+
+   ![5](/img/report/disbQryinRpt/5.png)
+
+6. Enter '//' as in the image below :
+
+   ![6](/img/report/disbQryinRpt/6.png)
+
+7. Right click and compile , make sure no error > save > close the preview screen and try preview again.
 
 :::info[Note]
-You can also refer video at www.sql.com.my on above issue.
+You can also refer to the guidance video at [HERE](https://www.sql.com.my/) regarding the above issue.
 :::

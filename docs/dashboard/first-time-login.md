@@ -2,9 +2,9 @@
 sidebar_position: 1
 id: first-time-login
 title: First Time Login SQL Business Intelligence Dashboard
-description: Guiding on first time user to login to SQL Business INtelligence Dashboard
+description: Guiding on first time user to login to SQL Business Intelligence Dashboard
 slug: /dashboard/first-time-login
-tags: ["Dashboard"]
+tags: ["SQL Accounting", "Dashboard"]
 ---
 
 ## Steps to Register a New Account

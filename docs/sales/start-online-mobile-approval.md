@@ -10,6 +10,7 @@ tags: ["Sales", "Online Mobile Approval"]
 ## Step 1 : Maintain User
 
 1. Tools > Maintain User
+
     ![1](/img/sales/start-online-mobile-approval/1.png)
 
 ## Step 2 : Edit User

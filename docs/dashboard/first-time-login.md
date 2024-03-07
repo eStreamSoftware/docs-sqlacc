@@ -25,7 +25,7 @@ tags: ["SQL Accounting", "Dashboard"]
 
     ![4](/img/dashboard/first-time-login/4.png)
 
-5. Enter your name & click save 
+5. Enter your name & click save
 
     ![5](/img/dashboard/first-time-login/5.png)
 

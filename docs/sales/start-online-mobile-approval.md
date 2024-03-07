@@ -7,13 +7,15 @@ slug: /sales/start-online-mobile-approval
 tags: ["Sales", "Online Mobile Approval"]
 ---
 
-## Step 1 : Maintain User
+## Steps & Instructions
+
+### Step 1 : Maintain User
 
 1. Tools > Maintain User
 
     ![1](/img/sales/start-online-mobile-approval/1.png)
 
-## Step 2 : Edit User
+### Step 2 : Edit User
 
 1. Double click the user that you want to setting > Edit
 
@@ -21,7 +23,7 @@ tags: ["Sales", "Online Mobile Approval"]
 
     ![3](/img/sales/start-online-mobile-approval/3.png)
 
-## Step 3 : Set Approval Person
+### Step 3 : Set Approval Person
 
 - Setting The Detail For Approval Person (ONLY GMAIL CAN LOGIN TO APPROVE OR REJECT)
 
@@ -58,7 +60,7 @@ tags: ["Sales", "Online Mobile Approval"]
 
             ![6](/img/sales/start-online-mobile-approval/6.png)
 
-## Step 4 : Setting SMTP
+### Step 4 : Setting SMTP
 
 :::info[note]
 
@@ -82,7 +84,7 @@ tags: ["Sales", "Online Mobile Approval"]
 
     ![7](/img/sales/start-online-mobile-approval/7.png)
 
-## How it works?
+### How it works?
 
 >For example : If we set Credit Limit over RM30,000 need override
 
@@ -171,7 +173,7 @@ tags: ["Sales", "Online Mobile Approval"]
 
             ![19](/img/sales/start-online-mobile-approval/19.png)
 
-## When to use?
+### When to use?
 
 These **ALL** can use Online Approval for user :
 

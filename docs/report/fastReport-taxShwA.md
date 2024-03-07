@@ -7,7 +7,9 @@ slug: /report/fastReport-taxShwA
 tags: ["Report Builder", "Fast Report", "Tax"]
 ---
 
-## Report Builder
+## Steps & Instructions
+
+### Report Builder
 
 ![1](/img/report/fastReport-taxShwA/1.png)
 
@@ -101,7 +103,7 @@ tags: ["Report Builder", "Fast Report", "Tax"]
 
    ![13](/img/report/fastReport-taxShwA/13.png)
 
-## Fast Report
+### Fast Report
 
 1. Preview the Report format, Click on blue color link and enter into Report Design. (Refer **Pic1**)
 

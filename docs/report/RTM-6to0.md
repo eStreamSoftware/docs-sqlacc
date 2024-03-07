@@ -53,7 +53,7 @@ SQL Account system build in report format will automatic detect your Tax Rate ba
 
    ![3](/img/report/RTM-6to0/3.png)
 
-## Display Tax as 0.00 Instead of Blank
+### Display Tax as 0.00 Instead of Blank
 
 1. Click on your report name to enter into report designer page.
 

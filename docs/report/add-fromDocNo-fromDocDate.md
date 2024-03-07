@@ -7,7 +7,7 @@ slug: /report/add-fromDocNo-fromDocDate
 tags: ["Report", "ReportBuilder"]
 ---
 
-## Instruction
+## Steps & Instructions
 
 1. Go in Report Design | Click on ![1](/img/report/add-fromDocNo-fromDocDate/1.png) then place at the grid – refer below Pic
 

@@ -22,4 +22,3 @@ tags: ["Fast Report", "DateTime"]
 4. Preview
 
     ![2](/img/report/fastReport-prtDTime/2.png)
-

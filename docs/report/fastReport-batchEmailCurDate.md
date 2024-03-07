@@ -7,7 +7,7 @@ slug: /report/fastReport-batchEmailCurDate
 tags: ["Fast Report", "Batch Email"]
 ---
 
-## Steps & Instruction
+## Steps & Instructions
 
 - This guide will teach you on how to capture current date on your export PDF File Name.
 

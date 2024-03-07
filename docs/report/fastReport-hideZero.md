@@ -7,7 +7,9 @@ slug: /report/fastReport-hideZero
 tags: ["Fast Report"]
 ---
 
-## Method 1
+## Steps & Instructions
+
+### Method 1
 
    1. Right Click on the Text | Select Hide Zeros
 
@@ -17,7 +19,7 @@ tags: ["Fast Report"]
 
    3. Try save the report and preview the result.
 
-## Method 2
+### Method 2
 
 :::info[note]
 Only if Method 1 can’t work.

@@ -11,17 +11,19 @@ tags: ["SQL Account", "Tools", "Analyse","Data Integrity"]
 Recommended to run every day or at least once per week.
 :::
 
-## 1. Go to Tools > Analyse data integrity
+## Steps and Instructions
+
+### 1. Go to Tools > Analyse data integrity
 
 ![1](/img/tools/data-integrity/1.png)
 
-## 2. Click Start Analyse
+### 2. Click Start Analyse
 
 - Proceed if user wanted to run for all option for Analyze Item checkbox
 
 ![2](/img/tools/data-integrity/2.png)
 
-## 3. Click on Ok and Close
+### 3. Click on Ok and Close
 
 ![3](/img/tools/data-integrity/3.png)
 

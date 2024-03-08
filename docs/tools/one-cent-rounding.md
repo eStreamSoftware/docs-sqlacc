@@ -11,7 +11,9 @@ tags: ["SQL Account", "Tools", "Rounding"]
  Once Cent different Rounding(Local Currency Fields) for all AR/SL Documents **(Recommended)**
 :::
 
-## 1. Tools | Option | Customer
+## Steps and Instructions
+
+### 1. Tools | Option | Customer
 
 ![1](/img/tools/one-cent-rounding/1.png)
 
@@ -19,7 +21,7 @@ tags: ["SQL Account", "Tools", "Rounding"]
 
 2. Press OK
 
-## 2. Sales Invoice | New | Refer below screen
+### 2. Sales Invoice | New | Refer below screen
 
 ![2](/img/tools/one-cent-rounding/2.png)
 

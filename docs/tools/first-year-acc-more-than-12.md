@@ -17,13 +17,15 @@ First financial period will in 18 month which is from 1st July 2014 to 31st Dece
 You are advise to set your financial start period and system conversion date as below.
 :::
 
-## 1. Go Tools > Option > General Ledger
+## Steps and Instructions
+
+### 1. Go Tools > Option > General Ledger
 
 - Setting your financial start period and system conversion date as 1/1/2014, so in the following year, you do not need to run year end to set again your financial start period & System conversion date.
 
 ![1](/img/tools/first-year-acc-more-than-12/1.png)
 
-## 2. Setting profit & loss statement print in 18 months
+### 2. Setting profit & loss statement print in 18 months
 
 ![2](/img/tools/first-year-acc-more-than-12/2.png)
 

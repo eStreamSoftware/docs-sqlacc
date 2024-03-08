@@ -11,11 +11,13 @@ tags: ["SQL Account", "Format", "Tools","Running No", "Date"]
 PV0615/001 (PVmmyy/001)
 :::
 
-## Step 1
+## Steps and Instructions
+
+### Step 1
 
 Tools | Maintain Document No
 
-## Step 2
+### Step 2
 
 Create New or amend from the existing
 
@@ -25,7 +27,7 @@ Create New or amend from the existing
 make sure the format is follow the sample attached
  :::
 
-## Step 3
+### Step 3
 
 ![2](/img/tools/running-no-date-year-format/2.png)
 
@@ -35,7 +37,7 @@ make sure the format is follow the sample attached
 We can also set default running no at for default payment method
 :::
 
-## Step 4
+### Step 4
 
 Go to tools | Maintain Payment Method
 

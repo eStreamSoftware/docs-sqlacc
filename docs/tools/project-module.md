@@ -11,27 +11,29 @@ tags: ["SQL Account", "Tools", "Project Module"]
 This module allow user to maintain the project accounting as the branch or departmental basis, normally user will use for simple construction base so that they get to view Profit and Loss / Balance Sheet compare by Project.
 :::
 
-## 1. Click on **Tools | Maintain Project.**
+## Steps and Instructions
+
+### 1. Click on **Tools | Maintain Project.**
 
 ![1](/img/tools/project-module/1.png)
 
-## 2. Insert **Project Code & Description**
+### 2. Insert **Project Code & Description**
 
 - For project value and project cost is not compulsory field to fill in, if you have fill in then it’s just remark purpose.
 
 ![2](/img/tools/project-module/2.png)
 
-## 3. Click on **Tools | Options**
+### 3. Click on **Tools | Options**
 
 ![3](/img/tools/project-module/3.png)
 
-## 4. Then look for **Miscellaneous**
+### 4. Then look for **Miscellaneous**
 
 - Make sure “ **Show Document Project** “ have tick this option.
 
 ![4](/img/tools/project-module/4.png)
 
-## 5. During **sales and purchase** transaction
+### 5. During **sales and purchase** transaction
 
 - Make sure you can **call out the project option**, then **update** accordingly.
 
@@ -67,7 +69,7 @@ It is not compulsory to select either of them, it depends on what kind of report
 After complete update the document with project, then how to view report with project and compare by project? For example : **GL | Print Profit & Loss Statement**.
 :::
 
-## 6. Filter the date that you want to view for P&L report
+### 6. Filter the date that you want to view for P&L report
 
 - Then if you want to view project comparison then choose “Comparison – Project ( 6 column )”
 
@@ -81,7 +83,7 @@ After complete update the document with project, then how to view report with pr
 
 :::
 
-## 7. Select the desired report
+### 7. Select the desired report
 
 1. Make sure to tick on the “ Show Column Options”, then the top of the report will appear column option.
 
@@ -89,13 +91,13 @@ After complete update the document with project, then how to view report with pr
 
 ![9](/img/tools/project-module/9.png)
 
-## 8. Tick on the “ Print Project Comparison”
+### 8. Tick on the “ Print Project Comparison”
 
 - Then at right hand site will come out the project tab, you can select which project that you want to view then click on Add.
 
 ![10](/img/tools/project-module/10.png)
 
-## 9.  Click on Apply
+### 9.  Click on Apply
 
 - You will see the result. The P&L report will compare each project that you select
 

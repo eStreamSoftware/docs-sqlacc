@@ -100,6 +100,8 @@ You are recommend to create all the item code first
     - Set Exported folder C:\ITUnicode\
     - Directory of Work : C:\ITUnicode\
 
+    ![17](/img/pos/weighing-scale/17.png)
+
 7. Click on Confirm
 
 8. Setting for RLS1000

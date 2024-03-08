@@ -7,8 +7,9 @@ slug: /general-ledger/trial-balance-not-tally
 tags: ["SQL Account", "Trial Balance", "General Ledger", "Tally"]
 ---
 
+## Steps and Instructions
 
-## 1. Make sure Retained Earning must have 1 Account code. Refer Pic1
+### 1. Make sure Retained Earning must have 1 Account code. Refer Pic1
 
    1. GL | Maintain Chart of Account |
 
@@ -18,7 +19,7 @@ tags: ["SQL Account", "Trial Balance", "General Ledger", "Tally"]
    If your Retained Earning is empty, you may create under Reserve, then only drag into Retained Earning.
    :::
 
-## 2. Make Sure Maintain Opening Is Tally
+### 2. Make Sure Maintain Opening Is Tally
 
 1. GL | Maintain Opening Balance
 
@@ -28,7 +29,7 @@ tags: ["SQL Account", "Trial Balance", "General Ledger", "Tally"]
 
    ![2](/img/general-ledger/trial-balance-not-tally/2.png)
 
-## 3. Not tally due to current transaction
+### 3. Not tally due to current transaction
 
 :::tip
 If above 2 step is tally, which mean is current transaction cause not tally, kindly follow below step

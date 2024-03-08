@@ -13,14 +13,16 @@ A bank reconciliation is a process performed by a company to ensure that the com
 are also correct.
 :::
 
-## 1. Reconciliation Bank Transaction
+## Steps and Instructions
+
+### 1. Reconciliation Bank Transaction
 
    GL | Bank Reconciliation
    ![1](/img/general-ledger/bank-recon/1.png)
 
    ![2](/img/general-ledger/bank-recon/2.png)
 
-## 2. Bank Reconciliation
+### 2. Bank Reconciliation
 
 - Select the Bank Statement Date
 - Select the Bank Account, eg. Hong Leong Bank
@@ -37,7 +39,7 @@ are also correct.
 
    As attached bank statement is the sample, compare with the transaction, if exist then you may check as sample picture above.
 
-## 3. Print Bank Reconciliation Report
+### 3. Print Bank Reconciliation Report
 
 After reconciliation done, you can save and preview reconciliation report
 

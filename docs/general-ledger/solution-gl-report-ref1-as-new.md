@@ -7,6 +7,7 @@ slug: /general-ledger/solution-gl-report-ref1-as-new
 tags: ["SQL Account", "Report", "General Ledger", "Doc No", "Solution"]
 ---
 
+
 ![1](/img/general-ledger/solution-gl-report-ref1-as-new/1.png)
 
 ## Method 1

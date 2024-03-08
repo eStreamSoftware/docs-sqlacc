@@ -11,11 +11,13 @@ tags: ["SQL Account", "Stock Month End", "General Ledger","Auto Post","Maintain 
 Version 748 & above added feature which allow system auto post the stock value from Maintain Month End value to GL Maintain Stock Value.
 :::
 
-## Step 1 : Stock | Maintain Stock Group
+## Steps and Instructions
+
+### Step 1 : Stock | Maintain Stock Group
 
 ![1](/img/general-ledger/auto-post-stock-month-end-value/1.png)
 
-## Step 2 : Stock | Stock Month End Balance Report
+### Step 2 : Stock | Stock Month End Balance Report
 
 ![2](/img/general-ledger/auto-post-stock-month-end-value/2.png)
 
@@ -23,6 +25,6 @@ Version 748 & above added feature which allow system auto post the stock value f
 Required to fill in Balance Sheet Account in Stock Group in order able to show the update GL Stock Value.
 :::
 
-## Step 3 : GL | Maintain Stock Value
+### Step 3 : GL | Maintain Stock Value
 
 ![3](/img/general-ledger/auto-post-stock-month-end-value/3.png)

@@ -7,8 +7,9 @@ slug: /general-ledger/auto-recon
 tags: ["SQL Account", "Bank Reconciliation", "General Ledger","Auto"]
 ---
 
+## Steps and Instructions
 
-## 1. In SQL General Ledger, go to **Bank Reconciliation** -> **Create New**
+### 1. In SQL General Ledger, go to **Bank Reconciliation** -> **Create New**
 
 1. Select the **Bank Statement Date**
 
@@ -54,7 +55,7 @@ tags: ["SQL Account", "Bank Reconciliation", "General Ledger","Auto"]
 
    ![7](/img/general-ledger/auto-recon/7.png)
 
-## 2. Step to match on unmatched transactions with bank statement
+### 2. Step to match on unmatched transactions with bank statement
 
 1. Click on the untick transaction.
 

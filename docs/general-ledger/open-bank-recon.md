@@ -7,14 +7,16 @@ slug: /general-ledger/open-bank-recon
 tags: ["SQL Account", "Bank Reconciliation", "General Ledger","Opening"]
 ---
 
-## 1. GL | Bank Reconciliation
+## Steps and Instructions
 
-## 2. New
+### 1. GL | Bank Reconciliation
 
-## 3. Right Click on empty space, **refer picture**
+### 2. New
+
+### 3. Right Click on empty space, **refer picture**
 
 ![1](/img/general-ledger/open-bank-recon/1.png)
 
-## 4. Key in the information
+### 4. Key in the information
 
 ![2](/img/general-ledger/open-bank-recon/2.png)

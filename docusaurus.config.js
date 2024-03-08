@@ -38,6 +38,9 @@ const config = {
           routeBasePath: "/",
           sidebarPath: "./sidebars.js",
         },
+        theme: {
+          customCss: [require.resolve('./static/css/custom.css')],
+        }
       }),
     ],
   ],

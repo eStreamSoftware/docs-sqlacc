@@ -7,7 +7,7 @@ slug: /stock-take-app/stock-take
 tags: ["SQL Account", "Stock"]
 ---
 
-## 1. STOCK TAKE ITEMS LIST IMPORT
+### 1. STOCK TAKE ITEMS LIST IMPORT
 
 Before following the steps in the subsections below, **PLEASE MAKE SURE USER HAS A SQL DRIVE ACCOUNT. FOR NEW USER, PLEASE CONTACT US TO REGISTER SQL DRIVE ACCOUNT. PROVIDE THE FOLLOWING USER DETAILS FOR REGISTRATION PURPOSE:**
 
@@ -59,7 +59,7 @@ ONLY ONE(1) SQL DRIVE ACCOUNT IS NEEDED FOR EACH COMPANY. FOR USER THAT ALREADY 
 
             * For device with stocj take share profile set, import process will begin immediately.
 
-## 2. SYNC STOCK TAKE RESULT TO SQL ACCOUNT
+### 2. SYNC STOCK TAKE RESULT TO SQL ACCOUNT
 
 Sync stock take result from Stock Take app to SQL Account to perform stock adjustment on SQL Account
 
@@ -79,7 +79,7 @@ Sync stock take result from Stock Take app to SQL Account to perform stock adjus
 
         2. On Stock Take window, click on "**Refresh**" button.
 
-## 3. RESET CONNECTION PROFILE
+### 3. RESET CONNECTION PROFILE
 
 User may want to reset Stock Take share profile on Stock Take app as user would want to switch to different Stock Take share profile.
 

@@ -57,6 +57,10 @@ It is required the SO → PO and Job Order module. For more information about pr
 
    :::
 
+   Below is **WHEEL** stock available balance,
+
+   ![2b](/img/additional-module/jo-po/2b.png)
+
 ## 3 PURCHASE ORDER (TRANSFER FROM SO)
 
 1. Create New Purchase Order (PO)
@@ -381,7 +385,10 @@ What is purpose of the OFFSET Qty in Sales Order? You will see a new column name
 
       For example,
 
-      ![26](/img/additional-module/jo-po/26.png)
+      | SO Original Qty | OffSet Qty     | Transferable to PO/ JO |
+      |-----------------|----------------|------------------------|
+      | 100.00          | 0.00 (default) | 100.00                 |
+      | 100.00          | +15.00         | 85.00                  |
 
    2. Negative Offset Qty
 
@@ -389,7 +396,10 @@ What is purpose of the OFFSET Qty in Sales Order? You will see a new column name
 
       For example,
 
-      ![27](/img/additional-module/jo-po/27.png)
+      | SO Original Qty | OffSet Qty     | Transferable to PO/ JO |
+      |-----------------|----------------|------------------------|
+      | 100.00          | 0.00 (default) | 100.00                 |
+      | 100.00          | -15.00         | 115.00                 |
 
 ## 7 REPORTS
 

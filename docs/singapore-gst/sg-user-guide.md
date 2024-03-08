@@ -891,6 +891,7 @@ Go to **GL | Print Ledger Report**
     6. **Local Currency & Foreign Currency** – If you have foreign currency transactions, you can tick the foreign currency so that the system will show the figures in foreign currency compare versus local currency.
 
 6. **Apply**.
+
     ![79](/img/singapore-gst/singapore-user-guide/79.png)
 
 ### 8.2 Customer Report
@@ -1907,7 +1908,7 @@ module for simple construction business as they get to view Profit and Loss / Ba
 
     ![191](/img/singapore-gst/singapore-user-guide/191.png)
 
-#### 12.9 5 Cents Rounding
+### 12.9 5 Cents Rounding
 
 We can pre-set the system to automatically round your invoice or cash sales amounts to the nearest 5 cents.
 

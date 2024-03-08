@@ -6,7 +6,7 @@ description: A guide to validate database using SQL Diagnosis Utility for SQL Ac
 slug: /troubleshooting/validate-database-using-diagnosis-utility
 tags: ["SQL Account", "Troubleshooting"]
 ---
-## Instruction
+## Steps & Instruction
 
 :::note
 Download & Install SQL Accounting Diagnosis from [**Here**](http://www.sql.com.my/utility/SQLAccDiagnosis-setup.exe)

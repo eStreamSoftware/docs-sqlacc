@@ -7,7 +7,7 @@ slug: /troubleshooting/how-to-do-patch-file-using-diagnosis-utility
 tags: ["SQL Account", "Troubleshooting"]
 ---
 
-## Instruction
+## Steps & Instruction
 
 :::note SITUATION
 After cloning master data, we want to delete a customer (AR) or a supplier (AP).

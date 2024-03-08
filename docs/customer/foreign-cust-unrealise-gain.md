@@ -7,7 +7,7 @@ slug: /customer/foreign-cust-unrealised-gain-loss
 tags: ["SQL Account", "Customer", "Payment", "Listing", "Commission"]
 ---
 
-## Customer | Print Customer Aging Report
+### Customer | Print Customer Aging Report
 
     ![1](/img/customer/foreign/1.png)
 
@@ -34,7 +34,7 @@ tags: ["SQL Account", "Customer", "Payment", "Listing", "Commission"]
     8. Click Post_DNCN_Adjustment
 
         ![5](/img/customer/foreign/5.png)
-        
+
     9. Show Posting Done...
 
         ![6](/img/customer/foreign/6.png)

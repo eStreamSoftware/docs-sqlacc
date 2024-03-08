@@ -9,7 +9,7 @@ tags: ["Customer", "Cheque"]
 
 <!-- # Post-dated Cheque & Bounced Cheque -->
 
-## Post-dated Cheque
+### Post-dated Cheque
 
 Post-dated cheque is a cheque written by the drawer (payer) for a date in the future.
 
@@ -55,7 +55,7 @@ Post-dated cheque is a cheque written by the drawer (payer) for a date in the fu
 
     ![11](/img/customer/post-dated-bounced-cheque/11.png)
 
-## Bounced Cheque
+### Bounced Cheque
 
 A bounced cheque is a cheque that cannot be processed because the payer has insufficient funds or written wrong / incomplete information on the cheque.
 

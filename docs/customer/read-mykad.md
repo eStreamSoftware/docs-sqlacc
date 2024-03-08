@@ -8,7 +8,7 @@ tags: ["Customer", "Bank"]
 ---
 
 <!-- # Maintain Customer using MyKard Reader   -->
-## How To Read MyKad
+### How To Read MyKad
 
     1. Link your Smart Card Reader to your computer
 

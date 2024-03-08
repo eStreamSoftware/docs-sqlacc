@@ -17,7 +17,7 @@ tags: ["SQL Account", "Customer", "Payment"]
 
     4. Customer currency (USD), receive payment in (SGD)
 
-## 1. Customer in RM currency & payment received in RM
+### 1. Customer in RM currency & payment received in RM
 
     ![1](/img/customer/payment-guide/1.png)
 
@@ -32,10 +32,10 @@ tags: ["SQL Account", "Customer", "Payment"]
 
     Make sure the above step for Customer in RM currency, payment in default is RM currency also.
 
-## 2. Customer currency (USD), receive payment in (RM)
+### 2. Customer currency (USD), receive payment in (RM)
 
-    1. Lets check on the current Customer with different Currency, 
-    
+    1. Lets check on the current Customer with different Currency,
+
         **Check on step 1.1.1 and proceed to customer with different currency**
 
         ![4](/img/customer/payment-guide/4.png)
@@ -47,15 +47,15 @@ tags: ["SQL Account", "Customer", "Payment"]
 
         ![5](/img/customer/payment-guide/5.png)
 
-    2A – Currency rate for knocking off the payment (System auto calculate)
+        - 2A – Currency rate for knocking off the payment (System auto calculate)
 
-    2B – Payment Amount made in RM (Note: This payment amount is based on Bank payment method currency) **[check on Tools >     Maintain payment method to know more!]**
+        - 2B – Payment Amount made in RM (Note: This payment amount is based on Bank payment method currency) **[check on Tools >     Maintain payment method to know more!]**
 
-    2C – Bank payment method, make sure you choose the correct bank.
+        - 2C – Bank payment method, make sure you choose the correct bank.
 
-    2D – This pay amount you can either put it on your desire amount and check on the 2A, you’ll notice that currency rate will change once you try to knock off the amount.
+        - 2D – This pay amount you can either put it on your desire amount and check on the 2A, you’ll notice that currency rate will change once you try to knock off the amount.
 
-## 3. Customer currency (USD), receive payment in (USD)
+### 3. Customer currency (USD), receive payment in (USD)
 
     1. For this case where customer currency is USD and payment also in USD, there’ll be a few more step to do.
 
@@ -97,7 +97,7 @@ Only Customer currency that is same with payment currency will enable the editin
 
     If your Invoice currency is stated 3.5 at the moment, and when your customer pay to you on 3.6 rate, the system will auto calculate the amount of gain/loss you actually got from this transaction and show to you the amount when you click save. Above prompt dialog will appear.
 
-## 4. Customer currency (USD), receive payment in (SGD)
+### 4. Customer currency (USD), receive payment in (SGD)
 
     For customer on USD and receiving payment on different currency you just need to main the payment method. How to maintain payment method? – Refer points [3](#3-customer-currency-usd-receive-payment-in-usd)
 

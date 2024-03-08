@@ -7,7 +7,7 @@ slug: /customer/payment-listing-comm
 tags: ["SQL Account", "Customer", "Payment", "Listing", "Commission"]
 ---
 
-## Guideline: Commission Report
+### Guideline: Commission Report
 
 1. Go to Tools> Maintain Commission Script and select new to add in the commission
    script. Fill in the Code and Description.
@@ -50,9 +50,9 @@ tags: ["SQL Account", "Customer", "Payment", "Listing", "Commission"]
 
    ![4](/img/customer/comm/4.png)
 
-    Value 10, 20, 30 = Age
+    1. Value 10, 20, 30 = Age
 
-    Value 0.05, 0.03, 0.02, 0.005 = Commission Rate
+    2. Value 0.05, 0.03, 0.02, 0.005 = Commission Rate
 
 3. Go to Tools>Maintain Agent and select the agent that need to load the commission script.
 

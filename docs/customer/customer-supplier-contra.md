@@ -18,7 +18,7 @@ If you have an outstanding sales invoice for RM200 and a purchase invoice for RM
 same person or company, the actual amount owed to you is RM 50 and the contra entry amount
 is RM150.
 
-## Setting step
+### Setting step
 
 ![1](/img/customer/contra/1.png)
 

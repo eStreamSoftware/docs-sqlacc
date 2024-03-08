@@ -30,13 +30,13 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 - [Support Channel](#support-channel)
 - [RHB Reflex User Linking User Guide](#rhb-reflex-user-linking-user-guide) -->
 
-## User Linking
+### Linking User
 
 ### Create Database in SQL Account
 
 1. Launch SQL Accounting software.
 
-   Existing SQL user - Log on as usual  
+   Existing SQL user - Log on as usual
 
    New SQL user - Click '![0](/img/banking/0.png)' to create database.
 
@@ -58,9 +58,9 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
 3. Fill in the information and click 'OK'.
 
-   Blue box is the mandatory field.
+   - Blue box is the mandatory field.
 
-   ![6](/img/banking/6.png)
+      ![6](/img/banking/6.png)
 
 ### Link RHB Reflex Account
 
@@ -108,7 +108,7 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
     ![16](/img/banking/16.png)
 
-## Bank Balance Inquiry
+### Bank Balance Inquiry
 
 1. Select Banking menu-> 'Bank Balance Inquiry'
 
@@ -120,7 +120,7 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
 3. Close the window and reopen for real-time updated balance.
 
-## Payment Initialization
+### Payment Initialization
 
 ### Maintain Supplier Details
 
@@ -140,15 +140,15 @@ tags: ["SQL Account", "Banking", "RHB", "Bank Reconciliation"]
 
    ![22](/img/banking/22.png)
 
-   1. Select Bank for RHB 3rd Party Transfer, IBG and Instant Transfer.  
+   1. Select Bank for RHB 3rd Party Transfer, IBG and Instant Transfer.
 
-      Fill in information below:  
+      Fill in information below:
 
-      1. Bank account number  
+      1. Bank account number
 
-      2. Bank account name  
+      2. Bank account name
 
-      3. ID Type (Business Reg No / New IC / Old IC / Passport / Police ID / Army ID)  
+      3. ID Type (Business Reg No / New IC / Old IC / Passport / Police ID / Army ID)
 
       4. ID number
 
@@ -358,7 +358,7 @@ DuitNow transfer via proxy is supported includes IC Number, Business Registratio
 
     ![30](/img/banking/30.png)
 
-## Payment Status Update
+### Payment Status Update
 
 To perform payment status update, click on the green icon.
 
@@ -374,7 +374,7 @@ or contact RHB Reflex customer service @ **+603-9206 8118**, then select languag
 
     ![32](/img/banking/32.png)
 
-## Bank Reconciliation
+### Bank Reconciliation
 
 1. Select GL menu - > Bank Reconciliation -> click “New”
 
@@ -403,7 +403,7 @@ or contact RHB Reflex customer service @ **+603-9206 8118**, then select languag
    - RHB bank statement update at 8am daily.
    :::
 
-## Unlink RHB Reflex Account
+### Unlink RHB Reflex Account
 
    User is required to unlink RHB Reflex account if
 
@@ -421,7 +421,7 @@ or contact RHB Reflex customer service @ **+603-9206 8118**, then select languag
 
    ![38](/img/banking/38.png)
 
-## Support Channel
+### Support Channel
 
 ### RHB Reflex Online Banking Enquiries
 
@@ -439,6 +439,6 @@ Tel : +603 7890 1300 (Support)
 
 Fax : +603 5886 9913
 
-## RHB Reflex User Linking User Guide
+### RHB Reflex User Linking User Guide
 
 Please refer below URL [link](https://www.rhbgroup.com/files/myreflex/premium/topic/all/RHB_SME_e_Solution_User_Reference_Guide_for_CBO.pdf) for RHB User Linking user guide.

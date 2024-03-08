@@ -7,18 +7,19 @@ slug: /stock/costing-method
 tags: ["SQL Account", "Stock", "Costing Method"]
 ---
 
+## Steps and Instructions
 
-## 1. You can go to Stock | Maintain Stock Group
+### 1. You can go to Stock | Maintain Stock Group
 
 ![1](/img/stock/costing-method/1.png)
 
-## 2. There have 3 method let you to assign
+### 2. There have 3 method let you to assign
 
 1. FIFO - cost flow assumption that the first goods purchased are also the first goods sold.
 2. Fixed Costing –fixed cost where had maintain under maintain stock item
 3. Weighted Average -average cost of production to a product
 
-## 3. If you **change** your costing method (previously with transaction existing)
+### 3. If you **change** your costing method (previously with transaction existing)
 
 1. Please remember must run **analyse data integrity** (tools | analyse data integrity) before you check the costing report again.
 

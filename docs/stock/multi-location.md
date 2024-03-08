@@ -39,12 +39,14 @@ A batch of goods is consigned to your customer side for selling without billing 
 
 1. Open a stock transfer documents to transfer the goods from your warehouse (Default) to customer warehouse (Batu Caves).
 
+    ![4](/img/stock/multi-location/4.png)
+
 2. Customer received 1 box of goods (20 units) and sold out 15 units. Then you can bill customer 15 units in where the goods out from customer location (Batu Caves).
 
-    ![4](/img/stock/multi-location/4.png)
+    ![5](/img/stock/multi-location/5.png)
 
 3. You will see stock transfer out from your warehouse (Default), and stock will transfer into customer warehouse (Batu Caves).
 
-    ![5](/img/stock/multi-location/5.png)
+    ![6](/img/stock/multi-location/6.png)
 
 From the stock card report, you can see the item is sold out from your customer location (Batu Caves) after you make the billing.

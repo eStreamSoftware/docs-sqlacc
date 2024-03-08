@@ -7,7 +7,7 @@ slug: /miscellaneous/cloud-attachment
 tags: ["SQL Account", "Cloud"]
 ---
 
-## Cloud Attachment Activation
+### Cloud Attachment Activation
 
    1. Menu: **File | CompanyProfile...**
 
@@ -27,7 +27,7 @@ tags: ["SQL Account", "Cloud"]
 
    6. Account connected (Granted success)
 
-## Add Cloud Attachment
+### Add Cloud Attachment
 
    1. Click on **Attachments**.
 

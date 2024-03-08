@@ -7,84 +7,68 @@ slug: /miscellaneous/text-import-utility
 tags: ["SQL Account", "Text", "Import"]
 ---
 
-## Text Import Step
+### Text Import Step
 
-**Step 1 :**
+    1. Download the following application in your pc.
 
-Download the following application in your pc.
+        1. [Application](http://www.estream.com.my/utility/SQLAccTxtImp-setup.exe)
 
-[http://www.estream.com.my/utility/SQLAccTxtImp-setup.exe](http://www.estream.com.my/utility/SQLAccTxtImp-setup.exe)
+        2. Username : `sqlutility`
 
-Username : `sqlutility`
+        3. Password : `sqlutility`
 
-Password : `sqlutility`
+    2. Run and Install the setup file.
 
-**Step 2 :**
+    3. Log on to your correct database
 
-Run and Install the setup file.
+        ![1](/img/miscellaneous/text-import-utility/1.png)
 
-**Step 3 :**
+    4. Double click the following icon
 
-Log on to your correct database
+        ![2](/img/miscellaneous/text-import-utility/2.png)
 
-    ![1](/img/miscellaneous/text-import-utility/1.png)
+    5. Makesure the top is show the database you choose
 
-**Step 4 :**
+        - Choose the transaction you want to import, eg. customer-maintain customer
 
-Double click the following icon
+            ![3](/img/miscellaneous/text-import-utility/3.png)
 
-    ![2](/img/miscellaneous/text-import-utility/2.png)
+    6. Open the patch file you save
 
-**Step 5 :**
+        ![4](/img/miscellaneous/text-import-utility/4.png)
 
-Makesure the top is show the database you choose
+    7. Invalid status...
 
-Choose the transaction you want to import, eg. customer-maintain customer
+        1. Go into SQL to add the status which are not in the database
 
-    ![3](/img/miscellaneous/text-import-utility/3.png)
+            ![5](/img/miscellaneous/text-import-utility/5.png)
 
-**Step 6 :**
+        2. Example :
 
-Open the patch file you save
+            ![6](/img/miscellaneous/text-import-utility/6.png)
 
-    ![4](/img/miscellaneous/text-import-utility/4.png)
+        3. So now, you go into your SQL, add the agent code
 
-**Step 7 :**
+            ![7](/img/miscellaneous/text-import-utility/7.png)
 
-Invalid status...
+            ![8](/img/miscellaneous/text-import-utility/8.png)
 
-Go into SQL to add the status which are not in the database
+    8. Go back to the Text Import, **VERIFY** again.
 
-    ![5](/img/miscellaneous/text-import-utility/5.png)
+        1. If the status show invalid again, go to the SQL and add in.
 
-Example :
+        2. After add in, get the file and verify again.
 
-    ![6](/img/miscellaneous/text-import-utility/6.png)
+        3. For this example, go to Tools --> Maintain Area
 
-So now, you go into your SQL, add the agent code
+            ![9](/img/miscellaneous/text-import-utility/9.png)
 
-    ![7](/img/miscellaneous/text-import-utility/7.png)
+        4. The status will shown **“** OK **”** once you complete.
 
-    ![8](/img/miscellaneous/text-import-utility/8.png)
+            ![10](/img/miscellaneous/text-import-utility/10.png)
 
-**Step 8 :**
+        5. Once you post to A/C, go to SQL ...... Customer -–> Maintain Customer
 
-Go back to the Text Import, **VERIFY** again.
+        6. Log out and log in again, the new customer name will automatically shown in the customer list.
 
-If the status show invalid again, go to the SQL and add in.
-
-After add in, get the file and verify again.
-
-For this example, go to Tools --> Maintain Area
-
-    ![9](/img/miscellaneous/text-import-utility/9.png)
-
-The status will shown **“** OK **”** once you complete.
-
-    ![10](/img/miscellaneous/text-import-utility/10.png)
-
-Once you post to A/C, go to SQL ...... Customer -–> Maintain Customer
-
-Log out and log in again, the new customer name will automatically shown in the customer list.
-
-    ![11](/img/miscellaneous/text-import-utility/11.png)
+            ![11](/img/miscellaneous/text-import-utility/11.png)

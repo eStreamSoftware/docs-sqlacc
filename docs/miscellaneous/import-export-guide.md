@@ -9,7 +9,7 @@ tags: ["SQL Account", "Export", "Import"]
 
 <!-- # Topic : Export and Import Module -->
 
-## Download path
+### Download path
 
 1. [Export Utility](http://www.sql.com.my/utility/SQLAccExportV4-setup.exe)
 
@@ -19,7 +19,7 @@ tags: ["SQL Account", "Export", "Import"]
 
    After download, please install accordingly.
 
-## Step 1 : Export Module
+### Export Module Steps
 
    1. Logon to the company which you want to export out the data.(Make sure logon only 1 database.)
 
@@ -39,11 +39,11 @@ tags: ["SQL Account", "Export", "Import"]
 
       6.
 
-      ![2](/img/miscellaneous/import-export-guide/2.png)
+         ![2](/img/miscellaneous/import-export-guide/2.png)
 
-      Done
+         Done
 
-## Step 2 : Import Module
+### Import Module Steps
 
    1. Logon to the database you want to import the data.(Make sure logon 1 Database only)
 
@@ -58,10 +58,13 @@ tags: ["SQL Account", "Export", "Import"]
       Import Seq :
 
          1. Tick all the Maintenance Item First.
+
       3. Click Verify Button | Once pop message : Verify Done | Press OK
+
       4. Click On Import Button | Once Pop Message : Import Done | Press Ok
 
       Import Sequence :
+
          1. Sales DN
 
             Cash Sales
@@ -108,17 +111,23 @@ tags: ["SQL Account", "Export", "Import"]
    4. Press Import Button
 
 2. Error : Invalid Callee
-   Solution : Logon to the database | Tools | Option | Press Register | Done | Exit SQL and Logon again.
-3. Error : Field currency rate
-   Reason : Due to replace the IV, and this document already been knockoff.
-4. Error : Attempt to import EX15 failed
-   Error : Access violation at address 0043B65F in module 'Import.exe'. Read of address 0000000
-   Reason : Please check have any DIY Field for the export account book, make sure import account book
-   have same Field.
-5. Error : The server threw an Exception :
-   Solution : This is due to open wrong version of SQL. V3 must use v3 import and Export. V4 must use V
-   Import and Export.
 
-   - Export Maintain Tax with error : MainDataset : Type Mismatch for field Is Active, expecting String Actual Smallnt.
+   Solution : Logon to the database | Tools | Option | Press Register | Done | Exit SQL and Logon again.
+
+3. Error : Field currency rate
+
+   Reason : Due to replace the IV, and this document already been knockoff.
+
+4. Error : Attempt to import EX15 failed
+
+   Error : Access violation at address 0043B65F in module 'Import.exe'. Read of address 0000000
+
+   Reason : Please check have any DIY Field for the export account book, make sure import account book have same Field.
+
+5. Error : The server threw an Exception :
+
+   Solution : This is due to open wrong version of SQL. V3 must use v3 import and Export. V4 must use v4 Import and Export.
+
+   <!-- - Export Maintain Tax with error : MainDataset : Type Mismatch for field Is Active, expecting String Actual Smallnt. -->
 
 :::

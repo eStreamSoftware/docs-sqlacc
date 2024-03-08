@@ -9,7 +9,7 @@ tags: ["SQL Account", "Dashboard"]
 
 <!-- ![2](/img/miscellaneous/dashboard/2.png) -->
 
-## How to access SQL Dashboard?
+### How to access SQL Dashboard?
 
 ### View -> Dashboard
 
@@ -157,7 +157,7 @@ tags: ["SQL Account", "Dashboard"]
 
 ### 4. Top Product
 
-    - You can set the date period and see the top 10 stock items that your company sells. The top 10 can is rated based on quantity of the item and based on total sales
+    You can set the date period and see the top 10 stock items that your company sells. The top 10 can is rated based on quantity of the item and based on total sales
 
         ![27](/img/miscellaneous/dashboard/27.png)
 

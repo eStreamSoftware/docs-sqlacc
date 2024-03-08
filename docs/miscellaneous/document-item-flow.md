@@ -9,7 +9,7 @@ tags: ["SQL Account", "Document", "Item flow"]
 
 <!-- # Document Item Flow -->
 
-## How to check document item flow
+### How to check document item flow
 
    1. At any document detail (eg. invoice), highlight the item.
 

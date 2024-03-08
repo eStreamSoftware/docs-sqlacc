@@ -7,7 +7,7 @@ slug: /grid-layout/rename-header
 tags: ["SQL Account", "Grid Layout"]
 ---
 
-## Instruction
+## Steps & Instruction
 
    1. Right click on any grid header. From the small menu, select **Properties**.
 

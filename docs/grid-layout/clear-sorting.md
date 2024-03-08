@@ -15,7 +15,7 @@ I have selected "Group by Document No" in Sales Profit and Loss by Document. How
 
 ![2](/img/grid-layout/clear-sorting/2.png)
 
-## Solution
+## Steps & Instruction
 
 1. Right click on any grid column.
 

@@ -63,20 +63,44 @@ tags: ["SQL Account", "Getting Started", "MYOB"]
 
 10. Few Important settings MUST do before continue Import.
 
-      ![8](/img/getting-started/myob-migrate/8.png)
+      1. In this window
 
-      ![9](/img/getting-started/myob-migrate/9.png)
+         1. Read the Information then click ‘OK’ to close it.
 
-      ![10](/img/getting-started/myob-migrate/10.png)
+         2. Close the Data Import.
 
-      ![11](/img/getting-started/myob-migrate/11.png)
+            ![8](/img/getting-started/myob-migrate/8.png)
+
+      2. Go to GL /Maintain Account, verify the Imported Chart of Account & set the necessary Special Type.
+
+         Especially for Trade Debtor, Trade Creditor, Bank/Cash Account, Stock & etc.
+
+         ![9](/img/getting-started/myob-migrate/9.png)
+
+      3. Go to Tools /Options /General Ledger, to setup for :
+
+         -Financial Start Period
+
+         -System Conversion Date
+
+         -Default Account
+
+         ![10](/img/getting-started/myob-migrate/10.png)
+
+      4. Next
+
+         1. Still in ‘Options’ tab select ‘Customer’ then fill in the Customer Control Account.
+
+         2. Vice Versa for Supplier Control Account setting.
+
+            ![11](/img/getting-started/myob-migrate/11.png)
 
 11. Once DONE settings, Repeat Step 5, 7 & 8 to continue import.
 
-   ![12](/img/getting-started/myob-migrate/12.png)
+      ![12](/img/getting-started/myob-migrate/12.png)
 
    :::info
 
-   Kindly check ALL the Imported Master File from MYOB to SQL system before proceed to use it.
+   Kindly check **ALL** the Imported Master File from MYOB to SQL system before proceed to use it.
 
    :::

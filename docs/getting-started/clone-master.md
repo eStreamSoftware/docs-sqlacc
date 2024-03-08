@@ -65,4 +65,4 @@ SQL Clone database copies all maintenance files, such as the chart of accounts, 
 
    14. Press **OK**
 
-      ![13](/img/getting-started/clone-master/13.png)
+         ![13](/img/getting-started/clone-master/13.png)

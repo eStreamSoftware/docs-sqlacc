@@ -51,4 +51,4 @@ tags: ["SQL Account", "Getting Started", "Enlarge UI Screen"]
 
 5. Choose the screen size desired or Click on **Custom Setting** to customize the screen size by dragging the indicator
 
-   ![3](/img/getting-started/enlarge-ui/3.png)
+   ![4](/img/getting-started/enlarge-ui/4.png) ![4b](/img/getting-started/enlarge-ui/4b.png)

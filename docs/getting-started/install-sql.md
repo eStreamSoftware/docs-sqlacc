@@ -49,7 +49,7 @@ tags: ["SQL Account", "Getting Started", "Install SQL"]
 
    10. Click **Install**
 
-      ![6](/img/getting-started/install-sql/6.png)
+         ![6](/img/getting-started/install-sql/6.png)
 
 3. lick **evaluation** (system will auto create a testing company)
 

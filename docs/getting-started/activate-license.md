@@ -7,6 +7,8 @@ slug: /getting-started/activate-license
 tags: ["SQL Account", "License"]
 ---
 
+## Steps & Instruction
+
 1. In SQL Account, go to **File** -> **Company Profile...**
 
    ![1](/img/activate-license/1.png)
@@ -17,7 +19,7 @@ tags: ["SQL Account", "License"]
 
 3. Close the previous window, go to **File** -> **Product Activation...**
 
-   ![1](/img/activate-license/1.png)
+   ![1](/img/activate-license/1b.png)
 
 4. For inactivated product, **Product ID** and **Activation Code** will be *blank* here. Check your **Company Name** and **Address** are input correctly
 

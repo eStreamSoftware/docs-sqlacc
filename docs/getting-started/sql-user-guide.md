@@ -165,6 +165,8 @@ Watch tutorial video here: [GL Chart of Account](https://www.youtube.com/watch?v
 
       ![16](/img/getting-started/user-guide/16.png)
 
+      You are allow to create an unlimited level of sub accounts. Just point to any account, and add a sub or sub-sub account to it.
+
 ### 3.2 Maintain Customer
 
 :::info
@@ -541,6 +543,8 @@ Sales Cancelled Note is used for the cancelling of any outstanding Sales Order.
 
 3. You can choose to transfer the sales order either by the whole document or partially.
 
+   ![41b](/img/getting-started/user-guide/41b.png)
+
 4. **Save** the Cancelled Note.
 
 ## 5 Customer & Supplier
@@ -768,6 +772,8 @@ Watch tutorial video here: [SQL Account General Ledger - GL Opening Balance](htt
    3. **Insert the Opening Balance**
 
       ![63](/img/getting-started/user-guide/62.png)
+
+      ![63b](/img/getting-started/user-guide/62b.png)
 
 4. Bank Reconciliation
 

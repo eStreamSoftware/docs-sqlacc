@@ -15,7 +15,7 @@ tags: ["SQL Account", "GIRO", "IBM"]
 < Tonny/sandbox
 ![13](/img/interbank-giro/13.png) -->
 
-## How to use Interbank GIRO
+### How to use Interbank GIRO
 
 :::info
 To use **Interbank GIRO** feature, you must have **Interbank GIRO** module enabled in SQL Account.
@@ -78,6 +78,6 @@ The following shows list of banks file format that are currently supported.
 
    3. You can now **upload bank instruction file** to bank host.
 
-## Excel Format
+### Excel Format
 
 By default, system automatically save an Excel file in **XLSX** format. There are banks (**Alliance Bank, Public Bank, RHB**) require bank instruction file in **XLS** format. First, you must have **Microsoft Excel 2007** or above version installed on your machine. Then, **open** the Excel file and **save as XLS** format.

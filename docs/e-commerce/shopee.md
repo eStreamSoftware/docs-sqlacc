@@ -37,7 +37,7 @@ tags: ["SQL Account", "Shopee"]
       4. [How system handle the situation when Shipping Fees charges higher than Seller Paid Amount cause escrow amount in negative?](#174-how-system-handle-the-situation-when-shipping-fees-charges-higher-than-seller-paid-amount-cause-escrow-amount-in-negative)
       5. [How to handle the order in Cancelled Status but earlier user in Shipped Status already posting the Invoice?](#175-how-to-handle-the-order-in-cancelled-status-but-earlier-user-in-shipped-status-already-posting-the-invoice) -->
 
-## 1. Maintain Cloud Account
+### 1. Maintain Cloud Account
 
     1. Select '![39](/img/banking/39.png)'- > Maintain Cloud Account (One Time Setting)
 
@@ -67,7 +67,7 @@ tags: ["SQL Account", "Shopee"]
 
         - Once linking Successful, system will be returned status Linking Success Message.
 
-## 2. Configure E Commerce Setting
+### 2. Configure E Commerce Setting
 
     1. GL -> Maintain Account
 
@@ -77,11 +77,11 @@ tags: ["SQL Account", "Shopee"]
 
         2. Create Shopee Voucher / Discount Account Under Sales Adjustment
 
-            ![6](/img/e-commerce/shopee/6.png)
+            ![6](/img/e-commerce/lazada/5.png)
 
         3. Create Shipping and Transaction Fee under Expenses
 
-            ![7](/img/e-commerce/shopee/7.png)
+            ![7](/img/e-commerce/easyStore/8.png)
 
             - It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
 
@@ -119,7 +119,7 @@ tags: ["SQL Account", "Shopee"]
 
             - Repeat same step to create for Shipping and Transaction Fees Item Code
 
-## 3. Account Tab
+### 3. Account Tab
 
     1. Click on '![39](/img/banking/39.png)'- > Shopee
 
@@ -138,7 +138,7 @@ tags: ["SQL Account", "Shopee"]
 
         [Youtube Video Link](https://www.youtube.com/watch?v=B9UmhTYjFHM)
 
-## 4. Product Tab
+### 4. Product Tab
 
     1. Step to download product list from Shopee
 
@@ -186,9 +186,10 @@ tags: ["SQL Account", "Shopee"]
 
         [Youtube Video Link](https://www.youtube.com/watch?v=B9UmhTYjFHM)
 
-## 5. Orders Tab
+### 5. Orders Tab
 
     - Click on Orders Tab
+
         ![23](/img/e-commerce/shopee/23.png)
 
     1. Status
@@ -255,13 +256,13 @@ tags: ["SQL Account", "Shopee"]
 
         5. Failed – Missing Item Code - Is due to Shopee have inactive item code, user can manually map in orders.
 
-            Step 1: Ticked on the order
+            1. Ticked on the order
 
-            ![33](/img/e-commerce/shopee/33.png)
+                ![33](/img/e-commerce/shopee/33.png)
 
-            Step 2: Click on Item Code Drop Down, user can manually map the item code
+            2. Click on Item Code Drop Down, user can manually map the item code
 
-            Step 3: Click on Post
+            3. Click on Post
 
     5. Order Details
 
@@ -279,71 +280,71 @@ tags: ["SQL Account", "Shopee"]
 
             ![36](/img/e-commerce/shopee/36.png)
 
-        Formula to calc Shipping Fees:
+        1. Formula to calc Shipping Fees:
 
-        Escrow Amount - ((Discounted Price \*Qty)- Other Fee - Discount - Voucher)
+            Escrow Amount - ((Discounted Price \*Qty)- Other Fee - Discount - Voucher)
 
-        = RM 76.97 - (RM 87.60 - RM 5.63 - RM 0 - RM 5)
+            = RM 76.97 - (RM 87.60 - RM 5.63 - RM 0 - RM 5)
 
-        = RM 0
+            = RM 0
 
-        :::note
-        Escrow Amount will be Shopee release amount.
-        :::
+            :::note
+            Escrow Amount will be Shopee release amount.
+            :::
 
-        ![37](/img/e-commerce/shopee/37.png)
+            ![37](/img/e-commerce/shopee/37.png)
 
-        :::note
-        Missing no 10 Discount Item Code?
+            :::note
+            Missing no 10 Discount Item Code?
 
-        - No, is due to Disc is 0, system will not be posting over.
+            - No, is due to Disc is 0, system will not be posting over.
 
-        Missing no 12 Shipping Item Code?
+            Missing no 12 Shipping Item Code?
 
-        - No, is due to Shipping Fees is 0, system will not be posting over.
-        :::
+            - No, is due to Shipping Fees is 0, system will not be posting over.
+            :::
 
     7. Sales Credit Note
 
-        - Example of Sales Credit Note posted from Shopee | Orders.
+        1. Example of Sales Credit Note posted from Shopee | Orders.
 
             ![38](/img/e-commerce/shopee/38.png)
 
-        **Sales -> Invoice**
+        2. Sales -> Invoice
 
             ![39](/img/e-commerce/shopee/39.png)
 
-        Escrow = RM 10.25(Escrow Amt) + 23.50(Product) = RM 33.75
+        3. Escrow = RM 10.25(Escrow Amt) + 23.50(Product) = RM 33.75
 
-        Product = RM 23.50
+            Product = RM 23.50
 
-        Others = RM 1.50
+            Others = RM 1.50
 
-        Shipping Fees calc on CN will be different when have return refund amount.
+            Shipping Fees calc on CN will be different when have return refund amount.
 
-        = RM 33.75 – (RM23.50 – RM 1.50 – RM 0 – RM 0)
+            = RM 33.75 – (RM23.50 – RM 1.50 – RM 0 – RM 0)
 
-        = RM 11.75
+            = RM 11.75
 
-        **Sales -> Credit Note**
+        4. Sales -> Credit Note
 
-        CN will be posting return product without Shipping and Transaction fees.
+            CN will be posting return product without Shipping and Transaction fees.
 
-            ![40](/img/e-commerce/shopee/40.png)
+                ![40](/img/e-commerce/shopee/40.png)
 
-        **Customer -> Customer Credit Note**
+            **Customer -> Customer Credit Note**
 
-            ![41](/img/e-commerce/shopee/41.png)
+                ![41](/img/e-commerce/shopee/41.png)
 
-        :::note
-        System will auto knockoff the Invoice.
-        :::
+            :::note
+            System will auto knockoff the Invoice.
+            :::
 
-        **Customer -> Customer Invoice**
+            **Customer -> Customer Invoice**
 
-            ![42](/img/e-commerce/shopee/42.png)
+                ![42](/img/e-commerce/shopee/42.png)
 
-            - Outstanding Amount will be Shopee Release Amount
+                - Outstanding Amount will be Shopee Release Amount
 
     8. Replace
 
@@ -367,13 +368,13 @@ tags: ["SQL Account", "Shopee"]
 
             ![47](/img/e-commerce/shopee/47.png)
 
-        Sample Report
+        3. Sample Report
 
             ![48](/img/e-commerce/shopee/48.png)
 
         [Youtube Video Link](https://www.youtube.com/watch?v=jrts5wSRecA)
 
-## 6. Payment Tab
+### 6. Payment Tab
 
     1. Step to download statement from Shopee
 
@@ -445,7 +446,7 @@ tags: ["SQL Account", "Shopee"]
 
         [Youtube Video Link](https://www.youtube.com/watch?v=PloG3CeHA1w)
 
-## 7 FAQ
+### 7 FAQ
 
     1. How to do if have multiple location for each store?
 
@@ -461,7 +462,7 @@ tags: ["SQL Account", "Shopee"]
 
         2. When post Payment in **Payment Tab**, system will auto edit Invoice and fill in Transaction Fees in order tally with Shopee Escrow Amount.
 
-    4 How system handle the situation when Shipping Fees charges Seller Paid Amount cause escrow amount in negative?
+    4. How system handle the situation when Shipping Fees charges Seller Paid Amount cause escrow amount in negative?
 
         ![59](/img/e-commerce/shopee/59.png)
 

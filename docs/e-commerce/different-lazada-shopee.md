@@ -9,7 +9,7 @@ tags: ["SQL Account", "Posting order", "Shopee", "Lazada"]
 
 <!-- # Difference between Shopee and Lazada posting order -->
 
-## Shopee
+### Shopee
 
 ### Posting Order
 
@@ -34,7 +34,7 @@ tags: ["SQL Account", "Posting order", "Shopee", "Lazada"]
          There are small no of cases where the escrow amount and the posted order amount is different. For such cases, SQL system will make the adjustment either editing on invoice or CN when payment is posted to make it tally.
          :::
 
-## Lazada
+### Lazada
 
 ### Posting Order
 
@@ -71,7 +71,7 @@ tags: ["SQL Account", "Posting order", "Shopee", "Lazada"]
 
             - Positive Amount / Negative Amount = SUM Total Amount for same Order as per Payment File
 
-   Example :
+   2. Example :
 
       Order 338719603950977 is posted as invoice :
 
@@ -81,21 +81,21 @@ tags: ["SQL Account", "Posting order", "Shopee", "Lazada"]
 
       Payment file 1 (positive amount) :
 
-   :::note
+      :::note
 
-   Payment file must be loaded in sequence according to the payment statement date.
+      Payment file must be loaded in sequence according to the payment statement date.
 
-   :::
+      :::
 
-      ![12](/img/e-commerce/different/12.png)
+         ![12](/img/e-commerce/different/12.png)
 
       Payment File 2 (negative amount):
 
-      ![13](/img/e-commerce/different/13.png)
+         ![13](/img/e-commerce/different/13.png)
 
       Payment File 3 (negative amount):
 
-      ![14](/img/e-commerce/different/14.png)
+         ![14](/img/e-commerce/different/14.png)
 
       Invoice :
 

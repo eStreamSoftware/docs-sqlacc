@@ -30,7 +30,7 @@ tags: ["SQL Account", "EasyStore"]
       5. [The specified access token is invalid or expired.](#165-the-specified-access-token-is-invalid-or-expired)
       6. [API access frequently exceeds the limit. This ban will last 1 second.](#166-api-access-frequently-exceeds-the-limit-this-ban-will-last-1-second) -->
 
-## 1. Maintain Cloud Account
+### 1. Maintain Cloud Account
 
     1. Select - > **Maintain Cloud Account (One Time Setting)**
 
@@ -62,7 +62,7 @@ tags: ["SQL Account", "EasyStore"]
 
         - Once linking Successful, system will be returned status Linking Success Message.
 
-## 2. Configure E Commerce Setting
+### 2. Configure E Commerce Setting
 
     1. GL -> Maintain Account
 
@@ -109,7 +109,7 @@ tags: ["SQL Account", "EasyStore"]
 
             - Repeat same step to create for Shipping and Transaction Fees Item Code
 
-## 3. Account Tab
+### 3. Account Tab
 
     1. Click on - >Easy Store
 
@@ -123,7 +123,7 @@ tags: ["SQL Account", "EasyStore"]
 
             ![16](/img/e-commerce/easyStore/16.png)
 
-## 4. Product Tab
+### 4. Product Tab
 
     1. Fetch Product
 
@@ -153,7 +153,7 @@ tags: ["SQL Account", "EasyStore"]
 
             ![22](/img/e-commerce/easyStore/22.png)
 
-## 5. Orders Tab
+### 5. Orders Tab
 
     - Click on Orders Tab
 
@@ -219,11 +219,11 @@ tags: ["SQL Account", "EasyStore"]
 
             - Is due to EasyStore have inactive item code, user can manually map in orders.
 
-            Step 1: Click on Item Code Drop Down, user can manually map the item code
+            1. Click on Item Code Drop Down, user can manually map the item code
 
-            Step 2: Ticked on the record you want to post
+            2. Ticked on the record you want to post
 
-            Step 3: Click on Post
+            3. Click on Post
 
                 ![33](/img/e-commerce/easyStore/33.png)
 
@@ -243,7 +243,7 @@ tags: ["SQL Account", "EasyStore"]
 
         ![37](/img/e-commerce/easyStore/37.png)
 
-## 6. FAQ
+### 6. FAQ
 
     1. How to get my EasyStore domain?
 

@@ -35,7 +35,7 @@ tags: ["SQL Account", "Tiktok"]
 
 <!-- ## 1. TikTok -->
 
-## 1. Maintain Cloud Account
+### 1. Maintain Cloud Account
 
     1. Select - > Maintain Cloud Account (One Time Setting)
 
@@ -70,7 +70,7 @@ tags: ["SQL Account", "Tiktok"]
 
         - Once linking Successful, system will be returned status Linking Success Message.
 
-## 2. Configure E Commerce Setting
+### 2. Configure E Commerce Setting
 
     1. GL -> Maintain Account
 
@@ -80,7 +80,7 @@ tags: ["SQL Account", "Tiktok"]
 
         2. Create Shipping and Transaction Fee under Expenses
 
-            ![7](/img/e-commerce/tiktok/7.png)
+            ![7](/img/e-commerce/easyStore/8.png)
 
             - It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
 
@@ -113,7 +113,7 @@ tags: ["SQL Account", "Tiktok"]
 
             - Repeat same step to create for Shipping and Transaction Fees Item Code
 
-## 3. Account Tab
+### 3. Account Tab
 
     1. Click on - > TikTok
 
@@ -125,7 +125,7 @@ tags: ["SQL Account", "Tiktok"]
 
             ![14](/img/e-commerce/tiktok/14.png)
 
-## 4. Product Tab : Fetch Product
+### 4. Product Tab : Fetch Product
 
     1. Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
 
@@ -154,7 +154,7 @@ tags: ["SQL Account", "Tiktok"]
 
         ![20](/img/e-commerce/tiktok/20.png)
 
-## 5. Orders Tab
+### 5. Orders Tab
 
     - Click on Orders Tab
 
@@ -221,13 +221,13 @@ tags: ["SQL Account", "Tiktok"]
 
             - Is due to TikTok have inactive item code, user can manually map in orders.
 
-            Step 1: Click on Item Code Drop Down, user can manually map the item code
+            1. Click on Item Code Drop Down, user can manually map the item code
 
                 ![30](/img/e-commerce/tiktok/30.png)
 
-            Step 2: Ticked on the record you want to post
+            2. Ticked on the record you want to post
 
-            Step 3: Click on Post
+            3. Click on Post
 
     5. Sales Invoice
 
@@ -246,7 +246,7 @@ tags: ["SQL Account", "Tiktok"]
 
             ![34](/img/e-commerce/tiktok/34.png)
 
-## 6. Payment Tab
+### 6. Payment Tab
 
     1. Step to Download statement from TikTok
 
@@ -276,11 +276,11 @@ tags: ["SQL Account", "Tiktok"]
 
                 ![39](/img/e-commerce/tiktok/39.png)
 
-            :::note
+                :::note
 
-            TikTok required you to sync all order before can posting payment due to have to tally with bank recon.
+                TikTok required you to sync all order before can posting payment due to have to tally with bank recon.
 
-            :::
+                :::
 
         6. Once you check all the order have been posting (without empty Invoice No), click on Post
 
@@ -299,9 +299,9 @@ tags: ["SQL Account", "Tiktok"]
 
             - System will auto do the knockoff
 
-            :::note
-            Same Payment Transaction Date will be posting as 1 Customer Payment.
-            :::
+                :::note
+                Same Payment Transaction Date will be posting as 1 Customer Payment.
+                :::
 
             ![43](/img/e-commerce/tiktok/43.png)
 
@@ -315,7 +315,7 @@ tags: ["SQL Account", "Tiktok"]
 
             ![47](/img/e-commerce/tiktok/47.png)
 
-## 7. FAQ
+### 7. FAQ
 
     1. How to do if have multiple location for each store?
 

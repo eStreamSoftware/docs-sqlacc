@@ -26,7 +26,7 @@ tags: ["SQL Account", "WooCommerce"]
 
 <!-- ## 1. WooCommerce -->
 
-## 1. Maintain Cloud Account
+### 1. Maintain Cloud Account
 
     1. Select - > Maintain Cloud Account (One Time Setting)
 
@@ -65,17 +65,17 @@ tags: ["SQL Account", "WooCommerce"]
 
         - Once linking Successful, system will be returned status Linking Success Message.
 
-## 2. Configure E Commerce Setting
+### 2. Configure E Commerce Setting
 
     1. GL -> Maintain Account
 
         1. Create Voucher / Discount Account Under Sales Adjustment
 
-            ![7](/img/e-commerce/woo/7.png)
+            ![7](/img/e-commerce/tiktok/6.png)
 
         2. Create Shipping and Transaction Fee under Expenses
 
-            ![8](/img/e-commerce/woo/8.png)
+            ![8](/img/e-commerce/easyStore/8.png)
 
             - It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
 
@@ -109,7 +109,7 @@ tags: ["SQL Account", "WooCommerce"]
 
             - Repeat same step to create for Shipping, Transaction Fees and Claim Item Code
 
-## 3 Account Tab
+### 3 Account Tab
 
     1. Click on '![39](/img/banking/39.png)'- > Woocommerce
 
@@ -127,7 +127,7 @@ tags: ["SQL Account", "WooCommerce"]
             security policy, once expired must relink with Woocommerce account to fetch
             the order.
 
-## 4 Product Tab
+### 4 Product Tab
 
     1. Step to download Product list from WooCommerce
 
@@ -145,13 +145,14 @@ tags: ["SQL Account", "WooCommerce"]
 
         4. Load the file into Microsoft Office. Then you can edit the details you need.
 
-        You can choose to have WooCommerce SKU as SQL Item Code by import to SQL, may contact your service agent to assist on this product import.
+            - You can choose to have WooCommerce SKU as SQL Item Code by import to SQL, may contact your service agent to assist on this product import.
 
     2. Fetch Product
 
         1. Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
 
             ![19](/img/e-commerce/woo/19.png)
+
             ![20](/img/e-commerce/woo/20.png)
 
         2. Verify Status: Exist in Stock Item are meaning SQL and Seller SKU are having the same Item Code.
@@ -176,7 +177,7 @@ tags: ["SQL Account", "WooCommerce"]
 
             ![25](/img/e-commerce/woo/25.png)
 
-## 5. Orders Tab
+### 5. Orders Tab
 
     - Click on Orders Tab
 
@@ -245,12 +246,13 @@ tags: ["SQL Account", "WooCommerce"]
 
             - Is due to WooCommerce have inactive item code, user can manually map in orders.
 
-            Step 1: Click on Item Code Drop Down, user can manually map the item code
+            1. Click on Item Code Drop Down, user can manually map the item code
 
                 ![37](/img/e-commerce/woo/37.png)
-            Step 2: Ticked on the record you want to post
 
-            Step 3: Click on Post
+            2. Ticked on the record you want to post
+
+            3. Click on Post
 
     5. Sales Invoice
 
@@ -267,20 +269,20 @@ tags: ["SQL Account", "WooCommerce"]
 
         - Refunds in WooCommerce are posted as sales credit notes in SQL Account.
 
-        Example of Sales Credit Note posted from WooCommerce | Orders.
+        1. Example of Sales Credit Note posted from WooCommerce | Orders.
 
             ![41](/img/e-commerce/woo/41.png)
 
-        Tick which orders key you want to post to sales credit note. If post is successful, the verify status should show “Success”. You can see a Sales credit Note has been created in Sales | Credit Note
+        2. Tick which orders key you want to post to sales credit note. If post is successful, the verify status should show “Success”. You can see a Sales credit Note has been created in Sales | Credit Note
 
             ![42](/img/e-commerce/woo/42.png)
 
-        For a refund voucher, a sales credit note will be created as well as a sales invoice.
+        3. For a refund voucher, a sales credit note will be created as well as a sales invoice.
 
             ![43](/img/e-commerce/woo/43.png)
 
             ![44](/img/e-commerce/woo/44.png)
 
-        In the customer credit note, The CN knocks off the outstanding amount of the Invoice.
+        4. In the customer credit note, The CN knocks off the outstanding amount of the Invoice.
 
-        Meaning the invoice has been cancelled off and there is not outstanding payment.
+        5. Meaning the invoice has been cancelled off and there is not outstanding payment.

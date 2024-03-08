@@ -44,7 +44,7 @@ tags: ["SQL Account", "Lazada"]
 
 <!-- ## 1. Lazada -->
 
-## 1. Maintain Cloud Account
+### 1. Maintain Cloud Account
 
   1. Select - > **Maintain Cloud Account (One Time Setting)**
 
@@ -74,7 +74,7 @@ tags: ["SQL Account", "Lazada"]
 
       - Once linking Successful, system will be returned status Linking Success Message.
 
-## 2. Configure E Commerce Setting
+### 2. Configure E Commerce Setting
 
     1. GL -> Maintain Account
 
@@ -84,7 +84,7 @@ tags: ["SQL Account", "Lazada"]
 
         2. Create Shipping and Transaction Fee under Expenses
 
-            ![6](/img/e-commerce/lazada/6.png)
+            ![6](/img/e-commerce/easyStore/8.png)
 
             :::info
 
@@ -122,7 +122,7 @@ tags: ["SQL Account", "Lazada"]
 
             - Repeat same step to create for Shipping and Transaction Fees Item Code
 
-## 3. Account Tab
+### 3. Account Tab
 
   1. Click on -> Lazada
 
@@ -140,7 +140,7 @@ tags: ["SQL Account", "Lazada"]
 
           [Youtube Video Link](https://www.youtube.com/watch?v=B9UmhTYjFHM)
 
-## 4. Product Tab
+### 4. Product Tab
 
   1. Step to download Product list from Lazada
 
@@ -190,7 +190,7 @@ tags: ["SQL Account", "Lazada"]
 
           [Youtube Video Link](https://www.youtube.com/watch?v=B9UmhTYjFHM)
 
-## 5. Orders Tab
+### 5. Orders Tab
 
     - Click on Orders Tab
 
@@ -258,13 +258,13 @@ tags: ["SQL Account", "Lazada"]
 
           - Is due to Lazada have inactive item code, user can manually map in orders.
 
-          Step 1: Click on Item Code Drop Down, user can manually map the item code
+          1. Click on Item Code Drop Down, user can manually map the item code
 
-            ![35](/img/e-commerce/lazada/35.png)
+                ![35](/img/e-commerce/lazada/35.png)
 
-          Step 2: Ticked on the record you want to post
+          2. Ticked on the record you want to post
 
-          Step 3: Click on Post
+          3. Click on Post
 
   5. Sales Invoice
 
@@ -300,7 +300,7 @@ tags: ["SQL Account", "Lazada"]
 
         ![42](/img/e-commerce/lazada/42.png)
 
-## 6. Payment Tab
+### 6. Payment Tab
 
   1. Step to Download statement from Lazada
 
@@ -311,6 +311,7 @@ tags: ["SQL Account", "Lazada"]
           :::
 
           ![43](/img/e-commerce/lazada/43.png)
+          <!-- ![43](/img/e-commerce/lazada/69.png) -->
 
       2. At your Statement Overview, go to Settlement Report to see the weekly statement.
 
@@ -422,7 +423,7 @@ tags: ["SQL Account", "Lazada"]
           - Lazada allows seller to forward date download finance statement, without Payment ref ID which mean Lazada yet release payment to Seller, SQL will not posting without payment ref ID.
             ![61](/img/e-commerce/lazada/61.png)
 
-## 7. FAQ
+### 7. FAQ
 
   1. How to do if have multiple location for each store?
 

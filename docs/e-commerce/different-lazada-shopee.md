@@ -9,9 +9,7 @@ tags: ["SQL Account", "Posting order", "Shopee", "Lazada"]
 
 <!-- # Difference between Shopee and Lazada posting order -->
 
-### Shopee
-
-### Posting Order
+## Shopee Posting Order
 
    1. When you post order in Shopee, all transaction fee / shipping fees are finalised when post order to invoice. SQL captures the **escrow amount** as the **Net Total**
 
@@ -22,7 +20,7 @@ tags: ["SQL Account", "Posting order", "Shopee", "Lazada"]
 
       ![2](/img/e-commerce/different/2.png)
 
-### Shopee Order Returned
+## Shopee Order Returned
 
    1. When a returned order is posted into SQL, it will be posted into SQL Invoice and will be transferred to Credit Note.
 
@@ -34,9 +32,7 @@ tags: ["SQL Account", "Posting order", "Shopee", "Lazada"]
          There are small no of cases where the escrow amount and the posted order amount is different. For such cases, SQL system will make the adjustment either editing on invoice or CN when payment is posted to make it tally.
          :::
 
-### Lazada
-
-### Posting Order
+## Lazada Posting Order
 
    1. When you post your order, the system has not finalized the transaction, shipping, marketing fees. You will only see the stock item in the invoice.
 
@@ -58,7 +54,7 @@ tags: ["SQL Account", "Posting order", "Shopee", "Lazada"]
 
       ![9](/img/e-commerce/different/9.png)
 
-### Lazada Multiple Payment files
+## Lazada Multiple Payment files
 
    1. For Lazada, 1 order can have multiple payment files. SQL system will adjust the Invoice / CN accordingly based on the amount of payment released by Lazada
 

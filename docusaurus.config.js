@@ -14,8 +14,7 @@ const config = {
   staticDirectories: ["static"],
 
   // Set the production url of your site here
-  //url: "https://example.com",
-  url: "https://localhost:3000",
+  url: "https://example.com"，
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",

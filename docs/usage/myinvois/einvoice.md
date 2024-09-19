@@ -38,7 +38,19 @@ These documents generate MyInvois Invoice which is a commercial document that it
 
 5. Continue with usual invoice / cash sales entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-sales-invoice}
+
+After saving your Sales Invoice or Cash Sales document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- Consolidate
+- [Cancellation](e-invoice-operation#cancellation)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
+- [Share PDF](e-invoice-operation#share-pdf-experimental)
 
 ### Credit Note
 
@@ -116,7 +128,18 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
 5. Continue with usual credit note entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-sales-credit-note}
+
+After saving your Credit Note document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- [Cancellation](e-invoice-operation#cancellation)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
+- [Share PDF](e-invoice-operation#share-pdf-experimental)
 
 ### Debit Note
 
@@ -157,7 +180,18 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
 5. Continue with usual debit note entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-sales-debit-note}
+
+After saving your Debit Note document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- [Cancellation](e-invoice-operation#cancellation)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
+- [Share PDF](e-invoice-operation#share-pdf-experimental)
 
 ## Purchase
 
@@ -202,7 +236,22 @@ These documents generate MyInvois Self-Billed Invoice which is a commercial docu
 
 5. Continue with usual purchase invoice / cash purchase entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-purchase-invoice}
+
+After saving your Purchase Invoice or Cash Purchase document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- Consolidate
+- [Single Import](e-invoice-operation#single-import)
+- [Batch Import](e-invoice-operation#batch-import)
+- [Cancellation (Self-Billed)](e-invoice-operation#cancellation)
+- [Rejection (Imported)](e-invoice-operation#rejection-imported-documents)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
+- [Download PDF](e-invoice-operation#download-pdf-experimental)
 
 ### Purchase Returned
 
@@ -283,7 +332,21 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
 5. Continue with usual purchase returned entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-purchase-returned}
+
+After saving your Purchase Returned document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- [Single Import](e-invoice-operation#single-import)
+- [Batch Import](e-invoice-operation#batch-import)
+- [Cancellation (Self-Billed)](e-invoice-operation#cancellation)
+- [Rejection (Imported)](e-invoice-operation#rejection-imported-documents)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
+- [Download PDF](e-invoice-operation#download-pdf-experimental)
 
 ### Purchase Debit Note
 
@@ -324,7 +387,21 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
 5. Continue with usual purchase debit note entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-purchase-debit-note}
+
+After saving your Purchase Debit Note document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- [Single Import](e-invoice-operation#single-import)
+- [Batch Import](e-invoice-operation#batch-import)
+- [Cancellation (Self-Billed)](e-invoice-operation#cancellation)
+- [Rejection (Imported)](e-invoice-operation#rejection-imported-documents)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
+- [Download PDF](e-invoice-operation#download-pdf-experimental)
 
 ## Cash Book
 
@@ -397,7 +474,17 @@ For E-Invoice purposes, you shall issue Self-Billed E-Invoices for the following
 
 4. Continue with usual payment voucher entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-payment-voucher-self-billed}
+
+After saving your Payment Voucher document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- [Cancellation](e-invoice-operation#cancellation)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
 
 #### Refund Note
 
@@ -425,7 +512,17 @@ Please ensure that the referenced documents are validated E-Invoices (Receipt Vo
 
 5. Continue with usual payment voucher entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-payment-voucher-e-invoice-refund}
+
+After saving your Payment Voucher document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- [Cancellation](e-invoice-operation#cancellation)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
 
 ### Receipt Voucher
 
@@ -455,7 +552,17 @@ Invoice is a commercial document that itemises and records a transaction between
 
 4. Continue with usual receipt voucher entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-receipt-voucher-e-invoice}
+
+After saving your Receipt Voucher document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- [Cancellation](e-invoice-operation#cancellation)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation
 
 #### Self-Billed Refund Note
 
@@ -483,4 +590,14 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
 5. Continue with usual receipt voucher entry and **Save**.
 
-**[TODO: Link to MyInvois Operation]**
+#### E-Invoice Operation {#e-invoice-operation-receipt-voucher-self-billed-refund}
+
+After saving your Receipt Voucher document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
+
+- [Submission](e-invoice-operation#submission)
+- [Cancellation](e-invoice-operation#cancellation)
+- [Check Status](e-invoice-operation#check-status)
+- [Log](e-invoice-operation#submission-log)
+- Batch Submission
+- Batch Check Status
+- Test E-Invoice Validation

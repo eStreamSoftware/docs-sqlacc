@@ -1,4 +1,5 @@
 ---
+sidebar_position: 2
 id: set-user-view
 title: Set User View
 description: A guide to set user view for SQL Mobile Connect
@@ -54,3 +55,27 @@ Based on the scenario above, `Invoice view by Agent - Current User` View Templat
 - Login by **ADMIN**
 
     ![10](../../../static/img/sql-mobile-connect/set-user-view/10.png)
+
+## 2.0 How to Set Customer View by Agent
+
+**Step 1**: Set Customer View Filter by Agent **LIM**
+
+Go to **Tools** | **DIY** | **Maintain DIY…** | **View Template**
+
+Under **Customer** | Open, select **AGENT** Equals **'LIM'** | Save
+
+![1](../../../static/img/sql-mobile-connect/set-customer-view/1.png)
+
+**Step 2**: Right-click and Select **User View**
+
+![2](../../../static/img/sql-mobile-connect/set-customer-view/2.png)
+
+**Step 3**: Choose **'LIM'** Under User View
+
+![3](../../../static/img/sql-mobile-connect/set-customer-view/3.png)
+
+Under Sales Document Listing, only the sales results for Agent **LIM** are visible.
+
+![4](../../../static/img/sql-mobile-connect/set-customer-view/4.png)
+
+![5](../../../static/img/sql-mobile-connect/set-customer-view/5.png)

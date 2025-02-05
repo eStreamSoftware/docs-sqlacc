@@ -1,0 +1,8 @@
+{
+    "label": "Customer Payment In Foreign Currency",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/customer/customer-payment-in-foreign/intro"
+    }
+}

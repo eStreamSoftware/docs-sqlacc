@@ -1,0 +1,8 @@
+{
+    "label": "Purchase Returned",
+    "position": 7,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/purchase/purchase-returned/intro"
+    }
+}

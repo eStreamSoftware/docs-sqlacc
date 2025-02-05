@@ -1,0 +1,8 @@
+{
+    "label": "Purchase Invoice",
+    "position": 4,
+    "link": {
+        "type": "doc",
+         "id": "quick-start/purchase/purchase-invoice/intro"
+    }
+}

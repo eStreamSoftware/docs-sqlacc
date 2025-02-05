@@ -1,204 +1,112 @@
 /* replace here for the image size */
 img {
-    max-width: 100%;
-    height: auto;
-  }
-
-/* css for quick start */
-/* Navbar github link button */
-.header-github-link {
-  width: 36px;
-  height: 36px;
-  padding: 6px;
-  margin-right: 6px;
-  border-radius: 50%;
-  transition: background var(--ifm-transition-fast);
+  max-width: 100%;
+  height: auto;
 }
-
-.header-github-link:hover {
-  background: var(--ifm-color-emphasis-200);
-}
-
-.header-github-link:before {
-  content: "";
-  height: 100%;
-  display: block;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-    no-repeat;
-}
-
-html[data-theme="dark"] .header--github-link:before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-    no-repeat;
-}
- 
- 
-/* Cange the select color of the project in light/dark theme */
+  
 :root {
-  --ifm-color-primary: #8657f4;
-  --ifm-color-primary-dark: #7038f2;
-  --ifm-color-primary-darker: #6428f1;
-  --ifm-color-primary-darkest: #4b0ed9;
-  --ifm-color-primary-light: #9c76f6;
-  --ifm-color-primary-lighter: #a886f7;
-  --ifm-color-primary-lightest: #c9b4fa;
-  --ifm-color-info-contrast-background: transparent !important;
-  --ifm-color-info-dark: #d7d9db;
+  .card3 {
+    flex: 1 1 calc(100% - 20px);
+    /* max-width: calc(100% - 20px); */
+    /* min-width: 410px; */
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 0.7vw;
+    margin-bottom: 10px;
+    border: none !important;
+    border-radius: 8px;
+    box-shadow: none !important;
+    transition: transform 0.2s, background-color 0.2s;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  };
+
+  .card3:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.01);
+  };
+
+  .card3:active {
+    background-color: white;
+    transform: scale(1);
+  } 
+
+  details {
+    border: none !important;
+    outline: none !important;
+    background-color: #eef0ff !important;
+    border-radius: 5px;
+    box-shadow: none !important;
+  };
+
+  details[open] {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #eef0ff !important;
+  };
 }
 
-[data-theme="dark"] {
-  --ifm-color-primary: #a985ff;
-  --ifm-color-primary-dark: #8e5eff;
-  --ifm-color-primary-darker: #804bff;
-  --ifm-color-primary-darkest: #5711ff;
-  --ifm-color-primary-light: #c4acff;
-  --ifm-color-primary-lighter: #d2bfff;
-  --ifm-color-primary-lightest: #fbf9ff;
-  --ifm-color-info-contrast-background: transparent !important;
-  --ifm-color-info-dark: #d7d9db;
-}
+[data-theme="dark"] { 
+  .card3 {
+    flex: 1 1 calc(100% - 20px);
+    /* max-width: calc(100% - 20px); */
+    /* min-width: 410px; */
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 0.7vw;
+    margin-bottom: 10px;
+    border: none !important;
+    border-radius: 8px;
+    box-shadow: none !important;
+    transition: transform 0.2s, background-color 0.2s;
+    background-color: #3a3c3d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  };
 
+  .card3:hover {
+    background-color: rgb(83, 86, 88);
+    transform: scale(1.01);
+  };
 
-/* Change the highlight color */
-::selection {
-  background-color: #9c76f6;
-}
-
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.card2 {
-  flex: 1 1 calc(100% - 20px); 
-  /* max-width: calc(100% - 20px);  */
-  min-width: 100%;  
-  box-sizing: border-box;
-  padding: 0.3vw;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, background-color 0.2s;
-}
-
-.card {
-  flex: 1 1 calc(100% - 20px); 
-  /* max-width: calc(100% - 20px); */
-  /* min-width: 410px; */
-  width: 26vw;  
-  box-sizing: border-box;
-  padding: 0.3vw;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, background-color 0.2s;
-  display: flex; 
-  flex-direction: row; 
-  align-items: center; 
-  gap: 10px; 
-}
-
-.card3 {
-  flex: 1 1 calc(100% - 20px); 
-  /* max-width: calc(100% - 20px); */
-  /* min-width: 410px; */
-  width: calc(100% - 20px);  
-  box-sizing: border-box;
-  padding: 0.7vw;
-  margin-bottom: 10px;
-  border:none !important;
-  border-radius: 8px;
-  box-shadow: none !important;
-  transition: transform 0.2s, background-color 0.2s;
-  background-color: white;
-  display: flex; 
-  flex-direction: row; 
-  align-items: center; 
-  gap: 10px; 
-}
-
-.card3 .icon {
-  font-size: 16px; /* Adjust icon size */
-}
-
-.card3 .text {
-  flex: 1; /* Allow text to take remaining space */
-}
-
-
-.card .icon {
-  font-size: 24px; /* Adjust icon size */
-}
-
-.card .text {
-  flex: 1; /* Allow text to take remaining space */
-}
-
-@media screen and (max-width: 996px) {
-  .card {
-    flex: 1 1 calc(100% - 20px); 
-    min-width: 45vw;
+  .card3:active {
+    background-color: rgb(83, 86, 88);
+    transform: scale(1);
   }
-}
 
+  details {
+    border: none !important;
+    outline: none !important;
+    background-color: #242526 !important;
+    border-radius: 5px;
+    box-shadow: none !important;
+  };
+
+  details[open] {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #242526 !important;
+  };
+}
+   
 .card-link {
-  display: flex;  
-  flex-direction: column;  
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   text-decoration: none;
   color: inherit;
 }
-
+  
 .card-link:hover {
   text-decoration: none;
   color: inherit;
-}
-
-.card:hover {
-  background-color: #f0f8ff;
-  transform: scale(1.02);
-}
-
-.card:active {
-  background-color: white;
-  transform: scale(1);
-} 
-
-.card3:hover {
-  background-color: #f0f8ff;
-  transform: scale(1.01);
-}
-
-.card3:active {
-  background-color: white;
-  transform: scale(1);
-} 
-
-details {
-  border: none !important;  
-  outline: none !important;
-  background-color: #EEF0FF !important;  
-  border-radius: 5px;
-  box-shadow: none !important;
-}
-
-details[open] {
-  border:  none !important;
-  outline: none !important;
-  box-shadow: none !important;
-  background-color: #EEF0FF !important;
-}
-
-summary {
-  background-color: transparent; 
-  align-items: center;
-}
-
-details[open] .details-content {
-  padding-top: 6px; 
 }
 
 .video-js {
@@ -206,10 +114,8 @@ details[open] .details-content {
   width: 100%;
   aspect-ratio: 16/9;
 }
- 
+  
 /* Hide all overlays that YouTube may add */
 iframe {
   pointer-events: none;
 }
-
-/* end of css for quick start */

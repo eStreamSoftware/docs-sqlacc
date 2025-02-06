@@ -2,7 +2,7 @@
 sidebar_position: 8
 title: Create Sales Cancelled Note
 hide_title: true
-description: How to cancel invoice in SQL Accounting
+description: How to create sales cancelled note in SQL Accounting
 slug: /sales/create-sales-cancelled-note
 tags: ["Sales"]
 ---

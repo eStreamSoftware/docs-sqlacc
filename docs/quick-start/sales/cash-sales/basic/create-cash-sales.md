@@ -2,7 +2,7 @@
 sidebar_position: 2
 title: Create Cash Sales
 hide_title: true
-description: How to cancel invoice in SQL Accounting
+description: How to create cash sales in SQL Accounting
 slug: /sales/create-cash-sales
 tags: ["Sales"]
 ---

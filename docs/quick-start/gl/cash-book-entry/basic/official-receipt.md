@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: Official Receipt
 hide_title: true
+description: How to create official receipt in SQL Accounting
 slug: /gl/cash-book-entry-official-receipt
 tags: ["GL"]
 ---

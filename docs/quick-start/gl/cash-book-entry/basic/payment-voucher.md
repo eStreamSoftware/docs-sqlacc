@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: Payment Voucher
 hide_title: true
+description: How to create payment voucher in SQL Accounting
 slug: /gl/cash-book-entry-payment-voucher
 tags: ["GL"]
 ---

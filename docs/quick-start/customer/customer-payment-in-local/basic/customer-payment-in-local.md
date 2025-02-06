@@ -2,6 +2,7 @@
 sidebar_position: 1
 title: Customer Payment In Local Currency
 hide_title: true
+description: How to process customer payment in local currency in SQL Accounting
 slug: /customer/customer-payment-in-local-currency
 tags: ["Customer"]
 ---

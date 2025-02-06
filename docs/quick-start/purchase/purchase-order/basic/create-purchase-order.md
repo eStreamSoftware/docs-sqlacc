@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: Create Purchase Order
 hide_title: true
+description: How to create purchase order in SQL Accounting
 slug: /purchase/create-purchase-order
 tags: ["Purchase"]
 ---

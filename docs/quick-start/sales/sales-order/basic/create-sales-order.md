@@ -2,7 +2,7 @@
 sidebar_position: 2
 title: Create Sales Order
 hide_title: true
-description: How to cancel invoice in SQL Accounting
+description: How to create sales order in SQL Accounting
 slug: /sales/create-sales-order
 tags: ["Sales"]
 ---

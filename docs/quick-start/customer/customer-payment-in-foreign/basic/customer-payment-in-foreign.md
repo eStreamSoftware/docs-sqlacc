@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: Customer Payment In Foreign Currency
 hide_title: true
+description: How to process customer payment in foreign currency in SQL Accounting
 slug: /customer/customer-payment-in-foreign-currency
 tags: ["Customer"]
 ---

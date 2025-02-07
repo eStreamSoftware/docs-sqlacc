@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Create Sales Credit Note
 hide_title: true
 description: How to create sales credit note in SQL Accounting
-slug: /sales/create-sales-credit-note
+slug: /quick-start/sales/create-sales-credit-note
 tags: ["Sales"]
 ---
 

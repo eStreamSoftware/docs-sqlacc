@@ -3,7 +3,7 @@ sidebar_position: 8
 title: Create Purchase Cancelled Note
 hide_title: true
 description: How to create purchae cancelled note in SQL Accounting
-slug: /purchase/create-purchase-cancelled-note
+slug: /quick-start/purchase/create-purchase-cancelled-note
 tags: ["Purchase"]
 ---
 

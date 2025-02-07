@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Create Sales Quotation
 hide_title: true
 description: How to create quotation in SQL Accounting
-slug: /sales/create-sales-quotation
+slug: /quick-start/sales/create-sales-quotation
 tags: ["Sales"]
 ---
  

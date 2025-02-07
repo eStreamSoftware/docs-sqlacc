@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true 
-slug: /sales/sales-credit-note-intro 
+slug: /quick-start/sales/sales-credit-note
 # id: sales/sales-credit-note/intro
 ---
 
@@ -14,7 +14,7 @@ slug: /sales/sales-credit-note-intro
       <div class="card3">
         <div class="icon">📄️</div>
           <div class="text">
-             <p>Sales Credit Note</p>
+             <p>Create Sales Credit Note</p>
           </div>
       </div>
     </a>

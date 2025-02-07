@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Create Sales Invoice
 hide_title: true
 description: How to create sales invoice in SQL Accounting
-slug: /sales/create-sales-invoice
+slug: /quick-start/sales/create-sales-invoice
 tags: ["Sales"]
 --- 
 

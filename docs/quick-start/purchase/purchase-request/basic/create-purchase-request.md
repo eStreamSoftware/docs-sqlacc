@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Create Purchase Request
 hide_title: true
 description: How to create purchase request in SQL Accounting
-slug: /purchase/create-purchase-request
+slug: /quick-start/purchase/create-purchase-request
 tags: ["Purchase"]
 ---
 

@@ -2,11 +2,9 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true
-slug: /purchase/cash-purchase-intro 
+slug: /quick-start/purchase/cash-purchase
 # id: "purchase/cash-purchase/intro"
 ---
-
-# Table of contents
 
 <details open>
   <summary>📘 **Data Entry**</summary>

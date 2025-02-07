@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true 
-slug: /sales/sales-debit-note-intro 
+slug: /quick-start/sales/sales-debit-note
 # id: sales/sales-debit-note/intro
 ---
 <details open>

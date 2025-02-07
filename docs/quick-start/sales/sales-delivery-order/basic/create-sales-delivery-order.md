@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Create Sales Delivery Order
 hide_title: true
 description: How to create sales delivery order in SQL Accounting
-slug: /sales/create-sales-delivery-order
+slug: /quick-start/sales/create-sales-delivery-order
 tags: ["Sales"]
 --- 
 

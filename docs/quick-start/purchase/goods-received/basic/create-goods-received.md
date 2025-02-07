@@ -3,7 +3,7 @@ sidebar_position: 3
 title: Create Goods Received
 hide_title: true
 description: How to create goods received in SQL Accounting
-slug: /purchase/create-goods-received
+slug: /quick-start/purchase/create-goods-received
 tags: ["Purchase"]
 ---
 

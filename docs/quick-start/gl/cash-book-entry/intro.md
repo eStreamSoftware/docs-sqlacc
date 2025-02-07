@@ -2,30 +2,28 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true
-slug: /gl/cash-book-entry-official-receipt-intro 
+slug: /quick-start/gl/cash-book-entry
 # id: "gl/cash-book-entry-official-receipt/intro"
 ---
-
-# Table of contents
 
 <details open>
   <summary>📘 **Data Entry**</summary>
   
   <div class="details-content"> 
-    <a href="./cash-book-entry-payment-voucher" class="card-link">
+    <a href="./create-cash-book-entry-payment-voucher" class="card-link">
       <div class="card3">
         <div class="icon">📄️</div>
           <div class="text">
-            <p>Payment Voucher</p>
+            <p>Create Payment Voucher</p>
           </div>
       </div>
     </a> 
 
-  <a href="./cash-book-entry-official-receipt" class="card-link">
+  <a href="./create-cash-book-entry-official-receipt" class="card-link">
     <div class="card3">
       <div class="icon">📄️</div>
         <div class="text">
-          <p>Official Receipt</p>
+          <p>Create Official Receipt</p>
         </div>
     </div>
   </a> 

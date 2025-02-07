@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Table of contents
 hide_title: true 
 # id: "sales/sales-order/intro"
-slug: /sales/sales-order-intro 
+slug: /quick-start/sales/sales-order 
 ---
 
 

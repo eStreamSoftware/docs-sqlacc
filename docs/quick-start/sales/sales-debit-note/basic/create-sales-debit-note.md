@@ -3,7 +3,7 @@ sidebar_position: 2
 title: Create Sales Debit Note
 hide_title: true
 description: How to create sales debit note in SQL Accounting
-slug: /sales/create-sales-debit-note
+slug: /quick-start/sales/create-sales-debit-note
 tags: ["Sales"]
 --- 
 

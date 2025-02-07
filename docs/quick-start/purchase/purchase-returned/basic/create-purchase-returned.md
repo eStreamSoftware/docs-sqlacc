@@ -3,7 +3,7 @@ sidebar_position: 7
 title: Create Purchase Returned
 hide_title: true
 description: How to create purchase returned in SQL Accounting
-slug: /purchase/create-purchase-returned
+slug: /quick-start/purchase/create-purchase-returned
 tags: ["Purchase"]
 ---
 

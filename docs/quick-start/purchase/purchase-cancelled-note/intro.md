@@ -2,11 +2,9 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true
-slug: /purchase/purchase-cancelled-note 
+slug: /quick-start/purchase/purchase-cancelled-note 
 # id : purchase/purchase-cancelled-note/intro
 ---
-
-# Table of contents
 
 <details open>
   <summary>📘 **Data Entry**</summary>

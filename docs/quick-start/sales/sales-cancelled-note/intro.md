@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true 
-slug: /sales/sales-cancelled-note-intro 
+slug: /quick-start/sales/sales-cancelled-note
 # id: sales/sales-cancelled-note/intro
 ---
 

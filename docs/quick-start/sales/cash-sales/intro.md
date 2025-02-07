@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true 
-slug: /sales/cash-sales-intro 
+slug: /quick-start/sales/cash-sales
 # id: sales/cash-sales/intro
 ---
 
@@ -14,7 +14,7 @@ slug: /sales/cash-sales-intro
       <div class="card3">
         <div class="icon">📄️</div>
           <div class="text">
-             <p>Create Sales Sales</p>
+             <p>Create Cash Sales</p>
           </div>
       </div>
     </a>

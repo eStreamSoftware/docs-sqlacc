@@ -2,11 +2,9 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true
-slug: /purchase/goods-received 
+slug: /quick-start/purchase/goods-received 
 # id: "purchase/goods-received/intro"
 ---
-
-# Table of contents
 
 <details open>
   <summary>📘 **Data Entry**</summary>

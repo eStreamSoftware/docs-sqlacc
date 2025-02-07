@@ -2,21 +2,19 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true
-slug: /gl/journal-entry-intro 
+slug: /quick-start/gl/journal-entry
 # id: "gl/journal-entry/intro"
 ---
-
-# Table of contents
 
 <details open>
   <summary>📘 **Data Entry**</summary>
   <div class="details-content"> 
   
-  <a href="./journal-entry" class="card-link">
+  <a href="./create-journal-entry" class="card-link">
     <div class="card3">
       <div class="icon">📄️</div>
         <div class="text">
-          <p>Journal Entry</p>
+          <p>Create Journal Entry</p>
         </div>
     </div>
   </a> 

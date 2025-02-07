@@ -2,11 +2,9 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true
-slug: /purchase/purchase-debit-note-intro 
+slug: /quick-start/purchase/purchase-debit-note
 # id : purchase/purchase-debit-note/intro
 ---
-
-# Table of contents
 
 <details open>
   <summary>📘 **Data Entry**</summary>

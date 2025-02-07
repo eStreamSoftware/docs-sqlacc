@@ -3,7 +3,7 @@ sidebar_position: 8
 title: Create Sales Cancelled Note
 hide_title: true
 description: How to create sales cancelled note in SQL Accounting
-slug: /sales/create-sales-cancelled-note
+slug: /quick-start/sales/create-sales-cancelled-note
 tags: ["Sales"]
 ---
 

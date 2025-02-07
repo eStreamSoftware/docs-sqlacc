@@ -2,11 +2,9 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true
-slug: /purchase/purchase-returned-intro 
+slug: /quick-start/purchase/purchase-returned
 # id: purchase/purchase-returned/intro
 ---
-
-# Table of contents
 
 <details open>
   <summary>📘 **Data Entry**</summary>

@@ -1,9 +1,9 @@
 ---
 sidebar_position: 3
-title: Journal Entry 
+title: Create Journal Entry 
 hide_title: true
 description: How to create journal entry in SQL Accounting
-slug: /gl/journal-entry
+slug: /quick-start/gl/create-journal-entry
 tags: ["GL"]
 ---
 

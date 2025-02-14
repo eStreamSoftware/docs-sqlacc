@@ -1,0 +1,8 @@
+{
+    "label": "Cash Purchase",
+    "position": 5,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/purchase/cash-purchase/intro"
+    }
+}

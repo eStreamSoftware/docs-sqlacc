@@ -38,6 +38,7 @@ const config = {
           routeBasePath: "/",
           sidebarPath: "./sidebars.js",
           editUrl: "https://github.com/eStreamSoftware/docs-sqlacc/edit/master/",
+          exclude: ['**/advanced/**']
         },
         theme: {
           customCss: [require.resolve("./static/css/custom.css")],
@@ -45,7 +46,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({

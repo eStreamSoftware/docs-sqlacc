@@ -1,5 +1,121 @@
 /* replace here for the image size */
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
+}
+  
+:root {
+  .card3 {
+    flex: 1 1 calc(100% - 20px);
+    /* max-width: calc(100% - 20px); */
+    /* min-width: 410px; */
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 0.7vw;
+    margin-bottom: 10px;
+    border: none !important;
+    border-radius: 8px;
+    box-shadow: none !important;
+    transition: transform 0.2s, background-color 0.2s;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  };
+
+  .card3:hover {
+    background-color: #f0f8ff;
+    transform: scale(1.01);
+  };
+
+  .card3:active {
+    background-color: white;
+    transform: scale(1);
+  } 
+
+  details {
+    border: none !important;
+    outline: none !important;
+    background-color: #eef0ff !important;
+    border-radius: 5px;
+    box-shadow: none !important;
+  };
+
+  details[open] {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #eef0ff !important;
+  };
+}
+
+[data-theme="dark"] { 
+  .card3 {
+    flex: 1 1 calc(100% - 20px);
+    /* max-width: calc(100% - 20px); */
+    /* min-width: 410px; */
+    width: calc(100% - 20px);
+    box-sizing: border-box;
+    padding: 0.7vw;
+    margin-bottom: 10px;
+    border: none !important;
+    border-radius: 8px;
+    box-shadow: none !important;
+    transition: transform 0.2s, background-color 0.2s;
+    background-color: #3a3c3d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  };
+
+  .card3:hover {
+    background-color: rgb(83, 86, 88);
+    transform: scale(1.01);
+  };
+
+  .card3:active {
+    background-color: rgb(83, 86, 88);
+    transform: scale(1);
   }
+
+  details {
+    border: none !important;
+    outline: none !important;
+    background-color: #242526 !important;
+    border-radius: 5px;
+    box-shadow: none !important;
+  };
+
+  details[open] {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: #242526 !important;
+  };
+}
+   
+.card-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+}
+  
+.card-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-js {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+  
+/* Hide all overlays that YouTube may add */
+iframe {
+  pointer-events: none;
+}

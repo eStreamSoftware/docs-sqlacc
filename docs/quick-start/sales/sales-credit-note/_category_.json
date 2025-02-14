@@ -1,0 +1,8 @@
+{
+    "label": "Sales Credit Note",
+    "position": 7,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/sales/sales-credit-note/intro"
+    }
+}

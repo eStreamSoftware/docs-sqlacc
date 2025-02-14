@@ -1,0 +1,8 @@
+{
+    "label": "Goods Received",
+    "position": 3,
+    "link": {
+        "type": "doc",
+         "id": "quick-start/purchase/goods-received/intro"
+    }
+}

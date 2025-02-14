@@ -1,0 +1,8 @@
+{
+    "label": "Sales Invoice",
+    "position": 4,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/sales/sales-invoice/intro"
+    }
+}

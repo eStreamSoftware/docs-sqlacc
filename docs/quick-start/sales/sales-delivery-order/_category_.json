@@ -1,0 +1,8 @@
+{
+    "label": "Sales Delivery Order",
+    "position": 3,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/sales/sales-delivery-order/intro"
+    }
+}

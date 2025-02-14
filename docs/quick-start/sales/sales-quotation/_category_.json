@@ -1,0 +1,8 @@
+{
+    "label": "Sales Quotation",
+    "position": 1,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/sales/sales-quotation/intro"
+    }
+}

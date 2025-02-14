@@ -1,0 +1,8 @@
+{
+    "label": "Purchase Order",
+    "position": 2,
+    "link": {
+        "type": "doc",
+         "id": "quick-start/purchase/purchase-order/intro"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "label": "Cash Sales",
+    "position": 5,
+    "link": {
+       "type": "doc",
+       "id": "quick-start/sales/cash-sales/intro"
+    }
+}

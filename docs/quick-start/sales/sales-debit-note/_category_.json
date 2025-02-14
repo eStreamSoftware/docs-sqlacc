@@ -1,0 +1,8 @@
+{
+    "label": "Sales Debit Note",
+    "position": 6,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/sales/sales-debit-note/intro"
+    }
+}

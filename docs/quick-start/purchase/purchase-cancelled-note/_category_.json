@@ -1,0 +1,8 @@
+{
+    "label": "Purchase Cancelled Note",
+    "position": 8,
+    "link": {
+        "type": "doc",
+         "id": "quick-start/purchase/purchase-cancelled-note/intro"
+    }
+}

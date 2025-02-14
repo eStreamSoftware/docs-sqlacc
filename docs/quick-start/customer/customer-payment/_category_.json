@@ -1,0 +1,8 @@
+{
+    "label": "Customer Payment",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/customer/customer-payment/intro"
+    }
+}

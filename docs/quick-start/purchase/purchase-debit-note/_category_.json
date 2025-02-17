@@ -1,0 +1,8 @@
+{
+    "label": "Purchase Debit Note",
+    "position": 6,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/purchase/purchase-debit-note/intro"
+    }
+}

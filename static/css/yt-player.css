@@ -1,0 +1,67 @@
+.video-js {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+  pointer-events: all;
+}
+
+:root {
+  .qr-button {
+    background-color: transparent;
+    /* YouTube's red */
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 15px;
+    font-weight: bold;
+    color: #ff0033;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .qr-button:hover {
+    background-color: #ff0033;
+    /* Darker shade for hover effect */
+    transform: scale(1.05);
+    color: white;
+  }
+
+  .qr-button:active {
+    background-color: #cc0022;
+    /* Even darker shade for active state */
+    transform: scale(0.95);
+    color: white;
+  }
+}
+
+[data-theme="dark"] {
+  .qr-button {
+    background-color: transparent;
+    /* YouTube's red */
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .qr-button:hover {
+    background-color: #ff0033;
+    /* Darker shade for hover effect */
+    transform: scale(1.05);
+    color: white;
+  }
+
+  .qr-button:active {
+    background-color: #cc0022;
+    /* Even darker shade for active state */
+    transform: scale(0.95);
+    color: white;
+  }
+}
+ 

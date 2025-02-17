@@ -1,0 +1,8 @@
+{
+    "label": "Cash Book Entry",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/gl/cash-book-entry/intro"
+    }
+}

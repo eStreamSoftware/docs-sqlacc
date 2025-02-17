@@ -8,13 +8,22 @@ const containerStyle = {
   paddingRight: "1rem",
   marginLeft: "auto",
   marginRight: "auto",
+  display: "flex",
 };
 
-const gridStyle = {
-  display: "grid",
-  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
+const singleSectionStyle = {
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
   gap: "1rem",
 };
+
+const twoSectionStyle = {
+  flex: 1,
+  display: "flex",
+  flexDirection: "column",
+  gap: "1rem",
+}; 
 
 const headerStyle = {
   fontWeight: "bold",
@@ -23,26 +32,40 @@ const headerStyle = {
   marginRight: "auto",
 };
 
-const Card = ({text, link}) => {
-    return (<a href={link} className="toc-card">{text}</a>);
+const Card = ({ text, link }) => {
+  return (<a href={link} className="toc-card">{text}</a>);
 }
 
-export const TOC = ({dataEntryList, advancedList}) => {
+export const TOC = ({ dataEntryList = [], advancedList = [] }) => {
+
+  const isSingle = dataEntryList.length === 0 || advancedList.length === 0;
+
   return (
     <div style={containerStyle}>
-      <div style={gridStyle}>
-        {/* Headers */}
-        <text style={headerStyle}>📘 Data Entry</text>
-        <text style={headerStyle}>🚀 Advanced</text>
+      {/* Data Entry Section */}
+      {dataEntryList.length > 0 && (
+        <div style={isSingle ? singleSectionStyle : twoSectionStyle}>
+          {/* Headers */}
+          <text style={headerStyle}>📘 Data Entry</text>
+          {/* Content Grid */}
+          {dataEntryList.map((entry) => (
+            <Card text={entry.text} link={entry.link} />
+          ))}
+        </div>
+      )}
 
-        {/* Content Grid */}
-        {dataEntryList.map((entry) => (
-            <Card text={entry.text} link={entry.link}/>
-        ))}
-        {advancedList.map((entry) => (
-            <Card text={entry.text} link={entry.link}/>
-        ))}
-      </div>
+      {/* Advanced Section */}
+      {advancedList.length > 0 && (
+        <div style={isSingle ? singleSectionStyle : twoSectionStyle}>
+          {/* Headers */}
+          <text style={headerStyle}>🚀 Advanced</text>
+          {/* Content Grid */}
+          {advancedList.map((entry) => (
+            <Card text={entry.text} link={entry.link} />
+          ))}
+        </div>
+      )}
+
     </div>
   );
 };

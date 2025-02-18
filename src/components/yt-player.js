@@ -32,6 +32,11 @@ export const VideoPlayer = ({ videoId, title }) => {
                 if (iframe) {
                     iframe.style.pointerEvents = 'none';
                 }
+                
+                const playButton = player.current.el().querySelector('.vjs-big-play-button');
+                if (playButton) {
+                    playButton.style.display = 'none';
+                }
             });
 
             return () => {

@@ -17,7 +17,7 @@ const Link = ({ key, href, label }) => (
     rel="noopener noreferrer"
     className='footer-link-item'
   >
-    {iconMap[label || label]}
+    {iconMap[label] || label}
   </a>
 )
 

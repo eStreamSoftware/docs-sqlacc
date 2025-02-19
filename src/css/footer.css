@@ -1,0 +1,31 @@
+
+.footer {
+    padding: var(--ifm-footer-padding-vertical) var(--ifm-footer-padding-horizontal);;
+    background-color: var(--ifm-footer-background-color);
+    color: var(--ifm-footer-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer a {
+    color: var(--ifm-footer-link-color);
+    line-height: 2;
+  }
+  
+  .footer p {
+    color: var(--ifm-footer-link-color);
+    line-height: 2;
+  }
+  
+  .footer a:hover {
+    color: var(--ifm-footer-link-hover-color);
+  }
+  
+  .linkContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  } 
+  

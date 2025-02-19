@@ -5,6 +5,7 @@ hide_title: true
 description: How to create official receipt in SQL Accounting
 slug: /quick-start/gl/create-cash-book-entry-official-receipt
 tags: ["GL"]
+sidebar_class_name: hidden-sidebar-items
 ---
 
 import { YtLayout } from '@src/components/yt-layout';

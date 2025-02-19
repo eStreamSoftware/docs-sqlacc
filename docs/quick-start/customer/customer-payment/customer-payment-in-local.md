@@ -5,6 +5,7 @@ hide_title: true
 description: How to process customer payment in local currency in SQL Accounting
 slug: /quick-start/customer/create-customer-payment-in-local-currency
 tags: ["Customer"]
+sidebar_class_name: hidden-sidebar-items
 ---
 
 import { YtLayout } from '@src/components/yt-layout';

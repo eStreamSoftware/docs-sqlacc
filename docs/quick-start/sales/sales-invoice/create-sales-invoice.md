@@ -5,6 +5,7 @@ hide_title: true
 description: How to create sales invoice in SQL Accounting
 slug: /quick-start/sales/create-sales-invoice
 tags: ["Sales"]
+sidebar_class_name: hidden-sidebar-items
 --- 
 
 import { YtLayout } from '@src/components/yt-layout';

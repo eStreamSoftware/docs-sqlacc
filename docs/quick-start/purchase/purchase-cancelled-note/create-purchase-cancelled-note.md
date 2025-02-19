@@ -5,6 +5,7 @@ hide_title: true
 description: How to create purchae cancelled note in SQL Accounting
 slug: /quick-start/purchase/create-purchase-cancelled-note
 tags: ["Purchase"]
+sidebar_class_name: hidden-sidebar-items
 ---
 
 import { YtLayout } from '@src/components/yt-layout';

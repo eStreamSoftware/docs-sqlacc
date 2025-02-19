@@ -5,6 +5,7 @@ hide_title: true
 description: How to create sales cancelled note in SQL Accounting
 slug: /quick-start/sales/create-sales-cancelled-note
 tags: ["Sales"]
+sidebar_class_name: hidden-sidebar-items
 ---
 
 import { YtLayout } from '@src/components/yt-layout';

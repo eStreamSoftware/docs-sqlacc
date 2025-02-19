@@ -5,6 +5,7 @@ hide_title: true
 description: How to create purchase returned in SQL Accounting
 slug: /quick-start/purchase/create-purchase-returned
 tags: ["Purchase"]
+sidebar_class_name: hidden-sidebar-items
 ---
 
 import { YtLayout } from '@src/components/yt-layout';

@@ -5,6 +5,7 @@ hide_title: true
 description: How to create purchase order in SQL Accounting
 slug: /quick-start/purchase/create-purchase-order
 tags: ["Purchase"]
+sidebar_class_name: hidden-sidebar-items
 ---
 
 import { YtLayout } from '@src/components/yt-layout';

@@ -5,6 +5,7 @@ hide_title: true
 description: How to create sales credit note in SQL Accounting
 slug: /quick-start/sales/create-sales-credit-note
 tags: ["Sales"]
+sidebar_class_name: hidden-sidebar-items
 ---
 
 import { YtLayout } from '@src/components/yt-layout';

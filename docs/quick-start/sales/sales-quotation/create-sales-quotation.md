@@ -5,6 +5,7 @@ hide_title: true
 description: How to create quotation in SQL Accounting
 slug: /quick-start/sales/create-sales-quotation
 tags: ["Sales"]
+sidebar_class_name: hidden-sidebar-items
 ---
 
 import { YtLayout } from '@src/components/yt-layout';

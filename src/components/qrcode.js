@@ -15,7 +15,7 @@ export const QRCodeGenerator = ({url}) => {
                 className='qr-button'
             >
                 <ImYoutube size={25}/>
-                <text style={{ paddingLeft: '5px' }}> View on Youtube</text>
+                <text style={{ paddingLeft: '5px' }}> View on Mobile</text>
             </button>
 
             {/* Full-screen preview modal */}

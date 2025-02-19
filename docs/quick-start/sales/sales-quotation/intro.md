@@ -9,6 +9,6 @@ import {TOC} from '@src/components/toc.js';
 
 <TOC
 dataEntryList = {[
-{"text": "Create Sales Quotation", "link": "./create-sales-quotation"}, 
+{"text": "Create Sales Quotation", "link": "/quick-start/sales/create-sales-quotation"}, 
 ]}
 />

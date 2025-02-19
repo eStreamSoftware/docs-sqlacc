@@ -9,6 +9,6 @@ import {TOC} from '@src/components/toc.js';
 
 <TOC
 dataEntryList = {[
-{"text": "Create Purchase Returned", "link": "./create-purchase-returned"},  
+{"text": "Create Purchase Returned", "link": "/quick-start/purchase/create-purchase-returned"},  
 ]}
 />

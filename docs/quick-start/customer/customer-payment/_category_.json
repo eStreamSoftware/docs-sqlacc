@@ -4,5 +4,6 @@
     "link": {
         "type": "doc",
         "id": "quick-start/customer/customer-payment/intro"
-    }
+    },
+    "collapsible": false
 }

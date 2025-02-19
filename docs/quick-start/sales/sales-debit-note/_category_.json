@@ -4,5 +4,6 @@
     "link": {
         "type": "doc",
         "id": "quick-start/sales/sales-debit-note/intro"
-    }
+    },
+    "collapsible": false
 }

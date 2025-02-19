@@ -4,5 +4,6 @@
     "link": {
         "type": "doc",
         "id": "quick-start/purchase/purchase-returned/intro"
-    }
+    },
+    "collapsible": false
 }

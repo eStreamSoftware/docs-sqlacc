@@ -4,5 +4,6 @@
     "link": {
         "type": "doc",
         "id": "quick-start/gl/cash-book-entry/intro"
-    }
+    },
+    "collapsible": false
 }

@@ -4,5 +4,6 @@
     "link": {
         "type": "doc",
          "id": "quick-start/purchase/purchase-order/intro"
-    }
+    },
+    "collapsible": false
 }

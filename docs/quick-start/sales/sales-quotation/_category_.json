@@ -4,5 +4,6 @@
     "link": {
         "type": "doc",
         "id": "quick-start/sales/sales-quotation/intro"
-    }
+    },
+    "collapsible": false
 }

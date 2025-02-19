@@ -4,5 +4,6 @@
     "link": {
         "type": "doc",
         "id": "quick-start/gl/journal-entry/intro"
-    }
+    },
+    "collapsible": false
 }

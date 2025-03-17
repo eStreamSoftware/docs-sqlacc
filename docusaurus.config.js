@@ -6,6 +6,10 @@
 
 import { themes as prismThemes } from "prism-react-renderer";
 import path from "path";
+import dotenv from 'dotenv';
+
+// Load environment variables from .env file
+dotenv.config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -46,6 +50,11 @@ const config = {
       };
     }
   ],
+
+  customFields: {
+    youtubeApiKey: process.env.YOUTUBE_API_KEY,
+  },
+  
   presets: [
     [
       "classic",

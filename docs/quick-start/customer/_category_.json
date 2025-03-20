@@ -1,8 +1,8 @@
 {
-    "label": "Customer Refund",
+    "label": "Customer",
     "position": 3,
     "link": {
         "type": "generated-index",
-        "description": "Learn on Customer Refund in SQL Account"
+        "description": "Learn on Customer in SQL Account"
     }
 }

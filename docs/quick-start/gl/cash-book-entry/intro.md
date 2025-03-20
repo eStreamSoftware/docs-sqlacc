@@ -3,6 +3,7 @@ sidebar_position: 1
 title: Table of contents
 hide_title: true
 slug: /quick-start/gl/cash-book-entry 
+form_name: TfmGLCB 
 ---
 
 import {TOC} from '@src/components/toc.js';

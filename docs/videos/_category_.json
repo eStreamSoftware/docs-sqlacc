@@ -1,0 +1,9 @@
+{
+    "label": "Videos",
+    "position": 11,
+    "link": {
+        "type": "generated-index",
+        "title": "Videos",
+        "description": "A comprehensive video playlist for SQL Account"
+    }
+}

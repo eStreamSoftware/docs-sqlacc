@@ -1,0 +1,9 @@
+{
+    "label": "Customer Aging",
+    "position": 5,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/customer/customer-aging/intro"
+    },
+    "collapsible": false
+}

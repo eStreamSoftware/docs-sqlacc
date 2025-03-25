@@ -10,6 +10,6 @@ import {TOC} from '@src/components/toc.js';
 <TOC
 dataEntryList = {[
 {"text": "Create Customer Payment in Local Currency", "link": "/quick-start/customer/create-customer-payment-in-local-currency"}, 
-{"text": "Create Customer Payment in Foreign Currency", "link": "/quick-start/customer/create-customer-payment-in-foreign-currency"},  
+{"text": "Create Customer Payment in Foreign Currency", "link": "/quick-start/customer/create-customer-payment-in-foreign-currency"},   
 ]}
 />

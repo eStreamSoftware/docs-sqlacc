@@ -1,0 +1,9 @@
+{
+    "label": "Customer Statement",
+    "position": 6,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/customer/customer-statement/intro"
+    },
+    "collapsible": false
+}

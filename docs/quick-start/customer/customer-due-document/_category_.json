@@ -1,0 +1,9 @@
+{
+    "label": "Customer Due Document",
+    "position": 6,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/customer/customer-due-document/intro"
+    },
+    "collapsible": false
+}

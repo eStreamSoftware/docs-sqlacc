@@ -1,0 +1,9 @@
+{
+    "label": "Bank Reconciliation",
+    "position": 3,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/gl/bank-reconciliation/intro"
+    },
+    "collapsible": false
+}

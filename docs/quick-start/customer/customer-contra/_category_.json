@@ -1,0 +1,9 @@
+{
+    "label": "Customer Contra",
+    "position": 4,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/customer/customer-contra/intro"
+    },
+    "collapsible": false
+}

@@ -1,9 +1,9 @@
 {
-    "label": "Journal Entry",
+    "label": "Customer Refund",
     "position": 2,
     "link": {
         "type": "doc",
-        "id": "quick-start/gl/journal-entry/intro"
+        "id": "quick-start/customer/customer-refund/intro"
     },
     "collapsible": false
 }

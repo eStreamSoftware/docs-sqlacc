@@ -1,9 +1,0 @@
-{
-    "label": "Activate MyInvois Request",
-    "position": 1,
-    "link": {
-        "type": "doc",
-        "id": "quick-start/e-invoice/activate-myinvois-request/intro"
-    },
-    "collapsible": false
-}

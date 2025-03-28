@@ -3,7 +3,7 @@ sidebar_position: 1
 title: Table of contents
 hide_title: true
 hide_table_of_contents: true
-slug: /quick-start/e-invoice/activate-myinvois-request
+slug: /quick-start/e-invoice
 ---
 
 import {TOC} from '@src/components/toc.js';

@@ -13,7 +13,7 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/InPH9dam-Hk?autoplay=1"
-    videoId="InPH9dam-Hk"
+    url="https://www.youtube.com/embed/E9_fj_d4274?autoplay=1"
+    videoId="E9_fj_d4274"
     title="Activate MyInvois Request"
 />

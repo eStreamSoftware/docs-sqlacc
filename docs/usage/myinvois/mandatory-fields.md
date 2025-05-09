@@ -54,6 +54,63 @@ Supplier info will be used for issuing self-billed E-Invoice.
 
 5. Click on **Tax** tab, and fill in supplier tax info according to [guide](#customer--supplier-tax-info).
 
+## Info Request in Maintain Customer/Supplier
+
+The Info Request feature makes it easy to collect accurate company details from customers or suppliers, especially for E-Invoice submissions. It generates a secure link you can share by email, allowing recipients to enter their information directly.
+
+### Create Info Request
+
+To generate an Info Request that allows customers or suppliers to submit their company information
+
+1. Go to detail mode for the selected customer or supplier
+
+2. Right click on an empty space, click on **Create Info Request**
+
+    ![create-info-request](../../../static/img/myinvois/guide/create-info-request.png)
+
+3. A dialog will appear showing a unique link. You can copy the link and share it manually or email it directly to the customer/supplier
+
+    :::info[NOTE]
+    An email address is required to use the email option
+    :::
+
+    ![info-request-pending](../../../static/img/myinvois/guide/info-request-pending.png)
+
+### Retrieve Info
+
+To collect the submitted data and update the customer's or supplier’s record
+
+1. Go to detail mode for the selected customer or supplier
+
+2. Right click on an empty space, click on **Retrieve Info**
+
+    ![retrieve-info](../../../static/img/myinvois/guide/retrieve-info.png)
+
+3. A dialog will display the submitted details along with the original request link
+
+    ![info-request-valid](../../../static/img/myinvois/guide/info-request-valid.png)
+
+4. Once you close the dialog, the record will be update automatically with the new information
+
+    ![maintain-customer-retrieve-info](../../../static/img/myinvois/guide/maintain-customer-retrieve-info.png)
+
+### Batch Retrieve Info
+
+To retrieve and update information for multiple customers or suppliers at once
+
+:::info[NOTE]
+An hourglass icon will appear next to customers or suppliers who has created Info Request
+![maintain-customer-info-request](../../../static/img/myinvois/guide/maintain-customer-info-request.png)
+:::
+
+1. In the browse screen, right-click on the button panel, click on **Batch Retrieve Info**
+
+    ![batch-retrieve-info](../../../static/img/myinvois/guide/batch-retrieve-info.png)
+
+2. A progress dialog will appear and automatically fetch the submitted data for all customers/suppliers
+
+    ![batch-retrieve-info-progress](../../../static/img/myinvois/guide/batch-retrieve-info-progress.png)
+
 ## Customer / Supplier Tax Info
 
 ### Local Business (Companies registered with local authorities)

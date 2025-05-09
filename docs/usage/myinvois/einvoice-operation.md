@@ -336,39 +336,39 @@ You can download the shared invoice PDF from SQL supplier.
 
     ![purchase-invoice-download-pdf](../../../static/img/myinvois/einvoice/purchase-invoice-download-pdf.png)
 
-## TIN Info Link
+## E-Invoice Request
 
-The TIN Info Link feature streamlines the process of collecting buyer information for E-Invoice submission. By providing a link, buyers can easily submit their personal or company details, ensuring accurate and real-time invoice creation with a validated LHDN QR code.
+The E-Invoice Request feature streamlines the process of collecting buyer information for E-Invoice submission. By providing a link, buyers can easily submit their personal or company details, ensuring accurate and real-time invoice creation with a validated LHDN QR code.
 
 :::warning[IMPORTANT]
 The invoice will auto submit to LHDN once the buyer has submitted the required information
 :::
 
-### Create TIN Info Link
+### Create E-Invoice Request
 
-To create TIN Info link that allows buyers to fill in their personal or company information and submit it for E-Invoice
+To create E-Invoice Request that allows buyers to fill in their personal or company information and submit it for E-Invoice
 
-1. Click on **MyInvois** > **Create TIN Info Link** in detail mode
+1. Click on **MyInvois** > **E-Invoice Request** in detail mode
 
-    ![create-link](../../../static/img/myinvois/tininfo/create-link.png)
+    ![create-request](../../../static/img/myinvois/einvoice-request/create-request.png)
 
 2. Select the desired report from the report list
 
-    ![report-list](../../../static/img/myinvois/tininfo/report-list.png)
+    ![report-list](../../../static/img/myinvois/einvoice-request/report-list.png)
 
-3. Download the report and share it with the buyer
+3. Share the report with the buyer
 
 4. The buyer can scan the QR code included in the report to fill in their personal or company information and submit it for E-Invoice
 
-5. An hourglass icon will appear next to the invoice with the TIN Info Link
+5. An hourglass icon will appear next to the invoice with the E-Invoice Request
 
     :::info[NOTE]
     When clicked, the icon will open the link shared with the buyer
     :::
 
-    ![hourglass](../../../static/img/myinvois/tininfo/hourglass.png)
+    ![hourglass](../../../static/img/myinvois/einvoice-request/hourglass.png)
 
-    ![eivrequest-form-pending](../../../static/img/myinvois/tininfo/eivrequest-form-pending.png)
+    ![eivrequest-form-pending](../../../static/img/myinvois/einvoice-request/eivrequest-form-pending.png)
 
 6. A filled hourglass icon indicates that the buyer has completed and submitted the required information for E-Invoice
 
@@ -376,55 +376,55 @@ To create TIN Info link that allows buyers to fill in their personal or company 
     When clicked, the icon updates the invoice with the submitted details and opens the link shared with the buyer
     :::
 
-    ![filled-hourglass](../../../static/img/myinvois/tininfo/filled-hourglass.png)
+    ![filled-hourglass](../../../static/img/myinvois/einvoice-request/filled-hourglass.png)
 
-    ![eivrequest-form-valid](../../../static/img/myinvois/tininfo/eivrequest-form-valid.png)
+    ![eivrequest-form-valid](../../../static/img/myinvois/einvoice-request/eivrequest-form-valid.png)
 
-### Cancel TIN Info Link
+### Cancel E-Invoice Request
 
-To cancel the TIN Info Link and prevent the buyer from submitting information for E-Invoice
+To cancel the E-Invoice Request and prevent the buyer from submitting information for E-Invoice
 
-1. Click on **MyInvois** > **Cancel TIN Info Link** in detail mode
+1. Click on **MyInvois** > **Cancel E-Invoice Request** in detail mode
 
-    ![cancel-link](../../../static/img/myinvois/tininfo/cancel-link.png)
+    ![cancel-request](../../../static/img/myinvois/einvoice-request/cancel-request.png)
 
-### Refresh TIN Info status
+### Refresh E-Invoice Request status
 
 To check if the buyer has submitted information for E-Invoice and update the invoice with the submitted details
 
-1. Click on **MyInvois** > **Refresh TIN Info status** in detail mode
+1. Click on **MyInvois** > **Refresh E-Invoice Request status** in detail mode
 
-    ![refresh-status](../../../static/img/myinvois/tininfo/refresh-status.png)
+    ![refresh-status](../../../static/img/myinvois/einvoice-request/refresh-status.png)
 
 2. If the buyer has submitted the required information, the status icon will change to "Valid" and the invoice will be updated with the submitted details
 
-    ![refresh-status-valid](../../../static/img/myinvois/tininfo/refresh-status-valid.png)
+    ![refresh-status-valid](../../../static/img/myinvois/einvoice-request/refresh-status-valid.png)
 
-### Batch Refresh TIN Info status
+### Batch Refresh E-Invoice Request status
 
 To check if buyers have submitted information for E-Invoice and update the status for multiple invoices
 
-1. Click on **MyInvois** > **Batch Refresh TIN Info status** in browse mode
+1. Click on **MyInvois** > **Batch Refresh E-Invoice Request status** in browse mode
 
-    ![batch-refresh-status](../../../static/img/myinvois/tininfo/batch-refresh-status.png)
+    ![batch-refresh-status](../../../static/img/myinvois/einvoice-request/batch-refresh-status.png)
 
-2. A progress dialog will appear and retrieve the latest status for all invoices with TIN Info Links
+2. A progress dialog will appear and retrieve the latest status for all invoices with E-Invoice Request
 
-    ![batch-refresh-status-progress](../../../static/img/myinvois/tininfo/batch-refresh-status-progress.png)
+    ![batch-refresh-status-progress](../../../static/img/myinvois/einvoice-request/batch-refresh-status-progress.png)
 
 ### Batch Submit E-Invoice & Consolidate E-Invoice
 
-When selected invoices include those with TIN Info Links (Hourglass icon), the following options will appear in the Batch Submit E-Invoice and Consolidate E-Invoice forms:
+When selected invoices include those with E-Invoice Request (Hourglass icon), the following options will appear in the Batch Submit E-Invoice and Consolidate E-Invoice forms:
 
 - Refresh - Verify that the selected invoices have been submitted for E-Invoice by the buyers and update the information
-- Cancel - Cancel the TIN Info Links for the selected invoices to prevent buyers from submitting information for E-Invoice
+- Cancel - Cancel the E-Invoice Request for the selected invoices to prevent buyers from submitting information for E-Invoice
 
-    ![batch-submit](../../../static/img/myinvois/tininfo/batch-submit.png)
+    ![batch-submit](../../../static/img/myinvois/einvoice-request/batch-submit.png)
 
     :::info[NOTE]
     You may click the Valid icon to perform check status
     :::
 
-    ![batch-submit-valid](../../../static/img/myinvois/tininfo/batch-submit-valid.png)
+    ![batch-submit-valid](../../../static/img/myinvois/einvoice-request/batch-submit-valid.png)
 
-    ![batch-submit-check-status](../../../static/img/myinvois/tininfo/batch-submit-check-status.png)
+    ![batch-submit-check-status](../../../static/img/myinvois/einvoice-request/batch-submit-check-status.png)

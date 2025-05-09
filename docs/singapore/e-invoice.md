@@ -1,5 +1,6 @@
 ---
-title: InvoiceNow
+sidebar_position: 2
+title: InvoiceNow GST
 description: A guide for E-Invoicing for Singapore SQL User
 slug: /singapore/invoicenow
 tags: ["SQL Account", "Singapore", "InvoiceNow"]
@@ -27,8 +28,8 @@ tags: ["SQL Account", "Singapore", "InvoiceNow"]
 
     ![3](../../static/img/singapore-gst/sg-e-invoice/3.png)
 
-:::info Note
-**Please note that obtaining the API Key and API Secret will incur additional charges**
+:::info[NOTE]
+Please note that obtaining the API Key and API Secret will incur additional charges
 :::
 
 ## 2. Setting Peppol In Company Profile
@@ -44,6 +45,14 @@ tags: ["SQL Account", "Singapore", "InvoiceNow"]
 3. **Save**
 
     ![4](../../static/img/singapore-gst/sg-e-invoice/4.png)
+
+:::info[NOTE]
+The icon next to API secret indicates the status for the API key and secret as follows:
+
+- ✅ - Valid API key and secret
+- ❌ - Invalid API key and secret
+
+:::
 
 ### 2.2 B2G (Business To Government)
 
@@ -65,15 +74,15 @@ tags: ["SQL Account", "Singapore", "InvoiceNow"]
 
 1. Click on **Edit**
 
-2. Select **Note Tab**
+2. Fill in customer **UEN number in Reg. No (New)**
 
-3. Click on the **‘magnifier’ button** to search customer peppol ID
+3. Select **Note Tab**
 
-4. Select the Customer **Company Name to get Peppol ID**
+4. Click on the **'magnifier' button** to search customer peppol ID
+
+5. Select the Customer **Company Name to get Peppol ID**
 
     *(When you input your Peppol details, the system will automatically update your UEN Number. Please double check to ensure its accuracy)*
-
-5. Fill in customer **UEN number in ‘Reg. No (New)**
 
 6. Click **Save**
 
@@ -81,7 +90,7 @@ tags: ["SQL Account", "Singapore", "InvoiceNow"]
 
 ### 3.2 Peppol B2G (Business To Government)
 
-1. **Peppol ID must be : 0195:SGUENT08GA0028A**
+1. Peppol ID must be: **0195:SGUENT08GA0028A**
 
 2. Must fill in your customer **Business Unit**
 
@@ -93,7 +102,7 @@ tags: ["SQL Account", "Singapore", "InvoiceNow"]
 
     ![8](../../static/img/singapore-gst/sg-e-invoice/8.png)
 
-    :::info For Supplier
+    :::info[For Supplier]
     Go to Supplier > Maintain Supplier > Edit > Note Tab
     :::
 
@@ -115,7 +124,7 @@ B2G follows the same steps as B2C, but B2G's Peppol ID must be **0195:SGUENT08GA
 
 ## 5. Item Code Mapping
 
-:::info
+:::info[NOTE]
 Item codes for items in the Peppol document will be automatically selected if there is a matching description.
 :::
 
@@ -138,12 +147,9 @@ Item codes for items in the Peppol document will be automatically selected if th
     ![12](../../static/img/singapore-gst/sg-e-invoice/12.png)
 
 After done settings, when you import a document from Peppol, the items will be automatically mapped item code and displayed as shown in the picture below, as an example:
-
-    **1. Supplier Code and Supplier Name matched**
-
-    **2. Item Description matched**
-
-    **3. Item Code set automatically**
+    1. Supplier Code and Supplier Name matched
+    2. Item Description matched
+    3. Item Code set automatically
 
 ![13](../../static/img/singapore-gst/sg-e-invoice/13.png)
 

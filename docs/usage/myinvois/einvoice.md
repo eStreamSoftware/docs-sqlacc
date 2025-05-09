@@ -51,6 +51,7 @@ After saving your Sales Invoice or Cash Sales document, you can access E-Invoice
 - [Batch Check Status](e-invoice-operation#batch-check-status)
 - [Test E-Invoice Validation](e-invoice-operation#test-e-invoice-validation)
 - [Share PDF](e-invoice-operation#share-pdf-experimental)
+- [E-Invoice Request](e-invoice-operation#e-invoice-request)
 
 ### Credit Note
 
@@ -73,9 +74,9 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from the validated invoice / cash sales. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
-    You can reference a consolidated E-Invoice but you cannot consolidate credit note.
-    - None – Exclude this document from E-Invoice submission.
-    - E-Invoice – This document will be submitted as E-Invoice.
+    - None – Exclude this document from Credit Note submission.
+    - E-Invoice – This document will be submitted as Credit Note.
+    - Consolidate – This document will be submitted as consolidated Credit Note.
     :::
 
     ![sales-credit-note-more](../../../static/img/myinvois/einvoice/sales-credit-note-more.png)
@@ -91,9 +92,9 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from the validated invoice / cash sales. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
-    You can reference a consolidated E-Invoice but you cannot consolidate credit note.
-    - None – Exclude this document from E-Invoice submission.
-    - E-Invoice – This document will be submitted as E-Invoice.
+    - None – Exclude this document from Credit Note submission.
+    - E-Invoice – This document will be submitted as Credit Note.
+    - Consolidate – This document will be submitted as consolidated Credit Note.
     :::
 
     ![sales-credit-note-more](../../../static/img/myinvois/einvoice/sales-credit-note-more.png)
@@ -111,9 +112,9 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
-    You can reference a consolidated E-Invoice but you cannot consolidate credit note.
-    - None – Exclude this document from E-Invoice submission.
-    - E-Invoice – This document will be submitted as E-Invoice.
+    - None – Exclude this document from Credit Note submission.
+    - E-Invoice – This document will be submitted as Credit Note.
+    - Consolidate – This document will be submitted as consolidated Credit Note.
     :::
 
     ![sales-credit-note-more](../../../static/img/myinvois/einvoice/sales-credit-note-more.png)
@@ -162,10 +163,9 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
-    You can reference a consolidated E-Invoice but you cannot consolidate debit note.
-    - None – Exclude this document from E-Invoice submission.
-    - E-Invoice – This document will be submitted as E-Invoice.
-    - Consolidate – Not applicable for this document type.
+    - None – Exclude this document from Debit Note submission.
+    - E-Invoice – This document will be submitted as Debit Note.
+    - Consolidate – This document will be submitted as consolidated Debit Note.
     :::
 
     ![sales-debit-note-more](../../../static/img/myinvois/einvoice/sales-debit-note-more.png)
@@ -274,10 +274,9 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 3. Click on **More** (1) to view mandatory info required for Self-Billed Credit Note, it will be prefilled with the info from the validated purchase invoice / cash purchase. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
-    You can reference a consolidated Self-Billed E-Invoice but you cannot consolidate Self-Billed Credit Note.
     - None – Exclude this document from Self-Billed Credit Note submission.
     - Self-billed – This document will be submitted as Self-Billed Credit Note.
-    - Consolidate – Not applicable for this document type.
+    - Consolidate – This document will be submitted as consolidated Self-Billed Credit Note.
     :::
 
     ![purchase-returned-more](../../../static/img/myinvois/einvoice/purchase-returned-more.png)
@@ -293,10 +292,9 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 3. Click on **More** (1) to view mandatory info required for Self-Billed Credit Note, it will be prefilled with the info from the validated purchase invoice / cash purchase. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
-    You can reference a consolidated Self-Billed E-Invoice but you cannot consolidate Self-Billed Credit Note.
     - None – Exclude this document from Self-Billed Credit Note submission.
     - Self-billed – This document will be submitted as Self-Billed Credit Note.
-    - Consolidate – Not applicable for this document type.
+    - Consolidate – This document will be submitted as consolidated Self-Billed Credit Note.
     :::
 
     ![purchase-invoice-more](../../../static/img/myinvois/einvoice/purchase-invoice-more.png)
@@ -314,10 +312,9 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 3. Click on **More** (1) to view mandatory info required for Self-Billed Credit Note, it will be prefilled with the info from the validated purchase invoice / cash purchase. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
-    You can reference a consolidated Self-Billed E-Invoice but you cannot consolidate Self-Billed Credit Note.
     - None – Exclude this document from Self-Billed Credit Note submission.
     - Self-billed – This document will be submitted as Self-Billed Credit Note.
-    - Consolidate – Not applicable for this document type.
+    - Consolidate – This document will be submitted as consolidated Self-Billed Credit Note.
     :::
 
     ![purchase-invoice-more](../../../static/img/myinvois/einvoice/purchase-invoice-more.png)
@@ -369,10 +366,9 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 3. Click on **More** (1) to view mandatory info required for Self-Billed Debit Note, it will be prefilled with the info from existing supplier's profile. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
-    You can reference a consolidated Self-Billed E-Invoice but you cannot consolidate Self-Billed Credit Note.
-    - None – Exclude this document from Self-Billed Credit Note submission.
-    - Self-billed – This document will be submitted as Self-Billed Credit Note.
-    - Consolidate – Not applicable for this document type.
+    - None – Exclude this document from Self-Billed Debit Note submission.
+    - Self-billed – This document will be submitted as Self-Billed Debit Note.
+    - Consolidate – This document will be submitted as consolidated Self-Billed Debit Note.
     :::
 
     ![purchase-debit-note-more](../../../static/img/myinvois/einvoice/purchase-debit-note-more.png)
@@ -440,6 +436,7 @@ This document can generate either MyInvois Self-Billed Invoice or MyInvois Refun
 - None – Exclude this document from submission.
 - Self-billed – This document will be submitted as Self-Billed Invoice.
 - E-Invoice Refund – This document will be submitted as Refund Note.
+- Consolidate – This document will be submitted as consolidated Self-Billed Invoice.
 
 :::
 
@@ -533,6 +530,7 @@ This document can generate either MyInvois Invoice or MyInvois Self-Billed Refun
 - None – Exclude this document from submission.
 - E-Invoice – This document will be submitted as E-Invoice.
 - Self-Billed Refund – This document will be submitted as Self-Billed Refund Note.
+- Consolidate – This document will be submitted as consolidated E-Invoice.
 
 :::
 

@@ -1,6 +1,6 @@
 {
     "label": "E Invoice",
-    "position": 5,
+    "position": 7,
     "link": {
         "type": "doc",
         "id": "quick-start/e-invoice/intro"

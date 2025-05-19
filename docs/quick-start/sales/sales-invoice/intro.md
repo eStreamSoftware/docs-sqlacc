@@ -19,4 +19,4 @@ dataEntryList = {[
 ]}
 />
 
-[Click to learn more about E-Invoice](../e-invoice)
+[Click to learn more about E-Invoice](/quick-start/e-invoice)

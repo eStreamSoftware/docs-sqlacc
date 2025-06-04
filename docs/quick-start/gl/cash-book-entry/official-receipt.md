@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/VbY3sIesoFE?autoplay=1"
     videoId="VbY3sIesoFE"
-    title="Cash Book Entry - Official Receipt"
 />

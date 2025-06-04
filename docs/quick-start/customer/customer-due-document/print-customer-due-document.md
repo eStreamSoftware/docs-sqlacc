@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/CZX423LFo-Y?autoplay=1"
     videoId="CZX423LFo-Y"
-    title="How To Print Customer Due Document"
 />

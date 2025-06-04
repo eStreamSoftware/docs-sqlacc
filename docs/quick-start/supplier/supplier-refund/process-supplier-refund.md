@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/sucmfwIOtu0?autoplay=1"
     videoId="sucmfwIOtu0"
-    title="How To Process Supplier Refund"
 />

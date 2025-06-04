@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-url="https://www.youtube.com/embed/lRYrv0OEwi4?autoplay=1"
-videoId="lRYrv0OEwi4"
-  title="Sales Quotation"
+    videoId="lRYrv0OEwi4"
 />

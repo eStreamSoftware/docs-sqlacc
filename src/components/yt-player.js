@@ -4,7 +4,7 @@ import 'video.js/dist/video-js.css';
 import 'videojs-youtube';
 import "@src/css/yt-player.css";
 
-export const VideoPlayer = ({ videoId, title }) => {
+export const VideoPlayer = ({ videoId }) => {
     const videoNode = useRef(null);
     const player = useRef(null);
 
@@ -53,7 +53,6 @@ export const VideoPlayer = ({ videoId, title }) => {
                 ref={videoNode}
                 className="video-js vjs-default-skin"
                 playsInline
-                title={title}
             />
         </div>
     );

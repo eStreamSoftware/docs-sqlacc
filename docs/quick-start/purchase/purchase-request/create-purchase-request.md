@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/Lwa3nr8hIIU?autoplay=1"
     videoId="Lwa3nr8hIIU"
-    title="Purchase Request"
 />

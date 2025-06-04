@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/tR0GdMOcnzA?autoplay=1"
     videoId="tR0GdMOcnzA"
-    title="How To Print Customer Aging Report"
 />

@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/NuPTa2-YTFw?autoplay=1"
     videoId="NuPTa2-YTFw"
-    title="Supplier Payment In Local Currency"
 />

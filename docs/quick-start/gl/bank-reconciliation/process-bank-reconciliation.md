@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/97fBLjRl45k?autoplay=1"
     videoId="97fBLjRl45k"
-    title="Process Bank Reconciliation"
 />

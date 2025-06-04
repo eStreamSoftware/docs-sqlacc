@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/vd05KUSCAb8?autoplay=1"
     videoId="vd05KUSCAb8"
-    title="How To Process Supplier Contra"
 />

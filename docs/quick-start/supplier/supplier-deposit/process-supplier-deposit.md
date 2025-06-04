@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/hCbvD3ORCTk?autoplay=1"
     videoId="hCbvD3ORCTk"
-    title="How To Process Supplier Deposit"
 />

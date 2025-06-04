@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/6BY28G95S14?autoplay=1"
     videoId="6BY28G95S14"
-    title="Cancel E-Invoice"
 />

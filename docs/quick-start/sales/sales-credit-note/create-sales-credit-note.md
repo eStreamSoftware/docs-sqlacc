@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/aB1g5pcspok?autoplay=1"
     videoId="aB1g5pcspok"
-    title="Sales Credit Note"
 />

@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/cg5t1mb_-AM?autoplay=1"
     videoId="cg5t1mb_-AM"
-    title="Customer Payment In Local Currency"
 />

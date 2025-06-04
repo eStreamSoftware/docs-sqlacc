@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/QfAyAZTD-tk?autoplay=1"
     videoId="QfAyAZTD-tk"
-    title="How To Generate Customer Statement"
 />

@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/5L44z7lmqdk?autoplay=1"
     videoId="5L44z7lmqdk"
-    title="Customer Payment In Foreign Currency"
 />

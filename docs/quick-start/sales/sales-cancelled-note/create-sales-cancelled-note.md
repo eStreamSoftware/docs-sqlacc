@@ -13,7 +13,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout 
-    url="https://www.youtube.com/embed/SFj3m1VNVsE?autoplay=1"
     videoId="SFj3m1VNVsE"
-    title="Sales Cancelled Note"
 />

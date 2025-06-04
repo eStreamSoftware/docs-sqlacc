@@ -62,6 +62,15 @@ const config = {
           routeBasePath: "/",
           sidebarPath: "./sidebars.js",
         },
+        blog: {
+          path: "changelog",
+          routeBasePath: "changelog",
+          blogTitle: "Changelog",
+          blogDescription: "Release notes and updates.",
+          blogSidebarTitle: 'Changelog',
+          blogSidebarCount: 'ALL',
+          showReadingTime: false,
+        },
         theme: {
           customCss: [require.resolve("./static/css/custom.css")],
         },
@@ -79,6 +88,9 @@ const config = {
           alt: "SQL Account",
           src: "img/account-logo.png",
         },
+        items: [
+          {to: 'changelog', label: 'Changelog', position: 'left'},
+        ],
       },
       footer: {
         style: "dark",

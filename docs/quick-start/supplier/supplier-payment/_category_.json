@@ -1,0 +1,9 @@
+{
+    "label": "Supplier Payment",
+    "position": 4,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/supplier/supplier-payment/intro"
+    },
+    "collapsible": false
+}

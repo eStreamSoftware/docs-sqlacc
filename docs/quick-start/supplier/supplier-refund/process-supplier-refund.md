@@ -1,0 +1,19 @@
+---
+sidebar_position: 3
+title: How To Process Supplier Refund
+description: How to process supplier refund in SQL Accounting
+slug: /quick-start/supplier/how-to-process-supplier-refund
+tags: ["Supplier"]
+hide_title: true
+hide_table_of_contents: true
+sidebar_class_name: hidden-sidebar-items
+---
+
+import '@src/css/sidebar.css';
+import { YtLayout } from '@src/components/yt-layout';
+
+<YtLayout 
+    url="https://www.youtube.com/embed/sucmfwIOtu0?autoplay=1"
+    videoId="sucmfwIOtu0"
+    title="How To Process Supplier Refund"
+/>

@@ -10,14 +10,18 @@ To streamline the e-invoice submission through SQL Account, you will need to go 
 
 ## Company Profile Setup
 
-1. Go to **File** > **Company Profile**.
+1. Go to **File** > **Company Profile** > **General** and make sure the country have been set to **Malaysia** to enable E-Invoice feature.
+
+    ![company-profile-country](../../../static/img/myinvois/onboarding/company-profile-country.png)
+
+2. Go to **File** > **Company Profile** > **MyInvois**.
    1. Make sure your company registration number (BRN) is correctly filled in. (click on the magnifying glass to utilize our auto BRN lookup feature)
    2. Make sure the TIN number has been filled in correctly.
    3. Click on 💾 **Save**.
 
         ![company-profile](../../../static/img/myinvois/onboarding/company-profile-myinvois-1.png)
 
-2. Click on **Connect MyInvois** to setup your **LHDN MyInvois** credential.
+3. Click on **Connect MyInvois** to setup your **LHDN MyInvois** credential.
 
     ![company-profile-myinvois-button](../../../static/img/myinvois/onboarding/company-profile-myinvois-2.png)
 

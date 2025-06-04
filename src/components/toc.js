@@ -8,64 +8,84 @@ const containerStyle = {
   paddingRight: "1rem",
   marginLeft: "auto",
   marginRight: "auto",
-  display: "flex",
 };
 
-const singleSectionStyle = {
-  width: "100%",
-  display: "flex",
-  flexDirection: "column",
-  gap: "1rem",
-};
-
-const twoSectionStyle = {
-  flex: 1,
-  display: "flex",
-  flexDirection: "column",
-  gap: "1rem",
+const sectionStyle = {
+  marginBottom: "2rem",
 };
 
 const headerStyle = {
   fontWeight: "bold",
   fontSize: "1.5rem",
-  marginLeft: "auto",
-  marginRight: "auto",
+  textAlign: "center",
+  marginBottom: "1.5rem",
 };
 
-const Card = ({ text, link }) => {
+const gridStyle = {
+  display: "grid",
+  gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))",
+  gap: "1.5rem",
+};
+
+const Card = ({ text, link, videoId }) => {
+  if (videoId) {
+    return (
+      <a href={link} className="toc-card toc-card-video">
+        <div className="toc-card-thumbnail">
+          <img 
+            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} 
+          />
+        </div>
+        <div className="toc-card-content">
+          {text}
+        </div>
+      </a>
+    );
+  }
+  
   return (<a href={link} className="toc-card">{text}</a>);
 }
 
 export const TOC = ({ dataEntryList = [], advancedList = [] }) => {
-
-  const isSingle = dataEntryList.length === 0 || advancedList.length === 0;
-
   return (
     <div style={containerStyle}>
       {/* Data Entry Section */}
       {dataEntryList.length > 0 && (
-        <div style={isSingle ? singleSectionStyle : twoSectionStyle}>
+        <div style={sectionStyle}>
           {/* Headers */}
-          <text style={headerStyle}>📘 Data Entry</text>
+          <h2 style={headerStyle}>📘 Data Entry</h2>
           {/* Content Grid */}
-          {dataEntryList.map((entry) => (
-            <Card text={entry.text} link={entry.link} />
-          ))}
+          <div style={gridStyle}>
+            {dataEntryList.map((entry, index) => (
+              <Card 
+                key={`data-entry-${index}`}
+                text={entry.text} 
+                link={entry.link} 
+                videoId={entry.videoId} 
+              />
+            ))}
+          </div>
         </div>
       )}
 
       {/* Advanced Section */}
       {advancedList.length > 0 && (
-        <div style={isSingle ? singleSectionStyle : twoSectionStyle}>
+        <div style={sectionStyle}>
           {/* Headers */}
-          <text style={headerStyle}>🚀 Advanced</text>
+          <h2 style={headerStyle}>🚀 Advanced</h2>
           {/* Content Grid */}
-          {advancedList.map((entry) => (
-            <Card text={entry.text} link={entry.link} />
-          ))}
+          <div style={gridStyle}>
+            {advancedList.map((entry, index) => (
+              <Card 
+                key={`advanced-${index}`}
+                text={entry.text} 
+                link={entry.link}
+                videoId={entry.videoId}
+              />
+            ))}
+          </div>
         </div>
       )}
-
     </div>
   );
 };

@@ -1,0 +1,9 @@
+{
+    "label": "Stock Received",
+    "position": 3,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-received/intro"
+    },
+    "collapsible": false
+}

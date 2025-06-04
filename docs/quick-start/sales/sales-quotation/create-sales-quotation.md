@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: Create Sales Quotation
 hide_title: true
+hide_table_of_contents: true
 description: How to create quotation in SQL Accounting
 slug: /quick-start/sales/create-sales-quotation
 tags: ["Sales"]

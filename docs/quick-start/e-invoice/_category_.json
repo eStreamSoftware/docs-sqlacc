@@ -1,8 +1,9 @@
 {
     "label": "E Invoice",
-    "position": 5,
+    "position": 7,
     "link": {
-        "type": "generated-index",
-        "description": "Learn on E Invoice in SQL Account"
-    }
+        "type": "doc",
+        "id": "quick-start/e-invoice/intro"
+    },
+    "collapsible": false
 }

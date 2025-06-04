@@ -2,6 +2,7 @@
 sidebar_position: 2
 title: Create Sales Order
 hide_title: true
+hide_table_of_contents: true
 description: How to create sales order in SQL Accounting
 slug: /quick-start/sales/create-sales-order
 tags: ["Sales"]

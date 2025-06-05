@@ -1,6 +1,6 @@
 {
     "label": "Stock Received",
-    "position": 3,
+    "position": 1,
     "link": {
         "type": "doc",
         "id": "quick-start/stock/stock-received/intro"

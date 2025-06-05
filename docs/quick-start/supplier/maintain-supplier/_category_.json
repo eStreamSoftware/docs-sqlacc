@@ -1,0 +1,9 @@
+{
+    "label": "Maintain Supplier",
+    "position": 1,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/supplier/maintain-supplier/intro"
+    },
+    "collapsible": false
+}

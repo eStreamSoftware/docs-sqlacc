@@ -1,6 +1,6 @@
 {
     "label": "Customer Deposit",
-    "position": 3,
+    "position": 4,
     "link": {
         "type": "doc",
         "id": "quick-start/customer/customer-deposit/intro"

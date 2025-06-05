@@ -1,6 +1,6 @@
 {
     "label": "Supplier Deposit",
-    "position": 1,
+    "position": 2,
     "link": {
         "type": "doc",
         "id": "quick-start/supplier/supplier-deposit/intro"

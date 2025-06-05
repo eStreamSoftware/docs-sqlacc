@@ -1,9 +1,9 @@
 {
-    "label": "Customer Refund",
+    "label": "Stock Adjustment",
     "position": 3,
     "link": {
         "type": "doc",
-        "id": "quick-start/customer/customer-refund/intro"
+        "id": "quick-start/stock/stock-adjustment/intro"
     },
     "collapsible": false
 }

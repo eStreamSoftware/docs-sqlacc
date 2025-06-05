@@ -21,5 +21,10 @@ dataEntryList = {[
   "link": "/quick-start/gl/create-cash-book-entry-official-receipt",
   "videoId": "VbY3sIesoFE"
 },  
+{
+  "text": "How To Self Billed Via Payment Voucher", 
+  "link": "/quick-start/e-invoice/how-to-self-billed-via-payment-voucher",
+  "videoId": "S27uXKVaD5M"
+}, 
 ]}
 />

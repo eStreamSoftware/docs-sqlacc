@@ -1,0 +1,9 @@
+{
+    "label": "Stock Issue",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-issue/intro"
+    },
+    "collapsible": false
+}

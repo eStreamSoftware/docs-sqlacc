@@ -1,6 +1,6 @@
 {
     "label": "Customer Aging",
-    "position": 5,
+    "position": 6,
     "link": {
         "type": "doc",
         "id": "quick-start/customer/customer-aging/intro"

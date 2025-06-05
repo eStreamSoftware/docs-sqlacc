@@ -16,5 +16,20 @@ dataEntryList = {[
   "link": "/quick-start/purchase/create-purchase-invoice",
   "videoId": "dBxJcgMINXI"  
 },  
+{
+  "text": "How To Self Billed Via Purchase Invoice", 
+  "link": "/quick-start/e-invoice/how-to-self-billed-via-purchase-invoice",
+  "videoId": "vFA7APA5djw"
+}, 
+{
+  "text": "Download PDF from SQL Supplier", 
+  "link": "/quick-start/e-invoice/how-to-download-pdf-from-sql-supplier",
+  "videoId": "QYxoVcAW0Dw"    
+},  
+{
+  "text": "Batch Import E-Invoice", 
+  "link": "/quick-start/e-invoice/how-to-batch-import-e-invoice",
+  "videoId": "K_p98wYEH7c"    
+}, 
 ]}
 />

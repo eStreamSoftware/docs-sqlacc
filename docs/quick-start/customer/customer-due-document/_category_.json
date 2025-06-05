@@ -1,6 +1,6 @@
 {
     "label": "Customer Due Document",
-    "position": 6,
+    "position": 8,
     "link": {
         "type": "doc",
         "id": "quick-start/customer/customer-due-document/intro"

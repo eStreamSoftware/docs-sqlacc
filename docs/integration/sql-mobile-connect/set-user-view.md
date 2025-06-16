@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 id: set-user-view
 title: Set User View
 description: A guide to set user view for SQL Mobile Connect

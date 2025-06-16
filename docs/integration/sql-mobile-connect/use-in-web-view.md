@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 id: open-in-dekstop-browser
 title: Open In Desktop Browser
 description: A guide to use SQL Mobile Connect in desktop browser

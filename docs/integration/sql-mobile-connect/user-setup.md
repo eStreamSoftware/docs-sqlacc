@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 id: user-setup
 title: User Setup
 description: A guide to setup SQL Mobile Connect User

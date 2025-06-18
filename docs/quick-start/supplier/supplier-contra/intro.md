@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "How To Process Supplier Contra", 
-  "link": "/quick-start/supplier/how-to-process-supplier-contra",
+  "link": "./how-to-process-supplier-contra",
   "videoId": "vd05KUSCAb8"  
 },
 ]}

@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "How To Process Customer Refund",  
-  "link": "/quick-start/customer/how-to-process-customer-refund",
+  "link": "./how-to-process-customer-refund",
   "videoId": "HXmKPVFmZ7c"
 },
 ]}

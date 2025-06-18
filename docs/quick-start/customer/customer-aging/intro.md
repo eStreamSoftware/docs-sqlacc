@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "How To Print Customer Aging Report", 
-  "link": "/quick-start/customer/how-to-print-customer-aging-report", 
+  "link": "./how-to-print-customer-aging-report", 
   "videoId": "tR0GdMOcnzA"
 },  
 ]}

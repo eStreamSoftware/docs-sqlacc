@@ -13,42 +13,42 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "Create Cash Sales", 
-  "link": "/quick-start/sales/create-cash-sales",
+  "link": "./create-cash-sales",
   "videoId": "cosRwOQrFTo"  
 },  
 {
   "text": "How To Activate MyInvois Request", 
-  "link": "/quick-start/e-invoice/how-to-activate-myinvois-request",
+  "link": "../e-invoice/how-to-activate-myinvois-request",
   "videoId": "E9_fj_d4274"
 },
 {
   "text": "How To Submit E-Invoice", 
-  "link": "/quick-start/e-invoice/how-to-submit-e-invoice",
+  "link": "../e-invoice/how-to-submit-e-invoice",
   "videoId": "z4QQeFo6QiA"
 },
 {
   "text": "How To Consolidate E-Invoice", 
-  "link": "/quick-start/e-invoice/how-to-consolidate-e-invoice",
+  "link": "../e-invoice/how-to-consolidate-e-invoice",
   "videoId": "HbXue9dcpQs"
 },
 {
   "text": "How To Cancel E-Invoice", 
-  "link": "/quick-start/e-invoice/how-to-cancel-e-invoice",
+  "link": "../e-invoice/how-to-cancel-e-invoice",
   "videoId": "6BY28G95S14"
 },  
 {
   "text": "How To Batch Submit E-Invoice", 
-  "link": "/quick-start/e-invoice/how-to-batch-submit-e-invoice",
+  "link": "../e-invoice/how-to-batch-submit-e-invoice",
   "videoId": "X9cMxTRuNno"
 }, 
 {
   "text": "Share PDF to SQL Buyer", 
-  "link": "/quick-start/e-invoice/how-to-share-pdf-to-sql-buyer",
+  "link": "../e-invoice/how-to-share-pdf-to-sql-buyer",
   "videoId": "-bvJlufvqHM"    
 },  
 {
   "text": "Reject Validated E-Invoice", 
-  "link": "/quick-start/e-invoice/how-to-reject-validated-e-invoice",
+  "link": "../e-invoice/how-to-reject-validated-e-invoice",
   "videoId": "FCxszVvHAq0"    
 },  
 ]}

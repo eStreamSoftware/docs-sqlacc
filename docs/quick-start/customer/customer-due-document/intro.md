@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "How To Print Customer Due Document", 
-  "link": "/quick-start/customer/how-to-print-customer-due-document",
+  "link": "./how-to-print-customer-due-document",
   "videoId": "CZX423LFo-Y"  
 },  
 ]}

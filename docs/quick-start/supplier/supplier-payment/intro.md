@@ -13,12 +13,12 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "Create Supplier Payment in Local Currency", 
-  "link": "/quick-start/supplier/create-supplier-payment-in-local-currency",
+  "link": "./create-supplier-payment-in-local-currency",
   "videoId": "NuPTa2-YTFw"
 }, 
 {
   "text": "Create Supplier Payment in Foreign Currency",
-  "link": "/quick-start/supplier/create-supplier-payment-in-foreign-currency",
+  "link": "./create-supplier-payment-in-foreign-currency",
   "videoId": "Z3wQu3zkZCs" 
 },   
 ]}

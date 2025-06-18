@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "How To Print Customer Statement", 
-  "link": "/quick-start/customer/how-to-generate-customer-statement",
+  "link": "./how-to-generate-customer-statement",
   "videoId": "QfAyAZTD-tk"  
 },  
 ]}

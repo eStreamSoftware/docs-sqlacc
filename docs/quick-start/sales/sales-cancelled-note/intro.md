@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "Create Sales Cancelled Note", 
-  "link": "/quick-start/sales/create-sales-cancelled-note",
+  "link": "./create-sales-cancelled-note",
   "videoId": "SFj3m1VNVsE"  
 },  
 ]}

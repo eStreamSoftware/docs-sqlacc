@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "Create Purchase Order", 
-  "link": "/quick-start/purchase/create-purchase-order",
+  "link": "./create-purchase-order",
   "videoId": "VzQq83HLk9I"
 },  
 ]}

@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "Create Sales Quotation", 
-  "link": "/quick-start/sales/create-sales-quotation",
+  "link": "./create-sales-quotation",
   "videoId": "lRYrv0OEwi4"  
 }, 
 ]}

@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "TIN Lookup Via Maintain Customer", 
-  "link": "/quick-start/e-invoice/how-to-tin-lookup-via-maintain-customer",
+  "link": "../e-invoice/how-to-tin-lookup-via-maintain-customer",
   "videoId": "EMpDTDBVB2o"      
 },   
 ]}

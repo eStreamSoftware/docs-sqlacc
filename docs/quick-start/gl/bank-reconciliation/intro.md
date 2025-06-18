@@ -12,7 +12,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "How To Process Bank Reconciliation", 
-  "link": "/quick-start/gl/how-to-process-bank-reconciliation",
+  "link": "./how-to-process-bank-reconciliation",
   "videoId": "97fBLjRl45k"  
 },  
 ]}

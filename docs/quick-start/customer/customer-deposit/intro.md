@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "How To Process Customer Deposit", 
-  "link": "/quick-start/customer/how-to-process-customer-deposit",
+  "link": "./how-to-process-customer-deposit",
   "videoId": "SbsdyFDke60"  
 },
 ]}

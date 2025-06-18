@@ -13,7 +13,7 @@ import {TOC} from '@src/components/toc.js';
 dataEntryList = {[
 {
   "text": "Create Journal Entry", 
-  "link": "/quick-start/gl/create-journal-entry",
+  "link": "./create-journal-entry",
   "videoId": "I5TC0re1fxQ"
 },  
 ]}

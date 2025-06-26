@@ -70,5 +70,20 @@ dataEntryList = {[
   "link": "./e-invoice/how-to-tin-lookup-via-maintain-customer",
   "videoId": "EMpDTDBVB2o"      
 },   
+{
+  "text": "How to Request Customer Info", 
+  "link": "./e-invoice/how-to-request-customer-info",
+  "videoId": "X3BoiXOlKkc"      
+},   
+{
+  "text": "How to Test E Invoice Validation", 
+  "link": "./e-invoice/how-to-test-e-invoice-validation",
+  "videoId": "AKLkzWVApLY"      
+},
+{
+  "text": "Batch Update Classifiation Code in Stock Item", 
+  "link": "./e-invoice/batch-update-classification-code",
+  "videoId": "DxG6Okbn3e4"      
+},  
 ]}
 />

@@ -1,0 +1,9 @@
+{
+    "label": "Stock Transfer",
+    "position": 7,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-transfer/intro"
+    },
+    "collapsible": false
+}

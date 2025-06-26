@@ -51,6 +51,10 @@ dataEntryList = {[
   "link": "../e-invoice/how-to-reject-validated-e-invoice",
   "videoId": "FCxszVvHAq0"    
 },  
-
+{
+  "text": "How to Test E Invoice Validation", 
+  "link": "../e-invoice/how-to-test-e-invoice-validation",
+  "videoId": "AKLkzWVApLY"      
+},   
 ]}
 />

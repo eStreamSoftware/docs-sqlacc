@@ -1,0 +1,9 @@
+{
+    "label": "Maintain Stock Group",
+    "position": 1,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-group/intro"
+    },
+    "collapsible": false
+}

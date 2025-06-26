@@ -1,0 +1,9 @@
+{
+    "label": "Maintain Stock Item",
+    "position": 2,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-item/intro"
+    },
+    "collapsible": false
+}

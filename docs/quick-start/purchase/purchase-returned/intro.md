@@ -30,6 +30,11 @@ dataEntryList = {[
   "text": "Batch Import E-Invoice", 
   "link": "../e-invoice/how-to-batch-import-e-invoice",
   "videoId": "K_p98wYEH7c"    
+},
+{
+  "text": "How to Test E Invoice Validation", 
+  "link": "../e-invoice/how-to-test-e-invoice-validation",
+  "videoId": "AKLkzWVApLY"      
 }, 
 ]}
 />

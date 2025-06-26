@@ -1,0 +1,9 @@
+{
+    "label": "Stock Physical Worksheet",
+    "position":3,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-physical-worksheet/intro"
+    },
+    "collapsible": false
+}

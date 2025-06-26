@@ -16,5 +16,10 @@ dataEntryList = {[
   "link": "../e-invoice/how-to-tin-lookup-via-maintain-customer",
   "videoId": "EMpDTDBVB2o"      
 },   
+{
+  "text": "How to Request Customer Info", 
+  "link": "../e-invoice/how-to-request-customer-info",
+  "videoId": "X3BoiXOlKkc"      
+},   
 ]}
 />

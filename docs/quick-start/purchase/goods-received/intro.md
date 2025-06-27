@@ -14,7 +14,7 @@ dataEntryList = {[
 {
   "text": "Create Goods Received", 
   "link": "./create-goods-received",
-  "videoId": "unz7TxUgZbY"
+  "videoId": "0rgflaIzxIk"
 },  
 ]}
 />

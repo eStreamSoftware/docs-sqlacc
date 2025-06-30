@@ -27,8 +27,7 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^5.4.0",
-    "video.js": "^8.21.0",
-    "videojs-youtube": "^3.0.1"
+    "react-player": "^3.0.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.7.0",

@@ -16,5 +16,10 @@ dataEntryList = {[
   "link": "./print-stock-physical-worksheet",
   "videoId": "i_gR-rSB_hY"  
 },
+{
+  "text": "SQL Stock Pick Checker", 
+  "link": "./stock-pick-checker",
+  "videoId": "zg_H9h5sm44"  
+},
 ]}
 />

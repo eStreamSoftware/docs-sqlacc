@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: Request Customer Info
-description: How to request customer info in SQL Accounting
+description: How to Request Customer/Supplier Info in SQL Accounting
 slug: /quick-start/e-invoice/how-to-request-customer-info
 tags: ["E Invoice"]
 hide_title: true 

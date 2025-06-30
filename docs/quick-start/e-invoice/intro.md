@@ -11,7 +11,7 @@ import {TOC} from '@src/components/toc.js';
 <TOC
 dataEntryList = {[
 {
-  "text": "How To Activate MyInvois Request", 
+  "text": "MyInvois Request - Buyer/Customer self-service to key in TIN information", 
   "link": "./e-invoice/how-to-activate-myinvois-request",
   "videoId": "E9_fj_d4274"
 },
@@ -66,12 +66,12 @@ dataEntryList = {[
   "videoId": "K_p98wYEH7c"    
 },
 {
-  "text": "TIN Lookup Via Maintain Customer", 
+  "text": "TIN Lookup Via Maintain Customer/Supplier", 
   "link": "./e-invoice/how-to-tin-lookup-via-maintain-customer",
   "videoId": "EMpDTDBVB2o"      
 },   
 {
-  "text": "How to Request Customer Info", 
+  "text": "How to Request Customer/Supplier Info", 
   "link": "./e-invoice/how-to-request-customer-info",
   "videoId": "X3BoiXOlKkc"      
 },   

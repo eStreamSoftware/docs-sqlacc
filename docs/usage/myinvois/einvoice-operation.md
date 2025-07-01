@@ -137,27 +137,27 @@ Preview the report and you can see the E-Invoice validation QR code is embedded 
 
 ![sales-invoice-preview](../../../static/img/myinvois/einvoice/sales-invoice-preview.png)
 
-## Check Status
+## Refresh Status
 
 You can easily check the latest status of an invoice in SQL Account to ensure it has been submitted and processed correctly.
 
-### Check Status (Single Document)
+### Refresh Status (Single Document)
 
-1. Click on **MyInvois** > **Check E-Invoice Status**
+1. Click on **MyInvois** > **Check E-Invoice Status** (1) or **Icon** (2).
 
-    ![sales-invoice-check-status-button](../../../static/img/myinvois/einvoice/sales-invoice-check-status-button.png)
+    ![sales-invoice-refresh-status-button](../../../static/img/myinvois/einvoice/sales-invoice-refresh-status-button.png)
 
 2. You will be able to see the current status of the submitted invoice, along with the QR code and a validation page.
 
-    ![sales-invoice-check-status-valid](../../../static/img/myinvois/einvoice/sales-invoice-check-status-valid.png)
+    ![sales-invoice-refresh-status-valid](../../../static/img/myinvois/einvoice/sales-invoice-refresh-status-valid.png)
 
     :::info[NOTE]
     If the invoice status is marked as invalid, a list of errors will be displayed. You can use this information to correct the invoice and resubmit it.
     :::
 
-    ![sales-invoice-check-status-invalid](../../../static/img/myinvois/einvoice/sales-invoice-check-status-invalid.png)
+    ![sales-invoice-refresh-status-invalid](../../../static/img/myinvois/einvoice/sales-invoice-refresh-status-invalid.png)
 
-### Batch Check Status
+### Batch Refresh Status
 
 In certain situations, the status of your E-Invoices may not reflect the latest updates due to various factors such as:
 
@@ -172,7 +172,7 @@ To ensure that you are viewing the most up-to-date status of your E-Invoices, fo
 
 This process will retrieve the latest status for all submitted documents, ensuring that your records are accurate and up to date.
 
-    ![batch-check-status](../../../static/img/myinvois/einvoice/batch-check-status.png)
+    ![batch-refresh-status](../../../static/img/myinvois/einvoice/batch-refresh-status.png)
 
 ## Submission Log
 
@@ -310,7 +310,7 @@ You can share invoice PDF to SQL buyer.
 
 1. Click on **MyInvois** > **Check E-Invoice Status**
 
-    ![sales-invoice-check-status-button](../../../static/img/myinvois/einvoice/sales-invoice-check-status-button.png)
+    ![sales-invoice-refresh-status-button](../../../static/img/myinvois/einvoice/sales-invoice-refresh-status-button.png)
 
 2. Click on **Share** to share the invoice PDF with SQL buyer
 
@@ -422,9 +422,9 @@ When selected invoices include those with E-Invoice Request (Hourglass icon), th
     ![batch-submit](../../../static/img/myinvois/einvoice-request/batch-submit.png)
 
     :::info[NOTE]
-    You may click the Valid icon to perform check status
+    You may click the Valid icon to perform refresh status
     :::
 
     ![batch-submit-valid](../../../static/img/myinvois/einvoice-request/batch-submit-valid.png)
 
-    ![batch-submit-check-status](../../../static/img/myinvois/einvoice-request/batch-submit-check-status.png)
+    ![batch-submit-refresh-status](../../../static/img/myinvois/einvoice-request/batch-submit-refresh-status.png)

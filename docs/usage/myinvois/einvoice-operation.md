@@ -57,6 +57,38 @@ In the scenario where you already issued a lot of invoices but yet to submit E-I
 
     ![batch-submission-refresh](../../../static/img/myinvois/einvoice/batch-submission-refresh.png)
 
+### Resolving Submitting Status
+
+Submitting status is not a common status you will encounter. It will only stuck at submitting status during the event SQL Account fails to receive response from MyInvois Portal when the document may or may not be submitted. This mechanism is to **prevent double submission**.
+
+Below show the icon of submitting status, it is a **red** submitted icon.
+
+    ![submitting-status-detail](../../../static/img/myinvois/einvoice/submitting-status-detail.png)
+
+    ![submitting-status-browse](../../../static/img/myinvois/einvoice/submitting-status-browse.png)
+
+There are 2 way to resolve submitting status.
+
+    - Using [refresh status (Single Document)](#refresh-status-single-document).
+    - Using [batch refresh status](#batch-refresh-status).
+
+1. After refresh status is clicked, SQL Account will automatically check if the document was submitted successfully to MyInvois Portal. In the event that:
+
+    1. Document is **successfully found** in MyInvois Portal. Confirmation dialog will be prompted. (1) show the current document number that is being resolved. Select the correct document and click **OK** (2) to complete resolving submitting status.
+
+        ![submitting-status-resolving](../../../static/img/myinvois/einvoice/submitting-status-resolving.png)
+
+    2. Document is **not found** in MyInvois Portal. Action dialog will be prompted.
+
+        ![submitting-status-resolving-error](../../../static/img/myinvois/einvoice/submitting-status-resolving-error.png)
+
+        :::warning
+        Sometimes it take a long time for the submitted document to appear in MyInvois Portal. Please ensure it has not been submitted before Reset E-Invoice status to avoid double submission.
+        :::
+
+        - Click **Search again** to retry find from MyInvois Portal again.
+        - Click **Reset E-Invoice status** to remove submitting status, so you are able to resubmit the document again (This may lead to duplicate submission).
+
 ## Test E-Invoice Validation
 
 :::important

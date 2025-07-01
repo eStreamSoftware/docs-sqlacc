@@ -216,63 +216,27 @@ You can view all past submission and cancellation log of an invoice.
 
     ![sales-invoice-log](../../../static/img/myinvois/einvoice/sales-invoice-log.png)
 
-## Purchase Documents Import
+## Import
 
-SQL Account offers two methods for importing purchase documents from the E-Invoice system:
+SQL Account offers two methods for importing sales or purchase documents from the E-Invoice system:
 
-- [Single Import](#single-import): Enables you to import individual documents.
 - [Batch Import](#batch-import): Allows you to import multiple documents at once.
+- [Linking](#linking): Allows you to link the existing document with received E-Invoice document.
 
 To ensure proper import, it's important to understand how the document types in SQL Account are mapped to those received from the E-Invoice system. The table below shows how the document types in the SQL Account are mapped to those received from the E-Invoice system:
 
 | SQL Account Document Type | E-Invoice Document Type |
 | ------------------------- | ----------------------- |
+| Sales Invoice             | Self-Billed Invoice     |
+| Cash Sales                | Self-Billed Invoice     |
+| Credit Note               | Self-Billed Credit Note |
+| Debit Note                | Self-Billed Debit Note  |
+| Receipt Voucher           | Self-Billed Invoice     |
 | Purchase Invoice          | Invoice                 |
 | Cash Purchase             | Invoice                 |
 | Purchase Returned         | Credit Note             |
 | Purchase Debit Note       | Debit Note              |
-
-### Single Import
-
-You can view all received documents and single import into SQL Account.
-
-1. Go to document detail screen and click on **MyInvois** > **Single import E-Invoice**
-
-    ![purchase-invoice-single-import-button](../../../static/img/myinvois/einvoice/purchase-invoice-single-import-button.png)
-
-    ![purchase-invoice-single-import-form](../../../static/img/myinvois/einvoice/purchase-invoice-single-import-form.png)
-
-2. Choose the desired date range and press the **Apply** button to filter the documents
-
-    ![purchase-invoice-single-import-form-daterange](../../../static/img/myinvois/einvoice/purchase-invoice-single-import-form-daterange.png)
-
-3. The table will display the list of E-Invoice documents your company has received
-
-    ![purchase-invoice-single-import-form-apply](../../../static/img/myinvois/einvoice/purchase-invoice-single-import-form-apply.png)
-
-4. SQL Account will auto-map the supplier code if the supplier's TIN matches the TIN in Maintain Supplier
-
-    :::info[NOTE]
-    We suggest adding the TIN for existing suppliers or creating a new supplier record
-    :::
-
-    :::info[NOTE]
-    A supplier code is required. An error message will appear if you attempt to import a document without a supplier code
-    :::
-
-    ![purchase-invoice-single-import-form-select-supplier](../../../static/img/myinvois/einvoice/purchase-invoice-single-import-form-select-supplier.png)
-
-    ![purchase-invoice-single-import-form-select-supplier-error](../../../static/img/myinvois/einvoice/purchase-invoice-single-import-form-select-supplier-error.png)
-
-5. Once you have selected the desired documents, click on the **Import** button to proceed with the single import
-
-    ![purchase-invoice-single-import](../../../static/img/myinvois/einvoice/purchase-invoice-single-import.png)
-
-    ![purchase-invoice-single-import-details](../../../static/img/myinvois/einvoice/purchase-invoice-single-import-details.png)
-
-6. After reviewing the document details, click **Save** to complete the process
-
-    ![purchase-invoice-single-import-success](../../../static/img/myinvois/einvoice/purchase-invoice-single-import-success.png)
+| Payment Voucher           | Invoice                 |
 
 ### Batch Import
 
@@ -295,30 +259,77 @@ You can view all received documents and batch import into SQL Account.
 
     ![purchase-invoice-batch-import-form-apply](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-apply.png)
 
-4. You can select multiple documents using the checkboxes provided
-5. SQL Account will auto-map the supplier code if the supplier's TIN matches the TIN in Maintain Supplier
+4. Each document will display a status in the **Status** column. Below is the description and import action of each status:
+
+    | Status         | Description                                         | Action                          |
+    | -------------- | --------------------------------------------------- | ------------------------------- |
+    | (Blank)        | Not yet imported                                    | Create new document             |
+    | Doc Exists     | Document already exists in the system               | Update E-Invoice related fields |
+    | Different UUID | Document exists but with a different E-Invoice UUID | Create new document             |
+    | Done           | Successfully imported                               | -                               |
 
     :::info[NOTE]
-    We suggest adding the TIN for existing suppliers or creating a new supplier record
+    Double-clicking a row will drill down into the existing document, while double-clicking the **E-Invoice Status** column will open the validation link
     :::
+
+5. SQL Account will auto-map the Customer/Supplier Code using the following conditions:
+
+    - Same **TIN** (prioritized)
+    - Same **ID Number** or similar **Company Name**
 
     ![purchase-invoice-batch-import-form-select-supplier](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-select-supplier.png)
 
 6. A tax code is required for an item if the tax amount is greater than 0
 
-    :::info[NOTE]
-    The document will displayed in **red font** if the tax code is missing when it is required
-    :::
-
     ![purchase-invoice-batch-import-form-select-tax](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-select-tax.png)
 
-    ![purchase-invoice-batch-import-form-tax](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-tax.png)
-
-7. Once you have selected the desired documents, click on the **Import** button to proceed with the batch import
+7. You may click on the **Import** button to proceed with the import
 
     ![purchase-invoice-batch-import](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import.png)
 
+8. A message dialog  will indicate success or display an error, if any
+
     ![purchase-invoice-batch-import-success](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-success.png)
+
+    ![purchase-invoice-batch-import-error](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-error.png)
+
+### Linking
+
+You can view and link the received E-Invoice documents associated with the TIN of the selected document to update its E-Invoice related fields.
+
+1. Click on **🔍** of MyInvois UUID field in more panel
+
+    ![purchase-invoice-linking](../../../static/img/myinvois/einvoice/purchase-invoice-linking.png)
+
+2. The form will display only documents related to the same TIN as the selected record
+
+    ![purchase-invoice-linking-form](../../../static/img/myinvois/einvoice/purchase-invoice-linking-form.png)
+
+3. Select the appropriate document and click on the **Update** button to link it
+
+### Create / Update Customer or Supplier
+
+To create or update a customer or supplier from the import form, follow these steps:
+
+1. Click on the **Company Name** column
+
+    :::info[NOTE]
+    If the Customer/Supplier Code has value, SQL Account will update the existing record. If it is empty, a new customer/supplier will be created.
+    :::
+
+    ![purchase-invoice-batch-import-update-supplier](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-update-supplier.png)
+
+2. A comparison view will appear showing fields from the existing record in Maintain Customer/Supplier and the E-Invoice document
+
+    :::info[NOTE]
+    - The selected value will appear in **bold**
+    - The unselected value will be shown with a ~~strikethrough~~
+    - If both values (from E-Invoice and existing record) are identical, the cell will be merged
+    :::
+
+    ![purchase-invoice-batch-import-supplier-form](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-supplier-form.png)
+
+3. Click the **Create** or **Update** button to apply the changes to the customer or supplier record
 
 ## Rejection (Imported Documents)
 

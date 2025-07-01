@@ -52,6 +52,8 @@ After saving your Sales Invoice or Cash Sales document, you can access E-Invoice
 - [Test E-Invoice Validation](e-invoice-operation#test-e-invoice-validation)
 - [Share PDF](e-invoice-operation#share-pdf-experimental)
 - [E-Invoice Request](e-invoice-operation#e-invoice-request)
+- [Batch Import](e-invoice-operation#batch-import)
+- [Linking](e-invoice-operation#linking)
 
 ### Credit Note
 
@@ -141,6 +143,8 @@ After saving your Credit Note document, you can access E-Invoice operations thro
 - [Batch Refresh Status](e-invoice-operation#batch-refresh-status)
 - [Test E-Invoice Validation](e-invoice-operation#test-e-invoice-validation)
 - [Share PDF](e-invoice-operation#share-pdf-experimental)
+- [Batch Import](e-invoice-operation#batch-import)
+- [Linking](e-invoice-operation#linking)
 
 ### Debit Note
 
@@ -192,6 +196,8 @@ After saving your Debit Note document, you can access E-Invoice operations throu
 - [Batch Refresh Status](e-invoice-operation#batch-refresh-status)
 - [Test E-Invoice Validation](e-invoice-operation#test-e-invoice-validation)
 - [Share PDF](e-invoice-operation#share-pdf-experimental)
+- [Batch Import](e-invoice-operation#batch-import)
+- [Linking](e-invoice-operation#linking)
 
 ## Purchase
 
@@ -242,8 +248,8 @@ After saving your Purchase Invoice or Cash Purchase document, you can access E-I
 
 - [Submission](e-invoice-operation#submission)
 - [Consolidate](e-invoice-operation#consolidate)
-- [Single Import](e-invoice-operation#single-import)
 - [Batch Import](e-invoice-operation#batch-import)
+- [Linking](e-invoice-operation#linking)
 - [Cancellation (Self-Billed)](e-invoice-operation#cancellation)
 - [Rejection (Imported)](e-invoice-operation#rejection-imported-documents)
 - [Refresh Status](e-invoice-operation#refresh-status)
@@ -334,8 +340,8 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 After saving your Purchase Returned document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
 
 - [Submission](e-invoice-operation#submission)
-- [Single Import](e-invoice-operation#single-import)
 - [Batch Import](e-invoice-operation#batch-import)
+- [Linking](e-invoice-operation#linking)
 - [Cancellation (Self-Billed)](e-invoice-operation#cancellation)
 - [Rejection (Imported)](e-invoice-operation#rejection-imported-documents)
 - [Refresh Status](e-invoice-operation#refresh-status)
@@ -388,8 +394,8 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 After saving your Purchase Debit Note document, you can access E-Invoice operations through the **MyInvois** button. These operations help you manage your E-Invoices efficiently. Use the links below to navigate to the specific operation section for detailed instructions:
 
 - [Submission](e-invoice-operation#submission)
-- [Single Import](e-invoice-operation#single-import)
 - [Batch Import](e-invoice-operation#batch-import)
+- [Linking](e-invoice-operation#linking)
 - [Cancellation (Self-Billed)](e-invoice-operation#cancellation)
 - [Rejection (Imported)](e-invoice-operation#rejection-imported-documents)
 - [Refresh Status](e-invoice-operation#refresh-status)

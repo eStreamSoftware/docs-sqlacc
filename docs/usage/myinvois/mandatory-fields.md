@@ -111,6 +111,58 @@ An hourglass icon will appear next to customers or suppliers who has created Inf
 
     ![batch-retrieve-info-progress](../../../static/img/myinvois/guide/batch-retrieve-info-progress.png)
 
+## Taxpayer's QR Code
+
+This feature allows you to upload a customer's or supplier's MyInvois Taxpayer QR Code to automatically retrieve and update their information.
+
+### Maintain Customer / Supplier
+
+1. Enter detail mode for a new or existing customer or supplier
+
+2. Go to the **Tax** tab and click on the **Upload File** button
+
+    ![taxpayers-qr-maintain-customer](../../../static/img/myinvois/einvoice/taxpayers-qr-maintain-customer.png)
+
+3. Click the **Open File** icon to select a QR code image from your device or click the **Paste** icon to paste a QR code image from your clipboard
+
+    ![taxpayers-qr-form](../../../static/img/myinvois/einvoice/taxpayers-qr-form.png)
+
+4. Once the QR code is uploaded, SQL Account will automatically retrieve and display the taxpayer's information in the memo field
+
+    :::info[NOTE]
+    Upload Production Taxpayer's QR Code only
+    :::
+
+    ![taxpayers-qr-form-info](../../../static/img/myinvois/einvoice/taxpayers-qr-form-info.png)
+
+5. Click the **OK** button to update the selected customer or supplier with the retrieved data
+
+    ![taxpayers-qr-form-ok](../../../static/img/myinvois/einvoice/taxpayers-qr-form-ok.png)
+
+### Sales / Purchase / Cashbook document
+
+1. Enter detail mode for a new or existing document
+
+2. Go to the **More** panel and click on the **QR Code** icon in MyInvois header
+
+    ![taxpayers-qr-sales-invoice](../../../static/img/myinvois/einvoice/taxpayers-qr-sales-invoice.png)
+
+3. Click the **Open File** icon to select a QR code image from your device or click the **Paste** icon to paste a QR code image from your clipboard
+
+    ![taxpayers-qr-form](../../../static/img/myinvois/einvoice/taxpayers-qr-form.png)
+
+4. Once the QR code is uploaded, SQL Account will automatically retrieve and display the taxpayer's information in the memo field
+
+    :::info[NOTE]
+    Upload Production Taxpayer's QR Code only
+    :::
+
+    ![taxpayers-qr-form-info](../../../static/img/myinvois/einvoice/taxpayers-qr-form-info.png)
+
+5. Click the **OK** button to update the selected document with the retrieved data
+
+    ![taxpayers-qr-form-ok](../../../static/img/myinvois/einvoice/taxpayers-qr-form-ok.png)
+
 ## Customer / Supplier Tax Info
 
 ### Local Business (Companies registered with local authorities)

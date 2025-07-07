@@ -19,7 +19,7 @@ dataEntryList = {[
 {
   "text": "How to Request Customer/Supplier Info", 
   "link": "../e-invoice/how-to-request-customer-info",
-  "videoId": "X3BoiXOlKkc"      
+  "videoId": "9ur8nNSI15o"      
 },   
 ]}
 />

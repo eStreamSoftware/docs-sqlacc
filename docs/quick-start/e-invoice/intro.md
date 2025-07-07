@@ -13,7 +13,7 @@ dataEntryList = {[
 {
   "text": "MyInvois Request - Buyer/Customer self-service to key in TIN information", 
   "link": "./e-invoice/how-to-activate-myinvois-request",
-  "videoId": "E9_fj_d4274"
+  "videoId": "mDzVrqbXwI0"
 },
 {
   "text": "How To Submit E-Invoice", 
@@ -73,7 +73,7 @@ dataEntryList = {[
 {
   "text": "How to Request Customer/Supplier Info", 
   "link": "./e-invoice/how-to-request-customer-info",
-  "videoId": "X3BoiXOlKkc"      
+  "videoId": "9ur8nNSI15o"      
 },   
 {
   "text": "How to Test E Invoice Validation", 

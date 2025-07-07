@@ -19,7 +19,7 @@ dataEntryList = {[
 {
   "text": "MyInvois Request - Buyer/Customer self-service to key in TIN information", 
   "link": "../e-invoice/how-to-activate-myinvois-request",
-  "videoId": "E9_fj_d4274"
+  "videoId": "mDzVrqbXwI0"
 },
 {
   "text": "How To Submit E-Invoice", 

@@ -15,7 +15,7 @@ Clipboard Import allows users to import master and transaction data by simply co
 
 ### Download Excel Template
 
-Click this link: [Template](https://cdn.sql.com.my/wp-content/uploads/2025/06/SQLAcc-ImportClipboard.xlsx)
+Click this link: [Template](https://cdn.sql.com.my/wp-content/uploads/2025/07/SQLAcc-ImportClipboard.xlsx)
 
 ### Maintain Master Data
 
@@ -41,13 +41,15 @@ Always import **Master Data** first, then import **Transactions**.
     Do not modify the field name. Modifying them may result in import errors.
     :::
 
-## Import Steps
+## Usage
+
+### Import Steps
 
 1. Select and **Copy (Ctrl + C)** the table in Excel, including with field name
 
     ![4](../../static/img/miscellaneous/clipboard-import/4.png)
 
-2. Go to **File** > **Import** > **More Import** and select the table
+2. Go to **File** > **Import** > **Clipboard Excel Import** and select the table
 
     ![5](../../static/img/miscellaneous/clipboard-import/5.png)
 
@@ -66,7 +68,7 @@ Always import **Master Data** first, then import **Transactions**.
     :::info
     **New**: Inserts master and detail records. <br/>
     **Update**: Udpates the master table and appends the detail records. <br/>
-    **Error**: You can directly **edit** the grid then **Select All** and click **Validate** again.
+    **Error**: You can **edit** the grid then **Select All** and click **Validate** again or use **[Quick Fix](#quick-fix)**.
     :::
 
 6. Click **Import**
@@ -76,3 +78,39 @@ Always import **Master Data** first, then import **Transactions**.
     :::
 
     ![9](../../static/img/miscellaneous/clipboard-import/9.png)
+
+### Quick Fix
+
+Quick Fix helps you automatically fix errors, such as missing values. It can create missing items (like Agent or Area) or let you select a default value for empty field.
+
+1. After **Validate**, record with *Error* status will be unticked. Click **Select All** or tick records that need to be fixed
+
+    :::tip
+    Quick Fix only works for records with an Error status.
+    :::
+
+    ![10](../../static/img/miscellaneous/clipboard-import/10.png)
+
+2. Click **Quick Fix**
+
+    ![11](../../static/img/miscellaneous/clipboard-import/11.png)
+
+3. For empty value error, select a default value 
+
+    ![12](../../static/img/miscellaneous/clipboard-import/12.png)
+
+4. Error is fixed
+
+    ![13](../../static/img/miscellaneous/clipboard-import/13.png)
+
+### Auto Generate DocNo
+
+Use **`<<New>>n`** in the DocNo field for each set where *n* is a number
+
+![14](../../static/img/miscellaneous/clipboard-import/14.png)
+
+## Additional Information
+
+1. Customer / Supplier branch's detail will be updated when *BranchName* already exist. 
+
+2. First customer / supplier branch type is *Billing*. Ensure billing details always in the first record during import.

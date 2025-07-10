@@ -1,0 +1,9 @@
+{
+    "label": "Stock Month End Balance",
+    "position": 8,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-month-end-balance/intro"
+    },
+    "collapsible": false
+}

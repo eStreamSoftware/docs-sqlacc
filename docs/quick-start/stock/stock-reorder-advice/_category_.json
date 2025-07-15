@@ -1,0 +1,9 @@
+{
+    "label": "Stock Reorder Advice",
+    "position": 9,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-reorder-advice/intro"
+    },
+    "collapsible": false
+}

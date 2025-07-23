@@ -1,0 +1,9 @@
+{
+    "label": "Stock Analysis by Document",
+    "position": 10,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-analysis-document/intro"
+    },
+    "collapsible": false
+}

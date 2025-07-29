@@ -20,6 +20,11 @@ dataEntryList = {[
   "text": "How to Request Customer/Supplier Info", 
   "link": "../e-invoice/how-to-request-customer-info",
   "videoId": "9ur8nNSI15o"      
-},   
+},
+{
+  "text": "Read MyInvois TaxPayer QR Code into Customer Master", 
+  "link": "../e-invoice/read-myinvois-qr",
+  "videoId": "dAaucBNuD18"      
+},
 ]}
 />

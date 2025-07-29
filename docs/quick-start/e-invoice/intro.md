@@ -85,5 +85,10 @@ dataEntryList = {[
   "link": "./e-invoice/batch-update-classification-code",
   "videoId": "DxG6Okbn3e4"      
 },  
+{
+  "text": "Read MyInvois TaxPayer QR Code into Customer Master", 
+  "link": "./e-invoice/read-myinvois-qr",
+  "videoId": "dAaucBNuD18"      
+},  
 ]}
 />

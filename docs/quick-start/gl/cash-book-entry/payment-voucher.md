@@ -12,6 +12,6 @@ sidebar_class_name: hidden-sidebar-items
 import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
-<YtLayout 
+<YtLayout
     videoId="Hy-YVj7gvSY"
 />

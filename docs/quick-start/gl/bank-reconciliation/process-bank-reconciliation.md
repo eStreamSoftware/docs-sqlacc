@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Process Bank Reconciliation 
+title: Process Bank Reconciliation
 description: How to process bank reconciliation in SQL Accounting
 slug: /quick-start/gl/how-to-process-bank-reconciliation
 tags: ["GL"]
@@ -12,6 +12,6 @@ sidebar_class_name: hidden-sidebar-items
 import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
-<YtLayout 
+<YtLayout
     videoId="97fBLjRl45k"
 />

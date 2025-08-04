@@ -11,9 +11,9 @@ import {TOC} from '@src/components/toc.js';
 <TOC
 dataEntryList = {[
 {
-  "text": "How To Process Bank Reconciliation", 
+  "text": "How To Process Bank Reconciliation",
   "link": "./how-to-process-bank-reconciliation",
-  "videoId": "97fBLjRl45k"  
-},  
+  "videoId": "97fBLjRl45k"
+}
 ]}
 />

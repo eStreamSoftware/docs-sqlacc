@@ -15,7 +15,7 @@ Clipboard Import allows users to import master and transaction data by simply co
 
 ### Download Excel Template
 
-Click this link: [Template](https://cdn.sql.com.my/wp-content/uploads/2025/07/SQLAcc-ImportClipboard.xlsx)
+Click this link: [Template](https://cdn.sql.com.my/wp-content/uploads/2025/08/SQLAcc-ImportClipboard.xlsx)
 
 ### Maintain Master Data
 
@@ -29,7 +29,7 @@ Always import **Master Data** first, then import **Transactions**.
 
 ## About Excel Template
 
-1. In the Excel, there are *tabs* at the bottom. Each tab is named according to which table it should be imported into. 
+1. In the Excel, there are *tabs* at the bottom. Each tab is named according to which table it should be imported into.
 
     ![2](../../static/img/miscellaneous/clipboard-import/2.png)
 
@@ -95,7 +95,7 @@ Quick Fix helps you automatically fix errors, such as missing values. It can cre
 
     ![11](../../static/img/miscellaneous/clipboard-import/11.png)
 
-3. For empty value error, select a default value 
+3. For empty value error, select a default value
 
     ![12](../../static/img/miscellaneous/clipboard-import/12.png)
 

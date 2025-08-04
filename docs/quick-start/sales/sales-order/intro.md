@@ -2,8 +2,8 @@
 sidebar_position: 1
 title: Table of contents
 hide_title: true
-hide_table_of_contents: true  
-slug: /quick-start/sales/sales-order 
+hide_table_of_contents: true
+slug: /quick-start/sales/sales-order
 form_name: TfmSLSO
 ---
 
@@ -15,6 +15,6 @@ dataEntryList = {[
   "text": "Create Sales Order",
   "link": "./create-sales-order",
   "videoId": "CXBhlbV6a0o"
-},
+}
 ]}
 />

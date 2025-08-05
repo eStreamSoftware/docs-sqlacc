@@ -7,7 +7,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Lazada"]
 
 ## Maintain Cloud Account
 
-1. Select  **Maintain Cloud Account (One Time Setting)**
+1. Select **![39](../../../static/img/banking/cloud-icon.png) > Maintain Cloud Account** (One Time Setting)
 
     ![1](../../../static/img/e-commerce/easyStore/1.png)
 

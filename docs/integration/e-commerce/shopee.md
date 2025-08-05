@@ -7,7 +7,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
 ## Maintain Cloud Account
 
-1. Select '![39](../../../static/img/banking/39.png)'- > Maintain Cloud Account (One Time Setting)
+1. Select **![39](../../../static/img/banking/cloud-icon.png) > Maintain Cloud Account** (One Time Setting)
 
     ![1](../../../static/img/e-commerce/easyStore/1.png)
 
@@ -89,7 +89,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
 ## Account Tab
 
-1. Click on '![39](../../../static/img/banking/39.png)'- > Shopee
+1. Click on '![39](../../../static/img/banking/cloud-icon.png)'- > Shopee
 
 2. Click on Account Tab -> Double click on your account
 

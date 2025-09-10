@@ -212,3 +212,13 @@ Before access to the service, do remember to setup your users. To learn more, fo
 3. You should see the login page.
 
    ![alt text](../../../static/img/sql-mobile-connect/on-premise-setup/10.png)
+
+## Alternative External Port (2764)
+
+If your router does not allow traffic on `port 443`, you can **tick** on `Use Alternative External Port (2764)` to configure mobile connect service to use `port 2764`
+
+![alternative external port 2764](../../../static/img/sql-mobile-connect/on-premise-setup/11.png)
+
+After `Install` and `✅ Service is running` on port 2764. Now you can configure port forwarding on your router with `external port 2764`
+
+![alternative external port 2764](../../../static/img/sql-mobile-connect/on-premise-setup/12.png)

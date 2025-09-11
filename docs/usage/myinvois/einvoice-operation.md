@@ -216,6 +216,81 @@ You can view all past submission and cancellation log of an invoice.
 
     ![sales-invoice-log](../../../static/img/myinvois/einvoice/sales-invoice-log.png)
 
+## Transaction
+
+MyInvois Transaction is a feature that will list all MyInvois documents.
+
+You can access MyInvois Transaction from cloud category in menu bar.
+
+![myinvois-trans-location](../../../static/img/myinvois/einvoice/myinvois-trans-location.png)
+
+Below show the MyInvois Transaction form with 3 tabs.
+
+![myinvois-trans-overview](../../../static/img/myinvois/einvoice/myinvois-trans-overview.png)
+
+1. All - List all MyInvois documents.
+2. Submitted - List MyInvois documents that you submitted.
+3. Received - List MyInvois documents that you received.
+
+MyInvois Transaction feature:
+
+1. ### Sync MyInvois documents
+
+    ![myinvois-trans-sync](../../../static/img/myinvois/einvoice/myinvois-trans-sync.png)
+
+    - SQL Account will help sync MyInvois documents from MyInvois portal in background when **MyInvois Transaction** or [**Import**](#import) form is opened.
+    - There are 2 kinds of sync task:
+        - **Loading all documents** - Sync all MyInvois documents starting from the latest and going back to 1 Aug 2024 for first time only, it may takes a long time to complete.
+        - **Syncing recent documents** - Sync recent documents only.
+    - After sync task is completed, it will show **Last Sync**.
+    - SQL Account will resync after 30 minutes or you can force resync instantly by clicking resync button.
+
+        ![myinvois-trans-resync](../../../static/img/myinvois/einvoice/myinvois-trans-resync.png)
+
+    - Click refresh button to query MyInvois documents synced from MyInvois portal into your database.
+
+        ![myinvois-trans-refresh](../../../static/img/myinvois/einvoice/myinvois-trans-refresh.png)
+
+    :::info[NOTE]
+    You may leave MyInvois Transaction or Import form open in the background to sync documents as you carry on with other tasks.
+    :::
+
+2. ### Check Invoice State
+
+    You can find the **Invoice state** column in field chooser.
+
+        ![myinvois-trans-state](../../../static/img/myinvois/einvoice/myinvois-trans-state.png)
+
+    There are 3 Invoice state:
+
+        - **None** - The document has no issues.
+        - **Missing** (Highlighted in **red** for submitted documents) - The document exists in MyInvois portal, but does not exists in your accounting document entry.
+        - **Duplicate** (Highlighted in **orange** for submitted documents) - The document is a duplicate submissions.
+
+    :::info[NOTE]
+    You may double click to drill down to your accounting document entry.
+    :::
+
+3. ### Cancel / Reject
+
+    - Click cancel to initiate document cancellation on submitted document.
+
+        ![myinvois-trans-cancel](../../../static/img/myinvois/einvoice/myinvois-trans-cancel.png)
+
+    - Click reject to inititate document rejection on received document
+
+        ![myinvois-trans-reject](../../../static/img/myinvois/einvoice/myinvois-trans-reject.png)
+
+    :::info[NOTE]
+    You can batch cancel or reject by selecting multiple documents.
+    :::
+
+4. ### Print
+
+    Click the **print / preview** to print report using field value from MyInvois document.
+
+        ![myinvois-trans-print](../../../static/img/myinvois/einvoice/myinvois-trans-print.png)
+
 ## Import
 
 SQL Account offers two methods for importing sales or purchase documents from the E-Invoice system:
@@ -248,18 +323,22 @@ You can view all received documents and batch import into SQL Account.
 
     ![purchase-invoice-batch-import-form](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form.png)
 
-2. Choose the desired date range and press the **Apply** button to filter the documents
+2. Opening Import form will also start [Sync MyInvois documents](#sync-myinvois-documents). The first sync may take longer as it syncs documents from latest to oldest. Please wait if you need to import older documents.
+
+    ![purchase-invoice-batch-import-sync](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-sync.png)
+
+3. Choose the desired date range and click the **Apply** to query documents already synced to your database. Unsynced documents will not appear.
 
     ![purchase-invoice-batch-import-form-daterange](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-daterange.png)
 
-3. There are two tables inside the form:
+4. There are two tables inside the form:
 
     - The upper table will display the list of E-Invoice documents your company has received
     - The lower table will show the item details for the document you have selected
 
     ![purchase-invoice-batch-import-form-apply](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-apply.png)
 
-4. Each document will display a status in the **Status** column. Below is the description and import action of each status:
+5. Each document will display a status in the **Status** column. Below is the description and import action of each status:
 
     | Status         | Description                                         | Action                          |
     | -------------- | --------------------------------------------------- | ------------------------------- |
@@ -272,22 +351,22 @@ You can view all received documents and batch import into SQL Account.
     Double-clicking a row will drill down into the existing document, while double-clicking the **E-Invoice Status** column will open the validation link
     :::
 
-5. SQL Account will auto-map the Customer/Supplier Code using the following conditions:
+6. SQL Account will auto-map the Customer/Supplier Code using the following conditions:
 
     - Same **TIN** (prioritized)
     - Same **ID Number** or similar **Company Name**
 
     ![purchase-invoice-batch-import-form-select-supplier](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-select-supplier.png)
 
-6. A tax code is required for an item if the tax amount is greater than 0
+7. A tax code is required for an item if the tax amount is greater than 0
 
     ![purchase-invoice-batch-import-form-select-tax](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-select-tax.png)
 
-7. You may click on the **Import** button to proceed with the import
+8. You may click on the **Import** button to proceed with the import
 
     ![purchase-invoice-batch-import](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import.png)
 
-8. A message dialog  will indicate success or display an error, if any
+9. A message dialog  will indicate success or display an error, if any
 
     ![purchase-invoice-batch-import-success](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-success.png)
 

@@ -19,11 +19,11 @@ These documents generate MyInvois Invoice which is a commercial document that it
 1. Go to **Sales** > **Invoice / Cash Sales** > **New** to issue a new invoice / cash sales.
 2. Select an existing customer or create a new customer.
 
-    ![sales-invoice-customer](../../../static/img/myinvois/einvoice/sales-invoice-customer.png)
+    ![sales-invoice-customer](../../../static/img/usage/myinvois/einvoice/sales-invoice-customer.png)
 
 3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
 
-    ![sales-invoice-more](../../../static/img/myinvois/einvoice/sales-invoice-more.png)
+    ![sales-invoice-more](../../../static/img/usage/myinvois/einvoice/sales-invoice-more.png)
 
 4. Select the submission type for this document.
     - If you do not want to use the default submission type from the customer's profile, select a different option for this document.
@@ -34,7 +34,7 @@ These documents generate MyInvois Invoice which is a commercial document that it
     - Consolidate – This document will be submitted as consolidated E-Invoice.
     :::
 
-    ![sales-invoice-submission-type](../../../static/img/myinvois/einvoice/sales-invoice-submission-type.png)
+    ![sales-invoice-submission-type](../../../static/img/usage/myinvois/einvoice/sales-invoice-submission-type.png)
 
 5. Continue with usual invoice / cash sales entry and **Save**.
 
@@ -81,7 +81,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
     - Consolidate – This document will be submitted as consolidated Credit Note.
     :::
 
-    ![sales-credit-note-more](../../../static/img/myinvois/einvoice/sales-credit-note-more.png)
+    ![sales-credit-note-more](../../../static/img/usage/myinvois/einvoice/sales-credit-note-more.png)
 
 4. Continue with usual credit note entry and **Save**.
 
@@ -99,7 +99,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
     - Consolidate – This document will be submitted as consolidated Credit Note.
     :::
 
-    ![sales-credit-note-more](../../../static/img/myinvois/einvoice/sales-credit-note-more.png)
+    ![sales-credit-note-more](../../../static/img/usage/myinvois/einvoice/sales-credit-note-more.png)
 
 4. Continue with usual credit note entry and **Save**.
 
@@ -109,7 +109,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
 2. Select an existing customer or create a new customer.
 
-    ![sales-credit-note-customer](../../../static/img/myinvois/einvoice/sales-credit-note-customer.png)
+    ![sales-credit-note-customer](../../../static/img/usage/myinvois/einvoice/sales-credit-note-customer.png)
 
 3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
 
@@ -119,7 +119,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
     - Consolidate – This document will be submitted as consolidated Credit Note.
     :::
 
-    ![sales-credit-note-more](../../../static/img/myinvois/einvoice/sales-credit-note-more.png)
+    ![sales-credit-note-more](../../../static/img/usage/myinvois/einvoice/sales-credit-note-more.png)
 
 4. Click on From Doc button **⋯** (1) to manually **select one or more** validated invoices / cash sales (2) to establish the reference.
 
@@ -127,7 +127,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
     From Doc field allow you to manually select one or more validated invoices / cash sales as reference without affecting transfer quantity.
     :::
 
-    ![sales-credit-note-fromdoc](../../../static/img/myinvois/einvoice/sales-credit-note-fromdoc.png)
+    ![sales-credit-note-fromdoc](../../../static/img/usage/myinvois/einvoice/sales-credit-note-fromdoc.png)
 
 5. Continue with usual credit note entry and **Save**.
 
@@ -162,7 +162,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
 2. Select an existing customer or create a new customer.
 
-    ![sales-debit-note-customer](../../../static/img/myinvois/einvoice/sales-debit-note-customer.png)
+    ![sales-debit-note-customer](../../../static/img/usage/myinvois/einvoice/sales-debit-note-customer.png)
 
 3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
 
@@ -172,7 +172,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
     - Consolidate – This document will be submitted as consolidated Debit Note.
     :::
 
-    ![sales-debit-note-more](../../../static/img/myinvois/einvoice/sales-debit-note-more.png)
+    ![sales-debit-note-more](../../../static/img/usage/myinvois/einvoice/sales-debit-note-more.png)
 
 4. Click on From Doc button **⋯** (1) to manually **select one or more** validated invoices / cash sales (2) to establish the reference.
 
@@ -180,7 +180,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
     From Doc field allow you to manually select one or more validated invoices / cash sales as reference without affecting transfer quantity.
     :::
 
-    ![sales-debit-note-fromdoc](../../../static/img/myinvois/einvoice/sales-debit-note-fromdoc.png)
+    ![sales-debit-note-fromdoc](../../../static/img/usage/myinvois/einvoice/sales-debit-note-fromdoc.png)
 
 5. Continue with usual debit note entry and **Save**.
 
@@ -223,11 +223,11 @@ These documents generate MyInvois Self-Billed Invoice which is a commercial docu
 1. Go to **Purchase** > **Purchase Invoice / Cash Purchase** > **New** to issue a new purchase invoice / cash purchase.
 2. Select an existing supplier or create a new supplier.
 
-    ![purchase-invoice-supplier](../../../static/img/myinvois/einvoice/purchase-invoice-supplier.png)
+    ![purchase-invoice-supplier](../../../static/img/usage/myinvois/einvoice/purchase-invoice-supplier.png)
 
 3. Click on **More** (1) to view mandatory info required for Self-Billed E-Invoice, it will be prefilled with the info from existing supplier's profile. Click on 📌(2) to pin the tab for easier view.
 
-    ![purchase-invoice-more](../../../static/img/myinvois/einvoice/purchase-invoice-more.png)
+    ![purchase-invoice-more](../../../static/img/usage/myinvois/einvoice/purchase-invoice-more.png)
 
 4. Select the submission type for this document.
     - If you do not want to use the default submission type from the supplier's profile, select a different option for this document.
@@ -238,7 +238,7 @@ These documents generate MyInvois Self-Billed Invoice which is a commercial docu
     - Consolidate – This document will be submitted as consolidated Self-Billed E-Invoice.
     :::
 
-    ![purchase-invoice-submission-type](../../../static/img/myinvois/einvoice/purchase-invoice-submission-type.png)
+    ![purchase-invoice-submission-type](../../../static/img/usage/myinvois/einvoice/purchase-invoice-submission-type.png)
 
 5. Continue with usual purchase invoice / cash purchase entry and **Save**.
 
@@ -285,7 +285,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
     - Consolidate – This document will be submitted as consolidated Self-Billed Credit Note.
     :::
 
-    ![purchase-returned-more](../../../static/img/myinvois/einvoice/purchase-returned-more.png)
+    ![purchase-returned-more](../../../static/img/usage/myinvois/einvoice/purchase-returned-more.png)
 
 4. Continue with usual purchase returned entry and **Save**.
 
@@ -303,7 +303,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
     - Consolidate – This document will be submitted as consolidated Self-Billed Credit Note.
     :::
 
-    ![purchase-invoice-more](../../../static/img/myinvois/einvoice/purchase-invoice-more.png)
+    ![purchase-invoice-more](../../../static/img/usage/myinvois/einvoice/purchase-invoice-more.png)
 
 4. Continue with usual purchase returned entry and **Save**.
 
@@ -313,7 +313,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
 2. Select an existing supplier or create a new supplier.
 
-    ![purchase-returned-supplier](../../../static/img/myinvois/einvoice/purchase-returned-supplier.png)
+    ![purchase-returned-supplier](../../../static/img/usage/myinvois/einvoice/purchase-returned-supplier.png)
 
 3. Click on **More** (1) to view mandatory info required for Self-Billed Credit Note, it will be prefilled with the info from the validated purchase invoice / cash purchase. Click on 📌(2) to pin the tab for easier view.
 
@@ -323,7 +323,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
     - Consolidate – This document will be submitted as consolidated Self-Billed Credit Note.
     :::
 
-    ![purchase-invoice-more](../../../static/img/myinvois/einvoice/purchase-invoice-more.png)
+    ![purchase-invoice-more](../../../static/img/usage/myinvois/einvoice/purchase-invoice-more.png)
 
 4. Click on From Doc button **⋯** (1) to manually **select one or more** validated purchase invoices / cash purchases (2) to establish the reference.
 
@@ -331,7 +331,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
     From Doc field allow you to manually select one or more validated purchase invoices / cash purchases as reference without affecting transfer quantity.
     :::
 
-    ![purchase-returned-fromdoc](../../../static/img/myinvois/einvoice/purchase-returned-fromdoc.png)
+    ![purchase-returned-fromdoc](../../../static/img/usage/myinvois/einvoice/purchase-returned-fromdoc.png)
 
 5. Continue with usual purchase returned entry and **Save**.
 
@@ -367,7 +367,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
 2. Select an existing supplier or create a new supplier.
 
-    ![purchase-debit-note-supplier](../../../static/img/myinvois/einvoice/purchase-debit-note-supplier.png)
+    ![purchase-debit-note-supplier](../../../static/img/usage/myinvois/einvoice/purchase-debit-note-supplier.png)
 
 3. Click on **More** (1) to view mandatory info required for Self-Billed Debit Note, it will be prefilled with the info from existing supplier's profile. Click on 📌(2) to pin the tab for easier view.
 
@@ -377,7 +377,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
     - Consolidate – This document will be submitted as consolidated Self-Billed Debit Note.
     :::
 
-    ![purchase-debit-note-more](../../../static/img/myinvois/einvoice/purchase-debit-note-more.png)
+    ![purchase-debit-note-more](../../../static/img/usage/myinvois/einvoice/purchase-debit-note-more.png)
 
 4. Click on From Doc button **⋯** (1) to manually **select one or more** validated purchase invoices / cash purchases (2) to establish the reference.
 
@@ -385,7 +385,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
     From Doc field allow you to manually select one or more validated purchase invoices / cash purchases as reference without affecting transfer quantity.
     :::
 
-    ![purchase-debit-note-fromdoc](../../../static/img/myinvois/einvoice/purchase-debit-note-fromdoc.png)
+    ![purchase-debit-note-fromdoc](../../../static/img/usage/myinvois/einvoice/purchase-debit-note-fromdoc.png)
 
 5. Continue with usual purchase debit note entry and **Save**.
 
@@ -415,23 +415,23 @@ Cash Book does not use customer / supplier info from maintain customer / supplie
 
 2. Click on **More** (1) to fill in mandatory fields. Click on 📌(2) to pin the tab for easier view.
 
-    ![cash-book-more](../../../static/img/myinvois/einvoice/cash-book-more.png)
+    ![cash-book-more](../../../static/img/usage/myinvois/einvoice/cash-book-more.png)
 
 3. Fill in **Company Name**. You may **click on the label** (1) or press **enter** to fill in company name.
 
-    ![cash-book-company-name](../../../static/img/myinvois/einvoice/cash-book-company-name.png)
+    ![cash-book-company-name](../../../static/img/usage/myinvois/einvoice/cash-book-company-name.png)
 
 4. Manually fill in the mandatory fields below. **TIN** must be filled.
 
-    ![cash-book-mandatory-fields](../../../static/img/myinvois/einvoice/cash-book-mandatory-fields.png)
+    ![cash-book-mandatory-fields](../../../static/img/usage/myinvois/einvoice/cash-book-mandatory-fields.png)
 
-    ![cash-book-mandatory-fields-filled](../../../static/img/myinvois/einvoice/cash-book-mandatory-fields-filled.png)
+    ![cash-book-mandatory-fields-filled](../../../static/img/usage/myinvois/einvoice/cash-book-mandatory-fields-filled.png)
 
 5. Continue with cash book entry following [Payment Voucher guide](#payment-voucher) or [Receipt Voucher guide](#receipt-voucher) below and **Save**.
 
 6. For the next entry, you can reuse the mandatory info filled in during Step 4. It can be found in the company name lookup.
 
-    ![cash-book-company-name-lookup](../../../static/img/myinvois/einvoice/cash-book-company-name-lookup.png)
+    ![cash-book-company-name-lookup](../../../static/img/usage/myinvois/einvoice/cash-book-company-name-lookup.png)
 
 ### Payment Voucher
 
@@ -473,7 +473,7 @@ For E-Invoice purposes, you shall issue Self-Billed E-Invoices for the following
 
 3. Select **Self-billed** submission type.
 
-    ![payment-voucher-submission-self-billed](../../../static/img/myinvois/einvoice/payment-voucher-submission-self-billed.png)
+    ![payment-voucher-submission-self-billed](../../../static/img/usage/myinvois/einvoice/payment-voucher-submission-self-billed.png)
 
 4. Continue with usual payment voucher entry and **Save**.
 
@@ -505,13 +505,13 @@ Please ensure that the referenced documents are validated E-Invoices (Receipt Vo
 
 2. Click on From Doc button **⋯** (1) to manually **select one or more** validated Receipt Voucher (2) to establish the reference.
 
-    ![payment-voucher-fromdoc](../../../static/img/myinvois/einvoice/payment-voucher-fromdoc.png)
+    ![payment-voucher-fromdoc](../../../static/img/usage/myinvois/einvoice/payment-voucher-fromdoc.png)
 
 3. Fill in mandatory fields following the [guide](#mandatory-fields).
 
 4. Select **E-Invoice Refund** submission type.
 
-    ![payment-voucher-submission-e-invoice-refund](../../../static/img/myinvois/einvoice/payment-voucher-submission-e-invoice-refund.png)
+    ![payment-voucher-submission-e-invoice-refund](../../../static/img/usage/myinvois/einvoice/payment-voucher-submission-e-invoice-refund.png)
 
 5. Continue with usual payment voucher entry and **Save**.
 
@@ -552,7 +552,7 @@ Invoice is a commercial document that itemises and records a transaction between
 
 3. Select **E-Invoice** submission type.
 
-    ![receipt-voucher-submission-e-invoice](../../../static/img/myinvois/einvoice/receipt-voucher-submission-e-invoice.png)
+    ![receipt-voucher-submission-e-invoice](../../../static/img/usage/myinvois/einvoice/receipt-voucher-submission-e-invoice.png)
 
 4. Continue with usual receipt voucher entry and **Save**.
 
@@ -584,13 +584,13 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
 2. Click on From Doc button **⋯** (1) to manually **select one or more** validated Payment Voucher (2) to establish the reference.
 
-    ![receipt-voucher-fromdoc](../../../static/img/myinvois/einvoice/receipt-voucher-fromdoc.png)
+    ![receipt-voucher-fromdoc](../../../static/img/usage/myinvois/einvoice/receipt-voucher-fromdoc.png)
 
 3. Fill in mandatory fields following the [guide](#mandatory-fields).
 
 4. Select **Self-billed Refund** submission type.
 
-    ![receipt-voucher-submission-self-billed-refund](../../../static/img/myinvois/einvoice/receipt-voucher-submission-self-billed-refund.png)
+    ![receipt-voucher-submission-self-billed-refund](../../../static/img/usage/myinvois/einvoice/receipt-voucher-submission-self-billed-refund.png)
 
 5. Continue with usual receipt voucher entry and **Save**.
 

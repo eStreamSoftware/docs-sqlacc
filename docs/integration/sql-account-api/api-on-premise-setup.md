@@ -36,21 +36,21 @@ If the provider requests a reason, you can explain that you intend to host a ser
 
 1. On `Logon Screen` > **Click** `⚙️`
 
-   ![logon screen setting](../../../static/img/sql-account-api/on-premise-setup/1.png)
+   ![logon screen setting](../../../static/img/integration/sql-account-api/on-premise-setup/1.png)
 
 2. **Right-Click** on company database > **Select** `Configure API Service...`
 
-   ![configure mobile connect](../../../static/img/sql-account-api/on-premise-setup/2.png)
+   ![configure mobile connect](../../../static/img/integration/sql-account-api/on-premise-setup/2.png)
 
 3. **Click** on `Install` to install  API service
 
-   ![install mobile connect](../../../static/img/sql-account-api/on-premise-setup/3.png)
+   ![install mobile connect](../../../static/img/integration/sql-account-api/on-premise-setup/3.png)
 
 ### Step 2 - Start Service
 
 After the installation, start the service. Once successful, `Service is running` status will show on screen.
 
-![service running](../../../static/img/sql-account-api/on-premise-setup/4.png)
+![service running](../../../static/img/integration/sql-account-api/on-premise-setup/4.png)
 
 ### Step 3 - Port Forwarding
 
@@ -59,7 +59,7 @@ Next, we will need to do `Port Forwarding`.
 :::info[Port Forwarding Information]
 You can **Click** on `Show Tips` to find all the information for port forwarding configuration.
 
-![show tips](../../../static/img/sql-account-api/on-premise-setup/5.png)
+![show tips](../../../static/img/integration/sql-account-api/on-premise-setup/5.png)
 :::
 
 1. **Access Router Setting**: Login to the router's administration interface on web browser.
@@ -70,7 +70,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
    If you are using a firewall or serving the router's web administration interface via a different IP address, this might not work.
     :::
 
-   ![router gateway](../../../static/img/sql-account-api/on-premise-setup/6.png)
+   ![router gateway](../../../static/img/integration/sql-account-api/on-premise-setup/6.png)
 
 2. **Navigate to Port Forwarding Section**: Find `Port Forwarding`, `Virtual Service` or similar section in the router's setting.
 
@@ -85,7 +85,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
 
 5. **Verify**: **Click** on `Test Connection` to test `SQL Account API Service` status. When `✅ OK` status is shown, it means the service is setup successfully.
 
-   ![alt text](../../../static/img/sql-account-api/on-premise-setup/7.png)
+   ![alt text](../../../static/img/integration/sql-account-api/on-premise-setup/7.png)
 
 ### Examples of Port Forward
 

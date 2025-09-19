@@ -8,7 +8,7 @@ tags: ["SQL Account", "Getting Started", "Network Setting"]
 
 For a multi-user scenario, a separated database server is recommended. It will serve as the main database for multiple users to access concurrently.
 
-![7](../../static/img/getting-started/network-setting/7.png)
+![7](../../static/img/getting-started/multiuser-setup/7.png)
 
 ## Database Server Setup
 
@@ -18,15 +18,15 @@ For a multi-user scenario, a separated database server is recommended. It will s
 
    2. If Window System Type is 64 Bits, please download `Firebird 3.0.x` **64 bit (x64)**
 
-      ![1](../../static/img/getting-started/network-setting/1.png)
+      ![1](../../static/img/getting-started/multiuser-setup/1.png)
 
    3. Run Firebird setup | Press **Ok** | Select **I accept the agreement** | Click 5 times **Next** | Make sure it is "**Run Firebird in SuperServer Mode**"
 
-      ![2](../../static/img/getting-started/network-setting/2.png)
+      ![2](../../static/img/getting-started/multiuser-setup/2.png)
 
    4. Leave it blank to use default password of master key.
 
-      ![3](../../static/img/getting-started/network-setting/3.png)
+      ![3](../../static/img/getting-started/multiuser-setup/3.png)
 
    5. Click on **Next** | **Install** | **Next** | Click on **Finish** to complete
 
@@ -82,7 +82,11 @@ For a multi-user scenario, a separated database server is recommended. It will s
 
    5. Double check your settings as below and click **OK**
 
-      ![4](../../static/img/getting-started/network-setting/4.png)
+   :::info
+      Default Database Username is **SYSDBA**, Database Password is **MASTERKEY**
+   :::
+
+      ![4](../../static/img/getting-started/multiuser-setup/4.png)
 
 ## Client PC Setup
 
@@ -92,8 +96,8 @@ For a multi-user scenario, a separated database server is recommended. It will s
 
    3. Select Share folder (At Step 4)| Select Default DCF
 
-      ![5](../../static/img/getting-started/network-setting/5.png)
+      ![5](../../static/img/getting-started/multiuser-setup/5.png)
 
-      ![6](../../static/img/getting-started/network-setting/6.png)
+      ![6](../../static/img/getting-started/multiuser-setup/6.png)
 
    4. Click on Firebird icon and Logon as usual.

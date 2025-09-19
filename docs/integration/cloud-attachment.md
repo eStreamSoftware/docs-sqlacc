@@ -13,15 +13,15 @@ tags: ["SQL Account", "Integration", "Attachment"]
 
    3. **Turn-ON** the Attachment
 
-      ![1](../../static/img/miscellaneous/cloud-attachment/1.png)
+      ![1](../../static/img/integration/cloud-attachment/1.png)
 
    4. Click on **Log In —> Login with Google**
 
-      ![2](../../static/img/miscellaneous/cloud-attachment/2.png)
+      ![2](../../static/img/integration/cloud-attachment/2.png)
 
    5. After login with gmail, click on **Grand Access**
 
-      ![3](../../static/img/miscellaneous/cloud-attachment/3.png)
+      ![3](../../static/img/integration/cloud-attachment/3.png)
 
    6. Account connected (Granted success)
 
@@ -29,16 +29,16 @@ tags: ["SQL Account", "Integration", "Attachment"]
 
    1. Click on **Attachments**.
 
-      ![4](../../static/img/miscellaneous/cloud-attachment/4.png)
+      ![4](../../static/img/integration/cloud-attachment/4.png)
 
    2. Click the **arrow-keydown**.Choose **Cloud**.
 
-      ![5](../../static/img/miscellaneous/cloud-attachment/5.png)
+      ![5](../../static/img/integration/cloud-attachment/5.png)
 
    3. You can attach multiple different document type (like excel,doc,picture,pdf,etc)
 
-      ![7](../../static/img/miscellaneous/cloud-attachment/7.png)
+      ![7](../../static/img/integration/cloud-attachment/7.png)
 
    4. To delete the attachment files permanently. See the screenshot below.
 
-      ![8](../../static/img/miscellaneous/cloud-attachment/8.png)
+      ![8](../../static/img/integration/cloud-attachment/8.png)

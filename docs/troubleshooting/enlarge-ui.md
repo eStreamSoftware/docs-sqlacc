@@ -13,13 +13,13 @@ tags: ["SQL Account", "Troubleshooting", "Enlarge UI Screen"]
 
 2. Click on **Display Settings**
 
-   ![1](../../static/img/getting-started/enlarge-ui/1.png)
+   ![1](../../static/img/troubleshooting/enlarge-ui/1.png)
 
 3. Click on **Display** tab
 
 4. Slide the indicator to the display size desired (125%/ 150%/ 200%)
 
-   ![2](../../static/img/getting-started/enlarge-ui/2.png)
+   ![2](../../static/img/troubleshooting/enlarge-ui/2.png)
 
    :::note
 
@@ -37,7 +37,7 @@ tags: ["SQL Account", "Troubleshooting", "Enlarge UI Screen"]
 
 4. Slide the indicator to the display size desired (125%/ 150%/ 200%)
 
-   ![3](../../static/img/getting-started/enlarge-ui/3.png)
+   ![3](../../static/img/troubleshooting/enlarge-ui/3.png)
 
 ## For Windows XP
 
@@ -51,4 +51,4 @@ tags: ["SQL Account", "Troubleshooting", "Enlarge UI Screen"]
 
 5. Choose the screen size desired or Click on **Custom Setting** to customize the screen size by dragging the indicator
 
-   ![4](../../static/img/getting-started/enlarge-ui/4.png) ![4b](../../static/img/getting-started/enlarge-ui/4b.png)
+   ![4](../../static/img/troubleshooting/enlarge-ui/4.png) ![4b](../../static/img/troubleshooting/enlarge-ui/4b.png)

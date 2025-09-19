@@ -1,8 +1,0 @@
-{
-    "label": "General Ledger",
-    "position": 1,
-    "link": {
-        "type": "generated-index",
-        "description": "A quick guide on General Ledger for SQL Account"
-    }
-}

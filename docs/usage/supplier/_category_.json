@@ -1,0 +1,8 @@
+{
+    "label": "Supplier",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "description": "Supplier and usage guide"
+    }
+}

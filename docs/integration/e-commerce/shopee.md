@@ -7,13 +7,13 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
 ## Maintain Cloud Account
 
-1. Select **![39](../../../static/img/banking/cloud-icon.png) > Maintain Cloud Account** (One Time Setting)
+1. Select **![39](../../../static/img/integration/banks/cloud-icon.png) > Maintain Cloud Account** (One Time Setting)
 
-    ![1](../../../static/img/e-commerce/easyStore/1.png)
+    ![1](../../../static/img/integration/e-commerce/easyStore/1.png)
 
 2. Click on NEW
 
-    ![1](../../../static/img/e-commerce/shopee/1.png)
+    ![1](../../../static/img/integration/e-commerce/shopee/1.png)
 
     1. Enter **Description**
 
@@ -23,15 +23,15 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
 3. Login Shopee Credential
 
-    ![2](../../../static/img/e-commerce/shopee/2.png)
+    ![2](../../../static/img/integration/e-commerce/shopee/2.png)
 
 4. Click on Confirm Authorization
 
-    ![3](../../../static/img/e-commerce/shopee/3.png)
+    ![3](../../../static/img/integration/e-commerce/shopee/3.png)
 
 5. Press SAVE
 
-    ![4](../../../static/img/e-commerce/shopee/4.png)
+    ![4](../../../static/img/integration/e-commerce/shopee/4.png)
 
     - Once linking Successful, system will be returned status Linking Success Message.
 
@@ -41,21 +41,21 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
    1. Create Shopee Payment Method
 
-       ![5](../../../static/img/e-commerce/shopee/5.png)
+       ![5](../../../static/img/integration/e-commerce/shopee/5.png)
 
    2. Create Shopee Voucher / Discount Account Under Sales Adjustment
 
-       ![6](../../../static/img/e-commerce/lazada/5.png)
+       ![6](../../../static/img/integration/e-commerce/lazada/5.png)
 
    3. Create Shipping and Transaction Fee under Expenses
 
-       ![7](../../../static/img/e-commerce/easyStore/8.png)
+       ![7](../../../static/img/integration/e-commerce/easyStore/8.png)
 
        - It is up to company want to create under which category. Some of the Company will create under Cost of Goods Sold.
 
 2. Customer -> Maintain Customer
 
-   ![8](../../../static/img/e-commerce/shopee/8.png)
+   ![8](../../../static/img/integration/e-commerce/shopee/8.png)
 
 3. Stock -> Maintain Stock Group
 
@@ -63,11 +63,11 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
    1. Create Discount Stock Group
 
-       ![9](../../../static/img/e-commerce/shopee/9.png)
+       ![9](../../../static/img/integration/e-commerce/shopee/9.png)
 
    2. Create Voucher Stock Group
 
-       ![10](../../../static/img/e-commerce/shopee/10.png)
+       ![10](../../../static/img/integration/e-commerce/shopee/10.png)
 
        - Repeat same step to create for Shipping and Transaction Fees Stock Group
 
@@ -75,7 +75,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
    1. Create Discount Stock Item
 
-       ![11](../../../static/img/e-commerce/shopee/11.png)
+       ![11](../../../static/img/integration/e-commerce/shopee/11.png)
 
        :::note
        Unticked Stock Control
@@ -83,21 +83,21 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
    2. Create Voucher Item Code
 
-       ![12](../../../static/img/e-commerce/shopee/12.png)
+       ![12](../../../static/img/integration/e-commerce/shopee/12.png)
 
        - Repeat same step to create for Shipping and Transaction Fees Item Code
 
 ## Account Tab
 
-1. Click on '![39](../../../static/img/banking/cloud-icon.png)'- > Shopee
+1. Click on '![39](../../../static/img/integration/banks/cloud-icon.png)'- > Shopee
 
 2. Click on Account Tab -> Double click on your account
 
-    ![13](../../../static/img/e-commerce/shopee/13.png)
+    ![13](../../../static/img/integration/e-commerce/shopee/13.png)
 
     1. Mapping Code
 
-        ![14](../../../static/img/e-commerce/shopee/14.png)
+        ![14](../../../static/img/integration/e-commerce/shopee/14.png)
 
     2. Expiry Date
 
@@ -114,13 +114,13 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
    2. Click on “Batch Tools” and select “Mass Update”
 
-       ![15](../../../static/img/e-commerce/shopee/15.png)
+       ![15](../../../static/img/integration/e-commerce/shopee/15.png)
 
    3. Click on “Generate” to generate the product list.
 
    4. Click on “Download” to get the generated product list.
 
-       ![16](../../../static/img/e-commerce/shopee/16.png)
+       ![16](../../../static/img/integration/e-commerce/shopee/16.png)
 
    You can choose to have Shopee SKU as SQL Item Code by import to SQL, may contact your service agent to assist on this product import.
 
@@ -128,29 +128,29 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
    1. Click on Product Tab -> Click on Fetch Button -> System will return the message when fetching done.
 
-       ![17](../../../static/img/e-commerce/shopee/17.png)
+       ![17](../../../static/img/integration/e-commerce/shopee/17.png)
 
    2. Verify Status: Exist in Stock Item are meaning SQL and Seller SKU are having the same Item Code.
 
-       ![18](../../../static/img/e-commerce/shopee/18.png)
+       ![18](../../../static/img/integration/e-commerce/shopee/18.png)
 
        If you decide to use the same item code as Seller Sku, ticked on select All records -> press on Post button for the first time so system will remember the settings.
 
-       ![19](../../../static/img/e-commerce/shopee/19.png)
+       ![19](../../../static/img/integration/e-commerce/shopee/19.png)
 
    3. Verified Status: Success when posting done
 
-       ![20](../../../static/img/e-commerce/shopee/20.png)
+       ![20](../../../static/img/integration/e-commerce/shopee/20.png)
 
        :::note
        Once you post successful, system will keep the Shop SKU in Stock Item as Alternative Item
        :::
 
-       ![21](../../../static/img/e-commerce/shopee/21.png)
+       ![21](../../../static/img/integration/e-commerce/shopee/21.png)
 
    4. You can still manually do the mapping on the item code (system will auto ticked the record you have change the item code), once done all, click on POST button.
 
-       ![22](../../../static/img/e-commerce/shopee/22.png)
+       ![22](../../../static/img/integration/e-commerce/shopee/22.png)
 
    [Youtube](https://www.youtube.com/watch?v=B9UmhTYjFHM)
 
@@ -158,13 +158,13 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
 1. Click on Orders Tab
 
-     ![23](../../../static/img/e-commerce/shopee/23.png)
+     ![23](../../../static/img/integration/e-commerce/shopee/23.png)
 
 2. Status
 
-     ![24](../../../static/img/e-commerce/shopee/24.png)
+     ![24](../../../static/img/integration/e-commerce/shopee/24.png)
 
-     ![25](../../../static/img/e-commerce/shopee/25.png)
+     ![25](../../../static/img/integration/e-commerce/shopee/25.png)
 
      :::tip
      Each order number will be posted once. You can delete the Invoice if you want to repost.
@@ -174,37 +174,37 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
      1. Select Date Range -> Click on Refresh Order
 
-         ![26](../../../static/img/e-commerce/shopee/26.png)
+         ![26](../../../static/img/integration/e-commerce/shopee/26.png)
 
          Please be patient, system is on the way to fetch the order from Shopee
 
-         ![27](../../../static/img/e-commerce/shopee/27.png)
+         ![27](../../../static/img/integration/e-commerce/shopee/27.png)
 
          System will return the message when Fetching Done, Press OK.
 
-         ![28](../../../static/img/e-commerce/shopee/28.png)
+         ![28](../../../static/img/integration/e-commerce/shopee/28.png)
 
 4. Post Order
 
      1. Click on the status you want to post the order, let us take an example on Completed Status -> Ticked all -> Click on Post
 
-         ![29](../../../static/img/e-commerce/shopee/29.png)
+         ![29](../../../static/img/integration/e-commerce/shopee/29.png)
 
      2. If you did not tick on any order when do the posting, system will raise a message: You have not selected any order. Would you like to select all? If you would like to post all -> Press Yes
 
-         ![30](../../../static/img/e-commerce/shopee/30.png)
+         ![30](../../../static/img/integration/e-commerce/shopee/30.png)
 
          Please be patient to wait for the order posting.
 
-         ![30](../../../static/img/e-commerce/shopee/30.png)
+         ![30](../../../static/img/integration/e-commerce/shopee/30.png)
 
      3. Click on OK when done posting
 
-         ![31](../../../static/img/e-commerce/shopee/31.png)
+         ![31](../../../static/img/integration/e-commerce/shopee/31.png)
 
 5. Verify Status
 
-     ![32](../../../static/img/e-commerce/shopee/32.png)
+     ![32](../../../static/img/integration/e-commerce/shopee/32.png)
 
      1. Posted
 
@@ -226,7 +226,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
          1. Ticked on the order
 
-             ![33](../../../static/img/e-commerce/shopee/33.png)
+             ![33](../../../static/img/integration/e-commerce/shopee/33.png)
 
          2. Click on Item Code Drop Down, user can manually map the item code
 
@@ -236,17 +236,17 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
      1. Double click on the order which you want to view the detail.
 
-         ![34](../../../static/img/e-commerce/shopee/34.png)
+         ![34](../../../static/img/integration/e-commerce/shopee/34.png)
 
      2. Order details will be displayed.
 
-         ![35](../../../static/img/e-commerce/shopee/35.png)
+         ![35](../../../static/img/integration/e-commerce/shopee/35.png)
 
 7. Sales Invoice
 
      - Example of Sales Invoice posted from Shopee | Orders.
 
-         ![36](../../../static/img/e-commerce/shopee/36.png)
+         ![36](../../../static/img/integration/e-commerce/shopee/36.png)
 
      1. Formula to calc Shipping Fees:
 
@@ -260,7 +260,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
          Escrow Amount will be Shopee release amount.
          :::
 
-         ![37](../../../static/img/e-commerce/shopee/37.png)
+         ![37](../../../static/img/integration/e-commerce/shopee/37.png)
 
          :::note
          Missing no 10 Discount Item Code?
@@ -276,11 +276,11 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
      1. Example of Sales Credit Note posted from Shopee | Orders.
 
-         ![38](../../../static/img/e-commerce/shopee/38.png)
+         ![38](../../../static/img/integration/e-commerce/shopee/38.png)
 
      2. Sales -> Invoice
 
-         ![39](../../../static/img/e-commerce/shopee/39.png)
+         ![39](../../../static/img/integration/e-commerce/shopee/39.png)
 
      3. Escrow = RM 10.25(Escrow Amt) + 23.50(Product) = RM 33.75
 
@@ -298,11 +298,11 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
         CN will be posting return product without Shipping and Transaction fees.
 
-        ![40](../../../static/img/e-commerce/shopee/40.png)
+        ![40](../../../static/img/integration/e-commerce/shopee/40.png)
 
         **Customer -> Customer Credit Note**
 
-        ![41](../../../static/img/e-commerce/shopee/41.png)
+        ![41](../../../static/img/integration/e-commerce/shopee/41.png)
 
         :::note
         System will auto knockoff the Invoice.
@@ -310,7 +310,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
         **Customer -> Customer Invoice**
 
-        ![42](../../../static/img/e-commerce/shopee/42.png)
+        ![42](../../../static/img/integration/e-commerce/shopee/42.png)
 
         - Outstanding Amount will be Shopee Release Amount
 
@@ -318,27 +318,27 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
      1. Select the order that need to be replaced and click on Replace.
 
-         ![43](../../../static/img/e-commerce/shopee/43.png)
+         ![43](../../../static/img/integration/e-commerce/shopee/43.png)
 
-         ![44](../../../static/img/e-commerce/shopee/44.png)
+         ![44](../../../static/img/integration/e-commerce/shopee/44.png)
 
      2. The order selected will be replaced.
 
-         ![45](../../../static/img/e-commerce/shopee/45.png)
+         ![45](../../../static/img/integration/e-commerce/shopee/45.png)
 
 10. Print
 
      1. Click on Order No -> Print
 
-         ![46](../../../static/img/e-commerce/shopee/46.png)
+         ![46](../../../static/img/integration/e-commerce/shopee/46.png)
 
      2. Select Report -> Press OK
 
-         ![47](../../../static/img/e-commerce/shopee/47.png)
+         ![47](../../../static/img/integration/e-commerce/shopee/47.png)
 
      3. Sample Report
 
-         ![48](../../../static/img/e-commerce/shopee/48.png)
+         ![48](../../../static/img/integration/e-commerce/shopee/48.png)
 
      [Youtube](https://www.youtube.com/watch?v=jrts5wSRecA)
 
@@ -352,7 +352,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
     3. Click on “Export” button and finally “Download” the file.
 
-        ![49](../../../static/img/e-commerce/shopee/49.png)
+        ![49](../../../static/img/integration/e-commerce/shopee/49.png)
 
 2. Posting Payment
 
@@ -360,25 +360,25 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
     2. Click Load Excel
 
-        ![50](../../../static/img/e-commerce/shopee/50.png)
+        ![50](../../../static/img/integration/e-commerce/shopee/50.png)
 
     3. Select the statement download from Shopee
 
-        ![51](../../../static/img/e-commerce/shopee/51.png)
+        ![51](../../../static/img/integration/e-commerce/shopee/51.png)
 
     4. Check on Invoice No Column, make sure no blank Invoice No. It is advisable to post all the order first before do payment. Once done, click on Post
 
-        ![52](../../../static/img/e-commerce/shopee/52.png)
+        ![52](../../../static/img/integration/e-commerce/shopee/52.png)
 
         Blank Invoice No mean order yet do the posting.
 
     5. Posting Payment, please be patient
 
-        ![53](../../../static/img/e-commerce/shopee/53.png)
+        ![53](../../../static/img/integration/e-commerce/shopee/53.png)
 
     6. Payment Posting done
 
-        ![54](../../../static/img/e-commerce/shopee/54.png)
+        ![54](../../../static/img/integration/e-commerce/shopee/54.png)
 
     7. Example of Customer Payment posted from Shopee | Payment
 
@@ -388,15 +388,15 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
         Example: On 7/12/2020, total payment received RM 1424.71
 
-        ![55](../../../static/img/e-commerce/shopee/55.png)
+        ![55](../../../static/img/integration/e-commerce/shopee/55.png)
 
         **Customer -> Customer Payment**
 
-            ![56](../../../static/img/e-commerce/shopee/56.png)
+            ![56](../../../static/img/integration/e-commerce/shopee/56.png)
 
         System will auto do the knockoff.
 
-            ![57](../../../static/img/e-commerce/shopee/57.png)
+            ![57](../../../static/img/integration/e-commerce/shopee/57.png)
 
 3. Withdrawal
 
@@ -410,7 +410,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
     3. GL -> Cash Book Entry -> New OR
 
-        ![58](../../../static/img/e-commerce/shopee/58.png)
+        ![58](../../../static/img/integration/e-commerce/shopee/58.png)
 
     [Youtube](https://www.youtube.com/watch?v=PloG3CeHA1w)
 
@@ -432,7 +432,7 @@ tags: ["SQL Account", "Integration", "e-Commerce", "Shopee"]
 
 4. How system handle the situation when Shipping Fees charges Seller Paid Amount cause escrow amount in negative?
 
-    ![59](../../../static/img/e-commerce/shopee/59.png)
+    ![59](../../../static/img/integration/e-commerce/shopee/59.png)
 
     1. This scenario system will post to **Sales CN** and **Customer Refund**.
 

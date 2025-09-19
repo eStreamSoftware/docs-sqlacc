@@ -27,7 +27,7 @@ In the E-Invoice system, there are few types of documents that can be submitted.
 
 1. Click on **MyInvois** > **Submit E-Invoice**
 
-    ![sales-invoice-submit-eiv](../../../static/img/myinvois/einvoice/sales-invoice-submit-eiv.png)
+    ![sales-invoice-submit-eiv](../../../static/img/usage/myinvois/einvoice/sales-invoice-submit-eiv.png)
 
 2. If the submission is valid, you will see the screen below, where you can see the validated Invoice info from LHDN directly.
 
@@ -35,7 +35,7 @@ In the E-Invoice system, there are few types of documents that can be submitted.
     Ensure that all required fields are correctly filled before submission to avoid errors. If the submission is invalid, you will need to correct the issues and resubmit.
     :::
 
-    ![sales-invoice-valid](../../../static/img/myinvois/einvoice/sales-invoice-valid.png)
+    ![sales-invoice-valid](../../../static/img/usage/myinvois/einvoice/sales-invoice-valid.png)
 
 ### Batch Submission
 
@@ -43,19 +43,19 @@ In the scenario where you already issued a lot of invoices but yet to submit E-I
 
 1. Click on **MyInvois** > **Batch Submit E-Invoice**
 
-    ![batch-submission-button](../../../static/img/myinvois/einvoice/batch-submission-button.png)
+    ![batch-submission-button](../../../static/img/usage/myinvois/einvoice/batch-submission-button.png)
 
 2. Apply the desired date range and untick any invoices that you do not wish to submit yet, then proceed to **Submit**.
 
-    ![batch-submission-filter](../../../static/img/myinvois/einvoice/batch-submission-filter.png)
+    ![batch-submission-filter](../../../static/img/usage/myinvois/einvoice/batch-submission-filter.png)
 
 3. Refer to **Status** column for each E-Invoice status. If there's any errors, go to the specific invoice and update the incorrect details then retry submission again.
 
-    ![batch-submission-status](../../../static/img/myinvois/einvoice/batch-submission-status.png)
+    ![batch-submission-status](../../../static/img/usage/myinvois/einvoice/batch-submission-status.png)
 
 4. Go back to browse screen, click **Refresh** to see the updated status.
 
-    ![batch-submission-refresh](../../../static/img/myinvois/einvoice/batch-submission-refresh.png)
+    ![batch-submission-refresh](../../../static/img/usage/myinvois/einvoice/batch-submission-refresh.png)
 
 ### Resolving Submitting Status
 
@@ -63,9 +63,9 @@ Submitting status is not a common status you will encounter. It will only stuck 
 
 Below show the icon of submitting status, it is a **red** submitted icon.
 
-    ![submitting-status-detail](../../../static/img/myinvois/einvoice/submitting-status-detail.png)
+    ![submitting-status-detail](../../../static/img/usage/myinvois/einvoice/submitting-status-detail.png)
 
-    ![submitting-status-browse](../../../static/img/myinvois/einvoice/submitting-status-browse.png)
+    ![submitting-status-browse](../../../static/img/usage/myinvois/einvoice/submitting-status-browse.png)
 
 There are 2 way to resolve submitting status.
 
@@ -76,11 +76,11 @@ There are 2 way to resolve submitting status.
 
     1. Document is **successfully found** in MyInvois Portal. Confirmation dialog will be prompted. (1) show the current document number that is being resolved. Select the correct document and click **OK** (2) to complete resolving submitting status.
 
-        ![submitting-status-resolving](../../../static/img/myinvois/einvoice/submitting-status-resolving.png)
+        ![submitting-status-resolving](../../../static/img/usage/myinvois/einvoice/submitting-status-resolving.png)
 
     2. Document is **not found** in MyInvois Portal. Action dialog will be prompted.
 
-        ![submitting-status-resolving-error](../../../static/img/myinvois/einvoice/submitting-status-resolving-error.png)
+        ![submitting-status-resolving-error](../../../static/img/usage/myinvois/einvoice/submitting-status-resolving-error.png)
 
         :::warning
         Sometimes it take a long time for the submitted document to appear in MyInvois Portal. Please ensure it has not been submitted before Reset E-Invoice status to avoid double submission.
@@ -103,17 +103,17 @@ This ensures that the invoice can be successfully submitted at a later stage.
 
 1. After issuing an invoice, click **MyInvois** > **Test E-Invoice Validation**
 
-    ![test-einvoice-validation](../../../static/img/myinvois/einvoice/test-einvoice-validation-button.png)
+    ![test-einvoice-validation](../../../static/img/usage/myinvois/einvoice/test-einvoice-validation-button.png)
 
 2. If there's some missing data, error list or dialog will be shown, you can update the incorrect data and try validate again.
 
     Example error dialog:
 
-    ![test-einvoice-error](../../../static/img/myinvois/einvoice/test-einvoice-validation-error.png)
+    ![test-einvoice-error](../../../static/img/usage/myinvois/einvoice/test-einvoice-validation-error.png)
 
 3. If the validation is successful, you will see the following confirmation screen:
 
-    ![test-einvoice-result](../../../static/img/myinvois/einvoice/test-einvoice-validation-result.png)
+    ![test-einvoice-result](../../../static/img/usage/myinvois/einvoice/test-einvoice-validation-result.png)
 
 ## Consolidate
 
@@ -123,22 +123,22 @@ However, you are required to aggregate these transactions monthly and submit a c
 
 1. Click on **MyInvois** > **Consolidate E-Invoice**
 
-    ![consolidate-button](../../../static/img/myinvois/einvoice/consolidate-button.png)
+    ![consolidate-button](../../../static/img/usage/myinvois/einvoice/consolidate-button.png)
 
 2. Select the documents to consolidate:
    1. Choose the desired date range
    2. Tick **Include unsubmitted E-Invoices** if you want to include invoices with **E-Invoice** submission type. Refer to [Step 4](e-invoice#sales-invoice--cash-sales)
    3. Click **Apply**
 
-    ![consolidate-filter](../../../static/img/myinvois/einvoice/consolidate-filter.png)
+    ![consolidate-filter](../../../static/img/usage/myinvois/einvoice/consolidate-filter.png)
 
 3. Review the aggregated invoice details and click **Submit**
 
-    ![consolidate-review](../../../static/img/myinvois/einvoice/consolidate-review.png)
+    ![consolidate-review](../../../static/img/usage/myinvois/einvoice/consolidate-review.png)
 
 4. If the consolidated E-Invoice is submitted successfully, you will see the following confirmation screen:
 
-    ![consolidate-success](../../../static/img/myinvois/einvoice/consolidate-success.png)
+    ![consolidate-success](../../../static/img/usage/myinvois/einvoice/consolidate-success.png)
 
 ## Cancellation
 
@@ -153,21 +153,21 @@ To cancel a submitted e-invoice:
 
 1. Go to **MyInvois** > **Cancel Validated E-Invoice**.
 
-    ![sales-invoice-cancel-button](../../../static/img/myinvois/einvoice/sales-invoice-cancel-button.png)
+    ![sales-invoice-cancel-button](../../../static/img/usage/myinvois/einvoice/sales-invoice-cancel-button.png)
 
 2. Enter the reason for cancellation then Click **Initiate Cancellation**. To dismiss the dialog, Click **Keep Document**.
 
-    ![sales-invoice-cancel-reason](../../../static/img/myinvois/einvoice/sales-invoice-cancel-reason.png)
+    ![sales-invoice-cancel-reason](../../../static/img/usage/myinvois/einvoice/sales-invoice-cancel-reason.png)
 
 3. To verify the latest status, go to **MyInvois** > **Check E-Invoice Status**.
 
-    ![sales-invoice-cancelled](../../../static/img/myinvois/einvoice/sales-invoice-cancelled.png)
+    ![sales-invoice-cancelled](../../../static/img/usage/myinvois/einvoice/sales-invoice-cancelled.png)
 
 ## Report
 
 Preview the report and you can see the E-Invoice validation QR code is embedded in the invoice.
 
-![sales-invoice-preview](../../../static/img/myinvois/einvoice/sales-invoice-preview.png)
+![sales-invoice-preview](../../../static/img/usage/myinvois/einvoice/sales-invoice-preview.png)
 
 ## Refresh Status
 
@@ -177,17 +177,17 @@ You can easily check the latest status of an invoice in SQL Account to ensure it
 
 1. Click on **MyInvois** > **Check E-Invoice Status** (1) or **Icon** (2).
 
-    ![sales-invoice-refresh-status-button](../../../static/img/myinvois/einvoice/sales-invoice-refresh-status-button.png)
+    ![sales-invoice-refresh-status-button](../../../static/img/usage/myinvois/einvoice/sales-invoice-refresh-status-button.png)
 
 2. You will be able to see the current status of the submitted invoice, along with the QR code and a validation page.
 
-    ![sales-invoice-refresh-status-valid](../../../static/img/myinvois/einvoice/sales-invoice-refresh-status-valid.png)
+    ![sales-invoice-refresh-status-valid](../../../static/img/usage/myinvois/einvoice/sales-invoice-refresh-status-valid.png)
 
     :::info[NOTE]
     If the invoice status is marked as invalid, a list of errors will be displayed. You can use this information to correct the invoice and resubmit it.
     :::
 
-    ![sales-invoice-refresh-status-invalid](../../../static/img/myinvois/einvoice/sales-invoice-refresh-status-invalid.png)
+    ![sales-invoice-refresh-status-invalid](../../../static/img/usage/myinvois/einvoice/sales-invoice-refresh-status-invalid.png)
 
 ### Batch Refresh Status
 
@@ -204,7 +204,7 @@ To ensure that you are viewing the most up-to-date status of your E-Invoices, fo
 
 This process will retrieve the latest status for all submitted documents, ensuring that your records are accurate and up to date.
 
-    ![batch-refresh-status](../../../static/img/myinvois/einvoice/batch-refresh-status.png)
+    ![batch-refresh-status](../../../static/img/usage/myinvois/einvoice/batch-refresh-status.png)
 
 ## Submission Log
 
@@ -212,9 +212,9 @@ You can view all past submission and cancellation log of an invoice.
 
 1. Click on **MyInvois** > **MyInvois Log**
 
-    ![sales-invoice-log-button](../../../static/img/myinvois/einvoice/sales-invoice-log-button.png)
+    ![sales-invoice-log-button](../../../static/img/usage/myinvois/einvoice/sales-invoice-log-button.png)
 
-    ![sales-invoice-log](../../../static/img/myinvois/einvoice/sales-invoice-log.png)
+    ![sales-invoice-log](../../../static/img/usage/myinvois/einvoice/sales-invoice-log.png)
 
 ## Transaction
 
@@ -222,11 +222,11 @@ MyInvois Transaction is a feature that will list all MyInvois documents.
 
 You can access MyInvois Transaction from cloud category in menu bar.
 
-![myinvois-trans-location](../../../static/img/myinvois/einvoice/myinvois-trans-location.png)
+![myinvois-trans-location](../../../static/img/usage/myinvois/einvoice/myinvois-trans-location.png)
 
 Below show the MyInvois Transaction form with 3 tabs.
 
-![myinvois-trans-overview](../../../static/img/myinvois/einvoice/myinvois-trans-overview.png)
+![myinvois-trans-overview](../../../static/img/usage/myinvois/einvoice/myinvois-trans-overview.png)
 
 1. All - List all MyInvois documents.
 2. Submitted - E-Invoices submitted to your customers / suppliers
@@ -236,7 +236,7 @@ MyInvois Transaction feature:
 
 1. ### Sync MyInvois documents
 
-    ![myinvois-trans-sync](../../../static/img/myinvois/einvoice/myinvois-trans-sync.png)
+    ![myinvois-trans-sync](../../../static/img/usage/myinvois/einvoice/myinvois-trans-sync.png)
 
     - SQL Account will help sync MyInvois documents from MyInvois portal in background when **MyInvois Transaction** or [**Import**](#import) form is opened.
     - There are 2 kinds of sync task:
@@ -245,11 +245,11 @@ MyInvois Transaction feature:
     - After sync task is completed, it will show **Last Sync**.
     - SQL Account will resync after 30 minutes or you can force resync instantly by clicking resync button.
 
-        ![myinvois-trans-resync](../../../static/img/myinvois/einvoice/myinvois-trans-resync.png)
+        ![myinvois-trans-resync](../../../static/img/usage/myinvois/einvoice/myinvois-trans-resync.png)
 
     - Click refresh button to query MyInvois documents synced from MyInvois portal into your database.
 
-        ![myinvois-trans-refresh](../../../static/img/myinvois/einvoice/myinvois-trans-refresh.png)
+        ![myinvois-trans-refresh](../../../static/img/usage/myinvois/einvoice/myinvois-trans-refresh.png)
 
     :::info[NOTE]
     You may leave MyInvois Transaction or Import form open in the background to sync documents as you carry on with other tasks.
@@ -259,7 +259,7 @@ MyInvois Transaction feature:
 
     You can find the **Invoice state** column in field chooser.
 
-        ![myinvois-trans-state](../../../static/img/myinvois/einvoice/myinvois-trans-state.png)
+        ![myinvois-trans-state](../../../static/img/usage/myinvois/einvoice/myinvois-trans-state.png)
 
     There are 3 Invoice state:
 
@@ -275,11 +275,11 @@ MyInvois Transaction feature:
 
     - Click cancel to initiate document cancellation on submitted document.
 
-        ![myinvois-trans-cancel](../../../static/img/myinvois/einvoice/myinvois-trans-cancel.png)
+        ![myinvois-trans-cancel](../../../static/img/usage/myinvois/einvoice/myinvois-trans-cancel.png)
 
     - Click reject to inititate document rejection on received document
 
-        ![myinvois-trans-reject](../../../static/img/myinvois/einvoice/myinvois-trans-reject.png)
+        ![myinvois-trans-reject](../../../static/img/usage/myinvois/einvoice/myinvois-trans-reject.png)
 
     :::info[NOTE]
     You can batch cancel or reject by selecting multiple documents.
@@ -289,7 +289,7 @@ MyInvois Transaction feature:
 
     Click the **print / preview** to print report using field value from MyInvois document.
 
-        ![myinvois-trans-print](../../../static/img/myinvois/einvoice/myinvois-trans-print.png)
+        ![myinvois-trans-print](../../../static/img/usage/myinvois/einvoice/myinvois-trans-print.png)
 
 ## Import
 
@@ -319,24 +319,24 @@ You can view all received documents and batch import into SQL Account.
 
 1. Click on **MyInvois** > **Batch import E-Invoice**
 
-    ![purchase-invoice-batch-import-button](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-button.png)
+    ![purchase-invoice-batch-import-button](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-button.png)
 
-    ![purchase-invoice-batch-import-form](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form.png)
+    ![purchase-invoice-batch-import-form](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-form.png)
 
 2. Opening Import form will also start [Sync MyInvois documents](#sync-myinvois-documents). The first sync may take longer as it syncs documents from latest to oldest. Please wait if you need to import older documents.
 
-    ![purchase-invoice-batch-import-sync](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-sync.png)
+    ![purchase-invoice-batch-import-sync](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-sync.png)
 
 3. Choose the desired date range and click the **Apply** to query documents already synced to your database. Unsynced documents will not appear.
 
-    ![purchase-invoice-batch-import-form-daterange](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-daterange.png)
+    ![purchase-invoice-batch-import-form-daterange](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-form-daterange.png)
 
 4. There are two tables inside the form:
 
     - The upper table will display the list of E-Invoice documents your company has received
     - The lower table will show the item details for the document you have selected
 
-    ![purchase-invoice-batch-import-form-apply](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-apply.png)
+    ![purchase-invoice-batch-import-form-apply](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-form-apply.png)
 
 5. Each document will display a status in the **Status** column. Below is the description and import action of each status:
 
@@ -356,21 +356,21 @@ You can view all received documents and batch import into SQL Account.
     - Same **TIN** (prioritized)
     - Same **ID Number** or similar **Company Name**
 
-    ![purchase-invoice-batch-import-form-select-supplier](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-select-supplier.png)
+    ![purchase-invoice-batch-import-form-select-supplier](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-form-select-supplier.png)
 
 7. A tax code is required for an item if the tax amount is greater than 0
 
-    ![purchase-invoice-batch-import-form-select-tax](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-form-select-tax.png)
+    ![purchase-invoice-batch-import-form-select-tax](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-form-select-tax.png)
 
 8. You may click on the **Import** button to proceed with the import
 
-    ![purchase-invoice-batch-import](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import.png)
+    ![purchase-invoice-batch-import](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import.png)
 
 9. A message dialog  will indicate success or display an error, if any
 
-    ![purchase-invoice-batch-import-success](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-success.png)
+    ![purchase-invoice-batch-import-success](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-success.png)
 
-    ![purchase-invoice-batch-import-error](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-error.png)
+    ![purchase-invoice-batch-import-error](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-error.png)
 
 ### Linking
 
@@ -378,11 +378,11 @@ You can view and link the received E-Invoice documents associated with the TIN o
 
 1. Click on **🔍** of MyInvois UUID field in more panel
 
-    ![purchase-invoice-linking](../../../static/img/myinvois/einvoice/purchase-invoice-linking.png)
+    ![purchase-invoice-linking](../../../static/img/usage/myinvois/einvoice/purchase-invoice-linking.png)
 
 2. The form will display only documents related to the same TIN as the selected record
 
-    ![purchase-invoice-linking-form](../../../static/img/myinvois/einvoice/purchase-invoice-linking-form.png)
+    ![purchase-invoice-linking-form](../../../static/img/usage/myinvois/einvoice/purchase-invoice-linking-form.png)
 
 3. Select the appropriate document and click on the **Update** button to link it
 
@@ -396,7 +396,7 @@ To create or update a customer or supplier from the import form, follow these st
     If the Customer/Supplier Code has value, SQL Account will update the existing record. If it is empty, a new customer/supplier will be created.
     :::
 
-    ![purchase-invoice-batch-import-update-supplier](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-update-supplier.png)
+    ![purchase-invoice-batch-import-update-supplier](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-update-supplier.png)
 
 2. A comparison view will appear showing fields from the existing record in Maintain Customer/Supplier and the E-Invoice document
 
@@ -406,7 +406,7 @@ To create or update a customer or supplier from the import form, follow these st
     - If both values (from E-Invoice and existing record) are identical, the cell will be merged
     :::
 
-    ![purchase-invoice-batch-import-supplier-form](../../../static/img/myinvois/einvoice/purchase-invoice-batch-import-supplier-form.png)
+    ![purchase-invoice-batch-import-supplier-form](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-supplier-form.png)
 
 3. Click the **Create** or **Update** button to apply the changes to the customer or supplier record
 
@@ -420,11 +420,11 @@ To reject a received e-invoice:
 
 1. Go to **MyInvois** > **Reject Validated E-Invoice**.
 
-    ![purchase-invoice-reject-button](../../../static/img/myinvois/einvoice/purchase-invoice-reject-button.png)
+    ![purchase-invoice-reject-button](../../../static/img/usage/myinvois/einvoice/purchase-invoice-reject-button.png)
 
 2. Enter the reason for rejection then click **Initiate Rejection**. To dismiss the dialog, Click **Keep Document**.
 
-    ![purchase-invoice-reject-reason](../../../static/img/myinvois/einvoice/purchase-invoice-reject-reason.png)
+    ![purchase-invoice-reject-reason](../../../static/img/usage/myinvois/einvoice/purchase-invoice-reject-reason.png)
 
 ## Share PDF (Experimental)
 
@@ -432,17 +432,17 @@ You can share invoice PDF to SQL buyer.
 
 1. Click on **MyInvois** > **Check E-Invoice Status**
 
-    ![sales-invoice-refresh-status-button](../../../static/img/myinvois/einvoice/sales-invoice-refresh-status-button.png)
+    ![sales-invoice-refresh-status-button](../../../static/img/usage/myinvois/einvoice/sales-invoice-refresh-status-button.png)
 
 2. Click on **Share** to share the invoice PDF with SQL buyer
 
-    ![sales-invoice-share-pdf-button](../../../static/img/myinvois/einvoice/sales-invoice-share-pdf-button.png)
+    ![sales-invoice-share-pdf-button](../../../static/img/usage/myinvois/einvoice/sales-invoice-share-pdf-button.png)
 
 3. Continue to choose the report format to share with SQL buyer
 
-    ![sales-invoice-share-pdf-select-report](../../../static/img/myinvois/einvoice/sales-invoice-share-pdf-select-report.png)
+    ![sales-invoice-share-pdf-select-report](../../../static/img/usage/myinvois/einvoice/sales-invoice-share-pdf-select-report.png)
 
-    ![sales-invoice-share-pdf-success](../../../static/img/myinvois/einvoice/sales-invoice-share-pdf-success.png)
+    ![sales-invoice-share-pdf-success](../../../static/img/usage/myinvois/einvoice/sales-invoice-share-pdf-success.png)
 
 ## Download PDF (Experimental)
 
@@ -454,9 +454,9 @@ You can download the shared invoice PDF from SQL supplier.
     The option will be enabled if the supplier uploaded the PDF
     :::
 
-    ![purchase-invoice-download-pdf-button](../../../static/img/myinvois/einvoice/purchase-invoice-download-pdf-button.png)
+    ![purchase-invoice-download-pdf-button](../../../static/img/usage/myinvois/einvoice/purchase-invoice-download-pdf-button.png)
 
-    ![purchase-invoice-download-pdf](../../../static/img/myinvois/einvoice/purchase-invoice-download-pdf.png)
+    ![purchase-invoice-download-pdf](../../../static/img/usage/myinvois/einvoice/purchase-invoice-download-pdf.png)
 
 ## E-Invoice Request
 
@@ -472,11 +472,11 @@ To create E-Invoice Request that allows buyers to fill in their personal or comp
 
 1. Click on **MyInvois** > **E-Invoice Request** in detail mode
 
-    ![create-request](../../../static/img/myinvois/einvoice-request/create-request.png)
+    ![create-request](../../../static/img/usage/myinvois/einvoice-request/create-request.png)
 
 2. Select the desired report from the report list
 
-    ![report-list](../../../static/img/myinvois/einvoice-request/report-list.png)
+    ![report-list](../../../static/img/usage/myinvois/einvoice-request/report-list.png)
 
 3. Share the report with the buyer
 
@@ -488,9 +488,9 @@ To create E-Invoice Request that allows buyers to fill in their personal or comp
     When clicked, the icon will open the link shared with the buyer
     :::
 
-    ![hourglass](../../../static/img/myinvois/einvoice-request/hourglass.png)
+    ![hourglass](../../../static/img/usage/myinvois/einvoice-request/hourglass.png)
 
-    ![eivrequest-form-pending](../../../static/img/myinvois/einvoice-request/eivrequest-form-pending.png)
+    ![eivrequest-form-pending](../../../static/img/usage/myinvois/einvoice-request/eivrequest-form-pending.png)
 
 6. A filled hourglass icon indicates that the buyer has completed and submitted the required information for E-Invoice
 
@@ -498,9 +498,9 @@ To create E-Invoice Request that allows buyers to fill in their personal or comp
     When clicked, the icon updates the invoice with the submitted details and opens the link shared with the buyer
     :::
 
-    ![filled-hourglass](../../../static/img/myinvois/einvoice-request/filled-hourglass.png)
+    ![filled-hourglass](../../../static/img/usage/myinvois/einvoice-request/filled-hourglass.png)
 
-    ![eivrequest-form-valid](../../../static/img/myinvois/einvoice-request/eivrequest-form-valid.png)
+    ![eivrequest-form-valid](../../../static/img/usage/myinvois/einvoice-request/eivrequest-form-valid.png)
 
 ### Cancel E-Invoice Request
 
@@ -508,7 +508,7 @@ To cancel the E-Invoice Request and prevent the buyer from submitting informatio
 
 1. Click on **MyInvois** > **Cancel E-Invoice Request** in detail mode
 
-    ![cancel-request](../../../static/img/myinvois/einvoice-request/cancel-request.png)
+    ![cancel-request](../../../static/img/usage/myinvois/einvoice-request/cancel-request.png)
 
 ### Refresh E-Invoice Request status
 
@@ -516,11 +516,11 @@ To check if the buyer has submitted information for E-Invoice and update the inv
 
 1. Click on **MyInvois** > **Refresh E-Invoice Request status** in detail mode
 
-    ![refresh-status](../../../static/img/myinvois/einvoice-request/refresh-status.png)
+    ![refresh-status](../../../static/img/usage/myinvois/einvoice-request/refresh-status.png)
 
 2. If the buyer has submitted the required information, the status icon will change to "Valid" and the invoice will be updated with the submitted details
 
-    ![refresh-status-valid](../../../static/img/myinvois/einvoice-request/refresh-status-valid.png)
+    ![refresh-status-valid](../../../static/img/usage/myinvois/einvoice-request/refresh-status-valid.png)
 
 ### Batch Refresh E-Invoice Request status
 
@@ -528,11 +528,11 @@ To check if buyers have submitted information for E-Invoice and update the statu
 
 1. Click on **MyInvois** > **Batch Refresh E-Invoice Request status** in browse mode
 
-    ![batch-refresh-status](../../../static/img/myinvois/einvoice-request/batch-refresh-status.png)
+    ![batch-refresh-status](../../../static/img/usage/myinvois/einvoice-request/batch-refresh-status.png)
 
 2. A progress dialog will appear and retrieve the latest status for all invoices with E-Invoice Request
 
-    ![batch-refresh-status-progress](../../../static/img/myinvois/einvoice-request/batch-refresh-status-progress.png)
+    ![batch-refresh-status-progress](../../../static/img/usage/myinvois/einvoice-request/batch-refresh-status-progress.png)
 
 ### Batch Submit E-Invoice & Consolidate E-Invoice
 
@@ -541,12 +541,12 @@ When selected invoices include those with E-Invoice Request (Hourglass icon), th
 - Refresh - Verify that the selected invoices have been submitted for E-Invoice by the buyers and update the information
 - Cancel - Cancel the E-Invoice Request for the selected invoices to prevent buyers from submitting information for E-Invoice
 
-    ![batch-submit](../../../static/img/myinvois/einvoice-request/batch-submit.png)
+    ![batch-submit](../../../static/img/usage/myinvois/einvoice-request/batch-submit.png)
 
     :::info[NOTE]
     You may click the Valid icon to perform refresh status
     :::
 
-    ![batch-submit-valid](../../../static/img/myinvois/einvoice-request/batch-submit-valid.png)
+    ![batch-submit-valid](../../../static/img/usage/myinvois/einvoice-request/batch-submit-valid.png)
 
-    ![batch-submit-refresh-status](../../../static/img/myinvois/einvoice-request/batch-submit-refresh-status.png)
+    ![batch-submit-refresh-status](../../../static/img/usage/myinvois/einvoice-request/batch-submit-refresh-status.png)

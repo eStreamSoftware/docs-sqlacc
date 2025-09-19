@@ -31,7 +31,7 @@ Payment deemed to be irrecoverable whole or parts of the payment has been provid
 
    4. May claim according to the formula below.
 
-      ![203](../../static/img/getting-started/user-guide/203.png)
+      ![203](../../static/img/miscellaneous/bad-debt/203.png)
 
 2. Bad Debts Recovery
 
@@ -45,4 +45,4 @@ Payment deemed to be irrecoverable whole or parts of the payment has been provid
 
    4. Repay according to the formula below.
 
-      ![204](../../static/img/getting-started/user-guide/204.png)
+      ![204](../../static/img/miscellaneous/bad-debt/204.png)

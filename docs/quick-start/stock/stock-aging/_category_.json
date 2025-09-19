@@ -1,0 +1,9 @@
+{
+    "label": "Stock Aging",
+    "position": 11,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-aging/intro"
+    },
+    "collapsible": false
+}

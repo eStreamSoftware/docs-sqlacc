@@ -1,0 +1,9 @@
+{
+    "label": "Stock Card",
+    "position": 12,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/stock/stock-card/intro"
+    },
+    "collapsible": false
+}

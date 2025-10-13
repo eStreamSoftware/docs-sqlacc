@@ -1,5 +1,6 @@
 ---
 title: Sub Item
+sidebar_position: 8
 description: A guide to setup sub-item for SQL POS System
 slug: /integration/pos/sub-item
 tags: ["SQL Account", "POS"]

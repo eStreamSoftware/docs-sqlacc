@@ -1,5 +1,6 @@
 ---
 title: User Setting, Password & Access Right
+sidebar_position: 9
 description: A guide to setup category for SQL POS System
 slug: /integration/pos/user-setting
 tags: ["SQL Account", "POS"]

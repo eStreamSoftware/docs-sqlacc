@@ -1,5 +1,6 @@
 ---
 title: New Payment Method
+sidebar_position: 6
 description: A guide to setup new payment method for SQL POS System
 slug: /integration/pos/new-payment-method
 tags: ["SQL Account", "POS"]

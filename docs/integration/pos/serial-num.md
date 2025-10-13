@@ -1,5 +1,6 @@
 ---
 title: Serial Number
+sidebar_position: 7
 description: A guide to setup SQL POS Serial Number Module for SQL POS System
 slug: /integration/pos/serial-num
 tags: ["SQL Account", "POS"]

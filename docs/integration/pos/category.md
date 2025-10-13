@@ -1,5 +1,6 @@
 ---
 title: Category
+sidebar_position: 3
 description: A guide to setup category for SQL POS System
 slug: /integration/pos/category
 tags: ["SQL Account", "POS"]

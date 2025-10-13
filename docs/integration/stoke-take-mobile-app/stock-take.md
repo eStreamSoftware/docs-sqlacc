@@ -7,17 +7,22 @@ tags: ["SQL Account", "Stock"]
 ---
 
 ## Introduction
+
 This Function & Mobile App which is use for Stock Take
 
 ### Pros
+
 01. Able to Stock Take/Count using Smartphone
 02. Sync to SQL Accounting Stock Adjustment wireless
 03. Able to Check Price
+
 ### Cons
+
 01. Unable to Sync if no WiFi or WiFi signal is very Weak
-02. Drain Mobile Phone battery if keep On the 
+02. Drain Mobile Phone battery if keep On the
 
 ## Requirement
+
     - Internet Access
     - SQL Accounting Version 781 & above
     - Smart Phone requirement
@@ -31,9 +36,9 @@ This Function & Mobile App which is use for Stock Take
     - Barcode for Each Item Code
 
 ## Installation
+
 - [StockTakeApp - Website](https://www.sql.com.my/sqlstocktake/)
 - [StockTake - Huawei AppGallery](https://appgallery.huawei.com/#/app/C102639285)
-
 
 ## Prerequisite
 
@@ -51,12 +56,14 @@ Users who already have an SQL Drive account that was previously used for SQL Pay
 :::
 
 ## Setup
+
 ### SQL Accounting
-01. Stock | **Stock Take**
+
+1. Stock | **Stock Take**
 
    ![1](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take.png)
 
-Click **Allow Access** if Windows Prompt the above warning
+2. Click **Allow Access** if Windows Prompt the above warning
 
    ![2](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take1.png)
 
@@ -64,50 +71,48 @@ Leave this Screen Open as It will auto sync & update
 
 #### After Done Scanning
 
-09. Click Calculate Stock Take (System will compare with Month End As At Posted)
+1. Click Calculate Stock Take (System will compare with Month End As At Posted)
 
    ![3](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take2.png)
 
-10. Click **Post Stock Adjustments**
+2. Click **Post Stock Adjustments**
 
 | Button                  | Description |
 |--------------------------|-------------|
 | **New Job**              | • To Start New Stock Take |
-| **Load From File**       | • To Load file exported from Stock Take (in Zip) <br/> • For Offline/No WiFi User use only <br/> • Normally is in Zip Format |
-| **Export Stock List**    | • To Export the Stock List for Stock Take <br/> • For Offline/No WiFi User use only <br/> • Normally is in Zip Format |
+| **Load From File**       | • To Load file exported from Stock Take (in Zip) <br /> • For Offline/No WiFi User use only <br /> • Normally is in Zip Format |
+| **Export Stock List**    | • To Export the Stock List for Stock Take <br /> • For Offline/No WiFi User use only <br /> • Normally is in Zip Format |
 | **Calculate Stock Take** | • To Calculate Stock Take |
 | **Export To CSV**        | • To Export Grid Result to CSV |
 | **Post Stock Adjustments** | • To Post Grid Result to Stock Adjustment |
 
 ### Stoke Take(Mobile App)
-   ![4](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take3.png)
-   ![12](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take4.png)
 
-02. When to Sync Data
+      ![4](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take3.png)
+      ![12](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take4.png)
 
-   ![5](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take5.png)
+1. When to Sync Data
 
+      ![5](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take5.png)
 
-03. After Done Sycn, Click Stock Take
+2. After Done Sycn, Click Stock Take
 
    ![13](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take6.png)
    ![6](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take7.png)
 
-04. Click Scan to begin Scan
+3. Click Scan to begin Scan
 
-   ![7](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take8.png)
+      ![7](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take8.png)
 
-05. If the Item Code Had More then 1 UOM it will prompt as Above.
-06. Select the UOM & Click Select to Confirm
+4. If the Item Code Had More then 1 UOM it will prompt as Above.
+5. Select the UOM & Click Select to Confirm
 
    ![8](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take9.png)
 
-07. Here User can Adjust the Quantity Field (Optional)
-08. Click Stop to End Scanning
+6. Here User can Adjust the Quantity Field (Optional)
+7. Click Stop to End Scanning
 
    ![9](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take10.png)
-
-
 
 ## Stock Take Items List Import
 
@@ -147,11 +152,11 @@ Before following the steps in the subsections below
 
 3. Tap on "**Network File Transfer**" button.
 
-    * For devices without a Stock Take share profile set, a QR code scanner will be shown. Proceed to scan the QR shown in SQL Account Stock Take window.
+    - For devices without a Stock Take share profile set, a QR code scanner will be shown. Proceed to scan the QR shown in SQL Account Stock Take window.
 
-    * For devices with stock take share profile set, the import process will begin immediately.
+    - For devices with stock take share profile set, the import process will begin immediately.
 
-##  Sync Stock Take Result To SQL Account
+## Sync Stock Take Result To SQL Account
 
 Sync stock take result from Stock Take app to SQL Account to perform stock adjustment on SQL Account
 
@@ -171,7 +176,7 @@ Sync stock take result from Stock Take app to SQL Account to perform stock adjus
 
    2. On Stock Take window, click on "**Refresh**" button.
 
-##  Reset Connection Profile
+## Reset Connection Profile
 
 User may want to reset Stock Take share profile on Stock Take app as user would want to switch to different Stock Take share profile.
 

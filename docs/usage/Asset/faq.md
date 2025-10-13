@@ -21,22 +21,6 @@ A - FIRST acquire date of the asset
 B - System Conversation Date -1 day
 :::
 
-### Generate Asset Opening vs GL Maintain Opening Balancec Report 
-
-__Menu: Asset | Maintain Asset Item...__
-
-1. At Maintain Asset Item, click Preview button.
-
-![previewAsset](../../../static/img/usage/asset/assetFaq/previewAsset.jpg)
-
-2. For instance, the **Out of Balance** result get from the comparison between Asset Opening Balance and GL Maintain Opening Balance.
-
-![Opening](../../../static/img/usage/asset/assetFaq/Opening.jpg)
-
-3. With the **Asset Opening Breakdown** in the report, it helps you to ensure the asset data inputs are correctly recorded in Maintain Asset Item.
-
-![assetBreakdown](../../../static/img/usage/asset/assetFaq/assetBreakdown.jpg)
-
 ## I have posted the depreciation until December 2021. How to record my new asset?
 
 ### Method 1 : Simple follow Last Asset Net Book Value from Balance Sheet

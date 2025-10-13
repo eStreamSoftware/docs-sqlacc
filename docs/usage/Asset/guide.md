@@ -42,7 +42,7 @@ Group the asset items based on the following considerations.
 
 ## Maintain Asset Item
 
-__Menu: Asset | Asset Item...__
+*Menu: Asset | Asset Item...*
 
 Add new asset items.
 
@@ -142,7 +142,7 @@ __Menu: Asset | Open Depreciation...__
 
 ## Asset Disposal
 
-__Menu: Asset | Asset Disposal...__
+*Menu: Asset | Asset Disposal...*
 
 ### Asset Disposal Entry
 
@@ -370,3 +370,19 @@ __Menu: File | Import | Excel Files...__
 :::note NOTE:
 Asset import function available in SQL Account version 5.2022.948.826 and above.
 :::
+
+## Generate Asset Opening vs GL Maintain Opening Balancec Report 
+
+*Menu: Asset | Maintain Asset Item...*
+
+1. At Maintain Asset Item, click Preview button.
+
+![previewAsset](../../../static/img/usage/asset/assetBasicGuide/previewAsset.jpg)
+
+2. For instance, the **Out of Balance** result get from the comparison between Asset Opening Balance and GL Maintain Opening Balance.
+
+![Opening](../../../static/img/usage/asset/assetBasicGuide/Opening.jpg)
+
+3. With the **Asset Opening Breakdown** in the report, it helps you to ensure the asset data inputs are correctly recorded in Maintain Asset Item.
+
+![assetBreakdown](../../../static/img/usage/asset/assetBasicGuide/assetBreakdown.jpg)

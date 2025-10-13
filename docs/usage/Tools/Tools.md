@@ -2132,7 +2132,7 @@ Below is the example for Sales Invoice
 
  ![new-event-](../../../static/img/usage/tools/tools-basic-guide/new-event-.jpg)
 
- * **Advance Form Design**
+  ## Advance Form Design
 
  This mode is only for the user who known how to use the Delphi.
 

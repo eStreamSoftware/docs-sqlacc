@@ -42,7 +42,7 @@ Click [here](https://download.sql.com.my/customer/Fairy/SQLAccXLSnMDBImp-setup.e
 - There is a cost for End User and Dealer. Only Free if each file record less then 100.
 - Only Cover Maintain Stock Item.
 
-## Requirement
+## requirement
 - Firebird Server
 - SQL Accounting
 - Microsoft Excel or Access
@@ -631,8 +631,6 @@ Eg "AL","161924123243970563"
 
 (conflict with to rec & max record)
 
-[\[top\]](https://wiki.sql.com.my/wiki/SQL_Acc_XLS_n_MDB_Import#top)
-
 **History New/Updates/Changes (UE Only) - (Deprecated)**
 
 \--Build 37--
@@ -997,7 +995,7 @@ Steps
 - [Import Excel - GL Account](https://www.youtube.com/watch?v=-kfqNlVP0o4)
 - [Import Excel - Transactions](https://www.youtube.com/watch?v=UOo_ztOvavk)
 
-## FAQ
+## faq
 
 1. [Why the system take so long to Get Data from excel where in excel just few records?](#why-the-system-take-so-long-to-get-data-from-excel-where-in-excel-just-few-records)
 2. [Prompt Error external table is not in the expected format when try Get Data from Excel.](#prompt-error-external-table-is-not-in-the-expected-format-when-try-get-data-from-excel)
@@ -1063,14 +1061,14 @@ Try below steps
 
 6\. Save the Excel & Try again on New Worksheet
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Prompt Error external table is not in the expected format when try Get Data from Excel.
 
 Try save the file to other name using **File | Save As** in Excel
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### My excel date format is in YYYYMMDD format, how I convert it to dd/MM/yyyy?
@@ -1095,14 +1093,14 @@ Steps
 
 08\. Done can continue norm **Step 5 to 12**
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### My excel date format is in dd-mmm-yyyy with time format, how I convert it to dd/MM/yyyy?
 
 Can try use this formula _\=TEXT(DATEVALUE(TEXT(A41,"dd-mmm-yyyy")),"dd/mm/yyyy")_
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Can I import without Tax Amount (i.e. SQL Account auto Calculate the Tax Amount)?
@@ -1127,7 +1125,7 @@ Just Map Fields
 
 ![42](../../static/img/miscellaneous/XLS-MDB/faq-import-xtax.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Why My Excel data shown as eg 5% but once I Get File become 0.05?
@@ -1144,7 +1142,7 @@ OR
 
 - _\=TEXT(E1,"0.00%")_
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to add file link in the Attachments Fields?
@@ -1157,7 +1155,7 @@ _File._[_https://cdn.bulbagarden.net/upload/3/36/648Meloetta-Pirouette.png_](htt
 
 _File._[_https://cdn.bulbagarden.net/upload/6/63/Pokk%C3%A9n_Pikachu_Libre.png_](https://cdn.bulbagarden.net/upload/6/63/Pokk%C3%A9n_Pikachu_Libre.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### My Excel for Credit Note/Payment is in Negative Value, can it be import?
@@ -1182,7 +1180,7 @@ Steps
 
 08\. Done can continue norm **Step 5 to 12**
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### In My Excel Only had SSM or GST No. for Customer/Supplier can it be import?**
@@ -1216,7 +1214,7 @@ It will search as following sequence (Available in Build 34 & above)
 - Remark
 - Note
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Can system Auto Set Tax code if my Excel don't had tax code column?
@@ -1225,7 +1223,7 @@ Yes using Version 16 & above
 
 Just make sure **Default Value** field is Empty
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Prompt "Error Unexpected error from external database driver (1)" when Get file from excel
@@ -1243,7 +1241,7 @@ Solution 2
 
 03\. Reboot the PC.
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Prompt "Provider cannot be found. It may not be properly installed" when Get file from excel
@@ -1258,7 +1256,7 @@ Solution 2
 
 02\. Reboot the PC.
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### My excel String size is longer then SQL, how I can reduce it?
@@ -1287,7 +1285,7 @@ Steps
 
 09\. Done can continue norm **Step 5 to 12**
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### My excel Don't had account code if got ItemCode can it be import?
@@ -1298,7 +1296,7 @@ Yes just make sure Empty the Default Value for **Account** field so system can A
 
 ![49](../../static/img/miscellaneous/XLS-MDB/faq-item-code2.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### My excel only had Barcode can it be import?
@@ -1331,7 +1329,7 @@ It will search as following sequence (Available in Build 34 & above)
 - CompanyItemCode
 - Note
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Why it keep only load lst 100 records even I had registered?
@@ -1340,7 +1338,7 @@ It will search as following sequence (Available in Build 34 & above)
 
 Make sure you set the Value before you Click **Get File**
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### My CSV data is 00123 but after get data become 123 (missing 00)?
@@ -1349,7 +1347,7 @@ Make sure you Double Quoted the value eg "00123"
 
 #### What is the Proper Steps to Import BOM?
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 01\. Import all Finish Goods & Raw Material Item code using Stock | Maintain Stock Item...&
@@ -1358,7 +1356,7 @@ Make sure ItemType for Finish Goods is Set to B
 
 02\. Import using Stock | Maintain Stock Item - BOM...
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Can I Import Payment/Credit Note without Knock off Information?
@@ -1367,7 +1365,7 @@ Make sure ItemType for Finish Goods is Set to B
 
 Yes just set the column & Default Value for **DocType**, **KODocNo** & **KOAmt** to empty
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Why after verify all detail Status shown ok but Header Still untick?
@@ -1390,14 +1388,14 @@ Try below steps
 
 6\. Save the Excel & Try again on New Worksheet
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Why After Import to the Note/Attachment/Description3 data is truncated to 286 characters?
 
 Make sure In Your Excel Header name is using **Note/Description3/Attachment**
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Prompt "Access violation at address xxxxxx in module...." when Get file from excel
@@ -1406,7 +1404,7 @@ Open the excel try delete few column at the end of excel (see example below)
 
 ![53](../../static/img/miscellaneous/XLS-MDB/faq-access-violation.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to prevent Import Price Tag with empty row?
@@ -1418,14 +1416,14 @@ Make sure your Excel consist of
 - Price Tag Qty
 - Price Tag UOM (don't share same UOM for other field mapping for same Item code)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to convert the cell value so I can sum using formula in excel?
 
 Can try use this formula _\=Value(A2)_
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Can I Reimport for Same Transactions?
@@ -1444,7 +1442,7 @@ Yes for Version 5.16.10.62 & above
 
 05\. Click Post To A/c
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### What is alternative for FTP?
@@ -1456,14 +1454,14 @@ You can use like
 - [Google Drive](https://www.google.com/drive/download/)
 - [One Drive](https://www.microsoft.com/en-my/microsoft-365/onedrive/download)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to add Excel Import Shortcut in SQL Accounting?
 
 You may refer [here](https://download.sql.com.my/customer/Fairy/Excel-Import-46.gif) for steps
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to enter Multi Line for More Description in Excel?
@@ -1472,7 +1470,7 @@ You may refer [here](https://download.sql.com.my/customer/Fairy/Excel-Import-46.
 
 You can enter it all in 1 cell
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to enter Multi Line for More Description in csv/txt?
@@ -1481,21 +1479,21 @@ You can enter it all in 1 cell
 
 eg ...|ERICSSON A10118s|Line 1#13Line 2#13Line 3|1|...
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to convert Excel to CSV file?
 
 ![58](../../static/img/miscellaneous/XLS-MDB/faq-exl-to-csv.gif)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to Load CSV file?
 
 ![59](../../static/img/miscellaneous/XLS-MDB/faq-load-csv.gif)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### I have problem to export field name with ( and ) can I ignore it?
@@ -1504,14 +1502,14 @@ Yes you can just ignore the ( and )
 
 eg **Code(10)** can just export as Code10
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Why the Auto Mapping is not correctly map?
 
 Make sure the column position you export out is same as our template column position
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### I have more then 1 3rd party to import, can I create folder for each party?
@@ -1527,7 +1525,7 @@ In the Auto Import
 
 ![61](../../static/img/miscellaneous/XLS-MDB/faq-3party-import2.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Can I use SQL Accounting Auto Generate DocNo?
@@ -1536,14 +1534,14 @@ Yes can for Build 70 & above. Just Prefix `<New>`n in the DocNo field for each s
 
 ![62](../../static/img/miscellaneous/XLS-MDB/faq-auto-generate.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to Convert text number to number in Excel?
 
 ![63](../../static/img/miscellaneous/XLS-MDB/faq-text-num.gif)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Can I import without UnitPrice (i.e. SQL Account auto Calculate the UnitPrice)?
@@ -1564,7 +1562,7 @@ Don't Map & Set Empty For Default Value for the fields
 
 ![64](../../static/img/miscellaneous/XLS-MDB/faq-x-price.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Can System Auto Knock off for Customer Payment Import?
@@ -1573,7 +1571,7 @@ Yes with Version _Build 74 & above_, just tick the option
 
 ![65](../../static/img/miscellaneous/XLS-MDB/faq-at-knockoff.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Can I reimport Customer/Supplier by just update few fields?
@@ -1589,14 +1587,14 @@ Below is steps how to import for update Maintain Customer Remark Field only
 
 Click [Here](https://download.sql.com.my/customer/Fairy/Steps-Excel-Import-57.gif) for video
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to load last Save Field Mapping?
 
 ![66](../../static/img/miscellaneous/XLS-MDB/faq-load-last-save.gif)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Why after load excel some column had no data but my excel had?
@@ -1605,14 +1603,14 @@ This happen if 1 of the column is merge cell
 
 ![67](../../static/img/miscellaneous/XLS-MDB/faq-load-excel.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### How to enter multi IV number for CN FromDoc field in excel?
 
 ![68](../../static/img/miscellaneous/XLS-MDB/faq-multi-iv.png)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 
 
 #### Scheduler Log show Auto Post List Had update. Please Resetup the Auto Import Settings
@@ -1621,5 +1619,5 @@ May click the Reset Lit button in the Auto Import Setting...
 
 ![69](../../static/img/miscellaneous/XLS-MDB/faq-log.gif)
 
-[\[FAQ\]](#FAQ) [\[top\]](#Requirement)
+[\[faq\]](/miscellaneous/acc-XLS-MDB-import#faq) [\[top\]](/miscellaneous/acc-XLS-MDB-import#requirement)
 

@@ -8,8 +8,6 @@ tags: ["SQL Account", "Usage", "Customer"]
 
 ## Customer Work Flow (Account Receivable)
 
-## Customer
-
 Example of **customer (AR)** process work flow aligned with SQL Account flow:
 
 ![42](../../../static/img/usage/customer/customerBasicGuide/42.png)

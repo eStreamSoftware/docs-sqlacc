@@ -6,8 +6,7 @@ slug: /usage/tools/faq
 tags: ["SQL Account", "Usage", "Tools","Currency","Module"]
 ---
 
-
-### Can I set my first year financial period longer than 12 months (e.g., 18 months)?
+## Can I set my first year financial period longer than 12 months (e.g., 18 months)?
 Yes. You can set your first financial period for more than 12 months (e.g., from 1st July 2014 to 31st December 2015). --> [learn more here](#set-first-year-account-more-than-12-months)
 
 ## DIY Fields FAQ 
@@ -22,7 +21,7 @@ Yes. You can set your first financial period for more than 12 months (e.g., from
 * The Data will change/run base on last selected Record in the Detail Grid
 
 1. Open the Form you wanted to Add (eg Sales | Sales Invoice)
-2. Open The Advance form [Advance form](#design-layout)
+2. Open the [Advance form](/usage/tools/guide#advance-form-design)
 3. Design as usual except need to select **DataSource**
 
 ![main-form](../../../static/img/usage/tools/tools-faq/main-form.jpg)
@@ -34,7 +33,7 @@ Yes. You can set your first financial period for more than 12 months (e.g., from
 **Yes** , using **Advance Form Design**
 Steps
 01. Open the Form you wanted to Add (eg Sales | Sales Delivery Order)
-02. Open The Advance form [Advance form](#design-layout)
+02. Open The Advance form [Advance form](/usage/tools/guide#advance-form-design)
 03. Design as usual for Label
 04. For the UDF you wanted to have option
 
@@ -136,7 +135,7 @@ These questions goes to one solution , which is
 [Advanced Currency Module](#advanced-currency-module)
 :::
 
-### Can I auto-post exchange gain/loss when using foreign banks?
+## Can I auto-post exchange gain/loss when using foreign banks?
 Yes, via [Advanced Currency](#advanced-currency-module) Module and [Gain/Loss setup](../../usage/tools/guide#payment-from-foreign-customer)
 
 ## SQL Global Price Change
@@ -212,7 +211,7 @@ This is a **paid module**. Contact your SQL Service to get this standalone appli
 
 **What is SQL Global Price Change and when should I use it?** → [SQL Global Price Change](#sql-global-price-change)
 
-**Can I update prices for only specific stock groups or categories?** → [SQL Global Price Change by category](#select-group-category)
+**Can I update prices for only specific stock groups or categories?** → [SQL Global Price Change by category](#sql-global-price-change)
 
 ## How to do Customer One Cent Rounding ?
 
@@ -266,7 +265,7 @@ Go to menu : **Tools > Options…** click on **Password Policy**.
         - At least one number (0-9)
         - At least one non-alphanumeric character \!\$\%\^\&\*\(\)_\-\+\=\@\~\#\<\,\>\.\?
 
-## New User - Reset Password
+## How to reset password for user ?
 
 1. Go to menu : **Tools > Maintain User**.
 

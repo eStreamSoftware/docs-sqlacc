@@ -36,11 +36,11 @@ tags: ["SQL Account", "Usage", "Tools"]
 2. In the report designer set the setting look for PDFSettings | EmbedFontOptions
 - efUseSubset to True (checked)
 
-**Special DisplayFormat**
+# Special DisplayFormat
 
 ## 1. How if data is PI-12345 but I wanted to be printed as 12345?
 
-### Just Enter as Follow code:-
+Just Enter as Follow code:-
 
 <details>
     <summary>Code</summary>
@@ -59,7 +59,7 @@ end;
 
 ##  2. How if data is PI-12345 but I wanted to be printed as PI12345?
 
-### Just Enter as Follow code:-
+Just Enter as Follow code:-
 
 <details>
     <summary>Code</summary>
@@ -78,7 +78,7 @@ end;
 
 ## 3. How if data is 17-08-2005 but I wanted to be printed as 17 hb?
 
-### Just Enter as Follow code in the DisplayFormat:-
+Just Enter as Follow code in the DisplayFormat:-
 
 **dd 'hb'**
 
@@ -141,7 +141,7 @@ end;
 
 ## 7. How to set 0 when empty?
 
-### Below is Example :
+Below is Example :
 
 <details>
     <summary>Code</summary>
@@ -226,7 +226,7 @@ Only Available in Version 852 & above
 
    1. Right Click on Variable2 | Select Calculation |
 
-      ![3](../../../../static/img/usage/tools/rtm-faq/3.png)
+    ![3](../../../../static/img/usage/tools/rtm-faq/3.png)
 
       After Done press OK
 

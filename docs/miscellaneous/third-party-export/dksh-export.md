@@ -7,6 +7,7 @@ tags: ["SQL Account","DKSH" , "Export"]
 ---
 
 ## Introduction
+
 Is External Shareware Program which Export Data for DKSH System.
 Document Type Export
 
@@ -17,44 +18,55 @@ Document Type Export
 - Sales Credit Note - CN_Dtl.txt
 
 ## Limitataion
+
 - 1 Computer only can export 1 Company Database only
 
 ## DKSH Specification
+
 - 03 Jun 2016
 - http://www.estream.com.my/downloadfile/Fairy/DKSH_ManageSales_Integration_Spec.zip<span style={{ color: "red", fontWeight: "bold" }}>cannot use</span>
 
 ## Export Program
+
 - Version (1.1.0.4) - 06 Jun 2017
 - Evaluation Limit : 30 Times Export
 - http://www.estream.com.my/downloadfile/Fairy/SQLAccDKSHExport-setup.exe<span style={{ color: "red", fontWeight: "bold" }}>cannot use</span>
 - MD5 : 1DDE4D72A1808F0DA0CAA27094B7C821
 
 ### History New/Updates/Changes
+
 --Build 4--
+
 - Upgrade to Version 1.1.
 - Upgrade to XE25.
 - Fixed Export still locking even is registered.
 
 --Build 3--
+
 - Fixed Export Slow.
 - Add Export Status.
 
 --Build 2--
+
 - Fixed Register Fail.
 
 --Build 1--
+
 - Item missing RefPrice field.
 - Remove , for Currency field.
 
 --Build 0--
 
 ## Settings
+
 ### Firebird
+
 During Installation of Firebird make sure the option (see Below picture) is selected
 
 ![15](../../../static/img/miscellaneous/third-party-export/dksh-firbird.png)
 
 ### Export Program
+
 
 ![16](../../../static/img/miscellaneous/third-party-export/dksh-exp.png)
 
@@ -64,13 +76,15 @@ During Installation of Firebird make sure the option (see Below picture) is sele
 04. Enter the Organization prefix provide by DKSH.
 05. Click Test Connection to make sure is successfully Connected.
 
-Below steps is to export data
+    Below steps is to export data
 
 06. Select Date Range data to Export.
 07. Click Export Output... button to export the data.
 
 ## SQL Accountin
+
 ### Maintain Customer
+
 Menu: Customer | Maintain Customer...
 
 ![17](../../../static/img/miscellaneous/third-party-export/dksh-customer.png)
@@ -80,6 +94,7 @@ Menu: Customer | Maintain Customer...
 03. Click *Save*
 
 ### Stock Item
+
 Menu: Stock | Maintain Stock Item...
 
 ![18](../../../static/img/miscellaneous/third-party-export/dksh-item.png)
@@ -87,5 +102,3 @@ Menu: Stock | Maintain Stock Item...
 01. Click Edit
 02. Enter the **DKSH Product Code** at *Description2*
 03. Click Save
-
-

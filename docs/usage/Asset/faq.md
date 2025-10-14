@@ -34,9 +34,7 @@ Maintain the Asset Item as below:
 3. Useful life = *Balance of useful life* to be depreciate
 4. Start Process Depreciation from 01/01/2022
 
-
-**OR**  
-
+__OR__
 
 ### Method 2: Follow Original Cost and Acquire Date
 
@@ -62,10 +60,9 @@ Yes, it is allowed to change the depreciation value in Maintain Asset Item (Depr
 
 ## Can the amortization of Intangible Assets like license use in Asset Module?
 
-Can. Just maintain as usual like **Tangible Asset** (Fixed Asset).
+Can. Just maintain as usual like __Tangible Asset__ (Fixed Asset).
 
-For **Intangible Asset** (eg. goodwill, license), the **amortization calculation** is using **straight line method** can choose in the Asset Group. It is calculated by taking the difference between the cost of the asset and its anticipated salvage or book value and dividing that figure by the total number of years it will be used.
-
+For __Intangible Asset__ (eg. goodwill, license), the __amortization calculation__ is using __straight line method__ can choose in the Asset Group. It is calculated by taking the difference between the cost of the asset and its anticipated salvage or book value and dividing that figure by the total number of years it will be used.
 
 ## Can I import the asset list using Excel instead of key-in?
 
@@ -77,11 +74,10 @@ Refer to [Import-Asset Master List](../../usage/asset/guide#importing-asset-mast
 
 Create new asset code to handle additional cost, eg.
 
-| **Asset Code** | **Description**            | **Remark**          |
+| __Asset Code__ | __Description__            | __Remark__          |
 |----------------|-----------------------------|---------------------|
 | MV-0001        | TOYOTA VIOS - BZZ 999       | Initial Purchase    |
 | MV-0001A       | TOYOTA VIOS - BZZ 999       | Additional Cost     |
-
 
 :::info
     Don't mixed up the depreciation value between original and additional.
@@ -106,4 +102,4 @@ Create new asset code to handle additional cost, eg.
 
 ## Cost in Maintain Asset Item should key-in as local currency or original currency (eg. purchase in USD)?
 
-Cost should key-in as **Local value**. So, depreciation value will calculated and posted in local value
+Cost should key-in as __Local value__. So, depreciation value will calculated and posted in local value.

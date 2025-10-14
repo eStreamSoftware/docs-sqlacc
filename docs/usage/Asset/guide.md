@@ -6,7 +6,7 @@ slug: /usage/asset/guide
 tags: ["SQL Account", "Usage", "Submission"]
 ---
 
-## Asset 
+## Asset
 
 :::note Fixed Asset Module
 This is a **paid module**.
@@ -65,8 +65,6 @@ Add new asset items.
 | **Residual Value**       | Currency/Float   | –          | Set the residual value for this asset                                           |
 | **Status**               | Selection        | –          | Default is Active. Can be set to Inactive with an inactive date                 |
 
-
-
 ### Deprecaition Schedule
 
 1. Select the Frequency to generate the depreciation schedule by :-
@@ -80,11 +78,12 @@ Add new asset items.
 ![deprSchedule](../../../static/img/usage/asset/assetBasicGuide/deprSchedule.jpg)
 
 ### Project
+
     Set the depreciation allocation by Project (for Departmental/Cost Center purpose).
 
 ![deprScheduleP1](../../../static/img/usage/asset/assetBasicGuide/deprScheduleP1.jpg)
 
-### History 
+### History
 
 Add the important remarks in the asset history. For instances:
     a. who has borrow/ when has return this asset?
@@ -94,26 +93,29 @@ Add the important remarks in the asset history. For instances:
 ![deprHistory](../../../static/img/usage/asset/assetBasicGuide/deprHistory.jpg)
 
 ### Photo 
+
     Add the asset photo.
 
 ![assetPhoto](../../../static/img/usage/asset/assetBasicGuide/assetPhoto.jpg)
 
 ### Attachments
+
     Add the attachments for an asset
 
 ![assetAttach](../../../static/img/usage/asset/assetBasicGuide/assetAttach.jpg)
 
 ## Process Depreciation
 
-__Menu: Asset | Process Depreciation...__
+*Menu: Asset | Process Depreciation...*
 
-### Asset Depreciation 
+### Asset Depreciation
 
 ![assetDateRange](../../../static/img/usage/asset/assetBasicGuide/assetDateRange.jpg)
 
 1. Select the process date range.
 
 :::note Tips:
+
 1. Process date range allows to select more than 1 month or 1 year to process the depreciation.
 2. Allow to process BEFORE system conversation date (No update to Maintain Opening Balance).
 :::
@@ -134,7 +136,7 @@ Journal Voucher date will follow this Process Date.
 
 ## Open Depreciation
 
-__Menu: Asset | Open Depreciation...__
+*Menu: Asset | Open Depreciation...*
 
     Open to view the historical Depreciation Listing.
 
@@ -158,7 +160,6 @@ __Menu: Asset | Open Depreciation...__
 
 ![assetDisposal](../../../static/img/usage/asset/assetBasicGuide/assetDisposal.jpg)
 
-
 ### General Tab
 
 1. Cost, Accum Depreciation,and Net Book Value are retrieve from Maintain Asset Item automatically.
@@ -170,10 +171,12 @@ __Menu: Asset | Open Depreciation...__
 ![generalTab-asset](../../../static/img/usage/asset/assetBasicGuide/generalTab-asset.jpg)
 
 ### More Tab
+
     Enter detailed **Note**.
 ![moreTab-asset](../../../static/img/usage/asset/assetBasicGuide/moreTab-asset.jpg)
 
 ### Attachments
+
     Add more attachment files
 ![attachmentsTab-asset](../../../static/img/usage/asset/assetBasicGuide/attachmentsTab-asset.jpg)
 
@@ -185,7 +188,7 @@ __Menu: Asset | Print Yearly Depreciation...__
 
 ## Print Yearly Analysis
 
-__Menu: Asset | Print Asset Analysis...__
+*Menu: Asset | Print Asset Analysis...*
 
 ![assetAnalysis](../../../static/img/usage/asset/assetBasicGuide/assetAnalysis.jpg)
 
@@ -200,7 +203,7 @@ Yearly (5 Years)
 
 ![assetAnalysis-Report](../../../static/img/usage/asset/assetBasicGuide/assetAnalysis-Report.jpg)
 
-### Asset Analysis vs GL Balance Sheet Report 
+### Asset Analysis vs GL Balance Sheet Report
 
 1. At GL | Print Balance Sheet Statement..., choose the Balance Sheet Format : **This Year - 3 columns**
 2. At Asset | Print Asset Analysis..., choose Report: **Yearly (5 columns)**
@@ -209,7 +212,7 @@ Yearly (5 Years)
 
 ## Print Asset Disposal Listing
 
-__Menu: Asset | Print Asset Disposal Listing...__
+*Menu: Asset | Print Asset Disposal Listing...*
 
 ![assetDisposalList](../../../static/img/usage/asset/assetBasicGuide/assetDisposalList.jpg)
 
@@ -229,7 +232,6 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | **FA.ITEM.OPF**           | Maintain Asset Item                               |
 | **FA.ITEM.OPF.DeprSche**  | Maintain Asset Item – Depreciation Schedule tab   |
 | **FA.ITEM.OPF.Project**   | Maintain Asset Item – Project tab                 |
-
 
 :::warning NOTE:
 **DO NOT** rename the **sheet** name.
@@ -257,7 +259,6 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | Furniture  | Furniture & Fittings     | 1              | 200-200      | 200-205          | 923-000     | 530-999             | 980-999             |
 | MV         | Motor Vehicle            | 1              | 200-400      | 200-405          | 923-000     | 530-999             | 980-999             |
 
-
 2. FA.ITEM.OPF (Maintain Asset Item)
 
 - **FA.ITEM.OPF**
@@ -275,7 +276,6 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | **DeprFrequency** | 1 (Integer) | Depreciation frequency options:<ul><li>1: Monthly</li><li>2: Quarterly</li><li>3: Half Yearly</li><li>4: Yearly</li></ul> |
 | **Residual**      | Float       | Resellable value                                                         |
 
-
 - **Example**
 
 | **Code**  | **Description**              | **Asset Group** | **Agent** | **Area** | **AcquireDate** | **Cost**   | **UsefulLife** | **DeprFrequency** | **Residual** |
@@ -283,7 +283,6 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | FF-001    | Chairs                       | Furniture       | ----      | KL       | 13/10/2022      | 12,000.00  | 10             | 1 (Monthly)       | 100.00       |
 | FF-002    | Meeting Table                | Furniture       | ----      | KL       | 23/01/20021     | 15,000.00  | 10             | 2 (Quarterly)     | 0.01         |
 | MV-001    | TOYOTA VIOS 1.5 / RED        | MV              | YUKI      | SEL      | 17/03/2020      | 88,000.00  | 5              | 4 (Yearly)        | 30,000.00    |
-
 
 3. FA.ITEM.OPF.DeprSche (Maintain Asset item-Depreciation Schedule)
 
@@ -296,8 +295,7 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | **Description**| 160        | Depreciation description                                                 |
 | **Amount**     | Currency   | Depreciation amount based on the depreciation frequency                  |
 
-
-**Depreciation Frequency**
+- **Depreciation Frequency**
 
 - **Monthly**
 
@@ -305,7 +303,6 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 |------------------------|-----------------------------------|-------------|
 | No. of Rows            | Useful life × 12 months           | 5 × 12 = 60 |
 | Amount per Row (RM)    | (Cost – Residual) ÷ No. of Rows   | (88,000 – 30,000) ÷ 60 = 966.67 |
-
 
 - **Quarterly**
 
@@ -328,11 +325,11 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | No. of Rows            | Useful life (years)               | 5           |
 | Amount per Row (RM)    | (Cost – Residual) ÷ No. of Rows   | (88,000 – 30,000) ÷ 5 = 11,600 |
 
-**Example**
+- **Example**
 
 ![assetImport-faItemOpf](../../../static/img/usage/asset/assetBasicGuide/assetImport-faItemOpf.jpg)
 
-**4.FA.ITEM.OPF.Project(Maintain Asset Item-Project)**
+- **4.FA.ITEM.OPF.Project(Maintain Asset Item-Project)**
 
 - **FA.ITEM.OPF.Project**
 
@@ -342,8 +339,7 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | **Project**| 20         | Project Code                       |
 | **Rate**   | Float      | Allocation percentage (%)          |
 
-
-**Example**
+- **Example**
 
 | **Code**  | **Project**  | **Rate** |
 |-----------|--------------|----------|
@@ -351,10 +347,9 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | FF-001    | Project-B    | 70       |
 | MV-001    | Project-A    | 100      |
 
-
 ### Quick Import Asset List 
 
-__Menu: File | Import | Excel Files...__
+*Menu: File | Import | Excel Files...*
 
 1. Click Open folder button.
 
@@ -366,22 +361,21 @@ __Menu: File | Import | Excel Files...__
 
 ![filesImportExecute](../../../static/img/usage/asset/assetBasicGuide/filesImportExecute.jpg)
 
-
 :::note NOTE:
 Asset import function available in SQL Account version 5.2022.948.826 and above.
 :::
 
-## Generate Asset Opening vs GL Maintain Opening Balancec Report 
+## Generate Asset Opening vs GL Maintain Opening Balancec Report
 
 *Menu: Asset | Maintain Asset Item...*
 
 1. At Maintain Asset Item, click Preview button.
 
-![previewAsset](../../../static/img/usage/asset/assetBasicGuide/previewAsset.jpg)
+   ![previewAsset](../../../static/img/usage/asset/assetBasicGuide/previewAsset.jpg)
 
 2. For instance, the **Out of Balance** result get from the comparison between Asset Opening Balance and GL Maintain Opening Balance.
 
-![Opening](../../../static/img/usage/asset/assetBasicGuide/Opening.jpg)
+   ![Opening](../../../static/img/usage/asset/assetBasicGuide/Opening.jpg)
 
 3. With the **Asset Opening Breakdown** in the report, it helps you to ensure the asset data inputs are correctly recorded in Maintain Asset Item.
 

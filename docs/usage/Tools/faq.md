@@ -1,15 +1,16 @@
 ---
 sidebar_position: 3
-title: FAQ
+title: Tools Frequently Ask Question (FAQ)
 description: Tools Related FAQ
 slug: /usage/tools/faq
 tags: ["SQL Account", "Usage", "Tools","Currency","Module"]
 ---
 
 ## Can I set my first year financial period longer than 12 months (e.g., 18 months)?
+
 Yes. You can set your first financial period for more than 12 months (e.g., from 1st July 2014 to 31st December 2015). --> [learn more here](#set-first-year-account-more-than-12-months)
 
-## DIY Fields FAQ 
+## DIY Fields FAQ
 
 <details>
   <summary>DIY Fields FAQ - click to expand</summary>
@@ -17,6 +18,7 @@ Yes. You can set your first financial period for more than 12 months (e.g., from
 ### Can I show the detail fields in Header?
 
 **Yes** , but with following condition
+
 * Only available in Advance Form Design
 * The Data will change/run base on last selected Record in the Detail Grid
 
@@ -24,23 +26,24 @@ Yes. You can set your first financial period for more than 12 months (e.g., from
 2. Open the [Advance form](/usage/tools/guide#advance-form-design)
 3. Design as usual except need to select **DataSource**
 
-![main-form](../../../static/img/usage/tools/tools-faq/main-form.jpg)
+    ![main-form](../../../static/img/usage/tools/tools-faq/main-form.jpg)
 
 4. Select the XXXXX.YYYYY.dsDocDetail
 
 ### Can I have option selection for 1 UDF?
 
 **Yes** , using **Advance Form Design**
-Steps
-01. Open the Form you wanted to Add (eg Sales | Sales Delivery Order)
-02. Open The Advance form [Advance form](/usage/tools/guide#advance-form-design)
-03. Design as usual for Label
-04. For the UDF you wanted to have option
+
+Steps :
+
+1. Open the Form you wanted to Add (eg Sales | Sales Delivery Order)
+2. Open The Advance form [Advance form](/usage/tools/guide#advance-form-design)
+3. Design as usual for Label
+4. For the UDF you wanted to have option
 
 ![componentpalette-datacontrols](../../../static/img/usage/tools/tools-faq/componentpalette-datacontrols.jpg)
 
 </details>
-
 
 ## Set First Year Account more than 12 Months
 
@@ -59,7 +62,7 @@ You are advise to set your financial start period and system conversion date as 
 
 1. Go Tools > Option > General Ledger
 
-   - Setting your financial start period and system conversion date as 1/1/2014, so in the following year, you do not need to run year end to set again your financial start period & System conversion date.
+    * Setting your financial start period and system conversion date as 1/1/2014, so in the following year, you do not need to run year end to set again your financial start period & System conversion date.
 
     ![1](../../../static/img/usage/tools/tools-faq/1.png)
 
@@ -83,17 +86,17 @@ You are advise to set your financial start period and system conversion date as 
 
    7. Change Period Class to Fixed Date
 
-       - Param 1 = Date from eg 1/7/2014
-       - Param 2 = Date to eg 31/12/2015
+       * Param 1 = Date from eg 1/7/2014
+       * Param 2 = Date to eg 31/12/2015
 
    8. You can insert a report name for you easy to differentiate.
 
   </details>
 
-
 ## Advanced Currency Module
 
 <details>
+
   <summary>Advanced Currency Module- click to expand</summary>
 
   :::info
@@ -102,33 +105,33 @@ You are advise to set your financial start period and system conversion date as 
   Related: [Payment from Foreign Customer](../../usage/tools/guide#maintain-currency)
   :::
   
-  ### Setup Foreign Currency Payment Method
+### Setup Foreign Currency Payment Method
   
 #### Steps
 
-   1. GL > Maintain Account
+1. GL > Maintain Account
   
-  ![1](../../../static/img/usage/tools/tools-faq/1a.png)
+    ![1](../../../static/img/usage/tools/tools-faq/1a.png)
   
-   2. Create your bank respectively
+2. Create your bank respectively
   
-  ![2](../../../static/img/usage/tools/tools-faq/2a.png)
+   ![2](../../../static/img/usage/tools/tools-faq/2a.png)
   
-   3. Tools > Maintain Payment Method
+3. Tools > Maintain Payment Method
   
-  ![3](../../../static/img/usage/tools/tools-faq/3a.png)
+    ![3](../../../static/img/usage/tools/tools-faq/3a.png)
 
 </details>
 
 :::success Advanced Currency Module FAQ
- **How do I record transactions in a foreign bank account?***
- 
+ **How do I record transactions in a foreign bank account?**
+
  **Why can’t I receive payment from a foreign customer in their currency?**
- 
+
  **How do I handle supplier payments in USD, EUR, etc.?**
 
  **Do I need to activate any module to use foreign currency in SQL Accounting?**
- 
+
  **Why does my system show error when applying exchange rate in payment?**
 
 These questions goes to one solution , which is  
@@ -136,82 +139,12 @@ These questions goes to one solution , which is
 :::
 
 ## Can I auto-post exchange gain/loss when using foreign banks?
+
 Yes, via [Advanced Currency](#advanced-currency-module) Module and [Gain/Loss setup](../../usage/tools/guide#payment-from-foreign-customer)
 
-## SQL Global Price Change
+**What is SQL Global Price Change and when should I use it?** → [SQL Global Price Change](/usage/tools/guide#sql-global-price-change)
 
-<a id="sql-global-price-change"></a>
-
-SQL Global Price Change will help you mark down price for all items with few clicks
-
-:::info
-This is a **paid module**. Contact your SQL Service to get this standalone application.
-:::
-
-![3](../../../static/img/usage/tools/tools-faq/3b.png)
-
-## Setup
-
-1. Select your group of item
-
-   1. <a id="select-group-category"></a>You can select on certain stock group/ category, if you want all items, then left stock group and category blank
-   2. You can also choose only active item
-   3. Once your group of item selected, click on Get Stock Items List
-
-    ![4](../../../static/img/usage/tools/tools-faq/4b.png)
-
-2. Setting on value to be adjust
-
-    :::note
-    Scenario: You are trying to reduce price due to removal of GST (6% > 0%)
-    :::
-
-    ![5](../../../static/img/usage/tools/tools-faq/5b.png)
-
-    - Rounding Method (Assuming Round Decimal is 2)
-      1. Normal : Example : 0.1234 => 0.12
-      2. Round Up : Example : 0.1234 => 0.13
-      3. Round Down : Example : 0.1274 => 0.12
-
-    - Input Value = Sample Value
-    - Output Result = Sample Result
-    - Round decimal = No. of Decimal Point
-
-    It may looks like a **6%** reduction but it is actually **5.66%**
-
-    Example:
-
-    ```text
-    Item price = RM 100
-
-    With 6% GST = RM 100 * 1.06 = RM 100 + 6% = RM 106
-    Removal of 6% GST = RM 106 / 1.06 = RM 106 - 5.66% = RM 106
-    ```
-
-    - Mark down = 5.66 %
-    - Why 5.66% instead of 6% ?
-    - 30 May 2018 selling price = RM 106 GST Inclusive
-    - 01 June 2018 selling Price RM 106 – 5.66% = RM 100
-    - **NOT RM 106 – 6% = RM 99.64**
-
-3. Select fields to be update
-
-    ![6](../../../static/img/usage/tools/tools-faq/6b.png)
-
-    - Tick on which option you want to adjust / update eg : Reference Price
-    - You can also tick Record change history then system will update this changes history in your note
-    - Once you complete setting, click on Change
-
-### 4. Check & Post
-
-![7](../../../static/img/usage/tools/tools-faq/7b.png)
-
-![8](../../../static/img/usage/tools/tools-faq/8b.png)
-
-
-**What is SQL Global Price Change and when should I use it?** → [SQL Global Price Change](#sql-global-price-change)
-
-**Can I update prices for only specific stock groups or categories?** → [SQL Global Price Change by category](#sql-global-price-change)
+**Can I update prices for only specific stock groups or categories?** → [SQL Global Price Change by category](/usage/tools/guide#sql-global-price-change)
 
 ## How to do Customer One Cent Rounding ?
 
@@ -252,18 +185,18 @@ One Cent (0.01$) difference Rounding(Local Currency Fields) for all AR/SL(Subsid
 
 Go to menu : **Tools > Options…** click on **Password Policy**.
 
- ![1](../../../static/img/usage/tools/tools-faq/1d.png)
+  ![1](../../../static/img/usage/tools/tools-faq/1d.png)
 
-2. You can choose the following password requirement:
+ You can choose the following password requirement:
 
-    - Maximum Password Age (days): number of days to **expire** and **change** password.
-    - Minimum Password Length: password length **cannot less** than the minimum,eg. 8.
-    -Save Password History (0-5): number of password history **not allow to re-use**
-    - Password combination of
-        - At least one Upper Case letter (A-Z)
-        - At least one Lower Case letter (a-z)
-        - At least one number (0-9)
-        - At least one non-alphanumeric character \!\$\%\^\&\*\(\)_\-\+\=\@\~\#\<\,\>\.\?
+    * Maximum Password Age (days): number of days to **expire** and **change** password.
+    * Minimum Password Length: password length **cannot less** than the minimum,eg. 8.
+    * Save Password History (0-5): number of password history **not allow to re-use**
+    * Password combination of
+        * At least one Upper Case letter (A-Z)
+        * At least one Lower Case letter (a-z)
+        * At least one number (0-9)
+        * At least one non-alphanumeric character \!\$\%\^\&\*\(\)_\-\+\=\@\~\#\<\,\>\.\?
 
 ## How to reset password for user ?
 
@@ -298,7 +231,6 @@ Go to menu : **Tools > Options…** click on **Password Policy**.
 5. Each time login, you will require to enter the verification code generated from the Authenticator in your mobile phone.
 
     ![6](../../../static/img/usage/tools/tools-faq/6d.png)
-
 
 ## How to set Running Document Number by Date/Year Format ?
 
@@ -343,4 +275,3 @@ Go to tools > Maintain Payment Method
 :::note
 vice versa for Official Receipt
 :::
-

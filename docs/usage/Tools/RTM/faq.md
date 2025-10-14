@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: Report Builder FAQ
+title: RTM Frequently Ask Question (FAQ)
 description: How to do custom reports
 slug: /usage/tools/rtm/faq
 tags: ["SQL Account", "Usage", "Tools"]
@@ -19,11 +19,14 @@ tags: ["SQL Account", "Usage", "Tools"]
 ![image-compression-level-1](../../../../static/img/usage/tools/rtm-faq/image-compression-level-1.jpg)
 
 1. In the report designer set the setting
-- ImageCompressionLevel to 1
-- Untick ScaleImages
+
+    - ImageCompressionLevel to 1
+    - Untick ScaleImages
+
 2. At the Company Logo Right Click
-- Tick DirectDraw
-- Untick Stretch
+    - Tick DirectDraw
+    - Untick Stretch
+
 3. Resize your Jpeg Logo to smaller dimension
 4. Resize the Company Logo (Report Builder component) to the same dimension of your Jpeg Logo
 
@@ -32,19 +35,21 @@ tags: ["SQL Account", "Usage", "Tools"]
 ![compression-level-clmax](../../../../static/img/usage/tools/rtm-faq/compression-level-clmax.jpg)
 
 1. In the report designer set the setting look for PDFSettings
-- CompressionLevel to clMax
+    - CompressionLevel to clMax
+
 2. In the report designer set the setting look for PDFSettings | EmbedFontOptions
-- efUseSubset to True (checked)
+    - efUseSubset to True (checked)
 
-# Special DisplayFormat
+## Special DisplayFormat
 
-## 1. How if data is PI-12345 but I wanted to be printed as 12345?
+### 1. How if data is PI-12345 but I wanted to be printed as 12345?
 
 Just Enter as Follow code:-
 
 <details>
     <summary>Code</summary>
 
+```
 Procedure DBTxtDocNoOnGetText(var Text: String);
 
 begin
@@ -54,41 +59,45 @@ begin
   Text := Text;
 
 end;
+```
 
 </details>
 
-##  2. How if data is PI-12345 but I wanted to be printed as PI12345?
+### 2. How if data is PI-12345 but I wanted to be printed as PI12345?
 
 Just Enter as Follow code:-
 
 <details>
     <summary>Code</summary>
 
-Procedure DBTxtDocNoOnGetText(var Text: String);
+        ```pascal
+        Procedure DBTxtDocNoOnGetText(var Text: String);
 
-begin
+        begin
 
-  Delete(Text, 3, 1);
+        Delete(Text, 3, 1);
 
-  Text := Text;
+        Text := Text;
 
-end;
+        end;
+        ```
 
 </details>
 
-## 3. How if data is 17-08-2005 but I wanted to be printed as 17 hb?
+### 3. How if data is 17-08-2005 but I wanted to be printed as 17 hb?
 
 Just Enter as Follow code in the DisplayFormat:-
 
 **dd 'hb'**
 
-## 4. How if data is 1234-001 but I wanted to be printed as 1234 & the value is not fixed (i.e may 12345-001, 1234-001)?
+### 4. How if data is 1234-001 but I wanted to be printed as 1234 & the value is not fixed (i.e may 12345-001, 1234-001)?
 
-### Just Enter as Follow code:-
+ Just Enter as Follow code:-
 
 <details>
     <summary>Code</summary>
 
+```pascal
 Procedure DBTxtDocNoOnGetText(var Text: String);
 
 begin
@@ -96,16 +105,18 @@ begin
   Text := SubStrOfDelimitedStr(Text, 0, 1, '-');
 
 end;
+```
 
 </details>
 
-## 5. How if data is 1234-001 but I wanted to be printed as 001 & the value is not fixed (i.e may 12345-001, 1234-32)?
+### 5. How if data is 1234-001 but I wanted to be printed as 001 & the value is not fixed (i.e may 12345-001, 1234-32)?
 
-### Just Enter as Follow code:-
+ Just Enter as Follow code:-
 
 <details>
     <summary>Code</summary>
 
+```pascal
 Procedure DBTxtDocNoOnGetText(var Text: String);
 
 begin
@@ -113,16 +124,18 @@ begin
   Text := SubStrOfDelimitedStr(Text, 1, 1, '-');
 
 end;
+```
 
 </details>
 
-## 6. How to reverse this #,0.00;-#,0.00 to this -#,0.00;#,0.00?
+### 6. How to reverse this #,0.00;-#,0.00 to this -#,0.00;#,0.00?
 
-### Just Enter as Follow code:-
+ Just Enter as Follow code:-
 
 <details>
     <summary>Code</summary>
 
+```pascal
 procedure DetailBeforePrint;
 
 var d, s : string;
@@ -136,16 +149,18 @@ begin
   DBTxtC4.DisplayFormat := d;
 
 end;
+```
 
 </details>
 
-## 7. How to set 0 when empty?
+### 7. How to set 0 when empty?
 
 Below is Example :
 
 <details>
     <summary>Code</summary>
 
+```pascal
 procedure DBTxtTaxOnGetText(var Text:String);
 
 begin
@@ -155,6 +170,7 @@ begin
     Text := '0.00' ;
 
 end;
+```
 
 </details>
 
@@ -163,6 +179,7 @@ end;
 <details>
     <summary>Code</summary>
 
+```pascal
 procedure VarSumDROnCalc(var Value : Variant);
 
 var V : string;
@@ -174,6 +191,7 @@ begin
   Value := Option.GetFieldValue('LocalCurrencySymbol') + ' ' + V;
 
 end;
+```
 
 </details>
 
@@ -182,6 +200,7 @@ end;
 <details>
   <summary>Code</summary>
 
+```pascal
 procedure Variable1OnCalc(var Value : Variant);
 
 var lDT : Variant;
@@ -195,6 +214,7 @@ begin
   Value := FormatDateTime('dd/MM/yyyy hh:mm AM/PM', lDT); 
 
 end;
+```
 
 </details>
 
@@ -214,9 +234,9 @@ Only Available in Version 852 & above
 
 ![qrcode-settings](../../../../static/img/usage/tools/rtm-faq/qrcode-settings.jpg)
 
-* The measurement is in Inch
-* This guide design for is for Laser Printer only
-* For Dot Matrix Printer make sure set to 1 for Height & Width
+- The measurement is in Inch
+- This guide design for is for Laser Printer only
+- For Dot Matrix Printer make sure set to 1 for Height & Width
 
 ## How to Add FromDocNo and FromDocDate Variable in Report Design ?
 
@@ -554,7 +574,7 @@ If this XML report is Supplier Aging Report, go to Supplier Aging to drag the XM
 
      ![14](../../../../static/img/usage/tools/rtm-faq/14a.png)
 
-        **How to do if the report never create the region before?**
+     **How to do if the report never create the region before?**
 
 11. Right click tick all the Toolbars
 

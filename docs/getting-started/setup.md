@@ -143,11 +143,11 @@ tags: ["SQL Account", "Getting Started", "Setup"]
 
 1. Click on "**Back to Database Group**"
 
-![create-new-group-1](../../static/img/getting-started/setup/create-new-group-1.png)
+   ![create-new-group-1](../../static/img/getting-started/setup/create-new-group-1.png)
 
 2. Click **Create Group**
 
-![create-new-group-2](../../static/img/getting-started/setup/create-new-group-2.png)
+   ![create-new-group-2](../../static/img/getting-started/setup/create-new-group-2.png)
 
 3. Select the **Location** where you wanted to save for the DCF File.
 
@@ -155,12 +155,13 @@ tags: ["SQL Account", "Getting Started", "Setup"]
 
 5. Select the **Database Folder** & click Ok.
 
-:::info
-   Group: Default location is at C:\estream\SQLAccounting\Share
-   Database: Default location is at C:\estream\SQLAccounting\DB
-:::
+   :::info
+      **Group**: Default location is at `C:\estream\SQLAccounting\Share`
 
-![create-new-group-3](../../static/img/getting-started/setup/create-new-group-3.png)
+      **Database**: Default location is at `C:\estream\SQLAccounting\DB`
+   :::
+
+   ![create-new-group-3](../../static/img/getting-started/setup/create-new-group-3.png)
 
 6. Click Test Connection to make sure is **Blue** Status.
 

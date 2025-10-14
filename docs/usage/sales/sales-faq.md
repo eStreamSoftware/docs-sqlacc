@@ -45,9 +45,9 @@ tags: ["SQL Account", "Sales", "FAQ"]
 
 ## Why prompt error message when apply the Sales Price History?
 
-**Error message: arithmetic exception, numeric overflow or string truncation numeric value is out of range**
-
 ### Issue
+
+**Error message:** `arithmetic exception, numeric overflow or string truncation numeric value is out of range`
 
 1. Don't have **multi currency module.**
 

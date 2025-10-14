@@ -50,7 +50,12 @@ Go to **[Tools | Maintain User...]**
 
 2. Tick or untick Execute to:
 
-![account-inquiry-access-control-table](../../static/img/usage/inquiry/account-inquiry-access-control-table.png)
+| Access Control | Explanation |
+|----------------|--------------|
+| Account Inquiry - Inquire G/L Account | Allows inquiry of G/L Account. |
+| Account Inquiry - Inquire Customer Account | Allows inquiry of Customer Account (Sales Ledger). |
+| Account Inquiry - Inquire Supplier Account | Allows inquiry of Supplier Account (Purchase Ledger). |
+| Account Inquiry | Allows use of Account Inquiry feature. |
 
 ![account-inquiry-access-control](../../static/img/usage/inquiry/account-inquiry-access-control.jpg)
 
@@ -71,7 +76,7 @@ Quick inquiry the Cash Flow for all the **bank** and **cash** account type.
     3. Supplier Due Documents
     4. PD Cheques Issue
 
-:::info 
+:::info
     1. The Balance b/d is Total of all Payment Method as at From Date Selected -1.
     2. Example above is as as 05 Feb 2016 in GL Ledger
 :::
@@ -97,21 +102,21 @@ Quick inquiry the Cash Flow for all the **bank** and **cash** account type.
 
 1. Highlight the **interval**.
 
-![cash-flow-forecast-detail-1](../../static/img/usage/inquiry/cash-flow-forecast-detail-1.jpg)
+    ![cash-flow-forecast-detail-1](../../static/img/usage/inquiry/cash-flow-forecast-detail-1.jpg)
 
 2. To check the details for the interval. Click on **Detail**.
 
-![cash-flow-forecast-detail-2](../../static/img/usage/inquiry/cash-flow-forecast-detail-2.jpg)
+    ![cash-flow-forecast-detail-2](../../static/img/usage/inquiry/cash-flow-forecast-detail-2.jpg)
 
 ### Graph
 
 1. Highlight the **interval**.
 
-![cash-flow-forecast-graph-1](../../static/img/usage/inquiry/cash-flow-forecast-graph-1.jpg)
+    ![cash-flow-forecast-graph-1](../../static/img/usage/inquiry/cash-flow-forecast-graph-1.jpg)
 
 2. To view the graph for the interval. Click on **Graph**.
 
-![cash-flow-forecast-graph-2](../../static/img/usage/inquiry/cash-flow-forecast-graph-2.jpg)
+    ![cash-flow-forecast-graph-2](../../static/img/usage/inquiry/cash-flow-forecast-graph-2.jpg)
 
 ## Customer Pricing Inquiry
 
@@ -120,25 +125,29 @@ To inquire the item pricing for a customer.
 ![customer-pricing-inquiry](../../static/img/usage/inquiry/customer-pricing-inquiry.jpg)
 
 ### Customer Price Inquiry
+
 1. Select the **item code** to inquire the price.
 
-![customer-price-inquiry-1](../../static/img/usage/inquiry/customer-price-inquiry-1.jpg)
+    ![customer-price-inquiry-1](../../static/img/usage/inquiry/customer-price-inquiry-1.jpg)
 
 2. Select the **customer** to inquire the price.
 
-![customer-price-inquiry-2](../../static/img/usage/inquiry/customer-price-inquiry-2.jpg)
+    ![customer-price-inquiry-2](../../static/img/usage/inquiry/customer-price-inquiry-2.jpg)
 
-### Profit Estimator
+### Customer Profit Estimator
+
 You can enter the values (eg. quantity, UOM, Price Tag, unit price, discount, sales tax (GST) and ref.cost) to calculate the profit according to the cost of the item selected.
 
 ![customer-profit-estimator](../../static/img/usage/inquiry/customer-profit-estimator.jpg)
 
-### Price Book Reference
+### Customer Price Book Reference
+
 To check the **reference price** in different UOM from **Maintain Stock Item**.
 
 ![customer-price-book-reference](../../static/img/usage/inquiry/customer-price-book-reference.jpg)
 
 ### Your SQL Sales Assistant
+
 Quick access to:-
     1. **Price History Inquiry** - Sales | Print Sales Price History...
     2. **Stock Status/Back Order** - Sales | Print Outstanding Sales Document Listing...(Outstanding Sales Order)
@@ -158,19 +167,19 @@ To inquire the item pricing for a supplier.
 
 1. Select the **item code** to inquire the purchase price.
 
-![supplier-price-inquiry-1](../../static/img/usage/inquiry/supplier-price-inquiry-1.jpg)
+    ![supplier-price-inquiry-1](../../static/img/usage/inquiry/supplier-price-inquiry-1.jpg)
 
 2. Select the **supplier** to inquire the purchase price.
 
-![supplier-price-inquiry-2](../../static/img/usage/inquiry/supplier-price-inquiry-2.jpg)
+    ![supplier-price-inquiry-2](../../static/img/usage/inquiry/supplier-price-inquiry-2.jpg)
 
-### Profit Estimator
+### Supplier Profit Estimator
 
 You can enter the values (eg. quantity, UOM, Price Tag, unit price, discount, sales tax (GST) and ref.cost) to calculate the profit according to the reference cost of the item selected.
 
 ![supplier-profit-estimator](../../static/img/usage/inquiry/supplier-profit-estimator.jpg)
 
-### Price Book Reference
+### Supplier Price Book Reference
 
 To check the **reference cost** in different UOM from **Maintain Stock Item**.
 
@@ -203,36 +212,36 @@ A powerful search with keywords in the company database.
 
 1. Tick the modules to search.
 
-![where-1](../../static/img/usage/inquiry/where-1.jpg)
+    ![where-1](../../static/img/usage/inquiry/where-1.jpg)
 
 2. Click on **Advance** to expand more areas in search.
 
-![where-2](../../static/img/usage/inquiry/where-2.jpg)
+    ![where-2](../../static/img/usage/inquiry/where-2.jpg)
 
 3. Click on **Find**.
 
-![where-3](../../static/img/usage/inquiry/where-3.jpg)
+    ![where-3](../../static/img/usage/inquiry/where-3.jpg)
 
 ### Example
 
 1. Let's try to search the words of **Apple** in the invoice. See the screenshot below.
 
-![sql-search-example-1](../../static/img/usage/inquiry/sql-search-example-1.jpg)
+    ![sql-search-example-1](../../static/img/usage/inquiry/sql-search-example-1.jpg)
 
 2. At SQL Power Search Engine, tick on **Invoice** in **Where** section.
 
-![sql-search-example-2](../../static/img/usage/inquiry/sql-search-example-2.jpg)
+    ![sql-search-example-2](../../static/img/usage/inquiry/sql-search-example-2.jpg)
 
 3. To ensure the search area cover the **More Description**. Click on **Advance**. See the screenshot below.
 
-![sql-search-example-3](../../static/img/usage/inquiry/sql-search-example-3.jpg)
+    ![sql-search-example-3](../../static/img/usage/inquiry/sql-search-example-3.jpg)
 
 4. Type the keyword **Apple** in **Find What**.
 
-![sql-search-example-4](../../static/img/usage/inquiry/sql-search-example-4.jpg)
+    ![sql-search-example-4](../../static/img/usage/inquiry/sql-search-example-4.jpg)
 
 5. Click on **Find** button.
 
 6. You can see the search result appear below.
 
-![sql-search-example-5](../../static/img/usage/inquiry/sql-search-example-5.jpg)
+    ![sql-search-example-5](../../static/img/usage/inquiry/sql-search-example-5.jpg)

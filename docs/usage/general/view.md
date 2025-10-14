@@ -21,4 +21,3 @@ Is a function which allow user to change the SQL Product Application Skin/Layout
 ![application-theme-1](../../../static/img/usage/general/view/application-theme-1.png)
 
 ![application-theme-2](../../../static/img/usage/general/view/application-theme-2.png)
-

@@ -51,22 +51,22 @@ No further support other then this but we will try our best to help.
 
 4. Click **Add** button.
 
-![setup-step1](../../../../static/img/usage/general/others/firebird-odbc/setup-step1.jpg)
+    ![setup-step1](../../../../static/img/usage/general/others/firebird-odbc/setup-step1.jpg)
 
 5. Select **Firebird/InterBase(r) Driver**
 
 6. Click Finish button.
 
-![setup-step2](../../../../static/img/usage/general/others/firebird-odbc/setup-step2.jpg)
+    ![setup-step2](../../../../static/img/usage/general/others/firebird-odbc/setup-step2.jpg)
 
 7. Under Firebird ODBC Setup, define the following info only and the rest by default :
 
     1. **Data Source Name (DSN)**: Can be any Name (eg. FB)
     2. **Description**: Can be any Description (eg. FB)
-    3. **Database**: 
+    3. **Database**:
         - The Firebird FDB file path
         - Can get it under SQLAccounting\DB or estream\DB Folder
-    4. **Client**: 
+    4. **Client**:
         - The Firebird fbclient.dll path
         - Can get it under SQLAccounting\firebird 3.0 or Firebird\Firebird 3_0 Folder
         - For 64 Bit can Leave it empty
@@ -79,12 +79,15 @@ No further support other then this but we will try our best to help.
 ![setup-step3](../../../../static/img/usage/general/others/firebird-odbc/setup-step3.jpg)
 
 :::info
+
 - Make sure when click **Test Connection** is shown Connection successful! then only continue others Steps
 - To access the FDB with network environment you can enter the ServerName or ServerIPAddress:Database Path at Database field
 
 Example:
-1. ServerPC:C:\Program Files\estream\SQLAccounting\DB\ACC-0001.FDB or
-2. 192.168.0.18:C:\Program Files\estream\SQLAccounting\DB\ACC-0001.FDB
+
+1. ServerPC: `C:\Program Files\estream\SQLAccounting\DB\ACC-0001.FDB`
+2. 192.168.0.18: `C:\Program Files\estream\SQLAccounting\DB\ACC-0001.FDB`
+
 :::
 
 Below is example where to get the ServerName, Path & FDB
@@ -99,38 +102,44 @@ Below example is using Microsoft Excel 2016 to get Firebird Data using ODBC
 2. Click **Data** Tab
 3. Clcik **Get External Data | From Other Source | From Microsoft Query**
 
-![example-access-1](../../../../static/img/usage/general/others/firebird-odbc/example-access-1.jpg)
+    ![example-access-1](../../../../static/img/usage/general/others/firebird-odbc/example-access-1.jpg)
 
 4. Select **FB\*** (The Data Source Name entered in ODBC)
+
 5. Click **OK** button
 
-![example-access-2](../../../../static/img/usage/general/others/firebird-odbc/example-access-2.jpg)
+    ![example-access-2](../../../../static/img/usage/general/others/firebird-odbc/example-access-2.jpg)
 
 6. Select the table at the Available tables and columns field
+
 7. Click the **>** button to select the Columns
+
 8. Click **Next** button till you see below dialog
 
-![example-access-3](../../../../static/img/usage/general/others/firebird-odbc/example-access-3.jpg)
+    ![example-access-3](../../../../static/img/usage/general/others/firebird-odbc/example-access-3.jpg)
 
 9. Select **View data or edit query** in Microsoft Query option
+
 10. Click **Finish** button
 
-![example-access-4](../../../../static/img/usage/general/others/firebird-odbc/example-access-4.jpg)
+    ![example-access-4](../../../../static/img/usage/general/others/firebird-odbc/example-access-4.jpg)
 
 11. Click SQL button to edit your Query
+
 12. Edit the **Query Statement here**
+
 13. Click **OK button** when done
 
-![example-access-5](../../../../static/img/usage/general/others/firebird-odbc/example-access-5.jpg)
+    ![example-access-5](../../../../static/img/usage/general/others/firebird-odbc/example-access-5.jpg)
 
 14. Click **File | Return Data to Microsoft Excel**
 
-![example-access-6](../../../../static/img/usage/general/others/firebird-odbc/example-access-6.jpg)
+    ![example-access-6](../../../../static/img/usage/general/others/firebird-odbc/example-access-6.jpg)
 
 15. Click **Ok** button
 
-![example-access-7](../../../../static/img/usage/general/others/firebird-odbc/example-access-7.jpg)
+    ![example-access-7](../../../../static/img/usage/general/others/firebird-odbc/example-access-7.jpg)
 
-16. Result
+16. **Result**
 
-![example-access-8](../../../../static/img/usage/general/others/firebird-odbc/example-access-8.jpg)
+    ![example-access-8](../../../../static/img/usage/general/others/firebird-odbc/example-access-8.jpg)

@@ -31,7 +31,7 @@ By using Customer/Supplier
 
 ### Supplier Side
 
-**Gain**
+#### Gain
 
 1. **Supplier Credit Note**
     - DR Supplier
@@ -40,7 +40,7 @@ By using Customer/Supplier
     - DR Contra
     - CR Foreign Gain Account (IES (Replace for ES43))
 
-**Loss**
+#### Loss
 
 1. **Supplier Debit Note**
     - DR Contra
@@ -48,4 +48,3 @@ By using Customer/Supplier
 2. **GL Journal Voucher**
     - DR Foreign Loss Account (IES (Replace for ES43))
     - CR Contra
-

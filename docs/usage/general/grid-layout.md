@@ -22,31 +22,31 @@ I have selected "Group by Document No" in Sales Profit and Loss by Document. How
 
 2. From the pop-up menu, click on Clear Sorting.
 
-![3](../../../static/img/usage/general/grid-layout/clear-sorting/3.png)
+    ![3](../../../static/img/usage/general/grid-layout/clear-sorting/3.png)
 
 3. All the grid columns will be clear the sorting and follow the Group By command.
 
-![4](../../../static/img/usage/general/grid-layout/clear-sorting/4.png)
+    ![4](../../../static/img/usage/general/grid-layout/clear-sorting/4.png)
 
 4. Preview the report. The same document numbers will now be grouped together.
 
-![5](../../../static/img/usage/general/grid-layout/clear-sorting/5.png)
+    ![5](../../../static/img/usage/general/grid-layout/clear-sorting/5.png)
 
 ## Rename Grid Header
 
-### Steps & Instruction
+### Rename Steps & Instruction
 
 1. Right click on any grid header. From the small menu, select **Properties**.
 
-![6](../../../static/img/usage/general/grid-layout/rename-header/1.png)
+    ![6](../../../static/img/usage/general/grid-layout/rename-header/1.png)
 
 2. Look for the column and change the caption. Click Ok to confirm.
 
-![7](../../../static/img/usage/general/grid-layout/rename-header/2.png)
+    ![7](../../../static/img/usage/general/grid-layout/rename-header/2.png)
 
 3. Original column name “Ref 1” has been changed to “Cust PO”.
 
-![8](../../../static/img/usage/general/grid-layout/rename-header/3.png)
+    ![8](../../../static/img/usage/general/grid-layout/rename-header/3.png)
 
 ## Reset/Delete Layout
 
@@ -60,7 +60,7 @@ I have selected "Group by Document No" in Sales Profit and Loss by Document. How
 
 3. Click on **Load Layout**
 
-![10](../../../static/img/usage/general/grid-layout/reset-layout/2.png)
+    ![10](../../../static/img/usage/general/grid-layout/reset-layout/2.png)
 
 4. Press **Reset Layout**
 
@@ -84,29 +84,29 @@ If your screen looks like the one above , select the **layout | press DELETE | S
 
 1. Click on the button from left side of Item Code , checked all field you wish to show out
 
-![13](../../../static/img/usage/general/grid-layout/save-manage-layout/1.png)
+    ![13](../../../static/img/usage/general/grid-layout/save-manage-layout/1.png)
 
 2. **Right click on the Grid** , Eg: point on wording “Description” and right click | **Grid Layout | Save Layout**
 
-![14](../../../static/img/usage/general/grid-layout/save-manage-layout/2.png)
+    ![14](../../../static/img/usage/general/grid-layout/save-manage-layout/2.png)
 
 3. Enter a Layout Name , and checked on “**Save as Default Layout**” if you wish to set this as your **Default Layout** | **Save**
 
-![15](../../../static/img/usage/general/grid-layout/save-manage-layout/3.png)
+    ![15](../../../static/img/usage/general/grid-layout/save-manage-layout/3.png)
 
 ### How to assign this layout to others users?
 
 1. After you had save your layout, **Right click on the Grid** , Eg : point on wording “Description” and right click | **Grid Layout | Manage Layout**
 
-![16](../../../static/img/usage/general/grid-layout/save-manage-layout/4.png)
+    ![16](../../../static/img/usage/general/grid-layout/save-manage-layout/4.png)
 
 2. You can assign your layout either by users or by groups , Let’s said by Users
 
-![17](../../../static/img/usage/general/grid-layout/save-manage-layout/5.png)
+    ![17](../../../static/img/usage/general/grid-layout/save-manage-layout/5.png)
 
 3. Click on the arrow down key from the users name and select & SAVE.
 
-![18](../../../static/img/usage/general/grid-layout/save-manage-layout/6.png)
+    ![18](../../../static/img/usage/general/grid-layout/save-manage-layout/6.png)
 
 :::note
 **Default** : Make this layout default
@@ -120,36 +120,36 @@ If your screen looks like the one above , select the **layout | press DELETE | S
 
 1. Right click on the Grid , Eg : point on wording “Description” and right click | **Grid Layout | Load Layout**
 
-![19](../../../static/img/usage/general/grid-layout/save-manage-layout/7.png)
+    ![19](../../../static/img/usage/general/grid-layout/save-manage-layout/7.png)
 
 2. Click on **Reset Layout**
 
-![20](../../../static/img/usage/general/grid-layout/save-manage-layout/8.png)
+    ![20](../../../static/img/usage/general/grid-layout/save-manage-layout/8.png)
 
 ### How to Delete Layout?
 
 1. **Right click on the Grid** , Eg : point on wording “Description” and right click | **Grid Layout | Manage Layout**
 
-![21](../../../static/img/usage/general/grid-layout/save-manage-layout/9.png)
+    ![21](../../../static/img/usage/general/grid-layout/save-manage-layout/9.png)
 
 2. **Highlighted** on the Layout Name you wish to delete | press on the **Minus Icon | SAVE**
 
-![22](../../../static/img/usage/general/grid-layout/save-manage-layout/10.png)
+    ![22](../../../static/img/usage/general/grid-layout/save-manage-layout/10.png)
 
 ### How to disable users access right to go field chooser and customize layout ?
 
 1. Go **Tools | Maintain User**
 
-![23](../../../static/img/usage/general/grid-layout/save-manage-layout/11.png)
+    ![23](../../../static/img/usage/general/grid-layout/save-manage-layout/11.png)
 
 2. **Highlighted** on the user name and press on **EDIT**
 
-![24](../../../static/img/usage/general/grid-layout/save-manage-layout/12.png)
+    ![24](../../../static/img/usage/general/grid-layout/save-manage-layout/12.png)
 
 3. Click on **More | Access Control**
 
-![25](../../../static/img/usage/general/grid-layout/save-manage-layout/13.png)
+    ![25](../../../static/img/usage/general/grid-layout/save-manage-layout/13.png)
 
 4. Go to Group : Misc | unchecked on Customize grid (field chooser) & Manage Grid Layout | SAVE
 
-![26](../../../static/img/usage/general/grid-layout/save-manage-layout/14.png)
+    ![26](../../../static/img/usage/general/grid-layout/save-manage-layout/14.png)

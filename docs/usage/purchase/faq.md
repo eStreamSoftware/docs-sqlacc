@@ -6,29 +6,29 @@ slug: /usage/purchase/faq
 tags: ["SQL Account", "Usage", "Purchase", "FAQ"]
 ---
 
-## Why user still cannot view the unit price and subtotal where show cost in Purchase Goods Received Note / Invoice have granted rights
+## 1. Why user still cannot view the unit price and subtotal where show cost in Purchase Goods Received Note / Invoice have granted rights
 
-**Issue**
+**Issue:**
 
 1. User Access control has granted to **Show Cost in Purchase Goods Received**.
 2. Purchase Goods Received still cannot view the unit price, tax amount and subtotal.
 
-![1](../../../static/img/usage/purchase/faq/issue_1.png)
+![missing-column](../../../static/img/usage/purchase/faq/missing-column.png)
 
 **Solution:**
 
 1. Point your mouse to any detail grid columns.
 
-![2](../../../static/img/usage/purchase/faq/solution_1a.png)
+    ![right-click-detail-grid-columns](../../../static/img/usage/purchase/faq/right-click-detail-grid-columns.png)
 
 2. Right Click -> Grid Layout -> Load Layout.
 
-![3](../../../static/img/usage/purchase/faq/solution_1b.png)
+    ![grid-load-layout](../../../static/img/usage/purchase/faq/grid-load-layout.png)
 
 3. At Load Grid Layout, click on Reset Layout.
 
-![4](../../../static/img/usage/purchase/faq/solution_1c.png)
+    ![reset-layout](../../../static/img/usage/purchase/faq/reset-layout.png)
 
 4. Purchase Goods Received detail grid layout has reset follow the users access rights.
 
-![5](../../../static/img/usage/purchase/faq/solution_1d.png)
+    ![default-layout](../../../static/img/usage/purchase/faq/default-layout.png)

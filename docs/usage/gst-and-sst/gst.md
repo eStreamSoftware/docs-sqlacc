@@ -28,9 +28,7 @@ Count Down begin shown : 24 Dec 2016
 Today date : 27 Dec 2016  
 Count Down Shown : 3 Days+++  
 
-
-
-## New GST Return
+## GST Return
 
 To process and close the GST Returns period. You can generate the GST-03 and GAF.
 
@@ -52,17 +50,20 @@ To process and close the GST Returns period. You can generate the GST-03 and GAF
 ### Draft GST Return
 
 You are able to draft the GST-03 before the final GST-03 submission by process as draft.
+
 1. Click on the arrow key down at the Process button (Y).
 2. See below screenshot.
 
-![GST_Return2](../../../static/img/usage/gst-and-sst/gst/DraftGSTReturn-1.jpg)
+   ![GST_Return2](../../../static/img/usage/gst-and-sst/gst/DraftGSTReturn-1.jpg)
 
 3. DRAFT Status showed for the GST Returns period.
 
-![GST_Return3](../../../static/img/usage/gst-and-sst/gst/DraftGSTReturn-2.jpg)
+   ![GST_Return3](../../../static/img/usage/gst-and-sst/gst/DraftGSTReturn-2.jpg)
 
 :::note
+
 You still can amend the documents where the DRAFT GST return has generated. You can draft as many before FINAL process the GST Returns for the period.
+
 :::
 
 ### Final GST Return
@@ -70,14 +71,16 @@ You still can amend the documents where the DRAFT GST return has generated. You 
 1. Click on the Process button.
 2. See below screenshot.
 
-![GST_Return4](../../../static/img/usage/gst-and-sst/gst/FinalGSTReturn-1.jpg)
+   ![GST_Return4](../../../static/img/usage/gst-and-sst/gst/FinalGSTReturn-1.jpg)
 
 3. Final GST Return will not show the word DRAFT in the status column.
 
-![GST_Return5](../../../static/img/usage/gst-and-sst/gst/FinalGSTReturn-2.jpg)
+   ![GST_Return5](../../../static/img/usage/gst-and-sst/gst/FinalGSTReturn-2.jpg)
 
 :::note
+
 You cannot amend the documents anymore where the FINAL GST return has generated.
+
 :::
 
 ### Extra
@@ -87,80 +90,82 @@ You cannot amend the documents anymore where the FINAL GST return has generated.
 1. Bad Debt Relief screen will be prompted (see the screenshot below) if the system found there are outstanding Tax Invoices has expired at 6 months.
 2. Sales documents from the company with empty GST No will be unticked. You can tick the documents if you think this company is a GST Registered person.
 
-![GST_Return6](../../../static/img/usage/gst-and-sst/gst/BadDebtRelief-1.jpg)
+   ![GST_Return6](../../../static/img/usage/gst-and-sst/gst/BadDebtRelief-1.jpg)
 
-:::note Tips:
-![GST_Return7](../../../static/img/usage/gst-and-sst/gst/BadDebtRelief-2.jpg)  
-To avoid to tick the documents manually for GST Registered company, please go to update the GST no at Maintain Customer.
-:::
+   :::note Tips:
+
+   ![GST_Return7](../../../static/img/usage/gst-and-sst/gst/BadDebtRelief-2.jpg)  
+
+   To avoid to tick the documents manually for GST Registered company, please go to update the GST no at Maintain Customer.
+
+   :::
 
 3. Press OK if get a "confirm" message prompted (see the screenshot below), it means there are some company do not have GST No.
 4. If you has confirmed that the company is Non-GST Registered person then you can press YES to proceed.
 5. Otherwise press NO, you have to update the GST No at Maintain Customer to confirm the company is a GST Registered person before process the GST Return.
 
-![GST_Return8](../../../static/img/usage/gst-and-sst/gst/BadDebtRelief-3.jpg)  
+   ![GST_Return8](../../../static/img/usage/gst-and-sst/gst/BadDebtRelief-3.jpg)  
 
 #### Capital Goods Acquired
 
 1. If you have get a prompt for the **GST Return - Capital Goods Acquired**, then it means there have some credit adjustment transactions for Fixed Asset Account. See below screenshot.
 
-![GST_Return9](../../../static/img/usage/gst-and-sst/gst/CapitalGoodsAcquired-1.jpg)  
+   ![GST_Return9](../../../static/img/usage/gst-and-sst/gst/CapitalGoodsAcquired-1.jpg)  
 
 2. Tick on the transactions line to take in the credit adjustment (eg. Rm15,000.00). Otherwise, it will capture the value Rm60,000.00 in GST-03 item 16. See the screenshot below.
 
-![GST_Return10](../../../static/img/usage/gst-and-sst/gst/CapitalGoodsAcquired-2.jpg)  
+   ![GST_Return10](../../../static/img/usage/gst-and-sst/gst/CapitalGoodsAcquired-2.jpg)  
 
 3. It will capture the net capital goods acquired value in GST-03 item 16.
 
-![GST_Return11](../../../static/img/usage/gst-and-sst/gst/CapitalGoodsAcquired-3.jpg)  
-
-
+   ![GST_Return11](../../../static/img/usage/gst-and-sst/gst/CapitalGoodsAcquired-3.jpg)  
 
 ## Open GST Return
 
 1. See the screenshot below:
 
-![Open_GST_Return1](../../../static/img/usage/gst-and-sst/gst/OpenGSTReturn-1.jpg)  
+   ![Open_GST_Return1](../../../static/img/usage/gst-and-sst/gst/OpenGSTReturn-1.jpg)  
 
 2. You can insert more available fields.
 
-![Open_GST_Return2](../../../static/img/usage/gst-and-sst/gst/OpenGSTReturn-2.jpg)  
+   ![Open_GST_Return2](../../../static/img/usage/gst-and-sst/gst/OpenGSTReturn-2.jpg)  
 
-| **Field Name**                        | **Field Type** | **Explanation**                                                                 |
-|---------------------------------------|----------------|---------------------------------------------------------------------------------|
-| Status                                | String         | To show the GST Return status, i.e., DRAFT, DE-REGISTER.                        |
-| Process Date                          | Date           | To show process date.                                                           |
-| Date From                             | Date           | To show date from.                                                              |
-| Date To                               | Date           | To show date to.                                                                |
-| Description                           | String         | To show the description entered.                                                |
-| Ref 1                                 | String         | To show the ref 1 entered.                                                      |
-| Ref 2                                 | String         | To show the ref 2 entered.                                                      |
-| User                                  | String         | To display the User process the GST Return.                                     |
-| Closed                                | Boolean        | Always ticked to close.                                                         |
-| LPA for Partial Exemption             | Boolean        | Longer period adjustment (LPA) for partial exemption (Mixed Supplies).          |
-| De-register                           | Boolean        | Ticked if the taxable period has de-register date.                              |
-| Amendment                             | Boolean        | To show the GST Return has ticked this option.                                  |
-|                                       |                | Refer to :[GST GUIDE ON AMENDMENT RETURN (GST-03)](https://sites.google.com/site/sqlestream/sql-financial-accounting/9-good-and-service-tax-gst---malaysia/9-22-gst-03-item-detail) |
-| C/F Refund for GST                    | Boolean        | To show the GST Return has ticked this option.                                  |
-| Process Net Realised Exchange Gain/Loss | Boolean      | No longer use because system auto handles this option.                          |
-| Tax Year                              | Boolean        | Tax Year point.                                                                 |
-| De Minimis Rule                       | Boolean        | - Ticked = Pass                                                                 |
-|                                       |                | - Unticked = Not Pass                                                           |
-| Residual Input Tax Recovery Rate (%)  | Float          | To display the IRR %.                                                           |
-| LPA Date From                         | Date           | LPA date from.                                                                  |
-| LPA Date To                           | Float          | LPA date to.                                                                    |
-| ∑ Output Tax                          | Float          | To show the total output tax value.                                             |
-| ∑ Input Tax                           | Float          | To show the total input tax value.                                              |
-| GST Amount Payable                    | Float          | Net GST Payable or Claimable.                                                   |
-| Journal No.                           | String         | Auto post the JVGST-XXXXX to reconcile the GST Payable and GST Claimable accounts. |
-|                                       | Button         | Options button: GST-03, Print GST Listing, Generate GST Audit File (GAF).       |
+   | **Field Name**                        | **Field Type** | **Explanation**                                                                 |
+   |---------------------------------------|----------------|---------------------------------------------------------------------------------|
+   | Status                                | String         | To show the GST Return status, i.e., DRAFT, DE-REGISTER.                        |
+   | Process Date                          | Date           | To show process date.                                                           |
+   | Date From                             | Date           | To show date from.                                                              |
+   | Date To                               | Date           | To show date to.                                                                |
+   | Description                           | String         | To show the description entered.                                                |
+   | Ref 1                                 | String         | To show the ref 1 entered.                                                      |
+   | Ref 2                                 | String         | To show the ref 2 entered.                                                      |
+   | User                                  | String         | To display the User process the GST Return.                                     |
+   | Closed                                | Boolean        | Always ticked to close.                                                         |
+   | LPA for Partial Exemption             | Boolean        | Longer period adjustment (LPA) for partial exemption (Mixed Supplies).          |
+   | De-register                           | Boolean        | Ticked if the taxable period has de-register date.                              |
+   | Amendment                             | Boolean        | To show the GST Return has ticked this option.                                  |
+   |                                       |                | Refer to :[GST GUIDE ON AMENDMENT RETURN (GST-03)](https://sites.google.com/site/sqlestream/sql-financial-accounting/9-good-and-service-tax-gst---malaysia/9-22-gst-03-item-detail) |
+   | C/F Refund for GST                    | Boolean        | To show the GST Return has ticked this option.                                  |
+   | Process Net Realised Exchange Gain/Loss | Boolean      | No longer use because system auto handles this option.                          |
+   | Tax Year                              | Boolean        | Tax Year point.                                                                 |
+   | De Minimis Rule                       | Boolean        | - Ticked = Pass                                                                 |
+   |                                       |                | - Unticked = Not Pass                                                           |
+   | Residual Input Tax Recovery Rate (%)  | Float          | To display the IRR %.                                                           |
+   | LPA Date From                         | Date           | LPA date from.                                                                  |
+   | LPA Date To                           | Float          | LPA date to.                                                                    |
+   | ∑ Output Tax                          | Float          | To show the total output tax value.                                             |
+   | ∑ Input Tax                           | Float          | To show the total input tax value.                                              |
+   | GST Amount Payable                    | Float          | Net GST Payable or Claimable.                                                   |
+   | Journal No.                           | String         | Auto post the JVGST-XXXXX to reconcile the GST Payable and GST Claimable accounts. |
+   |                                       | Button         | Options button: GST-03, Print GST Listing, Generate GST Audit File (GAF).       |
 
-:::note Tips:
-You can click New GST Return in Open GST Return screen. See below the screenshot.
-![Open_GST_Return3](../../../static/img/usage/gst-and-sst/gst/OpenGSTReturn-3.jpg)  
-:::
+   :::note Tips:
 
+   You can click New GST Return in Open GST Return screen. See below the screenshot.
 
+   ![Open_GST_Return3](../../../static/img/usage/gst-and-sst/gst/OpenGSTReturn-3.jpg)  
+
+   :::
 
 ## Maintain Tax
 
@@ -172,26 +177,26 @@ You can click New GST Return in Open GST Return screen. See below the screenshot
 
 - Screenshot below is the Maintain Tax entry form.
 
-![Maintain_Tax2](../../../static/img/usage/gst-and-sst/gst/MaintainTax-CreateNewTax-1.jpg) 
+![Maintain_Tax2](../../../static/img/usage/gst-and-sst/gst/MaintainTax-CreateNewTax-1.jpg)
 
-![Maintain_Tax3](../../../static/img/usage/gst-and-sst/gst/MaintainTax-CreateNewTax-2.jpg) 
+![Maintain_Tax3](../../../static/img/usage/gst-and-sst/gst/MaintainTax-CreateNewTax-2.jpg)
 
 | **Field Name**  | **Explanation & Properties**                                                                 |
 |------------------|-----------------------------------------------------------------------------------------------|
 | Code             | Enter the tax code to be shown in report.                                                     |
-| Active           | - Checked: Active & able to select from the Tax List in data entry.  
+| Active           | - Checked: Active & able to select from the Tax List in data entry.                           |
 |                  | - UnChecked: InActive & unable to select from the Tax List in data entry.                     |
 | Description      | Enter the tax description.                                                                    |
 | Tax Type         | Select the Tax Type for the Tax Code to be created.                                           |
-| Tax Rate         | User can self-determine the rate or set Auto:  
-|                  | - **A**: Auto Tax Rate. System will auto change to new rate if there is update in GST Rate (must update SQL Accounting).  
-|                  | - **E**: Excluded from IRR calculation (useful for OS Tax Code & Mixed Supplies Industry).  
-|                  | - **EA**: Combination of A & E.  
-|                  | - **6%**: User-defined fixed rate (e.g., 6%).  
-|                  | - **E6%**: Fixed rate excluded from IRR calculation.  
+| Tax Rate         | User can self-determine the rate or set Auto:  |
+|                  | - **A**: Auto Tax Rate. System will auto change to new rate if there is update in GST Rate (must update SQL Accounting).  |
+|                  | - **E**: Excluded from IRR calculation (useful for OS Tax Code & Mixed Supplies Industry).  |
+|                  | - **EA**: Combination of A & E.  |
+|                  | - **6%**: User-defined fixed rate (e.g., 6%).  |
+|                  | - **E6%**: Fixed rate excluded from IRR calculation.  |
 |                  | Default 1st row is the Default selection in data entry.                                       |
 | Tax Account      | Select an appropriate GL Account from Maintain Account.                                       |
-| Tax Inclusive    | - Checked: Default is Tax Inclusive.  
+| Tax Inclusive    | - Checked: Default is Tax Inclusive.  |
 |                  | - UnChecked: Default is Tax Exclusive.                                                        |
 
 ### Use of Tax
@@ -205,84 +210,84 @@ You can click New GST Return in Open GST Return screen. See below the screenshot
         6. Tools | Options | Supplier | Default Input Tax
 - Therefore, item inserted will be automatically calculate the tax amount based on the subtotal. See below screenshot.
 
-![Maintain_Tax4](../../../static/img/usage/gst-and-sst/gst/MaintainTax-UseOfTax-1.jpg) 
+![Maintain_Tax4](../../../static/img/usage/gst-and-sst/gst/MaintainTax-UseOfTax-1.jpg)
 
 ### Default System Tax Seq
 
 Default System Tax Seq are as follow
 
-**For Sales & Purchase**
+***For Sales & Purchase***
+
 1) Maintain Customer/Supplier
 2) Maintain Item Code
 3) Tools | Options | Customer/Supplier => For Version 836.761 & below
 4) Maintain Tax with IsDefault is Tick => For Version 837.762 & above
 
-**For AR & AP**
+***For AR & AP***
+
 1) Maintain Customer/Supplier
 2) Maintain Account
 3) Tools | Options | Customer/Supplier => For Version 836.761 & below
 4) Maintain Tax with IsDefault is Tick => For Version 837.762 & above
 
-**For GL**
+***For GL***
+
 1) Maintain Account
-
-
 
 ## GST Effective Date
 
 Enable to set the GST start date (register) and end date (de-register).
 
-### GST Effective Date
-
 1. Below the screenshot is the Start GST wizard, you are required to set the GST Effective Date.
 
-![GST_Effetive1](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-1.jpg) 
+   ![GST_Effetive1](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-1.jpg)
 
 2. You can check the GST Effective Date under the menu GST | GST Effective Date...
 
-![GST_Effetive2](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-2.jpg) 
+   ![GST_Effetive2](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-2.jpg)
 
-| Field Name                   | Field Type | Explanation                           |
-|-------------------------------|------------|---------------------------------------|
-| GST Effective Date            | Date       | GST start date.                       |
-| I want to de-register from GST | Boolean    | To set de-register date from GST.     |
+   | Field Name                   | Field Type | Explanation                           |
+   |-------------------------------|------------|---------------------------------------|
+   | GST Effective Date            | Date       | GST start date.                       |
+   | I want to de-register from GST | Boolean    | To set de-register date from GST.     |
 
 ### How to set De-register
 
 1. At the GST effective date screen, tick on I want to de-register from GST.
 
-![GST_Effetive3](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToDeregister-1.jpg) 
+   ![GST_Effetive3](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToDeregister-1.jpg)
 
 2. Next', type-in the de-register date. Let's assume ABC Sdn Bhd ceased to be a registered person on 15 May 2016.
 
-![GST_Effetive4](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToDeregister-2.jpg) 
+   ![GST_Effetive4](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToDeregister-2.jpg)
 
 3. Click Finish to confirm the de-register date.
 4. GST De-register Date : 15 May 2016 will displayed below the GST effective date. See the screenshot below.
 
-![GST_Effetive5](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToDeregister-3.jpg) 
+   ![GST_Effetive5](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToDeregister-3.jpg)
 
 5. Click **Finish** to exit.
 
 :::note Tips:
+
 You can found the De-Register markings in the GST Returns. See the screenshot below.
-![GST_Effetive6](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToDeregister-4.jpg) 
+
+![GST_Effetive6](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToDeregister-4.jpg)
+
 :::
 
 ### How to cancel De-Register Date?
 
 1. At the GST effective date screen, click on the **De-Register Date**.
 
-![GST_Effetive7](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToCancel-1.jpg) 
+   ![GST_Effetive7](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToCancel-1.jpg)
 
 2. Leave the De-Register date **blank** or become **d/M/yyyy**. See the screenshot below.
 
-![GST_Effetive8](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToCancel-2.jpg) 
-![GST_Effetive9](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToCancel-3.jpg) 
+   ![GST_Effetive8](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToCancel-2.jpg)
+   ![GST_Effetive9](../../../static/img/usage/gst-and-sst/gst/GSTEffectiveDate-HowToCancel-3.jpg)
 
 3. Click **Finish** to confirm remove the de-register date.
-
-
 
 ## Gift / Deemed Supply
 
@@ -309,27 +314,32 @@ Financial Start Period: 01 July 2014
   
 **Example 1:**  
 Company XY Sdn Bhd purchased 15 hampers worth RM200/hamper to be given to each of his employees.
+
 - every employee will get one hamper FOC.
 - no need to account for output tax.
 - input tax on 15 hampers = RM180.00 (6% x RM3,000.00) is claimable.
   
 **Example 2:**  
 Company CX Sdn Bhd has purchased a watch worth RM400.00 and gave it to one of the director’s son.
+
 - The gift is not subject to GST because its value is less than RM500.00 (gift rule).
 - input tax incurred on the purchase is claimable.
   
 **Example 3:**  
 A Company purchased a laptop worth RM1,500.00 and gave the laptop to a director’s son as a gift.
+
 - GST on the laptop must be accounted for by the company as output tax.
 - the value of the goods is more than RM500.00.
   
 **Example 4:**  
 A company purchased a laptop worth RM1,500.00 three years ago. Currently the company has given the laptop to one of his business partners. For the purpose of accounting GST, the company has to use open market value of the goods now where the value of the goods is RM450.00, i.e. the value of the goods has depreciated.
+
 - no need to account for output tax on the gift
 - the value of the goods is less than RM500.00. (Gift rule applicable)
   
 **Example 5:**  
 Company C rewarded RM5,000.00 to his best employee of the year.
+
 - not subject to GST
 - money is neither goods nor services
   
@@ -338,74 +348,76 @@ Company C rewarded RM5,000.00 to his best employee of the year.
 1. Click on New.
 2. Select Type : Gift.
 
-![GST_Gift1](../../../static/img/usage/gst-and-sst/gst/GiftDocumentEntry-1.jpg) 
+   ![GST_Gift1](../../../static/img/usage/gst-and-sst/gst/GiftDocumentEntry-1.jpg)
 
-:::note Note:
-You will see this note "Entitle Yearly Exempt RM500.00" at the bottom. 
-:::
+   :::note Note:
+
+   You will see this note "Entitle Yearly Exempt RM500.00" at the bottom.
+
+   :::
 
 3. For Gift, you must select Code : Customer Code.
 4. Select Item Code: Item Code.
 5. Select a preferred Expenses GL Account. User has to create a GL Account in Maintain Account.
 
-For example,
+   For example,
 
-| Item Code | Description | Qty  | UOM  | U/Cost | Sub Total | Tax | Tax Rate | Tax Amount | SubTotal (Tax) | Expenses GL Account            |
-|-----------|-------------|------|------|--------|-----------|-----|----------|------------|----------------|--------------------------------|
-| ANT       | ANTENA      | 1.00 | UNIT | 350.00 | 350.00    | DS  | 6%       | 0.00       | 350.00         | 999-999 GST Gift/Deemed Supply |
+   | Item Code | Description | Qty  | UOM  | U/Cost | Sub Total | Tax | Tax Rate | Tax Amount | SubTotal (Tax) | Expenses GL Account            |
+   |-----------|-------------|------|------|--------|-----------|-----|----------|------------|----------------|--------------------------------|
+   | ANT       | ANTENA      | 1.00 | UNIT | 350.00 | 350.00    | DS  | 6%       | 0.00       | 350.00         | 999-999 GST Gift/Deemed Supply |
 
-![GST_Gift2](../../../static/img/usage/gst-and-sst/gst/GiftDocumentEntry-2.jpg) 
+   ![GST_Gift2](../../../static/img/usage/gst-and-sst/gst/GiftDocumentEntry-2.jpg)
 
-5. **Yearly Amount** will immediately updated together with the current Gift document amount.
+6. **Yearly Amount** will immediately updated together with the current Gift document amount.
 
-> **Yearly Amount** = Cumulative gift amount in the same year + current gift document amount 
+   > **Yearly Amount** = Cumulative gift amount in the same year + current gift document amount
 
-6. Below screenshot is the 2nd gift document created for same company/person in the same year. **The word ‘year’ in paragraph 5(2) (a) of the First Schedule of GSTA 2014 refers to ‘tax year ‘(financial year)**.
+7. Below screenshot is the 2nd gift document created for same company/person in the same year. **The word ‘year’ in paragraph 5(2) (a) of the First Schedule of GSTA 2014 refers to ‘tax year ‘(financial year)**.
 
-![GST_Gift3](../../../static/img/usage/gst-and-sst/gst/GiftDocumentEntry-3.jpg) 
+   ![GST_Gift3](../../../static/img/usage/gst-and-sst/gst/GiftDocumentEntry-3.jpg)
 
-7. System will auto calculate tax amount once exceed RM500.00
+8. System will auto calculate tax amount once exceed RM500.00
 
-| Gift Date  | Gift   | Cost   | Tax Amount | Calculation    |
-|------------|--------|--------|------------|----------------|
-| 05/01/2016 | ANTENA | 200.00 | 0.00       |                |
-| 17/02/2016 | ANTENA | 350.00 | 33.00      | RM550 × 6%     |
+   | Gift Date  | Gift   | Cost   | Tax Amount | Calculation    |
+   |------------|--------|--------|------------|----------------|
+   | 05/01/2016 | ANTENA | 200.00 | 0.00       |                |
+   | 17/02/2016 | ANTENA | 350.00 | 33.00      | RM550 × 6%     |
 
-:::note Note:
-The calculation of the gift is based on the Total value of the gift once exceed RM500.
-:::
+   :::note Note:
 
-8. Click on Tax Estimator. You can see the GST Amount to be process to the gift.
+   The calculation of the gift is based on the Total value of the gift once exceed RM500.
 
-![GST_Gift4](../../../static/img/usage/gst-and-sst/gst/GiftDocumentEntry-4.jpg) 
+   :::
+
+9. Click on Tax Estimator. You can see the GST Amount to be process to the gift.
+
+   ![GST_Gift4](../../../static/img/usage/gst-and-sst/gst/GiftDocumentEntry-4.jpg)
 
 #### Process GST Return
 
 During process of GST-03 Return, if the system detects there are deemed supplies (DS) under gift, it will add this GST Tax under DS as output Tax.
 
-![GST_Gift5](../../../static/img/usage/gst-and-sst/gst/ProcessGSTReturn-1.jpg) 
+![GST_Gift5](../../../static/img/usage/gst-and-sst/gst/ProcessGSTReturn-1.jpg)
 
 ### Deemed Supply
 
 1. Click on **New**.
 2. Select **Type** : Deemed Supply.
 
-![GST_Gift6](../../../static/img/usage/gst-and-sst/gst/DeemedSupply-1.jpg) 
+   ![GST_Gift6](../../../static/img/usage/gst-and-sst/gst/DeemedSupply-1.jpg)
 
 3. For Deemed Supply, you can leave the **Code** `<<EMPTY>>`
 4. Select **Item Code**: Item Code.
 5. Select a preferred **Expenses GL Account**. User has to create a GL Account in Maintain Account.
 
-For example,
+   For example,
 
-| Item Code | Description | Qty  | UOM  | U/Cost | Sub Total | Tax | Tax Rate | Tax Amount | SubTotal (Tax) | Expenses GL Account            |
-|-----------|-------------|------|------|--------|-----------|-----|----------|------------|----------------|--------------------------------|
-| ANT       | ANTENA      | 1.00 | UNIT | 350.00 | 350.00    | DS  | 6%       | 21.00      | 371.00         | 999-999 GST Gift/Deemed Supply |
+   | Item Code | Description | Qty  | UOM  | U/Cost | Sub Total | Tax | Tax Rate | Tax Amount | SubTotal (Tax) | Expenses GL Account            |
+   |-----------|-------------|------|------|--------|-----------|-----|----------|------------|----------------|--------------------------------|
+   | ANT       | ANTENA      | 1.00 | UNIT | 350.00 | 350.00    | DS  | 6%       | 21.00      | 371.00         | 999-999 GST Gift/Deemed Supply |
 
 6. System will calculate tax amount instantly when you save the Deemed Supply, ie. Taxable Amount x 6%.
 7. **Yearly Amount** always shown 0.00, because it is Deemed Supply.
-
-
 
 ## Print GST Listing
 
@@ -413,11 +425,11 @@ To generate a summary and details of the GST transactions after process the GST 
 
 ### GST Listing
 
-![GST_Listing1](../../../static/img/usage/gst-and-sst/gst/GSTListing-1.jpg) 
+![GST_Listing1](../../../static/img/usage/gst-and-sst/gst/GSTListing-1.jpg)
 
 #### GST Listing - Parameter
 
-![GST_Listing2](../../../static/img/usage/gst-and-sst/gst/GSTListing-Parameter-1.jpg) 
+![GST_Listing2](../../../static/img/usage/gst-and-sst/gst/GSTListing-Parameter-1.jpg)
 
 | Parameter                    | Type    | Explanation                                        |
 |------------------------------|---------|----------------------------------------------------|
@@ -428,28 +440,28 @@ To generate a summary and details of the GST transactions after process the GST 
 
 #### GST Listing - Summary
 
-![GST_Listing3](../../../static/img/usage/gst-and-sst/gst/GSTListing-Summary-1.jpg) 
+![GST_Listing3](../../../static/img/usage/gst-and-sst/gst/GSTListing-Summary-1.jpg)
 
 1. **Double click** on the tax code (eg. SR) in the Summary.
 2. It will auto filter the GST transactions by tax code (SR) in the Details.
 
-![GST_Listing4](../../../static/img/usage/gst-and-sst/gst/GSTListing-Summary-2.jpg) 
+   ![GST_Listing4](../../../static/img/usage/gst-and-sst/gst/GSTListing-Summary-2.jpg)
 
 3. **Deselect** the tax code (SR), click on the X button. See the screenshot below.
 
-![GST_Listing5](../../../static/img/usage/gst-and-sst/gst/GSTListing-Summary-3.jpg) 
+   ![GST_Listing5](../../../static/img/usage/gst-and-sst/gst/GSTListing-Summary-3.jpg)
 
 #### GST Listing - Detail
 
-![GST_Listing6](../../../static/img/usage/gst-and-sst/gst/GSTListing-Detail-1.jpg) 
+   ![GST_Listing6](../../../static/img/usage/gst-and-sst/gst/GSTListing-Detail-1.jpg)
 
 1. **Find Panel** is very useful to search in any columns by the keywords entered by you.
 
-![GST_Listing7](../../../static/img/usage/gst-and-sst/gst/GSTListing-Detail-2.jpg) 
+   ![GST_Listing7](../../../static/img/usage/gst-and-sst/gst/GSTListing-Detail-2.jpg)
 
 2. It help to search the transactions contain the keywords, eg. **"UPKEEP"**, **"TX"** or **"ZP"**. You just need to enter the keywords directly with a space in between each keywords. See the screenshot below.
 
-![GST_Listing8](../../../static/img/usage/gst-and-sst/gst/GSTListing-Detail-3.jpg) 
+   ![GST_Listing8](../../../static/img/usage/gst-and-sst/gst/GSTListing-Detail-3.jpg)
 
 ### Find Panel Helper
 
@@ -457,11 +469,11 @@ To generate a summary and details of the GST transactions after process the GST 
 2. Let said I wish to find the word **UPKEEP**.
 3. Type the **UPKEEP** in the find panel.
 
-![GST_Listing9](../../../static/img/usage/gst-and-sst/gst/GSTListing-FindPanelHelper-1.jpg) 
+   ![GST_Listing9](../../../static/img/usage/gst-and-sst/gst/GSTListing-FindPanelHelper-1.jpg)
 
 4. If you want to **exclude** the **BL** tax code, then you have to enter as **UPKEEP -BL** in the find panel.
 
-![GST_Listing10](../../../static/img/usage/gst-and-sst/gst/GSTListing-FindPanelHelper-2.jpg) 
+   ![GST_Listing10](../../../static/img/usage/gst-and-sst/gst/GSTListing-FindPanelHelper-2.jpg)
 
 **Explanation of Extended Search Syntax :**
 
@@ -473,7 +485,9 @@ To generate a summary and details of the GST transactions after process the GST 
 | "pineapple apple"     | EXACT WORD      | Search for the exact words "pineapple apple".                               |
 
 :::note NOTE:
+
 Spacing is very important to make your search more accurate.
+
 :::
 
 ### Reports
@@ -481,71 +495,80 @@ Spacing is very important to make your search more accurate.
 1. Click on **Preview**.
 2. Select a report to preview or print or export.
 
-![GST_Listing11](../../../static/img/usage/gst-and-sst/gst/GSTListing-Reports-1.jpg) 
+   ![GST_Listing11](../../../static/img/usage/gst-and-sst/gst/GSTListing-Reports-1.jpg)
 
-| No. | Report Name                                                                 | Purpose                                                                                   |
-|-----|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| 01  | GST Detail 1                                                                 | To show the document description in GST Listing.                                          |
-| 02  | GST Detail 2                                                                 | To show the document item details description in GST Listing.                             |
-| 03  | GST Detail 3 - GST F5-(SG)                                                   | For Singapore GST, to show the GST-03 details in GST Listing.                             |
-| 04  | GST Detail 3 - GST-03                                                        | For Malaysia GST, to show the GST-03 details in GST Listing.                              |
-| 05  | GST Detail 4 - Mixed Supplies                                                | Applicable to Mixed Supplies. To show the calculations for DmR and Longer Period Adjustment. |
-| 06  | GST Lampiran 2                                                               | GST detail listing for standard rated. It is upon request by RMCD.                        |
-| 07  | GST Lampiran 2-with ZR                                                       | Another GST detail listing for the standard rated and zero rated separately.              |
-| 08  | GST Lampiran 4 - Ringkasan Maklumat Permohanan Tuntutan Pelepasan Hutang Lapuk | Lampiran 4 as requested by Kastam Officer.                                                |
-| 09  | GST Listing - Yearly GST Analysis                                            | To analyse the yearly tax amount and taxable amount.                                      |
-| 10  | GST Summary Sheet - MY                                                       | GST Summary Sheet format.                                                                 |
-| 11  | GST-Lampiran B-0 PT GST Bil 2B (ATS) (IS)                                    | A special GST detail listing for Approved Trader Scheme (Refer to GST-03 item 14 & 15).   |
-| 12  | GST-Penyata Eksport (ZRE)                                                    | A special GST detail listing for Zero Rated Export supply (Refer to GST-03 item 11).      |
-| 13  | GST-Penyata Pembekalan Dikecualikan (ES & IES)                               | A special GST detail listing for Exempted Supplies (Refer to GST-03 item 12).             |
-| 14  | GST-Penyata Pembekalan Tempatan Berkadar Sifar (ZRL)                         | A special GST detail listing for Zero Rated Local supply (Refer to GST-03 item 10).       |
+   | No. | Report Name                                                                 | Purpose                                                                                   |
+   |-----|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+   | 01  | GST Detail 1                                                                 | To show the document description in GST Listing.                                          |
+   | 02  | GST Detail 2                                                                 | To show the document item details description in GST Listing.                             |
+   | 03  | GST Detail 3 - GST F5-(SG)                                                   | For Singapore GST, to show the GST-03 details in GST Listing.                             |
+   | 04  | GST Detail 3 - GST-03                                                        | For Malaysia GST, to show the GST-03 details in GST Listing.                              |
+   | 05  | GST Detail 4 - Mixed Supplies                                                | Applicable to Mixed Supplies. To show the calculations for DmR and Longer Period Adjustment. |
+   | 06  | GST Lampiran 2                                                               | GST detail listing for standard rated. It is upon request by RMCD.                        |
+   | 07  | GST Lampiran 2-with ZR                                                       | Another GST detail listing for the standard rated and zero rated separately.              |
+   | 08  | GST Lampiran 4 - Ringkasan Maklumat Permohanan Tuntutan Pelepasan Hutang Lapuk | Lampiran 4 as requested by Kastam Officer.                                                |
+   | 09  | GST Listing - Yearly GST Analysis                                            | To analyse the yearly tax amount and taxable amount.                                      |
+   | 10  | GST Summary Sheet - MY                                                       | GST Summary Sheet format.                                                                 |
+   | 11  | GST-Lampiran B-0 PT GST Bil 2B (ATS) (IS)                                    | A special GST detail listing for Approved Trader Scheme (Refer to GST-03 item 14 & 15).   |
+   | 12  | GST-Penyata Eksport (ZRE)                                                    | A special GST detail listing for Zero Rated Export supply (Refer to GST-03 item 11).      |
+   | 13  | GST-Penyata Pembekalan Dikecualikan (ES & IES)                               | A special GST detail listing for Exempted Supplies (Refer to GST-03 item 12).             |
+   | 14  | GST-Penyata Pembekalan Tempatan Berkadar Sifar (ZRL)                         | A special GST detail listing for Zero Rated Local supply (Refer to GST-03 item 10).       |
 
-:::note NOTE: 
-From Doc Types in GST Listing Detail are consists of:
-1. _A = Unclaimable Non-Incidental Exempt Supplies (TX-N43)
-2. _B = Unclaimable TX-RE 
-3. _C = Annual Adjustment Non-Incidental Exempt Supplies (TX-N43)
-4. _D = Annual Adjustment TX-RE
-5. _X = Realised Gain Loss
-:::
+   :::note NOTE:
+
+   From Doc Types in GST Listing Detail are consists of:
+
+   1. _A = Unclaimable Non-Incidental Exempt Supplies (TX-N43)
+   2. _B = Unclaimable TX-RE
+   3. _C = Annual Adjustment Non-Incidental Exempt Supplies (TX-N43)
+   4. _D = Annual Adjustment TX-RE
+   5. _X = Realised Gain Loss
+
+   :::
 
 ### Pivot Table
 
 1. Right click on any of the grid columns.
 2. From the menu, select **Pivot Table**.
 
-![GST_Listing12](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-1.jpg) 
+   ![GST_Listing12](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-1.jpg)
 
 3. At Pivot Table, there are 3 sections as below:  
    a. **Data Fields** – Data field will auto inserted when you launch the pivot table.  
    b. **Row Fields** – To structure the grouping for Rows.  
    c. **Column Fields** – To structure the grouping for Columns.
 
-![GST_Listing13](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-2.jpg) 
+   ![GST_Listing13](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-2.jpg)
 
-3. Use the grid columns to structure the pivot format. See the screenshot below.
+4. Use the grid columns to structure the pivot format. See the screenshot below.
 
-![GST_Listing14](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-3.jpg) 
+   ![GST_Listing14](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-3.jpg)
 
-4. Drag the grid column into Row fields or Column fields.
+5. Drag the grid column into Row fields or Column fields.
 
-![GST_Listing15](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-4.jpg) 
+   ![GST_Listing15](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-4.jpg)
 
-> **Hint 1:**  
-> 1. Right click on the **Row Field**
-> 2. Select **Expand All**.  
-> ![GST_Listing16](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-5.jpg) 
-  
-> **Hint 2:**  
-> 1. Right click on the grey area. 
-> 2. A small menu pop out.
-> ![GST_Listing17](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-6.jpg)   
->   a. **Show Field List** - Not really use to it.  
->   b. **Show Prefilter Dialog** - Insert filter conditions.  
->   c. **Print Grid** - To print the grid.  
->   d. **Grid Export** - To export the grid data into EXCEL, TEXT, HTML and XML.  
+:::note Hint 1:
 
+1. Right click on the **Row Field**
+2. Select **Expand All**.  
+ ![GST_Listing16](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-5.jpg)
 
+:::
+
+:::note Hint 2:
+
+1. Right click on the grey area.
+2. A small menu pop out.
+
+![GST_Listing17](../../../static/img/usage/gst-and-sst/gst/GSTListing-PivotTable-6.jpg)
+
+   1. **Show Field List** - Not really use to it.  
+   2. **Show Prefilter Dialog** - Insert filter conditions.  
+   3. **Print Grid** - To print the grid.  
+   4. **Grid Export** - To export the grid data into EXCEL, TEXT, HTML and XML.
+
+:::
 
 ## Print GST - 03
 
@@ -553,11 +576,11 @@ To generate the GST-03 data for submission via TAP.
 
 ### GST - 03
 
-![GST_03_1](../../../static/img/usage/gst-and-sst/gst/GST03-1.jpg)   
+![GST_03_1](../../../static/img/usage/gst-and-sst/gst/GST03-1.jpg)
 
 #### GST-03-Parameter
 
-![GST_03_2](../../../static/img/usage/gst-and-sst/gst/GST03-Parameter-1.jpg) 
+![GST_03_2](../../../static/img/usage/gst-and-sst/gst/GST03-Parameter-1.jpg)
 
 | Parameter   | Type   | Explanation                         |
 |-------------|--------|-------------------------------------|
@@ -565,31 +588,31 @@ To generate the GST-03 data for submission via TAP.
   
 See example of the **GST Process Lookup** screenshot below.
 
-![GST_03_3](../../../static/img/usage/gst-and-sst/gst/GST03-Parameter-2.jpg) 
+![GST_03_3](../../../static/img/usage/gst-and-sst/gst/GST03-Parameter-2.jpg)
 
 #### GST-03 Form
 
 1. After select the GST Process parameter, click on APPLY.
 2. See the below screenshot.
 
-![GST_03_4](../../../static/img/usage/gst-and-sst/gst/GST03-Form-1.jpg) 
+   ![GST_03_4](../../../static/img/usage/gst-and-sst/gst/GST03-Form-1.jpg)
 
 #### GST-03 TAP Upload File
 
 1. At the GST-03 on the screen, click on the **PLAY** button.
 2. Click on **GST03_TAP**. See the below screenshot.
 
-![GST_03_5](../../../static/img/usage/gst-and-sst/gst/GST03-TAPUploadFile-1.jpg) 
+   ![GST_03_5](../../../static/img/usage/gst-and-sst/gst/GST03-TAPUploadFile-1.jpg)
 
 3. Select the destination directory to save the TAP-Upload text file, eg. GST Tap Return for Oct 2015 the filename: **GSTTapReturn-201510**.
 4. Click on **SAVE**.
 5. See the below screenshot.
 
-![GST_03_6](../../../static/img/usage/gst-and-sst/gst/GST03-TAPUploadFile-2.jpg) 
+   ![GST_03_6](../../../static/img/usage/gst-and-sst/gst/GST03-TAPUploadFile-2.jpg)
 
 6. Prompt the below message. Press OK to proceed to upload the file via TAP website.
 
-![GST_03_7](../../../static/img/usage/gst-and-sst/gst/GST03-TAPUploadFile-3.jpg) 
+   ![GST_03_7](../../../static/img/usage/gst-and-sst/gst/GST03-TAPUploadFile-3.jpg)
 
 ### GST - 03 Item Details
 
@@ -651,10 +674,10 @@ Original source from RMCD website:
 | 25       | Signature             | Sign on GST-03 print copy.                              |
 
 :::note Note:
+
 Column with (*) is a mandatory field.
+
 :::
-
-
 
 ## Generate GST Audit File (GAF)
 
@@ -669,58 +692,52 @@ GST Audit File (GAF) has break into 3 parts:
 2. Sales
 3. Purchase
 
-![GST_Audit_File_1](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-1.jpg) 
+![GST_Audit_File_1](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-1.jpg)
 
 ### How to Export the GAF File
 
 1. Select the date range.
 
-![GST_Audit_File_2](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-1.jpg) 
+   ![GST_Audit_File_2](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-1.jpg)
 
 2. Click on **APPLY**.
 
-![GST_Audit_File_3](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-2.jpg) 
+   ![GST_Audit_File_3](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-2.jpg)
 
 3. Click on **Save As Text**.
 
-![GST_Audit_File_4](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-3.jpg) 
+   ![GST_Audit_File_4](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-3.jpg)
 
 4. Select the destination directory to save the GAF file. See the below screenshot.
 
-![GST_Audit_File_5](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-4.jpg) 
+   ![GST_Audit_File_5](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-4.jpg)
 
 5. File generated successfully. Press OK to exit the below message.
 
-![GST_Audit_File_6](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-5.jpg) 
-
-
+   ![GST_Audit_File_6](../../../static/img/usage/gst-and-sst/gst/GSTAuditFile-HowToExport-5.jpg)
 
 ## Print GST Bad Debt Relief
 
 A taxable person may claim bad debt relief subject to the requirements and conditions set forth under sec.58 of the GSTA 2014 and the person has not received any payment or part of the payment in respect of the taxable supply from the debtor after the sixth month from the date of supply.
 
-
 The bad debt relief may be claimed if - (amended on 28 Oct 2015 from DG Decision)  
 (a) requirements under s.58 GSTA and Part X of GST Regulations 2014 are fulfilled; and  
 (b) the supply is made by a GST registered person to another GST registered person
 
-
 The bad debt relief shall be claimed immediately in the taxable period after the expiry of the sixth month from the date of supply. If the bad debt relief is not claimed by the supplier in the immediate taxable period immediately after the expiry of the sixth month, then the taxable person has to notify the Director General (DG) within 30 days after the expiry of the sixth month on his intention to claim at a later date.
 
-
 A GST registered person who has made the input tax claim but fails to pay his supplier within six months from the date of supply shall account for output tax immediately after the expiry of the sixth month (s.38(9) GSTA).
-
 
 The word ‘month’ in sec.58 refers to calendar month or complete month –
 Example: Invoice issued at 15 th January 2017. For monthly taxable period, the sixth month expires at the end of June and the bad debt relief shall be claimed in July taxable period.
 
 See below the overview of GST Bad Debt Relief system flow:
 
-![GST_Bad_Debt_Relief_1](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-1.jpg) 
+![GST_Bad_Debt_Relief_1](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-1.jpg)
 
 ### Check List Related to Bad Debt Relief
 
-#### Maintain Tax
+#### Maintain Tax (Bad Debt Relief)
 
 Below tax code will be AUTO used for Bad Debt Relief matter when process GST Return:
 
@@ -738,13 +755,14 @@ Below tax code will be AUTO used for Bad Debt Relief matter when process GST Ret
 #### Maintain Customer
 
 1. There is one condition to determine the bad debt relief can be claimed if -
+
     1. **requirements under s.58 GSTA and Part X of GST Regulations 2014 arefulfilled**; and  
     2. **the supply is made by a GST registered person to another GST registered person**
 
 2. Therefore, you need to update the GST No for your customer who is GST registered person. See the screenshot below.
 3. Under the Tax tab in Maintain Customer,
 
-![GST_Bad_Debt_Relief_2](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-MaintainCustomer-1.jpg) 
+   ![GST_Bad_Debt_Relief_2](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-MaintainCustomer-1.jpg)
 
 ### Process GST Returns
 
@@ -752,12 +770,15 @@ Below tax code will be AUTO used for Bad Debt Relief matter when process GST Ret
 2. Bad Debt Relief screen will be prompted (see the screenshot below) if the system found there are outstanding Tax Invoices has expired at 6 months.
 3. Sales documents from the company has empty GST No will be unticked. You can tick the documents if you think this company is a GST Registered person.
 
-![GST_Bad_Debt_Relief_3](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-ProcessGSTReturns-1.jpg) 
+   ![GST_Bad_Debt_Relief_3](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-ProcessGSTReturns-1.jpg)
 
-:::note TIPS:
-![GST_Bad_Debt_Relief_4](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-ProcessGSTReturns-Note1.jpg)  
-To avoid to tick the documents manually for GST Registered company, please go to update the GST no at Maintain Customer.
-:::
+   :::note TIPS:
+
+   ![GST_Bad_Debt_Relief_4](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-ProcessGSTReturns-Note1.jpg)
+
+   To avoid to tick the documents manually for GST Registered company, please go to update the GST no at Maintain Customer.
+
+   :::
 
 4. Press OK if get a "confirm" message prompted (see the screenshot below), it means there are some company do not have GST No.
 5. If you has confirmed that the company is Non-GST Registered person then you can press YES to proceed.
@@ -765,7 +786,7 @@ To avoid to tick the documents manually for GST Registered company, please go to
 
 ![GST_Bad_Debt_Relief_5](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-ProcessGSTReturns-2.jpg)  
 
-### GST Listing
+### GST Listing (Bad Debt Relief)
 
 Category Others will appeared in GST Listing if there is found bad debt relief (eg. AJS-BD, AJP-BD):
 
@@ -774,94 +795,84 @@ Category Others will appeared in GST Listing if there is found bad debt relief (
 | AJS-BD   | Output Tax adjustment e.g: Bad Debt Recover, outstanding invoice > 6 months | 17,000.00    | 1,020.00         |
 | AJP-BD   | Input Tax adjustment e.g: Bad Debt Relief                               | 9,114.57     | 546.87           |
 
-### GST - 03
+### GST - 03 (Bad Debt Relief)
 
 1. At GST Return screen, you can direct preview the GST-03 by click on the GST-03 button (see the screenshot below).
 
-![GST_Bad_Debt_Relief_6](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-GST03-1.jpg)  
+   ![GST_Bad_Debt_Relief_6](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-GST03-1.jpg)  
 
 2. GST-03 result from the above sample data:
 
-| GST-03 # | Description                                                            | Amount   |
-|----------|------------------------------------------------------------------------|----------|
-| 5a       | Total Value of Standard Rated Supply                                   | 0.00     |
-| 5b       | Total Output Tax (Inclusive of Tax Value on Bad Debt Recovered & other Adjustments) | 1,020.00 |
-| 6a       | Total Value of Standard Rate and Flat Rate Acquisitions                | 0.00     |
-| 6b       | Total Input Tax (Inclusive of Tax Value on Bad Debt Relief & other Adjustments)     | 546.87   |
-| 17       | Total Value of Bad Debt Relief Inclusive Tax                           | 9,661.44 |
-| 18       | Total Value of Bad Debt Relief Recovered Inclusive Tax                 | 0.00     |
+   | GST-03 # | Description                                                            | Amount   |
+   |----------|------------------------------------------------------------------------|----------|
+   | 5a       | Total Value of Standard Rated Supply                                   | 0.00     |
+   | 5b       | Total Output Tax (Inclusive of Tax Value on Bad Debt Recovered & other Adjustments) | 1,020.00 |
+   | 6a       | Total Value of Standard Rate and Flat Rate Acquisitions                | 0.00     |
+   | 6b       | Total Input Tax (Inclusive of Tax Value on Bad Debt Relief & other Adjustments)     | 546.87   |
+   | 17       | Total Value of Bad Debt Relief Inclusive Tax                           | 9,661.44 |
+   | 18       | Total Value of Bad Debt Relief Recovered Inclusive Tax                 | 0.00     |
 
-### Print GST Bad Debt Relief 
+### Print GST Bad Debt Relief Report
 
 1. This report is help you to analyse the GST Bad Debt Relief happenings on each invoices.
 
-![GST_Bad_Debt_Relief_7](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-AnalyzeHappenings-1.jpg)  
+   ![GST_Bad_Debt_Relief_7](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-AnalyzeHappenings-1.jpg)  
 
 2. Let said the IV-00109 has the following details:-
 
-| Seq | Description                 | Amount   | Tax | Tax Amount | Amount with Tax |
-|-----|-----------------------------|----------|-----|------------|-----------------|
-| 1   | Sales of coconut can drinks | 1,000.00 | SR  | 60.00      | 1,060.00        |
-| 2   | Sales of coconut            | 1,000.00 | ZRL | 0.00       | 1,000.00        |
+   | Seq | Description                 | Amount   | Tax | Tax Amount | Amount with Tax |
+   |-----|-----------------------------|----------|-----|------------|-----------------|
+   | 1   | Sales of coconut can drinks | 1,000.00 | SR  | 60.00      | 1,060.00        |
+   | 2   | Sales of coconut            | 1,000.00 | ZRL | 0.00       | 1,000.00        |
 
 3. From the below report, it tells you that the bad debt relief claimed and to be recover at **Rm30.87** for IV-00109. You can found at the detail that the bad debt relief claimed at **Taxable Period 01 Oct 2015 to 31 Oct 2015**.
 
-![GST_Bad_Debt_Relief_8](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-AnalyzeHappenings-2.jpg)  
+   ![GST_Bad_Debt_Relief_8](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-AnalyzeHappenings-2.jpg)  
 
 4. After the IV-00109 has been full settlement in month Nov 2015, you will found the full tax paid **Rm60.00** and to be recover will be shown as 0. You can found at the detail that the bad debt relief recovered at **Taxable Period 01 Nov 2015 to 30 Nov 2015**.
 
-![GST_Bad_Debt_Relief_9](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-AnalyzeHappenings-3.jpg) 
+   ![GST_Bad_Debt_Relief_9](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-AnalyzeHappenings-3.jpg)
 
 5. There are some option can choose to apply the GST Bad Debt Relief for further checking:
 
-#### Sales
+   #### Sales
 
-| Checkbox                   | Explanation                                                                 |
-|-----------------------------|-----------------------------------------------------------------------------|
-| Bad Debt Relief Claimed     | GST bad debt relief that you HAVE TICKED to claim on outstanding invoices when process your GST returns. |
-| Bad Debt Relief Not Claim   | GST bad debt relief that you DO NOT TICKED to claim on outstanding invoices when process your GST returns. |
-| Bad Debt Relief Not Happen  | Outstanding invoices the GST Amount not expired at 6 months GST bad debt relief. |
-| Include Zero Outstanding    | To include the outstanding invoices are zero.                              |
+   | Checkbox                   | Explanation                                                                 |
+   |-----------------------------|-----------------------------------------------------------------------------|
+   | Bad Debt Relief Claimed     | GST bad debt relief that you HAVE TICKED to claim on outstanding invoices when process your GST returns. |
+   | Bad Debt Relief Not Claim   | GST bad debt relief that you DO NOT TICKED to claim on outstanding invoices when process your GST returns. |
+   | Bad Debt Relief Not Happen  | Outstanding invoices the GST Amount not expired at 6 months GST bad debt relief. |
+   | Include Zero Outstanding    | To include the outstanding invoices are zero.                              |
 
-#### Purchase
+   #### Purchase
 
-| Checkbox                  | Explanation                                                                 |
-|----------------------------|-----------------------------------------------------------------------------|
-| Bad Debt Relief Paid       | GST bad debt relief have paid on the outstanding supplier invoices when process your GST returns. |
-| Bad Debt Relief Not Pay    | GST bad debt relief not pay yet on the outstanding supplier invoices. It could be due to late receive the supplier invoice. |
-| Bad Debt Relief Not Happen | Outstanding invoices the GST Amount not expired at 6 months GST bad debt relief. |
-| Include Zero Outstanding   | To include the outstanding invoices are zero.                              |
+   | Checkbox                  | Explanation                                                                 |
+   |----------------------------|-----------------------------------------------------------------------------|
+   | Bad Debt Relief Paid       | GST bad debt relief have paid on the outstanding supplier invoices when process your GST returns. |
+   | Bad Debt Relief Not Pay    | GST bad debt relief not pay yet on the outstanding supplier invoices. It could be due to late receive the supplier invoice. |
+   | Bad Debt Relief Not Happen | Outstanding invoices the GST Amount not expired at 6 months GST bad debt relief. |
+   | Include Zero Outstanding   | To include the outstanding invoices are zero.                              |
 
 6. Click Preview button. You can found the following report list.
 
-| #  | Report Name                                | Usage                                                                 |
-|----|--------------------------------------------|----------------------------------------------------------------------|
-| 1  | GST Bad Debt Relief - Sales                | GST Bad Debt Relief Listing with detail based on the checkbox ticked. |
-| 2  | GST-BM Bad Debt Relief-Unclaimed Letter 1  | Bahasa Malaysia bad debt relief unclaimed letter format 1 to Director General |
-| 3  | GST-BM Bad Debt Relief-Unclaimed Letter 2  | Bahasa Malaysia bad debt relief unclaimed letter format 2 to Director General |
-| 4  | GST-EN Bad Debt Relief-Unclaimed Letter 1  | English version bad debt relief unclaimed letter format 1 to Director General |
-| 5  | GST-EN Bad Debt Relief-Unclaimed Letter 2  | English version bad debt relief unclaimed letter format 2 to Director General |
+   | #  | Report Name                                | Usage                                                                 |
+   |----|--------------------------------------------|----------------------------------------------------------------------|
+   | 1  | GST Bad Debt Relief - Sales                | GST Bad Debt Relief Listing with detail based on the checkbox ticked. |
+   | 2  | GST-BM Bad Debt Relief-Unclaimed Letter 1  | Bahasa Malaysia bad debt relief unclaimed letter format 1 to Director General |
+   | 3  | GST-BM Bad Debt Relief-Unclaimed Letter 2  | Bahasa Malaysia bad debt relief unclaimed letter format 2 to Director General |
+   | 4  | GST-EN Bad Debt Relief-Unclaimed Letter 1  | English version bad debt relief unclaimed letter format 1 to Director General |
+   | 5  | GST-EN Bad Debt Relief-Unclaimed Letter 2  | English version bad debt relief unclaimed letter format 2 to Director General |
 
->**TIPS 1** : To print the **bad debt relief unclaimed letter**.
->
->1. Select the **Date Parameter** as **the GST effective date onwards**.  
->2. Tick both **Bad Debt Relief Not Claim** and **Bad Debt Relief Not Happen** to apply follow by preview.  
->![GST_Bad_Debt_Relief_10](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-ReliefUnclaimedLetter-1.jpg)  
->3. This letter applicable to customer has maintained **GST No** in Maintain Customer only.
+   :::note TIPS 1 : To print the **bad debt relief unclaimed letter**.
 
+   1. Select the **Date Parameter** as **the GST effective date onwards**.  
+   2. Tick both **Bad Debt Relief Not Claim** and **Bad Debt Relief Not Happen** to apply follow by preview.
 
+      ![GST_Bad_Debt_Relief_10](../../../static/img/usage/gst-and-sst/gst/PrintGSTBadDebtRelief-ReliefUnclaimedLetter-1.jpg)
 
+   3. This letter applicable to customer has maintained **GST No** in Maintain Customer only.
 
-
-
-<!------------- This is a comment to show where the GST SEPCIAL TREATMNENT IS SPLIT FROM------------------->
-<!------------- This is a comment to show where the GST SEPCIAL TREATMNENT IS SPLIT FROM------------------->
-<!------------- This is a comment to show where the GST SEPCIAL TREATMNENT IS SPLIT FROM------------------->
-<!------------- This is a comment to show where the GST SEPCIAL TREATMNENT IS SPLIT FROM------------------->
-<!------------- This is a comment to show where the GST SEPCIAL TREATMNENT IS SPLIT FROM------------------->
-<!------------- This is a comment to show where the GST SEPCIAL TREATMNENT IS SPLIT FROM------------------->
-
-
+   :::
 
 ## Migration System Features-How to handle the GST Past Documents Opening Balance for Customer and Supplier
 
@@ -874,38 +885,43 @@ This guide will teach you the way to handle the past outstanding documents for C
 
 ### How to enter GST Past Documents
 
-#### Financial Start Period and System Conversation Date 
+#### Financial Start Period and System Conversation Date
 
 1. Let's said the company GST reporting period is **Monthly**. Under the Tools | Options... set the following:-
-**Financial Start Period** : 01 Jan 2016  
-**System Conversion Date** : 01 Feb 2016 (Cut-off Date for Opening Entry)
+   **Financial Start Period** : 01 Jan 2016  
+   **System Conversion Date** : 01 Feb 2016 (Cut-off Date for Opening Entry)
 
-:::note NOTE:
-It is not recommended to set the System Conversion Date fall within the quarterly GST reporting period.  
-Lets said the company GST reporting period is Quarterly.  
-                      GST effective date : 01 April 2015  
-You should set the System Conversion Date: 01 April 2016 or next quarter start date (ie. 01 July 2016).
-:::
+   :::note NOTE:
+
+   It is not recommended to set the System Conversion Date fall within the quarterly GST reporting period.  
+   Lets said the company GST reporting period is Quarterly.  
+
+                         GST effective date : 01 April 2015  
+
+   You should set the System Conversion Date: 01 April 2016 or next quarter start date (ie. 01 July 2016).
+   :::
 
 2. See below screenshot:
 
-![GST_Migration_2](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-FinancialStartandSystemConversion-1.jpg)  
+   ![GST_Migration_2](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-FinancialStartandSystemConversion-1.jpg)  
 
-#### GST Effective Date
+#### GST Effective Date (Bad Debt Relief)
 
 1. Let's assume the company is GST registered at 01 April 2015.  
 2. See below screenshot:
 
-![GST_Migration_3](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTEffectiveDate-1.jpg)  
+   ![GST_Migration_3](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTEffectiveDate-1.jpg)  
 
-:::note Important:
-It is very important to set the GST Effective Date where the GST commerce date started.  
-Bad debt relief will based on the GST Effective date. 
+   :::note Important:
 
-For example,  **GST effective date set on 1 April 2015** and **system conversion date is 1 Jan 2016**.  
-Pass document dated in 15 July 2015 **(it is after the GST effective date)**.  
-Therefore, the Bad Debt Relief will be process in GST Returns-Jan 2016 automatically.  
-:::
+   It is very important to set the GST Effective Date where the GST commerce date started.  
+   Bad debt relief will based on the GST Effective date.
+
+   For example,  **GST effective date set on 1 April 2015** and **system conversion date is 1 Jan 2016**.  
+   Pass document dated in 15 July 2015 **(it is after the GST effective date)**.  
+   Therefore, the Bad Debt Relief will be process in GST Returns-Jan 2016 automatically.
+
+   :::
 
 #### Enter the Past Documents (AR & AP)
 
@@ -916,68 +932,70 @@ Therefore, the Bad Debt Relief will be process in GST Returns-Jan 2016 automatic
 5. Save it.
 6. See screenshot below.
 
-**Screenshot 1: Past Invoice:**
+   **Screenshot 1: Past Invoice:**
 
-![GST_Migration_4](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-EnterPastDocuments-1.jpg)  
+   ![GST_Migration_4](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-EnterPastDocuments-1.jpg)  
 
-**Screenshot 2: Past Payment:**
+   **Screenshot 2: Past Payment:**
 
-![GST_Migration_5](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-EnterPastDocuments-2.jpg)  
+   ![GST_Migration_5](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-EnterPastDocuments-2.jpg)  
 
 7. Take note to the below table.
 
-| Action                                            | Where to Enter?                                                                 |
-|---------------------------------------------------|---------------------------------------------------------------------------------|
-| To enter the Customer Past Tax Invoice            | a. Go to Customer / Customer Invoice...                                         |
-|                                                   | b. Refer the above step 1.                                                      |
-| To enter the Supplier Past Tax Invoice            | a. Go to Supplier / Supplier Invoice...                                         |
-|                                                   | b. Refer the above step 1.                                                      |
-| To enter the Customer Past Non-Refundable Deposit (for SR, ZRL, ZRE) | a. Customer / Customer Payment...                                               |
-|                                                   | b. Refer the above step 1.                                                      |
-|                                                   | c. Tick the Non-Refundable checkbox (for SR only).                              |
-|                                                   | d. Untick the Non-Refundable checkbox (for ZRL & ZRE).                          |
+   | Action                                            | Where to Enter?                                                                 |
+   |---------------------------------------------------|---------------------------------------------------------------------------------|
+   | To enter the Customer Past Tax Invoice            | a. Go to Customer / Customer Invoice...                                         |
+   |                                                   | b. Refer the above step 1.                                                      |
+   | To enter the Supplier Past Tax Invoice            | a. Go to Supplier / Supplier Invoice...                                         |
+   |                                                   | b. Refer the above step 1.                                                      |
+   | To enter the Customer Past Non-Refundable Deposit (for SR, ZRL, ZRE) | a. Customer / Customer Payment...                 |
+   |                                                   | b. Refer the above step 1.                                                      |
+   |                                                   | c. Tick the Non-Refundable checkbox (for SR only).                              |
+   |                                                   | d. Untick the Non-Refundable checkbox (for ZRL & ZRE).                          |
 
 #### Enter the GST Taxable for Past Documents (AR & AP)
 
 1. Open the past tax invoice document.
 2. **Press CTRL + ALT + G**.... You able to assign the tax code (SR / ZRL / ZRE / TX / IM...etc), the taxable amount (eg. Rm 1,000.00) and the tax amount (eg. Rm 60.00) for past document.
 
-:::note Note:
-Document must be saved before **press CTRL + ALT + G**.
-:::
+   :::note Note:
+
+   Document must be saved before **press CTRL + ALT + G**.
+
+   :::
 
 3. Save it.
 4. See screenshot below.
 
-**Screenshot 3: GST Taxable:**
+   **Screenshot 3: GST Taxable:**
 
-![GST_Migration_6](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-EnterGSTTaxablePastDocuments-1.jpg)  
+   ![GST_Migration_6](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-EnterGSTTaxablePastDocuments-1.jpg)  
 
 5. Take note to the below table.
 
-| Action                                             | Where to Enter?                                                                 |
-|----------------------------------------------------|---------------------------------------------------------------------------------|
-| To enter GST Taxable for the Customer Past Tax Invoice | a. Go to Customer / Customer Invoice...                                         |
-|                                                    | b. Refer the above step 1.                                                      |
-|                                                    | c. Tax code commonly apply to this matter is SR / ZRL / ZRE / SL_AJP-BD (for bad debt relief claimed as input tax in old system). |
-| To enter GST Taxable for the Supplier Past Tax Invoice | a. Go to Supplier / Supplier Invoice...                                         |
-|                                                    | b. Refer the above step 1.                                                      |
-|                                                    | c. Tax code commonly apply to this matter is TX / IM / PH_AJS-BD (for bad debt relief paid as output tax in old system). |
-| To enter GST Taxable for the Customer Past Non-Refundable Deposit | a. Go to Customer / Customer Payment...                                         |
-|                                                    | b. Refer the above step 1.                                                      |
-|                                                    | c. Tax code commonly apply to this matter is SR.                                |
+   | Action                                             | Where to Enter?                                                                 |
+   |----------------------------------------------------|---------------------------------------------------------------------------------|
+   | To enter GST Taxable for the Customer Past Tax Invoice | a. Go to Customer / Customer Invoice...                                         |
+   |                                                    | b. Refer the above step 1.                                                      |
+   |                                                    | c. Tax code commonly apply to this matter is SR / ZRL / ZRE / SL_AJP-BD (for bad debt relief claimed as input tax in old system). |
+   | To enter GST Taxable for the Supplier Past Tax Invoice | a. Go to Supplier / Supplier Invoice...                                         |
+   |                                                    | b. Refer the above step 1.                                                      |
+   |                                                    | c. Tax code commonly apply to this matter is TX / IM / PH_AJS-BD (for bad debt relief paid as output tax in old system). |
+   | To enter GST Taxable for the Customer Past Non-Refundable Deposit | a. Go to Customer / Customer Payment...                                         |
+   |                                                    | b. Refer the above step 1.                                                      |
+   |                                                    | c. Tax code commonly apply to this matter is SR.                                |
 
 #### Past Documents GST Taxable Listing
 
 1. Select the date range to apply.
 
->  *date from* (GST effective date) and *date to* (before the system conversion date).
+   > *date from* (GST effective date) and *date to* (before the system conversion date).
 
 2. See screenshot below.
 
-Screenshot 4: GST Taxable Listing:
+   Screenshot 4: GST Taxable Listing:
 
-![GST_Migration_7](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-PastDocumentsGSTTaxableListing-1.jpg)  
+   ![GST_Migration_7](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-PastDocumentsGSTTaxableListing-1.jpg)  
 
 ### GST Returns
 
@@ -987,58 +1005,62 @@ Screenshot 4: GST Taxable Listing:
   ![GST_Migration_8](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTReturns-1.jpg)  
 
     2. Quarterly (eg. 01/02/2016 - 30/04/2016)  
-  ![GST_Migration_9](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTReturns-2.jpg) 
+  ![GST_Migration_9](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTReturns-2.jpg)
 
 2. Click to **Process**.
 
 3. **Past GST transactions** will generated automatically after click **Process**. See below screenshot.
 
-![GST_Migration_10](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTReturns-3.jpg) 
+   ![GST_Migration_10](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTReturns-3.jpg)
 
-:::note Tips:
-To check the past GST listing, click on **GST Listing** button.
-:::
+   :::note Tips:
+
+   To check the past GST listing, click on **GST Listing** button.
+
+   :::
 
 4. Current GST Returns will be processed at the same times. See below screenshot.
 
-![GST_Migration_11](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTReturns-4.jpg) 
+   ![GST_Migration_11](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-GSTReturns-4.jpg)
 
-### Special Cases 
+### Special Cases
 
 #### Case 1: Claim bad debt relief based on the outstanding in SQL Accounting
 
 1. Old System  
     1. invoice  
-    Invoice No: **IV-00001**  
-    Invoice Date: **10 Aug 2015**  
-    Invoice Doc Amount: **2,060.00**  
-    Invoice Details:  
+       Invoice No: **IV-00001**  
+       Invoice Date: **10 Aug 2015**  
+       Invoice Doc Amount: **2,060.00**  
+       Invoice Details:  
 
-    | Tax  | Local Amount | Local Tax Amount | SubTotal |
-    |------|--------------|------------------|----------|
-    | SR   | 1,000.00     | 60.00            | 1,060.00 |
-    | ZRL  | 1,000.00     | 0.00             | 1,000.00 |
-    | **Total** |              |                  | 2,060.00 |
+       | Tax  | Local Amount | Local Tax Amount | SubTotal |
+       |------|--------------|------------------|----------|
+       | SR   | 1,000.00     | 60.00            | 1,060.00 |
+       | ZRL  | 1,000.00     | 0.00             | 1,000.00 |
+       | **Total** |              |                  | 2,060.00 |
 
     2. Payment  
-     OR Date: **20 Aug 2015**    
-     Knock-Off Amount: **200.00**    
+        OR Date: **20 Aug 2015**
+        Knock-Off Amount: **200.00**
 
     3. Invoice Outstanding: **1,860.00**  
 
 2. SQL Account  
    1. Past Invoice:
-    Past Invoice No: **IV-00001**
-    Past Invoice Date: **10 Aug 2015**
-    Past Invoice Total: **1,860.00**
+       Past Invoice No: **IV-00001**
+       Past Invoice Date: **10 Aug 2015**
+       Past Invoice Total: **1,860.00**
 
-   :::note NOTE:
-   User should key-in the total outstanding in the Past Invoice, eg. 2,060.00 - 200.00 = **1,860.00**.
-   :::
+      :::note NOTE:
 
-   See example of **past invoice** in below screenshot.
+      User should key-in the total outstanding in the Past Invoice, eg. 2,060.00 - 200.00 = **1,860.00**.
 
-   ![GST_Migration_12](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-SpecialCase1-1.jpg)  
+      :::
+
+      See example of **past invoice** in below screenshot.
+
+      ![GST_Migration_12](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-SpecialCase1-1.jpg)  
 
    2. Past GST Taxable Detail:
 
@@ -1056,79 +1078,81 @@ OR
 
 See example of **past GST taxable** in below screenshot.
 
-![GST_Migration_13](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-SpecialCase1-2.jpg) 
+![GST_Migration_13](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-SpecialCase1-2.jpg)
 
 #### Case 2: Bad debt relief claimed and partial recover in Old System; partial or fully recover in SQL Account
 
 1. Old System
     1. Invoice:  
 
-    Invoice No: **IV-00002**
-    Invoice Date: **10 April 2015**
-    Invoice Doc Amount: **2,060.00**
-    Invoice Details:
+       Invoice No: **IV-00002**
+       Invoice Date: **10 April 2015**
+       Invoice Doc Amount: **2,060.00**
+       Invoice Details:
 
-    | Tax   | Local Amount | Local Tax Amount | SubTotal |
-    |-------|--------------|------------------|----------|
-    | SR    | 1,000.00     | 60.00            | 1,060.00 |
-    | ZRL   | 1,000.00     | 0.00             | 1,000.00 |
-    |                  |          |**Total** | **2,060.00** |
+       | Tax   | Local Amount | Local Tax Amount | SubTotal |
+       |-------|--------------|------------------|----------|
+       | SR    | 1,000.00     | 60.00            | 1,060.00 |
+       | ZRL   | 1,000.00     | 0.00             | 1,000.00 |
+       |                  |          |**Total** | **2,060.00** |
 
     2. Payment #1:
 
-    OR Date: **20 April 2015**
-    Knock-Off Amount: **200.00**
-    Bad Debt Relief detail from outstanding invoice:
+       OR Date: **20 April 2015**
+       Knock-Off Amount: **200.00**
+       Bad Debt Relief detail from outstanding invoice:
 
-    | Tax    | Local Amount | Local Tax Amount |
-    |--------|--------------|------------------|
-    | AJP-BD | 902.92       | 54.17            |
+       | Tax    | Local Amount | Local Tax Amount |
+       |--------|--------------|------------------|
+       | AJP-BD | 902.92       | 54.17            |
 
     3. Payment #2:
 
-    OR Date: **01 Nov 2015**
-    Knock-Off Amount: **400.00**
-    Bad Debt Recover details:
+       OR Date: **01 Nov 2015**
+       Knock-Off Amount: **400.00**
+       Bad Debt Recover details:
 
-    | Tax    | Local Amount | Local Tax Amount |
-    |--------|--------------|------------------|
-    | AJS-BD | 194.18       | 11.65            |
+       | Tax    | Local Amount | Local Tax Amount |
+       |--------|--------------|------------------|
+       | AJS-BD | 194.18       | 11.65            |
 
     4. Invoice Outstanding: 1,460.00
 
 2. SQL Account  
     1. Past Invoice:
 
-    Past Invoice No: **IV-00002**
-    Past Invoice Date: **10 April 2015**
-    Past Invoice Total: **1,460.00**
+       Past Invoice No: **IV-00002**
+       Past Invoice Date: **10 April 2015**
+       Past Invoice Total: **1,460.00**
 
-    :::note Note:
-    User should key-in the total outstanding in the Past Invoice, eg. 2,060.00 - 200.00 - 400.00= **1,460.00.**
-    :::
+       :::note Note:
 
-    See example of **past invoice** in below screenshot.
+       User should key-in the total outstanding in the Past Invoice, eg. 2,060.00 - 200.00 - 400.00= **1,460.00.**
 
-    ![GST_Migration_14](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-SpecialCase2-1.jpg) 
+       :::
+
+       See example of **past invoice** in below screenshot.
+
+       ![GST_Migration_14](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-SpecialCase2-1.jpg)
 
     2. Past GST Taxable Detail:
 
-    | Tax       | Taxable Amount | Local Tax Amount | SubTotal |
-    |-----------|----------------|------------------|----------|
-    | SL-AJP-BD | 708.74         | 42.52            | 751.26   |
+       | Tax       | Taxable Amount | Local Tax Amount | SubTotal |
+       |-----------|----------------|------------------|----------|
+       | SL-AJP-BD | 708.74         | 42.52            | 751.26   |
 
-:::note NOTE: 
-User no need to key-in the payment #1 and payment #2 in SQL Account.  
-Outstanding Taxable amount = 902.92 (Payment #1) - 194.18 (Payment #2) = **708.74**  
-Bad debt relief not recover = 54.17 (Payment #1) - 11.65 (Payment #2) = **42.52**  
-**Any current payment knock-off to the above invoice will automatically treat as bad debt recover in next taxable period**.  
-:::
+      :::note NOTE:
+
+      User no need to key-in the payment #1 and payment #2 in SQL Account.  
+      Outstanding Taxable amount = 902.92 (Payment #1) - 194.18 (Payment #2) = **708.74**  
+      Bad debt relief not recover = 54.17 (Payment #1) - 11.65 (Payment #2) = **42.52**  
+      **Any current payment knock-off to the above invoice will automatically treat as bad debt recover in next taxable period**.
+
+      :::
 
 See example of **past GST taxable** in below screenshot.
 
-![GST_Migration_15](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-SpecialCase2-2.jpg) 
-
-
+![GST_Migration_15](../../../static/img/usage/gst-and-sst/gst/HowToEnterGSTPastDocuments-SpecialCase2-2.jpg)
 
 ## GST - Payment to RMCD
 
@@ -1143,11 +1167,11 @@ See example of **past GST taxable** in below screenshot.
 4. Enter the description to describe the GST Payable for the period, eg. **GST Payable - Jan 2016**.
 5. Based on the GST Returns, enter the GST amount payable **(Rm836.04)** into the **Amount** column.
 
-![GST_RMCD_1](../../../static/img/usage/gst-and-sst/gst/PaymentToRMCD-1.jpg) 
+   ![GST_RMCD_1](../../../static/img/usage/gst-and-sst/gst/PaymentToRMCD-1.jpg)
 
 6. Save it. See the screenshot below.
 
-![GST_RMCD_2](../../../static/img/usage/gst-and-sst/gst/PaymentToRMCD-2.jpg) 
+   ![GST_RMCD_2](../../../static/img/usage/gst-and-sst/gst/PaymentToRMCD-2.jpg)
 
 ### Refund From RMCD
 
@@ -1157,11 +1181,11 @@ See example of **past GST taxable** in below screenshot.
 4. Enter the description to describe the GST Claimable for the period, eg. **GST Claimable - Feb 2016**.
 5. Based on the GST Returns, enter the GST amount claimable **(Rm2,402.04)** into the **Amount** column.
 
-![GST_RMCD_3](../../../static/img/usage/gst-and-sst/gst/RefundFromRMCD-1.jpg) 
+   ![GST_RMCD_3](../../../static/img/usage/gst-and-sst/gst/RefundFromRMCD-1.jpg)
 
 6. Save it. See the screenshot below.
 
-![GST_RMCD_4](../../../static/img/usage/gst-and-sst/gst/RefundFromRMCD-2.jpg) 
+   ![GST_RMCD_4](../../../static/img/usage/gst-and-sst/gst/RefundFromRMCD-2.jpg)
 
 ### GST - Kastam Account Inquiry
 
@@ -1170,103 +1194,109 @@ See example of **past GST taxable** in below screenshot.
 3. Click **Apply**.
 4. RMCD outstanding transactions will be display as below.
 
-![GST_RMCD_5](../../../static/img/usage/gst-and-sst/gst/KastamAccountInquiry-1.jpg) 
-
-
+   ![GST_RMCD_5](../../../static/img/usage/gst-and-sst/gst/KastamAccountInquiry-1.jpg)
 
 ## GST - GST-03 Amendment
 
 For those company who might asked and self report to RMCD for the GST-03 amendment. It could be because of applying wrong tax code or others reasons.
 Therefore, this guide will explain the features to perform amendment on the particular GST-03 and re-submit via TAP website.
 
-#### NOTIFICATION ON GST 03 RETURN AMENDMENT
+### Notification On GST 03 Return Amendment
 
-In accordance with **Regulation 69 of the GST Regulation 2014**, with **effect from 23 August 2016**, rules on return amendments are follows:  
+In accordance with **Regulation 69 of the GST Regulation 2014**, with **effect from 23 August 2016**, rules on return amendments are follows:
+
   1. There is **no limit** on return amendments until due date of submission of return.
   2. Amendment are allowed once within 30 days **(for monthly taxable period)** or 90 days **(for quarterly taxable period)** after last day of submission of return. Subsequent amendment are subject to approval by GST Officer.
   3. Amendment after the period stated in PARA 2 above are subject to approval by GST Officer.
   4. Amendment can be made through TAP but are subject to approval by GST Officer.
   5. Return amendments which are not approved by GST Officer is considered invalid and previous return made before the amendment will be accepted.
 
-### GST - 03 Amendment 
+### GST - 03 Amendment
 
 1. Highlight and right click on the GST-03 that you are required to resubmit as **amendment**.
 
-![GST_03_Amendment_1](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-1.jpg) 
+   ![GST_03_Amendment_1](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-1.jpg)
 
 2. Select **Unlock**.
 
-![GST_03_Amendment_2](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-2.jpg) 
+   ![GST_03_Amendment_2](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-2.jpg)
 
 3. Click on **No** to unlock this GST Return.
 
-![GST_03_Amendment_3](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-3.jpg) 
+   ![GST_03_Amendment_3](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-3.jpg)
 
-:::note Important:
-Read the message before take further actions.
-:::
+   :::note Important:
+
+   Read the message before take further actions.
+
+   :::
 
 4. Enter the ADMIN password.
 
-![GST_03_Amendment_4](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-4.jpg) 
+   ![GST_03_Amendment_4](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-4.jpg)
 
-:::note NOTE:
-ADMIN password only
-:::
+   :::note NOTE:
+
+   ADMIN password only
+
+   :::
 
 5. Status will added **Unlock** icon. It means users are allow to amend the documents for the month unlock, eg. the documents are able to amend in Oct 2015 only.
 
-![GST_03_Amendment_5](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-5.jpg) 
+   ![GST_03_Amendment_5](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-5.jpg)
 
-:::note NOTE:
-1. The month and all the subsequent month of GST-03 will converted to "Recalculate" action. It is depends on the amendment which might trigger the bad debt relief result changed.  
-2. All the subsequent month of GST-03 are not allow to amend the documents (eg. invoice, credit note, supplied invoice, etc), unless you have **Unlock** it.  
-:::
+   :::note NOTE:
+
+   1. The month and all the subsequent month of GST-03 will converted to "Recalculate" action. It is depends on the amendment which might trigger the bad debt relief result changed.
+   2. All the subsequent month of GST-03 are not allow to amend the documents (eg. invoice, credit note, supplied invoice, etc), unless you have **Unlock** it.  
+
+   :::
 
 6. For example, to correct the tax code from ZRL to SR for the invoice amount Rm2,500.00.
 
    1. Edit the invoice (eg. IV-00014 and date: 02 Oct 2015)
 
-   ![GST_03_Amendment_6](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-6.jpg) 
+      ![GST_03_Amendment_6](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-6.jpg)
 
-   ::: NOTE:
-   **Unlock** GST-03 is allow you to edit the documents only. 
-   :::
+      ::: NOTE:
+
+      **Unlock** GST-03 is allow you to edit the documents only.
+
+      :::
 
    2. Change the tax code from **ZRL** to **SR**.
    3. It will will resulting the **output tax increased by Rm150.00** (Rm2,500.00 X 6%).
 
-![GST_03_Amendment_7](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-7.jpg) 
+   ![GST_03_Amendment_7](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-7.jpg)
 
 7. Run **Recalculate** for the GST-03 (eg. Oct 2015)  
 8. System will prompt **Recalculat3 successfully**.
 
-![GST_03_Amendment_8](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-8.jpg)
+   ![GST_03_Amendment_8](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-8.jpg)
 
-9. Press ok to proceed.  
-10. A draft copy of GST-03 for Oct 2015 will create automatically. A previous GST-03 before perform any amendment to the taxable period will converted as **DRAFT** status.
+9. Press ok to proceed and a draft copy of GST-03 for Oct 2015 will create automatically. A previous GST-03 before perform any amendment to the taxable period will converted as **DRAFT** status.
 
-![GST_03_Amendment_9](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-9.jpg)
+   ![GST_03_Amendment_9](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-9.jpg)
 
-11. You can see the comparison in between **the draft (from Recalculate)** and **the Final GST-03** for the amendment taxable period.
+10. You can see the comparison in between **the draft (from Recalculate)** and **the Final GST-03** for the amendment taxable period.
 
-![GST_03_Amendment_10](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-10.jpg)
+   ![GST_03_Amendment_10](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-10.jpg)
 
-| Status                | Taxable Period     | Total Output Tax | Total Input Tax |
-|------------------------|--------------------|------------------|-----------------|
-|                   | 01 Oct - 31 Oct 2015 | 422,415.73       | 474,787.86      |
-| Draft                  | 01 Oct - 31 Oct 2015 | 422,265.73       | 474,787.86      |
-|   |  Increase/Decrease (-)                  | 150.00            | 0.00            |
+   | Status                | Taxable Period     | Total Output Tax | Total Input Tax |
+   |------------------------|--------------------|------------------|-----------------|
+   |                   | 01 Oct - 31 Oct 2015 | 422,415.73       | 474,787.86      |
+   | Draft                  | 01 Oct - 31 Oct 2015 | 422,265.73       | 474,787.86      |
+   |   |  Increase/Decrease (-)                  | 150.00            | 0.00            |
 
 ### How to know the GST - 03 has performed amendment
 
 1. You can find a **cross marked (X)** on the amendment column in the GST-03. See the screenshot below.
 
-![GST_03_Amendment_11](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-KnowGST03HasPerformedAmendment-1.jpg)
+   ![GST_03_Amendment_11](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-KnowGST03HasPerformedAmendment-1.jpg)
 
 2. At the GST Returns, insert a grid column **Amendment**. Usually, you will found **the ticked on the amendment column** for both DRAFT and final GST-03.
 
-![GST_03_Amendment_12](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-KnowGST03HasPerformedAmendment-2.jpg)
+   ![GST_03_Amendment_12](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-KnowGST03HasPerformedAmendment-2.jpg)
 
 ### How to unlock the subequent GST - 03 for amendment
 
@@ -1275,12 +1305,11 @@ ADMIN password only
 
 ![GST_03_Amendment_13](../../../static/img/usage/gst-and-sst/gst/GST03Amendment-UnlockGST03ForAmendment-1.jpg)
 
-
-
 ## How to Avoid Costly GST Errors
 
 This guide will help you to easily identify the common GST errors in GST Returns. To minimize GST amendment and incorrect GST Returns to RMCD.
 You may wish to take note the follow errors commonly made by businesses:
+
 1. Standard Rated Supply (5a) and Output Tax (5b)
 2. Stanadard Rate and Flat Rate Acquisitions (6a), and Input Tax (6b)
 3. Local Zero-Rated Supplies
@@ -1420,23 +1449,23 @@ This refer to the following types according to **GST (Exempt Supplies) Order 201
 
 #### How to check the transactions correctly entered?
 
-**A. GST Listing**
+***A. GST Listing***
 
 1. After GST Return processed, go to **Print GST Listing....**
 
-![GST_avoid_error_2](../../../static/img/usage/gst-and-sst/gst/AvoidGSTCost-CheckTransactionsEnteredCorrect-GSTListing-1.jpg)
+   ![GST_avoid_error_2](../../../static/img/usage/gst-and-sst/gst/AvoidGSTCost-CheckTransactionsEnteredCorrect-GSTListing-1.jpg)
 
 2. Preview and select the report name **GST Detail 2**.
 3. To ensure the **document detail descriptions** are clearly stated and map to the correct tax code.
 
-![GST_avoid_error_3](../../../static/img/usage/gst-and-sst/gst/AvoidGSTCost-CheckTransactionsEnteredCorrect-GSTListing-2.jpg)
+   ![GST_avoid_error_3](../../../static/img/usage/gst-and-sst/gst/AvoidGSTCost-CheckTransactionsEnteredCorrect-GSTListing-2.jpg)
 
-**B. GST-03**
+***B. GST-03***
 
-1. To quick do amendment before submit the GST-03 to RMCD. [Click here](../../usage/gst-and-sst/gst#gst---gst-03-amendment) to learn more about the **GST amendment**.
+1. To quick do amendment before submit the GST-03 to RMCD. [Click this link](../../usage/gst-and-sst/gst#gst---gst-03-amendment) to learn more about the **GST amendment**.
 2. Double click on the item 12 in GST-03.
 
-![GST_avoid_error_4](../../../static/img/usage/gst-and-sst/gst/AvoidGSTCost-CheckTransactionsEnteredCorrect-GST03-1.jpg)
+   ![GST_avoid_error_4](../../../static/img/usage/gst-and-sst/gst/AvoidGSTCost-CheckTransactionsEnteredCorrect-GST03-1.jpg)
 
 3. Drill down the documents to open and correct it accordingly.
 4. Lastly, you have to **Recalculate** the amended GST Return.
@@ -1458,7 +1487,7 @@ This refer to the following types according to **GST (Exempt Supplies) Order 201
 | 14     | Total Value of Goods Imported Under Approved Trader Scheme | **IS**           |
 | 15     | Total Value of GST Suspended under item 14             | **IS** x Tax Rate |
 
-### Capital Goods Acquired
+### Capital Goods Acquired (Avoid Costly GST Error)
 
 **Mapping of GST Tax Code:**
 
@@ -1474,7 +1503,6 @@ This refer to the following types according to **GST (Exempt Supplies) Order 201
 |--------|--------------------------------------------|---------------|
 | 17     | Total Value of Bad Debt Relief Inclusive Tax | **AJP (AR only)** |
 
-
 ### Bad Debt Recovered
 
 **Mapping of GST Tax Code:**
@@ -1483,7 +1511,7 @@ This refer to the following types according to **GST (Exempt Supplies) Order 201
 |--------|---------------------------------------------|---------------|
 | 18     | Total Value of Bad Debt Recovered Inclusive Tax | **AJS (AR only)** |
 
-### Output tax value breakdown into Major Indusctries Code (MSIC Code) 
+### Output tax value breakdown into Major Indusctries Code (MSIC Code)
 
 1. This part usually require you to breakdown the total output tax reported in 5b according to your **main business**.
 2. You have to map to [MSIC code](https://sites.google.com/site/sqlestream/sql-financial-accounting/9-good-and-service-tax-gst---malaysia/9-23-major-industries-code-msic).  
@@ -1521,17 +1549,17 @@ Record types are:-
 
 2. It comprises of 2 reports:-
 
-| Report Name              | GL Acc                  | Explanation                                                             |
-|--------------------------|------------------------|-------------------------------------------------------------------------|
-| 1. GST-Ledger-Vs-GST-03_5b | GST-201 (GST - Payable) | To reconcile the GST Payable account between the GL Ledger and GST-03 |
-| 2. GST-Ledger-Vs-GST-03_6b | GST-101 (GST - Claimable) | To reconcile the GST Claimable account between the GL Ledger and GST-03 |
+   | Report Name              | GL Acc                  | Explanation                                                             |
+   |--------------------------|------------------------|-------------------------------------------------------------------------|
+   | 1. GST-Ledger-Vs-GST-03_5b | GST-201 (GST - Payable) | To reconcile the GST Payable account between the GL Ledger and GST-03 |
+   | 2. GST-Ledger-Vs-GST-03_6b | GST-101 (GST - Claimable) | To reconcile the GST Claimable account between the GL Ledger and GST-03 |
 
 3. For example,
 
-Supplier invoice date (15 Sept 2016) received in Oct 2016 and GST-03 Sept 2016 has submitted. Input tax will be claim in Oct 2016 by set the tax date (31 Oct 2016). In GL Ledger, the input tax will be posted in Sept 2016. However, this input tax will be appear in GT-03 Oct 2016.
-With this **GST-Ledger-Vs-GST-03** report, you can very easy identify out the reasons. See the screenshot below.
+   Supplier invoice date (15 Sept 2016) received in Oct 2016 and GST-03 Sept 2016 has submitted. Input tax will be claim in Oct 2016 by set the tax date (31 Oct 2016). In GL Ledger, the input tax will be posted in Sept 2016. However, this input tax will be appear in GT-03 Oct 2016.
+   With this **GST-Ledger-Vs-GST-03** report, you can very easy identify out the reasons. See the screenshot below.
 
-![GST_avoid_error_6](../../../static/img/usage/gst-and-sst/gst/GLLedgerVSGST03-1.jpg)
+   ![GST_avoid_error_6](../../../static/img/usage/gst-and-sst/gst/GLLedgerVSGST03-1.jpg)
 
 ### Foreign Currency Exchange Rate
 
@@ -1544,8 +1572,6 @@ With this **GST-Ledger-Vs-GST-03** report, you can very easy identify out the re
 | USD      | Actual    | 4.3000        | 1,000.00 | 4,300.00     | 258.00     |
 |  |           |               |         |    **Under declared**          | -30.00     |
 
-
-
 ## Adjustment to negative value in GST-03
 
 1. Negative value in 5a5b and 6a6b.
@@ -1557,37 +1583,35 @@ With this **GST-Ledger-Vs-GST-03** report, you can very easy identify out the re
 
 1. **Output Tax (Negative)**
 
-| GST-03 | Value  |
-|--------|--------|
-| 5a     | -2,000 |
-| 5b     | -120   |
+   | GST-03 | Value  |
+   |--------|--------|
+   | 5a     | -2,000 |
+   | 5b     | -120   |
 
 2. **Journal Adjustment:**
 
-| GL Code  | Tax    | Tax Rate | Local DR | Local CR | Local DR(Tax) | Local CR(Tax) | GST-03       |
-|----------|--------|----------|----------|----------|---------------|---------------|--------------|
-| GST-103  | **AJP-OA** | 6%       | 2,000    |          | 2,120         |               | **6a = 0, 6b = 120** |
-| GST-103  | **SR**     | 6%       |          | 2,000    |               | 2,120         | **5a = 0, 5b = 0**   |
+   | GL Code  | Tax    | Tax Rate | Local DR | Local CR | Local DR(Tax) | Local CR(Tax) | GST-03       |
+   |----------|--------|----------|----------|----------|---------------|---------------|--------------|
+   | GST-103  | **AJP-OA** | 6%       | 2,000    |          | 2,120         |               | **6a = 0, 6b = 120** |
+   | GST-103  | **SR**     | 6%       |          | 2,000    |               | 2,120         | **5a = 0, 5b = 0**   |
 
-![GST_negative_value_2](../../../static/img/usage/gst-and-sst/gst/AdjustmentToNegativeValueInGST03-NegativeIn5a5b-1.jpg)
+   ![GST_negative_value_2](../../../static/img/usage/gst-and-sst/gst/AdjustmentToNegativeValueInGST03-NegativeIn5a5b-1.jpg)
 
 ### Negative in 6a6b
 
 1. **Input Tax (Negative)**
 
-| Items | Value  |
-|-------|--------|
-| 6a    | -1,000 |
-| 6b    | -60    |
+   | Items | Value  |
+   |-------|--------|
+   | 6a    | -1,000 |
+   | 6b    | -60    |
 
 2. **Journal Adjustment:**
 
-| GL Code  | Tax    | Tax Rate | Local DR | Local CR | Local DR(Tax) | Local CR(Tax) | GST-03       |
-|----------|--------|----------|----------|----------|---------------|---------------|--------------|
-| GST-103  | **TX**     | **6%**       | 1,000    |          | 1,060         |               | **6a = 0, 6b = 0** |
-| GST-103  | **AJS-OA** | **6%**       |          | 1,000    |               | 1,060         | **5a = 0, 5b = 60** |
-
-
+   | GL Code  | Tax    | Tax Rate | Local DR | Local CR | Local DR(Tax) | Local CR(Tax) | GST-03       |
+   |----------|--------|----------|----------|----------|---------------|---------------|--------------|
+   | GST-103  | **TX**     | **6%**       | 1,000    |          | 1,060         |               | **6a = 0, 6b = 0** |
+   | GST-103  | **AJS-OA** | **6%**       |          | 1,000    |               | 1,060         | **5a = 0, 5b = 60** |
 
 ## GST-Submission of Final GST Return
 
@@ -1612,28 +1636,32 @@ For example, on **13 SEPT 2018**, my company has received a supplier tax invoice
 1. Set **Date**.... to record the original invoice date (eg. **07 MAY 2018**).
 2. Set **Posting Date**... to post this transaction into GL reporting as at **13 SEP 2018**.
 
-:::note Note: 
-To enable to set Posting Date, the **Double Document Module** is required.
-:::
+   :::note Note:
+
+   To enable to set Posting Date, the **Double Document Module** is required.
+
+   :::
 
 3. Set **Tax Date**...to declare this GST input tax into **Final GST Returns (31 AUG 2018)**.
 
-![GST_Submission_final_4](../../../static/img/usage/gst-and-sst/gst/GSTSubmissionOfFinalGSTReturn-EnterAtPurchaseInvoice-2.jpg)
+   ![GST_Submission_final_4](../../../static/img/usage/gst-and-sst/gst/GSTSubmissionOfFinalGSTReturn-EnterAtPurchaseInvoice-2.jpg)
 
 #### Enter at Supplier Invoice
 
-![GST_Submission_final_5](../../../static/img/usage/gst-and-sst/gst/GSTSubmissionOfFinalGSTReturn-EnterAtSupplierInvoice-1.jpg)
+   ![GST_Submission_final_5](../../../static/img/usage/gst-and-sst/gst/GSTSubmissionOfFinalGSTReturn-EnterAtSupplierInvoice-1.jpg)
 
 1. Set **Date**.... to record the original invoice date (eg. **07 MAY 2018**).
 2. Set **Posting Date**... to post this transaction into GL reporting as **13 SEP 2018**.
 
-:::note Note: 
-To enable to set Posting Date, the **Double Document Module** is required.
-:::
+   :::note Note:
+
+   To enable to set Posting Date, the **Double Document Module** is required.
+
+   :::
 
 3. Set **Tax Date**...to declare this GST input tax into **Final GST Returns (31 AUG 2018)**.
 
-![GST_Submission_final_6](../../../static/img/usage/gst-and-sst/gst/GSTSubmissionOfFinalGSTReturn-EnterAtSupplierInvoice-2.jpg)
+   ![GST_Submission_final_6](../../../static/img/usage/gst-and-sst/gst/GSTSubmissionOfFinalGSTReturn-EnterAtSupplierInvoice-2.jpg)
 
 #### Enter at Cash Book (PV)
 
@@ -1643,7 +1671,7 @@ To enable to set Posting Date, the **Double Document Module** is required.
 2. Set **Posting Date**... to post this transaction into GL reporting as at **13 SEP 2018**.
 3. Set **Tax Date**...to declare this GST input tax into **Final GST Returns (31 AUG 2018)**.
 
-![GST_Submission_final_8](../../../static/img/usage/gst-and-sst/gst/GSTSubmissionOfFinalGSTReturn-EnterAtCashBook-2.jpg)
+   ![GST_Submission_final_8](../../../static/img/usage/gst-and-sst/gst/GSTSubmissionOfFinalGSTReturn-EnterAtCashBook-2.jpg)
 
 ### Final GST Returns
 
@@ -1654,11 +1682,12 @@ Process GST Returns up to **31 AUG 2018**.
 | 6a    | 10,000  |
 | 6b    | 600     |
 
-:::note NOTE: 
-* Final GST Returns until **31 AUG 2018**.
-* Last date of submission for the **Final GST Returns is 29 DEC 2018**
-:::
+   :::note NOTE:
 
+   1. Final GST Returns until **31 AUG 2018**.
+   2. Last date of submission for the **Final GST Returns is 29 DEC 2018**
+
+   :::
 
 ## Transitional (from GST to SST)
 
@@ -1676,47 +1705,45 @@ Process GST Returns up to **31 AUG 2018**.
 
 1. System will AUTO define the last taxable period **(A)**, eg...
 
-| Process From | Process To |
-|--------------|------------|
-| 01/07/2018   | 31/08/2018 |
+   | Process From | Process To |
+   |--------------|------------|
+   | 01/07/2018   | 31/08/2018 |
 
 2. Set the Process Date **(B)** as the date submit the Final GST return before 29 December 2018 (within 120 days from the SST effective date).  
 
    1. For example,
 
-   ![GST_Transitional_3](../../../static/img/usage/gst-and-sst/gst/Transitional-FinalGSTReturnProcessor-2.jpg)
+      ![GST_Transitional_3](../../../static/img/usage/gst-and-sst/gst/Transitional-FinalGSTReturnProcessor-2.jpg)
 
    2. Double entry for **Cases 1**.
 
-   ![GST_Transitional_4](../../../static/img/usage/gst-and-sst/gst/Transitional-FinalGSTReturnProcessor-3.jpg)
+      ![GST_Transitional_4](../../../static/img/usage/gst-and-sst/gst/Transitional-FinalGSTReturnProcessor-3.jpg)
 
    3. Double entry for **Cases 2**.
 
-   ![GST_Transitional_5](../../../static/img/usage/gst-and-sst/gst/Transitional-FinalGSTReturnProcessor-4.jpg)
-
-
+      ![GST_Transitional_5](../../../static/img/usage/gst-and-sst/gst/Transitional-FinalGSTReturnProcessor-4.jpg)
 
 ## GST Sales/Purchase Deferred Tax Journal Adjustment
 
 1. Double entry adjustment for the balance of GST Sales / Purchase Deferred Tax (Bad Debt Relief) AFTER 29 December 2018.
 2. Add the adjustment amount into Final GST Return (amendment).
 
-![GST_Tax_Journal_1](../../../static/img/usage/gst-and-sst/gst/SalesPurchaseDeferredTaxJournalAdjustment-1.jpg)
+   ![GST_Tax_Journal_1](../../../static/img/usage/gst-and-sst/gst/SalesPurchaseDeferredTaxJournalAdjustment-1.jpg)
 
 ### How to check the Sales / Purchase Bad Debt Recovered Amount after Final GST Returns
 
 1. Select a date **AFTER** the Final GST Return Date, eg. 28/02/2019.
 
-![GST_Tax_Journal_2](../../../static/img/usage/gst-and-sst/gst/CheckBadDebtReliefAfterFinalGSTReturns-1.jpg)
+   ![GST_Tax_Journal_2](../../../static/img/usage/gst-and-sst/gst/CheckBadDebtReliefAfterFinalGSTReturns-1.jpg)
 
 2. Choose **Process As Draft**.
 
-![GST_Tax_Journal_3](../../../static/img/usage/gst-and-sst/gst/CheckBadDebtReliefAfterFinalGSTReturns-2.jpg)
+   ![GST_Tax_Journal_3](../../../static/img/usage/gst-and-sst/gst/CheckBadDebtReliefAfterFinalGSTReturns-2.jpg)
 
 3. Click on **GST Return Draft** and **print GST Listing**.
 4. Filter the **Tax Date** (ie. greater than or equal to 30 December 2018).
 
-![GST_Tax_Journal_4](../../../static/img/usage/gst-and-sst/gst/CheckBadDebtReliefAfterFinalGSTReturns-3.jpg)
+   ![GST_Tax_Journal_4](../../../static/img/usage/gst-and-sst/gst/CheckBadDebtReliefAfterFinalGSTReturns-3.jpg)
 
 > **SL-AJS-BD** : Sales Bad Debt Recovered (Output Tax).  
 > **PH-AJP-BD** : Purchase Bad Debt Recovered (Input Tax).  
@@ -1727,15 +1754,15 @@ Process GST Returns up to **31 AUG 2018**.
 
 1. Based on the **GST Listing (Draft)**, post the GST Bad Debt Recovered double entry using **Journal Entry**.
 
-| GL Code    | GL Description            | Local DR | Local CR | Add to Final GST-03 |
-|------------|---------------------------|----------|----------|----------------------|
-| GST-202    | GST - Sales Deferred Tax  | 3,600    |          |                      |
-| GST-KASTAM | GST - Payable (KASTAM)    |          | 3,600    | 5(b), 18             |
+   | GL Code    | GL Description            | Local DR | Local CR | Add to Final GST-03 |
+   |------------|---------------------------|----------|----------|----------------------|
+   | GST-202    | GST - Sales Deferred Tax  | 3,600    |          |                      |
+   | GST-KASTAM | GST - Payable (KASTAM)    |          | 3,600    | 5(b), 18             |
 
 2. Amend the Final GST Return (Aug 2018) at TAP.
 3. Add the amount into
-  a. 5(b)
-  b. 18
+    a. 5(b)
+    b. 18
 
 ### Adjustment for GST Purchase Deferred Tax (PH-AJP-BD)
 
@@ -1743,16 +1770,16 @@ Process GST Returns up to **31 AUG 2018**.
 
 1. Based on the **GST Listing (Draft)**, post the GST Bad Debt Recovered double entry using **Journal Entry**.
 
-| GL Code     | GL Description              | Local DR | Local CR | Add to Final GST-03 |
-|-------------|-----------------------------|----------|----------|----------------------|
-| GST-KASTAM  | GST - Payable (KASTAM)      | 600      |          | 6(b)                |
-| GST-102     | GST - Purchase Deferred Tax |          | 600      |                      |
+   | GL Code     | GL Description              | Local DR | Local CR | Add to Final GST-03 |
+   |-------------|-----------------------------|----------|----------|----------------------|
+   | GST-KASTAM  | GST - Payable (KASTAM)      | 600      |          | 6(b)                |
+   | GST-102     | GST - Purchase Deferred Tax |          | 600      |                      |
 
 2. Amend the Final GST Return (Aug 2018) at TAP.
 3. Add the amount into
-  a. 6(b)
+    a. 6(b)
 
-### Payment to RMCD
+### Payment to RMCD (Tax Journal Adjustment)
 
 Made payment to RMCD, use **Cash Book Entry (PV)**.
 
@@ -1761,16 +1788,13 @@ Made payment to RMCD, use **Cash Book Entry (PV)**.
 | GST-KASTAM | GST - Payable (KASTAM) - Nett Balance | 3,000    |          |
 | BANK       | Bank Name                             |          | 3,000    |
 
-
-
-
 ## GST Special Treatment
 
 ## GST Margin Scheme
 
 How To Start the New Margin Scheme with Special Database?  
 
-GST is normally due on the full value of goods sold. The margin scheme allows a GST Margin Scheme registered person (GST MS registered person) who meets all the conditions to calculate and charge GST on the margin i.e. the difference between the price at which the goods were obtained and the selling price. If no margin is made (because the purchase price exceeds the selling price) then no GST is charged and payable. 
+GST is normally due on the full value of goods sold. The margin scheme allows a GST Margin Scheme registered person (GST MS registered person) who meets all the conditions to calculate and charge GST on the margin i.e. the difference between the price at which the goods were obtained and the selling price. If no margin is made (because the purchase price exceeds the selling price) then no GST is charged and payable.
 
 For the purpose of GST, margin under this scheme means the difference between selling price and purchase price. If there is any value being added to the eligible goods such as cost for repairing, this cost is part of the margin other than profit. In other words, the value added must be included in the selling price and not the purchase price.  
 
@@ -1797,11 +1821,13 @@ Last Customisation Update : **13 Sep 2016**
 
 #### History New/Updates/Changes
 
-**Last Customisation Update : 27 Nov 2015**
+***Last Customisation Update : 27 Nov 2015***
+
 - Move Cars Information to Maintain Project
 - Auto Capture Initial Cost on Select Project
 
-**Last Customisation Update : 20 Feb 2016**
+***Last Customisation Update : 20 Feb 2016***
+
 - Empty item code (eg. repairs) will not update the Project - Purchase Details.  
 - Run the **SQL Accounting Diagnosis - DB Patch** and apply the patch files can be download from [Patch-Margin Scheme-20160220.zip](http://www.sql.com.my/downloadfile/Fairy/Patch-MarginScheme-20160220.zip)  
 
@@ -1810,7 +1836,8 @@ Last Customisation Update : **13 Sep 2016**
     3. Click **Execute**.  
     4. Repeat step 2 - 3 and apply with another patch filename **Patch-MarginScheme-02-20160220**.  
 
-**Last Customisation Update : 08 Mar 2016**
+***Last Customisation Update : 08 Mar 2016***
+
 - Tax amount not equal to zero. Will prompt message "Cost will be tax excluded for GST Margin purpose" after save the purchase invoice.  
 - Run the **SQL Accounting Diagnosis - DB Patch** and apply the patch files can be download from [Patch-MarginScheme-20160308.zip](http://www.sql.com.my/document/Patch-MarginScheme-20160308.zip)
 
@@ -1820,18 +1847,20 @@ Last Customisation Update : **13 Sep 2016**
     4. Click **Execute**.
     5. Repeat step 2 - 4 and apply with another patch filename **UPDATE_PHPI_OnAfterSave_08.03.2016**.
 
-**Last Customisation Update : 08 Aug 2016**
+***Last Customisation Update : 08 Aug 2016***
+
 - To remove the compulsory action to select project code other than **Default Project (----)**.
-- Run the **SQL Accounting Diagnosis - DB Patch** and apply the patch files can be download from http://www.sql.com.my/document/Patch-MarginScheme-20160808.zip
+- Run the **SQL Accounting Diagnosis - DB Patch** and apply the patch files can be download from [This Link here](http://www.sql.com.my/document/Patch-MarginScheme-20160808.zip)
 
     1. Select the database file (eg.ACC-XXXXX.FDB).
     2. Unzip the patch file downloaded.
     3. Drag the patch filename **DELETE_SLIV_OnBeforerSave_2016.08.08**.
     4. Click **Execute**.
 
-**Last Customisation Update : 13 Sep 2016**
+***Last Customisation Update : 13 Sep 2016***
+
 - Margin Scheme options added in Maintain Project. It is allow to determine the car sold using GST margin scheme or GST standard calculation.
-- Run the **SQL Accounting Diagnosis - DB Patch** and apply the patch files can be download from http://www.sql.com.my/document/Patch-MarginScheme-20160913.zip
+- Run the **SQL Accounting Diagnosis - DB Patch** and apply the patch files can be download from [This Link here](http://www.sql.com.my/document/Patch-MarginScheme-20160913.zip)
 
     1. Select the database file (eg.ACC-XXXXX.FDB).
     2. Unzip the patch file downloaded.
@@ -1844,37 +1873,39 @@ Last Customisation Update : **13 Sep 2016**
    1. Go to Tools | DIY | SQL Control Center...
    2. Browse to Business Objects | Miscellaneous | **Project** | Project Fields
 
-     ![GST_ST_Margin_Scheme_2](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-1.jpg)
+      ![GST_ST_Margin_Scheme_2](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-1.jpg)
 
    3. Add new field name **MS** and the Data Type, Size, Sub Size, Caption, etc must follow the screenshot below. Click to Save button.
 
-     ![GST_ST_Margin_Scheme_3](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-2.jpg)
+      ![GST_ST_Margin_Scheme_3](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-2.jpg)
 
    4. Next, click on the existing **Margin Scheme** form. See the screenshot below.  
 
-     ![GST_ST_Margin_Scheme_4](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-3.jpg)
+      ![GST_ST_Margin_Scheme_4](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-3.jpg)
 
    5. Click on **Customize** button.
 
-     ![GST_ST_Margin_Scheme_5](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-4.jpg)
+      ![GST_ST_Margin_Scheme_5](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-4.jpg)
 
    6. Drag the **Margin Scheme** from Available Item list and drop under Purchase Details. See screenshow below.
 
-     ![GST_ST_Margin_Scheme_6](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-5.jpg)
+      ![GST_ST_Margin_Scheme_6](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-5.jpg)
 
    7. Lastly, click to Save button.
 
-     ![GST_ST_Margin_Scheme_7](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-6.jpg)
+      ![GST_ST_Margin_Scheme_7](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History-6.jpg)
 
 :::note NOTE:
+
 Patch files are applicable to old margin scheme database.  
+
 :::
 
-**Last Customisation Update : 09 Nov 2016**
+***Last Customisation Update : 09 Nov 2016***
 
 - Added **Stock Book Number** into Maintain Project. It will auto update project **Stock Book Number** key-in at purchase invoice **Ext. No**.
 - **Fixed the bug update project from Purchase Invoice on the First line only**.
-- Run the **SQL Accounting Diagnosis - DB Patch** and apply the patch files can be download from http://www.sql.com.my/document/Patch-MarginScheme-20161109.zip
+- Run the **SQL Accounting Diagnosis - DB Patch** and apply the patch files can be download from [Tjis Link Here](http://www.sql.com.my/document/Patch-MarginScheme-20161109.zip)
 
     1. Select the database file (eg.ACC-XXXXX.FDB).
     2. Unzip the patch file downloaded.
@@ -1887,73 +1918,73 @@ Patch files are applicable to old margin scheme database.
      1. Go to Tools | DIY | SQL Control Center...
      2. Browse to Business Objects | Miscellaneous | **Project** | Project Fields
 
-     ![GST_ST_Margin_Scheme_8](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-1.jpg)
+        ![GST_ST_Margin_Scheme_8](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-1.jpg)
 
      3. Add new field name **StkBookNo** and the Data Type, Size, Sub Size, Caption, etc **must follow the screenshot below**. Click to Save button.
 
-      ![GST_ST_Margin_Scheme_9](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-2.jpg)
+        ![GST_ST_Margin_Scheme_9](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-2.jpg)
 
      4. Next, click on the existing **Margin Scheme** form. See the screenshot below.
 
-     ![GST_ST_Margin_Scheme_10](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-3.jpg)
+        ![GST_ST_Margin_Scheme_10](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-3.jpg)
 
      5. Click on **Customize** button.
 
-     ![GST_ST_Margin_Scheme_11](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-4.jpg)
+        ![GST_ST_Margin_Scheme_11](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-4.jpg)
 
      6. Drag the **Stock Book No** from Available Item list and drop under Purchase Details. See screenshow below.
 
-     ![GST_ST_Margin_Scheme_12](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-5.jpg)
+        ![GST_ST_Margin_Scheme_12](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-5.jpg)
 
      7. Lastly, click to Save button.
 
-     ![GST_ST_Margin_Scheme_13](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-6.jpg)
+        ![GST_ST_Margin_Scheme_13](../../../static/img/usage/gst-and-sst/gst/GSTSpecialTreatment-History2-6.jpg)
 
 :::note NOTE:
 Patch files are applicable to old margin scheme database.  
 :::
 
-### Setup Master Data
+### Setup Master Data (SMD)
 
-#### Maintain Customer
+#### Maintain Customer (SMD)
 
 1. Create new buyer name (eg. company name or person name).
 2. Click on Tax tab to input the GST No (if applicable).
 
-![GST_ST_Margin_Scheme_14](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainCustomer-1.jpg)
+   ![GST_ST_Margin_Scheme_14](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainCustomer-1.jpg)
 
 3. Click on extra tab. You can enter the road tax, inspection and insurance reminder date for reference.
 
-![GST_ST_Margin_Scheme_15](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainCustomer-2.jpg)
+   ![GST_ST_Margin_Scheme_15](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainCustomer-2.jpg)
 
-#### Maintain Supplier
+#### Maintain Supplier (SMD)
 
 1. Create new seller name (eg. company name or person name).
 2. Click on Tax tab to input the GST No (if applicable).
 
-![GST_ST_Margin_Scheme_16](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainSupplier-1.jpg)
+   ![GST_ST_Margin_Scheme_16](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainSupplier-1.jpg)
 
-#### Maintain Stock Item
+#### Maintain Stock Item (SMD)
 
 1. Create the car model at Maintain Stock Item. For example, TOYOTA VIOS 1.5G(AT)
 2. Click on Vehicle tab to define this item is a "Vehicle".
 
-![GST_ST_Margin_Scheme_17](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainStockItem-1.jpg)
+   ![GST_ST_Margin_Scheme_17](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainStockItem-1.jpg)
 
-#### Maintain Project
+#### Maintain Project (SMD)
 
 1. Create the second car plate number in Maintain Project.
 2. Update the Vehicle detail.
 
-![GST_ST_Margin_Scheme_18](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainProject-1.jpg)
+   ![GST_ST_Margin_Scheme_18](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainProject-1.jpg)
 
 3. Tick on **Margin Scheme** if it is a second hand car plate number.
 
-![GST_ST_Margin_Scheme_19](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainProject-2.jpg)
+   ![GST_ST_Margin_Scheme_19](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainProject-2.jpg)
 
 4. Leave BLANK to Purchase Invoice Date, Purchase Invoice No and Cost. It will auto update when you are select the project code and save at the Purchase Invoice.  
 
-![GST_ST_Margin_Scheme_20](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainProject-3.jpg)
+   ![GST_ST_Margin_Scheme_20](../../../static/img/usage/gst-and-sst/gst/SetupMasterData-MaintainProject-3.jpg)
 
 ### Record Purchase of Second Hand Car Value
 
@@ -1961,24 +1992,23 @@ Patch files are applicable to old margin scheme database.
 2. You must select the correct car plate number from Project. (eg. PGE3333, AAA9999)
 3. Supplier GST No, Purchase invoice number, date and cost will be update automatically after you have save the purchase invoice.
 
-| Project: Purchase Detail | Update from                   |
-|--------------------------|--------------------------------|
-| Supplier GST No          | Maintain Supplier (GST No)     |
-| Purchase Invoice No      | Purchase Invoice (Doc No)      |
-| Purchase Invoice Date    | Purchase Invoice (Doc Date)    |
-| Cost                     | Purchase Invoice (Unit Price)  |
-| Stock Book No.           | Purchase Invoice (Ext No)      |
+   | Project: Purchase Detail | Update from                   |
+   |--------------------------|--------------------------------|
+   | Supplier GST No          | Maintain Supplier (GST No)     |
+   | Purchase Invoice No      | Purchase Invoice (Doc No)      |
+   | Purchase Invoice Date    | Purchase Invoice (Doc Date)    |
+   | Cost                     | Purchase Invoice (Unit Price)  |
+   | Stock Book No.           | Purchase Invoice (Ext No)      |
 
-![GST_ST_Margin_Scheme_21](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-1.jpg)
+   ![GST_ST_Margin_Scheme_21](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-1.jpg)
 
-:::note NOTE :   
+:::note NOTE :
 
 1. This information is required to show in Lampiran 07 -Monthly Report for Relief for Secondhand Goods or Margin Scheme (MS).  
 
 2. Auto update to project purchase detail (Purchase No, Purchase Date and Cost) if tax amount is zero.  
 
 :::
-
 
 ### Record Sale of Second Hand Car Value
 
@@ -1994,7 +2024,7 @@ Patch files are applicable to old margin scheme database.
    3. Margin = 90,113.69 – 30,000.00 = 60,113.69  
    4. Tax amount = 60,113.69 x 6/106 = 3,402.66  
 
-![GST_ST_Margin_Scheme_22](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-MarginSchemeInput-1.jpg)
+   ![GST_ST_Margin_Scheme_22](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-MarginSchemeInput-1.jpg)
 
 5. Invoice no, invoice date, selling price, margin, and margin tax amount will be shown in Lampiran 07 -Monthly Report for Relief for Secondhand Goods or Margin Scheme (MS)
 
@@ -2002,27 +2032,25 @@ Patch files are applicable to old margin scheme database.
 
 1. Customer Particular tab.
 
-![GST_ST_Margin_Scheme_23](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-OtherInformation-1.jpg)
+   ![GST_ST_Margin_Scheme_23](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-OtherInformation-1.jpg)
 
 2. Deposit Info (For record purpose, no posting to account).
 
-![GST_ST_Margin_Scheme_24](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-OtherInformation-2.jpg)
+   ![GST_ST_Margin_Scheme_24](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-OtherInformation-2.jpg)
 
 3. Vehichle Detail (Auto retrieve from Vehicle Detail in Maintain Project).
 
-![GST_ST_Margin_Scheme_25](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-OtherInformation-3.jpg)
+   ![GST_ST_Margin_Scheme_25](../../../static/img/usage/gst-and-sst/gst/RecordPurchaseOfSecondHandCarValue-OtherInformation-3.jpg)
 
 ### Print for Lampiran 07 (Lampiran B0-Penyata-Pemantauan-SM-Syarikat)
 
 1. Select document to “Invoice Listing” and click APPLY.
 
-![GST_ST_Margin_Scheme_26](../../../static/img/usage/gst-and-sst/gst/PrintForLampiran07-1.jpg)
+   ![GST_ST_Margin_Scheme_26](../../../static/img/usage/gst-and-sst/gst/PrintForLampiran07-1.jpg)
 
 2. Click on preview or print. Select the report name “Lampiran B0-Penyata-Pemantauan-SM-Syarikat”.
 
-![GST_ST_Margin_Scheme_27](../../../static/img/usage/gst-and-sst/gst/PrintForLampiran07-2.jpg)
-
-
+   ![GST_ST_Margin_Scheme_27](../../../static/img/usage/gst-and-sst/gst/PrintForLampiran07-2.jpg)
 
 ## GST Treatment: Import Goods (IM)
 
@@ -2032,7 +2060,7 @@ Purchase of goods from oversea supplier, the supplier invoice received will not 
 
 ### GST Importation of Goods (IM)
 
-#### Tax Code
+#### Tax Code for Importion of Goods
 
 You can found the following tax code available in SQL Financial Accounting.
 
@@ -2046,7 +2074,7 @@ You can found the following tax code available in SQL Financial Accounting.
 1. Create the oversea supplier invoice at Purchase Invoice.
 2. Select the tax code “IM-0”. Tax amount = 0.00
 
-![GST_ST_Imported_Goods_1](../../../static/img/usage/gst-and-sst/gst/OverseasSupplierInvoice-1.jpg)
+   ![GST_ST_Imported_Goods_1](../../../static/img/usage/gst-and-sst/gst/OverseasSupplierInvoice-1.jpg)
 
 ### Received Forwarder Notification from K1 /Invoice
 
@@ -2069,11 +2097,12 @@ Usually, the forwarder will invoice to the principal company for the following d
 | Duty Processing Fee                | 100.00    | 6.00  | 106.00      |
 | **Total Payable**                  |           |       | **236.52**  |  
 
-:::note NOTE : 
+:::note NOTE :
 
 GST Import can be calculated in different way. It might based on total weight (ie. weight x container) or total meter square (ie,meter square x container).  
 For example,
 GST Import = 30,000m2 x 10 containers x 6% = RM18,000.00
+
 :::
 
 ### Forwarder Invoice Entry (Purchase Invoice)
@@ -2087,31 +2116,31 @@ GST Import = 30,000m2 x 10 containers x 6% = RM18,000.00
     - Import Curr.Code (for display only)
     - Import Curr Rate (for display only)
 
-![GST_ST_Imported_Goods_2](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-1.jpg)
+   ![GST_ST_Imported_Goods_2](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-1.jpg)
 
 3. Click on the side button in the Import Purchase Amt column. See screenshot below.
 
-![GST_ST_Imported_Goods_3](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-2.jpg)
+   ![GST_ST_Imported_Goods_3](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-2.jpg)
 
 4. You have to input the info according to 2.3. Received Forwarder Notification from K1 /Invoice example.
 
-| Field Name         | Input Value | Explanation                         |
-|--------------------|-------------|-------------------------------------|
-| Currency Code      | USD         | Currency of the goods purchased     |
-| Currency Rate      | 3.85        | Follow K1 exchange rate             |
-| Purchase Amount    | 300.00      | Goods foreign value as stated in K1 |
-| Custom Local Amount| 1,212.50    | Follow K1 total taxable amount      |
-|                    |             | = Purchase Amount + Custom Duty + Excise Duty (if any) |
-| Tax                | IM 6%       | Import GST at 6%                    |
-| Tax Amount         | 72.77       | = 1,212.75 × 6%                     |
-| Permit No          | K1-3232323  | Key-in the K1 number                |  
+   | Field Name         | Input Value | Explanation                         |
+   |--------------------|-------------|-------------------------------------|
+   | Currency Code      | USD         | Currency of the goods purchased     |
+   | Currency Rate      | 3.85        | Follow K1 exchange rate             |
+   | Purchase Amount    | 300.00      | Goods foreign value as stated in K1 |
+   | Custom Local Amount| 1,212.50    | Follow K1 total taxable amount      |
+   |                    |             | = Purchase Amount + Custom Duty + Excise Duty (if any) |
+   | Tax                | IM 6%       | Import GST at 6%                    |
+   | Tax Amount         | 72.77       | = 1,212.75 × 6%                     |
+   | Permit No          | K1-3232323  | Key-in the K1 number                |  
 
-![GST_ST_Imported_Goods_4](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-3.jpg)
+   ![GST_ST_Imported_Goods_4](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-3.jpg)
 
 5. After press OK to exit the GST Import screen, the purchase invoice item description will be updated as “Purchase Value USD 300.00@3.8500 = RM 1,155.00, Permit No: K1-32323232” from the GST Import entered.
 6. Below is the sample of Forwarder invoice entry.  
 
-![GST_ST_Imported_Goods_5](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-4.jpg)
+    ![GST_ST_Imported_Goods_5](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-4.jpg)
 
 In summary:  
 
@@ -2141,6 +2170,7 @@ All imported goods, both dutiable or not, must be declared in the prescribed for
     - Clear dutiable cargo slowly out from bonded warehouse. K8 declares for the container truck into bonded warehouse and K9 clears the cargo partial by partial out from the warehouse probably due to high duty charges.
 
 Supporting documents for the declaration forms are as follows:
+
 1. Delivery order
 2. Packing list
 3. Original invoice
@@ -2148,13 +2178,12 @@ Supporting documents for the declaration forms are as follows:
 5. Certificate of origin
 6. Import licenses which may be required by a proper officer of customs
 
-
-
-## GST Treatment: ATS 
+## GST Treatment: ATS
 
 **Approved Trader Scheme (ATS)** is a special schemes are introduced to relieve GST payment on importation of goods.
 
-Section 71 under ATS,  
+Section 71 under ATS,
+
 1. ATS participants are allowed to suspend GST on the importation of goods.
 2. Goods imported is used in the course or furtherance of business.
 3. The amount of GST suspended needs to be declared in the GST return (for the taxable period to which the suspension relates).
@@ -2174,7 +2203,7 @@ Persons eligible for ATS
 
 ### ATS
 
-#### Tax Code
+#### Tax Code for ATS
 
 | Tax Code | Description                                                                                                                                                                                                                                                     | Tax Rate % |
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
@@ -2202,8 +2231,6 @@ Persons eligible for ATS
 
 ![GST_ATS_3](../../../static/img/usage/gst-and-sst/gst/GSTTreatement-GSTReturnProcess-1.jpg)
 
-
-
 ## GST Treatment: Non-Refundable Deposit
 
 How to enter the non-refundable deposit accounted to **Standard Rated** (SR) and **Zero Rated**(ZRL & ZRE) to reflect in GST-03 submission?  
@@ -2226,21 +2253,21 @@ This guide will help you out. All non-refundable deposit amount are inclusive ta
 3. **Tick Non-Refundable** for **GST not equal to 0%**.
 4. See the screenshot below.
 
-![GST_nonRefundable_deposit_1](../../../static/img/usage/gst-and-sst/gst/CustomerPayment-NonRefundable-1.jpg)
+   ![GST_nonRefundable_deposit_1](../../../static/img/usage/gst-and-sst/gst/CustomerPayment-NonRefundable-1.jpg)
 
 5. Process GST Returns (GST | New GST Returns...).
 6. Print the GST-03.
 
-**GST-03 results:-**
+   **GST-03 results:-**
 
-| GST-03 Item | Description                                                                    | Local Amount |
-|-------------|--------------------------------------------------------------------------------|--------------|
-| 5a          | Total Value of Standard Rated Supply                                           | **9,433.96**     |
-| 5b          | Total Output Tax (Inclusive of Tax Value on Bad Debt Recovered & other Adjustments) | **566.04**       |
+   | GST-03 Item | Description                                                                    | Local Amount |
+   |-------------|--------------------------------------------------------------------------------|--------------|
+   | 5a          | Total Value of Standard Rated Supply                                           | **9,433.96**     |
+   | 5b          | Total Output Tax (Inclusive of Tax Value on Bad Debt Recovered & other Adjustments) | **566.04**       |
 
 7. See the GST-03 screenshot below.
 
-![GST_nonRefundable_deposit_2](../../../static/img/usage/gst-and-sst/gst/CustomerPayment-NonRefundable-2.jpg)
+   ![GST_nonRefundable_deposit_2](../../../static/img/usage/gst-and-sst/gst/CustomerPayment-NonRefundable-2.jpg)
 
 #### Non-Refundable (ZR)
 
@@ -2250,22 +2277,20 @@ This guide will help you out. All non-refundable deposit amount are inclusive ta
 4. Press **CTRL + ALT + G**.
 5. Enter the tax transactions. See the **GST Taxable** detail in the screenshot below.
 
-![GST_nonRefundable_deposit_3](../../../static/img/usage/gst-and-sst/gst/CustomerPayment-NonRefundable-3.jpg)
+   ![GST_nonRefundable_deposit_3](../../../static/img/usage/gst-and-sst/gst/CustomerPayment-NonRefundable-3.jpg)
 
-5. Process GST Returns (GST | New GST Returns...).
-6. Print the GST-03.
+6. Process GST Returns (GST | New GST Returns...).
+7. Print the GST-03.
 
-**GST-03 results:-**
+   **GST-03 results:-**
 
-| GST-03 Item | Description                       | Local Amount |
-|-------------|-----------------------------------|--------------|
-| 11          | Total Value of Export Supplies (ZRE) | 25,000.00    |
+   | GST-03 Item | Description                       | Local Amount |
+   |-------------|-----------------------------------|--------------|
+   | 11          | Total Value of Export Supplies (ZRE) | 25,000.00    |
 
-7. See the GST-03 screenshot below.
+8. See the GST-03 screenshot below.
 
-![GST_nonRefundable_deposit_4](../../../static/img/usage/gst-and-sst/gst/CustomerPayment-NonRefundable-4.jpg)
-
-
+   ![GST_nonRefundable_deposit_4](../../../static/img/usage/gst-and-sst/gst/CustomerPayment-NonRefundable-4.jpg)
 
 ## GST Treatment: How to report GST-03 item 16 Capital Goods Acquired for Purchase of machinery from Oversea
 
@@ -2277,7 +2302,6 @@ Understand that Custom will use GST valuation to compute the GST amt and stated 
 **Question:**  
 Which amount should I reported in GST-03 item 16 Capital Goods Acquired? Rm63,000 or Rm75,000?
 
-
 **Answer from RMCD:**  
 GST-03 item 16 Capital Goods Acquired = Rm75,000.  
 
@@ -2285,22 +2309,22 @@ GST-03 item 16 Capital Goods Acquired = Rm75,000.
 
 1. Oversea supplier bill enter at purchase/supplier invoice as usual.
 
-| Account          | Local DR  | Local CR  |
-|------------------|-----------|-----------|
-| Machinery        | 63,000.00 |           |
-| Oversea supplier |           | 63,000.00 |
+   | Account          | Local DR  | Local CR  |
+   |------------------|-----------|-----------|
+   | Machinery        | 63,000.00 |           |
+   | Oversea supplier |           | 63,000.00 |
 
 2. When it comes to the forwarder bill after declaring the import goods, you must follow our GST Import Goods guideline. Refer to this link [1](../../usage/gst-and-sst/gst#gst-treatment-import-goods-im).
 
 3. You just have to select Fixed Asset Account at the item line updated from the GST Imports screen. (**Don't worry, Rm75,000 fixed asset will not post into your account book**). See the screenshot attached.
 
-![GST_report_GST-03_1](../../../static/img/usage/gst-and-sst/gst/WhichAmountToReportInGST03item16CapitalGoods-1.jpg)
+   ![GST_report_GST-03_1](../../../static/img/usage/gst-and-sst/gst/WhichAmountToReportInGST03item16CapitalGoods-1.jpg)
 
-:::note NOTE: 
-For GST-03 purpose, this is to report into item 16 Capital Goods Acquired for the import of machinery value as stated in the K1 form. Your account book still recorded as Rm63,000 in step 1.
-:::
+   :::note NOTE:
 
+   For GST-03 purpose, this is to report into item 16 Capital Goods Acquired for the import of machinery value as stated in the K1 form. Your account book still recorded as Rm63,000 in step 1.
 
+   :::
 
 ## GST Treatment: Free Industrial Zone(FIZ) and Licensed Manufacturing Warehouse(LMW)
 
@@ -2308,6 +2332,7 @@ This guide will teach you the way to key-in the data entry related to GST treatm
 Under GST system, a person operating in a FIZ or having LMW status is treated as any person carrying out a business in Malaysia where normal rules of GST apply. This means that acquisition of goods locally or imported by the person operating in a FIZ or having LMW status is subject to GST. However, the person operating in a FIZ or having LMW status is eligible to apply for Approved Trader Scheme (ATS) to allow the Director General to suspend the payment of GST on imported goods at the time of importation. For further details, please refer to the guide on Approved Trader Scheme (ATS) and [SQL Accounting on ATS](http://www.sql.com.my/document/sqlacc_docs/PDF/GST36-Input_Entry_for_ATS.pdf)
 
 Subject to GST:
+
 1. Based on **transaction value**. GST = transaction value x (SR or ZR) %:
 
     1. FIZ Local sell to FIZ Local → SR  
@@ -2318,85 +2343,87 @@ Subject to GST:
 
     1. FIZ/LMW local sell to non-FIZ/LMW → SR
 
-For example (**FIZ/LMW local sell to non-FIZ/LMW**),
+   For example (**FIZ/LMW local sell to non-FIZ/LMW**),
 
-| Item | Item Description | Qty     | Unit Price (RM) | Value (RM) | Import Duty (RM) |
-|------|------------------|---------|-----------------|------------|------------------|
-| 1    | Shirts           | 300 pcs | 25.00           | 7,500.00   | **1,500.00**         |
-| 2    | Paints           | 100 pcs | 30.00           | 3,000.00   | **600.00**           |
-|      |                  |         |    **Total**    | 10,500.00  | **2,100.00**         |  
+   | Item | Item Description | Qty     | Unit Price (RM) | Value (RM) | Import Duty (RM) |
+   |------|------------------|---------|-----------------|------------|------------------|
+   | 1    | Shirts           | 300 pcs | 25.00           | 7,500.00   | **1,500.00**         |
+   | 2    | Paints           | 100 pcs | 30.00           | 3,000.00   | **600.00**           |
+   |      |                  |         |    **Total**    | 10,500.00  | **2,100.00**         |  
 
-*Assuming 20% import duty (RM10,500 x 20% = 2,100.00)*
+   ***Assuming 20% import duty (RM10,500 x 20% = 2,100.00)***
 
-GST on value + Import Duty are subject to GST (SR) = (10,500.00 + 2,100.00) x 6% = **756.00**
+   GST on value + Import Duty are subject to GST (SR) = (10,500.00 + 2,100.00) x 6% = **756.00**
 
-Therefore, the Tax Invoice will be presented as per below:
+   Therefore, the Tax Invoice will be presented as per below:
 
-| Item | Item Description | Qty     | Unit Price (RM) | Value (RM) |
-|------|------------------|---------|-----------------|------------|
-| 1    | Shirt            | 300 pcs | 25.00           | 7,500.00   |
-| 2    | Paints           | 100 pcs | 30.00           | 3,000.00   |
-|      | GST (SR-6%)  |         |                 | 756.00     |
-|      | Total Amount Payable | |                 | 11,256.00  |
+   | Item | Item Description | Qty     | Unit Price (RM) | Value (RM) |
+   |------|------------------|---------|-----------------|------------|
+   | 1    | Shirt            | 300 pcs | 25.00           | 7,500.00   |
+   | 2    | Paints           | 100 pcs | 30.00           | 3,000.00   |
+   |      | GST (SR-6%)  |         |                 | 756.00     |
+   |      | Total Amount Payable | |                 | 11,256.00  |
 
 ### How to enter the Tax Invoice if there is a FIZ/LMW transactions to another party?
 
 According to the example mentioned in above.
+
 1. Insert and select the stock items sold with empty tax code. Because the stock items are under FIZ/LMW control.
 
-| Item Code | Description | Qty     | Unit Price | Subtotal | Tax Code | Tax Amount | SubTotal (Tax) |
-|-----------|-------------|---------|------------|----------|----------|------------|----------------|
-| SHIRT     | SHIRTS      | 300 pcs | 25.00      | 7,500.00 |   BLANK  | 0.00       | 7,500.00       |
-| PAINTS    | PAINTS      | 100 pcs | 30.00      | 3,000.00 |   BLANK  | 0.00       | 3,000.00       |
+   | Item Code | Description | Qty     | Unit Price | Subtotal | Tax Code | Tax Amount | SubTotal (Tax) |
+   |-----------|-------------|---------|------------|----------|----------|------------|----------------|
+   | SHIRT     | SHIRTS      | 300 pcs | 25.00      | 7,500.00 |   BLANK  | 0.00       | 7,500.00       |
+   | PAINTS    | PAINTS      | 100 pcs | 30.00      | 3,000.00 |   BLANK  | 0.00       | 3,000.00       |
 
 2. Inser new row and enter the GST on total supply value (Rm7500 + Rm3000 = Rm10,500) direct into Taxable Amount column (C1)
 
-| Description              | Taxable Amount | Tax Code | Tax Amount | SubTotal(Tax) |
-|---------------------------|----------------|----------|------------|---------------|
-| GST on value Rm10,500.00 | 10,500.00      | SR       | 630.00     | 630.00        |
+   | Description              | Taxable Amount | Tax Code | Tax Amount | SubTotal(Tax) |
+   |---------------------------|----------------|----------|------------|---------------|
+   | GST on value Rm10,500.00 | 10,500.00      | SR       | 630.00     | 630.00        |
 
-![GST_free_licensed_1](../../../static/img/usage/gst-and-sst/gst/EnterTaxInvoiceIfFIZLMWTransactionsToAnotherParty-1.jpg)
-:::note NOTE : 
+   ![GST_free_licensed_1](../../../static/img/usage/gst-and-sst/gst/EnterTaxInvoiceIfFIZLMWTransactionsToAnotherParty-1.jpg)\
 
-A1 : Key-in "GST on value" into description.  
+   :::note NOTE :
 
-B1 : Must select tax code.  
+   A1 : Key-in "GST on value" into description.  
 
-C1 : Key-in the Total Supply Value into Taxable Amount.  
-:::
+   B1 : Must select tax code.  
+
+   C1 : Key-in the Total Supply Value into Taxable Amount.  
+
+   :::
 
 3. Insert new row and enter the GST on total Import Duty (Rm1,500 + Rm600.00 = Rm2,100) direct into Taxable Amount column (C2)
 
-| Description              | Taxable Amount | Tax Code | Tax Amount | SubTotal(Tax) |
-|---------------------------|----------------|----------|------------|---------------|
-| GST on Import Duty 20%   | 2,100.00       | SR       | 126.00     | 126.00        |
+   | Description              | Taxable Amount | Tax Code | Tax Amount | SubTotal(Tax) |
+   |---------------------------|----------------|----------|------------|---------------|
+   | GST on Import Duty 20%   | 2,100.00       | SR       | 126.00     | 126.00        |
 
-![GST_free_licensed_2](../../../static/img/usage/gst-and-sst/gst/EnterTaxInvoiceIfFIZLMWTransactionsToAnotherParty-2.jpg)
+   ![GST_free_licensed_2](../../../static/img/usage/gst-and-sst/gst/EnterTaxInvoiceIfFIZLMWTransactionsToAnotherParty-2.jpg)
 
-:::note NOTE : 
+   :::note NOTE :
 
-A2 : Key-in "GST on Import Duty" into description.  
+   A2 : Key-in "GST on Import Duty" into description.  
 
-B2 : Must select tax code.  
+   B2 : Must select tax code.  
 
-C2 : Key-in the Total Import Duty value into Taxable Amount.  
-:::
+   C2 : Key-in the Total Import Duty value into Taxable Amount.  
 
-### GST Return
+   :::
+
+### GST Return (FIZ and LMW)
 
 1. Process GST Return for the month
 2. Click on print GST-03
 
-![GST_free_licensed_3](../../../static/img/usage/gst-and-sst/gst/EnterTaxInvoiceIfFIZLMWTransactionsToAnotherParty-GSTReturn-1.jpg)
+   ![GST_free_licensed_3](../../../static/img/usage/gst-and-sst/gst/EnterTaxInvoiceIfFIZLMWTransactionsToAnotherParty-GSTReturn-1.jpg)
 
-:::note RESULTS : 
+:::note RESULTS :
 
 5a Total value of supplies = 12,600.00  
 
 5b total output tax = 756.00  
 :::
-
-
 
 ## GST Treatment: Construction Business
 
@@ -2475,19 +2502,19 @@ Lastly, the **sum of retention** will be invoiced after the full inspection of w
 | A4               | 300,000                  | 300,000 – 150,000 = 150,000    | 150,000 × 5% = 7,500   | 142,500                | 8,550      |
 | **Total**        |                          | **Total Value of Work** = 300,000 | **Total Retention** = 15,000 | 285,000            | 17,100 |
 
-**1st Interim - Tax Invoice**
+***1st Interim - Tax Invoice***
 
 ![GST_contruction_1](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ConstructionBusiness-ProgressBilling-1.jpg)
 
-**2nd Interim - Tax Invoice**
+***2nd Interim - Tax Invoice***
 
 ![GST_contruction_2](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ConstructionBusiness-ProgressBilling-2.jpg)
 
-**3rd Interim - Tax Invoice**
+***3rd Interim - Tax Invoice***
 
 ![GST_contruction_3](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ConstructionBusiness-ProgressBilling-3.jpg)
 
-**4th Interim = Tax Invoice**
+***4th Interim = Tax Invoice***
 
 ![GST_contruction_4](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ConstructionBusiness-ProgressBilling-4.jpg)
 
@@ -2501,12 +2528,14 @@ Lastly, the **sum of retention** will be invoiced after the full inspection of w
 | R4                  | 7,500     | 450        |
 | Total               | 15,000    | 900        |
 
-**Total Retention - Tax Invoice**
+***Total Retention - Tax Invoice***
 
 ![GST_contruction_5](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ConstructionBusiness-RetentionBilling-1.jpg)
 
-:::note NOTE: 
+:::note NOTE:
+
 GL Account : 399-999 - Retention (Create under the Current Asset)
+
 :::
 
 ### Value of Material and Works Report by Project
@@ -2514,17 +2543,14 @@ GL Account : 399-999 - Retention (Create under the Current Asset)
 1. To check the total value of material and works balance report. See the screenshot below.
 2. You can see the total value of material and works adjusted with **final result: Rm300,000.**
 
-![GST_contruction_6](../../../static/img/usage/gst-and-sst/gst/ValueOfMaterialAndWorksByProject-1.jpg)
+   ![GST_contruction_6](../../../static/img/usage/gst-and-sst/gst/ValueOfMaterialAndWorksByProject-1.jpg)
 
-
-### Retention Report By Project 
+### Retention Report By Project
 
 1. To check the retention balance report. See the screenshot below.
 2. If the retention balance is zero, it means the full settlement of retention sum.
 
-![GST_contruction_7](../../../static/img/usage/gst-and-sst/gst/RetentionReportByProject-1.jpg)
-
-
+   ![GST_contruction_7](../../../static/img/usage/gst-and-sst/gst/RetentionReportByProject-1.jpg)
 
 ## GST Treatment: Partial Exemption
 
@@ -2550,6 +2576,7 @@ Source from the **GUIDE ON ACCOUNTING SOFTWARE ENHANCEMENT TOWARDS GST COMPLIANC
 #### De Minimis Rule (DmR)
 
 To satisfy the De Minimis Rule:
+
    1. Total Exempt Supply (ES) `<=` Average RM5,000.00 per month; **AND**
    2. DMR `<=` 5%
 
@@ -2561,23 +2588,24 @@ DmR = [E / (T + E)] x 100%
 | T        | (SR + ZRL + ZDA + ZRE + DS + RS + GS + OS-TXM + NTX) | The total value (exclusive of GST) of all taxable supplies which are the sum of all standard-rated supplies, zero-rated supplies (Local), zero-rated supplies (Export), deemed taxable supplies, supplies made outside Malaysia which would be taxable if made in Malaysia, relief supplies, and disregarded supplies made in the taxable period. |
 | E        | (ES)                                               | The total value (exclusive of GST) of exempt supplies made in the taxable period which NOT include incidental exempt supplies.                                                                                                                      |
 
-:::note NOTE : 
+:::note NOTE :
+
    (i) IES is only for incidental supplies, therefore will not be part of the de minimis rule formula (DmR).  
    (ii) This formula functions is only to test the percentage and value that qualify for de minimis rule.  
-   (iii) Accounting software users should apply DmR on their TX-ES transactions.   
-
+   (iii) Accounting software users should apply DmR on their TX-ES transactions.
 
 The application for de minimis rule as stated below:  
    (i) Application of incidental exempt supplies to the de minimis rule.  
    (ii) Applying the de minimis rule in a taxable period.  
    (iii) Applying the de minimis rule in a tax year or longer period.  
+
 :::
 
 #### Input Tax Recoverable Ratio (IRR)
 
-Formula: 
+Formula:
 
-**IRR = (T-O1) / (T+E-O2)**
+***IRR = (T-O1) / (T+E-O2)***
 
 | Code | % / Tax Code | Description                                                                                                                                                                                                                                                                       |
 |------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2608,11 +2636,11 @@ The supplies related to **O2** of the IRR formula are as follows:
 
 :::note Note:
 (i) IES is only for incidental exempt supplies, therefore will not be part of the Input Tax Recoverable Ratio (IRR) formula.  
-(ii) For other excluded transactions ("O1 & O2"), users need to analyse their transactions in ES, SR, DS & OS, 
+(ii) For other excluded transactions ("O1 & O2"), users need to analyse their transactions in ES, SR, DS & OS,
 then make necessary adjustment before they can apply the correct ratio.  
 (iii) Accounting software users should apply IRR on their TX-RE transactions.  
-(iv) The above formula is based on the value of supplies made which is the standard method used to apportion the residual input tax. 
-If the person wishes to use other methods to apportion the residual input tax, he is required to get approval from customs. 
+(iv) The above formula is based on the value of supplies made which is the standard method used to apportion the residual input tax.
+If the person wishes to use other methods to apportion the residual input tax, he is required to get approval from customs.
 For further details please refer to GST Guide on Partial Exemption  
 :::
 
@@ -2646,45 +2674,47 @@ For example, Mixed Co. Sdn Bhd., whose current tax year ends on 31 December 2016
 2. Edit the **SR** tax code.
 3. Click on the tax rate lookup. See the screenshot below.
 
-![GST_partial_exemption_2](../../../static/img/usage/gst-and-sst/gst/HowToExcludeIRRForTheCapitalGoodsDisposedOff-Steps-1.jpg)
+    ![GST_partial_exemption_2](../../../static/img/usage/gst-and-sst/gst/HowToExcludeIRRForTheCapitalGoodsDisposedOff-Steps-1.jpg)
 
 4. Click +' sign follow by **IRR Excluded** to insert additional tax rate 6% IRR excluded **(O)**.
 
-:::note **Note:**
-1. Tax Rate set as EA or E6%.   
-2. E = Exclude from IRR formula.  
-:::
+   :::note **Note:**
+
+   1. Tax Rate set as EA or E6%.  
+   2. E = Exclude from IRR formula.  
+
+   :::
 
 5. Enter the disposal of asset in Customer Invoice.
 6. Select tax code **SR**.
 7. Select tax rate **E6%** to exclude from IRR calculation (It means **"O"** to the formula).
 
-![GST_partial_exemption_3](../../../static/img/usage/gst-and-sst/gst/HowToExcludeIRRForTheCapitalGoodsDisposedOff-Steps-2.jpg)
+   ![GST_partial_exemption_3](../../../static/img/usage/gst-and-sst/gst/HowToExcludeIRRForTheCapitalGoodsDisposedOff-Steps-2.jpg)
 
 8. You will found the IRR calculated (**88.24%**) and the GST-Listing breakdown by tax code as shown in the screenshot below.
 
-![GST_partial_exemption_4](../../../static/img/usage/gst-and-sst/gst/HowToExcludeIRRForTheCapitalGoodsDisposedOff-Steps-3.jpg)
+   ![GST_partial_exemption_4](../../../static/img/usage/gst-and-sst/gst/HowToExcludeIRRForTheCapitalGoodsDisposedOff-Steps-3.jpg)
 
-**IRR calculation:**
+   **IRR calculation:**
 
-|  |                                            | Calculation                                 | RM |
-|------------|-------------------------------------------------------|-----------------------------------|------------|
-| t          | Value of all taxable supplies, exclusive of tax      | 100,000 (SR) + 50,000 (ZRL) + 50,000 (OS) | 200,000   |
-| e          | Value all of exempt supplies                          | 20,000 (ES) + 20,000 (IES)       | 40,000    |
-| o          | Value of a capital goods disposal off (exclusive of tax) | 50,000 (SR with tax rate E6%)   | 50,000    |
-| o          | Value of incidental exempt supplies                   | 20,000 (IES)                     | 20,000    |
-|            | Residual Input Tax Incurred                           | 166,666.66 x 6% (TX-RE)          | 10,000    |
+   |  |                                            | Calculation                                 | RM |
+   |------------|-------------------------------------------------------|-----------------------------------|------------|
+   | t          | Value of all taxable supplies, exclusive of tax      | 100,000 (SR) + 50,000 (ZRL) + 50,000 (OS) | 200,000   |
+   | e          | Value all of exempt supplies                          | 20,000 (ES) + 20,000 (IES)       | 40,000    |
+   | o          | Value of a capital goods disposal off (exclusive of tax) | 50,000 (SR with tax rate E6%)   | 50,000    |
+   | o          | Value of incidental exempt supplies                   | 20,000 (IES)                     | 20,000    |
+   |            | Residual Input Tax Incurred                           | 166,666.66 x 6% (TX-RE)          | 10,000    |
 
 9. Therefore, IRR = (200,000 -50,000) / (200,000 + 40,000) - (50,000 + 20,000) = 0.8824 (**88.24%**).  
 10. The amount of residual input tax can claim for the period is,
-
 
       Residual Input Tax Recovery % X Residual Input Tax = **88.24% x Rm10,000 (TX-RE) = Rm8,824.00**.
 
 ![GST_partial_exemption_5](../../../static/img/usage/gst-and-sst/gst/HowToExcludeIRRForTheCapitalGoodsDisposedOff-Steps-4.jpg)
 
 :::note **RMCD Reference:**
-We get the similar example from Partial Exempt guide by Royal Malaysian Customs Department.   
+
+We get the similar example from Partial Exempt guide by Royal Malaysian Customs Department.
 See the screenshot below.  
 
 ![GST_partial_exemption_6](../../../static/img/usage/gst-and-sst/gst/HowToExcludeIRRForTheCapitalGoodsDisposedOff-Steps-5.jpg)
@@ -2693,7 +2723,7 @@ See the screenshot below.
 
 ### GST Listing - mixed Supply
 
-**Monthly/Quarterly**
+***Monthly/Quarterly***
 
 1. Select the **GST Process**.
 2. Click **Apply**.
@@ -2708,8 +2738,6 @@ See the screenshot below.
 **Page 2**: GST Listing 4 - Mixed Supplies
 
 ![GST_partial_exemption_8](../../../static/img/usage/gst-and-sst/gst/GSTListing-MixedSupply-2.jpg)
-
-
 
 ## GST Treatment: Imported Services
 
@@ -2728,6 +2756,7 @@ The recipient has to pay tax for the imported services he received and the same 
 3. Bank prevailing rate = Rm2.50 (Date: 10 March 2016)
 
 Calculation for GST:  
+
 1. Consideration for the supply @Rm2.50 = Rm500,000.00 + GST 6%  
 2. GST to be accounted by recipient @6% GST = Rm30,000.00  
 
@@ -2735,35 +2764,38 @@ RSA:
 Account GST output = Rm30,000.00  
 Claim GST Input = Rm30,000.00  
 
-**Time of Supply**
+***Time of Supply***
+
 1. When supply are paid for (Date of payment made) - no longer
 2. Start from **01 Jan 2016**, which ever is the earlier:-
 
    1. Payment made; or
    2. Invoice date.
 
-### Maintain Tax
+### Maintain Tax (Imported Services)
 
 1. RSA tax code is preset in the SQL Financial Accounting.
 2. It is use for the purpose of **Reverse Charge Mechanism or Recipient Self Accounting**.
 3. RSA tax code setting. See the screenshot below.
 
-![GST_Imported_Services_1](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ImportedServices-MaintainTax-1.jpg)
+   ![GST_Imported_Services_1](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ImportedServices-MaintainTax-1.jpg)
 
 ### Payment made before the invoice
 
 1. Click on the **New PV** to create new payment voucher.
 
-![GST_Imported_Services_2](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ImportedServices-PaymentMadeBeforeInvoice-1.jpg)
+   ![GST_Imported_Services_2](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ImportedServices-PaymentMadeBeforeInvoice-1.jpg)
 
 2. Enter the **payment date**, eg. 02/06/2016.
 3. Select **RSA** in tax column.
 
-![GST_Imported_Services_3](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ImportedServices-PaymentMadeBeforeInvoice-2.jpg)
+   ![GST_Imported_Services_3](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ImportedServices-PaymentMadeBeforeInvoice-2.jpg)
 
-:::note **NOTE:**
-Tax amount will be calculated after process the GST Returns.
-:::
+   :::note **NOTE:**
+
+   Tax amount will be calculated after process the GST Returns.
+
+   :::
 
 4. After GST Returns processed, you can check the double entry posting from GL | Print Journal of Transactions Listing...
 
@@ -2782,11 +2814,13 @@ Tax amount will be calculated after process the GST Returns.
 2. Enter the **invoice date**, eg. 02/06/2016.
 3. Select **RSA** in tax column.
 
-![GST_Imported_Services_5](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ImportedServices-InvoiceFirstPaymentLetter-1.jpg)
+   ![GST_Imported_Services_5](../../../static/img/usage/gst-and-sst/gst/GSTTreatment-ImportedServices-InvoiceFirstPaymentLetter-1.jpg)
 
-:::note **NOTE:**
-Tax amount will be calculated after process the GST Returns.
-:::
+   :::note **NOTE:**
+
+   Tax amount will be calculated after process the GST Returns.
+
+   :::
 
 4. After GST Returns processed, you can check the double entry posting from GL | Print Journal of Transactions Listing...
 
@@ -2799,8 +2833,6 @@ Tax amount will be calculated after process the GST Returns.
 | GST-101      | GST - Claimable    | TX       | 5,040.00 | 0.00     | June 2016 (**follow invoice date**)   |
 | GST-201      | GST - Payable      | DS       | 0.00     | 5,040.00 | June 2016 (**follow invoice date**)   |
 
-
-
 ## GST: Set Tax Year & Longer Period Adjustment
 
 To set the tax year and longer period adjustment (LPA).
@@ -2809,29 +2841,32 @@ To set the tax year and longer period adjustment (LPA).
 
 1. Highlight the final taxable period to be set as your **First Tax Year**, eg. final taxable period 01 Dec - 31 Dec 2016.
 
-![GST_Tax_Year_1](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-SetTaxYear-1.jpg)
+   ![GST_Tax_Year_1](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-SetTaxYear-1.jpg)
 
 2. Double click on the GST Returns highlight in step 1.
 3. System will prompt you a dialog box.
 4. Tick on the **Tax Year** to set a tax year point. See the screenshot below.
 
-![GST_Tax_Year_2](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-SetTaxYear-2.jpg)
+   ![GST_Tax_Year_2](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-SetTaxYear-2.jpg)
 
 5. Click **Save**.
 
-![GST_Tax_Year_3](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-SetTaxYear-3.jpg)
+   ![GST_Tax_Year_3](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-SetTaxYear-3.jpg)
 
 6. You can insert a column **Tax Year**, eg. Tax Year point set at 31 Dec 2016.
 
-![GST_Tax_Year_4](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-SetTaxYear-4.jpg)
+   ![GST_Tax_Year_4](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-SetTaxYear-4.jpg)
 
-:::note **Note:**
-You can direct set the tax year without delete/purge the GST Returns.
-:::
+   :::note **Note:**
+
+   You can direct set the tax year without delete/purge the GST Returns.
+
+   :::
 
 ### Longer Period Adjustment
 
-Declaration of annual adjustment amount:  
+Declaration of annual adjustment amount:
+
 - Regulation 43 – in a GST Return for the second taxable period next following the longer period.  
 For example,  
 Assumed the tax year set on 31 Dec 2016, LPA should be declared in:  
@@ -2844,15 +2879,17 @@ Assumed the tax year set on 31 Dec 2016, LPA should be declared in:
 1. Process the GST Return.For example, process the **Second Taxable Period** (01/02/2017 - 28/02/2017).
 2. LPA will tick automatically.(**if you have set the tax year**)
 
-![GST_Tax_Year_5](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-GSTReturns-1.jpg)
+   ![GST_Tax_Year_5](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-GSTReturns-1.jpg)
 
 3. Suggested period to be adjusted for LPA.
 
-![GST_Tax_Year_6](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-GSTReturns-2.jpg)
+   ![GST_Tax_Year_6](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-GSTReturns-2.jpg)
 
-:::note **Note:**
-User allow to overwrite the suggested period for Longer Period.
-:::
+   :::note **Note:**
+
+   User allow to overwrite the suggested period for Longer Period.
+
+   :::
 
 4. You can insert the **LPA Date From** and **LPA Date To** columns to check.
 
@@ -2860,7 +2897,7 @@ User allow to overwrite the suggested period for Longer Period.
 
 ### GST Listing - Mixed Supplies (LPA)
 
-**Longer Period Adjustment (LPA)**
+***Longer Period Adjustment (LPA)***
 
 1. Select the **Date From** and **Date To** (eg. the financial year is 01/01/2016 - 31/12/2016).
 2. Click **Apply**.
@@ -2876,15 +2913,13 @@ User allow to overwrite the suggested period for Longer Period.
 
 ![GST_Tax_Year_9](../../../static/img/usage/gst-and-sst/gst/GSTSetTaxYear-GSTListingMixedSupplies-2.jpg)
 
-
-
 ## Special-GST Treatment: Non-deductible Expenditure
 
 How to enter and to retrieve the non-deductible expenditure?
 
 This guide will teach you the way to key-in the data entry and help you to analyse the non-deductible expenditure related to GST. It is follow to the latest 2015 amendment in Income Tax Act 1967.
 
-**GST Expenditure (Effective from YA 2015)**
+***GST Expenditure (Effective from YA 2015)***
 
 1. para 39(1)(o): GST input tax paid or to be paid not allowed as deduction if:-  
    1. Non-registered person with turnover exceed GST threshold of Rm500,000.  
@@ -2906,20 +2941,20 @@ This guide will teach you the way to key-in the data entry and help you to analy
 1. Click New.
 2. Follow the below SETTINGS to create.
 
-| Field Name   | Field Contents                                                                 |
-|--------------|-------------------------------------------------------------------------------|
-| Code         | ND-0 (Recommended code)                                                       |
-| Description  | Non-Deductible                                                                |
-| Tax Type     | (Non GST - Both Sales & Purchase)                                             |
-| Tax Rate     | 0% (please key-in)                                                            |
-| Tax Account  | GST-301 (This field is compulsory. Due to tax rate is 0%, therefore no posting) |
-| Tax Inclusive| Untick                                                                        |
+   | Field Name   | Field Contents                                                                 |
+   |--------------|-------------------------------------------------------------------------------|
+   | Code         | ND-0 (Recommended code)                                                       |
+   | Description  | Non-Deductible                                                                |
+   | Tax Type     | (Non GST - Both Sales & Purchase)                                             |
+   | Tax Rate     | 0% (please key-in)                                                            |
+   | Tax Account  | GST-301 (This field is compulsory. Due to tax rate is 0%, therefore no posting) |
+   | Tax Inclusive| Untick                                                                        |
 
 3. Click Save. See below screenshot.
 
-![GST_Non_deductible_Expenditure_1](../../../static/img/usage/gst-and-sst/gst/SpecialGSTTreatment-NonDeductibleExpenditure-HowItWorks-1.jpg)
+   ![GST_Non_deductible_Expenditure_1](../../../static/img/usage/gst-and-sst/gst/SpecialGSTTreatment-NonDeductibleExpenditure-HowItWorks-1.jpg)
 
-:::note **NOTE :** 
+:::note **NOTE :**
 
 Do not click the tax rate arrow key down if the tax account is not defined yet.
 
@@ -2927,7 +2962,7 @@ Do not click the tax rate arrow key down if the tax account is not defined yet.
 
 #### Data Entry for Non-Deductible
 
-**For Purchase Invoice**
+***For Purchase Invoice***
 
 1. Insert a new detail row and key-in the total input tax not going to claim.
 2. Select the tax code "ND-0".
@@ -2935,7 +2970,7 @@ Do not click the tax rate arrow key down if the tax account is not defined yet.
 
 ![GST_Non_deductible_Expenditure_2](../../../static/img/usage/gst-and-sst/gst/SpecialGSTTreatment-NonDeductibleExpenditure-DataEntryForNonDeductables-1.jpg)
 
-**For GL Cash Book**
+***For GL Cash Book***
 
 1. Insert a new detail row and key-in the **total input tax not going to claim**.
 2. Select the tax code "ND-0".
@@ -2943,7 +2978,7 @@ Do not click the tax rate arrow key down if the tax account is not defined yet.
 
 ![GST_Non_deductible_Expenditure_3](../../../static/img/usage/gst-and-sst/gst/SpecialGSTTreatment-NonDeductibleExpenditure-DataEntryForNonDeductables-2.jpg)
 
-:::note **NOTE:** 
+:::note **NOTE:**
 Please ensure you understand the Non-Deductible expenditure from your auditors before you apply this guide.
 :::
 
@@ -2952,19 +2987,19 @@ Please ensure you understand the Non-Deductible expenditure from your auditors b
 1. Select the date range to APPLY.
 2. Filter at the Tax grid column. See screenshot below.
 
-![GST_Non_deductible_Expenditure_4](../../../static/img/usage/gst-and-sst/gst/SpecialGSTTreatment-NonDeductibleExpenditure-HowToAnalyze-1.jpg)
+   ![GST_Non_deductible_Expenditure_4](../../../static/img/usage/gst-and-sst/gst/SpecialGSTTreatment-NonDeductibleExpenditure-HowToAnalyze-1.jpg)
 
 3. You can see the non-deductible transactions filtered by ND-0.
 
-![GST_Non_deductible_Expenditure_5](../../../static/img/usage/gst-and-sst/gst/SpecialGSTTreatment-NonDeductibleExpenditure-HowToAnalyze-2.jpg)
+   ![GST_Non_deductible_Expenditure_5](../../../static/img/usage/gst-and-sst/gst/SpecialGSTTreatment-NonDeductibleExpenditure-HowToAnalyze-2.jpg)
 
 4. From this instance, the total non-deductible expenditure amount is **Rm3030.00**
 
-:::note **NOTE:** 
+:::note **NOTE:**
+
 This non-deductible tax amount will not post to GAF.
+
 :::
-
-
 
 ## GST-03 Item 12 (ES + IES) : How to compare the Total Value of Exempt Supplies between GST-03 and Ledger
 
@@ -2974,56 +3009,56 @@ This guide will help you to check the data entry source posted for **Item 12 Tot
 
 1. **GST Tax Code**
 
-| Tax Code | Tax Description            | Tax Rate | Explanation and examples |
-|----------|----------------------------|----------|-------------------------|
-| IES      | Incidental Exempt Supplies | 0%       | Incidental exempt supplies under GST legislations (Note: Replace ES43). Incidental Exempt Financial Services Supplies (IEFS) include: 1.interest income from deposits placed with a financial institution in Malaysia, 2.realized foreign exchange gains or losses |
-| ES       | Exempt Supplies under GST  | 0%       | This refers to supplies which are EXEMPTED UNDER GST. These supply includes: 1.Selling of Residential Properties to consumer, 2.Selling of tickets for Public Transportation (Taxis, Stage Buses, Ferries), 3.Financial Institution’s interest charges to customers for loan. |
+   | Tax Code | Tax Description            | Tax Rate | Explanation and examples |
+   |----------|----------------------------|----------|-------------------------|
+   | IES      | Incidental Exempt Supplies | 0%       | Incidental exempt supplies under GST legislations (Note: Replace ES43). Incidental Exempt Financial Services Supplies (IEFS) include: 1.interest income from deposits placed with a financial institution in Malaysia, 2.realized foreign exchange gains or losses |
+   | ES       | Exempt Supplies under GST  | 0%       | This refers to supplies which are EXEMPTED UNDER GST. These supply includes: 1.Selling of Residential Properties to consumer, 2.Selling of tickets for Public Transportation (Taxis, Stage Buses, Ferries), 3.Financial Institution’s interest charges to customers for loan. |
 
 2. **GST-03**
 
-| Item No. | Description                 | Guidelines                          |
-|----------|----------------------------|-------------------------------------|
-| 12       | Total Value of Exempt Supplies | IES + ES (Taxable Amount)           |
-|          |                            | Note : Net Loss in Forex (ES43) = 0.00    |
+   | Item No. | Description                 | Guidelines                          |
+   |----------|----------------------------|-------------------------------------|
+   | 12       | Total Value of Exempt Supplies | IES + ES (Taxable Amount)           |
+   |          |                            | Note : Net Loss in Forex (ES43) = 0.00    |
 
-### Example of Data Entry 
+### Example of Data Entry
 
 1. IES - **Interest income from deposits placed with a financial institution in Malaysia**
 
-Screenshot below from **Journal Entry.**
+   Screenshot below from **Journal Entry.**
 
-![GST_Compare_Total_1](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry-1.jpg)
+   ![GST_Compare_Total_1](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry-1.jpg)
 
 2. IES - **Realized foreign exchange gains or losses**
 
    1. **Realized Gain in Foreign Exchange**
 
-     Screenshot below from **Customer Payment**.
+      Screenshot below from **Customer Payment**.
 
-     ![GST_Compare_Total_2](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry-2.jpg)
+      ![GST_Compare_Total_2](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry-2.jpg)
 
    2. **Realized Loss in Foreign Exchange**
 
-Screenshot below from **Customer Payment.**
+   Screenshot below from **Customer Payment.**
 
-![GST_Compare_Total_3](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry-3.jpg)
+   ![GST_Compare_Total_3](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry-3.jpg)
 
 3. ES - **Financial Institution’s interest charges to customers for loan**
 
-Screenshot below from **Customer Invoice.**
+   Screenshot below from **Customer Invoice.**
 
-![GST_Compare_Total_4](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry-4.jpg)
+   ![GST_Compare_Total_4](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry-4.jpg)
 
 ### GST - 03 Item 12 : Total Value of Exempted Supplies
 
 1. For instances, the **GST-03 Item 12 = Rm62.886.40**
 
-![GST_Compare_Total_5](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry2-1.jpg)
+   ![GST_Compare_Total_5](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry2-1.jpg)
 
 2. You can check the details by double click on the amount in **Item 12.**
 3. Pop-up the item 12 detail.
 
-![GST_Compare_Total_6](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry2-2.jpg)
+   ![GST_Compare_Total_6](../../../static/img/usage/gst-and-sst/gst/GSTItem12-DataEntry2-2.jpg)
 
 4. You can insert additional column, ie. **From Doc Type** and **Trans Type.**
 
@@ -3036,53 +3071,53 @@ Screenshot below from **Customer Invoice.**
 Trans Type = _X, it means the posting entry related to **Realized Gain or Loss in Foreign Exchange.**
 :::
 
-### Cross Check Reports
+### Cross Check Reports (CCR)
 
-#### GST Listing
+#### GST Listing (CCR)
 
 1. Select the **date range** or **GST Process**.
 2. You can select the tax parameter for **ES** and **IES**.
 3. Apply the **GST Listing**.
 
-![GST_Compare_Total_8](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-1.jpg)
+   ![GST_Compare_Total_8](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-1.jpg)
 
-| Tax Code | Local Amount | Explanation                                                                 |
-|----------|-------------|-----------------------------------------------------------------------------|
-| IES      | 5,000.00    | Local amount from Sales/Customer/Journal Entry/Cash Book (OR) documents related to tax code: **IES** |
-| IES      | 7,886.40    | Net realized forex gain calculated                                         |
-| ES       | 50,000.00   | Local amount from Sales/Customer/Journal Entry/Cash Book (OR) documents related to tax code: **ES** |
-| **Total**| **62,886.40**   | Total value shown in **GST-03 Item 12**                                        |
+   | Tax Code | Local Amount | Explanation                                                                 |
+   |----------|-------------|-----------------------------------------------------------------------------|
+   | IES      | 5,000.00    | Local amount from Sales/Customer/Journal Entry/Cash Book (OR) documents related to tax code: **IES** |
+   | IES      | 7,886.40    | Net realized forex gain calculated                                         |
+   | ES       | 50,000.00   | Local amount from Sales/Customer/Journal Entry/Cash Book (OR) documents related to tax code: **ES** |
+   | **Total**| **62,886.40**   | Total value shown in **GST-03 Item 12**                                        |
 
 4. Click on each tax type, you able to view the details. See the example in the screenshot below.
 
-**1. IES**
+***1. IES***
 
    ![GST_Compare_Total_9](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-2.jpg)
 
-**2. IES (Net Realized Forex Gain ONLY)**
+***2. IES (Net Realized Forex Gain ONLY)***
 
    ![GST_Compare_Total_10](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-3.jpg)
 
-**3. ES**
+***3. ES***
 
    ![GST_Compare_Total_11](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-4.jpg)
 
-**GL Ledger**
+***GL Ledger***
 
 1. In the General Ledger report, you have to insert the **Tax** grid column.
 2. Filter the Tax Code **(ES and IES)**.
 
-![GST_Compare_Total_12](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-5.jpg)
+   ![GST_Compare_Total_12](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-5.jpg)
 
 3. Transactions related to **ES**. See the screenshot below.
 
-![GST_Compare_Total_13](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-6.jpg)
+   ![GST_Compare_Total_13](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-6.jpg)
 
 4. Transactions related to **IES**. See the screenshot below.
 
-![GST_Compare_Total_14](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-7.jpg)
+   ![GST_Compare_Total_14](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-7.jpg)
 
-**Special Posting for Net Realized Gain Forex (IES)**
+***Special Posting for Net Realized Gain Forex (IES)***
 
 Below question and answer extract from **GUIDE ACCOUNTING SOFTWARE ENHANCEMENT TOWARDS GST COMPLIANCE.**
 
@@ -3090,16 +3125,16 @@ Below question and answer extract from **GUIDE ACCOUNTING SOFTWARE ENHANCEMENT T
 
 1. Check the Foreign Exchange Rate Gain or Loss Account setting at **Tools | Options...(General Ledger)**. For example,
 
-| Default Account                     | GL Account Code |
-|------------------------------------|----------------|
-| Foreign Exchange Rate Gain Account  | 530-000        |
-| Foreign Exchange Rate Loss Account  | 980-000        |
+   | Default Account                     | GL Account Code |
+   |------------------------------------|----------------|
+   | Foreign Exchange Rate Gain Account  | 530-000        |
+   | Foreign Exchange Rate Loss Account  | 980-000        |
 
-![GST_Compare_Total_16](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-9.jpg)
+   ![GST_Compare_Total_16](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-9.jpg)
 
 2. Select the **Foreign Exchange Rate Gain or Loss Account**, click **APPLY**
 
-![GST_Compare_Total_17](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-10.jpg)
+   ![GST_Compare_Total_17](../../../static/img/usage/gst-and-sst/gst/CrossCheckReports-GSTListings-10.jpg)
 
 3. You can see the **Foreign Exchange Rate Gain or Loss** posting transactions in **GL Ledger**.
 
@@ -3111,7 +3146,7 @@ Below question and answer extract from **GUIDE ACCOUNTING SOFTWARE ENHANCEMENT T
 | Total Loss on Foreign Exchange | 593.60  | 0.00    |                                                     |
 | Net Realized Forex           | 593.60  | 8,480.00 | 8,480.00 - 593.60 = 7,886.40 GAIN (IES)           |
 
-:::note **NOTE:** 
+:::note **NOTE:**
 RMCD has confirmed that **Net Realised Gain in Forex ONLY** need to add into **GST-03 item 12 Total Value of Exempt Supplies.**  
 Tax code = **IES**  
 

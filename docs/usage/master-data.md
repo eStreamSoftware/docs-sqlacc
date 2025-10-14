@@ -77,7 +77,7 @@ There are 4 main tabs under Maintain Customer, let’s create a new customer and
 
 ### Advance Credit Control (*Pro Package Inclusive)
 
-![20](../../static/img/usage/master-data/20.png)
+    ![20](../../static/img/usage/master-data/20.png)
 
 You can set the credit limit and overdue limit amounts as well as blocking a certain transaction entry for specific customers. What does the document include and for the following documents: Quotation(QT), Sales Order(SO), Delivery Order(DO), Invoice (IV), Cash Sales (CS) and Debit Note(DN)
 
@@ -95,13 +95,13 @@ We can also set once exceed limit & overdue limit,
 
 If the customer provides you with certificate exemption number, you may fill in part A & B as below.
 
-![21](../../static/img/usage/master-data/21.png)
+    ![21](../../static/img/usage/master-data/21.png)
 
-![22](../../static/img/usage/master-data/22.png)
+    ![22](../../static/img/usage/master-data/22.png)
 
 ## Maintain Supplier
 
-![23](../../static/img/usage/master-data/23.png)
+    ![23](../../static/img/usage/master-data/23.png)
 
 **Maintain Supplier** it’s just a mirror of Maintain Customer, please refer to [Maintain Customer](#maintain-customer).
 
@@ -139,7 +139,7 @@ Watch tutorial video here: [Stock Maintain Stock Item](https://www.youtube.com/w
 
 1. **Stock** | **Maintain Stock Item** | **New**
 
-   ![25](../../static/img/usage/master-data/25.png)
+    ![25](../../static/img/usage/master-data/25.png)
 
 2. You can enter your **code** and **description**.
 

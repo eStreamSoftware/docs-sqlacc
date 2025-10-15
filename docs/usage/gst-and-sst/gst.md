@@ -2116,7 +2116,7 @@ GST Import = 30,000m2 x 10 containers x 6% = RM18,000.00
     - Import Curr.Code (for display only)
     - Import Curr Rate (for display only)
 
-   ![GST_ST_Imported_Goods_2](../../../static/img/usage/gst-and-sst/gst/ForwarderInvoiceEntry-1.jpg)
+   ![GST_ST_Imported_Goods_2](../../../static/img/usage/gst-and-sst/gst/forwarder-invoice-entry-1.jpg)
 
 3. Click on the side button in the Import Purchase Amt column. See screenshot below.
 

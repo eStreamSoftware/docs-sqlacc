@@ -68,7 +68,7 @@ This report can help you check the transfer document’s info, such as the amoun
 
    4. **Outstanding SO & PO** – to check the number of outstanding items from sales order and purchase order
 
-   5. **Transfer Doc Date Follow Filtered Date** – tick this if you want the document transfer date (e.g. transfer document Sales Order to Invoice both will followed filtered date.
+   5. **Transfer Doc Date Follow Filtered Date** – tick this if you want the document transfer date (e.g. transfer document Sales Order to Invoice both will followed filtered date.)
 
 4. **Apply**
 

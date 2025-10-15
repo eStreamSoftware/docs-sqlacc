@@ -40,7 +40,7 @@ There are 2 types of project you need to be take note.
 
 2. Detail Project. For detail project, you have to **insert the project column out from Field Chooser**.
 
-![229](../../../static/img/usage/sales/sales-guide/quotation-project.png)
+   ![229](../../../static/img/usage/sales/sales-guide/quotation-project.png)
 
 ### Attachment
 
@@ -52,11 +52,11 @@ You can use this feature to attach external PDF, excel, word documents and image
 
 3. Then choose the file from your computer that you want to attach
 
-![230](../../../static/img/usage/sales/sales-guide/quotation-attachment.png)
+   ![230](../../../static/img/usage/sales/sales-guide/quotation-attachment.png)
 
 ### Note
 
-1. Click on the Note section (on the LEFT side bar).
+1. Click on the Note section (on the **LEFT side bar**).
 
 2. **RIGHT click** it, you will see the Rich Text Editor pop-up.
 
@@ -66,7 +66,7 @@ You can use this feature to attach external PDF, excel, word documents and image
 
 5. You will get prompted the Save changes? message. Click YES to save it.
 
-![231](../../../static/img/usage/sales/sales-guide/quotation-note.png)
+   ![231](../../../static/img/usage/sales/sales-guide/quotation-note.png)
 
 ## Sales Order
 

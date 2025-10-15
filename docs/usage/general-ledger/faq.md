@@ -19,12 +19,13 @@ Year To Date DR and CR not balanced in Trial Balance because Retained Earnings a
 1. Go to GL | Maintain Account...
 2. Restore the Retained Earning Account by drag and drop into Retained Earning group (original).
 
-![2](../../../static/img/usage/general-ledger/glfaq/tb-not-balance-sol.png)
+    ![2](../../../static/img/usage/general-ledger/glfaq/tb-not-balance-sol.png)
 
 3. Apply the Trial Balance again.
 4. Retained Earning Account has restored back into Trial Balance, Year To Date DR and CR are balanced now.
 
 ## How to make the foreign bank account record as USD
+
 **Issue:**
 
 I cannot key-in the foreign bank transactions in USD.
@@ -38,19 +39,19 @@ Please make sure you have the following add-on modules:
 - Multi-Currency (allow to add more currency code, eg. USD, SGD,etc)
 - Advance Currency (allow bank account to select foreign currency)
 
-
 1. Go to Tools | Maintain Payment Method...
 2. Edit the Foreign Bank Account.
 3. Change the currency to USD.
 
-![4](../../../static/img/usage/general-ledger/glfaq/fb-usd-sol1.png)
+    ![4](../../../static/img/usage/general-ledger/glfaq/fb-usd-sol1.png)
 
 4. Foreign bank account will be value at USD currency now. See example in Supplier Payment.
 
 ![5](../../../static/img/usage/general-ledger/glfaq/fb-usd-sol2.png)
 
 ## Accumulated Depreciation for Fixed Asset
-## Record accumulated depreciation for fixed asset
+
+### Record accumulated depreciation for fixed asset
 
 1. **GL > Journal Entry > New**
 
@@ -66,7 +67,7 @@ Please make sure you have the following add-on modules:
 
    ![6](../../../static/img/usage/general-ledger/glfaq/dep-fixed-asset-step1.png)
 
-## The Next Year
+### The Next Year
 
 1. **GL > Journal Entry**. Open the journal entry of depreciation in year 2015
 
@@ -85,11 +86,13 @@ Please make sure you have the following add-on modules:
 
 6. Save!
 
-:::caution
-## Auto Maintain Stock Value with Project** required SQL Account version 839 and above.
-:::
+## Auto Maintain Stock Value with Project Setup
 
-## Setup
+:::caution
+
+required SQL Account version 839 and above.
+
+:::
 
 ### 1. Turn on Auto Post GL Stock Value Option
 
@@ -189,15 +192,13 @@ Note : When Fall Outside Maintain Acceptable Trans Date range, the system will n
 Value from the Stock Month End Balance and will silently bypass the update.
 :::
 
-## Auto Post Stock Month End Value
+## Auto Post Stock Month End Value Setup
 
 :::warning
 Require SQL Account version 748 & above.
 :::
 
 This feature allow system auto post the stock value from Maintain Month End value to GL Maintain Stock Value.
-
-## Setup
 
 ### 1. Stock > Maintain Stock Group
 
@@ -215,9 +216,7 @@ Required to fill in Balance Sheet Account in Stock Group in order able to show t
 
 ![23](../../../static/img/usage/general-ledger/glfaq/auto-post-stock-month-end-value/3.png)
 
-## Auto Bank Reconciliation
-
-## Setup
+## Auto Bank Reconciliation Example
 
 ### 1. In SQL General Ledger, go to **Bank Reconciliation** -> **Create New**
 
@@ -279,7 +278,7 @@ Required to fill in Balance Sheet Account in Stock Group in order able to show t
 
    After click “Match”, system will auto tick the transactions and show the date and bank description at Bank Statement (Match) Column
 
-## Bank Reconciliation
+## Bank Reconciliation Example
 
 :::note
 For Opening Bank Reconciliation, you may refer this [Guide](../../usage/general-ledger/guide.md#bank-reconciliation).
@@ -287,8 +286,6 @@ For Opening Bank Reconciliation, you may refer this [Guide](../../usage/general-
 
 A bank reconciliation is a process performed by a company to ensure that the company's records
 (check register, **general ledger account**, **balance sheet**, etc.) are tally with bank's records.
-
-## Setup
 
 ### 1. Reconciliation Bank Transaction
 
@@ -324,7 +321,7 @@ After reconciliation done, you can save and preview reconciliation report
 You can press F6 button for preview report.
 :::
 
-## Calculate P&L Percentage
+## Calculate P&L Percentage Example
 
 ![38](../../../static/img/usage/general-ledger/glfaq/cal-p&l-percent/1.png)
 
@@ -332,8 +329,6 @@ You can press F6 button for preview report.
 Formula :
 Account Amount / Total Sales * 100
 :::
-
-## Example
 
 ### 1. How to get A % = 62.1 ?
 
@@ -362,8 +357,6 @@ Account Amount / Total Sales * 100
 :::
 
 ## Foreign Bank Adjustment
-
-## Setup
 
 1. Go to GL > Foreign Bank Adjustment > Create New > Click Bank Revalue
 
@@ -454,8 +447,6 @@ Account Amount / Total Sales * 100
 
 ## P&L Statement more than 12 months
 
-## Setup
-
 1. GL > Profit and Loss Statement
 
     ![49](../../../static/img/usage/general-ledger/glfaq/p&l-more-than-12/1.png)
@@ -500,8 +491,6 @@ Repeat the same step on GL > Print Balance Sheet Statement
 
 ## P&L Statement with Appropriation
 
-## Setup
-
 1. GL > Maintain Account
 
     ![56](../../../static/img/usage/general-ledger/glfaq/p&l-statement-appropriation-acc/1.png)
@@ -535,15 +524,14 @@ Repeat the same step on GL > Print Balance Sheet Statement
        ![60](../../../static/img/usage/general-ledger/glfaq/p&l-statement-appropriation-acc/5.png)
 
        ![61](../../../static/img/usage/general-ledger/glfaq/p&l-statement-appropriation-acc/6.png)
-## General Ledger Report Ref1(DocNo) appear as (New)
 
-## Example 
+## General Ledger Report Ref1(DocNo) appear as (New)
 
 When you see General Ledger Report `Ref1(DocNo)` appeared as `<<New>>`, use the method below to fix it.
 
 ![62](../../../static/img/usage/general-ledger/glfaq/solution-gl-report-ref1-as-new/1.png)
 
-## Fix
+### Fix
 
 1. Find out the document to check the source for this document.
 

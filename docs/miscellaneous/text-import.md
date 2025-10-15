@@ -68,21 +68,26 @@ tags: ["SQL Account", "Text", "Import"]
             ![11](../../static/img/miscellaneous/text-import-utility/11.png)
 
 ## FAQ
+
 ### Do the text import Description3 support multi line?
+
 Yes if you using the Version 5 & above. All you had to do is to set each line using #13
-```pascal
-DETAIL;POS4;;;----;----;"SALES - Foods";;"Line 1#13# Line 2#13Line 3#13#13B#13C";50;UNIT;0;21.20;25/12/2016;;SR;60;1000;T;500-000;T;;;1;;
-```
+
+    ```pascal
+    DETAIL;POS4;;;----;----;"SALES - Foods";;"Line 1#13# Line 2#13Line 3#13#13B#13C";50;UNIT;0;21.20;25/12/2016;;SR;60;1000;T;500-000;T;;;1;;
+    ```
 
 Result
-```pascal
-Line 1
-# Line 2
-Line 3
 
-B
-C
-```
+    ```pascal
+    Line 1
+    # Line 2
+    Line 3
+
+    B
+    C
+    ```
 
 ### My Data had Special Character/Symbol (eg Ø) how to handle it?
+
 If you had special Character/Symbol, try convert it to UTF-8 before you export out to text file

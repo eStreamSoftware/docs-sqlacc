@@ -34,15 +34,45 @@ tags: ["SQL Account", "General", "MyTTx"]
 
 8. **Exemption from TTx** are:
 
-   ![ttx-exemption-table](../../../static/img/usage/general/myttx/ttx-exemption-table.png)
+   1. A **Malaysian national**; or a permanent resident of Malaysia who holds MyPR card.
 
-   Therefore, we have designed a database structure specially for business which has provide accommodation to tourists.
+   2. An operator who operates **homestay** as determined by the Ministry of Tourism and Culture Malaysia under the Pengalaman Homestay Malaysia Programme and is registered with Ministry of Tourism and Culture Malaysia.
+
+   3. An operator who operates **kampungstay** determined by the Ministry of Tourism and Culture Malaysia under the Visit My Kampung Kampungstay Programme and is registered with Ministry of Tourism and Culture Malaysia.
+
+   4. The Federal Government, State Government, statutory body, local authority or private higher educational institutions registered under Private Higher Educational Institutions Act 1996 [Act 555] operating accommodation premises that provide accommodation to any person for **educational, training or welfare purposes.**
+
+      **Example 25**
+
+      As an illustration of accommodation premises which are exempted from registration and collecting TTx under item (c) above are as follows:
+
+      - Akademi Kastam Diraja Malaysia
+      - Lanai Kijang Bank Negara Malaysia
+      - Institut Latihan Dewan Bandaraya Kuala Lumpur
+      - HELP Residence, HELP University
+      - Pusat Transit Gelandangan Kuala Lumpur
+
+   5. The employer operating accommodation premises as a facility to their employees.
+
+      **Example 26** As an illustration of accommodation premises which are exempted from registration and collecting TTx under item (d) above are as follows:
+
+      - Rumah Peranginan Persekutuan
+      - Rumah Rehat Kerajaan Negeri
+      - Rumah Peranginan Bank Negara Malaysia
+      - Rumah Peranginan Tenaga Nasional Berhad
+
+   6. Religious or welfare body who fully operates accommodation premises for the purpose of religious or welfare activities **not for commercial purpose** and registered under the written law and approved by the Minister responsible **for religious or welfare matters**.
+
+   7. An operator of accommodation premises **having four or less than four rooms.** ( \<\= 4 rooms)
+
+9. Therefore, we have designed a database structure specially for business which has provide accommodation to tourists.
 
    ![ttx-flow](../../../static/img/usage/general/myttx/ttx-flow.jpg)
 
-*Source from Royal Malaysian Customs Department official page*
+   *Source from Royal Malaysian Customs Department official page*
 
 List of Guidance about MYTTx :
+
 1. [General Guide on Tourism Tax [Panduan Am Cukai Pelancongan]](https://www.myttx.customs.gov.my/wp-content/uploads/2024/12/Panduan-Am-Cukai-Pelancongan-V2-06122024.pdf)
 2. [Guide on Registration](https://www.myttx.customs.gov.my/wp-content/uploads/2022/05/APPENDIX-B-Panduan-Pendaftaran-Cukai-Pelancongan.pdf)
 3. [Guideline to fill up Form TTx-01 [Panduan Mengisi Borang TTx-01]](https://www.myttx.customs.gov.my/wp-content/uploads/2022/05/APPENDIX-C-Panduan-Mengisi-Borang-TTx-01.pdf)
@@ -87,12 +117,17 @@ Go to **[Stock | Maintain Stock Item... | New]**
 
 MyTTx list settings are compulsory to follow :
 
-![basic-setting-stock-item-table](../../../static/img/usage/general/myttx/basic-setting-stock-item-table.png)
+| No. | Code | Description | Item Group | Base UOM | Ref. Price | Output Tax | Stock Control |
+|-----|------|--------------|-------------|-----------|-------------|-------------|----------------|
+| 1. | TTx | TTx | TTx | ROOM/NIGHT | 10.00 | NS | Untick |
+| 2. | TTxE | TTx Exempted | TTx | ROOM/NIGHT | 0.00 | NS | Untick |
 
 :::info
+
    1. For GST registered person, output tax must set to NS.
                  NS - Matters to be treated as neither a supply of goods nor a supply of services, and no GST chargeable (0%)
    2. For Non-GST registered person, output tax must LEAVE IT BLANK.
+
 :::
 
 ![basic-setting-stock-item](../../../static/img/usage/general/myttx/basic-setting-stock-item.jpg)
@@ -110,6 +145,7 @@ Go to **[Stock | Maintain Stock Group... | New]** and setting like this:
 ![room-setting-stock-grp](../../../static/img/usage/general/myttx/room-setting-stock-grp.jpg)
 
 ### Room - Maintain Stock Item
+
 :::info
    For GST or Non-GST registered person, output tax always LEAVE IT BLANK.
 :::
@@ -119,7 +155,11 @@ Go to **[Stock | Maintain Stock Item... | New]**
    1. You can create different room types as different item code.
    2. Example of the room types settings list are:
 
-![room-setting-stock-item-table](../../../static/img/usage/general/myttx/room-setting-stock-item-table.png)
+| No. | Code | Description | Item Group | Base UOM | Ref. Price | Output Tax | Stock Control |
+|-----|------|--------------|-------------|-----------|-------------|-------------|----------------|
+| 1. | ROOM-NORM | NORMAL-ROOM CHARGES | ROOM | ROOM/NIGHT | 200.00 |  | Untick |
+| 2. | ROOM-EXEC | EXECUTIVE-ROOM CHARGES | ROOM | ROOM/NIGHT | 400.00 |  | Untick |
+| 3. | ROOM-DELUX | DELUXE-ROOM CHARGES | ROOM | ROOM/NIGHT | 600.00 |  | Untick |
 
 ![room-setting-stock-item](../../../static/img/usage/general/myttx/room-setting-stock-item.jpg)
 
@@ -147,17 +187,23 @@ Go to **[Stock | Maintain Stock Item... | New]**
 
    1. Example of the Service Charge setting:
 
-   ![service-setting-stock-item-2](../../../static/img/usage/general/myttx/service-setting-stock-item-2.png)
+      | No. | Code | Description | Item Group | Output Tax | Stock Control |
+      |-----|------|--------------|-------------|-------------|----------------|
+      | 1. | SERVICE-CHARGE | Service Charge | SERVICE-CHARGE |  | Untick |
 
    2. **UOM Tab** can be use to preset the types of room rate.
 
-   ![service-setting-stock-item-3](../../../static/img/usage/general/myttx/service-setting-stock-item-3.png)
+      | No. | UOM | Rate | Ref. Price |
+      |-----|-----|------|-------------|
+      | 1. | ROOM-NORM | 1.00 | 200.00 |
+      | 2. | ROOM-EXEC | 1.00 | 400.00 |
+      | 3. | ROOM-DELUX | 1.00 | 600.00 |
 
    3. SERVICE SETTINGS
       1. Tick to confirm this is Service Charge code.
       2. Enter a service rate %. Example the screenshot below is 10%.
 
-   ![service-setting-stock-item-4](../../../static/img/usage/general/myttx/service-setting-stock-item-4.jpg)
+      ![service-setting-stock-item-4](../../../static/img/usage/general/myttx/service-setting-stock-item-4.jpg)
 
 ## New Guest Details
 
@@ -166,11 +212,11 @@ Go to **[Customer | Maintain Customer...]**
    1. You can maintain all the guest particular details at Maintain Customer.
    2. Record the **passport no** at company name 2. See the screenshot below.
 
-   ![new-guest-details-1](../../../static/img/usage/general/myttx/new-guest-details-1.jpg)
+      ![new-guest-details-1](../../../static/img/usage/general/myttx/new-guest-details-1.jpg)
 
    3. Tick on TTX Payable checkbox if he/she is NOT a Malaysian national or a permanent resident who holds MyPR card.
 
-   ![new-guest-details-2](../../../static/img/usage/general/myttx/new-guest-details-2.jpg)
+      ![new-guest-details-2](../../../static/img/usage/general/myttx/new-guest-details-2.jpg)
 
 ## Record of Tax Invoice / Invoice
 
@@ -181,25 +227,37 @@ Go to **[Sales | Invoice...]**
    3. Select an agent (eg. front desk agent).
    4. Enter the room, service charges, date stay, TTx at the details parts.
 
-![record-tax-inv-table](../../../static/img/usage/general/myttx/record-tax-inv-table.png)
+      | No. | Field Name | Original Field Name | DIY Field |
+      |-----|-------------|---------------------|------------|
+      | 1 | Item Code | Item Code |  |
+      | 2 | Description | Description |  |
+      | 3 | No of Room | UDF_Room_Qty | YES |
+      | 4 | Types | UOM |  |
+      | 5 | Room Rate | Unit Price |  |
+      | 6 | Date Stay | Delivery Date |  |
+      | 7 | Sub Total | Sub Total |  |
+      | 8 | Tax | Tax |  |
+      | 9 | Tax Amt | Tax Amt |  |
+      | 10 | Sub Total(Tax) | Sub Total(Tax) |  |
+      | 11 | Service Chrg % | UDF_Service_Rate | YES |
 
-![record-tax-inv-step1](../../../static/img/usage/general/myttx/record-tax-inv-step1.jpg)
+      ![record-tax-inv-step1](../../../static/img/usage/general/myttx/record-tax-inv-step1.jpg)
 
    5. Select the room, service charges and TTx at Item Code column.
 
-![record-tax-inv-step2](../../../static/img/usage/general/myttx/record-tax-inv-step2.jpg)
+      ![record-tax-inv-step2](../../../static/img/usage/general/myttx/record-tax-inv-step2.jpg)
 
    6. Enter the number of rooms to be stay at No of Room column.
 
-![record-tax-inv-step3](../../../static/img/usage/general/myttx/record-tax-inv-step3.jpg)
+      ![record-tax-inv-step3](../../../static/img/usage/general/myttx/record-tax-inv-step3.jpg)
 
    7. For **service charges**, select the **types of the room** (eg. room normal or executive) to calculate the service charge % on the room type rate.
 
-![record-tax-inv-step4](../../../static/img/usage/general/myttx/record-tax-inv-step4.jpg)
+      ![record-tax-inv-step4](../../../static/img/usage/general/myttx/record-tax-inv-step4.jpg)
 
    8. Enter the Date Stay.
 
-![record-tax-inv-step5](../../../static/img/usage/general/myttx/record-tax-inv-step5.jpg)
+      ![record-tax-inv-step5](../../../static/img/usage/general/myttx/record-tax-inv-step5.jpg)
 
    9. To confirm the Invoice, click on Save.
    10. You can preview/print the Tax Invoice or Invoice.
@@ -225,6 +283,7 @@ Go to **[Sales | Invoice...]**
 ### Sample of Invoice (For Non-GST Registered Person)
 
 For operators **not registered for GST**, details to be include in the invoice, receipt or other document to the tourist are as follows:
+
    1. The invoice serial number.
    2. The date of the invoice.
    3. The name, address and the Tourism Tax Identification Number of the operator.
@@ -242,12 +301,12 @@ Go to **[Sales | Credit Note | New...]**
 1. Select a customer (guest).
 2. Right click on the **Credit Note** title. See the screenshot below.
 
-![adjustment-credit-note](../../../static/img/usage/general/myttx/adjustment-credit-note.jpg)
+   ![adjustment-credit-note](../../../static/img/usage/general/myttx/adjustment-credit-note.jpg)
 
-4. Select the tax invoice/invoice to transfer for CN adjustment.
-5. State the reason at the document description. See the screenshot below.
+3. Select the tax invoice/invoice to transfer for CN adjustment.
+4. State the reason at the document description. See the screenshot below.
 
-![adjustment-credit-note-2](../../../static/img/usage/general/myttx/adjustment-credit-note-2.jpg)
+   ![adjustment-credit-note-2](../../../static/img/usage/general/myttx/adjustment-credit-note-2.jpg)
 
 ### Debit Note
 
@@ -256,7 +315,7 @@ Go to **[Sales | Debit Note | New...]**
 1. Select a customer (guest).
 2. Select a Tax Invoice/Invoice at **From Doc**. See the screenshot below.
 
-![adjustment-debit-note](../../../static/img/usage/general/myttx/adjustment-debit-note.jpg)
+   ![adjustment-debit-note](../../../static/img/usage/general/myttx/adjustment-debit-note.jpg)
 
 3. State the reason at the document description.
 
@@ -276,6 +335,7 @@ Go to **[Sales | Print Sales Price History...]**
 ![print-ttx-form](../../../static/img/usage/general/myttx/print-ttx-form.jpg)
 
 ### Sample of TTx-03 generated from SQL Account
+
 Page 1
 
 ![sample-ttx-1](../../../static/img/usage/general/myttx/sample-ttx-1.jpg)
@@ -298,7 +358,8 @@ Go to **[File | Company Profile...]**
 
 Go to **[User | Maintain User...]**
 
-Under **Misc** tab, you can update the following info as required in TTx-03 form.
+Under **Misc** tab, you can update the following info as required in TTx-03 form:
+
    1. IC (New)
    2. IC (Old)
    3. Passport

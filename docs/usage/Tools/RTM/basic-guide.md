@@ -1,12 +1,10 @@
 ---
 sidebar_position: 1
-title: Report Builder
+title: RTM (Report Builder)
 description: How to do custom reports
 slug: /usage/tools/rtm/guide
 tags: ["SQL Account", "Usage", "Tools"]
 ---
-
-# Report Builder
 
 ## Load Report Template
 
@@ -28,8 +26,8 @@ tags: ["SQL Account", "Usage", "Tools"]
 
    ![3](../../../../static/img/usage/tools/rtm-basic-guide/3.png)
 
-
 ## Simple Calculation
+
 * In Report Builder you can also do some simple calculation using the Variable (The Calculator Icon)
 
 ![variable-to-double](../../../../static/img/usage/tools/rtm-basic-guide/variable-to-double.jpg)
@@ -39,25 +37,28 @@ tags: ["SQL Account", "Usage", "Tools"]
 3. Click on the place to be print/shown.
 4. Click on Calc Tab
 
-![insert-code-in-oncalc](../../../../static/img/usage/tools/rtm-basic-guide/insert-code-in-oncalc.jpg)
+      ![insert-code-in-oncalc](../../../../static/img/usage/tools/rtm-basic-guide/insert-code-in-oncalc.jpg)
 
 5. Right click here & Select Event & find the component just now we had placed (eg Variable2)
 6. Click OnCalc
 7. Click here & enter the below script:
 
-<details>
-  <summary>Script</summary>
+   <details>
+      <summary>Script</summary>
 
-procedure Variable2OnCalc(var value: Variant);
+         ```pascal
+         procedure Variable2OnCalc(var value: Variant);
 
-begin
+         begin
 
-  Variable2.DisplayFormat := Option.GetFieldValue('StockPriceDisplayFormat'); // Set Display Format
+         Variable2.DisplayFormat := Option.GetFieldValue('StockPriceDisplayFormat'); // Set Display Format
 
-  Value := Document_Detail.GetFieldValue('Amount')/Document_Detail.GetFieldValue('Qty');
+         Value := Document_Detail.GetFieldValue('Amount')/Document_Detail.GetFieldValue('Qty');
 
-end;
-</details>
+         end;
+         ```
+
+   </details>
 
 8. Click File | Save As & enter New report Name after done
 
@@ -65,13 +66,12 @@ end;
 
 * Sometime in the report you might wanted some extra information but you not able to select in the report design. So you had to self query to get the extra information.
 
-### Get Single Field 
+### Get Single Field
 
 * Example 1 - Get Shelf Field from Maintain Item
 
-    - Below is Example are doing following actions using Variable
-
-    - At Sales Invoice to get Shelf field from Maintain Item
+      - Below is Example are doing following actions using Variable
+      - At Sales Invoice to get Shelf field from Maintain Item
 
 ![output-type](../../../../static/img/usage/tools/rtm-basic-guide/output-type.jpg)
 
@@ -80,29 +80,32 @@ end;
 3. Click on the place to be print/shown.
 4. Click on Calc Tab
 
-![insert-code-in-oncalc-singlefield](../../../../static/img/usage/tools/rtm-basic-guide/insert-code-in-oncalc-singlefield.jpg)
+      ![insert-code-in-oncalc-singlefield](../../../../static/img/usage/tools/rtm-basic-guide/insert-code-in-oncalc-singlefield.jpg)
 
 5. Right click here & Select Event & find the component just now we had placed (eg Variable2)
 6. Click OnCalc
 7. Click here & enter the below script:
 
-<details>
-  <summary>Script</summary>
+   <details>
+      <summary>Script</summary>
 
-procedure Variable2OnCalc(var value: Variant);
+         ```pascal
+         procedure Variable2OnCalc(var value: Variant);
 
-var s: string;
+         var s: string;
 
-begin
+         begin
 
-  s := 'SELECT Shelf FROM ST_ITEM ' +
+         s := 'SELECT Shelf FROM ST_ITEM ' +
 
-        'WHERE CODE=' + QuotedStr(Document_Detail.GetFieldValue('ItemCode'));
+               'WHERE CODE=' + QuotedStr(Document_Detail.GetFieldValue('ItemCode'));
 
-  Value := Trim(DBSQL_GetFieldValue(s));
+         Value := Trim(DBSQL_GetFieldValue(s));
 
-end;
-</details>
+         end;
+         ```
+
+   </details>
 
 8. Click File | Save As & enter New report Name after done
 
@@ -122,26 +125,28 @@ At Sales Invoice to get Picture field from Maintain Item
     6. Click OnPrint
     7. Click here & enter the below script
 
-<details>
-    <summary>Script</summary>
+   <details>
+      <summary>Script</summary>
 
-procedure Image1OnPrint;
+   ```pascal
+   procedure Image1OnPrint;
 
-var s: string;
+   var s: string;
 
-begin
+   begin
 
-  s := 'SELECT Picture FROM ST_ITEM ' +
+   s := 'SELECT Picture FROM ST_ITEM ' +
 
-          'WHERE Code='+ QuotedStr(Document_Detail.GetFieldValue('ItemCode'));
+            'WHERE Code='+ QuotedStr(Document_Detail.GetFieldValue('ItemCode'));
 
-  Image1.Visible := DBSQL_GetPicture(s, Image1.Picture);
+   Image1.Visible := DBSQL_GetPicture(s, Image1.Picture);
 
-end;
-</details>
+   end;
+   ```
 
+   </details>
 
-8. Click File | Save As & enter New report Name after done
+      8. Click File | Save As & enter New report Name after done
 
 ### Example 3 - Get Document Created UserName from Audit
 
@@ -156,39 +161,42 @@ Below is Example is to Get the who created the Document from Audit Table.
 5. Click OnCalc
 6. Click here & enter the below script:
 
-<details>
-    <summary>Script</summary>
-procedure Variable2OnCalc(var value: Variant);
+   <details>
+      <summary>Script</summary>
 
-var s: string;
+         ```pascal
+         procedure Variable2OnCalc(var value: Variant);
 
-begin
+         var s: string;
 
-  s := 'SELECT UserName FROM AUDIT WHERE UPDATEKIND=''I'' ' +
+         begin
 
-        'AND REFERENCE LIKE ' + 
+         s := 'SELECT UserName FROM AUDIT WHERE UPDATEKIND=''I'' ' +
 
-        QuotedStr('%'+
+               'AND REFERENCE LIKE ' + 
 
-        Main.GetFieldValue('DocNo')+
+               QuotedStr('%'+
 
-        '%Code: '+ //Delete this line for JV & CB
+               Main.GetFieldValue('DocNo')+
 
-        Main.GetFieldValue('Code')+ //Delete this line for JV & CB
+               '%Code: '+ //Delete this line for JV & CB
 
-        ',%');
+               Main.GetFieldValue('Code')+ //Delete this line for JV & CB
 
-  Value := Trim(DBSQL_GetFieldValue(s));  
+               ',%');
 
-end;
-</details>
+         Value := Trim(DBSQL_GetFieldValue(s));  
 
-8. Click File | Save As & enter New report Name after done
+         end;
+         ```
+
+   </details>
+
+7. Click File | Save As & enter New report Name after done
 
 ### Example 4 - Get From Doc No. in Sales Invoice
 
 Below is Example is to Get the From Document Number at Invoice Header.
-
 
 * Steps
 
@@ -199,43 +207,46 @@ Below is Example is to Get the From Document Number at Invoice Header.
 5. Click OnCalc
 6. Click here & enter the below script
 
-<details>
-    <summary>Script</summary>
+   <details>
+      <summary>Script</summary>
 
-procedure Variable2OnCalc(var value: Variant);
+   ```pascal
+   procedure Variable2OnCalc(var value: Variant);
 
-var s, V : string;
+   var s, V : string;
 
-begin
+   begin
 
-  s := 'SELECT First 1 FromDocType FROM SL_IVDTL '+
-
-       'WHERE Dockey=' + Main.GetFieldValue('Dockey') +
-
-       ' AND FROMDOCTYPE IS NOT NULL';
-
-  V := Trim(DBSQL_GetFieldValue(s)); 
-
-  if Trim(V) \<> '' then begin
-
-    s := 'SELECT DocNo FROM SL_' + v +
-
-         ' WHERE DocKey=(SELECT First 1 FromDockey FROM SL_IVDTL '+
+   s := 'SELECT First 1 FromDocType FROM SL_IVDTL '+
 
          'WHERE Dockey=' + Main.GetFieldValue('Dockey') +
 
-         ' AND FROMDOCTYPE IS NOT NULL)';
-       
-    Value := Trim(DBSQL_GetFieldValue(s));
+         ' AND FROMDOCTYPE IS NOT NULL';
 
-  end else
+   V := Trim(DBSQL_GetFieldValue(s)); 
 
-    Value := '';
+   if Trim(V) \<> '' then begin
 
-end;
-</details>
+      s := 'SELECT DocNo FROM SL_' + v +
 
-8. Click File | Save As & enter New report Name after done
+            ' WHERE DocKey=(SELECT First 1 FromDockey FROM SL_IVDTL '+
+
+            'WHERE Dockey=' + Main.GetFieldValue('Dockey') +
+
+            ' AND FROMDOCTYPE IS NOT NULL)';
+         
+      Value := Trim(DBSQL_GetFieldValue(s));
+
+   end else
+
+      Value := '';
+
+   end;
+   ```
+
+   </details>
+
+7. Click File | Save As & enter New report Name after done
 
 ## Get Whole Table
 
@@ -256,8 +267,10 @@ Below is Example doing following actions
 4. Select Variables
 5. Add new/to existing as below variable
 
-**var**
-   **SQL_Batch: String;**
+      ```pascal
+      var
+         SQL_Batch: String;
+      ```
 
    ![event-oncreate-insert-code](../../../../static/img/usage/tools/rtm-basic-guide/event-oncreate-insert-code.jpg)
 
@@ -265,17 +278,17 @@ Below is Example doing following actions
 7. Select OnCreate
 8. Copy below script & paste to here
 
-  SQL_Batch := 'SELECT Code, Description, ExpDate, MfgDate, Remark1, Remark2 FROM ST_BATCH'; 
+   SQL_Batch := 'SELECT Code, Description, ExpDate, MfgDate, Remark1, Remark2 FROM ST_BATCH'; 
 
-  DBSQL_SELECT(plSQL_Batch, SQL_Batch, 'Code');  
+   DBSQL_SELECT(plSQL_Batch, SQL_Batch, 'Code');  
 
-  SetDataPipelineFieldLink(Document_Detail, plSQL_Batch, 'Batch', 'Code');  
+   SetDataPipelineFieldLink(Document_Detail, plSQL_Batch, 'Batch', 'Code');  
 
 9. Click File | Save As... to save the file (eg Sales Invoice 1)
 10. Click File | Exit to exit the report design
 11. Click Design again in the report designer for the file just save on Steps 9 (eg Sales Invoice 1)
 
-![pipeline-and-expdate](../../../../static/img/usage/tools/rtm-basic-guide/pipeline-and-expdate.jpg)
+      ![pipeline-and-expdate](../../../../static/img/usage/tools/rtm-basic-guide/pipeline-and-expdate.jpg)
 
 12. Click SubRptNorm:Document_Detail tab
 13. Click DBText icon
@@ -296,8 +309,10 @@ Below is Example Create SEQ Field base on SQL
 4. Select Variables
 5. Add new/to existing as below variable
 
-**var**
-   **SQL_1: String;**
+   ```pascal
+   var
+      **SQL_1: String;
+   ```
 
 6. Select Events
 7. Select OnCreate
@@ -323,31 +338,31 @@ SQL_1 := 'SELECT DOCKEY, DTLKEY, SEQ, ROW_NUMBER() OVER (PARTITION BY DOCKEY ORD
 
   SetDataPipelineFieldLink(Document_Detail, plSQL_1, 'Dockey;Seq', 'Dockey;Seq');
 
-![program-function-insert-code](../../../../static/img/usage/tools/rtm-basic-guide/program-function-insert-code.jpg)
+      ![program-function-insert-code](../../../../static/img/usage/tools/rtm-basic-guide/program-function-insert-code.jpg)
 
 9. Select Programs
 10. Right Click | New Function
 11. Copy Function Script
 
-``` 
-function FormatSQLDate(D: TDateTime): String;
+      ``` pascal
+      function FormatSQLDate(D: TDateTime): String;
 
-var AFormat: string;
+      var AFormat: string;
 
-begin
+      begin
 
-  AFormat := 'dd mmm yyyy'; //'dd/mmm/yyyy' if can't
+      AFormat := 'dd mmm yyyy'; //'dd/mmm/yyyy' if can't
 
-  Result := QuotedStr(FormatDateTime(AFormat, D));
+      Result := QuotedStr(FormatDateTime(AFormat, D));
 
-//If yr output for TxQuery use below coding
+      //If yr output for TxQuery use below coding
 
-//  AFormat :='dd/mm/yyyy';
+      //  AFormat :='dd/mm/yyyy';
 
-//  Result := '#'+FormatDateTime(AFormat, D)+'#';  
+      //  Result := '#'+FormatDateTime(AFormat, D)+'#';  
 
-end;
-```
+      end;
+      ```
 
 12. Click File | Save As... to save the file (eg Sales Invoice 1)
 13. Click File | Exit to exit the report design
@@ -384,10 +399,12 @@ Below is Example doing following actions
 4. Select Variables
 5. Add new/to existing as below variable
 
-var
-   SQL_6: String;
+      ```pascal
+      var
+         SQL_6: String;
+      ```
 
-![event-oncreate-insert-code-datafrom-available-pipeline](../../../../static/img/usage/tools/rtm-basic-guide/event-oncreate-insert-code-datafrom-available-pipeline.jpg)
+      ![event-oncreate-insert-code-datafrom-available-pipeline](../../../../static/img/usage/tools/rtm-basic-guide/event-oncreate-insert-code-datafrom-available-pipeline.jpg)
 
 6. Select Events
 7. Select OnCreate
@@ -396,41 +413,45 @@ var
 <details>
     <summary>Script</summary>
 
+```sql
 SQL_6 := 'SELECT DocKey,  Tax, TaxRate, Sum(LocalAmount) LocalAmount, Sum(LocalTaxAmt) localTaxAmt, '+ 
 
-	   'Description  FROM Document_Detail ' +
+'Description  FROM Document_Detail ' +
 
-	   'Where Tax \<> ''''' +
+'Where Tax \<> ''''' +
 
-	   'GROUP BY Dockey, Tax, TaxRate';
+'GROUP BY Dockey, Tax, TaxRate';
+```
 
 </details>
 
-![procedure-before-print-insert-code](../../../../static/img/usage/tools/rtm-basic-guide/procedure-before-print-insert-code.jpg)
+      ![procedure-before-print-insert-code](../../../../static/img/usage/tools/rtm-basic-guide/procedure-before-print-insert-code.jpg)
 
 9. Select Event Handlers
 10. Select procedure ReportBeforePrint
 11. Copy below script & paste to here
 
-<details>
-    <summary>Script</summary>
+      <details>
+       <summary>Script</summary>
 
-LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey;Tax'); //Create New pipeline
+            ```sql
+            LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey;Tax'); //Create New pipeline
 
-   SetDataPipelineFieldLink(Main, plSQL_6, 'DocKey', 'DocKey'); //Link with Main
+               SetDataPipelineFieldLink(Main, plSQL_6, 'DocKey', 'DocKey'); //Link with Main
+            ```
 
-</details>
+      </details>
 
 12. Click File | Save As... to save the file (eg 0Sales Cash Sales 3 (GST 1))
 13. Click File | Exit to exit the report design
 14. Click Design again in the report designer for the file just save on Steps 12 (eg 0Sales Cash Sales 3 (GST 1))
 
-![subreport-place](../../../../static/img/usage/tools/rtm-basic-guide/subreport-place.jpg)
+      ![subreport-place](../../../../static/img/usage/tools/rtm-basic-guide/subreport-place.jpg)
 
 15. Click Subreport icon
 16. Click the place you wanted to show/print
 
-![parentwidth-subreport-rightclick](../../../../static/img/usage/tools/rtm-basic-guide/parentwidth-subreport-rightclick.jpg)
+      ![parentwidth-subreport-rightclick](../../../../static/img/usage/tools/rtm-basic-guide/parentwidth-subreport-rightclick.jpg)
 
 17. Right click the Sub report
 18. Untick the ParentWitdh & manual adjust the sub report width to the width you wanted
@@ -438,15 +459,16 @@ LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey;Tax'); //Create New pipeline
 20. Scroll till end
 21. Click SubReport2:plSQL_6 tab
 
-![report-settings](../../../../static/img/usage/tools/rtm-basic-guide/report-settings.jpg)
+      ![report-settings](../../../../static/img/usage/tools/rtm-basic-guide/report-settings.jpg)
 
 22. Click Report & set the following setting
-- Title - Select
-- Summary - Select
-- Header - UnSelect
-- Footer - UnSelect
 
-![variables-place](../../../../static/img/usage/tools/rtm-basic-guide/variables-place.jpg)
+      * Title - Select
+      * Summary - Select
+      * Header - UnSelect
+      * Footer - UnSelect
+
+      ![variables-place](../../../../static/img/usage/tools/rtm-basic-guide/variables-place.jpg)
 
 23. Click DBText icon
 24. Click the place you wanted to show/print (in between Title & Detail Band)
@@ -460,19 +482,22 @@ LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey;Tax'); //Create New pipeline
 32. Click the place you wanted to show/print (in between Title & Detail Band)
 33. Right Click the variable
 
-![variable-insert-code-right-click](../../../../static/img/usage/tools/rtm-basic-guide/variable-insert-code-right-click.jpg)
+      ![variable-insert-code-right-click](../../../../static/img/usage/tools/rtm-basic-guide/variable-insert-code-right-click.jpg)
 
 34. Copy below script & paste to here
 
-<details>
-    <summary>Script</summary>
+      <details>
+      <summary>Script</summary>
 
-if Trim(plsql_6.getfieldvalue('TaxRate')) \<> '' then
+      ```sql
+      if Trim(plsql_6.getfieldvalue('TaxRate')) \<> '' then
 
-    Value := plsql_6.getfieldvalue('Tax') + ' @ ' + plsql_6.getfieldvalue('TaxRate') else
+         Value := plsql_6.getfieldvalue('Tax') + ' @ ' + plsql_6.getfieldvalue('TaxRate') else
 
-    Value := plsql_6.getfieldvalue('Tax');
-</details>
+         Value := plsql_6.getfieldvalue('Tax');
+      ```
+
+      </details>
 
 35. Click Ok
 36. For label can Click Label icon
@@ -488,22 +513,28 @@ Below is Example will get FromDocNo Field from the Detail Data
 4. Select Variables
 5. Add new/to existing as below variable
 
-var
-   SQL_6: String;
+      ```sql
+      var
+         SQL_6: String;
+      ```
 
 6. Select Events
 7. Select OnCreate
 8. Copy below script & paste to here
 
-SQL_6 := 'SELECT Dockey, Min(Seq) Seq, FromDocDate, FromDocNo FROM Document_Detail '+ 
-	       'WHERE FromDocType \<> ''''  ';
+         ```sql
+         SQL_6 := 'SELECT Dockey, Min(Seq) Seq, FromDocDate, FromDocNo FROM Document_Detail '+ 
+                  'WHERE FromDocType \<> ''''  ';
+         ```
 
 9. Select Event Handlers
 10. Select procedure ReportBeforePrint
 11. Copy below script & paste to here
 
-LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey'); //Create New pipeline
-   SetDataPipelineFieldLink(Main, plSQL_6, 'DocKey', 'DocKey'); //Link with Main
+         ```sql
+         LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey'); //Create New pipeline
+            SetDataPipelineFieldLink(Main, plSQL_6, 'DocKey', 'DocKey'); //Link with Main
+         ```
 
 12. Click File | Save As... to save the file (eg 0Sales Cash Sales 3 (GST 1))
 13. Click File | Exit to exit the report design
@@ -524,23 +555,29 @@ Below Example is to Get total SVE for 6%
 4. Select Variables
 5. Add new/to existing as below variable
 
-var
-   SQL_6: String;
+         ```sql
+         var
+            SQL_6: String;
+         ```
 
 6. Select Events
 7. Select OnCreate
 8. Copy below script & paste to here
 
-SQL_6 := 'SELECT DocKey, SUM(LocalAmount)*0.06 SVE FROM Document_Detail ' +
-           'WHERE Tax=''SVE'' ' +
-           'GROUP BY DocKey';
+         ```sql
+         SQL_6 := 'SELECT DocKey, SUM(LocalAmount)*0.06 SVE FROM Document_Detail ' +
+                  'WHERE Tax=''SVE'' ' +
+                  'GROUP BY DocKey';
+         ```
 
 9. Select Event Handlers
 10. Select procedure ReportBeforePrint
 11. Copy below script & paste to here
 
-LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey'); //Create New pipeline
-   SetDataPipelineFieldLink(Main, plSQL_6, 'DocKey', 'DocKey'); //Link with Main
+         ```sql
+         LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey'); //Create New pipeline
+            SetDataPipelineFieldLink(Main, plSQL_6, 'DocKey', 'DocKey'); //Link with Main
+         ```
 
 12. Click File | Save As... to save the file (eg Sales Invoice 1-New)
 13. Click File | Exit to exit the report design
@@ -548,7 +585,7 @@ LocalSQL_SELECT(plSQL_6, SQL_6, 'Dockey'); //Create New pipeline
 15. Click DBText icon
 16. Click the place you wanted to show/print at the Header
 
-![pipeline-field-place](../../../../static/img/usage/tools/rtm-basic-guide/pipeline-field-place.jpg)
+      ![pipeline-field-place](../../../../static/img/usage/tools/rtm-basic-guide/pipeline-field-place.jpg)
 
 17. Select plSQL_6 pipeline
 18. Select SVE field

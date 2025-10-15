@@ -21,7 +21,7 @@ By default firebird not fully utilies the RAM. Using this new function user can 
     2. Minimum 16 GB RAM
     3. A reliable Uninterrupted Power Supply or UPS (ie. backup power battery).
 4. **Steps**
-    1.  Click 3 dot button in the Login Screen
+    1. Click 3 dot button in the Login Screen
     2. **Right Click** the **Database** you wanted to set.
     3. Select **Properties**
     4. Enter **ADMIN** Password
@@ -37,4 +37,7 @@ By default firebird not fully utilies the RAM. Using this new function user can 
     3. Operating System must at least minimum is Win7, Windows Server 2012 and above.
 :::
 
-![properties-description](../../../../static/img/usage/general/others/properties/properties-description.png)
+| Function | Description |
+|-----------|-------------|
+| Write data to hard disc immediately | **Tick (Default):** Data is flushed to disk on COMMIT — safest for your data. <br /> **Untick:** The operating system controls when data is actually written to disk. *(Not recommended)* |
+| Page Buffers (in MB) | **16 (Default)** |

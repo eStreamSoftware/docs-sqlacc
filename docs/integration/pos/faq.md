@@ -5,10 +5,9 @@ description: SQL POS frequently-asked questions
 slug: /faq/sql-pos
 tags: ["SQL Account", "FAQ", "POS"]
 ---
+## Normal POS FAQ
 
-List of frequently-asked questions.
-
-### Error When install SQL POS : Must specify additional Parameter
+### 1. Error When install SQL POS : Must specify additional Parameter
 
 ![1](../../../static/img/integration/pos/qna/1.png)
 
@@ -33,36 +32,36 @@ List of frequently-asked questions.
 
     3. Control Panel | Uninstall SQL-POS
 
-### Use Offline Mode
+### 2. Use Offline Mode
 
 - Unable to capture live Master Transaction from SQL Acc Master
 
-### SQL POS is only Standalone PC
+### 3. SQL POS is only Standalone PC
 
 - The reason due to when Database corrupt, it won’t corrupt all, so preferable
     Standalone
 
-### Even though I set to Each Bill(Real Time) still unable to get the UTD QTY in SQL POS?
+### 4. Even though I set to Each Bill(Real Time) still unable to get the UTD QTY in SQL POS?
 
 - In Setting - > SQL Account -> Need to ticked Run This POS When call from
     SQLAcc
 
     ![4](../../../static/img/integration/pos/qna/4.png)
 
-### Why keep prompt me Network failed?
+### 5.Why keep prompt me Network failed?
 
 1. Make sure have install Firebird
 
 2. SQL Account have to Set to **Firebird Server** if setting ticked **Run this POS when call from SQLAcc**
 
-### Added Stock Item Code with Chinese word, prompt me unable to find this Product Code ???
+### 6. Added Stock Item Code with Chinese word, prompt me unable to find this Product Code ???
 
 - SQL POS unable to support Unicode on Code, may key in the Chinese Word in Item Description
 - Code Only Alphanumeric
 
-### Previously using IT Uni POS, how should I integrate in SQL?
+### 7. Previously using IT Uni POS, how should I integrate in SQL?
 
-#### .1 SQL POS 316 -> FoxPro
+#### 1. SQL POS 316 -> FoxPro
 
 1. In SQL Account -> Click on SQL POS(to generate New POS Database)
 
@@ -76,12 +75,12 @@ List of frequently-asked questions.
 
     3. Click on Migrate
 
-#### .2 SQL POS 333 - > Firebird Database
+#### 2. SQL POS 333 - > Firebird Database
 
 In SQL POS System -> Double click SQL POS -> Logon Screen -> Right Click
 Restore Database
 
-### Print Receipt Chinese word show in ???
+### 8. Print Receipt Chinese word show in ???
 
 - Reason due to Non-Unicode program set to Chinese
 
@@ -111,7 +110,7 @@ Solution :
 
 5. Save the report
 
-### Error Message : Warning : Assigned Printer does not exist : Print to PDF (Mac Desktop)
+### 9. Error Message : Warning : Assigned Printer does not exist : Print to PDF (Mac Desktop)
 
     ![11](../../../static/img/integration/pos/qna/11.png)
 
@@ -120,7 +119,7 @@ Solution:
 1. **Testing Database only** - Delete whole ITUnicode database
 2. **Real Database** – May request backup from user upload to us to check (suspect file corrupted)
 
-### Unable to capture correct price Tag Price
+### 10. Unable to capture correct price Tag Price
 
 Assigned price tag for item A and Item B, how come only first Item A will capture price tag
 price, but second item B ref price?
@@ -131,7 +130,7 @@ Setting -> SQL Account -> Ticked Unlink SQL Accounting when available
 
 ![12](../../../static/img/integration/pos/qna/12.png)
 
-### Error Message : Failed to Set
+### 11. Error Message : Failed to Set
 
 ![13](../../../static/img/integration/pos/qna/13.png)
 
@@ -139,7 +138,7 @@ Setting -> SQL Account -> Ticked Unlink SQL Accounting when available
 
 - Make sure install SQL With 759 & above
 
-### What is Price Set in Stock Item?
+### 12. What is Price Set in Stock Item?
 
 - Multiple price set in Maintain Stock Item, user allow to set multiple price with comma.
 
@@ -154,22 +153,22 @@ Setting -> SQL Account -> Ticked Unlink SQL Accounting when available
 
     ![15](../../../static/img/integration/pos/qna/15.png)
 
-### What to do if I want to print Barcode Label with Chinese Company Name?
+### 13. What to do if I want to print Barcode Label with Chinese Company Name?
 
 - Save as JPEG, then load the picture into Foxit Design ~
 
-### Error Message : File in use when design barcode report
+### 14. Error Message : File in use when design barcode report
 
 ![16](../../../static/img/integration/pos/qna/16.png)
 
 - Try Exit the program and logon
 - Delete this report and design again
 
-### Backup Error : C:\itUnicode\SQL-POS\SQL-POS-0001.fdb could not be read
+### 15. Backup Error : C:\itUnicode\SQL-POS\SQL-POS-0001.fdb could not be read
 
 - Is due to IT Sync is running behind, may shut down IT Sync before Backup
 
-### Close Counter Collect Payment Type is not match with Payment Method select in Bills
+### 16. Close Counter Collect Payment Type is not match with Payment Method select in Bills
 
 ![17](../../../static/img/integration/pos/qna/17.png)
 
@@ -183,13 +182,13 @@ Step to check Payment Method post to what Account
 
 :::
 
-### Why in Setting Receipt & License Retrieve From SQL button is missing
+### 17. Why in Setting Receipt & License Retrieve From SQL button is missing
 
 ![18](../../../static/img/integration/pos/qna/18.png)
 
 - Once License Registered, the button will disable ~
 
-### Same receipt will auto cut to few pages
+### 18. Same receipt will auto cut to few pages
 
 ![19](../../../static/img/integration/pos/qna/19.png)
 
@@ -203,7 +202,7 @@ Step to check Payment Method post to what Account
 
 ![20](../../../static/img/integration/pos/qna/20.png)
 
-### Unable to key In Daily Cash Sales No with message : The Control is Read Only
+### 19. Unable to key In Daily Cash Sales No with message : The Control is Read Only
 
 ![21](../../../static/img/integration/pos/qna/21.png)
 
@@ -211,7 +210,7 @@ Step to check Payment Method post to what Account
 
 - Control by license, need email to request new license key, mean Counter ID and CashSales number prefix based on license.
 
-### Receipt format unable to show Chinese word
+### 20. Receipt format unable to show Chinese word
 
 1. Menu Screen -> Select **Print Receipt**
 
@@ -227,7 +226,7 @@ Step to check Payment Method post to what Account
 After Fill in \<UTF-8\> , remember save the report.
 :::
 
-### Proper Step to set Branch SQL POS (Error Failed to Set )
+### 21. Proper Step to set Branch SQL POS (Error Failed to Set )
 
 1. Configure and make sure SQL able to test successful
 
@@ -241,7 +240,7 @@ After Fill in \<UTF-8\> , remember save the report.
 - Ping result lost 0 = 0%
 - Unticked **DisableChkPing**
 
-### Fail to assign Printer
+### 22. Fail to assign Printer
 
 ![24](../../../static/img/integration/pos/qna/24.png)
 
@@ -255,7 +254,7 @@ After Fill in \<UTF-8\> , remember save the report.
 
 3. Window XP -> Upgrade to Window 7 & Above
 
-### How to disable preview receipt when payment done
+### 23. How to disable preview receipt when payment done
 
 ![25](../../../static/img/integration/pos/qna/25.png)
 
@@ -263,7 +262,7 @@ Solution :
 
 - SQL POS **Setting** - > **Receipt & License** Tab -> **No Copy of Receipt** set to **0**
 
-### What to do if disallow User to return stock?
+### 24. What to do if disallow User to return stock?
 
 Maintain User -> Refund Item ->
 
@@ -275,11 +274,11 @@ Set to Yes, user allow to return stock with enter - 1
 Set to No, user disallow to save negative stock
 :::
 
-### How to un-closed counter?
+### 25. How to un-closed counter?
 
 ➔ Close Counter -> Right click un-closed counter
 
-### Unable to Sent Email from Gmail : Fail to sent email
+### 26. Unable to Sent Email from Gmail : Fail to sent email
 
 :::info
 *(Menu -> Export Cash Sales -> Email Button -> Setting Email Server Button)*
@@ -289,7 +288,7 @@ Set to No, user disallow to save negative stock
 
 **Solution :**
 
-1. Follow this [link](https://myaccount.google.com/security)
+1. Follow this [Google Account Security page](https://myaccount.google.com/security)
 
 2. Click on **Less Secure App Access**
 
@@ -299,7 +298,7 @@ Set to No, user disallow to save negative stock
 
     ![29](../../../static/img/integration/pos/qna/29.png)
 
-### Post to SQL Account raise Error: Failed to Psot Payment of 02/6/2020 OLED IDispatch exception code 0 from : knockoff amount (0.00) must not exceed outstanding amount (321.6)
+### 27. Post to SQL Account raise Error: Failed to Psot Payment of 02/6/2020 OLED IDispatch exception code 0 from : knockoff amount (0.00) must not exceed outstanding amount (321.6)
 
 ![30](../../../static/img/integration/pos/qna/30.png)
 
@@ -311,8 +310,8 @@ Set to No, user disallow to save negative stock
 
 ## SQL POS F&B
 
-### Error Message : Counter is closed, wait for Main Counter to open
+### 28. Error Message : Counter is closed, wait for Main Counter to open
 
-![31](../../../static/img/integration/pos/qna/31.png)
+    ![31](../../../static/img/integration/pos/qna/31.png)
 
 - This error message mean when there have multiple POS link together, make sure Main Counter have to Open Counter first.

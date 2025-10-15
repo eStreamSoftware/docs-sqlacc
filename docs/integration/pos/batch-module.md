@@ -1,5 +1,6 @@
 ---
 title: Batch Number Module
+sidebar_position: 2
 description: A guide to Batch Number Module for SQL POS System
 slug: /integration/pos/batch-module
 tags: ["SQL Account", "POS"]

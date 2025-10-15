@@ -88,26 +88,25 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 5. Select report name 0Sales Local - Invoice Listing - Level 1
 6. Click Ok button
 
-
-## Bonus Point System 
+## Bonus Point System
 
 This Customisation is to calculate/maintain the Point/Bonus
 
-- Pros
-    * Able to set Claim Rate (i.e. 1 Point = How many RM eg 1 Point = RM0.01 so enter as 0.01)
-    * Able to set Point Rate by item code (i.e. RM1 = How many point eg RM1 = 1 so enter as 1)
-    * Point Rate can be calculate by Amount and/or Qty
-    * Able to Claim like Voucher as Discount
-    * Able to Claim Item
-    * Claim Point Rate can be change runtime
+* Pros
+      - Able to set Claim Rate (i.e. 1 Point = How many RM eg 1 Point = RM0.01 so enter as 0.01)
+      - Able to set Point Rate by item code (i.e. RM1 = How many point eg RM1 = 1 so enter as 1)
+      - Point Rate can be calculate by Amount and/or Qty
+      - Able to Claim like Voucher as Discount
+      - Able to Claim Item
+      - Claim Point Rate can be change runtime  
 
-- Cons
-    * Unable to handle the cancel & Delete Invoice - Manually deduct the point using Update Button on Extra DO
-    * If the customer no transaction within the month it unable to Generate Statement
-    *  No Auto Deduct Expiry Point - manually deduct the point using Update Button on Extra DO
-    * Able to handle 2 decimal Point only
-    * Batch Insert no checking (i.e. User may over deduct the point)
-    * User had to manually Adjust for Opening after the Year End Purging had done.
+* Cons
+      - Unable to handle the cancel & Delete Invoice - Manually deduct the point using Update Button on Extra DO
+      - If the customer no transaction within the month it unable to Generate Statement
+      - No Auto Deduct Expiry Point - manually deduct the point using Update Button on Extra DO
+      - Able to handle 2 decimal Point only
+      - Batch Insert no checking (i.e. User may over deduct the point)
+      - User had to manually Adjust for Opening after the Year End Purging had done.
 
 [Sample Database](https://www.sql.com.my/document/ACC%20BK-%5BBonusVoucherPoint%5D.zip)
 
@@ -192,6 +191,7 @@ Below is example in Sales Invoice with Voucher Claim
 4. Save.
 
 :::success If no Voucher is use (i.e. Just deduct/redeem either fully/partly by Point)
+
 * Just enter the UDF_VoucherRate as - (Negative Value) after enter the Negative UnitPrice
 :::
 
@@ -200,15 +200,17 @@ Below is example in Sales Invoice with Voucher Claim
 *Menu: Sales | Extra Delivery Order...*
 
 In here user can do adjustment for the point for each Customer.
+
 1. Click Update Button
 
-![updateExtraDO](../../../static/img/miscellaneous/sqlControlCenter/updateExtraDO.jpg)
+    ![updateExtraDO](../../../static/img/miscellaneous/sqlControlCenter/updateExtraDO.jpg)
 
 2. Untick this if you wanted to Add the point
 3. Enter the Point to Add/Reduce.
 4. Click Post Button
 
 #### Extra Delivery Order Listing
+
 *Menu: Sales | Print Sales Document Listing...*
 
     Here is for user to print the Bonus Statement or UnClaim Voucher Listing report
@@ -222,7 +224,7 @@ In here user can do adjustment for the point for each Customer.
 5. Select report name Bonus Statement or UnClaim Voucher Listing
 6. Click Ok button
 
-## Branch Control 
+## Branch Control
 
 Branch Control Setting is done to prevent branch user from selecting Customer, Project, Stock Item or Location info that is not relevant to them.
 
@@ -230,7 +232,7 @@ Branch Control Setting is done to prevent branch user from selecting Customer, P
 
 * Branch user only allows to select their own customer
 * Preset default Agent, Project, Item Code, Location code for each branch user
-*  Reports only shows transactions issued by the branch user
+* Reports only shows transactions issued by the branch user
 * Filter reports only using information assigned to the branch user
 * Generate accurate P&L, Stock Balance Report for branches
 
@@ -243,43 +245,43 @@ Branch Control Setting is done to prevent branch user from selecting Customer, P
 
 ### Project & Location
 
-- Authorising each branch users to have the accessibility to their respective branch, SQL will automatically assign transactions created by the user to a specific branch to prevent human mistakes. Account entries, stock warehouse will automatically be posted to the appropriate branch.
+* Authorising each branch users to have the accessibility to their respective branch, SQL will automatically assign transactions created by the user to a specific branch to prevent human mistakes. Account entries, stock warehouse will automatically be posted to the appropriate branch.
 
 ![project&Location](../../../static/img/miscellaneous/sqlControlCenter/project&Location.png)
 
 ### Customer List
 
-- The user can only select/access the customer information for the own branch and is not permitted to post transactions for any other branch. You can avoid information being shared to other branches at data entry staff’s level.
+* The user can only select/access the customer information for the own branch and is not permitted to post transactions for any other branch. You can avoid information being shared to other branches at data entry staff’s level.
 
 ![custList](../../../static/img/miscellaneous/sqlControlCenter/custList.png)
 
 ### Agent / Area List
 
-- Automatically set the default agent/area code based on user login to ease the user's instead of requiring manual selection.
+* Automatically set the default agent/area code based on user login to ease the user's instead of requiring manual selection.
 
 ![agent&Area](../../../static/img/miscellaneous/sqlControlCenter/agent&Area.png)
 
 ### Stock Item List
 
-- The user only able to select the list of item code belong to their branch.
+* The user only able to select the list of item code belong to their branch.
 
 ![itemCode](../../../static/img/miscellaneous/sqlControlCenter/itemCode.png)
 
 ### Payment Method
 
-- Restrict payment methods for each branch to prevent human error and posting to unnecessary accounts.
+* Restrict payment methods for each branch to prevent human error and posting to unnecessary accounts.
 
 ![payMethods](../../../static/img/miscellaneous/sqlControlCenter/payMethods.png)
 
 ### Reporting
 
-- Stay on top of your financial and operational transactions across all your branches with SQL. You can monitor all transactions happening in each branch. with this information, you can identify which branch is the most profitable and which branch that needs to monitor closely.
+* Stay on top of your financial and operational transactions across all your branches with SQL. You can monitor all transactions happening in each branch. with this information, you can identify which branch is the most profitable and which branch that needs to monitor closely.
 
 ![reporting](../../../static/img/miscellaneous/sqlControlCenter/reporting.png)
 
 ### Profit & Loss Project
 
-- By consolidating headquarter accounts with branch accounts, SQL allows for the viewing of consolidated balance sheets, profit and loss accounts by authorised users to evaluate the company’s overall performance. Bosses are able to drill down to the transactions of each branch individually.
+* By consolidating headquarter accounts with branch accounts, SQL allows for the viewing of consolidated balance sheets, profit and loss accounts by authorised users to evaluate the company’s overall performance. Bosses are able to drill down to the transactions of each branch individually.
 
 ![P&L-Project](../../../static/img/miscellaneous/sqlControlCenter/P&L-Project.png)
 
@@ -290,6 +292,7 @@ Branch Control Setting is done to prevent branch user from selecting Customer, P
 ![branchControlSettings](../../../static/img/miscellaneous/sqlControlCenter/branchControlSettings.jpg)
 
 Here are the guidelines to set **Branch Control Setting**
+
 1. **MUST** Logon as **ADMIN** account
 2. Choose for the sub account, e.g. Yuki agent account
 3. Go to **Access Right for Branch Control** tab
@@ -300,13 +303,13 @@ Here are the guidelines to set **Branch Control Setting**
 1. Tick Lock Customer
 2. If want filter customers by :
 
-| **Filter By**       | **Number** |
-|----------------------|------------|
-| Area                | 1          |
-| Agent               | 2          |
-| Company Category    | 3          |
+    | **Filter By**       | **Number** |
+    |----------------------|------------|
+    | Area                | 1          |
+    | Agent               | 2          |
+    | Company Category    | 3          |
 
-The setting can only function within the range of **1 to 3**.
+    The setting can only function within the range of **1 to 3**.
 
 3. Enter the Area code for Area in Allowable List, you are allow to enter more than 1 area codes.
 4. If want search customer by
@@ -331,13 +334,13 @@ Tick the **Lock Customer** Option and filtered customer list by area, enter as 1
 1. Tick Lock Supplier
 2. If want filter suppliers by
 
-| **Filter By**        | **Number** |
-|-----------------------|------------|
-| Area                  | 1          |
-| Agent                 | 2          |
-| Company Category      | 3          |
+    | **Filter By**        | **Number** |
+    |-----------------------|------------|
+    | Area                  | 1          |
+    | Agent                 | 2          |
+    | Company Category      | 3          |
 
-The setting can only function within the range of **1 to 3**.
+    The setting can only function within the range of **1 to 3**.
 
 3. Enter the Agent code for Agent in **Allowable List**, you are allow to enter more than 1 agent codes.
 4. If want search supplier by :
@@ -362,13 +365,13 @@ Tick the Lock Supplier option and filter supplier list by agent, enter as 2 in F
 1. Tick Lock Item Code
 2. If want filter stock item by
 
-| **Filter By**  | **Number** |
-|----------------|------------|
-| Stock Group    | 1          |
-| Category       | 2          |
-| Item Code      | 3          |
+    | **Filter By**  | **Number** |
+    |----------------|------------|
+    | Stock Group    | 1          |
+    | Category       | 2          |
+    | Item Code      | 3          |
 
-The setting can only function within the range of **1 to 3**.
+    The setting can only function within the range of **1 to 3**.
 
 3. Enter the item code for Item Code in **Allowable Item Code**, you are allow to enter more than 1 item codes.
 4. If want search item code by
@@ -401,60 +404,64 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 ![lockProject](../../../static/img/miscellaneous/sqlControlCenter/lockProject.jpg)
 
 ## Assignment : To Create the Unit Price Calculation
-- Create the DIY field such as UDF_mUnitPrice in Sales documents (eg. sales invoice)
-- Purpose: User will key-in the base unit price to convert into new unit price based on the UOM rate in Maintain Stock Item.
+
+* Create the DIY field such as UDF_mUnitPrice in Sales documents (eg. sales invoice)
+* Purpose: User will key-in the base unit price to convert into new unit price based on the UOM rate in Maintain Stock Item.
 
 ![udf-unit-price](../../../static/img/miscellaneous/sqlControlCenter/udf-unit-price.png)
 
-- Calculation for Unit Price := UDF_mUnitPrice x Rate
+* Calculation for Unit Price := UDF_mUnitPrice x Rate
 
-## Steps
+**Steps :**
+
 ### Insert DIY Field
-01. Click Tools | DIY | SQL Control Center...
-02. At the left panel look for Sales Invoice.
-03. Point to Items Fields.
-04. On the right panel, insert the DIY field as per the TABLE below.
 
-| Name        | Data Type | Size | SubSize | Caption       | Required       | Default Value | Display Format    |
-|-------------|-----------|------|---------|---------------|----------------|---------------|------------------|
-| mUnitPrice  | Float     | 10   | 2       | UDF_mUnitPrice| FALSE (Untick) | BLANK         | #,0.00;-#,0.00   |
+1. Click Tools | DIY | SQL Control Center...
+2. At the left panel look for Sales Invoice.
+3. Point to Items Fields.
+4. On the right panel, insert the DIY field as per the TABLE below.
 
-![item-fields-unit-price](../../../static/img/miscellaneous/sqlControlCenter/item-fields-unit-price.png)
+    | Name        | Data Type | Size | SubSize | Caption       | Required       | Default Value | Display Format    |
+    |-------------|-----------|------|---------|---------------|----------------|---------------|------------------|
+    | mUnitPrice  | Float     | 10   | 2       | UDF_mUnitPrice| FALSE (Untick) | BLANK         | #,0.00;-#,0.00   |
 
-05. Click Save.
-06. Update operation successful message. Click OK.
-07. DONE
+    ![item-fields-unit-price](../../../static/img/miscellaneous/sqlControlCenter/item-fields-unit-price.png)
+
+5. Click Save.
+6. Update operation successful message. Click OK.
+7. DONE
 
 ### Insert DIY Script
-01. Click Tools | DIY | SQL Control Center...
-02. At the left panel look for Sales Invoice .
-03. Right Click the Sales Invoice.
 
-![new-event](../../../static/img/miscellaneous/sqlControlCenter/new-event.png)
+1. Click Tools | DIY | SQL Control Center...
+2. At the left panel look for Sales Invoice .
+3. Right Click the Sales Invoice.
 
-04. Select New Event.
+    ![new-event](../../../static/img/miscellaneous/sqlControlCenter/new-event.png)
 
-![event-properties](../../../static/img/miscellaneous/sqlControlCenter/event-properties.png)
+4. Select New Event.
 
-05. Enter any name (eg Calc) in the Name field (Only Alphanumeric & no spacing).
-06. Select OnGridColumnValueChanged for Event field.
-07. Click OK.
-08. Click the Calc (name create at Step 5 above) on the left panel.
+    ![event-properties](../../../static/img/miscellaneous/sqlControlCenter/event-properties.png)
 
-![ongrid-column-value-changed](../../../static/img/miscellaneous/sqlControlCenter/ongrid-column-value-changed.png)
+5. Enter any name (eg Calc) in the Name field (Only Alphanumeric & no spacing).
+6. Select OnGridColumnValueChanged for Event field.
+7. Click OK.
+8. Click the Calc (name create at Step 5 above) on the left panel.
 
-09. Copy below script & paste to the Right Panel (Script Section).
+    ![ongrid-column-value-changed](../../../static/img/miscellaneous/sqlControlCenter/ongrid-column-value-changed.png)
 
-```sql
-begin
-    if SameText(EditingField, 'ItemCode')or
-       SameText(EditingField, 'UDF_mUnitPrice') then begin
-            DataSet.FindField('UnitPrice').AsFloat :=
-            DataSet.FindField('Rate').AsFloat * DataSet.FindField('UDF_mUnitPrice').AsFloat;
+9. Copy below script & paste to the Right Panel (Script Section).
 
-    end;
-end.
-```
+    ```sql
+    begin
+        if SameText(EditingField, 'ItemCode')or
+          SameText(EditingField, 'UDF_mUnitPrice') then begin
+                DataSet.FindField('UnitPrice').AsFloat :=
+                DataSet.FindField('Rate').AsFloat * DataSet.FindField('UDF_mUnitPrice').AsFloat;
+
+        end;
+    end.
+    ```
 
 10. Click Save button.
 
@@ -462,316 +469,327 @@ end.
 Avoid update the same existing field name Unit Price. You have to create different name ie. UDF_mUnitPrice.
 :::
 
-## Result Test
-01. Go to Stock | Maintain Stock Item...
-02. Edit the item code ANT.
-03. Insert additional UOM with different RATE, eg. 1 CARTON = 12 UNITS and 1 BOX = 60 UNITS.
+### Result Test
 
-![item-code-ant](../../../static/img/miscellaneous/sqlControlCenter/item-code-ant.png)
+1. Go to Stock | Maintain Stock Item...
+2. Edit the item code ANT.
+3. Insert additional UOM with different RATE, eg. 1 CARTON = 12 UNITS and 1 BOX = 60 UNITS.
 
+    ![item-code-ant](../../../static/img/miscellaneous/sqlControlCenter/item-code-ant.png)
 
-04. Create new sales invoice from Sales | Invoice...
-05. Call out the columns name UDF_mUnitPrice and Rate.
+4. Create new sales invoice from Sales | Invoice...
+5. Call out the columns name UDF_mUnitPrice and Rate.
 
-![columns-udf-rate](../../../static/img/miscellaneous/sqlControlCenter/columns-udf-rate.png)
+    ![columns-udf-rate](../../../static/img/miscellaneous/sqlControlCenter/columns-udf-rate.png)
 
-06. Insert and select the item code ANT.
-07. Select the UOM to CARTON. Rate will be changed to 12.
-08. Input the value into UDF_mUnitPrice. U/Price will be calculated from your DIY script formula (UDF_mUnitPrice x Rate).
+6. Insert and select the item code ANT.
+7. Select the UOM to CARTON. Rate will be changed to 12.
+8. Input the value into UDF_mUnitPrice. U/Price will be calculated from your DIY script formula (UDF_mUnitPrice x Rate).
 
 ![input-values-for-udf](../../../static/img/miscellaneous/sqlControlCenter/input-values-for-udf.png)
 
 ## Assignment : How to get the data from Master Table into entry form?
-- Create the DIY fields such as UDF_PCS, UDF_CTN in Maintain Stock Item; and
-- UDF_Price in Sales Documents (eg. sales invoice).
-- Purpose is:
+
+* Create the DIY fields such as UDF_PCS, UDF_CTN in Maintain Stock Item; and
+* UDF_Price in Sales Documents (eg. sales invoice).
+* Purpose is:
 
 ```bash
+
  Get UDF_PCS & UDF_CTN from Maintain Item to Sales Invoice Detail UDF_Price
  # If selected itemcode UOM is PCS then use UDF_PCS
  # if selected itemcode UOM is CTN then use UDF_CTN 
  # if selected itemcode UOM not PCS or CTN then default is 1 
 ```
 
-- Calculation for Unit Price := UDF_Price * UDF_Rate
+* Calculation for Unit Price := UDF_Price * UDF_Rate
 
-## Steps
+**Steps**
+
 ### Insert DIY Field
-01. Click Tools | DIY | SQL Control Center...
-02. At the left panel look for Stock | Stock Item .
-03. Point to Stock Items Fields.
-04. On the right panel, insert the new field as per the table below.
 
-| Name | Data Type | Size | SubSize | Caption   | Required       | Default Value | Display Format       |
-|------|-----------|------|---------|-----------|----------------|---------------|----------------------|
-| PCS  | Float     | 10   | 2       | UDF_PCS   | FALSE (Untick) | BLANK         | #,0.00;-#,0.00       |
-| CTN  | Float     | 10   | 2       | UDF_CTN   | FALSE (Untick) | BLANK         | #,0.00;-#,0.00       |
+1. Click Tools | DIY | SQL Control Center...
+2. At the left panel look for Stock | Stock Item .
+3. Point to Stock Items Fields.
+4. On the right panel, insert the new field as per the table below.
 
-![stock-item-fields](../../../static/img/miscellaneous/sqlControlCenter/stock-item-fields.png)
+    | Name | Data Type | Size | SubSize | Caption   | Required       | Default Value | Display Format       |
+    |------|-----------|------|---------|-----------|----------------|---------------|----------------------|
+    | PCS  | Float     | 10   | 2       | UDF_PCS   | FALSE (Untick) | BLANK         | #,0.00;-#,0.00       |
+    | CTN  | Float     | 10   | 2       | UDF_CTN   | FALSE (Untick) | BLANK         | #,0.00;-#,0.00       |
 
-05. Click Save.
-06. Update operation successful message. Click OK.
-07. Next...
-08. At the left panel look for Sales | Sales Invoice.
-09. Point to Items Fields.
+    ![stock-item-fields](../../../static/img/miscellaneous/sqlControlCenter/stock-item-fields.png)
+
+5. Click Save.
+6. Update operation successful message. Click OK.
+7. Next...
+8. At the left panel look for Sales | Sales Invoice.
+9. Point to Items Fields.
 10. On the right panel, insert the new field as per the table below.
 
-| Name  | Data Type | Size | SubSize | Caption    | Required       | Default Value | Display Format       |
-|-------|-----------|------|---------|------------|----------------|---------------|----------------------|
-| Price | Float     | 10   | 2       | UDF_Price  | FALSE (Untick) | BLANK         | #,0.00;-#,0.00       |
-| Rate  | Float     | 10   | 2       | UDF_Rate   | FALSE (Untick) | BLANK         | #,0.00;-#,0.00       |
+    | Name  | Data Type | Size | SubSize | Caption    | Required       | Default Value | Display Format       |
+    |-------|-----------|------|---------|------------|----------------|---------------|----------------------|
+    | Price | Float     | 10   | 2       | UDF_Price  | FALSE (Untick) | BLANK         | #,0.00;-#,0.00       |
+    | Rate  | Float     | 10   | 2       | UDF_Rate   | FALSE (Untick) | BLANK         | #,0.00;-#,0.00       |
 
-![sales-salesinvoice-itemfields](../../../static/img/miscellaneous/sqlControlCenter/sales-salesinvoice-itemfields.png)
+    ![sales-salesinvoice-itemfields](../../../static/img/miscellaneous/sqlControlCenter/sales-salesinvoice-itemfields.png)
 
 11. Click Save.
 12. Update operation successful message. Click OK.
 13. DONE.
 
 ## Create Quick Form
-01. Click Tools | DIY | SQL Control Center...
-02. At the left panel look for Stock | Stock Item .
-03. Right click on te Stock Item.
-04. Select New Quick Form Design.
 
-![newquickformdesign](../../../static/img/miscellaneous/sqlControlCenter/newquickformdesign.png)
+1. Click Tools | DIY | SQL Control Center...
+2. At the left panel look for Stock | Stock Item .
+3. Right click on te Stock Item.
+4. Select New Quick Form Design.
 
-05. Enter the new name as EXTRA. Click OK.
+    ![newquickformdesign](../../../static/img/miscellaneous/sqlControlCenter/newquickformdesign.png)
 
-![new-name-quickformdesign](../../../static/img/miscellaneous/sqlControlCenter/new-name-quickformdesign.png)
+5. Enter the new name as EXTRA. Click OK.
 
-06. Click on the EXTRA follow by Customize button.
-07. Drag the UDF_CTN adn UDF_PCS from right to the place marked X. See the screenshot below.
+    ![new-name-quickformdesign](../../../static/img/miscellaneous/sqlControlCenter/new-name-quickformdesign.png)
 
-![stock-stockitem-newfield-will-be-here](../../../static/img/miscellaneous/sqlControlCenter/stock-stockitem-newfield-will-be-here.png)
+6. Click on the EXTRA follow by Customize button.
+7. Drag the UDF_CTN adn UDF_PCS from right to the place marked X. See the screenshot below.
 
-08. Both the UDF fields will be under the Root. Click CLOSE.
+    ![stock-stockitem-newfield-will-be-here](../../../static/img/miscellaneous/sqlControlCenter/stock-stockitem-newfield-will-be-here.png)
 
-09. Click SAVE.
+8. Both the UDF fields will be under the Root. Click CLOSE.
 
-![createquickform-save](../../../static/img/miscellaneous/sqlControlCenter/createquickform-save.png)
+9. Click SAVE.
+
+    ![createquickform-save](../../../static/img/miscellaneous/sqlControlCenter/createquickform-save.png)
 
 10. DONE.
 
 ### Insert DIY Script
-01. Click Tools | DIY | SQL Control Center...
-02. At the left panel look for Sales Invoice .
-03. Right Click the Sales Invoice.
 
-![new-event-salesinvoice](../../../static/img/miscellaneous/sqlControlCenter/new-event-salesinvoice.png)
+1. Click Tools | DIY | SQL Control Center...
+2. At the left panel look for Sales Invoice .
+3. Right Click the Sales Invoice.
 
-04. Select New Event.
+    ![new-event-salesinvoice](../../../static/img/miscellaneous/sqlControlCenter/new-event-salesinvoice.png)
 
-![event-properties-salesinvoice](../../../static/img/miscellaneous/sqlControlCenter/event-properties-salesinvoice.png)
+4. Select New Event.
 
-05. Enter any name (eg Calc) in the Name field (Only Alphanumeric & no spacing).
-06. Select OnGridColumnValueChanged for Event field.
-07. Click OK.
-08. Click the Calc (name create at Step 5 above) on the left panel.
+    ![event-properties-salesinvoice](../../../static/img/miscellaneous/sqlControlCenter/event-properties-salesinvoice.png)
 
-![sales-salesinvoice-ongrid](../../../static/img/miscellaneous/sqlControlCenter/sales-salesinvoice-ongrid.png)
+5. Enter any name (eg Calc) in the Name field (Only Alphanumeric & no spacing).
+6. Select OnGridColumnValueChanged for Event field.
+7. Click OK.
+8. Click the Calc (name create at Step 5 above) on the left panel.
 
-09. Copy below script & paste to the Right Panel (Script Section).
+    ![sales-salesinvoice-ongrid](../../../static/img/miscellaneous/sqlControlCenter/sales-salesinvoice-ongrid.png)
 
-```sql
-var FComServer, lBizObj : Variant;
-    cdsData : TClientDataSet;
- 
-function ComServer: Variant;
-begin
-  if FComServer = Null then begin
-    FComServer := CreateOleObject('SQLAcc.BizApp');
-  end;
-  Result := FComServer;
-end;
- 
-procedure GetStockInfo;
-var lSQL, lCode  : String;
-begin
-  FComServer := null;
-  cdsData    := TClientDataSet.Create(nil); // Create & preparing Component
-  try
-    lCode := Dataset.FindField('ItemCode').AsString;     
-    lSQL  := Format('SELECT UDF_PCS, UDF_CTN FROM ST_ITEM WHERE Code=%s',[QuotedStr(lCode)]);
- 
-    cdsData.Data := ComServer.DBManager.Execute(lSQL);
-  finally
-    lBizObj    := null;
-    FComServer := null;
-  end;
-end;
- 
-begin
-  if SameText(EditingField, 'ItemCode') or
-     SameText(EditingField, 'UOM') or
-     SameText(EditingField, 'UDF_Rate') then begin
-     try
-       GetStockInfo;
-       if Dataset.FindField('UOM').AsString = 'PCS' then
-         Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_PCS').AsFloat else
-       if Dataset.FindField('UOM').AsString = 'CTN' then
-         Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_CTN').AsFloat else
-         Dataset.FindField('UDF_Price').AsFloat := 1;
- 
-       Dataset.FindField('UnitPrice').AsFloat := Dataset.FindField('UDF_Price').AsFloat *
-                                                 Dataset.FindField('UDF_Rate').AsFloat;
-     finally
-       cdsData.Free;
-     end;
-  end;
-end.
-```
+9. Copy below script & paste to the Right Panel (Script Section).
+
+    ```bash
+    var FComServer, lBizObj : Variant;
+        cdsData : TClientDataSet;
+    
+    function ComServer: Variant;
+    begin
+      if FComServer = Null then begin
+        FComServer := CreateOleObject('SQLAcc.BizApp');
+      end;
+      Result := FComServer;
+    end;
+    
+    procedure GetStockInfo;
+    var lSQL, lCode  : String;
+    begin
+      FComServer := null;
+      cdsData    := TClientDataSet.Create(nil); // Create & preparing Component
+      try
+        lCode := Dataset.FindField('ItemCode').AsString;     
+        lSQL  := Format('SELECT UDF_PCS, UDF_CTN FROM ST_ITEM WHERE Code=%s',[QuotedStr(lCode)]);
+    
+        cdsData.Data := ComServer.DBManager.Execute(lSQL);
+      finally
+        lBizObj    := null;
+        FComServer := null;
+      end;
+    end;
+    
+    begin
+      if SameText(EditingField, 'ItemCode') or
+        SameText(EditingField, 'UOM') or
+        SameText(EditingField, 'UDF_Rate') then begin
+        try
+          GetStockInfo;
+          if Dataset.FindField('UOM').AsString = 'PCS' then
+            Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_PCS').AsFloat else
+          if Dataset.FindField('UOM').AsString = 'CTN' then
+            Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_CTN').AsFloat else
+            Dataset.FindField('UDF_Price').AsFloat := 1;
+    
+          Dataset.FindField('UnitPrice').AsFloat := Dataset.FindField('UDF_Price').AsFloat *
+                                                    Dataset.FindField('UDF_Rate').AsFloat;
+        finally
+          cdsData.Free;
+        end;
+      end;
+    end.
+    ```
 
 10. Click Save button.
 
-:::warning
-Avoid update the same existing field name Unit Price and "Rate". You have to create different name ie. UDF_Price and UDF_Rate.
-:::
+    :::warning
+    Avoid update the same existing field name Unit Price and "Rate". You have to create different name ie. UDF_Price and UDF_Rate.
+    :::
 
-## Result Test
-01. Go to Stock | Maintain Stock Item...
-02. Create a new item code called PEN.
-03. Update the UOM tab. See the screenshot below.
+### Result Test
 
-![uomtab](../../../static/img/miscellaneous/sqlControlCenter/uomtab.png)
+1. Go to Stock | Maintain Stock Item...
+2. Create a new item code called PEN.
+3. Update the UOM tab. See the screenshot below.
 
-04. Click on EXTRA tab.
-05. Input the UDF_CTN and UDF_PCS value.
+    ![uomtab](../../../static/img/miscellaneous/sqlControlCenter/uomtab.png)
 
-![extratab](../../../static/img/miscellaneous/sqlControlCenter/extratab.png)
+4. Click on EXTRA tab.
+5. Input the UDF_CTN and UDF_PCS value.
 
-06. Create new sales invoice from Sales | Invoice...
-05. Call out the columns name UDF_Price and UDF_Rate.
+    ![extratab](../../../static/img/miscellaneous/sqlControlCenter/extratab.png)
 
-![udfprice-udfrate](../../../static/img/miscellaneous/sqlControlCenter/udfprice-udfrate.png)
+6. Create new sales invoice from Sales | Invoice...
+7. Call out the columns name UDF_Price and UDF_Rate.
 
-06. Insert and select the item code PEN.
-07. Select the UOM to CTN.
-08. UDF_Price will be changed to 50.00 (based on the UDF_CTN set for PEN).
-09. Input the value into UDF_Rate. U/Price will be calculated from your DIY script formula (UDF_Price x UDF_Rate).
+    ![udfprice-udfrate](../../../static/img/miscellaneous/sqlControlCenter/udfprice-udfrate.png)
 
-![valuesfor-udfprice-udfrate](../../../static/img/miscellaneous/sqlControlCenter/valuesfor-udfprice-udfrate.png)
+8. Insert and select the item code PEN.
+9. Select the UOM to CTN.
+10. UDF_Price will be changed to 50.00 (based on the UDF_CTN set for PEN).
+11. Input the value into UDF_Rate. U/Price will be calculated from your DIY script formula (UDF_Price x UDF_Rate).
+
+    ![valuesfor-udfprice-udfrate](../../../static/img/miscellaneous/sqlControlCenter/valuesfor-udfprice-udfrate.png)
 
 ## Assignment : How to get Outstanding IV amount & show below the Browse button at Sales Invoice?
-- This assignment no need to create any DIY fields
-- Purpose is to display the total outstanding balance for the customer selected at the Invoice
 
+* This assignment no need to create any DIY fields
+* Purpose is to display the total outstanding balance for the customer selected at the Invoice
 
-## Steps
+**Steps**
+
 ### Insert DIY Field
-01. Click Tools | DIY | SQL Control Center...
-02. At the left panel look for Sales Invoice .
-03. Right Click the Sales Invoice.
 
-![newevent-salesinvoice](../../../static/img/miscellaneous/sqlControlCenter/newevent-salesinvoice.png)
+1. Click Tools | DIY | SQL Control Center...
+2. At the left panel look for Sales Invoice .
+3. Right Click the Sales Invoice.
 
-04. Select New Event.
+    ![newevent-salesinvoice](../../../static/img/miscellaneous/sqlControlCenter/newevent-salesinvoice.png)
 
-![name-event-new](../../../static/img/miscellaneous/sqlControlCenter/name-event-new.png)
+4. Select New Event.
 
-05. Enter any name (eg Calc) in the Name field (Only Alphanumeric & no spacing).
-06. Select OnOpen for Event field.
-07. Click OK.
-08. Click the Calc (name create at Step 5 above) on the left panel.
+    ![name-event-new](../../../static/img/miscellaneous/sqlControlCenter/name-event-new.png)
 
-![sales-salesinvoice-onopencalc](../../../static/img/miscellaneous/sqlControlCenter/sales-salesinvoice-onopencalc.png)
+5. Enter any name (eg Calc) in the Name field (Only Alphanumeric & no spacing).
+6. Select OnOpen for Event field.
+7. Click OK.
+8. Click the Calc (name create at Step 5 above) on the left panel.
 
-09. Copy below script & paste to the Right Panel (Script Section).
+    ![sales-salesinvoice-onopencalc](../../../static/img/miscellaneous/sqlControlCenter/sales-salesinvoice-onopencalc.png)
 
-```sql
-var FComServer, lBizObj : Variant;
-    C : TComponent;
-    T : TTimer;
-    M : TDataSource;
-    L1, L2 : TLabel;
-    cdsTemp : TClientDataset;
- 
-function ComServer: Variant;
-begin
-  if FComServer = Null then 
-    FComServer := CreateOleObject('SQLAcc.BizApp');
-  Result := FComServer;
-end;
- 
-procedure Setup;
-begin
-  T  := TTimer.Create(Self);
-  L1 := TLabel.Create(self);
-  L2 := TLabel.Create(self);
-end;
- 
-procedure DocInfo;
-var lSQL, lDocNo : String;
-begin
-  lDocNo := M.Dataset.FindField('DocNo').AsString;
- 
-  FComServer := null;
-  cdsTemp := TClientDataset.Create(nil);
-  lSQL := Format('SELECT (DocAmt - PaymentAmt) OS FROM AR_IV '+
-                 'WHERE DocNo=%s ',[QuotedStr(lDocNo)]);
- 
-  try
-    cdsTemp.Data := ComServer.DBManager.Execute(lSQL);
-  finally
-    FComServer := null;
-  end;
-end;
- 
-procedure OnTimer(Sender: TObject);
-var AState : TDataSetState;
-begin
-  AState := M.DataSet.State;
-  if AState = dsBrowse then begin
-    DocInfo;
-    L2.Caption := '';
-    try
-      L2.Caption := FormatCurr('#,0.00;-#,0.00', cdsTemp.FindField('OS').AsFloat); 
-    finally
-      cdsTemp.Free;
+9. Copy below script & paste to the Right Panel (Script Section).
+
+    ```bash
+    var FComServer, lBizObj : Variant;
+        C : TComponent;
+        T : TTimer;
+        M : TDataSource;
+        L1, L2 : TLabel;
+        cdsTemp : TClientDataset;
+    
+    function ComServer: Variant;
+    begin
+      if FComServer = Null then 
+        FComServer := CreateOleObject('SQLAcc.BizApp');
+      Result := FComServer;
     end;
-  end;       
-end;
- 
-begin
-  M := TDataSource(Self.FindComponent('dsDocMaster'));   
-  C := Self.FindComponent('frDataSetButton1');             
- 
-  if Assigned(C) then begin
-    T.Enabled  := True;
-    T.Interval := 1000; // = 1 sec
-    T.OnTimer  := @OnTimer;  
- 
-    with L1 do begin
-      Parent     := TWinControl(C);
-      Width      := 66;
-      Left       := 6;
-      Top        := 200;
-      Caption    := 'Outstanding';
-      Font.Color := clBlue;
-      Font.Style := [fsBold];
-    end;    
-    with L2 do begin
-      Parent     := TWinControl(C);
-      Width      := 66;
-      Left       := 6;
-      Top        := 215;
-      Caption    := 'DocNo';
-      Font.Color := clBlue;
-      Font.Style := [fsBold];
-    end;     
-  end;   
-end.
-```
+    
+    procedure Setup;
+    begin
+      T  := TTimer.Create(Self);
+      L1 := TLabel.Create(self);
+      L2 := TLabel.Create(self);
+    end;
+    
+    procedure DocInfo;
+    var lSQL, lDocNo : String;
+    begin
+      lDocNo := M.Dataset.FindField('DocNo').AsString;
+    
+      FComServer := null;
+      cdsTemp := TClientDataset.Create(nil);
+      lSQL := Format('SELECT (DocAmt - PaymentAmt) OS FROM AR_IV '+
+                    'WHERE DocNo=%s ',[QuotedStr(lDocNo)]);
+    
+      try
+        cdsTemp.Data := ComServer.DBManager.Execute(lSQL);
+      finally
+        FComServer := null;
+      end;
+    end;
+    
+    procedure OnTimer(Sender: TObject);
+    var AState : TDataSetState;
+    begin
+      AState := M.DataSet.State;
+      if AState = dsBrowse then begin
+        DocInfo;
+        L2.Caption := '';
+        try
+          L2.Caption := FormatCurr('#,0.00;-#,0.00', cdsTemp.FindField('OS').AsFloat); 
+        finally
+          cdsTemp.Free;
+        end;
+      end;       
+    end;
+    
+    begin
+      M := TDataSource(Self.FindComponent('dsDocMaster'));   
+      C := Self.FindComponent('frDataSetButton1');             
+    
+      if Assigned(C) then begin
+        T.Enabled  := True;
+        T.Interval := 1000; // = 1 sec
+        T.OnTimer  := @OnTimer;  
+    
+        with L1 do begin
+          Parent     := TWinControl(C);
+          Width      := 66;
+          Left       := 6;
+          Top        := 200;
+          Caption    := 'Outstanding';
+          Font.Color := clBlue;
+          Font.Style := [fsBold];
+        end;    
+        with L2 do begin
+          Parent     := TWinControl(C);
+          Width      := 66;
+          Left       := 6;
+          Top        := 215;
+          Caption    := 'DocNo';
+          Font.Color := clBlue;
+          Font.Style := [fsBold];
+        end;     
+      end;   
+    end.
+    ```
+
 10. Click Save button.
 
-## Result Test
-01. Create a new sales invoice, eg. Invoice Amount = Rm1060.00
+### Result Test
 
-![new-salesinvoice-with-amount](../../../static/img/miscellaneous/sqlControlCenter/new-salesinvoice-with-amount.png)
+1. Create a new sales invoice, eg. Invoice Amount = Rm1060.00
 
-02. Make a payment amount = Rm636.00 and knock-off with the invoice created in step 01.
+    ![new-salesinvoice-with-amount](../../../static/img/miscellaneous/sqlControlCenter/new-salesinvoice-with-amount.png)
 
-![payment](../../../static/img/miscellaneous/sqlControlCenter/payment.png)
+2. Make a payment amount = Rm636.00 and knock-off with the invoice created in step 01.
 
-03. You can get the document outstanding balance (Rm1060.00 - Rm636.00 = Rm424.00) at Sales Invoice.
+    ![payment](../../../static/img/miscellaneous/sqlControlCenter/payment.png)
+
+3. You can get the document outstanding balance (Rm1060.00 - Rm636.00 = Rm424.00) at Sales Invoice.
 
 ![outstanding-balance-sales-invoice](../../../static/img/miscellaneous/sqlControlCenter/outstanding-balance-sales-invoice.png)

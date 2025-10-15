@@ -16,4 +16,8 @@ Below is the column detail on how the amount is arrive from base on Users and Ac
 
 ### Input Tax
 
-![gst-summary](../../../../static/img/usage/general/others/gst-summary-sheet/gst-summary.png)
+| Types of Acquisition | Value of Acquisition Excluding GST (RM) | Input Tax 6% (Claimable) | Input Tax 6% (Non-Claimable) |
+|------------------------|------------------------------------------|----------------------------|-------------------------------|
+| 1. Normal Purchase – to make standard rated supply | TX Amount | TX TaxAmount | NIL |
+| Normal Purchase – to make Exempt supply | TXRE + EP Amount | TXRE + EP TaxAmount | TXRE with DocType _B |
+| Normal Purchase – to make incidental Exempt Supply (Reg. 43 & 44A) | TXIES Amount | TXIES TaxAmount | TXIES with DocType _A |

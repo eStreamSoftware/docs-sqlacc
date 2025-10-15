@@ -28,7 +28,7 @@ Below is example error happen at **Sales Invoice**:
 1. Click **Tools | DIY | SQL Control Center...**
 2. At the left panel look for **Sales Invoice | OnGridColumnValuechange** and/or **OnBeforeSave**
 
-![upgrade-solution](../../../../static/img/usage/general/others/upgrade721-error/upgrade-solution.jpg)
+    ![upgrade-solution](../../../../static/img/usage/general/others/upgrade721-error/upgrade-solution.jpg)
 
 3. Look for the script like **function GetTaxedValue(AValue: Variant; lTaxRate: string): Variant;**
 4. Change all to below new script

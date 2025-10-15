@@ -66,7 +66,7 @@ May refer link below :
 
 ## What or Which Transaction will be used for Setting ?
 
- ![ch344](../../../static/img/integration/e-commerce/different/ch344.png)
+ ![e-commerce-settings](../../../static/img/integration/e-commerce/different/e-commerce-settings.png)
 
  | **Field**    | **Description**                                                                 |
 |--------------|---------------------------------------------------------------------------------|
@@ -91,18 +91,18 @@ This is because removing the non stock control item code so that it is shown in 
 
 This happens when user :
 
-* Forget to **Map** the Itemcode in SQL Accounting
-* The **SKU** in platform are **Deleted**
+- Forget to **Map** the Itemcode in SQL Accounting
+- The **SKU** in platform are **Deleted**
 
 - Solution: **Sync** the Product again & **Map** again for all missing itemcode
 
 ## How does the system handle Combo Peoduct in PLatforms ?
 
-* In SQL Accounting it use **BOM(Bill of Materials) Template** as Detail Itemcode to deduct.
+- In SQL Accounting it use **BOM(Bill of Materials) Template** as Detail Itemcode to deduct.
 
 - Below is Example Selling Mobile Phone with Power Bank :
 
-![ch345](../../../static/img/integration/e-commerce/different/ch345.png)
+![combo-product](../../../static/img/integration/e-commerce/different/combo-product.png)
 
 ## Why Expired Date COlumn keep showing Wrong Date even after relogin to the platform ?
 
@@ -111,7 +111,7 @@ Its due to your pc **system date time** is not correctly set...
 - Solution :
     1. Click Windows , search Date & Time Settings
     2. Make sure You select correct **Time zone**
-    ![ch346](../../../static/img/integration/e-commerce/different/ch346.png)
+    ![system-date-time](../../../static/img/integration/e-commerce/different/system-date-time.png)
     3. Click Sync
     4. Try Relogin the platform again in SQL Accounting
 
@@ -122,7 +122,7 @@ Its due to your pc **system date time** is not correctly set...
 
 ### How does the system post when Shipping Fees Charges is higher than Seller Paid Amount that causes the Escrow Amount becomes negative ?
 
-![ch347](../../../static/img/integration/e-commerce/different/ch347.png)
+![e-commerce-order-detail](../../../static/img/integration/e-commerce/different/e-commerce-order-detail.png)
 
 System will Post to **Sales CN** and set Qty in Negative (In the **Order Tab**).
 When Load in Income statement(.xls) files into **Payment Tab**, system will auto post to **Customer Refund**.
@@ -131,7 +131,7 @@ When Load in Income statement(.xls) files into **Payment Tab**, system will auto
 
 This usually happens when Buyer is not at Home after a few attempts sent and seller decided to cancel the Order.
 
-![ch348](../../../static/img/integration/e-commerce/different/ch348.png)
+![cancelled-order](../../../static/img/integration/e-commerce/different/cancelled-order.png)
 
 ### How System handle Payment Withdraw ?
 
@@ -143,7 +143,7 @@ This usually happens when Buyer is not at Home after a few attempts sent and sel
 
 Try redownload again from shopee as shopee had updated the format.
 
-![ch349](../../../static/img/integration/e-commerce/different/ch349.png)
+![payments-date-incorrect](../../../static/img/integration/e-commerce/different/payments-date-incorrect.png)
 
 </details>
 
@@ -168,6 +168,7 @@ When load payment, once release amount is in **negative**, system will **delete 
 When **2nd payment(Adjustment)**, if the amount is in negative, append to CN and Refund, if in positive, will raise Invoice(Adjustment value) and Payment.
 
 ### Why the Invoice Amount is changes once Payment is loaded?
+
 It is due to Shipping Fee updated.
 Lazada actual Shipping Fee only known **after Payment** is Loaded.
 

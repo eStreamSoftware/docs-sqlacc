@@ -8,11 +8,14 @@ tags: ["SQL Account", "Text", "Import"]
 ---
 
 ## Supported Model
+
 Sharp
+
 **Format 1**
 
 - XE-A147
 - XE-A137
+
 **Format 2**
 
 - XE-A207
@@ -21,15 +24,17 @@ Sharp
 - ER-A411/ER-A421
 
 ## Import Program
+
 - Version (1.1.0.1) - 19 Oct 2016
 - Evaluation Limit : 5 Times Posting
-- http://www.estream.com.my/downloadfile/Fairy/SQLAccCashRegister-setup.exe
+- [SQL Acc Cash Register setup](http://www.estream.com.my/downloadfile/Fairy/SQLAccCashRegister-setup.exe)
 - MD5 : BF105B609B19CE6CA9E0186F4CD78B7F
 
 ## Setting
-**Cash Register Machine
-- Below is the setting to be set in your Cash Register Machine
 
+**Cash Register Machine**
+
+- Below is the setting to be set in your Cash Register Machine
 - Updated 19 Mar 2016
 - All setting can be done at PGM mode → Setting → function text
 - For Currency can be done at PGM mode → Setting → Optional → Basic system
@@ -53,8 +58,10 @@ Sharp
 | Credit Card Payment                         | CREDIT       | CREDIT    |
 
 :::caution
+
 - All amount should be in Tax Inclusive as this is GST Rule for Simplified Tax Invoice
 - You are not allow to VOID the Invoice
+
 :::
 
 **SQL Accounting**
@@ -62,7 +69,9 @@ May refer to Point 1 at Things To Consider Before Import/Post
 
 **Cash Register Import**
 Menu: Tools | Options...
-(image)
+
+![1](../../static/img/miscellaneous/acc-cash-register-import/cashreg-imp.png)
+
 | Function                 | Description                                              |
 |--------------------------|----------------------------------------------------------|
 | DisplayFormatQty         | Display Format For Quantity Field                        |
@@ -80,33 +89,42 @@ Menu: Tools | Options...
 | NextDocNo                | Next Document Number for PostAsOne = 1                   |
 
 :::info
+
 - User may ignore the option with * as this can be set on Posting Screen
 - For Service Charge & Rounding system will use SalesCodeSR
+
 :::
 
 ## Step
+
 Menu: Cash Sales...
-(image)
+
+![2](../../static/img/miscellaneous/acc-cash-register-import/cashreg-step.png)
+
 1. Select **Machine Type**
 2. Click **Get File** & browse to the folder & look for EJFILE.SDA
 3. Steps 2
-Select **Debtor Code** for Debtor Field
-Select **Sales Account Code** for SR
-Select **Sales Account Code** for ZR
+    Select **Debtor Code** for Debtor Field
+    Select **Sales Account Code** for SR
+    Select **Sales Account Code** for ZR
 4. Payment Method
-Select **Payment Method Account Code** For Cash
-Select **Payment Method Account Code** For Cheque
-Select **Payment Method Account Code** For Credit Card
+    Select **Payment Method Account Code** For Cash
+    Select **Payment Method Account Code** For Cheque
+    Select **Payment Method Account Code** For Credit Card
 5. Tick Post As 1 Record if you wanted to post all transaction as 1 Cash Sales (Recommended)
 
-| Option        | Description                                                           |
-|---------------|------------------------------------------------------------------------|
-| True (Tick)   | System will Post to SQL Accounting As 1 Cash Sales (Recommended)       |
-| False (UnTick)| System will Post 1 by 1 InvNo to Cash Sales                            |
-Select the Date (applicable if **Post As 1 Record** is Selected)
+    | Option        | Description                                                           |
+    |---------------|------------------------------------------------------------------------|
+    | True (Tick)   | System will Post to SQL Accounting As 1 Cash Sales (Recommended)       |
+    | False (UnTick)| System will Post 1 by 1 InvNo to Cash Sales                            |
+
+    Select the Date (applicable if **Post As 1 Record** is Selected)
+
 6. Click **Verify** to check any Duplicate Cash Sales Number
 7. Click **Post To A/c** button to Post.
 
 ## FAQ
-**How do I know which EJ File had posted?**
+
+### How do I know which EJ File had posted?
+
 In Build 1 & above once the EJ had posted to SQL Acc it will automatic rename the EJ file to EJFILE-yyyy-mm-dd.sda (yyy-mm-dd is the date posted)

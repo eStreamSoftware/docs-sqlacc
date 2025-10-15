@@ -14,15 +14,15 @@ tags: ["SQL Account", "Usage"]
     3. Check the **Special Account Type** if applicable, e.g. the account is belonging to Accumulated Deprn Account (Fixed Assets)
     4. Click **OK**. Your new account is now created.
 
-![1](../../../static/img/usage/general-ledger/glguide/chart-step1-1.png)
+    ![1](../../../static/img/usage/general-ledger/glguide/chart-step1-1.png)
 
-![2](../../../static/img/usage/general-ledger/glguide/chart-step1-2.png)
+    ![2](../../../static/img/usage/general-ledger/glguide/chart-step1-2.png)
 
 2. Creating a Sub Account
     1. Point to the parent account (e.g. Cash at Bank)
     2. Follow the same steps from **2.1.1 Create New Account**
 
-![3](../../../static/img/usage/general-ledger/glguide/chart-step2-1.png)
+    ![3](../../../static/img/usage/general-ledger/glguide/chart-step2-1.png)
 
 *You are allowed to create an unlimited level of sub accounts. Just point to any account, and add a sub or sub-sub account to it.
 
@@ -32,11 +32,11 @@ Cash book entry is normally used for a non-customer/ supplier payment or receipt
 
 1. **GL** > **Cash Book Entry** > **New** (choose between Payment Voucher or Official Receipt)
 
-![4](../../../static/img/usage/general-ledger/glguide/cb-entry-step1.png)
+    ![4](../../../static/img/usage/general-ledger/glguide/cb-entry-step1.png)
 
-2.  **Insert Payable Name** > Select **GL Code > Tax > Amount**
+2. **Insert Payable Name** > Select **GL Code > Tax > Amount**
 
-![5](../../../static/img/usage/general-ledger/glguide/cb-entry-step2.png)
+    ![5](../../../static/img/usage/general-ledger/glguide/cb-entry-step2.png)
 
 ## Journal Entry
 
@@ -46,7 +46,7 @@ Cash book entry is normally used for a non-customer/ supplier payment or receipt
 
 ![6](../../../static/img/usage/general-ledger/glguide/jr-entry.png)
 
-## Foreign Bank Adjustment (add)
+## Foreign Bank Adjustment
 
 Purpose:
 
@@ -59,20 +59,20 @@ Refer this ledger:
 
 ***Local Balance is now RM 57,350 and you wish to revalue it using a monthly exchange rate of 4.50000 to get the local balance RM 56,250. What should I do?**
 
-## Foreign Bank Adjustment Entry (add)
+## Foreign Bank Adjustment Entry
 
 1. Click on New
 2. Enter the date, eg. end of the month
 3. Click on Bank Revalue button
 
-![8](../../../static/img/usage/general-ledger/glguide/f-bank-adj-entry-step3.png)
+    ![8](../../../static/img/usage/general-ledger/glguide/f-bank-adj-entry-step3.png)
 
 4. **Choose the foreign bank, the system will get the bank balance from the ledger as per the date.**
-5.  **Enter the Revalue currency rate, eg. 4.5000. The system will auto calculate the unrealized FOREX gain/loss.**
+5. **Enter the Revalue currency rate, eg. 4.5000. The system will auto calculate the unrealized FOREX gain/loss.**
 
-![9](../../../static/img/usage/general-ledger/glguide/f-bank-adj-entry-step5.png)
+    ![9](../../../static/img/usage/general-ledger/glguide/f-bank-adj-entry-step5.png)
 
-6.  **Click OK to proceed.**
+6. **Click OK to proceed.**
 7. **Click on Save**
 
 ![10](../../../static/img/usage/general-ledger/glguide/f-bank-adj-entry-step7.png)
@@ -103,9 +103,7 @@ Refer this ledger:
 ![13](../../../static/img/usage/general-ledger/glguide/stock-value-step3-1.png)
 ![14](../../../static/img/usage/general-ledger/glguide/stock-value-step3-2.png)
 
-## Maintain Budget (add)
-
-### Budget Maintenance
+## Maintain Budget
 
 - **Press EDIT.**
 - **Start input the budget value into each months.**

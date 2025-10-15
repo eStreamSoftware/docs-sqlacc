@@ -75,4 +75,69 @@ For a sample cURL request with AWSv4 authorization header, **click** on `Copy`.
 
     **Select** on `Agent` endpoint. Then, **click** on `Send` to try retrieve agent data from `SQL Account API Service` and the `Agent` json data list will show on response body.
 
-    ![postman-3](../../../static/img/integration/sql-account-api/generate-api-secret-key/postman-3.png)
+    ![postman-3](../../../static/img/integration/sql-account-api/generate-api-secret-key/postman-3.png) 
+
+## FAQ
+
+### When I try to update(PUT) for Data Entry (eg Sales Invoice) it prompt error "Record has been changed by other users."
+
+- Make sure at you update the field updatecount by +1 after you get the original updatecount from sqlacc
+- Below example original is 2
+
+```pascal
+.....
+   "updatecount": 3,
+   "sdsdocdetail": [
+      {
+         "dtlkey": 99,
+.....
+```
+
+### How to update(PUT) detail information for Data Entry (eg Sales Invoice)?
+
+- Make sure at sdsdocdetail
+    For Update => Insert field dtlkey with the original dtlkey from sqlacc
+    For Insert New record => Remove the dtlkey field or Set it as -1
+- Below example is to Update Detail Row 1 & Insert 2 new row
+
+```pascal
+.....
+   "sdsdocdetail": [
+      {
+         "dtlkey": 99,
+         "seq": 1,
+         "itemcode": "ISCT",
+         "description": "Industrial Style Round Coffee Table - Edited",
+.....
+      },
+      {
+         "seq": 2,
+         "itemcode": "MISC",
+         "description": "MISC - New Insert",
+.....
+      },
+      {
+         "dtlkey": -1,
+         "seq": 3,
+         "itemcode": "RM-04",
+         "description": "Arm Rest - New Insert",
+....
+```
+
+:::caution
+If provided dtlkey is invalid system will treat is as Insert New Record
+:::
+
+### What is the max limit for GET?
+
+- Currently max is 50 records per request
+
+### How many ways for GET Method available?
+
+- Now it supported 3 ways on GET method.
+
+| **Example Get Method** | **Description** |
+|--------------------------|-----------------|
+| `/purchaseinvoice/?docno=PI-00001` | Return list (master data only), can filter by all master table fields. |
+| `/purchaseinvoice/*?docno=PI-00001&code=400-A0001` | Return single record (master + detail data), can filter by indexed table fields.<br/>**Fields available:** `code`, `docdate`, `docno`, `postdate`, `eiv_utc` |
+| `/purchaseinvoice/{dockey}` | Return single record (master + detail data), by path parameter `dockey` only. |

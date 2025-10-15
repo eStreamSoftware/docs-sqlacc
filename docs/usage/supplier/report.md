@@ -8,7 +8,7 @@ tags: ["SQL Account", "Reports"]
 
 ## Print Supplier Document Listing
 
-- Print Supplier Document Listing can be used for you to see all the customer transactions that you have keyed into this system
+- Print Supplier Document Listing can be used to see all the customer transactions that you have keyed into this system
 - You can see Supplier Invoices, Supplier Payment, Supplier Credit Note,Supplier Debit Note, Supplier Refund, and Supplier Contra listings.
 - You can use Document Listing to batch print and batch email your Supplier's documents.
 - At the bottom of the screen, you can se the payment details for each document
@@ -17,11 +17,11 @@ tags: ["SQL Account", "Reports"]
 
 ![Print_Document_Listing1](../../../static/img/usage/supplier/supplier-reports-images/print-document-listing-step1.png)
 
-- Select which Document listing you want to see. Follow the image
+- Select which Document listing you want to see. Follow the image below :
 
 ![Print_Document_Listing2](../../../static/img/usage/supplier/supplier-reports-images/print-document-listing-step2.png)
 
-- Press Apply Button
+- Press the Apply Button
 - Click Preview & Listing Report
 - Example of supplier invoice listing report
 
@@ -29,7 +29,7 @@ tags: ["SQL Account", "Reports"]
 
 ### Print document Style
 
-- Tick relevant check boxes
+- Tick the relevant check boxes
 
 ![Print_Document_Listing4](../../../static/img/usage/supplier/supplier-reports-images/print-document-style-1.png)
 

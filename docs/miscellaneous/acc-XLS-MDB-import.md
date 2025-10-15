@@ -65,189 +65,6 @@ Here, you'll find a detailed guide on how to effectively and effortlessly import
 - [Example Template-SQLAcc-ImportExcel](https://docs.google.com/spreadsheets/d/1TcFVqH1VCJ5SjHAt2VCHIeTTcQVUjtIBxLaZGGM0E5k/edit#gid=1780239004)
 - [Sample output](https://download.sql.com.my/customer/Fairy/Example-CSV.zip)
 
-**History New/Updates/Changes**
-
-\--Update 16 Jun 2025--
-
-- Add StockList_Barcode template
-
-\--Update 15 May 2025--
-
-- Add Postcode_City_State list
-
-\--Update 09 May 2025--
-
-- Update CashBookEntry_PV_OR some missing Note
-
-\--Update 03 May 2025--
-
-- Update IDTYPE Parameter
-- Update CashBookEntry_PV_OR template by add E-Invoice Fields
-
-\--Update 28 Apr 2024--
-
-- Fixed Stock Assembly & Disassembly Detail Qty Column Not correct.
-
-\--Update 14 Dec 2024--
-
-- Update ST_Batch template for field ISActive fieldname & value
-
-\--Update 12 Nov 2024--
-
-- Change Fieldname From EIVDateTime to EIV_UTC to support SQL Acc Version 5.2024.1001.858 & above
-
-\--Update 14 Aug 2024--
-
-- Add SUBMISSIONTYPE & TAXEXEMPTIONREASON for Sales & Purchase
-- Remove IRBM_SELFBILLED for Sales & Purchase template
-
-\--Update 24 Jul 2024--
-
-- Highlight with color for E-Invoicing fields
-- Add some Example for E-Invoicing fields
-
-\--Update 22 Jul 2024--
-
-- Add New Field for E-Invoicing at Sales&Purchase template
-
-\--Update 08 Jul 2024--
-
-- Add Country Tab list for Country field
-
-\--Update 02 Jul 2024--
-
-- Add New Field for E-Invoicing at Customer&Supplier Master_New & Stock List template
-
-\--Update 14 Jun 2024--
-
-- Add More Example for StockList
-- Update Note For StockList and Sales & Purchase
-
-\--Update 08 Jun 2024--
-
-- Update Note on Sales & Purchase
-- Update CC field with field length & Sample Data in Sales & Purchase
-
-\--Update 01 Dec 2023--
-
-- Add StockList_Category Template
-
-\--Update 18 Nov 2023--
-
-- Update ChartOfAccount_GL FieldName not correct for auto mapping
-
-\--Update 13 Nov 2023--
-
-- Update Sales & Purchase for Transfer Status Fields
-
-\--Update 25 Oct 2023--
-
-- Add GL Stock & PD_JO (Job Order Template)
-- Update STAS_STDS template with note & fixed error sample value
-
-\--Update 09 Oct 2023--
-
-- Update Note on some field which Can't Empty
-
-\--Update 03 Oct 2023--
-
-- Change some field from Compulsory to Optional
-
-\--Update 25 Aug 2023--
-
-- Update Bank Giro List
-
-\--Update 13 Dec 2022--
-
-- Update StockItem_BOM Missing Column & data not sorting
-
-\--Update 25 Nov 2022--
-
-- Add new Customer&Supplier Master Format
-- Add Maintain Shipper Format
-
-\--Update 28 Oct 2022--
-
-- Fixed Payment Example Not Correct KO DocNo
-
-\--Update 18 Oct 2022--
-
-- Add Example rounding for Sales & Purchase
-
-\--Update 06 Oct 2022--
-
-- Add More sample for Journal Voucher
-- Add Note for Journal Voucher
-
-\--Update 01 Jun 2022--
-
-- Add Batch Delete format
-- Add Currency With Detail format
-
-\--Update 14 Apr 2022--
-
-- Add ST_Item_Alt format
-
-\--Update 19 Oct 2021--
-
-- Update ARAP_Deposit Data to match Sample data
-- Add ARAP_CN_KO Format
-- Add ARAP_Deposit_Refund Format
-- Add ARAP_Deposit_Forfeit Format
-
-\--Update 05 Oct 2021--
-
-- Update StockList Missing Isbase column & Required field for RATE1
-
-\--Update 11 Sep 2021--
-
-- Add Price Tag Example for Stock List Template
-
-\--Update 18 Aug 2021--
-
-- Add Enable Import Stock Item Matrix Profile Template
-
-\--Update 03 Apr 2021--
-
-- Add GL_Budget Template
-- Add AR_CustomerBranch Template
-
-\--Update 14 Dec 2020--
-
-- Add StockLit_PriceTagARAP Template
-- Update StockGroup, ST_ITEM_TPL, ST_Batch, Tariff & StockItem_BOM Template no mention field size
-
-\--Update 14 Aug 2020--
-
-- Update ChartOfAccount_GL - Add More Example & Notes
-
-\--Update 04 Jul 2020--
-
-- Update MaintainSupplier_Giro - Update to Match with Testing Company
-- Add StockList_UOMnPrice Template
-
-\--Update 03 Jun 2020--
-
-- Split Stock Issue & Stock Receive Template
-
-\--Update 26 May 2020--
-
-- Add Stock Assembly & Disassembly Template
-- Add more example for CashBookEntry_PV_OR
-- Add Customer Deposit Template
-
-\--Update 15 May 2020--
-
-- Move file to Google Drive
-
-\--Update 12 Feb 2020--
-
-- Update Sales & Purchase Tab Information to Match with Testing Company
-
-\--Update 03 Jan 2020--
-
-- Add Point Format
-
 :::info
 
 **Tips for Programmer to Export Transaction**
@@ -645,6 +462,8 @@ Eg "AL","161924123243970563"
 
 (conflict with to rec & max record)
 
+[\[top\]](https://wiki.sql.com.my/wiki/SQL_Acc_XLS_n_MDB_Import#top)
+
 **History New/Updates/Changes (UE Only) - (Deprecated)**
 
 \--Build 37--
@@ -844,11 +663,13 @@ The empty row as "Reset/End of" Record.
 \- in Version 4.9.6.31 & above.
 \- for Registered import Database.
 \- in **Firebird Server Setting** (Standalone can't Auto Import)
+
 - Excel Filename must be **BIZOBJECT.YYYYMMDDHHMMSS.xlsx** eg SL_IV.20190214101508.xlsx
 - Must only 1 Sheet in Excel File.
 - Must **Manually Import for 1st time** use to make sure is success mapping. - Auto Import base on last mapping import
 
 ### Import Setting
+
 Menu: File | Auto Import Settings...
 ![22](../../static/img/miscellaneous/XLS-MDB/import-setting.png)
 
@@ -871,11 +692,11 @@ Menu: File | Auto Import Settings...
 12. Click Test Connection...
 13. Click Next
 
-| Action                                                   | Description                                                                                                                |
-|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Delete the file(s) in FTP Folder                          | Will delete the file(s) after download                                                                                      |
-| Move to Archive/YYYYMMDD Folder                           | Will Auto Create YYYYMMDD & move to this folder after done download <br/> Make sure in the FTP folder had the folder Archive (eg download/Archive) |
-| Leave it As It (I will self Manually Delete or Move it)    | Do nothing after Download                                                                                                   |
+    | Action                                                   | Description                                                                                                                |
+    |----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+    | Delete the file(s) in FTP Folder                          | Will delete the file(s) after download                                                                                      |
+    | Move to Archive/YYYYMMDD Folder                           | Will Auto Create YYYYMMDD & move to this folder after done download <br/> Make sure in the FTP folder had the folder Archive (eg download/Archive) |
+    | Leave it As It (I will self Manually Delete or Move it)    | Do nothing after Download                                                                                                   |
 
 :::info
 
@@ -893,12 +714,12 @@ The file will download to the Pending Folder which is set at the Last Steps
 16. Select the Pending folder where Excel files keep to import to SQL Accounting
 17. Select the Done folder to move after done import the Excel file
 
-| Field                  | Description                                                         |
-|------------------------|----------------------------------------------------------------------|
-| Include SubFolder File(s) | This option is for User who have More than 1 system                 |
-| Export Log File           | To Auto Export out for Log file to the selected folder             |
-| Last Import Date          | Last Import Date and Time. System will auto update                |
-| Keep Last Log Line        | To show last how many line for Log                                 |
+    | Field                  | Description                                                         |
+    |------------------------|----------------------------------------------------------------------|
+    | Include SubFolder File(s) | This option is for User who have More than 1 system                 |
+    | Export Log File           | To Auto Export out for Log file to the selected folder             |
+    | Last Import Date          | Last Import Date and Time. System will auto update                |
+    | Keep Last Log Line        | To show last how many line for Log                                 |
 
 17. Click Next
 
@@ -1089,7 +910,7 @@ Try below steps
 
 [\[FAQ\]](#faq) [\[top\]](#requirement)
 
-### Prompt Error external table is not in the expected format when try Get Data from Excel.
+### Prompt Error external table is not in the expected format when try Get Data from Excel
 
 Try save the file to other name using **File | Save As** in Excel
 
@@ -1573,7 +1394,7 @@ Make sure in your excel min 2 columns
 
 Below is steps how to import for update Maintain Customer Remark Field only
 
-Click [Here](https://download.sql.com.my/customer/Fairy/Steps-Excel-Import-57.gif) for video
+[Click ME for steps](https://download.sql.com.my/customer/Fairy/Steps-Excel-Import-57.gif) for video
 
 [\[FAQ\]](#faq) [\[top\]](#requirement)
 
@@ -1604,3 +1425,549 @@ May click the Reset Lit button in the Auto Import Setting...
 ![69](../../static/img/miscellaneous/XLS-MDB/faq-log.gif)
 
 [\[FAQ\]](#faq) [\[top\]](#requirement)
+
+## Template History New/Updates/Changes
+
+\--Update 16 Jun 2025--
+
+- Add StockList_Barcode template
+
+\--Update 15 May 2025--
+
+- Add Postcode_City_State list
+
+\--Update 09 May 2025--
+
+- Update CashBookEntry_PV_OR some missing Note
+
+\--Update 03 May 2025--
+
+- Update IDTYPE Parameter
+- Update CashBookEntry_PV_OR template by add E-Invoice Fields
+
+\--Update 28 Apr 2024--
+
+- Fixed Stock Assembly & Disassembly Detail Qty Column Not correct.
+
+\--Update 14 Dec 2024--
+
+- Update ST_Batch template for field ISActive fieldname & value
+
+\--Update 12 Nov 2024--
+
+- Change Fieldname From EIVDateTime to EIV_UTC to support SQL Acc Version 5.2024.1001.858 & above
+
+\--Update 14 Aug 2024--
+
+- Add SUBMISSIONTYPE & TAXEXEMPTIONREASON for Sales & Purchase
+- Remove IRBM_SELFBILLED for Sales & Purchase template
+
+\--Update 24 Jul 2024--
+
+- Highlight with color for E-Invoicing fields
+- Add some Example for E-Invoicing fields
+
+\--Update 22 Jul 2024--
+
+- Add New Field for E-Invoicing at Sales&Purchase template
+
+\--Update 08 Jul 2024--
+
+- Add Country Tab list for Country field
+
+\--Update 02 Jul 2024--
+
+- Add New Field for E-Invoicing at Customer&Supplier Master_New & Stock List template
+
+\--Update 14 Jun 2024--
+
+- Add More Example for StockList
+- Update Note For StockList and Sales & Purchase
+
+\--Update 08 Jun 2024--
+
+- Update Note on Sales & Purchase
+- Update CC field with field length & Sample Data in Sales & Purchase
+
+\--Update 01 Dec 2023--
+
+- Add StockList_Category Template
+
+\--Update 18 Nov 2023--
+
+- Update ChartOfAccount_GL FieldName not correct for auto mapping
+
+\--Update 13 Nov 2023--
+
+- Update Sales & Purchase for Transfer Status Fields
+
+\--Update 25 Oct 2023--
+
+- Add GL Stock & PD_JO (Job Order Template)
+- Update STAS_STDS template with note & fixed error sample value
+
+\--Update 09 Oct 2023--
+
+- Update Note on some field which Can't Empty
+
+\--Update 03 Oct 2023--
+
+- Change some field from Compulsory to Optional
+
+\--Update 25 Aug 2023--
+
+- Update Bank Giro List
+
+\--Update 13 Dec 2022--
+
+- Update StockItem_BOM Missing Column & data not sorting
+
+\--Update 25 Nov 2022--
+
+- Add new Customer&Supplier Master Format
+- Add Maintain Shipper Format
+
+\--Update 28 Oct 2022--
+
+- Fixed Payment Example Not Correct KO DocNo
+
+\--Update 18 Oct 2022--
+
+- Add Example rounding for Sales & Purchase
+
+\--Update 06 Oct 2022--
+
+- Add More sample for Journal Voucher
+- Add Note for Journal Voucher
+
+\--Update 01 Jun 2022--
+
+- Add Batch Delete format
+- Add Currency With Detail format
+
+\--Update 14 Apr 2022--
+
+- Add ST_Item_Alt format
+
+\--Update 19 Oct 2021--
+
+- Update ARAP_Deposit Data to match Sample data
+- Add ARAP_CN_KO Format
+- Add ARAP_Deposit_Refund Format
+- Add ARAP_Deposit_Forfeit Format
+
+\--Update 05 Oct 2021--
+
+- Update StockList Missing Isbase column & Required field for RATE1
+
+\--Update 11 Sep 2021--
+
+- Add Price Tag Example for Stock List Template
+
+\--Update 18 Aug 2021--
+
+- Add Enable Import Stock Item Matrix Profile Template
+
+\--Update 03 Apr 2021--
+
+- Add GL_Budget Template
+- Add AR_CustomerBranch Template
+
+\--Update 14 Dec 2020--
+
+- Add StockLit_PriceTagARAP Template
+- Update StockGroup, ST_ITEM_TPL, ST_Batch, Tariff & StockItem_BOM Template no mention field size
+
+\--Update 14 Aug 2020--
+
+- Update ChartOfAccount_GL - Add More Example & Notes
+
+\--Update 04 Jul 2020--
+
+- Update MaintainSupplier_Giro - Update to Match with Testing Company
+- Add StockList_UOMnPrice Template
+
+\--Update 03 Jun 2020--
+
+- Split Stock Issue & Stock Receive Template
+
+\--Update 26 May 2020--
+
+- Add Stock Assembly & Disassembly Template
+- Add more example for CashBookEntry_PV_OR
+- Add Customer Deposit Template
+
+\--Update 15 May 2020--
+
+- Move file to Google Drive
+
+\--Update 12 Feb 2020--
+
+- Update Sales & Purchase Tab Information to Match with Testing Company
+
+\--Update 03 Jan 2020--
+
+- Add Point Format
+
+## Program History New/Updates/Changes
+
+\--Build 104--
+
+- Fixed Verify Shown invalid Account code when No Value.
+- Fixed Export not filter untick records.
+
+\--Build 103--
+
+- Fixed Export parameter should not case sensitive.
+- Fixed Picture corrupted when do replace Stock Item when field not map.
+- Add #9 for Tab Delimiter csv import & Export.
+- Add Replace Header Only...Option.
+
+\--Build 102--
+
+- Upgrade to Version 5.19.20.
+- Fixed Verify Outstanding Qty not correct due to rounding issue.
+- Fixed unable to email using GMail.
+- Enable Download from sFTP.
+- Enable Auto Generate DocNo using prefix `<New>` for Customer/Supplier Payment.
+- Enable import Stock Item Barcode only.
+- Enable Upload to sFTP for Export CSV.
+
+\--Build 101--
+
+- Fixed Import Not follow UOM when using Barcode as Itemcode.
+- Fixed verify Payment unable to find record when user change Journal type BANK/CASH to Bank/Cash.
+- Fixed Customer/Supplier unable to Import GEOCOORDINATE field.
+- HDR Description Default Value not import if not mapping.
+
+\--Build 100--
+
+- Fixed Import Maintain Item - UOM & Price error due to over Quoted.
+
+\--Build 99--
+
+- Fixed Mapping for Customer/Supplier New not correct for State Field.
+- Force export out with only fieldname even is no record.
+- Fixed Job Order, Stock Assembly & Disassembly missing Detail Qty column.
+- Add Search for SALESTAXNO, SERVICETAXNO & TIN for customer/supplier Code.
+
+\--Build 98--
+
+- Enable Auto Get E-Invoice Info From Maintain Customer/Supplier when data field is Empty.
+- Change Register db Checking to Actual Register Info field.
+
+\--Build 97--
+
+- Add Get File From FTP option.
+- Fixed export CSV Last Export Date keep increasing.
+
+\--Build 96--
+
+- Fixed Import error when TaxInclusive empty.
+- Fixed AutoExport CSV Last export Date not save to db.
+- Fixed Company Name empty in Auto Import Setting.
+- Fixed data not Trim if import using csv.
+- Add Clear Default Value...option.
+
+\--Build 95--
+
+- Fixed Import Tax code error.
+
+\--Build 94--
+
+- Fixed Import Customer payment Voucher Error due to boolean type.
+- Fixed TaxInclusive not import when the value True.
+- Auto Select Show Uncheck Only for GL Acc after Verify have error.
+
+\--Build 93--
+
+- Fixed Import Opening SST Error due to typo error.
+- Fixed Tax field not Automap if FieldName is Tax.
+- Enable support RichText Import for UDF Memo type.
+- Fixed Replace Item Code for Maintain Item prompt Access Violation.
+
+\--Build 92--
+
+- Fixed verify error when Invalid UOM due to boolean type.
+
+\--Build 91--
+
+- Fixed unable to load record when Json record only 1.
+- Add support :LastModified filter.
+- Fixed some default value not update to support 860.
+- Fixed verify with transfer status error due to boolean type.
+
+\--Build 90--
+
+- Fixed Register activation code fail.
+
+\--Build 89--
+
+- Fix incorrect Auto Field mapping for CC & Tax.
+- Enable support Transfer IV,DN,CS to CN.
+- Add Save & Load From File setting for CSV Export Setting.
+- Fixed Same time record not posted due to Seq.
+- Enable support Version 860 & above.
+
+\--Build 88--
+
+- Fixed IDTYPE & SUBMISSIONTYPE should not have default value for transaction.
+- Fixed Replace enable verify shown Dockey Not found.
+- Change Auto Get Default Account Code from DB.
+
+\--Build 87--
+
+- Enable Support read mulitple line for csv with #13 indicator.
+- Enable Auto Height For Grid Data.
+- Fixed unable to EMail using GMail Setting.
+- Fixed AR/AP CN KnockOff verify Status not update when CN Not found.
+
+\--Build 86--
+
+- Add By Pass Verify... option.
+- Enable Import Extra DO & GRN.
+- Force always read 1st excel sheet for AutoImport.
+- Add EMail Error Log file... option.
+- Add Delimiter Option for CSV Export.
+- Fixed CSV output should double Quoted if had character same as delimiter.
+- Fixed Supplier Deposit Verify not correct.
+- Fixed Maintain Customer/Supplier - New missing CURRENCYCODE field.
+- Fixed TaxRate not import when mapping.
+
+\--Build 85--
+
+- Upgrade to Version 5.19.19.
+- Add Export CSV function.
+- Enable mapping for DocNoSetKey field.
+- Fixed Purchase not support Transfer Status.
+
+\--Build 84--
+
+- Fix not support mix data with Some have ItemCode & Same no ItemCode.
+- Fixed Scheduler still not support without Branch Info for Maintain Customer/Supplier - New option.
+- Fixed file not move when Replace Option is enabled.
+
+\--Build 83--
+
+- Fixed slow when delete for replace transactions with lot details.
+- Add Grid export for Stock Item Import.
+- Remove license checking for Maintain Customer/Supplier - New option.
+- Auto mapping with \_DTL &\_HDR ignore \_.
+- Allow import Customer/Supplier without Branch Info for Maintain Customer/Supplier - New option.
+
+\--Build 82--
+
+- Fixed Source Field have extra record.
+- Fixed Error when using JSon File.
+- Fixed Auto Import Setting not Save after Set.
+
+\--Build 81--
+
+- Fixed Convert Row To Column function still open file still use old function.
+- Fixed Convert Row To Column function not working due to Column 1 empty.
+- Fixed Access Violation on Get File for Maintain Customer & Supplier.
+- Fixed Payment still Import Even is Untick.
+
+\--Build 80--
+
+- Upgrade to Version 5.18.18
+- Allow Import Empty Seq for Maintain Stock Item - Price Tag Import.
+- Fixed GL Cash Book Data not link with docno.
+- Enable Transfer Status for Sales & Purchase Module.
+- Add highlighter for Error after verify.
+
+\--Build 79--
+
+- Upgrade to Version 5.17.17.
+- Add Maintain Stock Item - Category.
+- Fixed Access Violation when Get Data From mdb file.
+- Enable Auto get UnitPrice in SQL Acc by Not mapping UnitPrice & Set Default Value.
+- Fixed Maintain Stock Item no PreVerify for Code field.
+- Fixed CompanyName not check for field Mapping for Maintain Customer/Supplier Import.
+- Add GL Stock Value.
+- Add Job Order.
+- Add Option "System Auto Detail" for Job Order, Stock Assembly & Stock Disassembly.
+
+\--Build 78--
+
+- Fixed Verify Not correct when no Itemcode Mapping.
+
+\--Build 77--
+
+- Upgrade to Version 5.17.16.
+- Fixed Error on Function Memo to Column when split Memo row more then No of Columns.
+- Add Clear Cache Data Option.
+- Enable support Search Description2 for PaymentMethod Field.
+- Fixed Verify UOM not same as excel when if itemcode have more the 1 UOM with Rate=1.
+- Fixed ItemCode UOM sometime not correctly check.
+
+\--Build 76--
+
+- Upgrade to Version 5.17.15.
+- Fixed unable to find record if On Spot Change Code.
+- Fixed import csv with long number become scientific notation.
+- Fixed import csv with missing number begin with 00x.
+- Add F1 shortcut for Get User Guide... function.
+- Add Load Last Posted Status Information... function - For Transactions.
+- Fixed Auto Import Stock Item Fail.
+
+\--Build 75--
+
+- Enable Support Read UOM from Barcode & Stock Alt Item Table.
+- Fixed Detail Description should not have Default Value.
+- Fixed AR & AP KO should not show Agent & Area Mapping.
+- Fixed AP Verify Error.
+- Fixed Customer CN, Supplier DN & CN Default Value not correct.
+
+\--Build 74--
+
+- Upgrade to Version 5.17.14.
+- Enable Support Direct DB Connect for SQL Connect.
+- Enable Auto Remember by BizType for Auto Replace.
+- Fixed Error when Exit Program if the db is registered.
+- Fixed Verify DocNo for Customer should excluded code.
+- Fixed Default Open from Desktop else from My Document folder.
+- Fixed Verify Slow.
+- Add Option Auto KnockOff for Customer/Supplier Payment & Refund.
+
+\--Build 73--
+
+- Fixed Error after done import Maintain Customer/Supplier New format.
+
+\--Build 72--
+
+- Fixed Source Mapping Field have Extra Column.
+- Fixed Get CSV with Unicode Error.
+- Fixed Access Violation when posting Payment.
+
+\--Build 71--
+
+- Fixed Import SL & PH missing detail.
+
+\--Build 70--
+
+- Upgrade to Version 5.17.13.
+- Remove 'Mapping Field can't be empty' for Stock Transfer Header Code.
+- Enable Support Import Seq Field for Maintain Stock Item - BOM.
+- Fixed Duplicate DocNo when Exce/CSV file data not sort by DocNo.
+- Enable Read File in subfolder of pending for Auto Import.
+- Add new option Include SubFolder File(s)... for Auto Import for multi 3rd Party Export to different folder.
+- Enable Search AltCode for ItemCode field.
+- Enable Import Maintain Shipper.
+- Enable Auto Generate DocNo using prefix `<New>`.
+- Fixed Stock Transfer Customer code not checking other Maintain Customer fields.
+- Fixed Verify 2nd time data gone.
+- Fixed Verify Empty Value for Terms should bypass.
+- Add New Format for Maintain Customer & Maintain Supplier to support Replace Action.
+- Combine UE Function.
+- Add Option Get file(s) from FTP... for transactions import.
+- Enable Replace Option for Duplicate transaction for All Maintenance (Except Maintain Account).
+
+\--Build 69--
+
+- Add Remove Other Character(s)... function.
+- Fixed Copy Cell Value not enable for single table import.
+- Fixed SUOMQTY field missing from mapping.
+
+\--Build 68--
+
+- Fixed Field Auto Mapping not check equally match column.
+- Fixed Sales.Points.OPF can't Auto Import.
+- Fixed Import Attachment field become RichText.
+- Fixed Import GL PV & GL OR error.
+
+\--Build 67--
+
+- Change FTP download TransferType to Binary.
+- Fixed Error when download FTP file with folder.
+- Add Double Click Pending & Done label to open the folder.
+- Add Test FTP Download option on Right Click Pending label.
+
+\--Build 66--
+
+- Upgrade to Version 5.16.12.
+- Fixed Slow on Auto Mapping function.
+- Move Select Record Range to top.
+- Fixed Tab Order.
+- Add Batch Delete function.
+- Enable Replace Option for Item Template & Maintain Batch.
+- Fixed Import Stock Template not set 'Mapping Field can't be empty' for Code field.
+- Allow import Detail Maintain Currency.
+- Fixed FTP download Error.
+
+\--Build 65--
+
+- Fixed Points Verify Keep shown Invalid Customer code.
+- Fixed Points Post to Account prompt Access Violation.
+- Fixed Verify if Mapped field with empty data for Agent, Area, Project should by pass
+
+\--Build 64--
+
+- Upgrade to Version 5.16.11.
+- Add Import Stock Alternative.
+- Add Auto Resize Prefix Main Screen Size.
+
+\--Build 63--
+
+- Fixed Error Import Matrix Profile.
+- Fixed Disc have value even Excel don't have Disc Column.
+
+\--Build 62--
+
+- Upgrade to Version 5.16.
+- Enable Replace Option for Duplicate transaction.
+
+\--Build 61--
+
+- Fixed Add for detail Mapping override by automap.
+
+\--Build 60--
+
+- Fixed GL Acc Verify not correctly for SpecialAccount Type.
+- Add Filter for Untick Only, Tick Only & All option for GL Acc.
+- Misleading information at Stock Item Filter record to record when set 501 to 1000 become 500
+
+(conflict with to rec & max record)
+
+[\[top\]](https://wiki.sql.com.my/wiki/SQL_Acc_XLS_n_MDB_Import#top)
+
+## Program History New/Updates/Changes (UE Only) - (Deprecated)
+
+\--Build 37--
+
+- Upgrade to Version 4.5.4.
+- Fixed Slow on Auto Mapping function.
+- Move Select Record Range to top.
+- Fixed Tab Order.
+
+\--Build 36--
+
+- Upgrade to Version 4.5.3.
+- Add Import Stock Alternative.
+- Add Auto Resize Prefix Main Screen Size.
+
+\--Build 35--
+
+- Upgrade to Version 4.5.
+- Add option Delete Existing Data for all Import Option except Maintain Stock Item.
+
+\--Build 34--
+
+- Fixed Add for detail Mapping override by automap.
+
+\--Build 33--
+
+- Misleading information at Stock Item Filter record to record when set 501 to 1000 become 500 (conflict with to rec & max record)
+
+\--Build 32--
+
+- Fixed Stock Item Not Auto Maping Field for Sub Table.
+- Fixed Import Unicode for More Description become ???
+
+\--Build 31--
+
+- Fixed More Description & Attachment not support Unicode.
+
+\--Build 30--
+
+- Fixed Prompt Error when excel UOM Rate is empty.

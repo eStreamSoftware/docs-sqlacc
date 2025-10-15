@@ -25,7 +25,7 @@ Document Type Export (Total 2 Text files)
 ## Samsung Export Specification
 
 - 28 Dec 2016
-- [Samsung-20161228.zip] (https://download.sql.com.my/customer/Fairy/Samsung-20161228.zip)
+- [Samsung-20161228.zip](https://download.sql.com.my/customer/Fairy/Samsung-20161228.zip)
 
 ## Modules Require
 
@@ -35,83 +35,8 @@ Document Type Export (Total 2 Text files)
 
 - Version (2.0.2.15) - 27 Feb 2025
 - Evaluation Limit : 30 Times Export
-- [SQLAccSamsungExport-setup.exe] (https://download.sql.com.my/customer/Fairy/SQLAccSamsungExport-setup.exe)
+- [SQLAccSamsungExport-setup.exe](https://download.sql.com.my/customer/Fairy/SQLAccSamsungExport-setup.exe)
 - MD5 : A3F809D610D92A44662A9AE7D2D3A3B1
-
-### History New/Updates/Changes
-
---Build 15--
-
-- Fixed unable to connect to db in SQL Connect.
-
---Build 14--
-
-- Enable support Version 860 & above.
-
---Build 13--
-
-- Fixed MCS_INV_ output Default (----) Location Code not follow user setting.
-
---Build 12--
-
-- Fixed sometime not correct Location Code.
-
---Build 11--
-
-- Upgrade to Version 2.0.2 .
-- Add Option Exclude Customer Info.
-- Add Option Default (----) Location Code.
-
---Build 10--
-
-- Add Export Sales DO.
-
---Build 9--
-
-- Fixed MCS_SALES_xxx Default location code not set to HQ.
-
---Build 8--
-
-- Upgrade to Version 2.0.1.
-- Add Option for MCS ID type.
-
---Build 7--
-
-- Fixed Show Access violation when Auto Run.
-
---Build 6--
-
-- Fixed Auto Run Unable to Call SQLAcc in Window 7.
-- Fixed Auto Run Button Caption not correct after finish.
-- Fixed Auto Run Not Force Kill SQLAcc Before & after export.
-
---Build 5--
-
-- Fixed MCS_INV data not group by Location & project.
-
---Build 4--
-
-- Upgrade to Version 2.
-- Add Filtering Location & Item Project.
-
---Build 3--
-
-- Fixed click 2nd time Test output prompt error.
-- History New/Updates/Changes.
-- Fixed Schedule not running.
-
---Build 2--
-
-- Support Export more then 1 Serial Number Output.
-- Fixed spelling error.
-
---Build 1--
-
-- MCS_SALES_xxx should take Agent Description.
-- Filename for Stock should be MCS_INV_xxx.
-- Stock Column incorrect position.
-
---Build 0--
 
 ## Settings
 
@@ -199,3 +124,78 @@ C:\eStream\Utilities\SQLAccSumsungExportV2) & Click Next.
 
 18. Enter the window User Name & Password
 19. Click Ok
+
+### Program History New/Updates/Changes
+
+--Build 15--
+
+- Fixed unable to connect to db in SQL Connect.
+
+--Build 14--
+
+- Enable support Version 860 & above.
+
+--Build 13--
+
+- Fixed MCS_INV_ output Default (----) Location Code not follow user setting.
+
+--Build 12--
+
+- Fixed sometime not correct Location Code.
+
+--Build 11--
+
+- Upgrade to Version 2.0.2 .
+- Add Option Exclude Customer Info.
+- Add Option Default (----) Location Code.
+
+--Build 10--
+
+- Add Export Sales DO.
+
+--Build 9--
+
+- Fixed MCS_SALES_xxx Default location code not set to HQ.
+
+--Build 8--
+
+- Upgrade to Version 2.0.1.
+- Add Option for MCS ID type.
+
+--Build 7--
+
+- Fixed Show Access violation when Auto Run.
+
+--Build 6--
+
+- Fixed Auto Run Unable to Call SQLAcc in Window 7.
+- Fixed Auto Run Button Caption not correct after finish.
+- Fixed Auto Run Not Force Kill SQLAcc Before & after export.
+
+--Build 5--
+
+- Fixed MCS_INV data not group by Location & project.
+
+--Build 4--
+
+- Upgrade to Version 2.
+- Add Filtering Location & Item Project.
+
+--Build 3--
+
+- Fixed click 2nd time Test output prompt error.
+- History New/Updates/Changes.
+- Fixed Schedule not running.
+
+--Build 2--
+
+- Support Export more then 1 Serial Number Output.
+- Fixed spelling error.
+
+--Build 1--
+
+- MCS_SALES_xxx should take Agent Description.
+- Filename for Stock should be MCS_INV_xxx.
+- Stock Column incorrect position.
+
+--Build 0--

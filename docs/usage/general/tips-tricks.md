@@ -512,7 +512,7 @@ The fieldname is not match with SQL Accounting (eg SQLAcc fieldname `UDF_Width` 
 
 ## SQL Accounitng Linking FAQ
 
-### Prompt Invalid class string, ProdID: "SQLAcc.BizApp" error while try to link to SQL Accounting.
+### Prompt Invalid class string, ProdID: "SQLAcc.BizApp" error while try to link to SQL Accounting
 
 - Login SQL Accounting
 - Click Tools | Options | General
@@ -528,7 +528,7 @@ If still prompt after above steps
 - Reinstall SQL Accounting
 - Run the above steps again
 
-### Prompt Access Violation when import.
+### Prompt Access Violation when import
 
 This happen due to
 

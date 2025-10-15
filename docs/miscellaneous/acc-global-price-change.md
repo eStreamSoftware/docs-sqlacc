@@ -8,6 +8,7 @@ tags: ["SQL Account", "Text", "Import"]
 ---
 
 ## Import Program
+
 - Version (5.2.0.23) - 03 Feb 2025
 - Evaluation Limit : Unlimited
 (For Version 737 & above)
@@ -73,7 +74,6 @@ Note Fields for each itemcode
 It use Customer/Supplier Price Tag (Company Column)
 
 :::
-
 
 ## FAQ
 

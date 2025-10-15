@@ -33,30 +33,6 @@ Document Type Export
 - http://www.estream.com.my/downloadfile/Fairy/SQLAccDKSHExport-setup.exe<span style={{ color: "red", fontWeight: "bold" }}>cannot use</span>
 - MD5 : 1DDE4D72A1808F0DA0CAA27094B7C821
 
-### History New/Updates/Changes
-
---Build 4--
-
-- Upgrade to Version 1.1.
-- Upgrade to XE25.
-- Fixed Export still locking even is registered.
-
---Build 3--
-
-- Fixed Export Slow.
-- Add Export Status.
-
---Build 2--
-
-- Fixed Register Fail.
-
---Build 1--
-
-- Item missing RefPrice field.
-- Remove , for Currency field.
-
---Build 0--
-
 ## Settings
 
 ### Firebird
@@ -66,7 +42,6 @@ During Installation of Firebird make sure the option (see Below picture) is sele
 ![15](../../../static/img/miscellaneous/third-party-export/dksh-firbird.png)
 
 ### Export Program
-
 
 ![16](../../../static/img/miscellaneous/third-party-export/dksh-exp.png)
 
@@ -102,3 +77,27 @@ Menu: Stock | Maintain Stock Item...
 01. Click Edit
 02. Enter the **DKSH Product Code** at *Description2*
 03. Click Save
+
+## Program History New/Updates/Changes
+
+--Build 4--
+
+- Upgrade to Version 1.1.
+- Upgrade to XE25.
+- Fixed Export still locking even is registered.
+
+--Build 3--
+
+- Fixed Export Slow.
+- Add Export Status.
+
+--Build 2--
+
+- Fixed Register Fail.
+
+--Build 1--
+
+- Item missing RefPrice field.
+- Remove , for Currency field.
+
+--Build 0--

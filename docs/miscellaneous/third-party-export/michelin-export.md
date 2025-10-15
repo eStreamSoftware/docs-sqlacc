@@ -23,54 +23,14 @@ Document Type Export (Only 1 text file)
 ## Michelin Export Specification
 
 - 11 May 2016
-- http://www.estream.com.my/downloadfile/Fairy/MICHELIN_WEBMAX.zip<span style={{ color: "red", fontWeight: "bold" }}>cannot use</span>
+- [Michelin Export Specification](http://www.estream.com.my/downloadfile/Fairy/MICHELIN_WEBMAX.zip)
 
 ## Export Program
 
 - Version (1.2.0.8) - 13 May 2020
 - Evaluation Limit : 30 Times Export
-- [SQLAccMichelinExport-setup]<span style={{ color: "red", fontWeight: "bold" }}>cannot use</span>
+- [SQLAccMichelinExport-setup](http://www.estream.com.my/downloadfile/Fairy/SQLAccMichelinExport-setup.exe)
 - MD5 : 64541BCDE1FE677BD001E820B5ADA865
-
-### History New/Updates/Changes
-
---Build 8--
-
-- Fixed Prompt Access Violation on Export.
-
---Build 7--
-
-- Enable support Version 875.782 & above for REGISTERNO field Only.
-
---Build 6--
-
-- Date Not reset on 6th days.
-
---Build 5--
-
-- Add No. of Month Option.
-
---Build 4--
-
-- Fixed only export 50 due after fix bug in build 3.
-
---Build 3--
-
-- Fixed Unable to Export if Description too long.
-
---Build 2--
-
-- Upgrade Compiler.
-- Upgrade to Version 1.2.
-- Add Branch Code Field.
-
---Build 1--
-
-- Fixed Tab Sequence problem.
-- Add filter by Supplier Code.
-- Date Reset On 4th Months.
-
---Build 0--
 
 ## Settings
 
@@ -160,3 +120,43 @@ During Installation of Firebird make sure the option (see Below picture) is sele
 07. Enter the Michelin Item Code.
 08. Click **Save**.
 09. Repeat **Step 2** till **Step 8** for other Michelin Item Code.
+
+### Program History New/Updates/Changes
+
+--Build 8--
+
+- Fixed Prompt Access Violation on Export.
+
+--Build 7--
+
+- Enable support Version 875.782 & above for REGISTERNO field Only.
+
+--Build 6--
+
+- Date Not reset on 6th days.
+
+--Build 5--
+
+- Add No. of Month Option.
+
+--Build 4--
+
+- Fixed only export 50 due after fix bug in build 3.
+
+--Build 3--
+
+- Fixed Unable to Export if Description too long.
+
+--Build 2--
+
+- Upgrade Compiler.
+- Upgrade to Version 1.2.
+- Add Branch Code Field.
+
+--Build 1--
+
+- Fixed Tab Sequence problem.
+- Add filter by Supplier Code.
+- Date Reset On 4th Months.
+
+--Build 0--

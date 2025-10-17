@@ -1329,6 +1329,7 @@ By default we got **3** types of Export to E Mail for Fast Report
 E-Mail Client
 
 - Pros
+
   - User still can change the E-Mail address, Subject & body (E-Mail Content) before Sent
   - Send E-Mail will keep in the Client E-Mail
   - Support HTML format
@@ -1355,9 +1356,9 @@ E-Mail Client (Batch)
   - User can't change the E-Mail address, Subject & body (E-Mail Content) before Sent
   - Must load the E-Mail Script
 
-  E-Mail (Native)
+E-Mail (Native)
 
-  - Pros
+- Pros
 
   - Easy to Setup
   - Support many attachment format
@@ -1366,10 +1367,10 @@ E-Mail Client (Batch)
 
 - Cons
 
-- No record is keeped for Sended E-Mail
-- Only For Single Document E-Mail
-- E-Mail Content only support plain text
-- Only support Single Attachment
+  - No record is keeped for Sended E-Mail
+  - Only For Single Document E-Mail
+  - E-Mail Content only support plain text
+  - Only support Single Attachment
 
 ### Requirements
 

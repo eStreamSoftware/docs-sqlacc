@@ -48,7 +48,7 @@ The following requirements are needed in order to run SQL POS
 
 ### 1. System - System
 
-![2](../../../static/img/integration/pos/intro/pos1.png)
+![system-system](../../../static/img/integration/pos/intro/system-system.png)
 
 ### 2. GST
 
@@ -140,7 +140,7 @@ This Option is to determine what date to post to SQL Accounting
 This function is allow user to change the Application Skin/Theme to suit the user. From form till grid & label
 
   ![3](../../../static/img/integration/pos/intro/pos2.png)
-  
+
 ## System - Receipt & License
 
 This Page is to:

@@ -8,7 +8,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
 ## Barcode
 
-### 1. How to Setup Barcode
+### How to Setup Barcode
 
 1. Download GRN Barcode Report Template from below link.
 
@@ -21,7 +21,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 2. Step to Import the report to SQL.
 
     :::info
-    Refer to this [guide](http://localhost:3000/faq/report/rtm/basic-guide#load-report-template) for details
+    Refer to this [guide](../../usage/tools/rtm/guide) for details
     :::
 
    1. Logon to SQL Account.
@@ -67,15 +67,15 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
     This step is to capture Item Qty, if Qty 10, will repeat 10 Barcode label.
 
-###  2. How to Do Cash Drawer Setting
+### How to Do Cash Drawer Setting
 
-- To define the cash drawer setting with a compatible device, eg. cash drawer. 
+- To define the cash drawer setting with a compatible device, eg. cash drawer.
 
 1. **Tools** > **Options** > **Barcode** > **Cash Drawer**.
 
 ![cash-drawer](../../../static/img/usage/stock/stock-faq/barcode/cash-drawer.png)
 
-### 3. How to Do Barcode Setting
+### How to Do Barcode Setting
 
 - To define the barcode setting with a compatible device, eg. barcode printer.
 
@@ -87,7 +87,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
 - To print the bar code label using Special Bar Code Printer for the items created in Maintain Stock Item.
 
-### 4. How to Do Barcode Printer Setting
+### How to Do Barcode Printer Setting
 
 ![barcode-printer-setting](../../../static/img/usage/stock/stock-faq/barcode/barcode-printer-setting.png)
 
@@ -97,7 +97,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
     ![barcode-printer-setting1](../../../static/img/usage/stock/stock-faq/barcode/barcode-printer-setting1.png)
 3. Click on OK to exit.
 
-### 5. How to Print the Barcode Label
+### How to Print the Barcode Label
 
 1. Click on the arrow key-down beside the Print button. See the screenshot below.
 2. You can choose either Print to Printer (barcode printer) or Print To File (output as text file).
@@ -110,52 +110,51 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
 ![windows-printer](../../../static/img/usage/stock/stock-faq/barcode/windows-printer.png)
 
-### 6. How to Update Item Barcode Listing
+### How to Update Item Barcode Listing
 
 1. At first, you can update the item bar code in the Maintain Stock Item.
-item-barcode-listing
 
-        ![item-barcode-listing](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing.png)
+    ![item-barcode-listing](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing.png)
 
-2.Click on + button to insert the items. See the screenshot below.
+2. Click on + button to insert the items. See the screenshot below.
 
-        ![item-barcode-listing1](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing1.png)
+    ![item-barcode-listing1](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing1.png)
 
 3. Click the SAVE button to save the item bar code listing. Type a file name (eg. BarCode_Items_31122015) to save. See the screenshot below.
 
-        ![item-barcode-listing2](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing2.png)
+    ![item-barcode-listing2](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing2.png)
 
 4. Message prompted. Click OK.
 
 ![item-barcode-listing3](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing3.png)
 
-### 7. How to Load the Previous Item Barcode Listing
+### How to Load the Previous Item Barcode Listing
 
 1. Click on a Carbinet button to load from the previous file for item bar code listing (eg.BarCode_Items_31122015). Click on OPEN.
 
-        ![item-barcode-listing4](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing4.png)
+    ![item-barcode-listing4](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing4.png)
 
 2. Confirmation message prompted. Click on OK to load it. Click on NO' to cancel it.
 
-        ![item-barcode-listing5](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing5.png)
+    ![item-barcode-listing5](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing5.png)
 
 3. Message Load success prompted. Click on OK to proceed.
 
-        ![item-barcode-listing6](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing6.png)
+    ![item-barcode-listing6](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing6.png)
 
 4. You can continue update the new items and save as new file name.
 
-        ![item-barcode-listing7](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing7.png)
+    ![item-barcode-listing7](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing7.png)
 
-### 8. How to Preview/Print the Barcode Label
+### How to Preview/Print the Barcode Label
 
 1. . Click on Preview or Printer (to skip the preview).
 
-        ![preview-barcode-label](../../../static/img/usage/stock/stock-faq/barcode/preview-barcode-label.png)
+    ![preview-barcode-label](../../../static/img/usage/stock/stock-faq/barcode/preview-barcode-label.png)
 
 2. After the preview, click on Printer button to print.
 
-### 9. How to Changing the Label Size (mm) Measurement for the Bar Code Label
+### How to Changing the Label Size (mm) Measurement for the Bar Code Label
 
 1. Click on the **Report Name**. See the screenshot below.
 
@@ -193,7 +192,7 @@ item-barcode-listing
 
 ## Stock (Inventory)
 
-### 10. How to Batch Edit Value in Maintain Stock Item
+### How to Batch Edit Value in Maintain Stock Item
 
 :::tip
 Allow to update/edit the field value by batch.
@@ -245,7 +244,7 @@ Items default output tax previously ZRL are **successfully changed to SR**.
 
 ![8](../../../static/img/usage/stock/stock-faq/batch-edit-value-stock-item/8.png)
 
-### 11. How to Setup Costing Method 
+### How to Setup Costing Method
 
 1. Go to Stock > Maintain Stock Group.
 
@@ -272,7 +271,7 @@ Items default output tax previously ZRL are **successfully changed to SR**.
 
 - This module is to manage mulitple warehouse, inter-branch transfer, consignment, van-sales, etc.
 
-### 12. How to Set Multiple Warehouse
+### How to Set Multiple Warehouse
 
 :::note Case studies
 HQ is helping the KL branch to order goods and goods shall be sending to KL branch warehouse.
@@ -292,7 +291,7 @@ HQ is helping the KL branch to order goods and goods shall be sending to KL bran
 
 From the stock card report, you can see the item is store in two locations, one is default, one is KL, the stock in and out that previously u did will be in location KL.
 
-### 13. How to Do Consignment
+### How to Do Consignment
 
 :::note Case studies
 A batch of goods is consigned to your customer side for selling without billing first, will only bill after they sell out the goods.
@@ -316,7 +315,7 @@ From the stock card report, you can see the item is sold out from your customer 
 
 - Allow user to key-in quantity in and out from the system, just like combination of stock received and stock issue, normally use it for stock take purpose. (Stock > Stock Adjustment > New).
 
-### 14. How SQL System can help during Stock Take ?
+### How SQL System can help during Stock Take ?
 
 1. Go to **Stock > Print Stock Physical Worksheet**.
 
@@ -358,7 +357,7 @@ From the stock card report, you can see the item is sold out from your customer 
 
 - This module mainly to set different pricing groups from different customer and supplier, normally is use to setcdifferent customer category with different pricing. In order to do individual customer then you can group your customer into different price groups.
 
-### 15. How to Setup Price Tag
+### How to Setup Price Tag
 
 1. Go to **Stock > Maintain Stock Price Tag**.
 
@@ -398,7 +397,7 @@ From the stock card report, you can see the item is sold out from your customer 
 
 ![1](../../../static/img/usage/stock/stock-faq/stock-reorder/1.png)
 
-### 16. How to Set the Reorder Level
+### How to Set the Reorder Level
 
 :::info Definition
 Reorder level (or reorder point) is the inventory level at which a company would place a new order or start a new manufacturing run.
@@ -414,7 +413,7 @@ Reorder level (or reorder point) is the inventory level at which a company would
 Stock Quality Control dialog can choose to Turn On (Tools > Option > Miscellaneous > Prompt Negative Stock Quantity Dialog Box > Checked it).
 :::
 
-### 17. How to Set the Reorder Qty
+### How to Set the Reorder Qty
 
 :::info Definition
 Reorder quantity is the point at which a business must buy more inventory as to not run out of inventory.
@@ -436,9 +435,9 @@ Criteria A : There have option :
 
 VS
 
- 1. Reorder Level
- 2. Min Level
- 3. Max Level
+1. Reorder Level
+2. Min Level
+3. Max Level
 
 :::
 
@@ -453,7 +452,7 @@ Step :
 
 ## Serial No Module
 
-### 18. How to Setup Control Serial Number
+### How to Setup Control Serial Number
 
 1. Please go to **Stock > Maintain Stock Item > Edit > Checked Serial No** if this item you would like to control serial number.
 
@@ -550,7 +549,7 @@ Stock Adjustment does not support serial no. May using Stock Received and Stock 
     - This Report Cost is capture exactly from Stock In Serial Number Cost.
     If DO transfer to IV, due to DO have deducted Serial number, so will not have any result for this report.
 
-### 19. How to USe Access Right for Serial No
+### How to USe Access Right for Serial No
 
 1. **Group Stock >Always match Qty with Serial No**.
 
@@ -565,7 +564,7 @@ Stock Adjustment does not support serial no. May using Stock Received and Stock 
 
 ## Stock Month End Balance
 
-### 20.  Why cannot update the GL Stock Value at Stock Month End Balance?
+### Why cannot update the GL Stock Value at Stock Month End Balance?
 
 - **Issue**
 - Click **Update** button at Stock Month End Balance, but no stock value has been updated to GL Maintain Stock Value.

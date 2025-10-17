@@ -36,10 +36,10 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
     ![print-stock-document-listing4](../../../static/img/usage/stock/stock-report/print-stock-document-listing4.png)
 
-| **Field Name** | **Explanation** |
-|----------------|----------------|
-| **Print Document Style** | Tick this checkbox to print out bulk report or send batch email |
-| **Include Cancelled Documents** | Tick this checkbox to include cancelled documents in the listing |
+    | **Field Name** | **Explanation** |
+    |----------------|----------------|
+    | **Print Document Style** | Tick this checkbox to print out bulk report or send batch email |
+    | **Include Cancelled Documents** | Tick this checkbox to include cancelled documents in the listing |
 
 2. If you Tick Print Document Style , you will see that you will able able to choose purchase document report format.
 
@@ -86,18 +86,18 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
     ![print-stock-reorder-advice4](../../../static/img/usage/stock/stock-report/print-stock-reorder-advice4.png)
 
-| **Field Name** | **Explanation** |
-|----------------|----------------|
-| **On Hand Qty** | Stock balance quantity |
-| **On Hand + PO Qty & SO Qty** | Stock balance quantity plus Purchase Order Quantity or Sales Order Quantity |
-| **On Hand + PO Qty - SO Qty** | Stock balance quantity plus Purchase Order Quantity minus Sales Order Quantity |
-| **On Hand + PO Qty (+/-) JO Qty** | Stock balance quantity plus Purchase Order Quantity plus Job Order Quantity |
-| **On Hand - SO Qty (+/-) JO Qty** | Stock balance quantity minus Sales Order Quantity plus Job Order Quantity |
-| **On Hand + PO Qty - SO Qty (+/-) JO Qty** | Stock balance quantity plus Purchase Order Quantity minus Sales Order Quantity minus Job Order Quantity |
+    | **Field Name** | **Explanation** |
+    |----------------|----------------|
+    | **On Hand Qty** | Stock balance quantity |
+    | **On Hand + PO Qty & SO Qty** | Stock balance quantity plus Purchase Order Quantity or Sales Order Quantity |
+    | **On Hand + PO Qty - SO Qty** | Stock balance quantity plus Purchase Order Quantity minus Sales Order Quantity |
+    | **On Hand + PO Qty (+/-) JO Qty** | Stock balance quantity plus Purchase Order Quantity plus Job Order Quantity |
+    | **On Hand - SO Qty (+/-) JO Qty** | Stock balance quantity minus Sales Order Quantity plus Job Order Quantity |
+    | **On Hand + PO Qty - SO Qty (+/-) JO Qty** | Stock balance quantity plus Purchase Order Quantity minus Sales Order Quantity minus Job Order Quantity |
 
-2. After that, select the type of comparison. Will the balance quantities be compared to the Max Value, Min Value or the Reorder level . All set in Maintain Stock Item .
+2. After that, select the type of comparison. Will the balance quantities be compared to the Max Value, Min Value or the Reorder level . All set in Maintain Stock Item.
 
-###  Group/Sort By
+### Group/Sort By
 
 1. You can filter your documents based on Item, Batch and Company Category
 

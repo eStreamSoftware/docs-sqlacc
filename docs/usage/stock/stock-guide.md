@@ -42,7 +42,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ![mtn-stock-item-list](../../../static/img/usage/stock/stock-guide/mtn-stock-item-list.png)
 
-### 1.Main Header
+### Main Header
 
 1. Maintain Stock Item entry form as shown the screenshot below.
 
@@ -72,7 +72,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 | **Tariff** | • Assign a tariff code <br /> • Lookup from Maintain Tax <br /> • Related Topic: Maintain_Customer#Tax , Maintain_Supplier#Tax |
 | **Bal Qty** | • Display the latest qty balance |
 
-### 2. UOM
+### UOM
 
 1. Allow to set multiple UOM, eg. 1 carton = 12 units.
 2. Beside that, you can set the default UOM for Sales, Purchase and Stock entry form.
@@ -80,7 +80,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ![mtn-stock-item-uom](../../../static/img/usage/stock/stock-guide/mtn-stock-item-uom.png)
 
-### 3. Cust.Price
+### Cust.Price
 
 1. Allow to set **multiple pricing/contract price** for customer.
 2. You can use **price tag** to tag the price for a customer.
@@ -89,7 +89,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ![mtn-stock-item-cust-price](../../../static/img/usage/stock/stock-guide/mtn-stock-item-cust-price.png)
 
-### 4. Supp.Price
+### Supp.Price
 
 1. Allow to set **multiple pricing/contract** price for supplier.
 2. You can use **price tag** to tag the price for a supplier.
@@ -100,7 +100,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 - Related Topic : [How is the Price Tag work?](https://sites.google.com/site/sqlestream/sql-financial-accounting/7-system-setting/7-20-how-is-the-price-tag-work)
 
-### 5. BOM
+### BOM
 
 1. Allow to setup **recipes/ingredients** for a manufactured product.
 2. It is required **Bill of Materials** module.
@@ -108,59 +108,59 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ![mtn-stock-item-bom](../../../static/img/usage/stock/stock-guide/mtn-stock-item-bom.png)
 
-### 6. More Desc
+### More Desc
 
 1. Enter the product details or specifications.
 2. See the screenshot below.
 
 ![mtn-stock-item-more-desc](../../../static/img/usage/stock/stock-guide/mtn-stock-item-more-desc.png)
 
-> **Tips:**  
+> **Tips:**
 > Example view from Sales Tax Invoice:
 
 ![mtn-stock-item-more-desc1](../../../static/img/usage/stock/stock-guide/mtn-stock-item-more-desc1.png)
 
-### 7. Opn Bal
+### Opn Bal
 
 1. To enter the Opening Stock qty and value balances.
 
 ![mtn-stock-item-opn-bal](../../../static/img/usage/stock/stock-guide/mtn-stock-item-opn-bal.png)
 
-### 8. Category
+### Category
 
 1. To set the multiple stock category for reporting purpose, eg. country origins, brands, etc.
 2. See the screenshot below.
 
 ![mtn-stock-item-category](../../../static/img/usage/stock/stock-guide/mtn-stock-item-category.png)
 
-### 9. Alternative
+### Alternative
 
 1. Enable to identify the alternative items to replace.
 
 ![mtn-stock-item-alternative](../../../static/img/usage/stock/stock-guide/mtn-stock-item-alternative.png)
 
-### 10. Cust. Item
+### Cust. Item
 
 1. To enter the **customer item code** and **description**.
 2. Purpose is to search or print the customer item code and description in tax invoice instead of using the original item description.
 
 ![mtn-stock-item-cust-item](../../../static/img/usage/stock/stock-guide/mtn-stock-item-cust-item.png)
 
-### 11. Supp. Item
+### Supp. Item
 
 1. To enter the **supplier item code** and **description**.
 2. Purpose is to search or print the supplier item code and description in purchase invoice instead of using the original item description.
 
 ![mtn-stock-item-supp-item](../../../static/img/usage/stock/stock-guide/mtn-stock-item-supp-item.png)
 
-### 12. Barcode
+### Barcode
 
 1. To enter the barcode for different UOM.
 2. See the screenshot below.
 
 ![mtn-stock-item-barcode](../../../static/img/usage/stock/stock-guide/mtn-stock-item-barcode.png)
 
-### 13. Note
+### Note
 
 1. Others stock information.
 
@@ -177,7 +177,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ![mtn-stock-item-note](../../../static/img/usage/stock/stock-guide/mtn-stock-item-note.png)
 
-> **Note:**  
+> **Note:**
 > Do not load the picture size more than 16kb. This is to avoid the database size growth bigger.
 
 ## Maintain Stock Category
@@ -211,7 +211,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 4. Maintain Stock Category Template form as shown the screenshot below.
 
-![mtn-stock-category-template1](../../../static/img/usage/stock/stock-guide/mtn-stock-category-template1.png)
+    ![mtn-stock-category-template1](../../../static/img/usage/stock/stock-guide/mtn-stock-category-template1.png)
 
 | **Field Name** | **Explanation & Properties** |
 |----------------|-------------------------------|
@@ -248,13 +248,13 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ## Maintain Item Template
 
-1. It is usually use for a set or package items.  
-2. It can be create a template consists of the item selected and use in Sales/Purchase/Stock documents.  
+1. It is usually use for a set or package items.
+2. It can be create a template consists of the item selected and use in Sales/Purchase/Stock documents.
 3. **Stock** > **Maintain Item Template**.
 
     ![mtn-item-template](../../../static/img/usage/stock/stock-guide/mtn-item-template.png)
 
-4. Maintain Item Template form as shown the screenshot below.  
+4. Maintain Item Template form as shown the screenshot below.
 
     ![mtn-item-template1](../../../static/img/usage/stock/stock-guide/mtn-item-template1.png)
 
@@ -270,7 +270,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 ### How to Use The Template
 
   1. For example at the Sales Invoice, click on Item Template (Left Side Bar).
-  2. Double click on the Item Template. See the screenshot below.  
+  2. Double click on the Item Template. See the screenshot below.
 
       ![mtn-item-template2](../../../static/img/usage/stock/stock-guide/mtn-item-template2.png)
 
@@ -299,43 +299,43 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 | **Dimension 2 (Column)** | 12 - 13 | 1 | _S <br /> _M <br /> _L <br /> XL | Preset code list. |
 | **Separator** | - | 1 |  | A separator between the prefix, dimension row, and column. |
 
-> **Note:**  
+> **Note:**
 > Code length must follow as set in Matrix Settings constantly, especially the Dimension 1 (Row) and 2 (Column).
 
 ### How Does It Works
 
-  #### Generate Matrix Item Code
+#### Generate Matrix Item Code
 
-  1. Go to Maintain Stock Item.
-  2. Right click the area below the **Detail** button.
-  3. Click on **Generate Item Code**. See the screenshot below.
+1. Go to Maintain Stock Item.
+2. Right click the area below the **Detail** button.
+3. Click on **Generate Item Code**. See the screenshot below.
 
-      ![mtn-item-matrix-profile2](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile2.png)
+    ![mtn-item-matrix-profile2](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile2.png)
 
-  4. Select the **Matrix Profile**,eg. **SHIRT**.
-  5. Enter a **Prefix**,eg. **CROC**.
-  6. Select an **Item Group**,eg. **T-Shirt**.
-  7. Press **Ok** to start generate.
+4. Select the **Matrix Profile**,eg. **SHIRT**.
+5. Enter a **Prefix**,eg. **CROC**.
+6. Select an **Item Group**,eg. **T-Shirt**.
+7. Press **Ok** to start generate.
 
-      ![mtn-item-matrix-profile3](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile3.png)
+    ![mtn-item-matrix-profile3](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile3.png)
 
-  8. List of CROC item code created in Maintain Stock Item.
+8. List of CROC item code created in Maintain Stock Item.
 
-      ![mtn-item-matrix-profile4](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile4.png)
+    ![mtn-item-matrix-profile4](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile4.png)
 
 #### Generate Invoice Using Matrix
 
 1. At Sales Invoice, select one of the prefix item code, eg. **CROC**.
 
-      ![mtn-item-matrix-profile5](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile5.png)
+    ![mtn-item-matrix-profile5](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile5.png)
 
 2. Click on **Matrix** tab. You can start enter the quantity in the dimension row and column.
 
-      ![mtn-item-matrix-profile6](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile6.png)
+    ![mtn-item-matrix-profile6](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile6.png)
 
 3. Click back to Invoice tab. Item code will be inserted automatically.
 
-      ![mtn-item-matrix-profile7](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile7.png)
+    ![mtn-item-matrix-profile7](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile7.png)
 
 ## Maintain Location
 
@@ -343,11 +343,11 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 2. It is require **Multiple Location (Warehouse)** module.
 3. **Stock** > **Maintain Location**.
 
-      ![mtn-location](../../../static/img/usage/stock/stock-guide/mtn-location.png)
+    ![mtn-location](../../../static/img/usage/stock/stock-guide/mtn-location.png)
 
 4. Maintain Location form as shown the screenshot below.
 
-      ![mtn-location1](../../../static/img/usage/stock/stock-guide/mtn-location1.png)
+    ![mtn-location1](../../../static/img/usage/stock/stock-guide/mtn-location1.png)
 
 | **Field Name** | **Explanation & Properties** |
 |----------------|-------------------------------|
@@ -382,15 +382,15 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
     ![mtn-batch1](../../../static/img/usage/stock/stock-guide/mtn-batch1.png)
 
-| **Field Name** | **Explanation & Properties** |
-|----------------|-------------------------------|
-| **Code** | • Input the new **Batch** code. <br /> • Field type: Alphanumerical <br /> • Length: 30 |
-| **Description** | • Input the **Batch** description. <br /> • Field type: Alphanumerical <br /> • Length: 160 |
-| **Expiry Date** | • Set an **Expiry Date**. <br /> • Field type: Date |
-| **Manufacturing Date** | • Set a **Manufacturing Date**. <br /> • Field type: Date |
-| **Remark 1** | • Free field. <br /> • Field type: Alphanumerical <br /> • Length: 200 |
-| **Remark 2** | • Free field. <br /> • Field type: Alphanumerical <br /> • Length: 200 |
-| **ISACTIVE** | • To make the batch **Active** or **Inactive**. <br /> • Field type: Checkbox |
+    | **Field Name** | **Explanation & Properties** |
+    |----------------|-------------------------------|
+    | **Code** | • Input the new **Batch** code. <br /> • Field type: Alphanumerical <br /> • Length: 30 |
+    | **Description** | • Input the **Batch** description. <br /> • Field type: Alphanumerical <br /> • Length: 160 |
+    | **Expiry Date** | • Set an **Expiry Date**. <br /> • Field type: Date |
+    | **Manufacturing Date** | • Set a **Manufacturing Date**. <br /> • Field type: Date |
+    | **Remark 1** | • Free field. <br /> • Field type: Alphanumerical <br /> • Length: 200 |
+    | **Remark 2** | • Free field. <br /> • Field type: Alphanumerical <br /> • Length: 200 |
+    | **ISACTIVE** | • To make the batch **Active** or **Inactive**. <br /> • Field type: Checkbox |
 
 4. You can choose to lock the stock item to the batch number. Purpose is to avoid other user assign wrong batch number to an item code.
 
@@ -493,13 +493,13 @@ Allows user to **decrease stock quantity without selling**. It is normally used 
 ## Stock Adjustment / Stock Take
 
 :::success[INFO]
-Check out our new [Stock Take App](https://www.sql.com.my/sqlstocktake/)
+Check out our new [stock take app](https://www.sql.com.my/sqlstocktake/)
 :::
 
 Allows user to key-in quantity in and quantity out from the system, just like a combination of stock received and stock issue. Normally used for stock take purposes. **(Stock > Stock Adjustment > New)**
 
 :::info
-Watch tutorial video here: [Youtube](https://www.youtube.com/watch?v=uEbCRAftQ4A&feature=youtu.be)
+Watch tutorial video here: [youtube](https://www.youtube.com/watch?v=uEbCRAftQ4A&feature=youtu.be)
 :::
 
 1. Click on **Stock**

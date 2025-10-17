@@ -37,8 +37,8 @@ This Function & Mobile App which is use for Stock Take
 
 ## Installation
 
-- [StockTakeApp - Website](https://www.sql.com.my/sqlstocktake/)
-- [StockTake - Huawei AppGallery](https://appgallery.huawei.com/#/app/C102639285)
+- [stock take app - website](https://www.sql.com.my/sqlstocktake/)
+- [stock take - huawei app gallery](https://appgallery.huawei.com/#/app/C102639285)
 
 ## Prerequisite
 
@@ -88,12 +88,12 @@ Leave this Screen Open as It will auto sync & update
 
 ### Stoke Take(Mobile App)
 
-      ![4](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take3.png)
-      ![12](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take4.png)
+   ![4](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take3.png)
+   ![12](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take4.png)
 
 1. When to Sync Data
 
-      ![5](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take5.png)
+   ![5](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take5.png)
 
 2. After Done Sycn, Click Stock Take
 
@@ -102,7 +102,7 @@ Leave this Screen Open as It will auto sync & update
 
 3. Click Scan to begin Scan
 
-      ![7](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take8.png)
+   ![7](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take8.png)
 
 4. If the Item Code Had More then 1 UOM it will prompt as Above.
 5. Select the UOM & Click Select to Confirm
@@ -192,4 +192,4 @@ Resetting company profile will require user to scan QR code on SQL Acoount Stock
 
 3. When prompted to proceed with resetting the connection profile, tap on the button "**Yes**" to continue.
 
-4. Once done, tap on the "**Network File Transfer**" to add a new Stock Take share profile and update items list (Follow steps in [Stock Take App Import](#3-stock-take-app-import), specifically steps 2 and 3).
+4. Once done, tap on the "**Network File Transfer**" to add a new Stock Take share profile and update items list (Follow steps in [stock take app import](#3-stock-take-app-import), specifically steps 2 and 3).

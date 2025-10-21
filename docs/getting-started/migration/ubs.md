@@ -23,7 +23,7 @@ tags: ["SQL Account", "Migration"]
 | GL Opening Balance | Coming Soon | Sales Invoice | Yes | Purchase Debit & Credit Note | Yes |
 | Cash Book Entry | Yes | Sales Cash Sales | Yes | Price History - Purchase Invoice | Yes |
 
-## TIme Estimate
+## Time Estimate
 
 Different pc might have different timing
 
@@ -57,7 +57,7 @@ Import Flow
 ## Preparing SQL Account Before Import Master Data
 
 :::caution
-        Please make sure that SQL Account version is version 728 and above.
+Please make sure that SQL Account version is version 728 and above.
 :::
 
 Here are the things to do before data import:-

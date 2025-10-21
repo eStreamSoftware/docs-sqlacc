@@ -14,12 +14,12 @@ tags: ["SQL Account", "Text", "Import"]
 (For Version 737 & above)
 
 - SQLAccGlbPriceChangeV5-setup
-- MD5 : 8DD462C2B440CE039DF3981896D92FB9
+- MD5 : `8DD462C2B440CE039DF3981896D92FB9`
 
 (For Version 736 & below)
 
 - SQLAccGlbPriceChange-setup
-- MD5 : 8C73130765BFA98A5BB59EF069422BBC
+- MD5 : `8C73130765BFA98A5BB59EF069422BBC`
 
 ## Step-By Item Code
 

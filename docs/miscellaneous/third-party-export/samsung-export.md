@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 title: SQL Acc Samsung Export
-description: SQL Acc Samsung Export  
+description: SQL Acc Samsung Export
 slug: /miscellaneous/third-party-export/samsung-export
 tags: ["SQL Account","Samsung" , "Export"]
 ---
@@ -36,11 +36,11 @@ Document Type Export (Total 2 Text files)
 - Version (2.0.2.15) - 27 Feb 2025
 - Evaluation Limit : 30 Times Export
 - [SQLAccSamsungExport-setup.exe](https://download.sql.com.my/customer/Fairy/SQLAccSamsungExport-setup.exe)
-- MD5 : A3F809D610D92A44662A9AE7D2D3A3B1
+- MD5 : `A3F809D610D92A44662A9AE7D2D3A3B1`
 
 ## Settings
 
-### Export Program
+### Export Program Setting
 
 ![19](../../../static/img/miscellaneous/third-party-export/samsung-exp.png)
 

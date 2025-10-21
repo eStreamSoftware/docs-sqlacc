@@ -221,7 +221,7 @@ We had 4 Methods to Integrate/Link to SQL Accounting
 
 - [Restful API](https://wiki.sql.com.my/wiki/Restful_API) (Recommended - For two way communication & SQL Public Connect User)
 - [SDK Live](/integration/sdk-live/basic-guide#documentation) (Recommended - For two way communication)
-- [SQL Acc XLS n MDB Import](../../miscellaneous/acc-XLS-MDB-import.md) - XLS, XLSX, Json & CSV/TXT File (Format 2 - Bar(|),Comma(,),Semi Comma(;),Tilde(~))
+- [SQL Acc XLS n MDB Import](../../miscellaneous/acc-xls-mdb-import.md) - XLS, XLSX, Json & CSV/TXT File (Format 2 - Bar(|),Comma(,),Semi Comma(;),Tilde(~))
 - [SQL XML Import](../../miscellaneous/import-export-guide.md) - XML File
 - [SQL Text Import](../../miscellaneous/text-import.md) - CSV/TXT File (Format 1 - Semi Comma (;) Only)
 
@@ -234,7 +234,7 @@ SQL Accounting had 3 Environment Setup & below is available method option
     Data is Host at our Public Server
 
     - [Restful API](https://wiki.sql.com.my/wiki/Restful_API)
-    - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-XLS-MDB-import.md)
+    - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-xls-mdb-import.md)
 
 2. On Premise Cloud ([SQL Private Connect](https://private.sql.com.my/))
 
@@ -242,14 +242,14 @@ SQL Accounting had 3 Environment Setup & below is available method option
 
     - [Restful API](https://wiki.sql.com.my/wiki/Restful_API)
     - [SDK Live](https://wiki.sql.com.my/wiki/SDK_Live)
-    - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-XLS-MDB-import.md)
+    - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-xls-mdb-import.md)
 
 3. On Premise(Offline)
 
     Data is Host at User own Office
 
     - [SDK Live](https://wiki.sql.com.my/wiki/SDK_Live)
-    - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-XLS-MDB-import.md)
+    - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-xls-mdb-import.md)
     - [SQL Accounting](https://www.sql.com.my/download/demo/sqlacc-setup.exe)
     - [Firebird 64 bit](https://github.com/FirebirdSQL/firebird/releases/download/R3_0_7/Firebird-3.0.7.33374_1_x64.exe)
     - [Installation Guide](https://download.sql.com.my/customer/Fairy/Steps-InstallnCreateSampleDB.gif)
@@ -277,7 +277,7 @@ SQL Accounting had 3 Environment Setup & below is available method option
 
 Before wanted to Import/Post to SQL Accounting Database, below information/setting must set in the SQL Accounting
 
-1. Click _Menu: View_
+1. Click *Menu: View*
 
     Untick(UnSelect) the option
 
@@ -349,7 +349,7 @@ Before wanted to Import/Post to SQL Accounting Database, below information/setti
 | Location Code | Stock => Maintain Location |
 | Batch Code | Stock => Maintain Batch |
 
-**\*ALWAYS do backup the database First before Import/Post to SQL Accounting**
+**\**ALWAYS do backup the database First before Import/Post to SQL Accounting**
 
 ## Table/Fields Detail
 
@@ -358,84 +358,85 @@ Before wanted to Import/Post to SQL Accounting Database, below information/setti
 
 ### Normal Used Table/Biz Object Name
 
-\---**Sales Side**---
+**Sales Side**
 
 | Biz Object | Description |
 | --- | --- |
-| AR_Customer | Maintain Customer |
-| SL_IV | Sales Invoice |
-| SL_CS | Cash Sales |
-| SL_CN | Sales Credit Note |
-| SL_DN | Sales Debit Note |
-| AR_PM | Customer Payment |
-| AR_IV | Customer Invoice |
-| AR_DN | Customer Debit Note |
-| AR_CN | Customer Credit Note |
+| `AR_Customer` | Maintain Customer |
+| `SL_IV` | Sales Invoice |
+| `SL_CS` | Cash Sales |
+| `SL_CN` | Sales Credit Note |
+| `SL_DN` | Sales Debit Note |
+| `AR_PM` | Customer Payment |
+| `AR_IV` | Customer Invoice |
+| `AR_DN` | Customer Debit Note |
+| `AR_CN` | Customer Credit Note |
 
-\---**Purchase Side**---
+**Purchase Side**
 
 | Biz Object | Description |
 | --- | --- |
-| AP_Supplier | Maintain Supplier |
-| PH_PI | Purchase Invoice |
-| PH_CP | Cash Purchase |
-| PH_SC | Purchase Return |
-| PH_SD | Purchase Debit Note |
-| AP_SP | Supplier Payment |
-| AP_PI | Supplier Invoice |
-| AP_SD | Supplier Debit Note |
-| AP_SC | Supplier Credit Note |
+| `AP_Supplier` | Maintain Supplier |
+| `PH_PI` | Purchase Invoice |
+| `PH_CP` | Cash Purchase |
+| `PH_SC` | Purchase Return |
+| `PH_SD` | Purchase Debit Note |
+| `AP_SP` | Supplier Payment |
+| `AP_PI` | Supplier Invoice |
+| `AP_SD` | Supplier Debit Note |
+| `AP_SC` | Supplier Credit Note |
 
 ### Posting Information
 
 - Detail Data should Group by Stock Group/Category & TaxType (ZRL or SR) & Itemcode (if wanted import itemcode)
 - Eg. Cafe can be group by
+        - Food - SR
+        - Food - ZRL
+        - Beverage
+        - Service Charges
+        - Rounding
 
-    \- Food - SR
-
-    \- Food - ZRL
-
-    \- Beverage
-
-    \- Service Charges
-
-    \- Rounding
+- Detail Data should Group by Stock Group/Category & TaxType (ZRL or SR) & Itemcode (if wanted import itemcode)
+- Eg. Cafe can be group by
+        - Food - SR
+        - Food - ZRL
+        - Beverage
+        - Service Charges
+        - Rounding
 
 - Eg. Today got 10 transactions
+        - 8 is Simplified Invoice - Group as 1 Doc No - POS-00001
+        - 2 is Full Tax Invoice/Credit Sales Invoice - 1 by 1 in - POS-00002, POS-00003
 
-    \- 8 is Simplified Invoice - Group as 1 Doc No - POS-00001
-
-    \- 2 is Full Tax Invoice/Credit Sales Invoice - 1 by 1 in - POS-00002, POS-00003
-
-- All can post to SL_CS & AR_PM
+- All can post to `SL_CS` & `AR_PM`
 - Below is example Today Total Simplified Invoice Sales is RM1000
 
 #### Method 1 (Recommended)
 
 It will be had 4 transactions
 
-1. RM1000 - Post to SL_CS & (P_DocNo, P_PaymentMethod field is empty & P_Amount, P_PaidAmount field is 0)
+1. RM1000 - Post to `SL_CS` & (`P_DocNo`, `P_PaymentMethod` field is empty & `P_Amount`, `P_PaidAmount` field is 0)
 
-2. RM700 by Cash - Post to AR_PM
+2. RM700 by Cash - Post to `AR_PM`
 
-3. RM200 by MasterCard - Post to AR_PM
+3. RM200 by MasterCard - Post to `AR_PM`
 
-4. RM100 by CreditCard - Post to AR_PM
+4. RM100 by CreditCard - Post to `AR_PM`
 
-Pros : Easy to Edit or Delete the transactions  
+Pros : Easy to Edit or Delete the transactions
 Cons : Many Posting document
 
 #### Method 2
 
 It will be had 3 transactions
 
-1. RM700 by Cash - Post to SL_CS P_PaymentMethod field
+1. RM700 by Cash - Post to `SL_CS` `P_PaymentMethod` field
 
-2. RM200 by MasterCard - Post to AR_PM
+2. RM200 by MasterCard - Post to `AR_PM`
 
-3. RM100 by CreditCard - Post to AR_PM
+3. RM100 by CreditCard - Post to `AR_PM`
 
-Pros : Less Posting document  
+Pros : Less Posting document
 Cons :
 
 - Not Easy to Edit or Delete the transactions
@@ -445,43 +446,31 @@ Cons :
 
 - Both Full Tax & Simplified IV can use same Debtor Code as Not mention required Customer GST ID
 - Government 5 cents Rounding Mechanism - NO Tax/GST Code
-- Deposit for Non Refundable can use Customer Payment (AR_PM) & set _NONREFUNDABLE_ field to _1_
-
-    \- Default is SR
-
-    \- Will auto reverse once it being Knock-Off
+- Deposit for Non Refundable can use Customer Payment `AR_PM` & set *NONREFUNDABLE* field to *1*
+        - Default is `SR`
+        - Will auto reverse once it being Knock-Off
 
 - Doc Disc should proportion by sub total amt for mix tax code (See Cash Sales POS-DocDisc)
 
     Example
-
-    \- Doc Discount = 10% of Document Discount
-
-    \- Sub Total for SR = 150.24 => Disc (150.24 \* 10%) = 15.02
-
-    \- Sub Total for ZR = 988.88 => Disc (988.88 \* 10%) = 98.89
+        - Doc Discount = 10% of Document Discount
+        - Sub Total for SR = 150.24 => Disc (150.24 \* 10%) = 15.02
+        - Sub Total for ZR = 988.88 => Disc (988.88 \* 10%) = 98.89
 
     0r
 
-    \- Doc Discount = 113.91
-
-    \- Sub Total for SR = 150.24 => Disc ((150.24/1139.12) \* 113.91) = 15.02
-
-    \- Sub Total for ZR = 988.88 => Disc ((988.88/1139.12) \* 113.91) = 98.89
+        - Doc Discount = 113.91
+        - Sub Total for SR = 150.24 => Disc ((150.24/1139.12) \* 113.91) = 15.02
+        - Sub Total for ZR = 988.88 => Disc ((988.88/1139.12) \* 113.91) = 98.89
 
 - Mixed Supplies Tax Code
-
-    \- ES
-
-    \- TX-ES (Replace TX-N43)
-
-    \- TX-RE
+        - ES
+        - TX-ES (Replace TX-N43)
+        - TX-RE
 
 - Realise Bad Debts Use CN as Normal
-
-    \- System will contra the provision bad debts done at GST-03 by 6 mth bad debts
-
-    \- Make sure Knock the actual Bad debts Invoice
+        - System will contra the provision bad debts done at GST-03 by 6 mth bad debts
+        - Make sure Knock the actual Bad debts Invoice
 
 - For Purchase Invoice(PI) MUST 1 by 1 post in (i.e. can't Group multi PI in 1 PI)
 
@@ -532,14 +521,14 @@ If still prompt after above steps
 
 This happen due to
 
-The fieldname is not match with SQL Accounting (eg SQLAcc fieldname UDF_Width yr had call for UDF_Weight)
+The fieldname is not match with SQL Accounting (eg SQLAcc fieldname `UDF_Width` yr had call for `UDF_Weight`)
 
 - Old version of SQL Acc Import program, try update the SQL Acc Import program
 - The fieldname had the empty space at the beginning and/or end (norm happen if import from Excel) eg 'DocNo ' or ' DocNo' instead of 'DocNo'
 
 ### Why after import the DO still had outstanding even the Invoice had imported?
 
-Yes all import will loss the _Transfer_ status (i.e. if import DO & IV will treat as different) except using SDK import with condition
+Yes all import will loss the *Transfer* status (i.e. if import DO & IV will treat as different) except using SDK import with condition
 
 ### Which field should I map/insert to for Credit Note & Debit Note for Invoice Number, Invoice Date & Reason?
 
@@ -579,13 +568,13 @@ But as mention above **Extra Notes** proportion by sub total amt for mix tax cod
 
 No. The correct Double Entry is as following
 
-\- **Invoice/Cash Sales**
+- **Invoice/Cash Sales**
 
 DR Debtor
 
 CR Sales Account
 
-\- **Payment Received**
+- **Payment Received**
 
 DR Bank/Cash In Hand
 
@@ -593,7 +582,7 @@ CR Debtor
 
 ### Can I use just ADMIN ID to Import/Posting?
 
-No. _ADMIN_ had full Access Right & if had problem user might had problem trace back who doing the importing...
+No. *ADMIN* had full Access Right & if had problem user might had problem trace back who doing the importing...
 
 It adviceable to create Another ID with less Access Right
 
@@ -607,7 +596,7 @@ Reason :
 
 01. Faster Import time
 
-02. Timing issue as in SQL Acc the Qty is _ALWAYS_ outdated cause real _Stock In/Out_ is from the External Program(eg POS)
+02. Timing issue as in SQL Acc the Qty is *ALWAYS* outdated cause real *Stock In/Out* is from the External Program(eg POS)
 
 03. Data redundancy as 2 same data for different system
 
@@ -641,13 +630,13 @@ Below is example(suggest) how we post to Simplified Invoice from supplier
 
 ![24](../../../static/img/usage/general/tips-tricks/exceed500-2.png)
 
-[\[top\]](#sql-accounting-linking)
+[[top]](#sql-accounting-linking)
 
-### Prompt Could not convert variant of type (Null) into type (Integer) error while try to post (eg Invoice)
+### Prompt could not convert variant of type (Null) into type (Integer) error while try to post (eg Invoice)
 
 Make sure the database you login is had Started the GST.
 
-[\[top\]](#sql-accounting-linking)
+[[top]](#sql-accounting-linking)
 
 ### How to post SR with 6% for issue document after 01 Jun 2018?
 
@@ -661,7 +650,7 @@ Add TaxRate Field Script/Code
 
 Create New Tax SR tax code with 6%(eg SR6) in SQL Accounting
 
-[\[top\]](#sql-accounting-linking)
+[[top]](#sql-accounting-linking)
 
 **Is there any changes in Linking for the SST?**
 
@@ -687,7 +676,7 @@ New Field added
 |----------------|----------------|----------------|----------------|------------------|--------------|
 | **TARIFF** | String | 20 | C |  | Tariff or HS Code<br/>**Mandatory** – If posting to:<br/>- GL Payment Voucher & GL Official Receipt<br/>- Customer Invoice, Debit Note & Credit Note<br/>- Supplier Invoice, Debit Note & Credit Note<br/>- All Sales & Purchase Module without Item Code<br/>**Not Required** – If posting Sales & Purchase with Item Code |
 
-[\[top\]](#sql-accounting-linking)
+[[top]](#sql-accounting-linking)
 
 ### How to SQL Accounting handle if had Discount/Cash Voucher?
 
@@ -701,25 +690,25 @@ Yes if user is upgrade to Version 875.782 & above.
 
 Table Affected
 
-\- SY_PROFILE => File | Company Profile
+- `SY_PROFILE` => File | Company Profile
 
-\- AR_CUSTOMER => Customer | Maintain Customer
+- `AR_CUSTOMER` => Customer | Maintain Customer
 
-\- AP_SUPPLIER => Supplier | Maintain Supplier
+- `AP_SUPPLIER` => Supplier | Maintain Supplier
 
 Field Changes
 
-\- Original Name **REGISTERNO** change to BRN
+- Original Name **REGISTERNO** change to BRN
 
-\- New Field BRN2
+- New Field BRN2
 
-\- New Field Size for both Fields 30
+- New Field Size for both Fields 30
 
 [SSM Announcement](https://www.ssm.com.my/Lists/Announcement/AnnouncementDetails.aspx?ID=134) or [PDF](https://download.sql.com.my/customer/Fairy/Announcement-NewROC.pdf)
 
 ### Is there any changes in Linking for the E-Invoicing?
 
-New Field Added  
+New Field Added
 Available in Version 5.2024.983.848 & above
 
 #### Maintain Customer & Maintain Supplier
@@ -743,7 +732,6 @@ Available in Version 5.2024.983.848 & above
 | **Field Name** | **Field Type** | **Field Size** | **Remarks** |
 |----------------|----------------|----------------|--------------|
 | **IRBM_CLASSIFICATION** | String | 3 | Category of products or services being billed as a result of a commercial transaction. More than 1 classification code can be added for goods / services included in the e-Invoice.<br/>[https://sdk.myinvois.hasil.gov.my/codes/classification-codes/](https://sdk.myinvois.hasil.gov.my/codes/classification-codes/) |
-
 
 Available in Version 5.2024.990.852 & above
 
@@ -834,7 +822,6 @@ Begin from SQL Acc Version 5.2024.1007.860 & above the follow field type will ch
 |-----------------------------|------------------------------|
 | - T <br/> - 1                | True                        |
 | - F <br/> - 0                | False                        |
-
 
 | FieldName | True Value | False Value |
 | --- | --- | --- |

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: SQL Acc DKSH Export
-description: SQL Acc DKSH Export   
+description: SQL Acc DKSH Export
 slug: /miscellaneous/third-party-export/dksh-export
 tags: ["SQL Account","DKSH" , "Export"]
 ---
@@ -24,14 +24,14 @@ Document Type Export
 ## DKSH Specification
 
 - 03 Jun 2016
-- http://www.estream.com.my/downloadfile/Fairy/DKSH_ManageSales_Integration_Spec.zip<span style={{ color: "red", fontWeight: "bold" }}>cannot use</span>
+- [DKSH Manage Sales Integration Specification](http://www.estream.com.my/downloadfile/Fairy/DKSH_ManageSales_Integration_Spec.zip)
 
 ## Export Program
 
 - Version (1.1.0.4) - 06 Jun 2017
 - Evaluation Limit : 30 Times Export
-- http://www.estream.com.my/downloadfile/Fairy/SQLAccDKSHExport-setup.exe<span style={{ color: "red", fontWeight: "bold" }}>cannot use</span>
-- MD5 : 1DDE4D72A1808F0DA0CAA27094B7C821
+- [SQLAcc DKSHE Export Setup](http://www.estream.com.my/downloadfile/Fairy/SQLAccDKSHExport-setup.exe)
+- MD5 : `1DDE4D72A1808F0DA0CAA27094B7C821`
 
 ## Settings
 
@@ -41,7 +41,7 @@ During Installation of Firebird make sure the option (see Below picture) is sele
 
 ![15](../../../static/img/miscellaneous/third-party-export/dksh-firbird.png)
 
-### Export Program
+### Export Program Setting
 
 ![16](../../../static/img/miscellaneous/third-party-export/dksh-exp.png)
 

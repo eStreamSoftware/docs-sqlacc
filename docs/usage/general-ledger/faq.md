@@ -287,14 +287,14 @@ For Opening Bank Reconciliation, you may refer this [Guide](../../usage/general-
 A bank reconciliation is a process performed by a company to ensure that the company's records
 (check register, **general ledger account**, **balance sheet**, etc.) are tally with bank's records.
 
-### 1. Reconciliation Bank Transaction
+### Reconciliation Bank Transaction
 
    GL | Bank Reconciliation
    ![33](../../../static/img/usage/general-ledger/glfaq/bank-recon/1.png)
 
    ![34](../../../static/img/usage/general-ledger/glfaq/bank-recon/2.png)
 
-### 2. Bank Reconciliation
+### Bank Reconciliation
 
 - Select the Bank Statement Date
 - Select the Bank Account, eg. Hong Leong Bank
@@ -311,7 +311,7 @@ A bank reconciliation is a process performed by a company to ensure that the com
 
    As attached bank statement is the sample, compare with the transaction, if exist then you may check as sample picture above.
 
-### 3. Print Bank Reconciliation Report
+### Print Bank Reconciliation Report
 
 After reconciliation done, you can save and preview reconciliation report
 
@@ -330,29 +330,29 @@ Formula :
 Account Amount / Total Sales * 100
 :::
 
-### 1. How to get A % = 62.1 ?
+### How to get A % = 62.1 ?
 
    Using Sales / Total Sales \* 100 = 184,119.49/ 296,502.11 \* 100 = 62.1%
 
-### 2. How to get C % = 2.5 ?
+### How to get C % = 2.5 ?
 
    Using Purchase / Total Sales \* 100 = 7,406.8 / 296,502.11 \* 100 = 2.5 %
 
-### 3. How to get D % = 95 ?
+### How to get D % = 95 ?
 
    Using Gross Profit / Total Sales \* 100 = 281,662.21 / 296,502.11 \* 100 = 95%
 
-### 4. How to get E % = 3.4?
+### How to get E % = 3.4?
 
    Using Expenses value / Total Sales / 6 \* 100= 10,000/296,502.11 \* 100 = 3.4%
 
-### 5. How to get F % = 91.7 ?
+### How to get F % = 91.7 ?
 
    Using Net Profit / Total Sales \* 100 = 271,805.66 /296,502.11 \* 100 = 91.7%
 
 :::info
 
-1. % will round to nearest 1 Decimal Point.
+% will round to nearest 1 Decimal Point.
 
 :::
 

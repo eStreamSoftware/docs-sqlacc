@@ -776,3 +776,71 @@ Sample of supplier statement screenshot below.
 5. Example of the Contra Account ledger as shown below.
 
    ![des-supplier-contra-contra-account-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-contra-contra-account-1.jpg)
+
+## InterBank GIRO Module
+
+To use the **Interbank GIRO** feature, you must have the **Interbank GIRO** module enabled in SQL Account.
+
+![des-interbank-giro-requirement](../../../static/img/usage/supplier/supplier-guide-images/interbank-giro-requirement.png)
+
+### Bank File Format
+
+The following shows the list of bank file formats that are currently supported.
+
+![des-giro-bank-file-format](../../../static/img/usage/supplier/supplier-guide-images/giro-bank-file-format.png)
+
+### Payment Method
+
+1. Click the **Bank Info** button.
+
+   ![des-giro-payment-method-1](../../../static/img/usage/supplier/supplier-guide-images/giro-payment-method-1.png)
+
+2. Choose a **bank**.
+
+   ![des-giro-payment-method-2](../../../static/img/usage/supplier/supplier-guide-images/giro-payment-method-2.png)
+
+3. Click the **OK** button.
+
+   ![des-giro-payment-method-3](../../../static/img/usage/supplier/supplier-guide-images/giro-payment-method-3.png)
+
+4. The bank you have chosen may have **more than one file format**, please ensure you have selected the **correct file format**.
+
+   ![des-giro-payment-method-4](../../../static/img/usage/supplier/supplier-guide-images/giro-payment-method-4.png)
+
+5. Enter the **bank information**, click the **OK** button, then Save.
+
+   ![des-giro-payment-method-5](../../../static/img/usage/supplier/supplier-guide-images/giro-payment-method-5.png)
+
+### Supplier Bank Account
+
+1. Add a **bank account**, then Save.
+
+   ![des-giro-supplier-bank-account-1](../../../static/img/usage/supplier/supplier-guide-images/giro-supplier-bank-account-1.png)
+
+### Supplier Payment Method
+
+1. Select **Supplier Bank** from the drop-down list.
+
+   ![des-giro-supplier-payment-method-1](../../../static/img/usage/supplier/supplier-guide-images/giro-supplier-payment-method-1.png)
+
+2. Choose the **payment method** that contains **bank information**, then Save.
+
+   ![giro-supplier-payment-method-2](../../../static/img/usage/supplier/supplier-guide-images/giro-supplier-payment-method-2.png)
+
+### Print Supplier Document (Interbank GIRO) Listing
+
+1. Click the **GIRO** button.
+
+   ![des-giro-print-supplier-document-listing-1](../../../static/img/usage/supplier/supplier-guide-images/giro-print-supplier-document-listing-1.png)
+
+2. Enter additional information, then click the **Save** button.
+
+   ![des-giro-print-supplier-document-listing-2](../../../static/img/usage/supplier/supplier-guide-images/giro-print-supplier-document-listing-2.png)
+
+3. You can now upload the bank instruction file to the bank host.
+
+### Excel Format
+
+By default, the system automatically saves an Excel file in XLSX format. Some banks (**Alliance Bank, Public Bank, RHB**) require the bank instruction file in XLS format. First, you must have **Microsoft Excel 2007** or a version above installed on your machine.
+
+Then, **open** the Excel file and **save it as XLS** format.

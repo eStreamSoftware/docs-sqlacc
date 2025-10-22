@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 id: sample-recurring-company
 title: Sample Recurring Company
 description: sample recurring company
@@ -19,7 +19,7 @@ Use Company Category for filtering
 
 1. Customer | Maintain Customer | Cust. Category = Filtering
 
-    ![1](../../../static/img/business-nature-industries/sample-recurring-company/1.png)
+    ![1](../../../static/img/miscellaneous/business-nature-industries/sample-recurring-company/1.png)
 
 2. Sales | Quotation |
 
@@ -33,11 +33,11 @@ Use Company Category for filtering
     - A-Tenant;Water => For Water Billing
     - A-Tenant;Park => For Car Park
 
-    ![2](../../../static/img/business-nature-industries/sample-recurring-company/2.png)
+    ![2](../../../static/img/miscellaneous/business-nature-industries/sample-recurring-company/2.png)
 
-    ![3](../../../static/img/business-nature-industries/sample-recurring-company/3.png)
+    ![3](../../../static/img/miscellaneous/business-nature-industries/sample-recurring-company/3.png)
 
-    ![4](../../../static/img/business-nature-industries/sample-recurring-company/4.png)
+    ![4](../../../static/img/miscellaneous/business-nature-industries/sample-recurring-company/4.png)
 
 3. Sales | Invoice | Invoice auto generated.
 
@@ -70,11 +70,11 @@ Use Company Category for filtering
 
     Refer below sample picture:
 
-    ![5](../../../static/img/business-nature-industries/sample-recurring-company/5.png)
+    ![5](../../../static/img/miscellaneous/business-nature-industries/sample-recurring-company/5.png)
 
     When you press ok, system will prompt this message as below :
 
-    ![6](../../../static/img/business-nature-industries/sample-recurring-company/6.png)
+    ![6](../../../static/img/miscellaneous/business-nature-industries/sample-recurring-company/6.png)
 
    1. Press **No** so that the system will capture the *Price* you have set at **Cust Price Tab**.
 
@@ -130,7 +130,7 @@ Use Company Category for filtering
   - Will auto generate Overdue Debit Note if the Knock-off Invoice is overdue.
   - User can set **Default Value** to ***False*** (at AR_PM - Payment Field), if not used (**Default Value** is set to ***True***)
 
-        ![7](../../../static/img/business-nature-industries/sample-recurring-company/7.png)
+        ![7](../../../static/img/miscellaneous/business-nature-industries/sample-recurring-company/7.png)
 
     Formula: Rate/365 * KOAmt
 

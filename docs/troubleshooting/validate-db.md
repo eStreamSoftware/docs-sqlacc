@@ -39,7 +39,7 @@ User & password to access to above link = sqlutility
 
    1. Click on the ⚙️ button in the logo screen
 
-      ![5](../../static/img/getting-started/backup-restore/7.png)
+      ![5](../../static/img/getting-started/database/backup-restore/7.png)
 
    2. Check your ACC-XXXX.FDB
 
@@ -73,7 +73,7 @@ User & password to access to above link = sqlutility
 
    1. Restore your database as usual > Click on the ⚙️ button
 
-      ![11](../../static/img/getting-started/backup-restore/7.png)
+      ![11](../../static/img/getting-started/database/backup-restore/7.png)
 
    2. Click on Restore
 

@@ -14,27 +14,27 @@ tags: ["SQL Account", "Migration"]
 
 3. Refer Image below on How to Extract MYOB Backup file.
 
-   ![1](../../../static/img/getting-started/myob-migrate/1.png)
+   ![1](../../../static/img/getting-started/migration/myob-migrate/1.png)
 
 4. **Create New Database** then **Log On** New Company with ADMIN User
 
-   ![2](../../../static/img/getting-started/myob-migrate/2.png)
+   ![2](../../../static/img/getting-started/migration/myob-migrate/2.png)
 
 5. Once Log On, Go to **File** | **Data Import** | Select **MYOB**.
 
-   ![3](../../../static/img/getting-started/myob-migrate/3.png)
+   ![3](../../../static/img/getting-started/migration/myob-migrate/3.png)
 
 6. Follow Step 1 in image below : Click the ‘Download’ button to download the needed tool for MYOB migrate.
 
    Then place the ‘myData CLI’ to C:\Users\SQL\Desktop\MYOB.
 
-   ![4](../../../static/img/getting-started/myob-migrate/4.png)
+   ![4](../../../static/img/getting-started/migration/myob-migrate/4.png)
 
 7. Follow Step 2 of the Image below, Click ‘Select File’ button then look into
 
    C:\Users\SQL\Desktop\MYOB to select ‘mydatacli.zip’.
 
-   ![5](../../../static/img/getting-started/myob-migrate/5.png)
+   ![5](../../../static/img/getting-started/migration/myob-migrate/5.png)
 
 8. Follow Step 3 of the Image below, Click ‘Select File’ button then look into
 
@@ -46,11 +46,11 @@ tags: ["SQL Account", "Migration"]
 
    :::
 
-   ![6](../../../static/img/getting-started/myob-migrate/6.png)
+   ![6](../../../static/img/getting-started/migration/myob-migrate/6.png)
 
 9. Follow step below to start Import.
 
-   ![7](../../../static/img/getting-started/myob-migrate/7.png)
+   ![7](../../../static/img/getting-started/migration/myob-migrate/7.png)
 
 10. Few Important settings MUST do before continue Import.
 
@@ -60,13 +60,13 @@ tags: ["SQL Account", "Migration"]
 
          2. Close the Data Import.
 
-            ![8](../../../static/img/getting-started/myob-migrate/8.png)
+            ![8](../../../static/img/getting-started/migration/myob-migrate/8.png)
 
       2. Go to GL /Maintain Account, verify the Imported Chart of Account & set the necessary Special Type.
 
          Especially for Trade Debtor, Trade Creditor, Bank/Cash Account, Stock & etc.
 
-         ![9](../../../static/img/getting-started/myob-migrate/9.png)
+         ![9](../../../static/img/getting-started/migration/myob-migrate/9.png)
 
       3. Go to Tools /Options /General Ledger, to setup for :
 
@@ -76,7 +76,7 @@ tags: ["SQL Account", "Migration"]
 
          -Default Account
 
-         ![10](../../../static/img/getting-started/myob-migrate/10.png)
+         ![10](../../../static/img/getting-started/migration/myob-migrate/10.png)
 
       4. Next
 
@@ -84,11 +84,11 @@ tags: ["SQL Account", "Migration"]
 
          2. Vice Versa for Supplier Control Account setting.
 
-            ![11](../../../static/img/getting-started/myob-migrate/11.png)
+            ![11](../../../static/img/getting-started/migration/myob-migrate/11.png)
 
 11. Once DONE settings, Repeat Step 5, 7 & 8 to continue import.
 
-      ![12](../../../static/img/getting-started/myob-migrate/12.png)
+      ![12](../../../static/img/getting-started/migration/myob-migrate/12.png)
 
    :::info
 

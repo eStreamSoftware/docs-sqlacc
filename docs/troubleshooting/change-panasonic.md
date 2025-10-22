@@ -14,17 +14,17 @@ If you're experiencing issues where the preview is fine but the printout is miss
 
 1. Check the Port of your printer
 
-   ![1](../../static/img/getting-started/change-panasonic/1.png)
+   ![1](../../static/img/troubleshooting/change-panasonic/1.png)
 
-   ![2](../../static/img/getting-started/change-panasonic/2.png)
+   ![2](../../static/img/troubleshooting/change-panasonic/2.png)
 
 2. Press "**Add a printer**" and select "**Add a local printer.**"
 
-   ![3](../../static/img/getting-started/change-panasonic/3.png)
+   ![3](../../static/img/troubleshooting/change-panasonic/3.png)
 
 3. Choose the port of your printer respectively.
 
-   ![4](../../static/img/getting-started/change-panasonic/4.png)
+   ![4](../../static/img/troubleshooting/change-panasonic/4.png)
 
 4. Select manufacturer and printer
 
@@ -38,22 +38,22 @@ If you're experiencing issues where the preview is fine but the printout is miss
 
    :::
 
-   ![5](../../static/img/getting-started/change-panasonic/5.png)
+   ![5](../../static/img/troubleshooting/change-panasonic/5.png)
 
 5. Type in the printer name you desire.
 
-   ![6](../../static/img/getting-started/change-panasonic/6.png)
+   ![6](../../static/img/troubleshooting/change-panasonic/6.png)
 
 6. Press "**Next**" if you don’t want to share this printer.
 
-   ![7](../../static/img/getting-started/change-panasonic/7.png)
+   ![7](../../static/img/troubleshooting/change-panasonic/7.png)
 
 7. Finish the setup.
 
-   ![8](../../static/img/getting-started/change-panasonic/8.png)
+   ![8](../../static/img/troubleshooting/change-panasonic/8.png)
 
 Lastly, go to your **Printer Properties** | **Device Settings** | **Installable Options** | **Printable Area** | **Old OS**.
 
 You are done. Congratulations!
 
-![9](../../static/img/getting-started/change-panasonic/9.png)
+![9](../../static/img/troubleshooting/change-panasonic/9.png)

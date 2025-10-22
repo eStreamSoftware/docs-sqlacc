@@ -80,7 +80,7 @@ This command line backup script is only applicable for **Windows 7 & above** onl
 The following a sample setting. Configure according to your private mail server setting.
 
 - SMTP Host: **\<your-mail-server>**
-- SMTP Port No: ****587**
+- SMTP Port No: **587**
 - SMTP User: **e.g.: \<your-account>**
 - SMTP Password: **\*\*\*\*\*\*\***
 - Use SSL: **True or False**

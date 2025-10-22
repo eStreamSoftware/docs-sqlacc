@@ -9,7 +9,7 @@ This is the "Bridge" direct live linking between External Program with SQL Accou
 
 ## Pros and Cons
 
-**Pros**
+**Pros***
 
 1. Can Live or Batch Update.
 2. Can do action such as New, Edit & Delete.
@@ -19,7 +19,7 @@ This is the "Bridge" direct live linking between External Program with SQL Accou
 6. Support GST & SST.
 7. Free of Charge (Freeware) for End User on SDK Linking.
 
-**Cons**
+**Cons***
 
 1. Must had programming knowledge.
 2. Must had SQL Accounting installed & running.
@@ -38,7 +38,8 @@ This is the "Bridge" direct live linking between External Program with SQL Accou
 ## Documentation
 
 [SQLSDK.zip](https://www.sql.com.my/document/SQLLink/SQLSDK.zip)
-[Steps-SDK.gif](https://download.sql.com.my/customer/Fairy/Steps-SDK.gif)
+
+[Steps-SDK.gif-a short video for steps](https://download.sql.com.my/customer/Fairy/Steps-SDK.gif)
 
 ## Linking Flow
 
@@ -73,7 +74,7 @@ It depending on user **internet speed** & stabilities.
 
 ### CHM File
 
-1. Setup SQL Accounting Linking [Click Here](/sql-account-api/on-premise-setup)
+1. Setup SQL Accounting Linking [Click Here for SQL Accounting setup steps](/sql-account-api/on-premise-setup)
 2. Create Sample Data
 3. Login (username & password is Admin)
 4. Double click the SQLSDK.chm file
@@ -107,7 +108,7 @@ It depending on user **internet speed** & stabilities.
 * JavaScript
 * Delphi
 
-[Summary Document Flow by Programming Language](https://docs.google.com/spreadsheets/d/1dGUXIM0aWAG7xIyE1D1IsPmdq7paF9gpq3h0NqzFQDc/edit?usp=sharing)
+[Summary Document Flow by Programming Language - Excel](https://docs.google.com/spreadsheets/d/1dGUXIM0aWAG7xIyE1D1IsPmdq7paF9gpq3h0NqzFQDc/edit?usp=sharing)
 
 ## Example External Program
 
@@ -239,9 +240,9 @@ def CheckLogin():
     if B == True:
         ComServer.Logout()
         KillApp()
- 
+
     ComServer = win32com.client.Dispatch("SQLAcc.BizApp")
-    try:    
+    try:
         ComServer.Login("ADMIN", "ADMIN", #UserName, Password
                         "D:\\Happy\\DB\\Default.DCF",
                         #"C:\\eStream\\SQLAccounting\\Share\\Default.DCF",  #DCF file
@@ -263,8 +264,8 @@ def ShowResult(ADataset):
             ADataset.Next()
     else:
         print ("Record Not Found")
-        
-        
+
+
 def QuotedStr(ACode):
     return "'" + ACode.replace("'", "''") + "'"
 ```
@@ -279,22 +280,22 @@ def QuotedStr(ACode):
 ```python
 #Updated 22 Jul 2023
 import Common
-       
+
 def GetListData():
     lSQL = "SELECT * FROM AGENT "
     lSQL = lSQL + "WHERE ISACTIVE='T' "
     lSQL = lSQL + "ORDER BY CODE "
-    
+
     lDataSet = ComServer.DBManager.NewDataSet(lSQL)
-        
+
     Common.ShowResult(lDataSet)
 
 def PostData():
     BizObject = ComServer.BizObjects.Find("Agent")
-    lMain = BizObject.DataSets.Find("MainDataSet")    
-    
+    lMain = BizObject.DataSets.Find("MainDataSet")
+
     lDocKey = BizObject.FindKeyByRef("CODE", "FAIRY")
-        
+
     if lDocKey is None:
         BizObject.New()
         lMain.FindField("CODE").value = "FAIRY"
@@ -305,26 +306,26 @@ def PostData():
         BizObject.Open()
         BizObject.Edit()
         lMain.FindField("DESCRIPTION").value = "FAIRY TAIL WIZARD"
-            
+
     try:
-        BizObject.Save()          
+        BizObject.Save()
     except Exception as e:
-        print("Oops!", e)    
+        print("Oops!", e)
     BizObject.Close()
     print ("Posting/Update Done")
 
 def DelData():
     #Deleting only work if the record never use in other document
     BizObject = ComServer.BizObjects.Find("Agent")
-    
+
     lDocKey = BizObject.FindKeyByRef("CODE", "FAIRY")
-        
+
     if lDocKey is None:
         print ("Record Not Found")
     else:
         BizObject.Params.Find("CODE").Value = lDocKey
         BizObject.Open()
-        BizObject.Delete()        
+        BizObject.Delete()
         print ("Deleting Done")
 
 try:
@@ -333,7 +334,7 @@ try:
     ComServer = Common.ComServer
     GetListData()
     PostData()
-    
+
     answer = input("Continue To delete?")
     if answer.lower() in ["y","yes"]:
         DelData()
@@ -355,29 +356,29 @@ finally:
 <details>
     <summary>Get Company Profile - click to expand</summary>
 
-```python
-#Updated 22 Jul 2023
+        ```python
+ #Updated 22 Jul 2023
 import Common
 
 def GetData():
     lSQL = "SELECT COMPANYNAME, REMARK, BRN, BRN2, GSTNO, "
     lSQL = lSQL + "SALESTAXNO, SERVICETAXNO, "
     lSQL = lSQL + "ADDRESS1,ADDRESS2,ADDRESS3,ADDRESS4 FROM SY_PROFILE "
-    
+
     lDataSet = ComServer.DBManager.NewDataSet(lSQL)
-    
+
     Common.ShowResult(lDataSet)
-    
+
 try:
     Common.CheckLogin()
     global ComServer
-    ComServer = Common.ComServer       
+    ComServer = Common.ComServer
     GetData()
     ComServer.Logout()
 finally:
     ComServer = None
     Common.KillApp()
-```
+        ```
 
 </details>
 
@@ -397,14 +398,14 @@ finally:
         import Common
         import datetime
 
-        def PostDataCS():    
+        def PostDataCS():
             BizObject = ComServer.BizObjects.Find("SL_CS")
             lMain = BizObject.DataSets.Find("MainDataSet") #lMain contains master data
             lDetail = BizObject.DataSets.Find("cdsDocDetail") #lDetail contains detail data
-            
+
             lDate = datetime.datetime(2023, 2, 22, 13, 0)
             lDate.strftime('%m/%d/%Y')
-            
+
             BizObject.New();
             lMain.FindField("DocNo").AsString = "--IV Test--"
             lMain.FindField("DocDate").value = lDate
@@ -436,7 +437,7 @@ finally:
             lDetail.DisableControls()
             lDetail.FindField("TaxInclusive").value = 1
             lDetail.EnableControls()
-            
+
             lDetail.Post()
 
             #For Tax Inclusive = False with override Tax Amount
@@ -452,7 +453,7 @@ finally:
             lDetail.FindField("Amount").AsFloat = 94.43
             lDetail.FindField("TaxAmt").AsFloat = 5.66
             lDetail.Post()
-            
+
             #For With Item Code
             lDetail.Append()
             lDetail.FindField("Seq").value = 3
@@ -468,19 +469,19 @@ finally:
             lDetail.FindField("UnitPrice").AsFloat = 100
             lDetail.FindField("Amount").AsFloat = 200
             lDetail.FindField("TaxAmt").AsFloat = 12
-            lDetail.Post()    
-            
+            lDetail.Post()
+
             BizObject.Save()
             BizObject.Close()
 
-        def PostDataPM():       
+        def PostDataPM():
             BizObject = ComServer.BizObjects.Find("AR_PM")
             lMain = BizObject.DataSets.Find("MainDataSet") #lMain contains master data
             lDetail = BizObject.DataSets.Find("cdsKnockOff") #lDetail contains detail data
-            
+
             lDate = datetime.datetime(2023, 2, 22, 13, 0)
             lDate.strftime('%m/%d/%Y')
-            
+
             BizObject.New()
             lMain.FindField("DocNo").AsString = "--PM Test--"
             lMain.FindField("CODE").AsString = "300-C0001" #Customer Account
@@ -491,28 +492,28 @@ finally:
             lMain.FindField("ChequeNumber").AsString = ""
             lMain.FindField("BankCharge").AsFloat = 0
             lMain.FindField("DocAmt").AsFloat = 200.00
-            lMain.FindField("Cancelled").AsString = "F"    
-            
-            #Knock Off IV  
+            lMain.FindField("Cancelled").AsString = "F"
+
+            #Knock Off IV
             V = ["IV", "--IV Test--"]  #DocType, DocNo
-            
+
             if (lDetail.Locate("DocType;DocNo", V, False, False)) :
                 lDetail.Edit()
                 lDetail.FindField("KOAmt").AsFloat = 147.09 #Partial Knock off
                 lDetail.FindField("KnockOff").AsString = "T"
                 lDetail.Post()
-                
+
             BizObject.Save()
             BizObject.Close()
-            
-        def PostDataCN():   
+
+        def PostDataCN():
             BizObject = ComServer.BizObjects.Find("SL_CN")
             lMain = BizObject.DataSets.Find("MainDataSet") #lMain contains master data
             lDetail = BizObject.DataSets.Find("cdsDocDetail") #lDetail contains detail data
-            
+
             lDate = datetime.datetime(2023, 2, 22, 13, 0)
             lDate.strftime('%m/%d/%Y')
-            
+
             BizObject.New()
             lMain.FindField("DocNo").AsString = "--CN Test--"
             lMain.FindField("DocDate").value = lDate
@@ -544,43 +545,43 @@ finally:
 
             #Save Document
             BizObject.Save()
-            BizObject.Close()    
-            
+            BizObject.Close()
+
         def PostKnockIVCN():
             BizObject = ComServer.BizObjects.Find("AR_CN")
             lMain = BizObject.DataSets.Find("MainDataSet")
             lDetail = BizObject.DataSets.Find("cdsKnockOff")
-            
+
             #Find CN Number
             lDocNo = "--CN Test--"
             lDocKey = BizObject.FindKeyByRef("DocNo", lDocNo)
             BizObject.Params.Find("DocKey").Value = lDocKey
-            
+
             if lDocKey is not None:
                 BizObject.Open()
                 BizObject.Edit()
                 lMain.Edit()
-                
-                #Knock Off IV        
+
+                #Knock Off IV
                 V = ["IV", "--IV Test--"]  #DocType, DocNo
-                
+
                 if (lDetail.Locate("DocType;DocNo", V, False, False)) :
                     lDetail.Edit()
                     lDetail.FindField("KOAmt").AsFloat = 100 #Partial Knock off
                     lDetail.FindField("KnockOff").AsString = "T"
                     lDetail.Post()
-                
-            BizObject.Save()
-            BizObject.Close()        
 
-        def PostDataCF():       
+            BizObject.Save()
+            BizObject.Close()
+
+        def PostDataCF():
             BizObject = ComServer.BizObjects.Find("AR_CF")
             lMain = BizObject.DataSets.Find("MainDataSet") #lMain contains master data
             lDetail = BizObject.DataSets.Find("cdsKnockOff") #lDetail contains detail data
-            
+
             lDate = datetime.datetime(2023, 2, 22, 13, 0)
             lDate.strftime('%m/%d/%Y')
-            
+
             BizObject.New()
             lMain.FindField("DocNo").AsString = "--CF Test--"
             lMain.FindField("CODE").AsString = "300-C0001" #Customer Account
@@ -591,17 +592,17 @@ finally:
             lMain.FindField("ChequeNumber").AsString = ""
             lMain.FindField("BankCharge").AsFloat = 0
             lMain.FindField("DocAmt").AsFloat = 6
-            lMain.FindField("Cancelled").AsString = "F"    
-            
-            #Knock Off Credit Note  
+            lMain.FindField("Cancelled").AsString = "F"
+
+            #Knock Off Credit Note
             V = ["CN", "--CN Test--"]  #DocType, DocNo
-            
+
             if (lDetail.Locate("DocType;DocNo", V, False, False)) :
                 lDetail.Edit()
                 lDetail.FindField("KOAmt").AsFloat = 4 #Partial Knock off
                 lDetail.FindField("KnockOff").AsString = "T"
                 lDetail.Post()
-                
+
             BizObject.Save()
             BizObject.Close()
 
@@ -633,8 +634,8 @@ finally:
 <details>
      <summary>Get Picture & Description3(Rich Text) - click to expand</summary>
 
-```python
-#Updated 02 Aug 2023
+        ```python
+ #Updated 02 Aug 2023
 import os, sys
 import Common
 from io import BytesIO
@@ -650,28 +651,28 @@ def GetData():
     dt.save("test.jpg")
     print ("Done Export Picture file...")
     #print (lDataSet.FindField('Picture').Value)
-    
+
     rtf = lDataSet.FindField('Description3').AsString
     print (rtf)
-    
+
     with open('out.rtf', 'w') as output:
         output.write(rtf)
         output.close()
     print ("Done Export RTF file...")
-    
+
     txt = ComServer.Utility.RichTextToPlainText(rtf)
     print (txt)
-    
+
 try:
     Common.CheckLogin()
     global ComServer
-    ComServer = Common.ComServer    
+    ComServer = Common.ComServer
     GetData()
     ComServer.Logout()
-finally:    
+finally:
     ComServer = None
     Common.KillApp()
-```
+        ```
 
 </details>
 
@@ -680,8 +681,8 @@ finally:
 <details>
      <summary>Get Invoice Next Number Script - click to expand</summary>
 
-```python
-#Updated 19 Jul 2023
+        ```python
+ #Updated 19 Jul 2023
 import Common
 
 def GetData():
@@ -690,23 +691,23 @@ def GetData():
     lSQL = lSQL + "WHERE A.DOCTYPE='IV' "
     lSQL = lSQL + "AND A.DESCRIPTION='Customer Invoice' "
     lSQL = lSQL + "AND A.STATESET=1 "
-    
+
     lDataSet = ComServer.DBManager.NewDataSet(lSQL)
-    
+
     fmt = lDataSet.FindField('Format').AsString
     NextNo = lDataSet.FindField('NEXTNUMBER').AsFloat
     print (fmt % NextNo)
-    
+
 try:
     Common.CheckLogin()
     global ComServer
-    ComServer = Common.ComServer       
+    ComServer = Common.ComServer
     GetData()
     ComServer.Logout()
 finally:
     ComServer = None
     Common.KillApp()
-```
+        ```
 
 </details>
 
@@ -715,18 +716,18 @@ finally:
 <details>
      <summary>Stock Item Script - click to expand</summary>
 
-```python
+        ```python
 #Updated 21 Dec 2023
 import Common
-       
+
 def GetListData():
     lSQL = "SELECT A.*, B.UOM, B.RATE, B.REFCOST, B.REFPRICE, B.ISBASE FROM ST_ITEM A "
     lSQL = lSQL + "INNER JOIN ST_ITEM_UOM B ON (A.CODE=B.CODE) "
     lSQL = lSQL + "WHERE A.ISACTIVE='T' "
     lSQL = lSQL + "ORDER BY A.CODE, B.RATE" 
-    
+
     lDataSet = ComServer.DBManager.NewDataSet(lSQL)
-        
+
     Common.ShowResult(lDataSet)
 
 def PostData():
@@ -734,9 +735,9 @@ def PostData():
     lMain = BizObject.DataSets.Find("MainDataSet")
     lDtl = BizObject.DataSets.Find("cdsUOM")
     LBar = BizObject.DataSets.Find("cdsBarcode")
-    
+
     lDocKey = BizObject.FindKeyByRef("CODE", "FAIRY")
-        
+
     if lDocKey is None:
         BizObject.New()
         lMain.FindField("CODE").value = "FAIRY"
@@ -758,7 +759,7 @@ def PostData():
         lDtl.FindField("RefCost").AsFloat = 102
         lDtl.FindField("RefPrice").AsFloat = 240
         lDtl.Post()
-        
+
         LBar.Append() #For 1St UOM Barcode
         LBar.FindField("Barcode").AsString = "123456"
         LBar.FindField("UOM").AsString = "PCS"
@@ -773,7 +774,7 @@ def PostData():
         BizObject.Open()
         BizObject.Edit()
         lMain.FindField("DESCRIPTION").value = "FAIRY TAIL WIZARD"
-        
+
         while lDtl.RecordCount > 0:
             lDtl.First()
             lDtl.Delete()
@@ -784,7 +785,7 @@ def PostData():
         lDtl.FindField("Rate").AsFloat = 1     #Make sure this always same as b4 delete data
         lDtl.FindField("RefCost").AsFloat = 22.3
         lDtl.FindField("RefPrice").AsFloat = 52
-        lDtl.FindField("ISBASE").AsFloat = 1 
+        lDtl.FindField("ISBASE").AsFloat = 1
         lDtl.Post();
 
         lDtl.Append()  #For 2nd UOM
@@ -792,12 +793,12 @@ def PostData():
         lDtl.FindField("Rate").AsFloat = 12    #Make sure this always same as b4 delete data
         lDtl.FindField("RefCost").AsFloat = 102.5
         lDtl.FindField("RefPrice").AsFloat = 260.45
-        lDtl.FindField("ISBASE").AsFloat = 0 
+        lDtl.FindField("ISBASE").AsFloat = 0
         lDtl.Post()
-    
+
         while LBar.RecordCount > 0:
             LBar.First()
-            LBar.Delete()    
+            LBar.Delete()
 
         LBar.Append() #For 1St UOM Barcode
         LBar.FindField("Barcode").AsString = "888888"
@@ -809,24 +810,24 @@ def PostData():
         LBar.FindField("UOM").AsString = "CTN"
         LBar.Post()
     try:
-        BizObject.Save()          
+        BizObject.Save()
     except Exception as e:
-        print("Oops!", e)    
+        print("Oops!", e)
     BizObject.Close()
     print ("Posting/Update Done")
 
 def DelData():
     #Deleting only work if the record never use in other document
     BizObject = ComServer.BizObjects.Find("ST_ITEM")
-    
+
     lDocKey = BizObject.FindKeyByRef("CODE", "FAIRY")
-        
+
     if lDocKey is None:
         print ("Record Not Found")
     else:
         BizObject.Params.Find("Dockey").Value = lDocKey
         BizObject.Open()
-        BizObject.Delete()        
+        BizObject.Delete()
         print ("Deleting Done")
 
 try:
@@ -835,7 +836,7 @@ try:
     ComServer = Common.ComServer
     GetListData()
     PostData()
-    
+
     answer = input("Continue To delete?")
     if answer.lower() in ["y","yes"]:
         DelData()
@@ -847,7 +848,7 @@ try:
 finally:
     ComServer = None
     Common.KillApp()
-```
+        ```
 
 </details>
 
@@ -856,10 +857,10 @@ finally:
 <details>
      <summary> AR_Customer Script - click to expand</summary>
 
-```python
+        ```python
 #Updated 22 Jul 2023
 import Common
-       
+
 def GetListData():
     lSQL = "SELECT A.*, B.BRANCHTYPE, B.BRANCHNAME, B.ADDRESS1, B.ADDRESS2, B.ADDRESS3, B.ADDRESS4, "
     lSQL = lSQL + "B.GEOLAT, B.GEOLONG, B.ATTENTION, B.PHONE1, B.PHONE2, B.MOBILE, B.FAX1, B.FAX2, B.EMAIL "
@@ -867,18 +868,18 @@ def GetListData():
     lSQL = lSQL + "INNER JOIN AR_CUSTOMERBRANCH B ON (A.CODE=B.CODE) "
     lSQL = lSQL + "WHERE A.STATUS='A' "
     lSQL = lSQL + "ORDER BY A.CODE, B.BRANCHTYPE "
-    
+
     lDataSet = ComServer.DBManager.NewDataSet(lSQL)
-        
+
     Common.ShowResult(lDataSet)
 
 def PostData():
     BizObject = ComServer.BizObjects.Find("AR_CUSTOMER")
     lMain = BizObject.DataSets.Find("MainDataSet")
     lDtl = BizObject.DataSets.Find("cdsBranch")
-    
+
     lDocKey = BizObject.FindKeyByRef("CODE", "FAIRY")
-        
+
     if lDocKey is None:
         BizObject.New()
         lMain.FindField("CODE").value = "FAIRY"
@@ -889,8 +890,8 @@ def PostData():
         lDtl.FindField("Address1").AsString    = "Address1"
         lDtl.FindField("Address2").AsString    = "Address2"
         lDtl.FindField("Address3").AsString    = "Address3"
-        lDtl.FindField("Address4").AsString    = "Address4"  
-        lDtl.FindField("Attention").AsString   = "Attention"  
+        lDtl.FindField("Address4").AsString    = "Address4"
+        lDtl.FindField("Attention").AsString   = "Attention"
         lDtl.FindField("Phone1").AsString      = "Phone1"
         lDtl.FindField("Fax1").AsString        = "Fax1"
         lDtl.FindField("Email").AsString       = "EmailAddress"
@@ -901,8 +902,8 @@ def PostData():
         lDtl.FindField("Address1").AsString    = "DAddress1"
         lDtl.FindField("Address2").AsString    = "DAddress2"
         lDtl.FindField("Address3").AsString    = "DAddress3"
-        lDtl.FindField("Address4").AsString    = "DAddress4"  
-        lDtl.FindField("Attention").AsString   = "DAttention"  
+        lDtl.FindField("Address4").AsString    = "DAddress4"
+        lDtl.FindField("Attention").AsString   = "DAttention"
         lDtl.FindField("Phone1").AsString      = "DPhone1"
         lDtl.FindField("Fax1").AsString        = "DFax1"
         lDtl.FindField("Email").AsString       = "DEmailAddress"
@@ -912,57 +913,57 @@ def PostData():
         BizObject.Open()
         BizObject.Edit()
         lMain.FindField("CompanyName").value = "FAIRY TAIL WIZARD"
-        
+
         while lDtl.RecordCount > 0:
             lDtl.First()
             lDtl.Delete()
 
         #Insert back with new Information
         lDtl.Append() #For 1St Branch
-        lDtl.FindField("BranchType").AsString  = "B" 
+        lDtl.FindField("BranchType").AsString  = "B"
         lDtl.FindField("BranchName").AsString  = "BILLING" #Make sure this always same as b4 delete data
         lDtl.FindField("Address1").AsString    = "New Address1"
         lDtl.FindField("Address2").AsString    = "New Address2"
         lDtl.FindField("Address3").AsString    = "New Address3"
-        lDtl.FindField("Address4").AsString    = "New Address4"  
-        lDtl.FindField("Attention").AsString   = "New Attention"  
+        lDtl.FindField("Address4").AsString    = "New Address4"
+        lDtl.FindField("Attention").AsString   = "New Attention"
         lDtl.FindField("Phone1").AsString      = "New Phone1"
         lDtl.FindField("Fax1").AsString        = "New Fax1"
         lDtl.FindField("Email").AsString       = "New EmailAddress"
         lDtl.Post()
 
         lDtl.Append() #For 2nd Branch
-        lDtl.FindField("BranchType").AsString  = "D" 
+        lDtl.FindField("BranchType").AsString  = "D"
         lDtl.FindField("BranchName").AsString  = "Branch1" #Make sure this always same as b4 delete data
         lDtl.FindField("Address1").AsString    = "New DAddress1"
         lDtl.FindField("Address2").AsString    = "New DAddress2"
         lDtl.FindField("Address3").AsString    = "New DAddress3"
-        lDtl.FindField("Address4").AsString    = "New DAddress4"  
-        lDtl.FindField("Attention").AsString   = "New DAttention"  
+        lDtl.FindField("Address4").AsString    = "New DAddress4"
+        lDtl.FindField("Attention").AsString   = "New DAttention"
         lDtl.FindField("Phone1").AsString      = "New DPhone1"
         lDtl.FindField("Fax1").AsString        = "New DFax1"
         lDtl.FindField("Email").AsString       = "New DEmailAddress"
         lDtl.Post()
-    
+
     try:
-        BizObject.Save()          
+        BizObject.Save()
     except Exception as e:
-        print("Oops!", e)    
+        print("Oops!", e)
     BizObject.Close()
     print ("Posting/Update Done")
 
 def DelData():
     #Deleting only work if the record never use in other document
     BizObject = ComServer.BizObjects.Find("AR_CUSTOMER")
-    
+
     lDocKey = BizObject.FindKeyByRef("CODE", "FAIRY")
-        
+
     if lDocKey is None:
         print ("Record Not Found")
     else:
         BizObject.Params.Find("CODE").Value = lDocKey
         BizObject.Open()
-        BizObject.Delete()        
+        BizObject.Delete()
         print ("Deleting Done")
 
 try:
@@ -971,19 +972,19 @@ try:
     ComServer = Common.ComServer
     GetListData()
     PostData()
-    
+
     answer = input("Continue To delete?")
     if answer.lower() in ["y","yes"]:
         DelData()
     elif answer.lower() in ["n","no"]:
         print ("Deleting Aborted")
     else:
-       print ("Invalid Input") 
-    ComServer.Logout()   
+       print ("Invalid Input")
+    ComServer.Logout()
 finally:
     ComServer = None
     Common.KillApp()
-```
+        ```
 
 </details>
 
@@ -996,7 +997,7 @@ finally:
 #Updated 08 Jan 2024
 import Common
 import datetime
-       
+
 def GetListData():
     lSQL = "SELECT A.DOCNO, A.DOCDATE, A.CODE, A.COMPANYNAME, A.DESCRIPTION, A.DOCAMT, "
     lSQL = lSQL + "A.AGENT, A.AREA, "
@@ -1006,9 +1007,9 @@ def GetListData():
     lSQL = lSQL + "INNER JOIN SL_IVDTL B ON (A.DOCKEY=B.DOCKEY) "
     lSQL = lSQL + "WHERE A.CODE='300-A0002' "
     lSQL = lSQL + "AND A.CANCELLED='F' "
-    
+
     lDataSet = ComServer.DBManager.NewDataSet(lSQL)
-        
+
     Common.ShowResult(lDataSet)
 
 def PostData():
@@ -3705,10 +3706,10 @@ if (isset($_POST['BtnData']))
 }
 
 ?>
-    <form method="post">           
+    <form method="post">
         <input type="submit" name="BtnData"
-                value="Add/Edit AR Customer"/> 
-    </form> 
+                value="Add/Edit AR Customer"/>
+    </form>
 </body>
 </html>
 ```
@@ -3749,17 +3750,17 @@ function CheckLogin()
     $ComServer->Login("ADMIN", "ADMIN", #UserName, Password
                       "C:\eStream\SQLAccounting\Share\Default.DCF",  #DCF file
                       "ACC-0024.FDB"); #Database Name
-    
+
 }
 
 function GetData(){
 	global $ComServer;
-	
+
     $lSQL = "SELECT A.*, B.UOM, B.RATE, B.REFCOST, B.REFPRICE, B.ISBASE FROM ST_ITEM A 
 	         INNER JOIN ST_ITEM_UOM B ON (A.CODE=B.CODE) 
 			 WHERE A.ISACTIVE='T'
 			 ";
-	
+
 	$lDataSet = $ComServer->DBManager->NewDataSet($lSQL);
 
     if ($lDataSet->RecordCount > 0) {
@@ -3772,18 +3773,18 @@ function GetData(){
 			echo "<td>".$lDataSet->Fields->Items($x)->FieldName()."</td>"; 
 		}
 		echo "</tr>";
-		
-		#Looping Dataset
-		while (! $lDataSet->Eof()){
-			echo "<tr>";
+
+#Looping Dataset
+while (! $lDataSet->Eof()){
+echo "<tr>";
 		    for ($x = 0; $x <= $fc; $x++) {
 				$lFN = $lDataSet->Fields->Items($x)->FieldName();
 			    echo "<td>".$lDataSet->FindField($lFN)->AsString()."</td>"; 
 		    }
 		    echo "</tr>";
 			$lDataSet->Next();
-		}	
-		echo "</table>"."<br>";		
+		}
+		echo "</table>"."<br>";
 	}else {
     echo "Record Not Found";
     }
@@ -3805,11 +3806,11 @@ if (isset($_POST['BtnData']))
     }
 }
 
-?> 
-    <form method="post">           
+?>
+    <form method="post">
         <input type="submit" name="BtnData"
-                value="Get Stock list"/> 
-    </form> 
+                value="Get Stock list"/>
+    </form>
 </body>
 </html>
 ```
@@ -3850,23 +3851,23 @@ function CheckLogin()
     $ComServer->Login("ADMIN", "ADMIN", #UserName, Password
                       "C:\eStream\SQLAccounting\Share\Default.DCF",  #DCF file
                       "ACC-0070.FDB"); #Database Name
-    
+
 }
 
 function PostData(){
-	global $ComServer;
-	
-	$BizObject = $ComServer->BizObjects->Find("AR_IV");
+global $ComServer;
+
+$BizObject = $ComServer->BizObjects->Find("AR_IV");
     $lMain = $BizObject->DataSets->Find("MainDataSet"); #lMain contains master data
     $lDetail = $BizObject->DataSets->Find("cdsDocDetail"); #lDetail contains detail data
-	
+
     $BizObject->New();
     $lMain->FindField("DocNo")->AsString = "--IV Test--";
     $lMain->FindField("DocDate")->value = date("d-m-Y", strtotime("2020-04-20")); #YYYY-MM-DD
     $lMain->FindField("PostDate")->value = date("d-m-Y", strtotime("2020-04-20")); #YYYY-MM-DD
     $lMain->FindField("Code")->AsString = "300-C0001"; #Customer Account
     $lMain->FindField("Description")->AsString = "Sales";
-	
+
     #Insert Data - Detail
     #For Tax Inclusive = True with override Tax Amount
     $lDetail->Append();
@@ -3881,9 +3882,9 @@ function PostData(){
 
     $lDetail->DisableControls();
     $lDetail->FindField("TaxInclusive")->value = 1;
-    $lDetail->EnableControls();    
+    $lDetail->EnableControls();
     $lDetail->Post();
-	
+
     #For Tax Inclusive = False with override Tax Amount
     $lDetail->Append();
     $lDetail->FindField("Seq")->value = 2;
@@ -3897,7 +3898,7 @@ function PostData(){
     $lDetail->Post();
 
     $BizObject->Save();
-    $BizObject->Close();	
+    $BizObject->Close();
 }
 
 if (isset($_POST['BtnData']))
@@ -3916,11 +3917,11 @@ if (isset($_POST['BtnData']))
     }
 }
 
-?> 
-    <form method="post">           
+?>
+    <form method="post">
         <input type="submit" name="BtnData"
-                value="Post Customer Invoice"/> 
-    </form> 
+                value="Post Customer Invoice"/>
+    </form>
 </body>
 </html>
 ```
@@ -3961,18 +3962,18 @@ function CheckLogin()
     $ComServer->Login("ADMIN", "ADMIN", #UserName, Password
                       "C:\eStream\SQLAccounting\Share\Default.DCF",  #DCF file
                       "ACC-0024.FDB"); #Database Name
-    
+
 }
 
 function GetData(){
 	global $ComServer;
-	
+
     $lSQL = "SELECT A.*, B.COMPANYNAME, (A.DOCAMT-A.PAYMENTAMT) OUTSTANDING  FROM AR_IV A
 	         INNER JOIN AR_CUSTOMER B ON (A.CODE=B.CODE) 
 			 WHERE (A.DOCAMT-A.PAYMENTAMT)<>0
 			 AND CANCELLED='F'
 			 ";
-	
+
 	$lDataSet = $ComServer->DBManager->NewDataSet($lSQL);
 
     if ($lDataSet->RecordCount > 0) {

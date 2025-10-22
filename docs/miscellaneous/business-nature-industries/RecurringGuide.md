@@ -110,7 +110,7 @@ Enable GAS Reading
 
 * Fixed Posting Overdue DN should excluding the GST amount from the calculation
 
-## Modules Required 
+## Modules Required
 
 * General Ledger, Customer, Supplier
 * Sales, Purchase
@@ -119,7 +119,7 @@ Enable GAS Reading
 * Multiple Pricing (Price Tag)
 * Multiple Document Number Set
 
-## Tutotial Video 
+## Tutotial Video
 
 [Recurring](https://www.youtube.com/watch?v=DLShuxExZi8&t=27s)
 
@@ -129,7 +129,7 @@ Enable GAS Reading
 
 *Menu: Tools | Maintain User...*
 
-Untick the Access Right for** Prompt Replace Unit Price Dialog** under **Group : Sales**
+Untick the Access Right for Prompt Replace Unit Price Dialog under **Group : Sales**
 
 ### Maintain Customer
 
@@ -137,11 +137,11 @@ Untick the Access Right for** Prompt Replace Unit Price Dialog** under **Group :
 
 * Below fields MUST had Value (minimum is 0 not empty or Null)
 
-    - UDF_WaterReading
-    - UDF_ElectricReading
-    - UDF_GasReading
-    - UDF_IWKReading
-    - Price Tag
+* UDF_WaterReading
+* UDF_ElectricReading
+* UDF_GasReading
+* UDF_IWKReading
+* Price Tag
 
 * Minimum UDF Fields Required
 
@@ -173,7 +173,7 @@ The Item Code List is filter by Stock Group Code LIKE MAINTENANCE%
 
 * DocNo Format := CompanyCategoryCode;Type;
 
-```
+```cs
  eg
  B-Shop;Main;  => For Maintenance
  B-Shop;Water; => For Water Billing
@@ -182,21 +182,23 @@ The Item Code List is filter by Stock Group Code LIKE MAINTENANCE%
 
 * For Meter Reading (eg Water, Electric & etc), Detail can be empty cause system will auto APPEND the itemcode
 
-:::note  
-- Master Description if using
+:::note
 
-- 1.Generate Maintenance it will use the Quotation Master Description.
-- 2.Generate Meter Reading (eg Water, Electric & etc), it will shown how much the meter usage
-[Master Description (MMM YYYY) - CurrentReading -PreviousReading=Usage@UnitPrice].
-- 2.Generate Meter Reading with "Include Grid Detail Info." Option tick it will use the Quotation Master Description.
-- UDF_UseSQFT
+* Master Description if using
 
-- True := Qty = UDF_BuildUp from Maintain Customer
-- False := Qty = Quotation Qty
-- UDF_UseARPrice
+* 1.Generate Maintenance it will use the Quotation Master Description.
+* 2.Generate Meter Reading (eg Water, Electric & etc), it will shown how much the meter usage
+[Master Description (MMM YYYY) - CurrentReading - PreviousReading=Usage@UnitPrice].
+* 2.Generate Meter Reading with "Include Grid Detail Info." Option tick it will use the Quotation Master Description.
+* UDF_UseSQFT
 
-- True := UnitPrice = UDF_UPSQFT from Maintain Customer
-- False := UnitPrice = Quotation UnitPrice
+* True := Qty = UDF_BuildUp from Maintain Customer
+* False := Qty = Quotation Qty
+* UDF_UseARPrice
+
+* True := UnitPrice = UDF_UPSQFT from Maintain Customer
+* False := UnitPrice = Quotation UnitPrice
+
 :::
 
 Quotation - SQFT
@@ -288,14 +290,14 @@ For Last Range the UDF_To may enter as 999999 (6 digit of 9 (max))
 
 * Item Code to be create
 
-    * WATER
-    * ELECTRIC
-    * GAS
-    * IWK
-    * RTN5Cents => For Rounding Mechanism
-    * OVERDUE => For Overdue Charge (Just set at Ref Price & enter 0.1 for 10% pa)
-    * MINCHARGE => For Utilities Price Range
-    * REBATE => For Utilities Price Range
+* WATER
+* ELECTRIC
+* GAS
+* IWK
+* RTN5Cents => For Rounding Mechanism
+* OVERDUE => For Overdue Charge (Just set at Ref Price & enter 0.1 for 10% pa)
+* MINCHARGE => For Utilities Price Range
+* REBATE => For Utilities Price Range
 
 * Price Tag => For Different UnitPrice for Meter Reading (eg WATER, ELECTRIC & etc)
 
@@ -310,13 +312,13 @@ eg
 | 1             | Rebate Only       | Rebate 12.30 & MinCharge 0      | 12.30+0         |
 | 2             | Min Charge Only   | Rebate 0 & MinCharge 5          | 0+5             |
 
-
 * Lead Time => 0: Both, 1: Rebate Only, 2: Min Charge Only
 * For MinCharge make sure it had Value else set at 1
 
 ![ch352](../../../static/img/miscellaneous/business-nature-industries/sample-recurring-company/ch352.jpg)
 
 :::success How System calculate Min. Qty for Min. Charge?
+
 * Using above example => Min. Qty := 5 / 0.3121 = 16.0205
 * if the Qty is below or equal 16.0205 then Amount will Reset to 5
 :::
@@ -324,17 +326,18 @@ eg
 ### Customer Payment
 
 *Menu: Customer | Customer Payment...*
+
 * Auto Generate Sales DN for overdue IV if UDF_PostDN (in [DIY Fields](../../usage/tools/guide#maintain-diy)) Default Value is set to True (Default is False)
 * Only Knock-off to DN will not regenerate DN again if overdue
 * Formula for Age
 
-```
+```vb
 Age := CurrentWorkingDate - Knock off Invoice Due Date
 ```
 
 * Formula For Qty
 
-```
+```vb
 if Age < DayOf(CurrentWorkingDate) then
       Qty := Age else
       Qty := DayOf(CurrentWorkingDate);
@@ -342,7 +345,7 @@ if Age < DayOf(CurrentWorkingDate) then
 
 * Formula for UnitPrice
 
-```
+```vb
 Unit Price := Rate/365 * Knock off amount (Excluding GST)
 ```
 
@@ -362,7 +365,7 @@ Unit Price := Rate/365 * Knock off amount (Excluding GST)
 * The rate is from Ref Price of OVERDUE itemcode (just enter 0.1 for 10% pa)
 * Formula Qty
 
-```
+```vb
 if Age < DaysInAMonth(edDueDate.Date) then
       Qty := Age else
       Qty := DaysInAMonth(edDueDate.Date);
@@ -370,7 +373,7 @@ if Age < DaysInAMonth(edDueDate.Date) then
 
 * Formula UnitPrice
 
-```
+```vb
 Unit Price := Rate/365 * Outstanding amount (Excluding GST)
 ```
 
@@ -379,9 +382,9 @@ Unit Price := Rate/365 * Outstanding amount (Excluding GST)
 1. Set the Date to generate Overdue
 2. Tick the following option
 
-* Invoice
-* Debit Note (if you wanted to include in calculation overdue)
-* Overdue
+    * Invoice
+    * Debit Note (if you wanted to include in calculation overdue)
+    * Overdue
 
 3. Click Apply button
 4. Select & Enter the DN Information
@@ -397,8 +400,8 @@ For more accurate calculation for Unit Price, try set the Unit Price to 4 Decima
 
 * Is a batch
 
-- Delete Document
-- Copy From 1 Document type & Paste To Same or Other Document Type
+* Delete Document
+* Copy From 1 Document type & Paste To Same or Other Document Type
 
 Base on the parameter selected & result shown in the grid
 
@@ -422,6 +425,7 @@ Only Select follow filter
 * Area
 * Company Category
 * Doc. Project
+
 :::
 
 ### Batch Copy & Paste Document
@@ -435,7 +439,7 @@ Below is example to Copy from Invoice to Invoice
 
 5. Click Post button
 
-## Steps 
+## Steps
 
 ### Maintain Customer
 
@@ -447,7 +451,7 @@ Generating Maintenance - SQFT
 
 1. Click 1. Gen/B button.
 
-![custList](../../../static/img/miscellaneous/business-nature-industries/recurringGuide/custList.jpg)
+    ![custList](../../../static/img/miscellaneous/business-nature-industries/recurringGuide/custList.jpg)
 
 2. Untick any Customer you don't wanted to Generate
 3. Select the Item Code.
@@ -461,7 +465,7 @@ Generating Maintenance - SQFT
 Just click Yes to avoid keep prompt again
 :::
 
-:::warning 
+:::warning
 Make sure the Build Up (sf), Use Maintain Customer Price & Unit Price/SQFT Column
 is shown at Browse Screen before Click the Gen/B button
 :::
@@ -504,9 +508,11 @@ is shown at Browse Screen before Click the Gen/B button
 
 1. Untick any Customer you don't wanted to Generate
 2. Enter the Current Reading for each Customer
+
 3. Tick **Include Grid Detail Info**. (optional & available if Use Price Range is UnTick)
-- if you wanted combine **Generate Maintenance**
-- Must use the **Generate Maintenance** Template(Quotation)
+    * if you wanted combine **Generate Maintenance**
+    * Must use the **Generate Maintenance** Template(Quotation)
+
 4. Click Ok button to generate
 
 :::success If system prompt "Do you want to set "xxxxxx" as your default document running number set?"
@@ -526,7 +532,7 @@ Below is example for **Generating Due Interest** from Customer Payment
 3. Enter & Select the DN Information
 4. Click **0. Show Due IV/DN...** button
 
-![dueInterest](../../../static/img/miscellaneous/business-nature-industries/recurringGuide/dueInterest.jpg)
+    ![dueInterest](../../../static/img/miscellaneous/business-nature-industries/recurringGuide/dueInterest.jpg)
 
 5. May untick which don't wanted to include the Due Interest Calculation.
 6. Click **Post DN** Button to Post/Generate Due Interest DN
@@ -546,45 +552,45 @@ The GST Rate field is use to Pre-Calculate the Due Amount before posting Only.
 The GST rate is still base on the GST Tax code you set in Maintain Item or Tools | option or Maintain Customer.
 :::
 
-## Recurring FAQ 
+## Recurring FAQ
 
 ### Where to Generate the Cust Local - Payment Listing (GST 1) - Knock Off Doc No Set - Cross report?
 
-*Menu : Customer | Print Customer Document Listing... | Customer Payment Listing*
+*Menu : Customer | Print Customer Document Listing... | Customer Payment Listing*_
 
 ### How the Column Description shown in Cust Local - Payment Listing (GST 1) - Knock Off Doc No Set - Cross report?
 
 *Menu : Tools | Maintain Document Number...*
 
 It use
-- Description field as Caption
-- First 2 Character Format field as Grouping (eg Format RE-IV-%.5d it will group by RE)
+
+* Description field as Caption
+* First 2 Character Format field as Grouping (eg Format RE-IV-%.5d it will group by RE)
 
 ### Where to Generate the Sales Customer Price History - ItemCode - Cross report?
 
 *Menu : Sales | Print Print Sales Price History...*
 
-    Select Customer in Group/Sort By : Option
+Select Customer in Group/Sort By : Option
 
 ### My company not using Rebate & Min. Charge. What Input Value I need to set?
 
-    Just set the Discount Value to 0+0
+Just set the Discount Value to 0+0
 
 ### How is the Rebate & Min.Charge is Work?
 
-    Default System will Calculate the Min. Charge then Only Rebate
+Default System will Calculate the Min. Charge then Only Rebate
 
 ### Can I use Maintain Customer Agent/Terms code instead use Quotation Agent/Terms code?
 
-    Yes can just Create & set the Code as zProfile for Agent and/or Terms
+Yes can just Create & set the Code as zProfile for Agent and/or Terms
 
-### Can I use Maintain Customer Agent/Terms code instead use Quotation Agent/Terms code?
+### Can I use Maintain Customer Agent/Terms code instead of using Quotation Agent/Terms code?
 
-    Yes can just Create & set the Code as zProfile for Agent and/or Terms
-
+Yes can just Create & set the Code as zProfile for Agent and/or Terms
 
 ![zProfile](../../../static/img/miscellaneous/business-nature-industries/recurringGuide/zProfile.jpg)
 
-### Why at Maintain Customer Gen/B I can't select the Itemcode? 
+### Why at Maintain Customer Gen/B I can't select the Itemcode?
 
-    Make sure you had Stock Group begin with MAINTENANCE & all itemcode is set to this Stock Group
+Make sure you had Stock Group begin with MAINTENANCE & all itemcode is set to this Stock Group

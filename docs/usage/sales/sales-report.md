@@ -22,25 +22,21 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
       ![87](../../../static/img/usage/sales/sales-reports/86.png)
 
-   :::note
+#### Export report into Excel
 
-   1. **Export report into Excel**
+   1. **Right click on any title bar**
 
-      1. **Right click on any title bar**
+   2. **Click on Grid Export > Export to Excel**.
 
-      2. **Click on Grid Export > Export to Excel**.
+      ![88](../../../static/img/usage/sales/sales-reports/87.png)
 
-         ![88](../../../static/img/usage/sales/sales-reports/87.png)
+#### Batch Printing Invoices
 
-   2. **Batch Printing Invoices**
+   If you want to print out entire month invoices by batch and into a page-by-page format,
 
-      If you want to print out entire month invoices by batch and into a page-by-page format,
+   1. **Sales** > **Print Sales Document Listing**.
 
-      1. **Sales** > **Print Sales Document Listing**.
-
-      2. Tick **“Print Document Style”**
-
-   :::
+   2. Tick **“Print Document Style”**
 
    :::info
 

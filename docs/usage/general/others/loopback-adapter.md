@@ -20,7 +20,7 @@ Below the steps on how to install Loopback Adapter
 
 1. Click **Windows + R**
 
-2. Enter hdwwiz & Hit Enter
+2. Enter `hdwwiz` & Hit Enter
 
 3. Click Next
 

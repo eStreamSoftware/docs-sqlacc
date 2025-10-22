@@ -15,7 +15,7 @@ Example of sales process work flow aligned with SQL Account flow:
 ## Sales Quotation
 
 :::info
-Watch tutorial video here:  [Sales Quotation](http://www.sql.com.my/video/sqlacc_tutorial/06-01_Sales_Quotation.mp4)
+Watch tutorial video here:  [Sales Quotation](https://www.youtube.com/watch?v=2hKhtpaQfP4)
 :::
 
 1. **Sales** | **Quotation** | **New**

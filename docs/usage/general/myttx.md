@@ -125,7 +125,7 @@ MyTTx list settings are compulsory to follow :
 :::info
 
    1. For GST registered person, output tax must set to NS.
-                 NS - Matters to be treated as neither a supply of goods nor a supply of services, and no GST chargeable (0%)
+      NS - Matters to be treated as neither a supply of goods nor a supply of services, and no GST chargeable (0%)
    2. For Non-GST registered person, output tax must LEAVE IT BLANK.
 
 :::

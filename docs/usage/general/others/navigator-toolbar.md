@@ -25,11 +25,11 @@ Below is the detail of each button (From Left)
 | Revert Record | Undo edits to the currently selected record. |
 | Print | Print the grid list. |
 | Preview | Preview the grid list. |
-| *Show Default Record | Show normal grid layout. |
-| *Show Inserted Record | Show only newly added/appended record(s). |
-| *Show Modified Record | Show only changed record(s). |
-| *Show Deleted Record | Show only deleted record(s). |
-| *Highlight | Show indicators for: <br /> - **Insert:** Yellow <br />- **Delete:** Red <br />- **Modified:** Green <br /><br /> Refer to the image below for highlight examples. <br /> This can only be used if the current changed record(s) are unsaved (i.e. before clicking **Save**).|
+| Show Default Record | Show normal grid layout. |
+| Show Inserted Record | Show only newly added/appended record(s). |
+| Show Modified Record | Show only changed record(s). |
+| Show Deleted Record | Show only deleted record(s). |
+| Highlight | Show indicators for: <br /> - **Insert:** Yellow <br />- **Delete:** Red <br />- **Modified:** Green <br /><br /> Refer to the image below for highlight examples. <br /> This can only be used if the current changed record(s) are unsaved (i.e. before clicking **Save**).|
 | Import Data | Import data from an external file (e.g., CSV or TXT file). |
 
 ![type1-result](../../../../static/img/usage/general/others/navigator-toolbar/type1-result.jpg)

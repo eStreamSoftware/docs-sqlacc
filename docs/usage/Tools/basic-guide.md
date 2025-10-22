@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Guide
+title: Tools Guide
 description: Maintenance
 slug: /usage/tools/guide
 tags: ["SQL Account", "Usage", "Tools"]
@@ -708,12 +708,12 @@ These **ALL** can use Online Approval for user :
 | **Field Name** | **Explanation & Properties** |
 |----------------|------------------------------|
 | **Journal** | - Input the new Journal code
-- **Field type:** Alphanumerical  
+- **Field type:** Alphanumerical
 - **Length:** 10 |
-| **Description** | - Input the Journal description  
-- **Field type:** Alphanumerical  
+| **Description** | - Input the Journal description
+- **Field type:** Alphanumerical
 - **Length:** 80 |
-| **Active** | - Checked = Active  
+| **Active** | - Checked = Active
 - Unchecked = Inactive |                                          |
 
 ### Journal Setting
@@ -728,7 +728,7 @@ These **ALL** can use Online Approval for user :
 
 ![options-gl-cust-dn](../../../static/img/usage/tools/tools-basic-guide/options-gl-cust-dn.jpg)
 
-## Reporting by Journal 
+## Reporting by Journal
 
 GL | Print Journal of Transaction Listing...See below screenshot :
 
@@ -892,20 +892,27 @@ Menu: Tools | Maintain Company Category...
 
 ![cust-cate-supp-cate](../../../static/img/usage/tools/tools-basic-guide/cust-cate-supp-cate.jpg)
 
-Reports by Company Category 
+Reports by Company Category
 
 1. You can apply the following reports by Company Category.
 
    <details>
-   <summary>Customer</summary>
+   <summary><b>Customer</b></summary>
 
       a. Print Customer Document Listing...
+
       b. Print Customer Balance Report...
+
       c. Print Customer Due Document...
+
       d. Print Customer Aging Report...
+
       e. Print Customer Statement...
+
       f. Print Customer Post Dated Cheque Listing...
+
       g. Print Customer Analysis By Document...
+
       h. Print Customer Sales and Collection Analysis...
 
    </details>
@@ -914,35 +921,51 @@ Reports by Company Category
    <summary><b>Supplier</b></summary>
 
    a. Print Supplier Document Listing...
+
    b. Print Supplier Balance Report...
+
    c. Print Supplier Due Document...
+
    d. Print Supplier Aging Report...
+
    e. Print Supplier Statement...
+
    f. Print Supplier Post Dated Cheque Listing...
+
    g. Print Supplier Analysis By Document...
+
    h. Print Supplier Sales and Collection Analysis...
 
    </details>
 
    <details>
-   <summary><b>Sales</b></summary>
+      <summary><b>Sales</b></summary>
 
    a. Print Sales Document Listing...
+
    b. Print Outstanding Sales Document Listing...
+
    c. Print Sales Price History...
+
    d. Print Profit & Loss by Document...
+
    e. Print Sales Analysis by Document...
+
    f. Print Yearly Sales Analysis...
 
    </details>
 
    <details>
-   <summary><b>Purchase</b></summary>
+      <summary><b>Purchase</b></summary>
 
    a. Print Purchase Document Listing...
+
    b. Print Outstanding Purchase Document Listing...
+
    c. Print Purchase Price History...
+
    d. Print Purchase Analysis by Document...
+
    e. Print Yearly Purchase Analysis...
 
    </details>
@@ -1048,7 +1071,7 @@ HS Codes are made of **6-digit numbers** that are recognized internationally, al
 RUN Analyse Data Integrity ONLY when you have at least 1-3 hours for operations in company and SQL Account to be fully stop...
 :::
 
-  To analyse the data integrity check. It is recommended to perform this action **weekly** or **monthly**  
+  To analyse the data integrity check. It is recommended to perform this action **weekly** or **monthly**
   > (before month end closing).
 
 Reason to run this may due to the following unpredictable matters:
@@ -1492,11 +1515,11 @@ Others setting.
 
 1. Copy and paste the below regular express line into Customer Format field (see the screenshot below).
 
-```sql
+         ```sql
 
-"%.3s"-"(?i)\b(?!sykt\b|persatuan\b)(?![-.,\s]).{1,1}""%.4d"
+         "%.3s"-"(?i)\b(?!sykt\b|persatuan\b)(?![-.,\s]).{1,1}""%.4d"
 
-```
+         ```
 
 ![cust-code-format-entry](../../../static/img/usage/tools/tools-basic-guide/cust-code-format-entry.jpg)
 
@@ -1612,55 +1635,62 @@ B. One Cent Different: Tick
 | C   | %.4d        | Sequence running number.                                     |
 
 **Example 1:**
-a. Supplier Control Account = **400-000**
-b. Supplier Name = **ALI BABA SDN BHD**
 
-| Code Format | Result |
-|-------------|--------|
-| %.3s-       | 400-   |
-| %.1s        | A      |
-| %.4d        | 0001   |
-c. Supplier Code = **400-A0001**
+1. Supplier Control Account = **400-000**
+2. Supplier Name = **ALI BABA SDN BHD**
 
-Example 2:
-a. Supplier Control Account = **4001-0000**
-b. Supplier Name = **ALI BABA SDN BHD**
+   | Code Format | Result |
+   |-------------|--------|
+   | %.3s-       | 400-   |
+   | %.1s        | A      |
+   | %.4d        | 0001   |
 
-| Code Format | Result |
-|-------------|--------|
-| %.4s/       | 4001/  |
-| %.2s        | AL     |
-| %.2d        | 01     |
-c. Supplier Code = **4001-AL01**
+3. Supplier Code = **400-A0001**
+
+**Example 2:**
+
+1. Supplier Control Account = **4001-0000**
+2. Supplier Name = **ALI BABA SDN BHD**
+
+   | Code Format | Result |
+   |-------------|--------|
+   | %.4s/       | 4001/  |
+   | %.2s        | AL     |
+   | %.2d        | 01     |
+
+3. Supplier Code = **4001-AL01**
 
 ### Exceptional Supplier Code Format (Regular Expression)
 
    1. Copy and paste the below regular express line into Supplier Format field (see the screenshot below).
 
-```sql
-   "%.3s"-"(?i)\b(?!sykt\b|persatuan\b)(?![-.,\s]).{1,1}""%.4d"
-```
+            ```sql
+               "%.3s"-"(?i)\b(?!sykt\b|persatuan\b)(?![-.,\s]).{1,1}""%.4d"
+            ```
 
 ![supp-code-format-entry](../../../static/img/usage/tools/tools-basic-guide/supp-code-format-entry.jpg)
 
-Example 1:
-a. Supplier Name: SYKT TAN & SON
-b. Keyword excluded: **sykt** (non-case sensitive)
-c. Supplier Code= **400-T0001**
+**Example 1:**
 
-Example 2:
-a. Supplier Name: PERSATUAN BOLA SEPAK
-b. Keyword excluded: persatuan (non-case sensitive)
-c. Supplier Code= **400-B0001**
+1. Supplier Name: SYKT TAN & SON
+2. Keyword excluded: **sykt** (non-case sensitive)
+3. Supplier Code= **400-T0001**
+
+**Example 2:**
+
+1. Supplier Name: PERSATUAN BOLA SEPAK
+2. Keyword excluded: persatuan (non-case sensitive)
+3. Supplier Code= **400-B0001**
 
 ### Default Supplier Aging Format
 
 1. Set a default supplier aging format to show the aging result at **Inquiry | Account Inquiry (Supplier)**.
 2. Supplier aging format list:
-a. Supp-Multi-F1-06 Mths Statement-Current,1 Mth,...
-b. Supp-Multi-F2-06 Mths Statement-Current,1 Mth,...
-c. Supp-Multi-F1-12 Mths Statement-Current,1 Mth,...
-d. Supp-Multi-F2-12 Mths Statement-Current,1 Mth,...
+
+  - Supp-Multi-F1-06 Mths Statement-Current,1 Mth,...
+  - Supp-Multi-F2-06 Mths Statement-Current,1 Mth,...
+  - Supp-Multi-F1-12 Mths Statement-Current,1 Mth,...
+  - Supp-Multi-F2-12 Mths Statement-Current,1 Mth,...
 
 ![def-supp-aging-format](../../../static/img/usage/tools/tools-basic-guide/def-supp-aging-format.jpg)
 
@@ -1837,160 +1867,160 @@ Below is Example are doing following actions
    <details>
       <summary>DataForm-OnApply Script</summary>
 
-   ```sql
+         ```sql
 
-   uses Forms, Dialogs, DataProcessor, DBClient, cxGridDBTableView, cxGrid, cxGridLevel,
-      xQuery, Math, ComObj, SysUtils, DateUtils;
+         uses Forms, Dialogs, DataProcessor, DBClient, cxGridDBTableView, cxGrid, cxGridLevel,
+            xQuery, Math, ComObj, SysUtils, DateUtils;
 
-   var M, SN     : TDataSet;
-      dsGrid    : TDatasource;
-      FcxGrid   : TcxGrid;
-      gvGrid    : TcxGridDBTableView;
-      lTime     : TDateTime;
-      cdsOutput : TClientDataset;
-      lDisplayFormat, S : String;    
+         var M, SN     : TDataSet;
+            dsGrid    : TDatasource;
+            FcxGrid   : TcxGrid;
+            gvGrid    : TcxGridDBTableView;
+            lTime     : TDateTime;
+            cdsOutput : TClientDataset;
+            lDisplayFormat, S : String;
 
-   procedure SetNumericDisplayFormat(AClientDataSet: TClientDataSet);
-   var f  : TFMTBCDField;
-      f1 : TFloatField;
-      i  : Integer;
-      DT : TFieldType;
-   begin
-   for i := 0 to AClientDataSet.FieldCount - 1 do begin
-      DT := AClientDataSet.FieldDefs.Items[i].DataType; 
-      if DT = ftFMTBcd then begin
-         f := TFMTBCDField(AClientDataSet.Fields.Fields[i]);
-         if not (f = nil) then f.DisplayFormat := lDisplayFormat;
-      end;
-      if DT = ftFloat then begin
-         f1 := TFloatField(AClientDataSet.Fields.Fields[i]);
-         if not (f1 = nil) then f1.DisplayFormat := lDisplayFormat;
-      end;
-   end;
-   end;
-
-   procedure PrepareNewTab;
-   begin
-   FcxGrid.RootLevelOptions.DetailTabsPosition := dtpTop;
-   gvGrid := FcxGrid.CreateView('TcxGridDBTableView') as TcxGridDBTableView;
-   with FcxGrid.Levels.Add do begin
-      Caption  := 'Calc';
-      GridView := TcxCustomGridView(gvGrid);
-      Active   := True;
-   end;
-   
-   with gvGrid do begin
-      Name                             := 'Restricted_1';
-      OptionsCustomize.ColumnFiltering := True;
-      OptionsView.ColumnAutoWidth      := False;
-      OptionsView.Footer               := True;
-      OptionsView.GroupByBox           := False;
-      OptionsBehavior.IncSearch        := True;
-      DataController.DataSource        := dsGrid;
-      OptionsData.Editing              := False;
-   end;  
-   end;
-
-   procedure TuneGrid;
-   var i : integer;
-      DT : TFieldType;
-   begin
-   SetNumericDisplayFormat(cdsOutput);
-   with gvGrid.DataController do begin
-      DataSource := dsGrid;
-      CreateAllItems(False);    
-   end;
-   with gvGrid do begin
-      //Hide Columns
-      //GetColumnByFieldName('DtlKey').Visible          := False;  
-      //Rename Columns Caption
-      GetColumnByFieldName('ItemCode').Caption        :='Item Code';
-   end;
-      
-   with gvGrid.DataController.Summary do begin
-      BeginUpdate;
-      try
-         with TcxGridDBTableSummaryItem(FooterSummaryItems.Add) do begin
-         Column   := gvGrid.Columns[0];
-         Position := spFooter;
-         Kind     := skCount;
-         Format   := 'Count = #';
+         procedure SetNumericDisplayFormat(AClientDataSet: TClientDataSet);
+         var f  : TFMTBCDField;
+            f1 : TFloatField;
+            i  : Integer;
+            DT : TFieldType;
+         begin
+         for i := 0 to AClientDataSet.FieldCount - 1 do begin
+            DT := AClientDataSet.FieldDefs.Items[i].DataType;
+            if DT = ftFMTBcd then begin
+               f := TFMTBCDField(AClientDataSet.Fields.Fields[i]);
+               if not (f = nil) then f.DisplayFormat := lDisplayFormat;
+            end;
+            if DT = ftFloat then begin
+               f1 := TFloatField(AClientDataSet.Fields.Fields[i]);
+               if not (f1 = nil) then f1.DisplayFormat := lDisplayFormat;
+            end;
          end;
-         for i := 0 to cdsOutput.FieldDefs.Count-1 do begin
-         DT := cdsOutput.FieldDefs.Items[i].DataType;
-         if (DT = ftFMTBcd) or (DT = ftFloat) then begin
-            with TcxGridDBTableSummaryItem(FooterSummaryItems.Add) do begin
-               Column   := gvGrid.Columns[i];
+         end;
+
+         procedure PrepareNewTab;
+         begin
+         FcxGrid.RootLevelOptions.DetailTabsPosition := dtpTop;
+         gvGrid := FcxGrid.CreateView('TcxGridDBTableView') as TcxGridDBTableView;
+         with FcxGrid.Levels.Add do begin
+            Caption  := 'Calc';
+            GridView := TcxCustomGridView(gvGrid);
+            Active   := True;
+         end;
+
+         with gvGrid do begin
+            Name                             := 'Restricted_1';
+            OptionsCustomize.ColumnFiltering := True;
+            OptionsView.ColumnAutoWidth      := False;
+            OptionsView.Footer               := True;
+            OptionsView.GroupByBox           := False;
+            OptionsBehavior.IncSearch        := True;
+            DataController.DataSource        := dsGrid;
+            OptionsData.Editing              := False;
+         end;
+         end;
+
+         procedure TuneGrid;
+         var i : integer;
+            DT : TFieldType;
+         begin
+         SetNumericDisplayFormat(cdsOutput);
+         with gvGrid.DataController do begin
+            DataSource := dsGrid;
+            CreateAllItems(False);
+         end;
+         with gvGrid do begin
+            //Hide Columns
+            //GetColumnByFieldName('DtlKey').Visible          := False;
+            //Rename Columns Caption
+            GetColumnByFieldName('ItemCode').Caption        :='Item Code';
+         end;
+
+         with gvGrid.DataController.Summary do begin
+            BeginUpdate;
+            try
+               with TcxGridDBTableSummaryItem(FooterSummaryItems.Add) do begin
+               Column   := gvGrid.Columns[0];
                Position := spFooter;
-               Kind     := skSum;
-               Format   := lDisplayFormat;
-            end;  
+               Kind     := skCount;
+               Format   := 'Count = #';
+               end;
+               for i := 0 to cdsOutput.FieldDefs.Count-1 do begin
+               DT := cdsOutput.FieldDefs.Items[i].DataType;
+               if (DT = ftFMTBcd) or (DT = ftFloat) then begin
+                  with TcxGridDBTableSummaryItem(FooterSummaryItems.Add) do begin
+                     Column   := gvGrid.Columns[i];
+                     Position := spFooter;
+                     Kind     := skSum;
+                     Format   := lDisplayFormat;
+                  end;
+               end;
+               end;
+               finally
+               EndUpdate;
+            end;
          end;
-         end;           
+         gvGrid.ApplyBestFit(nil, False, False);
+         end;
+
+         procedure CreateXMLTable;
+         begin
+         if Assigned(cdsOutput) then
+            cdsOutput.Free;
+         cdsOutput := TClientDataSet.Create(FcxGrid);
+         cdsOutput.FieldDefs.Assign(SN.FieldDefs);
+         cdsOutput.CreateDataSet;
+         dsGrid.DataSet := cdsOutput;
+         end;
+
+         procedure AppendData;
+         var i : integer;
+         begin
+         M.First;
+         while not M.Eof do begin
+            SN.DisableControls;
+            SN.First;
+            While not SN.Eof do begin
+               cdsOutput.Append;
+               for i:=0 to SN.FieldDefs.Count-1 do
+               cdsOutput.FindField(SN.FieldDefs.Items[i].Name).Value := SN.FindField(SN.FieldDefs.Items[i].Name).Value;
+               cdsOutput.Post;
+               SN.Next;
+            end;
+            SN.EnableControls;
+            M.Next;
+         end;
+         end;
+
+         begin
+         M       := Self_DataProcessor.GetDataSetByName('Main');
+         SN      := Self_DataProcessor.GetDataSetByName('SerialNumber');
+         FcxGrid := TcxGrid(Self.FindComponent('cxGrid1'));
+         dsGrid  := TDataSource.Create(M);
+
+         lTime := now;
+         s := 'Stock Physical Worksheet';
+         lDisplayFormat := '#,0.00;-#,0.00;-';
+
+
+         try
+            Self.Caption := s + '- Prepare Tab';
+            PrepareNewTab;
+            Self.Caption := s + '- Prepare XML';
+            CreateXMLTable;
+            Self.Caption := s + '- Append Data';
+            AppendData;
+            Self.Caption := s + '- Tuning Grid';
+            TuneGrid;
          finally
-         EndUpdate;
-      end;
-   end; 
-   gvGrid.ApplyBestFit(nil, False, False);     
-   end;
 
-   procedure CreateXMLTable;
-   begin
-   if Assigned(cdsOutput) then
-      cdsOutput.Free;
-   cdsOutput := TClientDataSet.Create(FcxGrid);
-   cdsOutput.FieldDefs.Assign(SN.FieldDefs);
-   cdsOutput.CreateDataSet;
-   dsGrid.DataSet := cdsOutput;
-   end;
+            lTime := Now - lTime;
+            Self.Caption := Format(s + ' - [Elapsed Time: %s ]',[FormatDateTime ('hh:nn:ss:zzz', lTime)]);    
+         end;
+         end.
 
-   procedure AppendData;
-   var i : integer;
-   begin
-   M.First;
-   while not M.Eof do begin
-      SN.DisableControls;
-      SN.First;
-      While not SN.Eof do begin
-         cdsOutput.Append;
-         for i:=0 to SN.FieldDefs.Count-1 do
-         cdsOutput.FindField(SN.FieldDefs.Items[i].Name).Value := SN.FindField(SN.FieldDefs.Items[i].Name).Value;
-         cdsOutput.Post;      
-         SN.Next;
-      end;
-      SN.EnableControls;
-      M.Next;
-   end;
-   end;
-      
-   begin
-   M       := Self_DataProcessor.GetDataSetByName('Main');
-   SN      := Self_DataProcessor.GetDataSetByName('SerialNumber');
-   FcxGrid := TcxGrid(Self.FindComponent('cxGrid1'));
-   dsGrid  := TDataSource.Create(M);
-   
-   lTime := now;
-   s := 'Stock Physical Worksheet';
-   lDisplayFormat := '#,0.00;-#,0.00;-';
-                                          
-   
-   try
-      Self.Caption := s + '- Prepare Tab';
-      PrepareNewTab;
-      Self.Caption := s + '- Prepare XML';
-      CreateXMLTable;
-      Self.Caption := s + '- Append Data';
-      AppendData;
-      Self.Caption := s + '- Tuning Grid';
-      TuneGrid;
-   finally
-
-      lTime := Now - lTime;
-      Self.Caption := Format(s + ' - [Elapsed Time: %s ]',[FormatDateTime ('hh:nn:ss:zzz', lTime)]);    
-   end;    
-   end.
-
-   ```
+         ```
 
    </details>
 
@@ -2002,7 +2032,7 @@ Below is Example are doing following actions
 10. Select the Item just created (eg. Stock_Physical_Worksheet-DataForm-OnApply)
 11. Click OK button
 
-   ![diy-script-stkphyworksheet](../../../static/img/usage/tools/tools-basic-guide/diy-script-stkphyworksheet.jpg)
+    ![diy-script-stkphyworksheet](../../../static/img/usage/tools/tools-basic-guide/diy-script-stkphyworksheet.jpg)
 
 12. Click Stock | Print Stock Physical Worksheet | Apply
 
@@ -2026,28 +2056,28 @@ Below is Example are doing following actions
    <details>
       <summary>Param Form - OnOpenForm Script</summary>
 
-   ```sql
+         ```sql
 
-   uses SysUtils, Dialogs, Forms;
+         uses SysUtils, Dialogs, Forms;
 
-   var C, D : TControl;
-      L: TStringList;
-   begin
-   C := Self.FindChildControl('edAgent_Panel') as TWinControl;
-   L := TStringList.Create;
-   try
-      if C <> nil then C.Enabled := False; // Disable Selection
-      C := TWinControl(C).FindChildControl('edAgent_Edit') as TWinControl;      
-      L.Add('NF');
-      L.Add('LF');
-      (C as TControl).SetTextBuf(L.CommaText);//For Multi Records 
-   //    (C as TControl).SetTextBuf('LF');//For 1 record    
-   finally
-      L.Free;
-   end;  
-   end.
+         var C, D : TControl;
+            L: TStringList;
+         begin
+         C := Self.FindChildControl('edAgent_Panel') as TWinControl;
+         L := TStringList.Create;
+         try
+            if C <> nil then C.Enabled := False; // Disable Selection
+            C := TWinControl(C).FindChildControl('edAgent_Edit') as TWinControl;
+            L.Add('NF');
+            L.Add('LF');
+            (C as TControl).SetTextBuf(L.CommaText);//For Multi Records
+         //    (C as TControl).SetTextBuf('LF');//For 1 record
+         finally
+            L.Free;
+         end;
+         end.
 
-   ```
+         ```
 
    </details>
 
@@ -2075,75 +2105,75 @@ Below is Example are doing following actions
    <details>
       <summary>Entry Form - OnOpen Script</summary>
 
-   ```sql
-   uses Forms, StdCtrls, DBCtrls, Dialogs, ComObj, DBClient;
+         ```sql
+         uses Forms, StdCtrls, DBCtrls, Dialogs, ComObj, DBClient;
 
-   Var edProject     : TDBLookupComboBox;
-      btnCPassword  : Tbutton;
-      M, dsList     : TDataSource;
-      lbProject     : TComponent;
-      C             : TControl;
-      FComServer    : Variant;
-      cdsList       : TClientDataset;
+         Var edProject     : TDBLookupComboBox;
+            btnCPassword  : Tbutton;
+            M, dsList     : TDataSource;
+            lbProject     : TComponent;
+            C             : TControl;
+            FComServer    : Variant;
+            cdsList       : TClientDataset;
 
-   function ComServer: Variant;
-   begin
-   if FComServer = Null then begin
-      FComServer := CreateOleObject('SQLAcc.BizApp');
-   end;
-   Result := FComServer;
-   end;
+         function ComServer: Variant;
+         begin
+         if FComServer = Null then begin
+            FComServer := CreateOleObject('SQLAcc.BizApp');
+         end;
+         Result := FComServer;
+         end;
 
-   procedure GetList;
-   var lSQL    : String;
-   begin
-   FComServer := null;
-   cdsList := TClientDataset.Create(C);
-   lSQL := 'SELECT Code, Description FROM Project WHERE IsActive=''T'' ';
-   
-   try
-      cdsList.Data := ComServer.DBManager.Execute(lSQL);
-      dsList.Dataset := cdsList;
-   finally
-      FComServer := null;
-   end;
-   end;
+         procedure GetList;
+         var lSQL    : String;
+         begin
+         FComServer := null;
+         cdsList := TClientDataset.Create(C);
+         lSQL := 'SELECT Code, Description FROM Project WHERE IsActive=''T'' ';
 
-   begin
-   M := TDataSource(Self.FindComponent('dsMain'));
-   C := Self.FindChildControl('lbName');
-   dsList := TDataSource.Create(C);
-   GetList;
-   if Assigned(C) then begin
-      edProject   := TDBLookupComboBox.Create(C);
-      lbProject  := TLabel.Create(C);
+         try
+            cdsList.Data := ComServer.DBManager.Execute(lSQL);
+            dsList.Dataset := cdsList;
+         finally
+            FComServer := null;
+         end;
+         end;
 
-      with TLabel(lbProject) do begin
-         Parent     := C.Parent;
-         Caption    := '&1. Project :';
-         Left       := 200;
-         Top        := 68;
-         FocusControl := edProject;
-      end;
-         
-      with edProject do begin
-         Parent  := C.Parent;
-         Top     := 65;
-         Left    := 260;
-         Width   := 120;
-         Name    := 'edProject'; 
-         Datasource     := M;
-         ListSource     := dsList;
-         DataField      :='UDF_Project';
-         DropDownWidth  := 500;
-         KeyField       := 'Code';
-         ListFieldIndex := 1; //Search By Description
-         ListField      := 'Code;Description'; //Show 2 Column
-      end;
-   end;
-   end.
+         begin
+         M := TDataSource(Self.FindComponent('dsMain'));
+         C := Self.FindChildControl('lbName');
+         dsList := TDataSource.Create(C);
+         GetList;
+         if Assigned(C) then begin
+            edProject   := TDBLookupComboBox.Create(C);
+            lbProject  := TLabel.Create(C);
 
-   ```
+            with TLabel(lbProject) do begin
+               Parent     := C.Parent;
+               Caption    := '&1. Project :';
+               Left       := 200;
+               Top        := 68;
+               FocusControl := edProject;
+            end;
+
+            with edProject do begin
+               Parent  := C.Parent;
+               Top     := 65;
+               Left    := 260;
+               Width   := 120;
+               Name    := 'edProject'; 
+               Datasource     := M;
+               ListSource     := dsList;
+               DataField      :='UDF_Project';
+               DropDownWidth  := 500;
+               KeyField       := 'Code';
+               ListFieldIndex := 1; //Search By Description
+               ListField      := 'Code;Description'; //Show 2 Column
+            end;
+         end;
+         end.
+
+         ```
 
    </details>
 
@@ -2408,7 +2438,7 @@ Each time user Click the [Maintain DIY](#maintain-diy) it will prompt below dial
 
 ![protection-removed](../../../static/img/usage/tools/tools-basic-guide/protection-removed.jpg)
 
-:::warning 
+:::warning
 Make sure you had keep few copy of QRCode as once you lost all we not able to retrieve back the Access ID
 :::
 

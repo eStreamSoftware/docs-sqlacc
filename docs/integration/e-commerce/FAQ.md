@@ -35,14 +35,14 @@ For **Shopee** it uses the following formula :
 shipping fee = (escrow + refund) - product price - commission - service - transaction
 ```
 
- - For **Lazada** & **WooCommerce** it calculates directly from the platform field.
+- For **Lazada** & **WooCommerce** it calculates directly from the platform field.
 - It will **not post** if the Shipping fee is **pay by the buyer**
 
 ## How to handle Serial Number ?
 
 If using Packing List :
-    * You can use **To Ship** Status Post to Sales Order first, then manually transfer to Invoice.  
-Make sure enter the <span style={{ color: 'blue' }}>Invoice Doc No = Order No</span> and Serial Number as well.
+    * You can use **To Ship** Status Post to Sales Order first, then manually transfer to Invoice.
+Make sure enter the **Invoice Doc No = Order No** and Serial Number as well.
 
 If Not using Packing List :
     * Just normal post to Invoice then enter the Serial Number after post
@@ -62,6 +62,7 @@ You can use **Project Code** for each Platform
 ## Where to download the Statement for each Pplatform ?
 
 May refer link below :
+
 - [Lazada](https://sellercenter.lazada.com.my/seller/helpcenter/guide-to-view-the-fees-your-account-statement-8809.html?spm=a2a16.helpcenter-psc-article.articles-list.1.1af31e466syh4Y)
 
 - [Shopee](https://seller.shopee.com.my/edu/article/1651)
@@ -81,6 +82,7 @@ May refer link below :
 ## Where is the Help File for each PLatforms
 
 May refer to links below :
+
 - [Lazada](https://sellercenter.lazada.com.my/seller/helpcenter/)
 - [Shopee](https://seller.shopee.com.my/edu/home)
 - [WooCommerce](https://docs.woocommerce.com/)

@@ -14,7 +14,7 @@ This is External Utility to Fixing & Managing SQL Firebird Database.
 
 ## Program
 
-1. [SQLDiagnosisV2](https://download.sql.com.my/customer/Fairy/SQLDiagnosisV2-setup.exe)
+1. [sql-diagnosis-v2](https://download.sql.com.my/customer/Fairy/SQLDiagnosisV2-setup.exe)
 
 ## Requirement
 
@@ -56,7 +56,7 @@ This is External Utility to Fixing & Managing SQL Firebird Database.
 2. Select the Patch from the available list.
 3. Click **Execute...** button (In **Steps 3** Section).
 
-#### Patch File type & description
+### Patch File type & description
 
 | Patch File Type | Description |
 |------------------|-------------|
@@ -246,13 +246,13 @@ Using Windows Schedule to Automatically run Batch Backup.
 
     ![schedule-backup-6](../../../../static/img/usage/general/others/sql-diagnosis/schedule-backup-6.jpg)
 
-#### For Build 32 & above (Following Steps)
+### For Build 32 & above (Following Steps)
 
 1. Click Browse button & find the **SQLDiagnosisV2.exe** (Default at `C:\eStream\Utilities\SQLDiagnosis`)
 
 2. Set the Add arguments(optional) as **-Auto**
 
-#### For Build till 31 (Following Steps)
+### For Build till 31 (Following Steps)
 
 1. Click Browse button & find the **SQLScheduleV2.exe** (eg. `C:\eStream\Utilities\SQLDiagnosis\SQLScheduleV2.exe`)
 2. Set the Start in(optional) path to the Exe folder (eg. `C:\eStream\Utilities\SQLDiagnosis`) & Click Next
@@ -291,7 +291,7 @@ You can set below command for Schedule Stop & Start Firebird:
 
 ## History New/Updates/Changes
 
-#### --Build 32--
+### --Build 32--
 
 - Mini Console - Add Get Generator List Function.
 - Fix still unable to backup FDB if no SY_Profile table.
@@ -302,7 +302,7 @@ You can set below command for Schedule Stop & Start Firebird:
 - Update High Resolution Icon.
 - Add "Non System Document Number Set..." Patch.
 
-#### --Build 31--
+### --Build 31--
 
 - Add New Application Window function.
 - Add Sweep Database in Validate function.
@@ -312,12 +312,12 @@ You can set below command for Schedule Stop & Start Firebird:
 - Add Remove InValid Stock Category... Patch
 - Fix unable to backup FDB if no SY_Profile table.
 
-#### --Build 30--
+### --Build 30--
 
 - Add Option Use Full name for batch backup.
 - Enable support FB3.0.2.
 
-#### --Build 29--
+### --Build 29--
 
 - Add Update Generator to DB Patch function.
 - Add Update Non Stock Control to Fixed Cost...to DB Patch function.
@@ -326,35 +326,35 @@ You can set below command for Schedule Stop & Start Firebird:
 - Add Update GL Account Special A/c Type Null to Empty to DB Patch function.
 - Add Update Batch Null to Empty to DB Patch function.
 
-#### --Build 28--
+### --Build 28--
 
 - Upgrade to Version 2.8.
 - Change New Icon.
 - Fix InValid GST Transactions not working.
 - Add Update Generators... Patch.
 
-#### --Build 27--
+### --Build 27--
 
 - Fix patch Error string literal with 19890 characters exceeds the maximum length of 16383 characters for the utf8 character set.
 - Add Multi Copy function for SQL DB Copy Table...
 
-#### --Build 26--
+### --Build 26--
 
 - Add YED QT && PQ Purge...
 - Add InValid GST Transations.
 
-#### --Build 25--
+### --Build 25--
 
 - Upgrade to Version 2.7.
 - Remove -l -g -ig from Schedule & Batch Backup.
 - Replace IB Pump with SQL DB Copy Table...function.
 
-#### --Build 24--
+### --Build 24--
 
 - Add Remark for Batch Backup filename.
 - Add Load From File 2 for DB Patch function.
 
-#### --Build 23--
+### --Build 23--
 
 - Upgrade to Version 2.6.
 - Fixed DB Patch will auto remove & in the script.
@@ -362,11 +362,11 @@ You can set below command for Schedule Stop & Start Firebird:
 - Add Remove Duplicate GL Stock Value Patch.
 - Enable Proper Installation.
 
-#### --Build 22--
+### --Build 22--
 
 - Internal release.
 
-#### --Build 21--
+### --Build 21--
 
 - Upgrade to Version 2.5.
 - Fix unable open fdb in LocalHost.
@@ -377,18 +377,18 @@ You can set below command for Schedule Stop & Start Firebird:
 - Fix Backup Metadata setting not correct for FB3.0 unicode
 - Add Firebird Version label for Patch, Validate & Adhoc Backup.
 
-#### --Build 20--
+### --Build 20--
 
 - Fix Application Name Error.
 - Add DB Online function.
 - Add Remove InValid CN Patch.
 
-#### --Build 19--
+### --Build 19--
 
 - Fix unable to backup.
 - Add Load From File... for DB Patch...
 
-#### --Build 18--
+### --Build 18--
 
 - Upgrade to Version 2.4.
 - Enable Support Firebird 3.0.

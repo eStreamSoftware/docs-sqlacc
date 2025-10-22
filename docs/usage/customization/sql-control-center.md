@@ -143,7 +143,7 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 
 1. Item Code to be create - Voucher => For Claim use (eg 1 point = RM 0.01)
 
-![stockItemVoucherRate](../../../static/img/miscellaneous/sqlControlCenter/stockItemVoucherRate.jpg)
+    ![stockItemVoucherRate](../../../static/img/miscellaneous/sqlControlCenter/stockItemVoucherRate.jpg)
 
 2. For each item code enter the Voucher Rate (eg 0.5 point = RM 1)
 
@@ -384,7 +384,7 @@ Tick the Lock Supplier option and filter supplier list by agent, enter as 2 in F
 
 The setting can only function within the range of **1 to 3**.
 
-:::note E.g. 
+:::note E.g.
 Tick the Lock Item Code option and filter by item code. Enter item codes, such as BOM-02/Red, ER/Lamp, and ISCT, in the column, and search for item descriptions by item code.
 :::
 
@@ -397,7 +397,7 @@ Tick the Lock Item Code option and filter by item code. Enter item codes, such a
 3. Enter the code for Project Code in Allowable ... columns, you are allow to enter more than 1 codes for Project Code
 4. Repeat Step 1 to Step 3 for the remaining settings.
 
-:::note E.g. 
+:::note E.g.
 Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by project code, and enter project codes, such as P1 and P2, in the column for search.
 :::
 
@@ -452,7 +452,7 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 
 9. Copy below script & paste to the Right Panel (Script Section).
 
-    ```sql
+    ```vb
     begin
         if SameText(EditingField, 'ItemCode')or
           SameText(EditingField, 'UDF_mUnitPrice') then begin
@@ -588,7 +588,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
     ```bash
     var FComServer, lBizObj : Variant;
         cdsData : TClientDataSet;
-    
+
     function ComServer: Variant;
     begin
       if FComServer = Null then begin
@@ -596,23 +596,23 @@ Avoid update the same existing field name Unit Price. You have to create differe
       end;
       Result := FComServer;
     end;
-    
+
     procedure GetStockInfo;
     var lSQL, lCode  : String;
     begin
       FComServer := null;
       cdsData    := TClientDataSet.Create(nil); // Create & preparing Component
       try
-        lCode := Dataset.FindField('ItemCode').AsString;     
+        lCode := Dataset.FindField('ItemCode').AsString;
         lSQL  := Format('SELECT UDF_PCS, UDF_CTN FROM ST_ITEM WHERE Code=%s',[QuotedStr(lCode)]);
-    
+
         cdsData.Data := ComServer.DBManager.Execute(lSQL);
       finally
         lBizObj    := null;
         FComServer := null;
       end;
     end;
-    
+
     begin
       if SameText(EditingField, 'ItemCode') or
         SameText(EditingField, 'UOM') or
@@ -624,7 +624,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
           if Dataset.FindField('UOM').AsString = 'CTN' then
             Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_CTN').AsFloat else
             Dataset.FindField('UDF_Price').AsFloat := 1;
-    
+
           Dataset.FindField('UnitPrice').AsFloat := Dataset.FindField('UDF_Price').AsFloat *
                                                     Dataset.FindField('UDF_Rate').AsFloat;
         finally
@@ -700,38 +700,38 @@ Avoid update the same existing field name Unit Price. You have to create differe
         M : TDataSource;
         L1, L2 : TLabel;
         cdsTemp : TClientDataset;
-    
+
     function ComServer: Variant;
     begin
       if FComServer = Null then 
         FComServer := CreateOleObject('SQLAcc.BizApp');
       Result := FComServer;
     end;
-    
+
     procedure Setup;
     begin
       T  := TTimer.Create(Self);
       L1 := TLabel.Create(self);
       L2 := TLabel.Create(self);
     end;
-    
+
     procedure DocInfo;
     var lSQL, lDocNo : String;
     begin
       lDocNo := M.Dataset.FindField('DocNo').AsString;
-    
+
       FComServer := null;
       cdsTemp := TClientDataset.Create(nil);
       lSQL := Format('SELECT (DocAmt - PaymentAmt) OS FROM AR_IV '+
                     'WHERE DocNo=%s ',[QuotedStr(lDocNo)]);
-    
+
       try
         cdsTemp.Data := ComServer.DBManager.Execute(lSQL);
       finally
         FComServer := null;
       end;
     end;
-    
+
     procedure OnTimer(Sender: TObject);
     var AState : TDataSetState;
     begin
@@ -744,18 +744,18 @@ Avoid update the same existing field name Unit Price. You have to create differe
         finally
           cdsTemp.Free;
         end;
-      end;       
+      end;
     end;
-    
+
     begin
-      M := TDataSource(Self.FindComponent('dsDocMaster'));   
-      C := Self.FindComponent('frDataSetButton1');             
-    
+      M := TDataSource(Self.FindComponent('dsDocMaster'));
+      C := Self.FindComponent('frDataSetButton1');
+
       if Assigned(C) then begin
         T.Enabled  := True;
         T.Interval := 1000; // = 1 sec
-        T.OnTimer  := @OnTimer;  
-    
+        T.OnTimer  := @OnTimer;
+
         with L1 do begin
           Parent     := TWinControl(C);
           Width      := 66;
@@ -764,7 +764,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
           Caption    := 'Outstanding';
           Font.Color := clBlue;
           Font.Style := [fsBold];
-        end;    
+        end;
         with L2 do begin
           Parent     := TWinControl(C);
           Width      := 66;
@@ -773,8 +773,8 @@ Avoid update the same existing field name Unit Price. You have to create differe
           Caption    := 'DocNo';
           Font.Color := clBlue;
           Font.Style := [fsBold];
-        end;     
-      end;   
+        end;
+      end;
     end.
     ```
 

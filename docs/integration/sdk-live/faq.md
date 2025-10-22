@@ -73,12 +73,11 @@ lDocNo := lMain.FindField('DocNo').AsString; //To Get docno after post
 ```csharp
 Int32 lBuildNo;
 dynamic ComServer;
-		
 public void CheckLogin()
-{            
+{
     lBizType = Type.GetTypeFromProgID("SQLAcc.BizApp");
     ComServer = Activator.CreateInstance(lBizType);
-            
+
     if (!ComServer.IsLogin)
     {
         try
@@ -97,12 +96,12 @@ public void CheckLogin()
         lBuildNo = ComServer.BuildNo;
     }
 }
-		
+
 public void FreeBiz(object AbizObj)
 {
     System.Runtime.InteropServices.Marshal.ReleaseComObject(AbizObj);
 }
-		
+
 private void btnExport_Click(object sender, EventArgs e)
 {
     dynamic BizObject, lMain, lDocKey;
@@ -147,11 +146,11 @@ private void btnExport_Click(object sender, EventArgs e)
     {
         BizObject.Close();
 
-        //Step 7 : Logout after done             
+        //Step 7 : Logout after done
         FreeBiz(BizObject);
         ComServer.Logout();
         FreeBiz(ComServer);
-    }            
+    }
 }
 ```
 
@@ -162,7 +161,7 @@ private void btnExport_Click(object sender, EventArgs e)
 <details>
     <summary>Delphi - click to expand </summary>
 
-```sql
+```vb
 ....
   public
     { Public declarations }
@@ -218,17 +217,17 @@ end;
 ```vb
 'Copy below script & paste to notepad & name it as eg Agent.vbs
 Call PostData
- 
+
 Function CreateSQLAccServer
   Set CreateSQLAccServer = CreateObject("SQLAcc.BizApp")
 End Function
- 
+
 Function PostData
 Dim ComServer, BizObject
- 
+
   'Step 1: Create Com Server object
   Set ComServer = CreateSQLAccServer 'Create Com Server
-  
+
   Set WScr = CreateObject("WScript.Shell")
   WScript.Sleep 1000 '//Wait 1 second for system loading before proceed
 
@@ -241,11 +240,11 @@ Dim ComServer, BizObject
 
   'Step 4: Find and Create the Biz Objects
   Set BizObject = ComServer.BizObjects.Find("Agent") 
- 
+
   'Step 5: Set Dataset
   Set lMain = BizObject.DataSets.Find("MainDataSet")    'lMainDataSet contains master data
 
-  
+
   'Step 6 : Posting
     BizObject.New
     lMain.FindField("CODE").AsString          = "_Test_"
@@ -254,10 +253,10 @@ Dim ComServer, BizObject
   'Step 7: Save Document
     BizObject.Save
     BizObject.Close
-	
-  'Step 8: Logout	
+
+  'Step 8: Logout
     ComServer.Logout
-	MsgBox "Done"
+  MsgBox "Done"
 End Function
 ```
 
@@ -275,7 +274,7 @@ End Function
 
 ### Sequence Field Script/Code :
 
-```sql
+```vb
 lDetail.Append();
    lDetail.FindField("Seq").value = 3;
    lDetail.FindField("ItemCode").AsString = "ANT";
@@ -325,9 +324,9 @@ The value is **Epoch Time** or **Unix Time**
 
 - You can use below function to get the field
 
-    - VB Script :
+      - VB Script :
 
-```sql
+```vb
 Function GetData
 Dim lDataSet, lSQL
   lSQL = "SELECT DOCNO, UPDATECOUNT FROM SL_CS "
@@ -346,7 +345,7 @@ End Function
 
     - Delphi :
 
-```sql
+```csharp
 procedure TfmMain.dxbb_GetFieldClick(Sender: TObject);
 var BizApp : Variant;
     lDataSet : TClientDataSet;
@@ -375,7 +374,7 @@ Below is example posting with location :
 
 Post Location Field Script/Code 
 
-```sql
+```c
  lDtl.FindField('UOM').AsString       := 'CTN';
  lDtl.FindField('QTY').AsFloat        := 6;
  lDtl.FindField('Location').AsString  := 'MOBILE';
@@ -415,9 +414,10 @@ For SQL Accounting Version 5.2023.958.832 and above
 
 ## How to get Error/Exception Message Return from SQL Accounting?
 
-### In C Sharp 
+### In C Sharp
 
 ```csharp
+
 try
 {
    BizObject.New();
@@ -430,13 +430,13 @@ catch (Exception ex)
 }
 ```
 
-### In Python 
+### In Python
 
 ```python
 try:
-       BizObject.Save()          
+       BizObject.Save()
    except Exception as e:
-       print("Oops!", e) 
+       print("Oops!", e)
 ```
 
 ### In VB.Net
@@ -451,7 +451,7 @@ Catch ex As Exception
 End Try
 ```
 
-### In Delphi 
+### In Delphi
 
 ```sql
 try
@@ -492,13 +492,13 @@ Summary action (Correct Steps)
         BizObject.Save
         BizObject.Close
         FreeBiz(BizObject)
-        
+
         BizObject = ComServer.BizObjects.Find("AR_PM")
         ....
         BizObject.Save
         BizObject.Close
         FreeBiz(BizObject)
-        
+
         Next Record
         End looping
         ```
@@ -621,7 +621,7 @@ end;
 ```
 or Can use our built in Utility function (only available from **5.2022.941.822** & above)
 
-### PHP 
+### PHP
 
 ```php
 <!DOCTYPE html>
@@ -649,48 +649,47 @@ function CheckLogin()
     $ComServer->Login("ADMIN", "ADMIN", #UserName, Password
                       "C:\eStream\SQLAccounting\Share\Default.DCF",  #DCF file
                       "ACC-0082.FDB"); #Database Name
-    
+
 }
 
 function GetData(){
     global $ComServer;
-	
+
     $lSQL = "SELECT Description3 FROM ST_ITEM 
-	     WHERE Code='ANT' ";
-	
+     WHERE Code='ANT' ";
+
     $lDataSet = $ComServer->DBManager->NewDataSet($lSQL);
 
     if ($lDataSet->RecordCount > 0) {
-	$lDataSet->First();
-		
-	$rtf = $lDataSet->FindField('Description3')->AsString();
-		
-        echo $rtf;		
-	echo "<br>== <br>";
-	echo "<br>Result after RTF: <br>";
-	$txt = $ComServer->Utility->RichTextToPlainText($rtf);
-	echo "<TEXTAREA rows=10 cols=80 id='edResult1' >".$txt. "</TEXTAREA>";
-	echo "<br>== <br>";
-	echo "??? ??";
-	}else {
+$lDataSet->First();
+
+$rtf = $lDataSet->FindField('Description3')->AsString();
+
+        echo $rtf;
+echo "<br>== <br>";
+echo "<br>Result after RTF: <br>";
+$txt = $ComServer->Utility->RichTextToPlainText($rtf);
+echo "<TEXTAREA rows=10 cols=80 id='edResult1' >".$txt. "</TEXTAREA>";
+echo "<br>== <br>";
+echo "??? ??";
+}else {
     echo "Record Not Found";
     }
 }
 
 function PostData(){
-	global $ComServer;
-	
-	$BizObject = $ComServer->BizObjects->Find("ST_AJ");
+global $ComServer;
+
+$BizObject = $ComServer->BizObjects->Find("ST_AJ");
     $lMain = $BizObject->DataSets->Find("MainDataSet"); 
     $lDetail = $BizObject->DataSets->Find("cdsDocDetail"); 
-	
+
     $BizObject->New();
     $lMain->FindField("DocKey")->value = -1;
     $lMain->FindField("DocNo")->AsString = "<<New>>";
     $lMain->FindField("DocDate")->value = "04/20/2020"; #MM/DD/YYYY
     $lMain->FindField("PostDate")->value = "04/20/2020"; #MM/DD/YYYY
-    $lMain->FindField("Description")->AsString = "Stock Adjustment";
-	
+    $lMain->FindField("Description")->AsString = "Stock Adjustment";	
     #Insert Data - Detail - Increase Stock Qty
     $lDetail->Append();
     $lDetail->FindField("DtlKey")->value = -1;
@@ -708,20 +707,20 @@ function PostData(){
     $lDetail->FindField("Seq")->value = 2;
     $lDetail->FindField("ItemCode")->AsString = "ANT";
     $lDetail->FindField("Description")->AsString = "NOKIA CHARGER  ???";
-	$lDetail->FindField("Description3")->AsString = $ComServer->Utility->PlainTextToRichText("NOKIA CHARGER ??? ??");
+$lDetail->FindField("Description3")->AsString = $ComServer->Utility->PlainTextToRichText("NOKIA CHARGER ??? ??");
     $lDetail->FindField("Qty")->AsFloat = -5;
     $lDetail->FindField("UOM")->AsString = "UNIT";
     $lDetail->Post();
-	
+
     $BizObject->Save();
     $BizObject->Close();
-	
-	try{
+
+try{
         $BizObject->Save();
         $BizObject->Close();
-	}catch (Exception $e) {
+}catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
-    }	
+    }
 }
 
 if (isset($_POST['BtnData']))
@@ -730,11 +729,11 @@ if (isset($_POST['BtnData']))
     {
         CheckLogin();
         GetData();
-	echo "<br>";
+echo "<br>";
         echo date("d M Y h:i:s A")." - Done";
-	PostData();
-	echo "<br>";
-        echo date("d M Y h:i:s A")." - Done ST_AJ";			
+PostData();
+echo "<br>";
+        echo date("d M Y h:i:s A")." - Done ST_AJ";
     }
     finally
     {
@@ -744,11 +743,11 @@ if (isset($_POST['BtnData']))
     }
 }
 
-?> 
-    <form method="post">           
+?>
+    <form method="post">
         <input type="submit" name="BtnData"
-                value="Get RTF n Post RTF"/> 
-    </form> 
+                value="Get RTF n Post RTF"/>
+    </form>
 </body>
 </html>
 ```
@@ -780,7 +779,7 @@ Why is Posting Amount not correct when SQL Acc Default Tax for Tax Inclusive is 
     lDetail.FindField("UnitPrice").AsFloat = 264
     lDetail.FindField("Amount").AsFloat = 240
     lDetail.FindField("TaxAmt").AsFloat = 24
-        
+
     lDetail.DisableControls()
     lDetail.FindField("TaxInclusive").value = True
     lDetail.EnableControls()

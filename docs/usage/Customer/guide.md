@@ -16,7 +16,7 @@ AR = Account Receivable
 
 * To keep the customer profile data such as addresses, telephone, fax, email, contact person, credit limits, credit terms, etc. In other words, it is your customer contacts list.
 
-![maintainCust](../../../static/img/usage/customer/customerBasicGuide/maintain-cust.png)
+![maintain-cust](../../../static/img/usage/customer/customerBasicGuide/maintain-cust.png)
 
 ## Create New Customer
 
@@ -49,53 +49,53 @@ AR = Account Receivable
 ![custGeneral](../../../static/img/usage/customer/customerBasicGuide/cust-general.png)
 
 | **Field Name** | **Explanation & Properties** |
-|-----------------|------------------------------|
+|----------------|------------------------------|
 | **Branch Name** | • You may maintain multiple sets of addresses by differentiating the Branch Name.  
-* **Default Branch Name:** BILLING  
-* **Field type:** Alphanumerical  
-* **Length:** 100 |
-| **Address (4 lines)** | * Input the company addresses.  
-* **Field type:** Alphanumerical  
-* **Length:** 40 (each line) |
-| **Attention** | * Input the contact person.  
-* **Field type:** Alphanumerical  
-* **Length:** 70 |
-| **Phone 1 & 2** | * Input the telephone number(s).  
-* **Field type:** Alphanumerical  
-* **Length:** 30 |
-| **Fax 1 & 2** | * Input the fax number(s).  
-* **Field type:** Alphanumerical  
-* **Length:** 30 |
-| **Email** | * Input the email address.  
-* **Field type:** Alphanumerical  
-* **Length:** 60 |
-| **Area** | * Select a default Area.  
-* **Field type:** Lookup from Maintain Area  
-* **Length:** 10 |
-| **Agent** | * Select a default Agent.  
-* **Field type:** Lookup from Maintain Agent  
-* **Length:** 10 |
-| **Currency** | * Select a default Currency.  
-* **Field type:** Lookup from Maintain Currency  
-* **Length:** 6 |
-| **Credit Terms** | * Select a default Terms.  
-* **Field type:** Lookup from Maintain Terms  
-* **Length:** 10 |
-| **Credit Limit** | * Set the credit limit (for non-Advance Credit Control module).  
-* **Field type:** Numeric |
-| **Statement** | * Select a default statement type: *Open Item* or *Brought Forward*.  
-* **Brought Forward:** Summary Statement  
-* **Open Item:** Detail Statement  
-* **Field type:** Option  
-* **Default:** Open Item |
-| **Aging On** | * Select a default Aging type: *Invoice Date* or *Due Date*.  
-* **Invoice Date:** based on IV Date  
-* **Due Date:** based on after due date (terms)  
-* **Field type:** Option  
-* **Default:** Invoice Date |
-| **Price Tag** | * Set the price tag to the items.  
-* **Field type:** Lookup from Maintain Stock Price Tag  
-* **Length:** 10 |
+Default Branch Name: BILLING
+Field type: Alphanumerical
+Length: 100 |
+| **Address (4 lines)** | • Input the company addresses.
+Field type: Alphanumerical
+Length: 40 (each line) |
+| **Attention** | • Input the contact person.
+Field type: Alphanumerical
+Length: 70 |
+| **Phone 1 & 2** | • Input the telephone number(s).
+Field type: Alphanumerical
+Length: 30 |
+| **Fax 1 & 2** | • Input the fax number(s).
+Field type: Alphanumerical
+Length: 30 |
+| **Email** | • Input the email address.
+Field type: Alphanumerical
+Length: 60 |
+| **Area** | • Select a default Area.
+Field type: Lookup from Maintain Area
+Length: 10 |
+| **Agent** | • Select a default Agent.
+Field type: Lookup from Maintain Agent
+Length: 10 |
+| **Currency** | • Select a default Currency.
+Field type: Lookup from Maintain Currency
+Length: 6 |
+| **Credit Terms** | • Select a default Terms.
+Field type: Lookup from Maintain Terms
+Length: 10 |
+| **Credit Limit** | • Set the credit limit (for non-Advance Credit Control module).
+Field type: Numeric |
+| **Statement** | • Select a default statement type: Open Item or Brought Forward.
+Brought Forward: Summary Statement
+Open Item: Detail Statement
+Field type: Option
+Default: Open Item |
+| **Aging On** | • Select a default Aging type: Invoice Date or Due Date.
+Invoice Date: based on IV Date
+Due Date: based on after due date (terms)
+Field type: Option
+Default: Invoice Date |
+| **Price Tag** | • Set the price tag to the items.
+Field type: Lookup from Maintain Stock Price Tag
+Length: 10 |
 
 1. You can categorize your customers into different groups, e.g. Category, agents, area How do you create your new agent/ area? Refer to the step below:
 
@@ -109,9 +109,9 @@ AR = Account Receivable
 
 1. Customer Statement
 
-* Brought Forward: Summary Statement
+   * Brought Forward: Summary Statement
 
- Open Item: Detail Statement
+   Open Item: Detail Statement
 
 2. Customer Aging
 
@@ -126,33 +126,33 @@ AR = Account Receivable
 ![custNote](../../../static/img/usage/customer/customerBasicGuide/cust-note.png)
 
 | **Field Name** | **Explanation & Properties** |
-|-----------------|------------------------------|
+|----------------|------------------------------|
 | **Account Open Date** | • Represents the creation date of the account.
-* **Field type:** Date |
-| **Remark** | * A note that will appear in **Inquiry | Account Inquiry**.  
-* Example: "Check payment refer to Ms Lee (012-345 67890)".  
-* **Field type:** Alphanumerical
-* **Length:** 80 |
-| **Reg No. (new)** | * Company’s new registration number.  
-* **Field type:** Alphanumerical
-* **Length:** 80 |
-| **Reg No. (old)** | * Use the magnifying icon to search for the old registration number.  
-* **Field type:** Alphanumerical
-* **Length:** 80 |
-| **Biz Nature** | * Customer’s business nature.
-* Example: Chemical Manufacturing, Car Service, etc.
-* **Field type:** Alphanumerical
-* **Length:** 100 |
-| **Note** | * Used to record the customer knowledge base.  
-* Supports **Date Stamp** feature for tracking.  
-* **Field type:** Alphanumerical  
-* **Length:** Rich Text |
-| **Status** | * Indicates the operational state of the customer account:  
- - **Active** → Can create official documents & print Customer Statement.  
- - **Inactive** → Cannot create official documents & cannot print Customer Statement.  
- - **Suspend** → Cannot create official documents but **can** print Customer Statement.  
- - **Prospect** → Can create official documents & print Customer Statement.  
- - **Pending** → Can create official documents & print Customer Statement. |
+Field type: Date |
+| **Remark** | • A note that will appear in Inquiry | Account Inquiry.
+Example: "Check payment refer to Ms Lee (012-345 67890)".
+Field type: Alphanumerical
+Length: 80 |
+| **Reg No. (new)** | • Company’s new registration number.
+Field type: Alphanumerical
+Length: 80 |
+| **Reg No. (old)** | • Use the magnifying icon to search for the old registration number.
+Field type: Alphanumerical
+Length: 80 |
+| **Biz Nature** | • Customer’s business nature.
+Example: Chemical Manufacturing, Car Service, etc.
+Field type: Alphanumerical
+Length: 100 |
+| **Note** | • Used to record the customer knowledge base.
+Supports Date Stamp feature for tracking.
+Field type: Alphanumerical
+Length: Rich Text |
+| **Status** |Indicates the operational state of the customer account:
+- Active → Can create official documents and print Customer Statement.
+- Inactive → Cannot create official documents and cannot print Customer Statement.
+- Suspend → Cannot create official documents but can print Customer Statement.
+- Prospect → Can create official documents and print Customer Statement.
+- Pending → Can create official documents and print Customer Statement. |
 
 ### Tax
 
@@ -164,12 +164,12 @@ AR = Account Receivable
 | **Tax Area** | • Not applicable to Malaysia/Singapore. |
 | **Sales Tax Area** | • Enter the company’s Sales Tax Number. |
 | **Service Tax Area** | • Enter the company’s Service Tax Number. |
-| **Exemption No** | • Input the Sales Tax Exemption number received from customer.  
-* **Field type:** Alphanumerical  
-* **Length:** 50 |
-| **Expiry Date** | • Set the expiry date for tax exemption.  
-• The customer will be tax exempted before the expiry date.  
-• **Field type:** Date |
+| **Exemption No** | • Input the Sales Tax Exemption number received from customer.|
+**Field type:** Alphanumerical
+**Length:** 50 |
+| **Expiry Date** | • Set the expiry date for tax exemption.|
+• The customer will be tax exempted before the expiry date.
+**Field type:** Date |
 
 ### Tariff Code Setting
 
@@ -177,14 +177,14 @@ AR = Account Receivable
 
 | **Field Name** | **Explanation & Properties** |
 |-----------------|------------------------------|
-| **Tariff** | • Add tariff code of taxable goods to be sold in exemption.  
-* You can find your tariff code at [http://mysstext.customs.gov.my/tariff/](http://mysstext.customs.gov.my/tariff/)  
-* **Lookup:** Maintain Tariff  
+| **Tariff** | • Add tariff code of taxable goods to be sold in exemption.
+* You can find your tariff code at [https://ezhs.customs.gov.my/](https://ezhs.customs.gov.my/)
+* **Lookup:** Maintain Tariff
 * **Related Topic:** Maintain Stock Item#Main_Header |
-| **Tax** | * Select an appropriate tax code that falls under the Person Exempted in Schedule A, B, and C.  
-* **Schedule A tax code:** SEA  
-* **Schedule B tax code:** SEB  
-* **Schedule C tax codes:** SEC1, SEC2, SEC3, SEC4, SEC5  
+| **Tax** | * Select an appropriate tax code that falls under the Person Exempted in Schedule A, B, and C.
+* **Schedule A tax code:** SE
+* **Schedule B tax code:** SEB
+* **Schedule C tax codes:** SEC1, SEC2, SEC3, SEC4, SEC5
 * **Lookup:** Maintain Tax |
 
 * Press 'SAVE' button once you are done
@@ -199,7 +199,7 @@ After Saving, you should see all your customer's information on this screen
 
 >IMPORTANT :
 >
->1. Every customer code is unique. 
+>1. Every customer code is unique.
 >2. If the system found there is an duplicate code trying to save, users will be notify by warning message.
 >See screenshot below.
 >
@@ -248,11 +248,11 @@ After Saving, you should see all your customer's information on this screen
 :::note Credit Control
 Can be applied to the following document types:
 
-1. QT - Quotation  
-2. SO - Sales Order  
-3. DO - Delivery Order  
-4. IV - Sales Invoice  
-5. CS - Cash Sales  
+1. QT - Quotation
+2. SO - Sales Order
+3. DO - Delivery Order
+4. IV - Sales Invoice
+5. CS - Cash Sales
 6. DN - Debit Note
 :::
 

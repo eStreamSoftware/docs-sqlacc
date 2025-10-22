@@ -441,7 +441,7 @@ Allows user to increase stock quantity without purchasing. It is normally used w
 
 1. **Stock** > **Stock Received** > **New**.
 
-   ![68](../../../static/img/usage/stock/stock-guide/67.png)
+   ![68](../../../static/img/usage/stock/stock-guide/stock-received.png)
 
 ## Stock Issue
 
@@ -449,7 +449,7 @@ Allows user to **decrease stock quantity without selling**. It is normally used 
 
 1. **Stock** > **Stock Issue** > **New**.
 
-   ![69](../../../static/img/usage/stock/stock-guide/68.png)
+   ![69](../../../static/img/usage/stock/stock-guide/stock-issue.png)
 
 ## Stock Transfer
 
@@ -508,29 +508,29 @@ Watch tutorial video here: [youtube](https://www.youtube.com/watch?v=uEbCRAftQ4A
 
 3. **Filter** by date, stock group or others **information** that you want to do for the stock take, please **make sure that you choose the correct location and batch if you have these two modules**.
 
-   ![70](../../../static/img/usage/stock/stock-guide/69.png)
+   ![70](../../../static/img/usage/stock/stock-guide/stock-adjustment.png)
 
 4. lick on Preview & choose your report format.
 
-   ![71](../../../static/img/usage/stock/stock-guide/70.png)
+   ![71](../../../static/img/usage/stock/stock-guide/stock-adjustment1.png)
 
 5. **Print out the “Stock Take Sheet”** for stock keeper.
 
    The stock keeper should manually **fill in the actual quantity into the “physical qty” column**.
 
-   ![72](../../../static/img/usage/stock/stock-guide/71.png)
+   ![72](../../../static/img/usage/stock/stock-guide/stock-adjustment2.png)
 
 6. After complete updating the stock take report by your stock-keeper, do your stock adjustment in system from **Stock** > **Stock Adjustment** > **and drag out Book Qty and Physical Qty**.
 
-   ![73](../../../static/img/usage/stock/stock-guide/72.png)
+   ![73](../../../static/img/usage/stock/stock-guide/stock-adjustment3.png)
 
-   ![74](../../../static/img/usage/stock/stock-guide/73.png)
+   ![74](../../../static/img/usage/stock/stock-guide/stock-adjustment4.png)
 
 7. Click on the first item in **Stock Physical Worksheet**, press on **Ctrl + A** on the keyboard to select all items.
 
    **Then Drag & Drop into Stock Adjustment**.
 
-   ![75](../../../static/img/usage/stock/stock-guide/74.png)
+   ![75](../../../static/img/usage/stock/stock-guide/stock-adjustment5.png)
 
 8. Based on the stock keeper’s Stock Take Report, **fill in the actual physical quantity** in your warehouse into the Stock Adjustment **Physical Qty column**, the system will calculate the variance based on the Book Qty and apply a correction to the Qty column.
 

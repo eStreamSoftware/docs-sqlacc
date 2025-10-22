@@ -118,7 +118,7 @@ Leave this Screen Open as It will auto sync & update
 
 Before following the steps in the subsections below
 
-### 1. SQL Account Configuration
+### SQL Account Configuration
 
 1. Go to "**Tools**" > "**Options...**".
 
@@ -134,7 +134,7 @@ Before following the steps in the subsections below
 
 7. A Stock Take Share will be set, and the switch will change from Off to On
 
-### 2. Stock Take Module Initial Configuration
+### Stock Take Module Initial Configuration
 
 1. Go to "**Stock**" -> "**Stock Take...**".
 
@@ -144,7 +144,7 @@ Before following the steps in the subsections below
 
 4. On second dialog prompt(Do you want to continue?), choose "**Yes**".
 
-### 3. Stock Take App Import
+### Stock Take App Import
 
 1. On the Stock Take app home page, tap on "Update Items List" button(located to the left of "Update Items List" label).
 

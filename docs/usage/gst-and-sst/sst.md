@@ -947,7 +947,7 @@ SST tax code mapping to SST-02.
 
 ### Quick Setup for Tariff Code
 
-1. Create the tariff code applicable to your product at [Maintain Tariff](../../usage/Tools/Tools.md#maintain-tariff).
+1. Create the tariff code applicable to your product at [Maintain Tariff](/usage/tools/guide#maintain-tariff).
 
    ![SST_Tariff_Code_1](../../../static/img/usage/gst-and-sst/sst/sst-quick-setup-for-tariff-code-1.jpg)
 

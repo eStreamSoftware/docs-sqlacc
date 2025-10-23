@@ -95,7 +95,7 @@ This setting set the supplier who has supply the taxable goods under the Sales T
 | **Field Name** | **Explanation & Properties** |
 |----------------|-------------------------------|
 | Tariff         | • Add tariff code of taxable goods to be sold in exemption.  |
-|                | • Lookup: [Maintain Tariff](../../usage/Tools/Tools.md#maintain-tariff)  |
+|                | • Lookup: [Maintain Tariff](/usage/tools/guide#maintain-tariff)  |
 |                | • Related Topic: [Maintain Stock Item → Main Header](../../usage/stock/stock-guide#maintain-stock-item) |
 | Tax            | • Select an appropriate tax code that falls under the Person Exempted in **Schedule C ONLY** (must be declared in SST-02). |
 |                | • Schedule C tax code: PEC1, PEC2, PEC3, PEC4, PEC5 |

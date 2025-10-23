@@ -14,12 +14,12 @@ tags: ["SQL Account", "Troubleshooting"]
 
 ## How to solve?
 
-1. Download [SQL DiagnosisV2](https://download.sql.com.my/customer/Fairy/SQLDiagnosisV2-setup.exe)
+1. Download [sql-diagnosis-v2](https://download.sql.com.my/customer/Fairy/SQLDiagnosisV2-setup.exe)
 
 2. Launch SQL DiagnosisV2
 
-   ![1](../../static/img/troubleshooting/db-error/1.png)
+   ![launch-sql-diagnosis](../../static/img/troubleshooting/db-error/launch-sql-diagnosis.png)
 
 3. Select the DB stucked in `Shutdown` state.
 
-   ![2](../../static/img/troubleshooting/db-error/2.png)
+   ![select-database](../../static/img/troubleshooting/db-error/select-database.png)

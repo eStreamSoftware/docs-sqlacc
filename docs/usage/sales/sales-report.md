@@ -20,7 +20,7 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
    5. Click **Apply** to generate, whenever you change any setting under Step 3 or 4, please redo by clicking Apply
 
-      ![87](../../../static/img/usage/sales/sales-reports/86.png)
+      ![sales-document-listing](../../../static/img/usage/sales/sales-reports/sales-document-listing.png)
 
 #### Export report into Excel
 
@@ -28,7 +28,7 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
    2. **Click on Grid Export > Export to Excel**.
 
-      ![88](../../../static/img/usage/sales/sales-reports/87.png)
+      ![export-report-into-excel](../../../static/img/usage/sales/sales-reports/export-report-into-excel.png)
 
 #### Batch Printing Invoices
 
@@ -44,7 +44,7 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
    :::
 
-   ![89](../../../static/img/usage/sales/sales-reports/88.png)
+   ![batch-printing-invoices](../../../static/img/usage/sales/sales-reports/batch-printing-invoices.png)
 
 ### Outstanding Sales Document Listing (Require Partial Delivery Module)
 
@@ -68,8 +68,8 @@ This report can help you check the transfer document’s info, such as the amoun
 
 4. **Apply**
 
-   ![90](../../../static/img/usage/sales/sales-reports/89.png)
+   ![outstanding-sales-doc-listing](../../../static/img/usage/sales/sales-reports/outstanding-sales-doc-listing.png)
 
 5. If you want to know where this **document has already been transferred** to, you just **Preview** the report.
 
-   ![91](../../../static/img/usage/sales/sales-reports/90.png)
+   ![outstanding-sales-doc-listing-preview](../../../static/img/usage/sales/sales-reports/outstanding-sales-doc-listing-preview.png)

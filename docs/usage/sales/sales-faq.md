@@ -14,7 +14,7 @@ tags: ["SQL Account", "Sales", "FAQ"]
 
     - **Option 1 : Direct Kick Out** -> Cash Drawer direct connects to your PC.
 
-        ![1](../../../static/img/usage/sales/sales-faq/cash-drawer-kick-out/1.png)
+        ![barcode-direct-kick-out](../../../static/img/usage/sales/sales-faq/cash-drawer-kick-out/barcode-direct-kick-out.png)
 
         :::tip[tip]
         Select the correct *Port No* and then click on **Kick Out** button to test whether the *Cash Drawer* success kicks out, if the port no did not showing in list, may manually type in your *Port No*.
@@ -22,7 +22,7 @@ tags: ["SQL Account", "Sales", "FAQ"]
 
     - **Option 2**: Printer Kick Out -> Cash Drawer direct connect to Printer
 
-        ![2](../../../static/img/usage/sales/sales-faq/cash-drawer-kick-out/2.png)
+        ![barcode-printer-kick-out](../../../static/img/usage/sales/sales-faq/cash-drawer-kick-out/barcode-printer-kick-out.png)
 
         :::tip[tip]
         Select your Printer Name and then click on **Kick Out** button to test whether the *Cash Drawer* success kicks out

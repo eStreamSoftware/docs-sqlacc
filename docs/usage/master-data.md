@@ -22,9 +22,9 @@ Watch tutorial video here: [Youtube](https://www.youtube.com/watch?v=hsdpDJImya4
 
    4. Click **OK**. Your new account is now created.
 
-    ![14](../../static/img/usage/master-data/14.png)
+    ![new-account-code](../../static/img/usage/master-data/new-account-code.png)
 
-    ![15](../../static/img/usage/master-data/15.png)
+    ![special-acc-type](../../static/img/usage/master-data/special-acc-type.png)
 
 2. Creating a Sub Account
 
@@ -32,7 +32,7 @@ Watch tutorial video here: [Youtube](https://www.youtube.com/watch?v=hsdpDJImya4
 
    2. Follow the same steps from **2.1.1 Create New Account**
 
-    ![16](../../static/img/usage/master-data/16.png)
+    ![sub-account](../../static/img/usage/master-data/sub-account.png)
 
     You are allow to create an unlimited level of sub accounts. Just point to any account, and add a sub or sub-sub account to it.
 
@@ -55,7 +55,7 @@ There are 4 main tabs under Maintain Customer, let’s create a new customer and
 1. You can categorize your customers into different groups, e.g. Category, agents, area
     How do you create your new agent/ area? Refer to the step below:
 
-    ![19](../../static/img/usage/master-data/19.png)
+    ![maintain-agent](../../static/img/usage/master-data/maintain-agent.png)
 
 2. You can also insert more than one billing / delivery addresses (unlimited)
 
@@ -71,13 +71,13 @@ There are 4 main tabs under Maintain Customer, let’s create a new customer and
         - Due Date: Based on after due date (terms)
     :::
 
-    ![17](../../static/img/usage/master-data/17.png)
+    ![maintain-customer-1](../../static/img/usage/master-data/maintain-customer-1.png)
 
-    ![18](../../static/img/usage/master-data/18.png)
+    ![maintain-customer-2](../../static/img/usage/master-data/maintain-customer-2.png)
 
 ### Advance Credit Control (*Pro Package Inclusive)
 
-![20](../../static/img/usage/master-data/20.png)
+![advance-credit-control](../../static/img/usage/master-data/advance-credit-control.png)
 
 You can set the credit limit and overdue limit amounts as well as blocking a certain transaction entry for specific customers. What does the document include and for the following documents: Quotation(QT), Sales Order(SO), Delivery Order(DO), Invoice (IV), Cash Sales (CS) and Debit Note(DN)
 
@@ -95,13 +95,13 @@ We can also set once exceed limit & overdue limit,
 
 If the customer provides you with certificate exemption number, you may fill in part A & B as below.
 
-![21](../../static/img/usage/master-data/21.png)
+![tax-1](../../static/img/usage/master-data/tax-1.png)
 
-![22](../../static/img/usage/master-data/22.png)
+![tax-2](../../static/img/usage/master-data/tax-2.png)
 
 ## Maintain Supplier
 
-![23](../../static/img/usage/master-data/23.png)
+![maintain-supplier](../../static/img/usage/master-data/maintain-supplier.png)
 
 **Maintain Supplier** it’s just a mirror of Maintain Customer, please refer to [Maintain Customer](#maintain-customer).
 
@@ -119,7 +119,7 @@ Watch tutorial video here: [Stock Maintain Stock Item](https://www.youtube.com/w
 
 1. **Stock** | **Maintain Stock Group** | **New**
 
-    ![24](../../static/img/usage/master-data/24.png)
+    ![maintain-stock-grp](../../static/img/usage/master-data/maintain-stock-grp.png)
 
 2. You can enter your **code** and **description**; you can also assign your **costing method** e.g. FIFO, Weighted Average & Fixed Cost.
 
@@ -139,7 +139,7 @@ Watch tutorial video here: [Stock Maintain Stock Item](https://www.youtube.com/w
 
 1. **Stock** | **Maintain Stock Item** | **New**
 
-   ![25](../../static/img/usage/master-data/25.png)
+   ![maintain-stock-item](../../static/img/usage/master-data/maintain-stock-item.png)
 
 2. You can enter your **code** and **description**.
 
@@ -171,7 +171,7 @@ Watch tutorial video here: [Stock Maintain Stock Item](https://www.youtube.com/w
 
    I am selling blue pens, blue pens haves different packaging, I can sell by pcs, by box or by carton. Now, I can pre-set them this way:
 
-    ![26](../../static/img/usage/master-data/26.png)
+    ![maintain-stock-item-scenario](../../static/img/usage/master-data/maintain-stock-item-scenario.png)
 
    As you can see above, I have different Units of Measurement (UOM) and different rates,
 

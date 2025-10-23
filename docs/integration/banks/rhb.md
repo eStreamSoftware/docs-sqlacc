@@ -21,7 +21,6 @@ tags: ["SQL Account", "Integration", "Bank", "RHB", "Bank Reconciliation"]
 
    ![2](../../../static/img/integration/banks/rhb/2.png)
 
-
 ### Maintain Bank Account in SQL
 
 1. Select `GL menu` - > `Maintain Account`

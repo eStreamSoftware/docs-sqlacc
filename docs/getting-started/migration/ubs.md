@@ -79,11 +79,11 @@ Here are the step-by-step guide how to restore database from UBS:-
 2. Download 7 Zip to extract UBS Backup file,( if you want to Import Master File Only) or else you may restore to UBS program ( For price history and current transaction ).
 Download Path for [7 Zip](https://www.7-zip.org/download.html)
 
-:::caution
-  *Make sure install the right one or else you cannot find 7 zip to Extract.
-:::
+    :::caution
+      *Make sure install the right one or else you cannot find 7 zip to Extract.
+    :::
 
-  ![1](../../../static/img/getting-started/ubs/restore-step3.png)
+    ![1](../../../static/img/getting-started/ubs/restore-step3.png)
 
 3. After extract the backup file or restore the backup file then in SQL Account Software you have to Create New Database and logon into the new company.
 
@@ -131,7 +131,7 @@ Here are the step-by-step guide to importing master data:-
 
 1. Go to `File | Data Import | UBS Stock`.
 
-  ![7](../../../static/img/getting-started/ubs/importsmd-step1.png)
+    ![7](../../../static/img/getting-started/ubs/importsmd-step1.png)
 
 2. Select the UBS Stock database folder.
 
@@ -218,7 +218,7 @@ The following steps are required if you are importing opening balance or current
 - Old Version = Go to `Housekeeping | Run Setup | General Setting` (check when is the accounting period) then insert " Closing Period".
 - Sage UBS = Go to `Housekeeping | Setup | General Setup` (check when is the accounting period) then insert " Closing Period".
 
-**Scenario 1** : In UBS this accounting year = 01/01/2015 to 31/12/2015 if you want to cut off until 31/12/2015, so closing period you have to insert 12. __Scenario 2__ : In UBS this accounting year = 01/01/2015 to 31/12/2015 if you want to cut off until 30/06/2015, so closing period you have to insert 6.
+**Scenario 1** : In UBS this accounting year = 01/01/2015 to 31/12/2015 if you want to cut off until 31/12/2015, so closing period you have to insert 12. **Scenario 2** : In UBS this accounting year = 01/01/2015 to 31/12/2015 if you want to cut off until 30/06/2015, so closing period you have to insert 6.
 Then, go to `Periodic | Year End Closing`.
 
 :::info

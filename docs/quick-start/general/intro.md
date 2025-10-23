@@ -13,7 +13,7 @@ dataEntryList = {[
 {
   "text": "Setup Company Profile",
   "link": "./general/setup-company-profile",
-  "videoId": "X6VoYbmjQcQ"
+  "videoId": "uodxkyS9BsI"
 }
 ]}
 />

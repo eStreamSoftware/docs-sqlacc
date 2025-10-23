@@ -14,5 +14,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout
-    videoId="X6VoYbmjQcQ"
+    videoId="uodxkyS9BsI"
 />

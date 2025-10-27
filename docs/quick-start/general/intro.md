@@ -14,6 +14,11 @@ dataEntryList = {[
   "text": "Setup Company Profile",
   "link": "./general/setup-company-profile",
   "videoId": "uodxkyS9BsI"
+},
+{
+  "text": "Maintain Chart of Account",
+  "link": "./general/maintain-chart-of-account",
+  "videoId": "6NSxxbTCG6E"
 }
 ]}
 />

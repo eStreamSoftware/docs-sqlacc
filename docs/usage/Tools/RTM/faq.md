@@ -683,4 +683,3 @@ To Display Tax as 0.00 Instead of Blank:
       ![6](../../../../static/img/usage/tools/rtm-faq/6b.png)
 
    Once you completed, save the report and exit, then you may preview again your format outcome.
-   

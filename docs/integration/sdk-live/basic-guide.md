@@ -37,9 +37,9 @@ This is the "Bridge" direct live linking between External Program with SQL Accou
 
 ## Documentation
 
-[SQLSDK.zip](https://www.sql.com.my/document/SQLLink/SQLSDK.zip)
+[SQLSDK.zip-download to use](https://www.sql.com.my/document/SQLLink/SQLSDK.zip)
 
-[Steps-SDK.gif-a short video for steps](https://download.sql.com.my/customer/Fairy/Steps-SDK.gif)
+[Steps-SDK.gif-a short video for steps-watch to know the steps after downloading SQLSDK.zip](https://download.sql.com.my/customer/Fairy/Steps-SDK.gif)
 
 ## Linking Flow
 

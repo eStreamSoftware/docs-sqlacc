@@ -220,14 +220,14 @@ This function is to find record by selected field(s) and parameters....
 We had 4 Methods to Integrate/Link to SQL Accounting
 
 - [Restful API](https://wiki.sql.com.my/wiki/Restful_API) (Recommended - For two way communication & SQL Public Connect User)
-- [SDK Live](https://wiki.sql.com.my/wiki/SDK_Live) (Recommended - For two way communication)
+- [SDK Live](/integration/sdk-live/basic-guide#documentation) (Recommended - For two way communication)
 - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-XLS-MDB-import.md) - XLS, XLSX, Json & CSV/TXT File (Format 2 - Bar(|),Comma(,),Semi Comma(;),Tilde(~))
 - [SQL XML Import](../../miscellaneous/import-export-guide.md) - XML File
 - [SQL Text Import](../../miscellaneous/text-import.md) - CSV/TXT File (Format 1 - Semi Comma (;) Only)
 
 ### Choosing Method
 
-SQL Accounting had 3 Environment Setup & below is available method option  
+SQL Accounting had 3 Environment Setup & below is available method option
 
 1. Public Cloud ([SQL Public Connect](https://connect.sql.com.my/))
 

@@ -13,16 +13,16 @@ This guide will walk through generating `API Secret Key`, which allow the user t
 
 1. **Navigate to User Detail:**
 
-    Go to `Tools` > `Maintain User...` > `Detail` 
+    Go to `Tools` > `Maintain User...` > `Detail`
 
 2. **Select API Secret Key Option:**
 
     **Click** on `More` > `API Secret Key`
 
-    ![1](../../../static/img/integration/sql-account-api/generate-api-secret-key/1.png)   
+    ![1](../../../static/img/integration/sql-account-api/generate-api-secret-key/1.png)
 
 3. **Generate Secret Key:**
-    
+
     **Click** on `Generate API Secret Key`
 
     ![2](../../../static/img/integration/sql-account-api/generate-api-secret-key/2.png)
@@ -32,7 +32,7 @@ This guide will walk through generating `API Secret Key`, which allow the user t
     :::
 
 4. **Copy and Save Secret Key**
-    
+
     The API `Access Key` and `Secret Key` will displayed. Make sure to copy and save it immediately in a secure location.
 
     ![3](../../../static/img/integration/sql-account-api/generate-api-secret-key/3.png)
@@ -63,16 +63,16 @@ For a sample cURL request with AWSv4 authorization header, **click** on `Copy`.
 
     **Click** on `Import`, then select `postman_collection.json` file you downloaded to import.
 
-    ![postman-1](../../../static/img/integration/sql-account-api/generate-api-secret-key/postman-1.png)    
+    ![postman-1](../../../static/img/integration/sql-account-api/generate-api-secret-key/postman-1.png)
 
 3. **Update Access Key and Secret Key:**
 
     After postman collection imported, **navigate** to `Variables` tab. Then, **replace** the `your_access_key` and `your_secret Key` with the Access Key and Secret Key generated earlier.
 
-    ![postman-2](../../../static/img/integration/sql-account-api/generate-api-secret-key/postman-2.png) 
+    ![postman-2](../../../static/img/integration/sql-account-api/generate-api-secret-key/postman-2.png)
 
 4. **Test on API Endpoint**
 
     **Select** on `Agent` endpoint. Then, **click** on `Send` to try retrieve agent data from `SQL Account API Service` and the `Agent` json data list will show on response body.
 
-    ![postman-3](../../../static/img/integration/sql-account-api/generate-api-secret-key/postman-3.png) 
+    ![postman-3](../../../static/img/integration/sql-account-api/generate-api-secret-key/postman-3.png)

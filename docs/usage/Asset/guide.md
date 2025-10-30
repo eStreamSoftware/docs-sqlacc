@@ -259,26 +259,26 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/Asset/
 
 2. FA.ITEM.OPF (Maintain Asset Item)
 
-    | **Column**       | **Length**  | **Note**                                                                 |
-|-------------------|-------------|--------------------------------------------------------------------------|
-| **Code**          | 20          | Asset Code, e.g., FF-0001                                                |
-| **Description**   | 160         | Asset Description, e.g., Chairs, Table                                   |
-| **Asset Group**   | 20          | Asset Group, e.g., Furniture                                             |
-| **Agent**         | 10          | Assigned an agent if any                                                 |
-| **Area**          | 10          | Assigned an area if any                                                  |
-| **AcquireDate**   | Date        | Purchase date                                                            |
-| **Cost**          | Currency    | Purchase cost                                                            |
-| **UsefulLife**    | Float       | Useful life in years, e.g., 5 years, 3.3 years                           |
-| **DeprFrequency** | 1 (Integer) | Depreciation frequency options: 1 = Monthly, 2 = Quarterly, 3 = Half Yearly, 4 = Yearly |
-| **Residual**      | Float       | Resellable value                                                         |
+        | **Column**       | **Length**  | **Note**                                                                 |
+    |-------------------|-------------|--------------------------------------------------------------------------|
+    | **Code**          | 20          | Asset Code, e.g., FF-0001                                                |
+    | **Description**   | 160         | Asset Description, e.g., Chairs, Table                                   |
+    | **Asset Group**   | 20          | Asset Group, e.g., Furniture                                             |
+    | **Agent**         | 10          | Assigned an agent if any                                                 |
+    | **Area**          | 10          | Assigned an area if any                                                  |
+    | **AcquireDate**   | Date        | Purchase date                                                            |
+    | **Cost**          | Currency    | Purchase cost                                                            |
+    | **UsefulLife**    | Float       | Useful life in years, e.g., 5 years, 3.3 years                           |
+    | **DeprFrequency** | 1 (Integer) | Depreciation frequency options: 1 = Monthly, 2 = Quarterly, 3 = Half Yearly, 4 = Yearly |
+    | **Residual**      | Float       | Resellable value                                                         |
 
     - **Example**
 
-    | **Code**  | **Description**              | **Asset Group** | **Agent** | **Area** | **AcquireDate** | **Cost**   | **UsefulLife** | **DeprFrequency** | **Residual** |
-    |-----------|------------------------------|-----------------|-----------|----------|-----------------|------------|----------------|-------------------|--------------|
-    | FF-001    | Chairs                       | Furniture       | ----      | KL       | 13/10/2022      | 12,000.00  | 10             | 1 (Monthly)       | 100.00       |
-    | FF-002    | Meeting Table                | Furniture       | ----      | KL       | 23/01/20021     | 15,000.00  | 10             | 2 (Quarterly)     | 0.01         |
-    | MV-001    | TOYOTA VIOS 1.5 / RED        | MV              | YUKI      | SEL      | 17/03/2020      | 88,000.00  | 5              | 4 (Yearly)        | 30,000.00    |
+        | **Code**  | **Description**              | **Asset Group** | **Agent** | **Area** | **AcquireDate** | **Cost**   | **UsefulLife** | **DeprFrequency** | **Residual** |
+        |-----------|------------------------------|-----------------|-----------|----------|-----------------|------------|----------------|-------------------|--------------|
+        | FF-001    | Chairs                       | Furniture       | ----      | KL       | 13/10/2022      | 12,000.00  | 10             | 1 (Monthly)       | 100.00       |
+        | FF-002    | Meeting Table                | Furniture       | ----      | KL       | 23/01/20021     | 15,000.00  | 10             | 2 (Quarterly)     | 0.01         |
+        | MV-001    | TOYOTA VIOS 1.5 / RED        | MV              | YUKI      | SEL      | 17/03/2020      | 88,000.00  | 5              | 4 (Yearly)        | 30,000.00    |
 
 3. FA.ITEM.OPF.DeprSche (Maintain Asset item-Depreciation Schedule)
 

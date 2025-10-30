@@ -231,7 +231,7 @@ After Saving, you should see all your customer's information on this screen
 
 ![custCreditControl](../../../static/img/usage/customer/customerBasicGuide/cust-credit-control.png)
 
->IMPORTANT : 
+>IMPORTANT :
 >
 >1. Depends on the user access rights to the Customer Credit Control.
 >2. Override credit limit can be granted in the user access control.

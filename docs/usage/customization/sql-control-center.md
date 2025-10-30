@@ -98,7 +98,7 @@ This Customisation is to calculate/maintain the Point/Bonus
       - Point Rate can be calculate by Amount and/or Qty
       - Able to Claim like Voucher as Discount
       - Able to Claim Item
-      - Claim Point Rate can be change runtime  
+      - Claim Point Rate can be change runtime
 
 * Cons
       - Unable to handle the cancel & Delete Invoice - Manually deduct the point using Update Button on Extra DO
@@ -452,7 +452,7 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 
 9. Copy below script & paste to the Right Panel (Script Section).
 
-    ```vb
+        ```vb
     begin
         if SameText(EditingField, 'ItemCode')or
           SameText(EditingField, 'UDF_mUnitPrice') then begin
@@ -461,7 +461,7 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 
         end;
     end.
-    ```
+        ```
 
 10. Click Save button.
 
@@ -494,13 +494,15 @@ Avoid update the same existing field name Unit Price. You have to create differe
 * UDF_Price in Sales Documents (eg. sales invoice).
 * Purpose is:
 
-```bash
+      ```bash
 
- Get UDF_PCS & UDF_CTN from Maintain Item to Sales Invoice Detail UDF_Price
- # If selected itemcode UOM is PCS then use UDF_PCS
- # if selected itemcode UOM is CTN then use UDF_CTN 
- # if selected itemcode UOM not PCS or CTN then default is 1 
-```
+  Get UDF_PCS & UDF_CTN from Maintain Item to Sales Invoice Detail UDF_Price
+
+   If selected itemcode UOM is PCS then use UDF_PCS
+   if selected itemcode UOM is CTN then use UDF_CTN
+   if selected itemcode UOM not PCS or CTN then default is 1
+
+      ```
 
 * Calculation for Unit Price := UDF_Price * UDF_Rate
 
@@ -585,7 +587,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
 
 9. Copy below script & paste to the Right Panel (Script Section).
 
-    ```bash
+        ```bash
     var FComServer, lBizObj : Variant;
         cdsData : TClientDataSet;
 
@@ -632,7 +634,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
         end;
       end;
     end.
-    ```
+       ```
 
 10. Click Save button.
 
@@ -693,7 +695,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
 
 9. Copy below script & paste to the Right Panel (Script Section).
 
-    ```bash
+        ```bash
     var FComServer, lBizObj : Variant;
         C : TComponent;
         T : TTimer;
@@ -703,7 +705,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
 
     function ComServer: Variant;
     begin
-      if FComServer = Null then 
+      if FComServer = Null then
         FComServer := CreateOleObject('SQLAcc.BizApp');
       Result := FComServer;
     end;
@@ -740,7 +742,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
         DocInfo;
         L2.Caption := '';
         try
-          L2.Caption := FormatCurr('#,0.00;-#,0.00', cdsTemp.FindField('OS').AsFloat); 
+          L2.Caption := FormatCurr('#,0.00;-#,0.00', cdsTemp.FindField('OS').AsFloat);
         finally
           cdsTemp.Free;
         end;
@@ -776,7 +778,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
         end;
       end;
     end.
-    ```
+        ```
 
 10. Click Save button.
 

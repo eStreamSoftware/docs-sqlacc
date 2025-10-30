@@ -64,8 +64,8 @@ Fixed Unable to save Invoice if document is transfer from other Document
 
 ## Modules Required
 
-* DIY Script
-* DIY Field
+- DIY Script
+- DIY Field
 
 ## Settings
 

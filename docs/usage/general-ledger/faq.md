@@ -6,7 +6,7 @@ slug: /usage/general-ledger/faq
 tags: ["SQL Account", "Usage"]
 ---
 
-## Trial balance not tally in YTD
+## Trial balance not tally in YTD(Year To Date)
 
 **Issue:**
 
@@ -67,7 +67,7 @@ Please make sure you have the following add-on modules:
 
    ![6](../../../static/img/usage/general-ledger/glfaq/dep-fixed-asset-step1.png)
 
-### The Next Year
+### For The Next Year
 
 1. **GL > Journal Entry**. Open the journal entry of depreciation in year 2015
 

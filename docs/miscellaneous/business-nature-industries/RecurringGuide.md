@@ -543,7 +543,7 @@ Make sure the **UDF_PostDN** Default is Set to **False** else will double postin
 :::
 
 :::success  NOTE:
-The Age calculate to System Working Date. 
+The Age calculate to System Working Date.
 
 The UnitPrice is round to 4 Decimal Point.
 

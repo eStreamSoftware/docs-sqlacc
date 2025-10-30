@@ -6,7 +6,7 @@ slug: /usage/general-ledger/report
 tags: ["SQL Account", "Usage"]
 ---
 
-## Ledger Report (add)
+## Ledger Report
 
 1. Go to **GL** > **Print Ledger Report** > Select your date
 2. Filter by account, project, area, agent (optional)
@@ -72,7 +72,7 @@ tags: ["SQL Account", "Usage"]
 
    4. **Show Column Options** – refer Balance Sheet
 
-5.**Apply**
+5. **Apply**
 
    ![3](../../../static/img/usage/general-ledger/glreport/pnl-state.png)
 

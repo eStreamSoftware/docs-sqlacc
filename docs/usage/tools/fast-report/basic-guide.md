@@ -620,7 +620,7 @@ Below is Example are doing following action
     var V : Variant;
     begin
       V := Null;
-      if Trim(<Document_Detail."FromDocType">) <> '' then                                      
+      if Trim(<Document_Detail."FromDocType">) <> '' then
         V := CacheQuery_GetValue(pSL_QT, [<Document_Detail."FromDtlKey">], 'DocDate');
 
       if not VarIsNull(V) then
@@ -2099,245 +2099,244 @@ Avoid use following character
 
   <summary>Sample E-Mail Template (Version 1.2021.196.166 & above) - click to expand</summary>
 
-  ```pascal
-  <?xml version="1.0" standalone="yes"?> <DATAPACKET Version="2.0">
+      ```pascal
+      <?xml version="1.0" standalone="yes"?> <DATAPACKET Version="2.0">
 
-  <METADATA>
-    <FIELDS>
-      <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-      <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-      <FIELD attrname="NAME" fieldtype="string.uni" WIDTH="320"/>
-      <FIELD attrname="NAME2" fieldtype="string.uni" WIDTH="320"/>
-      <FIELD attrname="GENDER" fieldtype="string.uni" required="true" WIDTH="2"/>
-      <FIELD attrname="DOB" fieldtype="date"/>
-      <FIELD attrname="ADDRESS1" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="ADDRESS2" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="ADDRESS3" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="ADDRESS4" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="PHONE1" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="PHONE2" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="MOBILE" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="EMAIL" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="NEWIC" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="OLDIC" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="PASSPORT" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="IMMIGRATIONNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="BRANCH" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="HRGROUP" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="DEPARTMENT" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="CATEGORY" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="PROJECT" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="JOB" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="TASK" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="NATIONALITY" fieldtype="string.uni" required="true" WIDTH="4"/>
-      <FIELD attrname="RACE" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="CALENDAR" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="oISMANAGER" fieldtype="i2"/>
-      <FIELD attrname="oMGRAPPROVAL" fieldtype="i2"/>
-      <FIELD attrname="oMGRREVIEW" fieldtype="i2"/>
-      <FIELD attrname="JOBTITLE" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="JOINDATE" fieldtype="date"/>
-      <FIELD attrname="CONFIRMDATE" fieldtype="date"/>
-      <FIELD attrname="RESIGNDATE" fieldtype="date"/>
-      <FIELD attrname="RESIGNATTR" fieldtype="i4"/>
-      <FIELD attrname="MARITALSTATUS" fieldtype="string.uni" WIDTH="2"/>
-      <FIELD attrname="oISACTIVE" fieldtype="i2"/>
-      <FIELD attrname="WAGESTYPE" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="WAGES" fieldtype="fixedFMT" DECIMALS="4" WIDTH="18"/>
-      <FIELD attrname="CONTRIB" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="FREQUENCY" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="PAYMENTMETHOD" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="BANK" fieldtype="string.uni" WIDTH="12"/>
-      <FIELD attrname="BANKACCNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="EPFNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="NK" fieldtype="string.uni" WIDTH="2"/>
-      <FIELD attrname="INITIAL" fieldtype="string.uni" WIDTH="6"/>
-      <FIELD attrname="SOCSONO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="SOCSOTYPE" fieldtype="i4"/>
-      <FIELD attrname="EISTYPE" fieldtype="i4"/>
-      <FIELD attrname="EISCATEGORY" fieldtype="i4"/>
-      <FIELD attrname="TAXCATEGORY" fieldtype="string.uni" WIDTH="20"/>
-      <FIELD attrname="TAXBRANCH" fieldtype="string.uni" WIDTH="80"/>
-      <FIELD attrname="TAXNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="oDISABLED" fieldtype="i2"/>
-      <FIELD attrname="oTAXRESIDENT" fieldtype="i2"/>
-      <FIELD attrname="EASERIALNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="THNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="SPOUSENAME" fieldtype="string.uni" WIDTH="320"/>
-      <FIELD attrname="SPOUSEADDRESS1" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="SPOUSEADDRESS2" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="SPOUSEADDRESS3" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="SPOUSEADDRESS4" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="SPOUSEPHONE1" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="SPOUSEPHONE2" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="SPOUSEMOBILE" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="SPOUSETAXBRANCH" fieldtype="string.uni" WIDTH="80"/>
-      <FIELD attrname="SPOUSETAXNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="SPOUSEICNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="oSPOUSEWORKING" fieldtype="i2"/>
-      <FIELD attrname="oSPOUSEDISABLED" fieldtype="i2"/>
-      <FIELD attrname="LEAVEGROUP" fieldtype="string.uni" required="true" WIDTH="40"/>
-      <FIELD attrname="PHOTO" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-      <FIELD attrname="NOTE" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-      <FIELD attrname="ATTACHMENTS" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-      <FIELD attrname="ROWVER" fieldtype="i4"/>
-      <FIELD attrname="DocNoSetKey" fieldtype="i8"/>
-      <FIELD attrname="Disabled" fieldtype="boolean"/>
-      <FIELD attrname="TaxResident" fieldtype="boolean"/>
-      <FIELD attrname="SpouseWorking" fieldtype="boolean"/>
-      <FIELD attrname="SpouseDisabled" fieldtype="boolean"/>
-      <FIELD attrname="IsActive" fieldtype="boolean"/>
-      <FIELD attrname="IsManager" fieldtype="boolean"/>
-      <FIELD attrname="MgrApproval" fieldtype="boolean"/>
-      <FIELD attrname="MgrReview" fieldtype="boolean"/>
-      <FIELD attrname="OverrideTaxCategory" fieldtype="boolean"/>
-      <FIELD attrname="SysCalcTaxCategory" fieldtype="string.uni" WIDTH="20"/>
-      <FIELD attrname="LeaveMY" fieldtype="boolean"/>
-      <FIELD attrname="Dirty" fieldtype="boolean"/>
-      <FIELD attrname="TaxBenefit" fieldtype="nested">
-        <FIELDS>
-          <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-          <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-          <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
-          <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-          <FIELD attrname="REF1" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="REF2" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="AMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
-          <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
-          <FIELD attrname="DATEFROM" fieldtype="date"/>
-          <FIELD attrname="DATETO" fieldtype="date"/>
-          <FIELD attrname="ROWVER" fieldtype="i4"/>
-          <FIELD attrname="PCB" fieldtype="boolean"/>
-        </FIELDS>
-        <PARAMS/>
-      </FIELD>
-      <FIELD attrname="Claim" fieldtype="nested">
-        <FIELDS>
-          <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-          <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-          <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
-          <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-          <FIELD attrname="YEARLYLIMIT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
-          <FIELD attrname="MONTHLYLIMIT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
-          <FIELD attrname="ROWVER" fieldtype="i4"/>
-        </FIELDS>
-        <PARAMS/>
-      </FIELD>
-      <FIELD attrname="Manager" fieldtype="nested">
-        <FIELDS>
-          <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-          <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-          <FIELD attrname="BRANCH" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="DEPARTMENT" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="ROWVER" fieldtype="i4"/>
-        </FIELDS>
-        <PARAMS/>
-      </FIELD>
-      <FIELD attrname="History" fieldtype="nested">
-        <FIELDS>
-          <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-          <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-          <FIELD attrname="POSTDATE" fieldtype="date" required="true"/>
-          <FIELD attrname="HISTORYTYPE" fieldtype="string.uni" required="true" WIDTH="40"/>
-          <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-          <FIELD attrname="ROWVER" fieldtype="i4"/>
-        </FIELDS>
-        <PARAMS/>
-      </FIELD>
-      <FIELD attrname="Child" fieldtype="nested">
+      <METADATA>
         <FIELDS>
           <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
           <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
           <FIELD attrname="NAME" fieldtype="string.uni" WIDTH="320"/>
+          <FIELD attrname="NAME2" fieldtype="string.uni" WIDTH="320"/>
+          <FIELD attrname="GENDER" fieldtype="string.uni" required="true" WIDTH="2"/>
           <FIELD attrname="DOB" fieldtype="date"/>
-          <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="1" WIDTH="9"/>
-          <FIELD attrname="TAXCODE" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="ADDRESS1" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS2" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS3" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS4" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="PHONE1" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="PHONE2" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="MOBILE" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="EMAIL" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="NEWIC" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="OLDIC" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="PASSPORT" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="IMMIGRATIONNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="BRANCH" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="HRGROUP" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="DEPARTMENT" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="CATEGORY" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="PROJECT" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="JOB" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="TASK" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="NATIONALITY" fieldtype="string.uni" required="true" WIDTH="4"/>
+          <FIELD attrname="RACE" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="CALENDAR" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="oISMANAGER" fieldtype="i2"/>
+          <FIELD attrname="oMGRAPPROVAL" fieldtype="i2"/>
+          <FIELD attrname="oMGRREVIEW" fieldtype="i2"/>
+          <FIELD attrname="JOBTITLE" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="JOINDATE" fieldtype="date"/>
+          <FIELD attrname="CONFIRMDATE" fieldtype="date"/>
+          <FIELD attrname="RESIGNDATE" fieldtype="date"/>
+          <FIELD attrname="RESIGNATTR" fieldtype="i4"/>
+          <FIELD attrname="MARITALSTATUS" fieldtype="string.uni" WIDTH="2"/>
+          <FIELD attrname="oISACTIVE" fieldtype="i2"/>
+          <FIELD attrname="WAGESTYPE" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="WAGES" fieldtype="fixedFMT" DECIMALS="4" WIDTH="18"/>
+          <FIELD attrname="CONTRIB" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="FREQUENCY" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="PAYMENTMETHOD" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="BANK" fieldtype="string.uni" WIDTH="12"/>
+          <FIELD attrname="BANKACCNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="EPFNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="NK" fieldtype="string.uni" WIDTH="2"/>
+          <FIELD attrname="INITIAL" fieldtype="string.uni" WIDTH="6"/>
+          <FIELD attrname="SOCSONO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="SOCSOTYPE" fieldtype="i4"/>
+          <FIELD attrname="EISTYPE" fieldtype="i4"/>
+          <FIELD attrname="EISCATEGORY" fieldtype="i4"/>
+          <FIELD attrname="TAXCATEGORY" fieldtype="string.uni" WIDTH="20"/>
+          <FIELD attrname="TAXBRANCH" fieldtype="string.uni" WIDTH="80"/>
+          <FIELD attrname="TAXNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="oDISABLED" fieldtype="i2"/>
+          <FIELD attrname="oTAXRESIDENT" fieldtype="i2"/>
+          <FIELD attrname="EASERIALNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="THNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="SPOUSENAME" fieldtype="string.uni" WIDTH="320"/>
+          <FIELD attrname="SPOUSEADDRESS1" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="SPOUSEADDRESS2" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="SPOUSEADDRESS3" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="SPOUSEADDRESS4" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="SPOUSEPHONE1" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="SPOUSEPHONE2" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="SPOUSEMOBILE" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="SPOUSETAXBRANCH" fieldtype="string.uni" WIDTH="80"/>
+          <FIELD attrname="SPOUSETAXNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="SPOUSEICNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="oSPOUSEWORKING" fieldtype="i2"/>
+          <FIELD attrname="oSPOUSEDISABLED" fieldtype="i2"/>
+          <FIELD attrname="LEAVEGROUP" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="PHOTO" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+          <FIELD attrname="NOTE" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+          <FIELD attrname="ATTACHMENTS" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
           <FIELD attrname="ROWVER" fieldtype="i4"/>
-          <FIELD attrname="NumOfChildren" fieldtype="fixed" DECIMALS="4" WIDTH="32"/>
+          <FIELD attrname="DocNoSetKey" fieldtype="i8"/>
+          <FIELD attrname="Disabled" fieldtype="boolean"/>
+          <FIELD attrname="TaxResident" fieldtype="boolean"/>
+          <FIELD attrname="SpouseWorking" fieldtype="boolean"/>
+          <FIELD attrname="SpouseDisabled" fieldtype="boolean"/>
+          <FIELD attrname="IsActive" fieldtype="boolean"/>
+          <FIELD attrname="IsManager" fieldtype="boolean"/>
+          <FIELD attrname="MgrApproval" fieldtype="boolean"/>
+          <FIELD attrname="MgrReview" fieldtype="boolean"/>
+          <FIELD attrname="OverrideTaxCategory" fieldtype="boolean"/>
+          <FIELD attrname="SysCalcTaxCategory" fieldtype="string.uni" WIDTH="20"/>
+          <FIELD attrname="LeaveMY" fieldtype="boolean"/>
+          <FIELD attrname="Dirty" fieldtype="boolean"/>
+          <FIELD attrname="TaxBenefit" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="REF1" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="REF2" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="AMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
+              <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
+              <FIELD attrname="DATEFROM" fieldtype="date"/>
+              <FIELD attrname="DATETO" fieldtype="date"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+              <FIELD attrname="PCB" fieldtype="boolean"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Claim" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="YEARLYLIMIT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
+              <FIELD attrname="MONTHLYLIMIT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Manager" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="BRANCH" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="DEPARTMENT" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="History" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="POSTDATE" fieldtype="date" required="true"/>
+              <FIELD attrname="HISTORYTYPE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Child" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="NAME" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="DOB" fieldtype="date"/>
+              <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="1" WIDTH="9"/>
+              <FIELD attrname="TAXCODE" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+              <FIELD attrname="NumOfChildren" fieldtype="fixed" DECIMALS="4" WIDTH="32"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Deduction" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="DEDUCTIONTYPE" fieldtype="i4"/>
+              <FIELD attrname="DEDUCTIONATTR" fieldtype="i4"/>
+              <FIELD attrname="WORKUNIT" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
+              <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
+              <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
+              <FIELD attrname="DATEFROM" fieldtype="date"/>
+              <FIELD attrname="DATETO" fieldtype="date"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+              <FIELD attrname="EPF" fieldtype="boolean"/>
+              <FIELD attrname="SOCSO" fieldtype="boolean"/>
+              <FIELD attrname="PCB" fieldtype="boolean"/>
+              <FIELD attrname="OT" fieldtype="boolean"/>
+              <FIELD attrname="EA" fieldtype="boolean"/>
+              <FIELD attrname="HRDF" fieldtype="boolean"/>
+              <FIELD attrname="PA" fieldtype="boolean"/>
+              <FIELD attrname="EIS" fieldtype="boolean"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Allowance" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="ALLOWANCETYPE" fieldtype="i4"/>
+              <FIELD attrname="WORKUNIT" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
+              <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
+              <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
+              <FIELD attrname="TAXCODE" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="DATEFROM" fieldtype="date"/>
+              <FIELD attrname="DATETO" fieldtype="date"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+              <FIELD attrname="EPF" fieldtype="boolean"/>
+              <FIELD attrname="SOCSO" fieldtype="boolean"/>
+              <FIELD attrname="PCB" fieldtype="boolean"/>
+              <FIELD attrname="OT" fieldtype="boolean"/>
+              <FIELD attrname="EA" fieldtype="boolean"/>
+              <FIELD attrname="HRDF" fieldtype="boolean"/>
+              <FIELD attrname="PA" fieldtype="boolean"/>
+              <FIELD attrname="EIS" fieldtype="boolean"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
         </FIELDS>
-        <PARAMS/>
-      </FIELD>
-      <FIELD attrname="Deduction" fieldtype="nested">
-        <FIELDS>
-          <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-          <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-          <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
-          <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-          <FIELD attrname="DEDUCTIONTYPE" fieldtype="i4"/>
-          <FIELD attrname="DEDUCTIONATTR" fieldtype="i4"/>
-          <FIELD attrname="WORKUNIT" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
-          <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
-          <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
-          <FIELD attrname="DATEFROM" fieldtype="date"/>
-          <FIELD attrname="DATETO" fieldtype="date"/>
-          <FIELD attrname="ROWVER" fieldtype="i4"/>
-          <FIELD attrname="EPF" fieldtype="boolean"/>
-          <FIELD attrname="SOCSO" fieldtype="boolean"/>
-          <FIELD attrname="PCB" fieldtype="boolean"/>
-          <FIELD attrname="OT" fieldtype="boolean"/>
-          <FIELD attrname="EA" fieldtype="boolean"/>
-          <FIELD attrname="HRDF" fieldtype="boolean"/>
-          <FIELD attrname="PA" fieldtype="boolean"/>
-          <FIELD attrname="EIS" fieldtype="boolean"/>
-        </FIELDS>
-        <PARAMS/>
-      </FIELD>
-      <FIELD attrname="Allowance" fieldtype="nested">
-        <FIELDS>
-          <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-          <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-          <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
-          <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-          <FIELD attrname="ALLOWANCETYPE" fieldtype="i4"/>
-          <FIELD attrname="WORKUNIT" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
-          <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
-          <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
-          <FIELD attrname="TAXCODE" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="DATEFROM" fieldtype="date"/>
-          <FIELD attrname="DATETO" fieldtype="date"/>
-          <FIELD attrname="ROWVER" fieldtype="i4"/>
-          <FIELD attrname="EPF" fieldtype="boolean"/>
-          <FIELD attrname="SOCSO" fieldtype="boolean"/>
-          <FIELD attrname="PCB" fieldtype="boolean"/>
-          <FIELD attrname="OT" fieldtype="boolean"/>
-          <FIELD attrname="EA" fieldtype="boolean"/>
-          <FIELD attrname="HRDF" fieldtype="boolean"/>
-          <FIELD attrname="PA" fieldtype="boolean"/>
-          <FIELD attrname="EIS" fieldtype="boolean"/>
-        </FIELDS>
-        <PARAMS/>
-      </FIELD>
-    </FIELDS>
-    <PARAMS MD_SEMANTICS="3">
-      <PARAM Name="KeyField" Value="QXV0b0tleQ==" Roundtrip="True"/>
-      <PARAM Name="CanInsert" Value="TRUE" Type="boolean" Roundtrip="True"/>
-      <PARAM Name="CanEdit" Value="TRUE" Type="boolean" Roundtrip="True"/>
-      <PARAM Name="CanDelete" Value="TRUE" Type="boolean" Roundtrip="True"/>
-      <PARAM Name="ID" Value="SFJfRU1Q" Roundtrip="True"/>
-      <PARAM Name="DatabaseBrand" Value="RmlyZWJpcmQ=" Roundtrip="True"/>
-      <PARAM Name="Dummy_0" Value="0" Type="i4"/>
-      <PARAM Name="Dummy_1" Value="0" Type="i4"/>
-    </PARAMS>
-  </METADATA>
-  <ROWDATA>
-    <ROW AUTOKEY="34" CODE="EMAIL" NAME="Version 1.2021.196.166 & above" NAME2="" GENDER="M" ADDRESS1="" ADDRESS2="" ADDRESS3="" ADDRESS4="" PHONE1="" PHONE2="" MOBILE="" EMAIL="" BRANCH="----" HRGROUP="----" DEPARTMENT="----" CATEGORY="----" PROJECT="----" JOB="----" TASK="----" NATIONALITY="MY" RACE="----" CALENDAR="----" oISMANAGER="0" oMGRAPPROVAL="0" oMGRREVIEW="0" JOBTITLE="" RESIGNATTR="0" MARITALSTATUS="S" oISACTIVE="0" WAGESTYPE="----" WAGES="0.0000" CONTRIB="----" FREQUENCY="----" PAYMENTMETHOD="----" SOCSOTYPE="1" EISTYPE="1" EISCATEGORY="0" oDISABLED="0" oTAXRESIDENT="1" oSPOUSEWORKING="0" oSPOUSEDISABLED="0" LEAVEGROUP="----" NOTE="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMjI2MjF9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE0IFtVc2VOYW1lMl1ccGFyDQowXHBhcg0KXHBhcg0KW0dsb2JhbFBhc3N3b3JkXVxwYXINClVzZU5hbWVJQ1Bhc3NccGFyDQpccGFyDQpccGFyDQpbUHJpdmF0ZVBhc3N3b3JkXVxwYXINCkVtcGxveWVlQ29kZT1QYXNzd29yZFxwYXINClxwYXINCltDQ11ccGFyDQpccGFyDQpbQkNDXVxwYXINClxwYXINCltQREZGaWxlTmFtZV1ccGFyDQpFQS08RW1wbG95ZWUuQ29kZT4tR2V0VGl0bGVccGFyDQpccGFyDQpbU3ViamVjdF1ccGFyDQpccGFyDQpccGFyDQpbQm9keV1ccGFyDQpEZWFyIDxFbXBsb3llZS5OYW1lPixccGFyDQpUaGlzIGlzIHlyIHNhbGFyeSBHZXRNb250aFxwYXINCkdldFRpdGxlXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciAuLi5ccGFyDQpccGFyDQpCZXN0IFJlZ2FyZHMsXHBhcg0KPFByb2ZpbGUuQ29tcGFueU5hbWU+XHBhcg0KfQ0KAA==" ROWVER="6" Disabled="FALSE" TaxResident="TRUE" SpouseWorking="FALSE" SpouseDisabled="FALSE" IsActive="FALSE" IsManager="FALSE" MgrApproval="FALSE" MgrReview="FALSE" OverrideTaxCategory="FALSE" LeaveMY="FALSE" Dirty="FALSE">
-      <TaxBenefit/>
-      <Claim/>
-      <Manager/>
-      <History/>
-      <Child/>
-      <Deduction/>
-      <Allowance/>
-    </ROW>
-  </ROWDATA>
-  </DATAPACKET> </syntaxhighlight>
-  ```
+        <PARAMS MD_SEMANTICS="3">
+          <PARAM Name="KeyField" Value="QXV0b0tleQ==" Roundtrip="True"/>
+          <PARAM Name="CanInsert" Value="TRUE" Type="boolean" Roundtrip="True"/>
+          <PARAM Name="CanEdit" Value="TRUE" Type="boolean" Roundtrip="True"/>
+          <PARAM Name="CanDelete" Value="TRUE" Type="boolean" Roundtrip="True"/>
+          <PARAM Name="ID" Value="SFJfRU1Q" Roundtrip="True"/>
+          <PARAM Name="DatabaseBrand" Value="RmlyZWJpcmQ=" Roundtrip="True"/>
+          <PARAM Name="Dummy_0" Value="0" Type="i4"/>
+          <PARAM Name="Dummy_1" Value="0" Type="i4"/>
+        </PARAMS>
+      </METADATA>
+      <ROWDATA>
+        <ROW AUTOKEY="34" CODE="EMAIL" NAME="Version 1.2021.196.166 & above" NAME2="" GENDER="M" ADDRESS1="" ADDRESS2="" ADDRESS3="" ADDRESS4="" PHONE1="" PHONE2="" MOBILE="" EMAIL="" BRANCH="----" HRGROUP="----" DEPARTMENT="----" CATEGORY="----" PROJECT="----" JOB="----" TASK="----" NATIONALITY="MY" RACE="----" CALENDAR="----" oISMANAGER="0" oMGRAPPROVAL="0" oMGRREVIEW="0" JOBTITLE="" RESIGNATTR="0" MARITALSTATUS="S" oISACTIVE="0" WAGESTYPE="----" WAGES="0.0000" CONTRIB="----" FREQUENCY="----" PAYMENTMETHOD="----" SOCSOTYPE="1" EISTYPE="1" EISCATEGORY="0" oDISABLED="0" oTAXRESIDENT="1" oSPOUSEWORKING="0" oSPOUSEDISABLED="0" LEAVEGROUP="----" NOTE="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMjI2MjF9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE0IFtVc2VOYW1lMl1ccGFyDQowXHBhcg0KXHBhcg0KW0dsb2JhbFBhc3N3b3JkXVxwYXINClVzZU5hbWVJQ1Bhc3NccGFyDQpccGFyDQpccGFyDQpbUHJpdmF0ZVBhc3N3b3JkXVxwYXINCkVtcGxveWVlQ29kZT1QYXNzd29yZFxwYXINClxwYXINCltDQ11ccGFyDQpccGFyDQpbQkNDXVxwYXINClxwYXINCltQREZGaWxlTmFtZV1ccGFyDQpFQS08RW1wbG95ZWUuQ29kZT4tR2V0VGl0bGVccGFyDQpccGFyDQpbU3ViamVjdF1ccGFyDQpccGFyDQpccGFyDQpbQm9keV1ccGFyDQpEZWFyIDxFbXBsb3llZS5OYW1lPixccGFyDQpUaGlzIGlzIHlyIHNhbGFyeSBHZXRNb250aFxwYXINCkdldFRpdGxlXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciAuLi5ccGFyDQpccGFyDQpCZXN0IFJlZ2FyZHMsXHBhcg0KPFByb2ZpbGUuQ29tcGFueU5hbWU+XHBhcg0KfQ0KAA==" ROWVER="6" Disabled="FALSE" TaxResident="TRUE" SpouseWorking="FALSE" SpouseDisabled="FALSE" IsActive="FALSE" IsManager="FALSE" MgrApproval="FALSE" MgrReview="FALSE" OverrideTaxCategory="FALSE" LeaveMY="FALSE" Dirty="FALSE">
+          <TaxBenefit/>
+          <Claim/>
+          <Manager/>
+          <History/>
+          <Child/>
+          <Deduction/>
+          <Allowance/>
+        </ROW>
+      </ROWDATA>
+      </DATAPACKET> </syntaxhighlight>
+      ```
 
-  </details>
+      </details>
 
 3. Click **More | Paste Employee**
 4. Make sure Code is **EMAIL**
-
 5. Click **Save** after done change the
 
 - E-Mail Subject/Content/Body & other fields (Version 1.2020.182.158 & above)

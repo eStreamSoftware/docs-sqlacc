@@ -36,11 +36,11 @@ If the provider requests a reason, you can explain that you intend to host a ser
 
 1. On `Logon Screen` > **Click** `⚙️`
 
-   ![logon screen setting](../../../static/img/sql-mobile-connect/on-premise-setup/1.png)
+   ![logon screen setting](../../../static/img/integration/sql-mobile-connect/on-premise-setup/1.png)
 
 2. **Right-Click** on company database > **Select** `Configure Mobile Connect...`
 
-   ![configure mobile connect](../../../static/img/sql-mobile-connect/on-premise-setup/2.png)
+   ![configure mobile connect](../../../static/img/integration/sql-mobile-connect/on-premise-setup/2.png)
 
 3. **Click** on `Install` to install mobile connect service
 
@@ -48,13 +48,13 @@ If the provider requests a reason, you can explain that you intend to host a ser
    A default host name will be filled in. However, if you would like to use a custom host name, you may edit the default. Note that changing hostname is only available during the initial setup. (Host name should have **at least 8 characters**)
    :::
 
-   ![install mobile connect](../../../static/img/sql-mobile-connect/on-premise-setup/3.png)
+   ![install mobile connect](../../../static/img/integration/sql-mobile-connect/on-premise-setup/3.png)
 
 ### Step 2 - Start Service
 
 After the installation, start the service. Once successful, `Service is running` status will show on screen.
 
-![service running](../../../static/img/sql-mobile-connect/on-premise-setup/4.png)
+![service running](../../../static/img/integration/sql-mobile-connect/on-premise-setup/4.png)
 
 ### Step 3 - Port Forwarding
 
@@ -63,7 +63,7 @@ Next, we will need to do `Port Forwarding`.
 :::info[Port Forwarding Information]
 You can **Click** on `Show Tips` to find all the information for port forwarding configuration.
 
-![show tips](../../../static/img/sql-mobile-connect/on-premise-setup/5.png)
+![show tips](../../../static/img/integration/sql-mobile-connect/on-premise-setup/5.png)
 :::
 
 1. **Access Router Setting**: Login to the router's administration interface on web browser.
@@ -74,7 +74,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
    If you are using a firewall or serving the router's web administration interface via a different IP address, this might not work.
     :::
 
-   ![router gateway](../../../static/img/sql-mobile-connect/on-premise-setup/6.png)
+   ![router gateway](../../../static/img/integration/sql-mobile-connect/on-premise-setup/6.png)
 
 2. **Navigate to Port Forwarding Section**: Find `Port Forwarding`, `Virtual Service` or similar section in the router's setting.
 
@@ -89,7 +89,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
 
 5. **Verify**: **Click** on `Test Connection` to test `SQL Mobile Connect` access status. When `✅ OK` status is shown, it means the service is setup successfully.
 
-   ![alt text](../../../static/img/sql-mobile-connect/on-premise-setup/7.png)
+   ![alt text](../../../static/img/integration/sql-mobile-connect/on-premise-setup/7.png)
 
 #### Examples of Port Forward
 
@@ -97,7 +97,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
 
 1. Navigate to `Advanced` > `NAT Forwarding` > `Virtual Servers`, click `Add` to create a new entry.
 
-   ![c1200-1](../../../static/img/sql-mobile-connect/on-premise-setup/C1200-1.png)
+   ![c1200-1](../../../static/img/integration/sql-mobile-connect/on-premise-setup/C1200-1.png)
 
 2. Fill in the details following the [Port Forwarding Information](#step-3---port-forwarding):
 
@@ -109,7 +109,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
     |Internal Port|Internal Port|
     |Protocol|Protocol|
 
-   ![c1200-2](../../../static/img/sql-mobile-connect/on-premise-setup/C1200-2.png)
+   ![c1200-2](../../../static/img/integration/sql-mobile-connect/on-premise-setup/C1200-2.png)
 
 3. Click `OK`.
 
@@ -117,7 +117,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
 
 1. Navigate to `Advanced` > `NAT Forwarding` > `Port Forwarding`, click `Add` to create a new entry.
 
-   ![ax3000-1](../../../static/img/sql-mobile-connect/on-premise-setup/AX3000-1.png)
+   ![ax3000-1](../../../static/img/integration/sql-mobile-connect/on-premise-setup/AX3000-1.png)
 
 2. Fill in the details following the [Port Forwarding Information](#step-3---port-forwarding):
 
@@ -129,7 +129,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
     |Internal Port|Internal Port|
     |Protocol|Protocol|
 
-   ![ax3000-2](../../../static/img/sql-mobile-connect/on-premise-setup/AX3000-2.png)
+   ![ax3000-2](../../../static/img/integration/sql-mobile-connect/on-premise-setup/AX3000-2.png)
 
 3. Click `Save`.
 
@@ -137,7 +137,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
 
 1. Navigate to `⚙️` > `Forward Rules` > `IPv4 Port Mapping`, click `New` to create a new entry.
 
-   ![HG8145X6-1](../../../static/img/sql-mobile-connect/on-premise-setup/HG8145X6-1.png)
+   ![HG8145X6-1](../../../static/img/integration/sql-mobile-connect/on-premise-setup/HG8145X6-1.png)
 
 2. Fill in the details following the [Port Forwarding Information](#step-3---port-forwarding):
 
@@ -149,7 +149,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
     |Internal port number|Internal Port|
     |Protocol|Protocol|
 
-   ![HG8145X6-2](../../../static/img/sql-mobile-connect/on-premise-setup/HG8145X6-2.png)
+   ![HG8145X6-2](../../../static/img/integration/sql-mobile-connect/on-premise-setup/HG8145X6-2.png)
 
 3. Click `Apply`.
 
@@ -157,7 +157,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
 
 1. Navigate to `Basic Setup` > `NAT` > `Port Forwarding`, click `Add Port Forwarding` to create a new entry.
 
-   ![SR1041F-1](../../../static/img/sql-mobile-connect/on-premise-setup/SR1041F-1.png)
+   ![SR1041F-1](../../../static/img/integration/sql-mobile-connect/on-premise-setup/SR1041F-1.png)
 
 2. Fill in the details following the [Port Forwarding Information](#step-3---port-forwarding):
 
@@ -168,7 +168,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
     |Local Port Range|Internal Port|
     |Remote Port Range|External Port|
 
-   ![SR1041F-2](../../../static/img/sql-mobile-connect/on-premise-setup/SR1041F-2.png)
+   ![SR1041F-2](../../../static/img/integration/sql-mobile-connect/on-premise-setup/SR1041F-2.png)
 
 3. Click `Confirm`.
 
@@ -176,7 +176,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
 
 1. Navigate to `Basic Setup` > `NAT` > `Port Forwarding`, click `Add` to create a new entry.
 
-   ![SR120-A-1](../../../static/img/sql-mobile-connect/on-premise-setup/SR120-A-1.png)
+   ![SR120-A-1](../../../static/img/integration/sql-mobile-connect/on-premise-setup/SR120-A-1.png)
 
 2. Fill in the details following the [Port Forwarding Information](#step-3---port-forwarding):
 
@@ -188,7 +188,7 @@ You can **Click** on `Show Tips` to find all the information for port forwarding
     |Remote Port Range|External Port|
     |Comment|Name|
 
-   ![SR120-A-2](../../../static/img/sql-mobile-connect/on-premise-setup/SR120-A-2.png)
+   ![SR120-A-2](../../../static/img/integration/sql-mobile-connect/on-premise-setup/SR120-A-2.png)
 
 3. Click `Confirm`.
 
@@ -200,25 +200,25 @@ Before access to the service, do remember to setup your users. To learn more, fo
 
 1. You can now access `SQL Mobile Connect` by **Clicking** on the globe `🌐`
 
-   ![alt text](../../../static/img/sql-mobile-connect/on-premise-setup/8.png)
+   ![alt text](../../../static/img/integration/sql-mobile-connect/on-premise-setup/8.png)
 
 2. We offer two options for users to access the service:
 
    - **Click** on `Copy` (top left) to retrieve the link
    - **Scan** the `QR Code` with your phone
 
-   ![alt text](../../../static/img/sql-mobile-connect/on-premise-setup/9.png)
+   ![alt text](../../../static/img/integration/sql-mobile-connect/on-premise-setup/9.png)
 
 3. You should see the login page.
 
-   ![alt text](../../../static/img/sql-mobile-connect/on-premise-setup/10.png)
+   ![alt text](../../../static/img/integration/sql-mobile-connect/on-premise-setup/10.png)
 
 ## Alternative External Port (2764)
 
 If your router does not allow traffic on `port 443`, you can **tick** on `Use Alternative External Port (2764)` to configure mobile connect service to use `port 2764`
 
-![alternative external port 2764](../../../static/img/sql-mobile-connect/on-premise-setup/11.png)
+![alternative external port 2764](../../../static/img/integration/sql-mobile-connect/on-premise-setup/11.png)
 
 After `Install` and `✅ Service is running` on port 2764. Now you can configure port forwarding on your router with `external port 2764`
 
-![alternative external port 2764](../../../static/img/sql-mobile-connect/on-premise-setup/12.png)
+![alternative external port 2764](../../../static/img/integration/sql-mobile-connect/on-premise-setup/12.png)

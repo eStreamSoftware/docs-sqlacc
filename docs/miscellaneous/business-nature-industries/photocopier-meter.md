@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 id: photocopier-meter
 title: Photocopier Meter
 description: A guide to get price of photocopier meter in quotation
@@ -15,11 +15,11 @@ The document number must be in the format = `S-%.5d` to allow the system to get 
 
 1. Create a new quatation (QT), and enter all product info inside.
 
-    ![1](../../../static/img/business-nature-industries/photocopier-meter/1.png)
+    ![1](../../../static/img/miscellaneous/business-nature-industries/photocopier-meter/1.png)
 
 2. Tools | Option | Unitprice, place Last Quotation Selling Price at first place.
 
-    ![2](../../../static/img/business-nature-industries/photocopier-meter/2.png)
+    ![2](../../../static/img/miscellaneous/business-nature-industries/photocopier-meter/2.png)
 
 3. Create a new sales invoice and select a customer
 
@@ -27,11 +27,11 @@ The document number must be in the format = `S-%.5d` to allow the system to get 
     2. Enter Current Reading (Meter reading). 0 reading will not append to this invoice
     3. After done, Press **POST** Button
 
-    ![3](../../../static/img/business-nature-industries/photocopier-meter/3.png)
+    ![3](../../../static/img/miscellaneous/business-nature-industries/photocopier-meter/3.png)
 
     Result after done:
 
-    ![4](../../../static/img/business-nature-industries/photocopier-meter/4.png)
+    ![4](../../../static/img/miscellaneous/business-nature-industries/photocopier-meter/4.png)
 
 4. After saving the invoice, system will append the info to QT.
 
@@ -45,4 +45,4 @@ The document number must be in the format = `S-%.5d` to allow the system to get 
     - Amount = UDF_AddFees + UDF_MthlyCharges
     - After that system will auto update the info to QT.
 
-    ![5](../../../static/img/business-nature-industries/photocopier-meter/5.png)
+    ![5](../../../static/img/miscellaneous/business-nature-industries/photocopier-meter/5.png)

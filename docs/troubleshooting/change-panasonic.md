@@ -14,17 +14,17 @@ If you're experiencing issues where the preview is fine but the printout is miss
 
 1. Check the Port of your printer
 
-   ![1](../../static/img/getting-started/change-panasonic/1.png)
+   ![printer-properties](../../static/img/troubleshooting/change-panasonic/printer-properties.png)
 
-   ![2](../../static/img/getting-started/change-panasonic/2.png)
+   ![check-port](../../static/img/troubleshooting/change-panasonic/check-port.png)
 
 2. Press "**Add a printer**" and select "**Add a local printer.**"
 
-   ![3](../../static/img/getting-started/change-panasonic/3.png)
+   ![add-local-printer](../../static/img/troubleshooting/change-panasonic/add-local-printer.png)
 
 3. Choose the port of your printer respectively.
 
-   ![4](../../static/img/getting-started/change-panasonic/4.png)
+   ![choose-printer-port](../../static/img/troubleshooting/change-panasonic/choose-printer-port.png)
 
 4. Select manufacturer and printer
 
@@ -38,22 +38,22 @@ If you're experiencing issues where the preview is fine but the printout is miss
 
    :::
 
-   ![5](../../static/img/getting-started/change-panasonic/5.png)
+   ![select-printer](../../static/img/troubleshooting/change-panasonic/select-printer.png)
 
 5. Type in the printer name you desire.
 
-   ![6](../../static/img/getting-started/change-panasonic/6.png)
+   ![enter-printer-name](../../static/img/troubleshooting/change-panasonic/enter-printer-name.png)
 
 6. Press "**Next**" if you don’t want to share this printer.
 
-   ![7](../../static/img/getting-started/change-panasonic/7.png)
+   ![press-next](../../static/img/troubleshooting/change-panasonic/press-next.png)
 
 7. Finish the setup.
 
-   ![8](../../static/img/getting-started/change-panasonic/8.png)
+   ![finish](../../static/img/troubleshooting/change-panasonic/finish.png)
 
 Lastly, go to your **Printer Properties** | **Device Settings** | **Installable Options** | **Printable Area** | **Old OS**.
 
 You are done. Congratulations!
 
-![9](../../static/img/getting-started/change-panasonic/9.png)
+![result](../../static/img/troubleshooting/change-panasonic/result.png)

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 16
-id: acc-XLS-MDB-import
+id: acc-xls-mdb-import
 title: Excel Import Guide
 description: A quick guide on Excel Import Program for SQL Account
 slug: /miscellaneous/acc-xls-mdb-import

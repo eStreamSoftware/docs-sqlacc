@@ -1,11 +1,11 @@
 ![markdown-badge][markdown-badge] ![docusaurus-badge][docusaurus-badge]
 
 [markdown-badge]: https://img.shields.io/badge/Markdown-blue
-[docusaurus-badge]: https://img.shields.io/badge/Docusaurus-3.1.0-green
+[docusaurus-badge]: https://img.shields.io/badge/Docusaurus-3.7.0-green
 
 <div align="center">
     <article style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-        <p align="center"><img width="300" src="/static/img/account-logo.png" /></p>
+        <p align="center"><img width="300" src="static/img/account-logo.png" /></p>
         <h1 style="width: 100%; text-align: center;">SQL Account Documentation</h1>
     </article>
 </div>

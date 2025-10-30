@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+id: stock-take
 title: Stock Take App
 description: Stock Take application guide
 slug: /stock-take-mobile-app/stock-take
@@ -192,4 +193,4 @@ Resetting company profile will require user to scan QR code on SQL Acoount Stock
 
 3. When prompted to proceed with resetting the connection profile, tap on the button "**Yes**" to continue.
 
-4. Once done, tap on the "**Network File Transfer**" to add a new Stock Take share profile and update items list (Follow steps in [stock take app import](#3-stock-take-app-import), specifically steps 2 and 3).
+4. Once done, tap on the "**Network File Transfer**" to add a new Stock Take share profile and update items list (Follow steps in [stock take app import](#stock-take-app-import), specifically steps 2 and 3).

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: SQL Acc Michelin Export
-description: SQL Acc Michelin Export  
+description: SQL Acc Michelin Export
 slug: /miscellaneous/third-party-export/michelin-export
 tags: ["SQL Account","Michelin" , "Export"]
 ---
@@ -30,7 +30,7 @@ Document Type Export (Only 1 text file)
 - Version (1.2.0.8) - 13 May 2020
 - Evaluation Limit : 30 Times Export
 - [SQLAccMichelinExport-setup](http://www.estream.com.my/downloadfile/Fairy/SQLAccMichelinExport-setup.exe)
-- MD5 : 64541BCDE1FE677BD001E820B5ADA865
+- MD5 : `64541BCDE1FE677BD001E820B5ADA865`
 
 ## Settings
 
@@ -40,7 +40,7 @@ During Installation of Firebird make sure the option (see Below picture) is sele
 
 ![1](../../../static/img/miscellaneous/third-party-export/michelin-firebird.png)
 
-### Export Program
+### Export Program Setting
 
 ![2](../../../static/img/miscellaneous/third-party-export/michelin-exp.png)
 

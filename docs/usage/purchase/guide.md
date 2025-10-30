@@ -10,7 +10,7 @@ tags: ["SQL Account", "Usage", "Purchase", "Guide"]
 
 Example of sales process work flow aligned with SQL Account flow:
 
-![1](../../../static/img/usage/purchase/guide/sales-process-workflow.png)
+![sales-process-workflow](../../../static/img/usage/purchase/guide/sales-process-workflow.png)
 
 ## Purchase Request
 
@@ -18,9 +18,9 @@ Purchase Request is an internal document used within a company between departmen
 
 For example, you want to purchase more office supplies. You have to submit a purchase request to the purchasing department.
 
-![2](../../../static/img/usage/purchase/guide/purchase-request.png)
+![purchase-request](../../../static/img/usage/purchase/guide/purchase-request.png)
 
-![3](../../../static/img/usage/purchase/guide/purchase-request-details.png)
+![purchase-request-details](../../../static/img/usage/purchase/guide/purchase-request-details.png)
 
 1. **Purchase | Purchase Request | New**
 
@@ -30,11 +30,11 @@ For example, you want to purchase more office supplies. You have to submit a pur
 
 4. **Write a description to explain your purchase request**
 
-   ![4](../../../static/img/usage/purchase/guide/purchase-request-data-entry.png)
+   ![purchase-request-data-entry](../../../static/img/usage/purchase/guide/purchase-request-data-entry.png)
 
 5. **Click the Save button once you are done. Below is the example of the entry created.**
 
-   ![5](../../../static/img/usage/purchase/guide/purchase-request-example-entry.png)
+   ![purchase-request-example-entry](../../../static/img/usage/purchase/guide/purchase-request-example-entry.png)
 
 ## Purchase Order
 
@@ -42,9 +42,9 @@ Purchase Order is a document that is issued by the purchasing department when pl
 
 A purchase order document contains the details (quantity, unit price) of the items that want to be purchased.
 
-![6](../../../static/img/usage/purchase/guide/purchase-order.png)
+![purchase-order](../../../static/img/usage/purchase/guide/purchase-order.png)
 
-![7](../../../static/img/usage/purchase/guide/purchase-order-details.png)
+![purchase-order-details](../../../static/img/usage/purchase/guide/purchase-order-details.png)
 
 1. **Purchase | Purchase Order | New**
 
@@ -66,11 +66,11 @@ A purchase order document contains the details (quantity, unit price) of the ite
 
 4. **Write a description to explain your purchase order**
 
-   ![8](../../../static/img/usage/purchase/guide/purchase-order-data-entry.png)
+   ![purchase-order-data-entry](../../../static/img/usage/purchase/guide/purchase-order-data-entry.png)
 
 5. **Click the Save button once you are done. Below is the example of the entry created:**
 
-   ![9](../../../static/img/usage/purchase/guide/purchase-order-example-entry.png)
+   ![purchase-order-example-entry](../../../static/img/usage/purchase/guide/purchase-order-example-entry.png)
 
 ### More : Project
 
@@ -84,13 +84,13 @@ For **document project**, you need to point to **MORE** section **(on the left s
 
 For **detail project**, you have to insert the **project** column out from Field Chooser.
 
-![10](../../../static/img/usage/purchase/guide/detail-project.png)
+![detail-project](../../../static/img/usage/purchase/guide/detail-project.png)
 
 ### Attachment
 
 You can use this feature to attach external PDF, excel, word documents and image files.
 
-![11](../../../static/img/usage/purchase/guide/attachment.png)
+![attachment](../../../static/img/usage/purchase/guide/attachment.png)
 
 1. Go to the left of the screen and click "Attachment"
 
@@ -110,17 +110,17 @@ You can use this feature to attach external PDF, excel, word documents and image
 
 5. You will get prompted the ‘Save changes?’ message. Click YES to save it.
 
-![12](../../../static/img/usage/purchase/guide/note.png)
+![note](../../../static/img/usage/purchase/guide/note.png)
 
 ### How to preview report
 
 To preview the report, you may click on the preview button and select the format you wish to print.
 
-![13](../../../static/img/usage/purchase/guide/select-report.png)
+![select-report](../../../static/img/usage/purchase/guide/select-report.png)
 
 ### How to send report via Whatsapp
 
-![14](../../../static/img/usage/purchase/guide/send-report-via-whatsapp.png)
+![send-report-via-whatsapp](../../../static/img/usage/purchase/guide/send-report-via-whatsapp.png)
 
 A QR code will appear on the screen. Scan the QR code with your Whatsapp's Whatsapp Web function.
 
@@ -128,9 +128,9 @@ A QR code will appear on the screen. Scan the QR code with your Whatsapp's Whats
 
 Goods Received is a document that is issued after receiving the delivery as proof of the order receipt.
 
-![15](../../../static/img/usage/purchase/guide/goods-received.png)
+![goods-received](../../../static/img/usage/purchase/guide/goods-received.png)
 
-![16](../../../static/img/usage/purchase/guide/goods-received-details.png)
+![goods-received-details](../../../static/img/usage/purchase/guide/goods-received-details.png)
 
 1. **Purchase | Goods Receive | New**
 
@@ -140,11 +140,11 @@ Goods Received is a document that is issued after receiving the delivery as proo
 
 4. **Write a description to explain your goods receive**
 
-   ![17](../../../static/img/usage/purchase/guide/goods-received-data-entry.png)
+   ![goods-received-data-entry](../../../static/img/usage/purchase/guide/goods-received-data-entry.png)
 
 5. **Click the Save button once you are done. Below is the example of the entry created:**
 
-![18](../../../static/img/usage/purchase/guide/goods-received-example-entry.png)
+![goods-received-example-entry](../../../static/img/usage/purchase/guide/goods-received-example-entry.png)
 
 ### Transfer From PO To DO
 
@@ -156,31 +156,35 @@ Goods Received is a document that is issued after receiving the delivery as proo
 
 4. **Save** the Goods Received Note
 
-![19](../../../static/img/usage/purchase/guide/goods-received-transfer-from-po.png)
+![goods-received-transfer-from-po](../../../static/img/usage/purchase/guide/goods-received-transfer-from-po.png)
 
 ### Notes - Landing Cost
 
+:::note
+This is an additional module.
+:::
+
 Landing Cost is to handle the cost to the warehouse that is not billed by the same supplier. In other words, it is an additional cost to increase your stock cost. This cost is depending on the company whether they want to add in or not. For Instant, I buy the product from Supplier A, but ship by Transport company B, this transport charges you may enter at landing cost to increase your product cost.
 
-![20](../../../static/img/usage/purchase/guide/landing-cost-1.png)
+![landing-cost-1](../../../static/img/usage/purchase/guide/landing-cost-1.png)
 
 How to set Landing Cost?
 
 Follow the below image:
 
-![21](../../../static/img/usage/purchase/guide/landing-cost-2.png)
+![landing-cost-2](../../../static/img/usage/purchase/guide/landing-cost-2.png)
 
 1. **Landing Cost 1** = Key your Landing Cost to this column.(This cost will not take into the account.)
 2. **Landing Cost 2** = If you have a different calculation than Landing Cost 1, you may enter your value to this column.
 3. Click on + Button to select the cost allocated.
 
-![22](../../../static/img/usage/purchase/guide/cost-allocated-by-subtotal.png)
+![cost-allocated-by-subtotal](../../../static/img/usage/purchase/guide/cost-allocated-by-subtotal.png)
 
 ***Formula for Cost Allocated By SubTotal***
 
 - Formula : Item Subtotal / Document Subtotal * Landing Cost1
 
-![23](../../../static/img/usage/purchase/guide/formula-subtotal.png)
+![formula-subtotal](../../../static/img/usage/purchase/guide/formula-subtotal.png)
 
 :::note
 
@@ -194,7 +198,7 @@ Follow the below image:
 
 :::
 
-![24](../../../static/img/usage/purchase/guide/stock-card-check-cost.png)
+![stock-card-check-cost](../../../static/img/usage/purchase/guide/stock-card-check-cost.png)
 
 :::note
 
@@ -210,9 +214,9 @@ Follow the below image:
 
 - Formula : Item Qty / Document Qty * Landing Cost1
 
-![25](../../../static/img/usage/purchase/guide/cost-allocated-by-quantity.png)
+![cost-allocated-by-quantity](../../../static/img/usage/purchase/guide/cost-allocated-by-quantity.png)
 
-![26](../../../static/img/usage/purchase/guide/formula-quantity.png)
+![formula-quantity](../../../static/img/usage/purchase/guide/formula-quantity.png)
 
 :::note
 
@@ -240,9 +244,9 @@ Follow the below image:
 
 - Formula : Item Qty *Rate/ Sum(Qty* Rate) * Landing Cost1
 
-![27](../../../static/img/usage/purchase/guide/cost-allocated-by-smallest-quantity.png)
+![cost-allocated-by-smallest-quantity](../../../static/img/usage/purchase/guide/cost-allocated-by-smallest-quantity.png)
 
-![28](../../../static/img/usage/purchase/guide/formula-smallest-quantity.png)
+![formula-smallest-quantity](../../../static/img/usage/purchase/guide/formula-smallest-quantity.png)
 
 :::note
 
@@ -268,11 +272,11 @@ That seed will grow to be a peach tree. You may wish for an apple or an orange, 
 
 You can key in the purchase invoice after your purchase order has been approved and after you have received your goods.
 
-![29](../../../static/img/usage/purchase/guide/purchase-invoice.png)
+![purchase-invoice](../../../static/img/usage/purchase/guide/purchase-invoice.png)
 
 1. **Purchase | Purchase Invoice | New**
 
-   ![30](../../../static/img/usage/purchase/guide/purchase-invoice-data-entry.png)
+   ![purchase-invoice-data-entry](../../../static/img/usage/purchase/guide/purchase-invoice-data-entry.png)
 
 2. **Select Supplier Code**
 
@@ -286,7 +290,7 @@ You can key in the purchase invoice after your purchase order has been approved 
 
    :::
 
-   ![31](../../../static/img/usage/purchase/guide/search-supplier-column.png)
+   ![search-supplier-column](../../../static/img/usage/purchase/guide/search-supplier-column.png)
 
 4. **Write a description to explain your purchase invoice**
 
@@ -309,7 +313,7 @@ You can key in the purchase invoice after your purchase order has been approved 
 
 4. **Save** the Purchase Invoice
 
-![32](../../../static/img/usage/purchase/guide/purchase-invoice-transfer-from-do.png)
+![purchase-invoice-transfer-from-do](../../../static/img/usage/purchase/guide/purchase-invoice-transfer-from-do.png)
 
 ## Cash Purchase
 
@@ -317,11 +321,11 @@ You can key in cash purchase after your purchase order has been approved and aft
 
 Cash purchases are used for purchases that are paid for with cash and have no outstanding payment.
 
-![33](../../../static/img/usage/purchase/guide/cash-purchase.png)
+![cash-purchase](../../../static/img/usage/purchase/guide/cash-purchase.png)
 
 1. **Purchase | Cash Purchase | New**
 
-   ![34](../../../static/img/usage/purchase/guide/cash-purchase-data-entry.png)
+   ![cash-purchase-data-entry](../../../static/img/usage/purchase/guide/cash-purchase-data-entry.png)
 
 2. **Select Supplier Code**
 
@@ -335,13 +339,13 @@ Cash purchases are used for purchases that are paid for with cash and have no ou
 
    :::
 
-   ![35](../../../static/img/usage/purchase/guide/search-supplier-column-2.png)
+   ![search-supplier-column-2](../../../static/img/usage/purchase/guide/search-supplier-column-2.png)
 
 4. Write a description to explain your cash purchase
 
 5. Click the **Save** button once you are done.
 
-![36](../../../static/img/usage/purchase/guide/cash-purchase-example-entry.png)
+![cash-purchase-example-entry](../../../static/img/usage/purchase/guide/cash-purchase-example-entry.png)
 
 ### Transfer From
 
@@ -349,21 +353,21 @@ You can transfer your existing Purchase Order, Goods Receive Note, or Purchase R
 
 All you have to do is RIGHT-CLICK at the "Cash Purchase" title
 
-![37](../../../static/img/usage/purchase/guide/cash-purchase-transfer-from.png)
+![cash-purchase-transfer-from](../../../static/img/usage/purchase/guide/cash-purchase-transfer-from.png)
 
 ### Payment Paid
 
 For cash purchases, you can select the payment method. and key in the payment amount.
 
-![38](../../../static/img/usage/purchase/guide/cash-purchase-payment-paid-details.png)
+![cash-purchase-payment-paid-details](../../../static/img/usage/purchase/guide/cash-purchase-payment-paid-details.png)
 
-![39](../../../static/img/usage/purchase/guide/cash-purchase-payment-paid-payment-by.png)
+![cash-purchase-payment-paid-payment-by](../../../static/img/usage/purchase/guide/cash-purchase-payment-paid-payment-by.png)
 
 You can also key in the Cheque No. and Bank Charges if there are any .
 
 Once you have **SAVED** your "Cash Purchase", The system will have created a Supplier payment document for you.
 
-![40](../../../static/img/usage/purchase/guide/cash-purchase-generate-pv-number.png)
+![cash-purchase-generate-pv-number](../../../static/img/usage/purchase/guide/cash-purchase-generate-pv-number.png)
 
 ## Extra Goods Received
 
@@ -371,7 +375,7 @@ Extra Goods received is usually used by businesses where Invoices are issued bef
 
 You would need an Invoice -> DO module in order to issue Extra Goods Received Note.
 
-![41](../../../static/img/usage/purchase/guide/navigate-extra-goods-received.png)
+![navigate-extra-goods-received](../../../static/img/usage/purchase/guide/navigate-extra-goods-received.png)
 
 1. **Purchase | Extra Goods Receive | New**
 
@@ -381,7 +385,7 @@ You would need an Invoice -> DO module in order to issue Extra Goods Received No
 
 4. **Write a description to explain your extra goods receive**
 
-   ![42](../../../static/img/usage/purchase/guide/extra-goods-received-data-entry.png)
+   ![extra-goods-received-data-entry](../../../static/img/usage/purchase/guide/extra-goods-received-data-entry.png)
 
 5. **Click the Save button once you are done.**
 
@@ -391,7 +395,7 @@ You can transfer your existing Purchase invoice or Cash Purchase.
 
 All you have to do is RIGHT-CLICK at the "Extra Goods Received" title.
 
-![43](../../../static/img/usage/purchase/guide/extra-goods-received-transfer-from.png)
+![extra-goods-received-transfer-from](../../../static/img/usage/purchase/guide/extra-goods-received-transfer-from.png)
 
 ## Purchase Debit Note
 
@@ -399,7 +403,7 @@ Purchase Debit note is used to increase your expense amount.
 
 Or to increase the amount of credit that you owe your supplier.
 
-![44](../../../static/img/usage/purchase/guide/purchase-debit-note.png)
+![purchase-debit-note](../../../static/img/usage/purchase/guide/purchase-debit-note.png)
 
 1. **Purchase | Purchase Debit Note | New**
 
@@ -409,11 +413,11 @@ Or to increase the amount of credit that you owe your supplier.
 
 4. **Write a description to explain your purchase debit note**
 
-   ![45](../../../static/img/usage/purchase/guide/purchase-debit-note-data-entry.png)
+   ![purchase-debit-note-data-entry](../../../static/img/usage/purchase/guide/purchase-debit-note-data-entry.png)
 
 5. **Click the Save button once you are done. Below is the example of the entry created:**
 
-![46](../../../static/img/usage/purchase/guide/purchase-debit-note-example-entry.png)
+   ![purchase-debit-note-example-entry](../../../static/img/usage/purchase/guide/purchase-debit-note-example-entry.png)
 
 ### Transfer From PI
 
@@ -421,13 +425,13 @@ Instead of keying in a new document, you can transfer it from an existing Purcha
 
 All you have to do is RIGHT-CLICK at the "Purchase Debit Note" title.
 
-![47](../../../static/img/usage/purchase/guide/purchase-debit-note-transfer-from.png)
+![purchase-debit-note-transfer-from](../../../static/img/usage/purchase/guide/purchase-debit-note-transfer-from.png)
 
 ## Purchase Returned
 
 Purchase return document is created when you return purchased goods back to the supplier.
 
-![48](../../../static/img/usage/purchase/guide/purchase-returned.png)
+![purchase-returned](../../../static/img/usage/purchase/guide/purchase-returned.png)
 
 1. **Purchase | Purchase Returned | New**
 
@@ -437,11 +441,11 @@ Purchase return document is created when you return purchased goods back to the 
 
 4. **Write a description to explain your purchase debit note**
 
-   ![49](../../../static/img/usage/purchase/guide/purchase-returned-data-entry.png)
+   ![purchase-returned-data-entry](../../../static/img/usage/purchase/guide/purchase-returned-data-entry.png)
 
 5. **Click the Save button once you are done. Below is the example of the entry created:**
 
-![50](../../../static/img/usage/purchase/guide/purchase-returned-example-entry.png)
+![purchase-returned-example-entry](../../../static/img/usage/purchase/guide/purchase-returned-example-entry.png)
 
 ### Transfer From PI To PDN
 
@@ -449,13 +453,13 @@ Instead of keying in a new document, you can transfer it from an existing Purcha
 
 All you have to do is RIGHT-CLICK at the "Purchase Return" title.
 
-![51](../../../static/img/usage/purchase/guide/purchase-returned-transfer-from.png)
+![purchase-returned-transfer-from](../../../static/img/usage/purchase/guide/purchase-returned-transfer-from.png)
 
 ## Purchase Cancelled Note
 
 You can key in the purchase cancelled note to remove any outstanding documents at purchase order.
 
-![52](../../../static/img/usage/purchase/guide/purchase-cancelled-note.png)
+![purchase-cancelled-note](../../../static/img/usage/purchase/guide/purchase-cancelled-note.png)
 
 1. **Purchase | Purchase Cancelled Note | New**
 
@@ -465,7 +469,7 @@ You can key in the purchase cancelled note to remove any outstanding documents a
 
 4. **Write a description to explain your purchase debit note**
 
-   ![53](../../../static/img/usage/purchase/guide/purchase-cancelled-note-data-entry.png)
+   ![purchase-cancelled-note-data-entry](../../../static/img/usage/purchase/guide/purchase-cancelled-note-data-entry.png)
 
 5. **Click the Save button once you are done.**
 
@@ -475,4 +479,4 @@ Instead of keying in a new document, you can transfer it from an existing Purcha
 
 All you have to do is RIGHT-CLICK at the "Purchase Cancelled Note" title.
 
-![54](../../../static/img/usage/purchase/guide/purchase-cancelled-note-transfer-from.png)
+![purchase-cancelled-note-transfer-from](../../../static/img/usage/purchase/guide/purchase-cancelled-note-transfer-from.png)

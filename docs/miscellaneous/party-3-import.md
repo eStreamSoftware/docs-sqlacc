@@ -14,31 +14,31 @@ Is External Shareware Program which to import Mamee Text or CSV file to
 - Sales Credit Note
 - Sales Debit Note (Non Product Related Only)
 
-## Limitation
+## Limitation (Mamee)
 
 - Fixed Tax Code SR (i.e. all transaction is SR)
 - Only support Mamee Product Related file (i.e. file with end HDR or DTL eg INVHDR or INVDTL)
 
 ## Mamee Specification
 
-### Format 1
+### Format 1 (Mamee)
 
 - 03 Dec 2015
-- http://www.estream.com.my/downloadfile/Fairy/Mamee-ExampleFile.zip
+- [Mamee Example File](http://www.estream.com.my/downloadfile/Fairy/Mamee-ExampleFile.zip)
 
-### Format 2
+### Format 2 (Mamee)
 
 - 22 Nov 2017
-- http://www.estream.com.my/downloadfile/Fairy/Mamee-ExampleFile2.zip
+- [Mamee Example File 2](http://www.estream.com.my/downloadfile/Fairy/Mamee-ExampleFile2.zip)
 
-## Import Program
+## Import Program (Mamee)
 
 - Version (2.4.0.5) - 08 Dec 2017
 - Evaluation Limit : 100 Records per file
-- http://www.estream.com.my/downloadfile/Fairy/SQLAccMameeImp-setup.exe
-- MD5 : BA72428486784AFC3655601294BE83FD
+- [SQL Account Mamee Import Setup](http://www.estream.com.my/downloadfile/Fairy/SQLAccMameeImp-setup.exe)
+- MD5 : `BA72428486784AFC3655601294BE83FD`
 
-### History New/Update/Changes
+### History New/Update/Changes (Mamee)
 
 --Build 5--
 
@@ -68,35 +68,33 @@ Is External Shareware Program which to import Mamee Text or CSV file to
 - Add Maintain Agent Function.
 - Enable Use Census Number field as SQL Acc Customer Code.
 
-## Field Mapping - Header
+## Field Mapping - Header (Mamee)
 
-### Produc Related - Format 1
+### Produc Related - Format 1 (Mamee Header)
 
 ![21](../../static/img/miscellaneous/third-party-import/mamee-header-1.png)
- 
-### Product Related - Format 2
+
+### Product Related - Format 2 (Mamee Header)
 
 ![22](../../static/img/miscellaneous/third-party-import/mamee-header-2.png)
 
-## Field Mapping - Detail
+## Field Mapping - Detail (Mamee)
 
-### Product Related - Format 1
+### Product Related - Format 1 (Mamee Detail)
 
 ![23](../../static/img/miscellaneous/third-party-import/mamee-detail-1.png)
 
-### Product Related - Format 2
+### Product Related - Format 2 (Mamee Detail)
 
 ![24](../../static/img/miscellaneous/third-party-import/mamee-detail-2.png)
 
-## Field Mapping - Header
-
-### Non-Product Related
+### Non-Product Related (Mamee Header)
 
 ![25](../../static/img/miscellaneous/third-party-import/mamee-header-xproduct.png)
 
-## Setting
+## Setting (Mamee)
 
-### In SQL Accounting
+### In SQL Accounting (Mamee)
 
 Make sure this option is Tick under Tools | Options | Customer
 
@@ -114,7 +112,7 @@ Menu : Tools | Options...
 
 Menu : Tools | Maintain Agent...
 
-![1](../../static/img/miscellaneous/third-party-import/mamee-import1.png) 
+![1](../../static/img/miscellaneous/third-party-import/mamee-import1.png)
 
 | Options       | Description                 |
 |---------------|-----------------------------|
@@ -142,9 +140,9 @@ Menu : Tools | Maintain Non-Product GL...
 04. Select the GL Code for Credit Note
 05. Click Tick to Save
 
-## Steps
+## Steps (Mamee)
 
-### Product Related
+### Product Related (Mamee)
 
 Below steps is example to import Sales Invoice
 
@@ -170,7 +168,7 @@ Below steps is example to import Sales Invoice
 Record(s) will only **Post** if the **Check Box** is Tick & **Status** is Ok
 :::
 
-### Non-Product Related
+### Non-Product Related (Mamee)
 
 Below steps is example to import Sales Credit Note
 
@@ -198,26 +196,26 @@ Export E-Invoice to F&N - Available in Build 18 & Above
 - Sales Invoice
 - Sales Credit Note
 
-## Limitation
+## Limitation (F&N)
 
 - TaxCode with DS will not import.
 
 ## F&N Specification
 
 - 17 Jun 2015 - ESD soft-drink
-- https://download.sql.com.my/customer/Fairy/FN-Acct_Integration_Reference-20150617.zip
+- [FN Acct Integration Refrences-20150617](https://download.sql.com.my/customer/Fairy/FN-Acct_Integration_Reference-20150617.zip)
 
 - 15 Aug 2016 - ESD Online
-- https://download.sql.com.my/customer/Fairy/FN-Acct_Integration_Reference-20160815.zip
+- [FN-Acct Integration Refrences-20160815](https://download.sql.com.my/customer/Fairy/FN-Acct_Integration_Reference-20160815.zip)
 
-## Import Program
+## Import Program (F&N)
 
 - Version (3.5.0.23) - 18 Dec 2024
 - Evaluation Limit : 50 Records per file
-- https://download.sql.com.my/customer/Fairy/SQLAccFNImp-setup.exe
-- MD5 : F8114AE694FB966D93082A3FEC57D17C
+- [SQL Account F&N Import Setup](https://download.sql.com.my/customer/Fairy/SQLAccFNImp-setup.exe)
+- MD5 : `F8114AE694FB966D93082A3FEC57D17C`
 
-### History New/Update/Changes
+### History New/Update/Changes (F&N)
 
 --Build 23--
 
@@ -294,7 +292,7 @@ Export E-Invoice to F&N - Available in Build 18 & Above
 
 - Fix CN Get File Error.
 
-## Field Mapping - Header
+## Field Mapping - Header (F&N)
 
 - As at 17 Jun 2015 - ESD soft-drink - Fixed Length Format
 
@@ -327,9 +325,9 @@ Export E-Invoice to F&N - Available in Build 18 & Above
 
 ![27](../../static/img/miscellaneous/third-party-import/fnn-detail2.png)
 
-## Setting
+## Setting (F&N)
 
-### In SQL Accounting
+### In SQL Accounting (F&N)
 
 01. May refer to Point 2 at Things To Consider Before Import/Post
 02. Make sure this option is Tick under Tools | Options | Customer
@@ -346,9 +344,9 @@ Export E-Invoice to F&N - Available in Build 18 & Above
 | FNUOMAsUOM        | 0 : F&amp;N ItemCode will check against UOMList<br/>1 : F&amp;N Itemcode UOM same as SQLAcc Itemcode UOM (Recommended)              |
 | OutletIDAsCompCode| For ESD soft-drink – Fixed Length Format Only<br/>0 : F&amp;N Outlet ID will check against SQL Accounting \| Maintain Customer \| Remark Field<br/>1 : F&amp;N Outlet ID same as SQLAcc Customer Code (Recommended) |
 
-## Steps
+## Steps (F&N)
 
-### Import Invoice/Credit Note
+### Import Invoice/Credit Note (F&N)
 
 Below steps is example to import Sales Invoice
 01. Click Sales | Invoice...
@@ -373,7 +371,7 @@ Below steps is example to import Sales Invoice
 Remember to check the data with Has Deemed Supplies column which is Tick as system will by pass posting
 :::
 
-### Export E Invoice/Credit Note
+### Export E Invoice/Credit Note (F&N)
 
     ![11](../../static/img/miscellaneous/third-party-import/fnn-export.png)
 
@@ -394,18 +392,18 @@ Is External Shareware Program which to import Unilever CSV file to
 ## Unilever Specification
 
 - 07 Feb 2018
-- http://www.estream.com.my/downloadfile/Fairy/UnileverImp-Structure-20180207.zip
+- [Unilever Import Structure-20180207](http://www.estream.com.my/downloadfile/Fairy/UnileverImp-Structure-20180207.zip)
 - 25 Sep 2017
-- http://www.estream.com.my/downloadfile/Fairy/UnileverImp-Structure-20170925.zip
+- [Unilever Import Structure-20170925](http://www.estream.com.my/downloadfile/Fairy/UnileverImp-Structure-20170925.zip)
 
-## Import Program
+## Import Program (Unilever)
 
 - Version (1.3.0.12) - 05 Apr 2025
 - Evaluation Limit : 100 Records per file
 - SQLAccUnileverImp-setup.exe
-- MD5 : 44F7A21D88D3EA4F4C1D7CF0571FFD5D
+- MD5 : `44F7A21D88D3EA4F4C1D7CF0571FFD5D`
 
-### History New/Update/Changes
+### History New/Update/Changes (Unilever)
 
 --Build 12--
 
@@ -452,7 +450,7 @@ Is External Shareware Program which to import Unilever CSV file to
 - Update New Format.
 --Build 0--
 
-## Field Mapping - Header
+## Field Mapping - Header (Unilever)
 
 - 25 Sep 2017
 
@@ -476,7 +474,7 @@ Is External Shareware Program which to import Unilever CSV file to
 | **INVH_Total**   | 143          | 21        | Amount Before Discount |
 | **INVH_Discount**| 164          | 21        | Discount Amount |
 
-## Field Mapping - Detail
+## Field Mapping - Detail (Unilever)
 
 - 25 Sep 2017
 
@@ -506,9 +504,9 @@ Is External Shareware Program which to import Unilever CSV file to
 
 - Unit Price will not import & will auto Assign by SQL Accounting due to Unilever file don't had Pieces Price & UOM Rate
 
-## Setting
+## Setting (Unilever)
 
-### In SQL Accounting
+### In SQL Accounting (Unilever)
 
 01. May refer to Point 2 at Things To Consider Before Import/Post
 02. Make sure this option is Tick under Tools | Options | Customer
@@ -520,7 +518,7 @@ Is External Shareware Program which to import Unilever CSV file to
 - Item Code to be create
   - Rounding
 
-### In Unilever Import
+### In Unilever Import (Unilever)
 
 This can be see under Tools | Options
 
@@ -533,7 +531,7 @@ This can be see under Tools | Options
 | **TaxCodeZRL**       | Tax code for 0% |
 | **TaxCodeSR**        | Tax Code other than 0% |
 
-## Steps
+## Steps (Unilever)
 
 Below steps is example to import Sales Invoice
 
@@ -565,20 +563,19 @@ Is External Shareware Program which to import & Export Dryper excel file to
 **Export**
 - Sales Credit Note
 
-
 ## Dryper Specification
 
 - 15 Jan 2019
-- https://download.sql.com.my/customer/Fairy/Dryper_Spec-20190115.zip
+- [Dryper Specification-20190115](https://download.sql.com.my/customer/Fairy/Dryper_Spec-20190115.zip)
 
-## Import Program
+## Import Program (Dryper)
 
 - Version (1.1.0.3) - 29 Jan 2021
 - Evaluation Limit : 100 Records per file
 - [SQLAccDryperImp-setup](https://download.sql.com.my/customer/Fairy/SQLAccDryperImp-setup.exe)
-- MD5 : 5D18B0207C9C12168D0394855EA378ED
+- MD5 : `5D18B0207C9C12168D0394855EA378ED`
 
-### History New/Update/Changes
+### History New/Update/Changes (Dryper)
 
 --Build 3--
 
@@ -604,9 +601,9 @@ Is External Shareware Program which to import & Export Dryper excel file to
 - Fixed unable to register.
 --Build 0--
 
-## Field Mapping
+## Field Mapping (Dryper)
 
-### Sales Order or Sales Invoice
+### Sales Order or Sales Invoice (Dryper Mapping)
 
 | Dryper Field – SO | Dryper Field – IV | SQL Accounting Field |
 |-------------------|-------------------|----------------------|
@@ -626,7 +623,7 @@ Is External Shareware Program which to import & Export Dryper excel file to
 | **NetAmount** | **NetAmount** | Amount |
 | **RoundingAmount** | **RoundingAmount** | Will Append as New itemcode RTN5Cents |
 
-### Purchase Order or Purchase Invoice
+### Purchase Order or Purchase Invoice (Dryper Mapping)
 
 | Dryper Field – PO | Dryper Field – PI | SQL Accounting Field |
 |-------------------|-------------------|----------------------|
@@ -643,7 +640,7 @@ Is External Shareware Program which to import & Export Dryper excel file to
 | **NetAmount** | **NetAmount** | Amount |
 | **OrderDate** | **GRNDate** | DocDate |
 
-### Customer Credit Note - Export
+### Customer Credit Note - Export (Dryper Mapping)
 
 | Dryper Field      | SQL Accounting Field        |
 |-------------------|-----------------------------|
@@ -659,13 +656,13 @@ Is External Shareware Program which to import & Export Dryper excel file to
 | **CreatedBy**     | Hard Coded as SYSTEM        |
 | **CreatedTimestamp** | DocDate                  |
 
-## Setting
+## Setting (Dryper)
 
-### In SQL Accounting
+### In SQL Accounting (Dryper Setting)
 
 01. May refer to Point 2 at Things To Consider Before Import/Post
 
-### In Dryper Import
+### In Dryper Import (Dryper Setting)
 
 This can be see under Tools | Options
 
@@ -678,7 +675,7 @@ This can be see under Tools | Options
 | **SL-UseDocNoEx**        | 0 : Import will Map Dryper DocNo to SQL Accounting DocNo For Sales Import<br/>1 : Import will Map Dryper DocNo to SQL Accounting DocNoEx For Sales Import |
 | **PH-UseDocNoEx**        | 0 : Import will Map Dryper DocNo to SQL Accounting DocNo For Purchase Import<br/>1 : Import will Map Dryper DocNo to SQL Accounting DocNoEx For Purchase Import |
 
-## Sales Order or Sales Invoice
+## Sales Order or Sales Invoice (Dryper Setting)
 
 Below is example for import Sales Invoice...
 Menu: Sales | Invoice...
@@ -698,7 +695,7 @@ Menu: Sales | Invoice...
 07. Click 3. Verify button
 08. Click 4. Post To A/c button
 
-## Customer Credit Note - Export
+## Customer Credit Note - Export (Dryper Setting)
 
 Menu: Customer | Customer Credit Note - Export...
 ![17](../../static/img/miscellaneous/third-party-import/dryper-cn-export.png)
@@ -709,7 +706,7 @@ Menu: Customer | Customer Credit Note - Export...
 04. Click Get Data... to get the Data from SQL Accounting
 05. Click Export to xlsx to export out
 
-## FAQ
+## FAQ (Dryper)
 
 ### How it look like if Dryper had 3 level of discount?
 
@@ -717,23 +714,23 @@ Once Import it will look like below
 
 ![18](../../static/img/miscellaneous/third-party-import/faq-3level.png)
 
-# SLPH
+## SLPH
 
 Is External Shareware Program which Convert Sales to Purchase Module or vice versa which exported from SQL Accounting
 Normally is use to Export Data From SQL Accounting Database A from Document Type A (Eg Sales Invoice) & Import to SQL Accounting Database B as other Document Type (Eg Purchase Invoice)
 
-## Limitation
+## Limitation (SLPH)
 
 - Only support 1 Company Code (i.e. 1 batch 1 Company Code)
 - Both Source & Target must had Same Itemcode
 
-## Import Program
+## Import Program (SLPH)
 
 - Version (5.2.1.10) - 20 Aug 2025
 - [Download Link](https://download.sql.com.my/customer/Fairy/SQLAccSLPHV5-setup.exe)
-- MD5 : 7ECC58CCBA8B04A00E2F5582D234CE14
+- MD5 : `7ECC58CCBA8B04A00E2F5582D234CE14`
 
-### History New/Update/Changes
+### History New/Update/Changes (SLPH)
 
 --Build 10--
 
@@ -776,9 +773,9 @@ Add Get User Guide... Option.
 
 - Fix unable to register Database
 
-## Setting
+## Setting (SLPH)
 
-### In SQL Accounting
+### In SQL Accounting (SLPH)
 
 01. May refer to Point 2 at Things To Consider Before Import/Post
 02. Make sure this option is Tick under Tools | Options | Customer
@@ -795,7 +792,7 @@ Menu : Tools | Maintain Tax
 03. Select Purchase Tax Code
 04. Click Post/Save
 
-## Steps
+## Steps (SLPH)
 
 Menu : Purchase | Purchase Invoice...
 Below steps is example to import Purchase Invoice

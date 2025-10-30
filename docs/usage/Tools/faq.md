@@ -1,6 +1,6 @@
 ---
-sidebar_position: 3
-title: Tools Frequently Ask Question (FAQ)
+sidebar_position: 2
+title: Tools FAQ
 description: Tools Related FAQ
 slug: /usage/tools/faq
 tags: ["SQL Account", "Usage", "Tools","Currency","Module"]
@@ -101,24 +101,24 @@ You are advise to set your financial start period and system conversion date as 
 
   :::info
   This module is required if you are using foreign banks.
-  
+
   Related: [Payment from Foreign Customer](../../usage/tools/guide#maintain-currency)
   :::
-  
+
 ### Setup Foreign Currency Payment Method
-  
+
 #### Steps
 
 1. GL > Maintain Account
-  
+
     ![1](../../../static/img/usage/tools/tools-faq/1a.png)
-  
+
 2. Create your bank respectively
-  
+
    ![2](../../../static/img/usage/tools/tools-faq/2a.png)
-  
+
 3. Tools > Maintain Payment Method
-  
+
     ![3](../../../static/img/usage/tools/tools-faq/3a.png)
 
 </details>
@@ -134,8 +134,8 @@ You are advise to set your financial start period and system conversion date as 
 
  **Why does my system show error when applying exchange rate in payment?**
 
-These questions goes to one solution , which is  
-[Advanced Currency Module](#advanced-currency-module)
+These questions goes to one solution , which is
+[Advanced Currency Module](/usage/tools/faq#advanced-currency-module)
 :::
 
 ## Can I auto-post exchange gain/loss when using foreign banks?

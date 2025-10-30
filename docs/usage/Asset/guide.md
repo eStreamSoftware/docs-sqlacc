@@ -12,33 +12,33 @@ tags: ["SQL Account", "Usage", "Submission"]
 This is a **paid module**.
 :::
 
-![assetTab](../../../static/img/usage/asset/assetBasicGuide/assetTab.png)
+![asset-tab](../../../static/img/usage/asset/assetBasicGuide/asset-tab.png)
 
 ## Maintain Asset Group
 
-__Menu: Asset | Asset Group...__
+*Menu: Asset | Asset Group...*
 
 Group the asset items based on the following considerations.
 
-    a. Type of assets, eg. Motor Vehicle, Furniture, etc;
-    b. GL Account mapping.
+1. Type of assets, eg. Motor Vehicle, Furniture, etc;
+2. GL Account mapping.
 
-![assetGrp](../../../static/img/usage/asset/assetBasicGuide/assetGrp.jpg)
+![asset-grp](../../../static/img/usage/asset/assetBasicGuide/asset-grp.jpg)
 
 ### Asset Group
 
-![assetGrp2](../../../static/img/usage/asset/assetBasicGuide/assetGrp2.jpg)
+![asset-grp2](../../../static/img/usage/asset/assetBasicGuide/asset-grp2.jpg)
 
 | **Field Name**         | **Explanation & Properties**                                                                 |
 |-------------------------|-----------------------------------------------------------------------------------------------|
-| **Code**                | Input the new Asset Group Code  <ul><li>Field type: Alphanumerical</li><li>Length: 20</li></ul> |
-| **Description**         | Input the Asset Group description, e.g., Furniture, Motor Vehicle  <ul><li>Field type: Alphanumerical</li><li>Length: 200</li></ul> |
-| **Depreciation Method** | Select an appropriate Depreciation Method to generate depreciation value                      |
-| **Fixed Asset**         | Select Balance Sheet GL Account code for Fixed Asset                                          |
-| **Accum Depreciation**  | Select Balance Sheet GL Account code for Accumulated Depreciation                             |
-| **Depreciation**        | Select P&L GL Account for Depreciation of Asset                                               |
-| **Disposal Gain**       | Select P&L GL Account for Gain from Disposal Asset                                            |
-| **Disposal Loss**       | Select P&L GL Account for Loss from Disposal Asset                                            |
+| **Code**                | Input the new Asset Group Code. **Field type:** Alphanumerical; **Length:** 20.              |
+| **Description**         | Input the Asset Group description, e.g., *Furniture*, *Motor Vehicle*. **Field type:** Alphanumerical; **Length:** 200. |
+| **Depreciation Method** | Select an appropriate Depreciation Method to generate the depreciation value.                 |
+| **Fixed Asset**         | Select the Balance Sheet GL Account code for Fixed Asset.                                    |
+| **Accum Depreciation**  | Select the Balance Sheet GL Account code for Accumulated Depreciation.                       |
+| **Depreciation**        | Select the P&L GL Account for Depreciation of Asset.                                         |
+| **Disposal Gain**       | Select the P&L GL Account for Gain from Disposal of Asset.                                   |
+| **Disposal Loss**       | Select the P&L GL Account for Loss from Disposal of Asset.                                   |
 
 ## Maintain Asset Item
 
@@ -46,11 +46,11 @@ Group the asset items based on the following considerations.
 
 Add new asset items.
 
-![addAssetItem](../../../static/img/usage/asset/assetBasicGuide/addAssetItem.jpg)
+![add-asset-item](../../../static/img/usage/asset/assetBasicGuide/add-asset-item.jpg)
 
 ### Asset Item
 
-![assetItems](../../../static/img/usage/asset/assetBasicGuide/assetItems.jpg)
+![asset-items](../../../static/img/usage/asset/assetBasicGuide/asset-items.jpg)
 
 | **Field Name**          | **Field Type**   | **Length** | **Explanation**                                                                 |
 |--------------------------|------------------|------------|---------------------------------------------------------------------------------|
@@ -65,44 +65,44 @@ Add new asset items.
 | **Residual Value**       | Currency/Float   | –          | Set the residual value for this asset                                           |
 | **Status**               | Selection        | –          | Default is Active. Can be set to Inactive with an inactive date                 |
 
-### Deprecaition Schedule
+### Depreciation Schedule
 
 1. Select the Frequency to generate the depreciation schedule by :-
-    a. Monthly
-    b. Quarterly
-    c. Half Yearly
-    d. Yearly
+    1. Monthly
+    2. Quarterly
+    3. Half Yearly
+    4. Yearly
 
 2. Click Generate button.
 
-![deprSchedule](../../../static/img/usage/asset/assetBasicGuide/deprSchedule.jpg)
+![depr-schedule](../../../static/img/usage/asset/assetBasicGuide/depr-schedule.jpg)
 
 ### Project
 
     Set the depreciation allocation by Project (for Departmental/Cost Center purpose).
 
-![deprScheduleP1](../../../static/img/usage/asset/assetBasicGuide/deprScheduleP1.jpg)
+![depr-schedule-p1](../../../static/img/usage/asset/assetBasicGuide/depr-schedule-p1.jpg)
 
 ### History
 
 Add the important remarks in the asset history. For instances:
-    a. who has borrow/ when has return this asset?
-    b. asset has send for repair or service...
-    c. asset has destroyed by flood
+    1. who has borrow/ when has return this asset?
+    2. asset has send for repair or service...
+    3. asset has destroyed by flood
 
-![deprHistory](../../../static/img/usage/asset/assetBasicGuide/deprHistory.jpg)
+![depr-history](../../../static/img/usage/asset/assetBasicGuide/depr-history.jpg)
 
-### Photo 
+### Photo
 
-    Add the asset photo.
+Add the asset photo.
 
-![assetPhoto](../../../static/img/usage/asset/assetBasicGuide/assetPhoto.jpg)
+![asset-photo](../../../static/img/usage/asset/assetBasicGuide/asset-photo.jpg)
 
-### Attachments
+### Asset Item Attachments
 
-    Add the attachments for an asset
+Add the attachments for an asset
 
-![assetAttach](../../../static/img/usage/asset/assetBasicGuide/assetAttach.jpg)
+![asset-attach](../../../static/img/usage/asset/assetBasicGuide/asset-attach.jpg)
 
 ## Process Depreciation
 
@@ -110,29 +110,29 @@ Add the important remarks in the asset history. For instances:
 
 ### Asset Depreciation
 
-![assetDateRange](../../../static/img/usage/asset/assetBasicGuide/assetDateRange.jpg)
+![asset-date-range](../../../static/img/usage/asset/assetBasicGuide/asset-date-range.jpg)
 
 1. Select the process date range.
 
-:::note Tips:
+    :::note Tips:
 
-1. Process date range allows to select more than 1 month or 1 year to process the depreciation.
-2. Allow to process BEFORE system conversation date (No update to Maintain Opening Balance).
-:::
+    1. Process date range allows to select more than 1 month or 1 year to process the depreciation.
+    2. Allow to process BEFORE system conversation date (No update to Maintain Opening Balance).
+    :::
 
 2. Select the Process Date.
 
-![assetProcessDate](../../../static/img/usage/asset/assetBasicGuide/assetProcessDate.jpg)
+    ![asset-process-date](../../../static/img/usage/asset/assetBasicGuide/asset-process-date.jpg)
 
-:::note Tips:
-Journal Voucher date will follow this Process Date.
-:::
+    :::note Tips:
+    Journal Voucher date will follow this Process Date.
+    :::
 
 3. Description will be captured in the Journal Voucher description.
 4. Click Process.
 5. Preview the assets depreciation value and Net Book Value (NBV) before post to Journal Voucher. Click Save to post it.
 
-![assetNBV](../../../static/img/usage/asset/assetBasicGuide/assetNBV.jpg)
+![asset-nbv](../../../static/img/usage/asset/assetBasicGuide/asset-nbv.jpg)
 
 ## Open Depreciation
 
@@ -140,7 +140,7 @@ Journal Voucher date will follow this Process Date.
 
     Open to view the historical Depreciation Listing.
 
-![deprList](../../../static/img/usage/asset/assetBasicGuide/deprList.jpg)
+![depr-list](../../../static/img/usage/asset/assetBasicGuide/depr-list.jpg)
 
 ## Asset Disposal
 
@@ -158,7 +158,7 @@ Journal Voucher date will follow this Process Date.
 8. Select Agent. Default follow Asset Item.
 9. Select Area. Default follow Asset Item.
 
-![assetDisposal](../../../static/img/usage/asset/assetBasicGuide/assetDisposal.jpg)
+![asset-disposal](../../../static/img/usage/asset/assetBasicGuide/asset-disposal.jpg)
 
 ### General Tab
 
@@ -168,29 +168,29 @@ Journal Voucher date will follow this Process Date.
 4. **(Gain)/Loss** workout automatically.
 5. Gain/Loss Account default follow from Maintain Asset. May change the **(Gain)/Loss Account** if necessary.
 
-![generalTab-asset](../../../static/img/usage/asset/assetBasicGuide/generalTab-asset.jpg)
+![general-tab-asset](../../../static/img/usage/asset/assetBasicGuide/general-tab-asset.jpg)
 
 ### More Tab
 
-    Enter detailed **Note**.
-![moreTab-asset](../../../static/img/usage/asset/assetBasicGuide/moreTab-asset.jpg)
+Enter detailed **Note**.
+![more-tab-asset](../../../static/img/usage/asset/assetBasicGuide/more-tab-asset.jpg)
 
-### Attachments
+### Asset Disposal Attachments
 
     Add more attachment files
-![attachmentsTab-asset](../../../static/img/usage/asset/assetBasicGuide/attachmentsTab-asset.jpg)
+![attachments-tab-asset](../../../static/img/usage/asset/assetBasicGuide/attachments-tab-asset.jpg)
 
 ## Print Yearly Depreciation
 
-__Menu: Asset | Print Yearly Depreciation...__
+*Menu: Asset | Print Yearly Depreciation...*
 
-![yearlyDepr](../../../static/img/usage/asset/assetBasicGuide/yearlyDepr.jpg)
+![yearly-depr](../../../static/img/usage/asset/assetBasicGuide/yearly-depr.jpg)
 
 ## Print Yearly Analysis
 
 *Menu: Asset | Print Asset Analysis...*
 
-![assetAnalysis](../../../static/img/usage/asset/assetBasicGuide/assetAnalysis.jpg)
+![asset-analysis](../../../static/img/usage/asset/assetBasicGuide/asset-analysis.jpg)
 
 ### Reports Selection
 
@@ -201,28 +201,28 @@ Quarterly (4 quarters)
 Half Yearly (First Half and 2nd Half)
 Yearly (5 Years)
 
-![assetAnalysis-Report](../../../static/img/usage/asset/assetBasicGuide/assetAnalysis-Report.jpg)
+![asset-analysis-report](../../../static/img/usage/asset/assetBasicGuide/asset-analysis-report.jpg)
 
 ### Asset Analysis vs GL Balance Sheet Report
 
 1. At GL | Print Balance Sheet Statement..., choose the Balance Sheet Format : **This Year - 3 columns**
 2. At Asset | Print Asset Analysis..., choose Report: **Yearly (5 columns)**
 
-![balanceSheet-vs-assetAnalysis](../../../static/img/usage/asset/assetBasicGuide/balanceSheet-vs-assetAnalysis.jpg)
+![balance-sheet-vs-asset-analysis](../../../static/img/usage/asset/assetBasicGuide/balance-sheet-vs-asset-analysis.jpg)
 
 ## Print Asset Disposal Listing
 
 *Menu: Asset | Print Asset Disposal Listing...*
 
-![assetDisposalList](../../../static/img/usage/asset/assetBasicGuide/assetDisposalList.jpg)
+![asset-disposal-list](../../../static/img/usage/asset/assetBasicGuide/asset-disposal-list.jpg)
 
 ## Importing Asset Master List
 
-### Preparation for Asset Master Import Excel Template 
+### Preparation for Asset Master Import Excel Template
 
-Download the [Asset Master Template](https://download.sql.com.my/customer/asset/assetBasicGuide/Asset_Master_Import.xlsx)
+Download the [Asset Master Template](https://download.sql.com.my/customer/Asset/Asset_Master_Import.xlsx)
 
-![assetImport](../../../static/img/usage/asset/assetBasicGuide/assetImport.jpg)
+![asset-import](../../../static/img/usage/asset/assetBasicGuide/asset-import.jpg)
 
 ### Asset Master Template (xlsx)
 
@@ -239,54 +239,48 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 
 1. FA.GROUP.OPF (Maintain Asset Group)
 
-- **FA.GROUP.OPF**
+    | **Column**        | **Length**      | **Note**                                                                 |
+    |--------------------|-----------------|--------------------------------------------------------------------------|
+    | **Code**           | 20              | Asset Group Code, e.g., Furniture                                        |
+    | **Description**    | 160             | Asset Group Description, e.g., Furniture & Fittings                      |
+    | **DeprMethod**     | 1 (Integer)     | Depreciation Method, e.g., 1: Straight Line Method                       |
+    | **AssetAcc**       | 10              | e.g., Furniture & Fittings under Non-Current Assets (B/S)                 |
+    | **AccumDeprAcc**   | 10              | e.g., Accumulated Depreciation – Furniture & Fittings under Non-Current Assets (B/S) |
+    | **DeprAcc**        | 10              | e.g., Depreciation account under Expenses (P&L)                          |
+    | **DisposalGainAcc**| 10              | e.g., Disposal Gain account under Other Income / Expenses (P&L)          |
+    | **DisposalLossAcc**| 10              | e.g., Disposal Loss account under Expenses (P&L)                         |
 
-| **Column**        | **Length**      | **Note**                                                                 |
-|--------------------|-----------------|--------------------------------------------------------------------------|
-| **Code**           | 20              | Asset Group Code, e.g., Furniture                                        |
-| **Description**    | 160             | Asset Group Description, e.g., Furniture & Fittings                      |
-| **DeprMethod**     | 1 (Integer)     | Depreciation Method, e.g., 1: Straight Line Method                       |
-| **AssetAcc**       | 10              | e.g., Furniture & Fittings under Non-Current Assets (B/S)                 |
-| **AccumDeprAcc**   | 10              | e.g., Accumulated Depreciation – Furniture & Fittings under Non-Current Assets (B/S) |
-| **DeprAcc**        | 10              | e.g., Depreciation account under Expenses (P&L)                          |
-| **DisposalGainAcc**| 10              | e.g., Disposal Gain account under Other Income / Expenses (P&L)          |
-| **DisposalLossAcc**| 10              | e.g., Disposal Loss account under Expenses (P&L)                         |
+    - **Example :**
 
-- **Example :**
-
-| **Code**   | **Description**          | **DeprMethod** | **AssetAcc** | **AccumDeprAcc** | **DeprAcc** | **DisposalGainAcc** | **DisposalLossAcc** |
-|------------|--------------------------|----------------|--------------|------------------|-------------|---------------------|---------------------|
-| Furniture  | Furniture & Fittings     | 1              | 200-200      | 200-205          | 923-000     | 530-999             | 980-999             |
-| MV         | Motor Vehicle            | 1              | 200-400      | 200-405          | 923-000     | 530-999             | 980-999             |
+    | **Code**   | **Description**          | **DeprMethod** | **AssetAcc** | **AccumDeprAcc** | **DeprAcc** | **DisposalGainAcc** | **DisposalLossAcc** |
+    |------------|--------------------------|----------------|--------------|------------------|-------------|---------------------|---------------------|
+    | Furniture  | Furniture & Fittings     | 1              | 200-200      | 200-205          | 923-000     | 530-999             | 980-999             |
+    | MV         | Motor Vehicle            | 1              | 200-400      | 200-405          | 923-000     | 530-999             | 980-999             |
 
 2. FA.ITEM.OPF (Maintain Asset Item)
 
-- **FA.ITEM.OPF**
+        | **Column**       | **Length**  | **Note**                                                                 |
+    |-------------------|-------------|--------------------------------------------------------------------------|
+    | **Code**          | 20          | Asset Code, e.g., FF-0001                                                |
+    | **Description**   | 160         | Asset Description, e.g., Chairs, Table                                   |
+    | **Asset Group**   | 20          | Asset Group, e.g., Furniture                                             |
+    | **Agent**         | 10          | Assigned an agent if any                                                 |
+    | **Area**          | 10          | Assigned an area if any                                                  |
+    | **AcquireDate**   | Date        | Purchase date                                                            |
+    | **Cost**          | Currency    | Purchase cost                                                            |
+    | **UsefulLife**    | Float       | Useful life in years, e.g., 5 years, 3.3 years                           |
+    | **DeprFrequency** | 1 (Integer) | Depreciation frequency options: 1 = Monthly, 2 = Quarterly, 3 = Half Yearly, 4 = Yearly |
+    | **Residual**      | Float       | Resellable value                                                         |
 
-| **Column**       | **Length**  | **Note**                                                                 |
-|-------------------|-------------|--------------------------------------------------------------------------|
-| **Code**          | 20          | Asset Code, e.g., FF-0001                                                |
-| **Description**   | 160         | Asset Description, e.g., Chairs, Table                                   |
-| **Asset Group**   | 20          | Asset Group, e.g., Furniture                                             |
-| **Agent**         | 10          | Assigned an agent if any                                                 |
-| **Area**          | 10          | Assigned an area if any                                                  |
-| **AcquireDate**   | Date        | Purchase date                                                            |
-| **Cost**          | Currency    | Purchase cost                                                            |
-| **UsefulLife**    | Float       | Useful life in years, e.g., 5 years, 3.3 years                           |
-| **DeprFrequency** | 1 (Integer) | Depreciation frequency options:<ul><li>1: Monthly</li><li>2: Quarterly</li><li>3: Half Yearly</li><li>4: Yearly</li></ul> |
-| **Residual**      | Float       | Resellable value                                                         |
+    - **Example**
 
-- **Example**
-
-| **Code**  | **Description**              | **Asset Group** | **Agent** | **Area** | **AcquireDate** | **Cost**   | **UsefulLife** | **DeprFrequency** | **Residual** |
-|-----------|------------------------------|-----------------|-----------|----------|-----------------|------------|----------------|-------------------|--------------|
-| FF-001    | Chairs                       | Furniture       | ----      | KL       | 13/10/2022      | 12,000.00  | 10             | 1 (Monthly)       | 100.00       |
-| FF-002    | Meeting Table                | Furniture       | ----      | KL       | 23/01/20021     | 15,000.00  | 10             | 2 (Quarterly)     | 0.01         |
-| MV-001    | TOYOTA VIOS 1.5 / RED        | MV              | YUKI      | SEL      | 17/03/2020      | 88,000.00  | 5              | 4 (Yearly)        | 30,000.00    |
+        | **Code**  | **Description**              | **Asset Group** | **Agent** | **Area** | **AcquireDate** | **Cost**   | **UsefulLife** | **DeprFrequency** | **Residual** |
+        |-----------|------------------------------|-----------------|-----------|----------|-----------------|------------|----------------|-------------------|--------------|
+        | FF-001    | Chairs                       | Furniture       | ----      | KL       | 13/10/2022      | 12,000.00  | 10             | 1 (Monthly)       | 100.00       |
+        | FF-002    | Meeting Table                | Furniture       | ----      | KL       | 23/01/20021     | 15,000.00  | 10             | 2 (Quarterly)     | 0.01         |
+        | MV-001    | TOYOTA VIOS 1.5 / RED        | MV              | YUKI      | SEL      | 17/03/2020      | 88,000.00  | 5              | 4 (Yearly)        | 30,000.00    |
 
 3. FA.ITEM.OPF.DeprSche (Maintain Asset item-Depreciation Schedule)
-
-- **FA.ITEM.OPF.DeprSche**
 
 | **Column**     | **Length** | **Note**                                                                 |
 |----------------|------------|--------------------------------------------------------------------------|
@@ -327,11 +321,9 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 
 - **Example**
 
-![assetImport-faItemOpf](../../../static/img/usage/asset/assetBasicGuide/assetImport-faItemOpf.jpg)
+![asset-import-fa-item-opf](../../../static/img/usage/asset/assetBasicGuide/asset-import-fa-item-opf.jpg)
 
 - **4.FA.ITEM.OPF.Project(Maintain Asset Item-Project)**
-
-- **FA.ITEM.OPF.Project**
 
 | **Column** | **Length** | **Note**                          |
 |------------|------------|------------------------------------|
@@ -347,23 +339,23 @@ Download the [Asset Master Template](https://download.sql.com.my/customer/asset/
 | FF-001    | Project-B    | 70       |
 | MV-001    | Project-A    | 100      |
 
-### Quick Import Asset List 
+### Quick Import Asset List
 
 *Menu: File | Import | Excel Files...*
 
 1. Click Open folder button.
 
-![filesImportButton](../../../static/img/usage/asset/assetBasicGuide/filesImportButton.jpg)
+    ![files-import-button](../../../static/img/usage/asset/assetBasicGuide/files-import-button.jpg)
 
 2. Select the Asset Template excel file...
 
 3. Click Execute (Direct Import). Click Verify if you wish to verify the excel data before import.
 
-![filesImportExecute](../../../static/img/usage/asset/assetBasicGuide/filesImportExecute.jpg)
+    ![files-import-execute](../../../static/img/usage/asset/assetBasicGuide/files-import-execute.jpg)
 
-:::note NOTE:
-Asset import function available in SQL Account version 5.2022.948.826 and above.
-:::
+    :::note NOTE:
+    Asset import function available in SQL Account version 5.2022.948.826 and above.
+    :::
 
 ## Generate Asset Opening vs GL Maintain Opening Balancec Report
 
@@ -371,12 +363,12 @@ Asset import function available in SQL Account version 5.2022.948.826 and above.
 
 1. At Maintain Asset Item, click Preview button.
 
-   ![previewAsset](../../../static/img/usage/asset/assetBasicGuide/previewAsset.jpg)
+   ![preview-asset](../../../static/img/usage/asset/assetBasicGuide/preview-asset.jpg)
 
 2. For instance, the **Out of Balance** result get from the comparison between Asset Opening Balance and GL Maintain Opening Balance.
 
-   ![Opening](../../../static/img/usage/asset/assetBasicGuide/Opening.jpg)
+   ![opening](../../../static/img/usage/asset/assetBasicGuide/opening.jpg)
 
 3. With the **Asset Opening Breakdown** in the report, it helps you to ensure the asset data inputs are correctly recorded in Maintain Asset Item.
 
-![assetBreakdown](../../../static/img/usage/asset/assetBasicGuide/assetBreakdown.jpg)
+![asset-breakdown](../../../static/img/usage/asset/assetBasicGuide/asset-breakdown.jpg)

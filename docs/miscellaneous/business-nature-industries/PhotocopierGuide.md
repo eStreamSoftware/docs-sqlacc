@@ -46,6 +46,7 @@ Should allow append Current Reading same as previous Reading.
 
 Fixed Current Reading less then previous Should not append.
 Enable copy Quotation Detail Fields
+
 - Description3
 - Remark1
 - Remark2
@@ -63,8 +64,8 @@ Fixed Unable to save Invoice if document is transfer from other Document
 
 ## Modules Required
 
-* DIY Script
-* DIY Field
+- DIY Script
+- DIY Field
 
 ## Settings
 
@@ -72,20 +73,20 @@ Fixed Unable to save Invoice if document is transfer from other Document
 
 *Menu: Sales | Quotation...*
 
-* 1 Quotation is for 1 Customer Profile
-* Can Keep a lot of Machine (unlimited)
-* Use Doc No S-XXXX as the Setting - To avoid mix with actual use of Quotation
-* Can use same itemcode for Different Reading
+- 1 Quotation is for 1 Customer Profile
+- Can Keep a lot of Machine (unlimited)
+- Use Doc No S-XXXX as the Setting - To avoid mix with actual use of Quotation
+- Can use same itemcode for Different Reading
 
 ![photocopier-quotation](../../../static/img/miscellaneous/business-nature-industries/photocopierGuide/photocopier-quotation.jpg)
 
-* Minimum UDF Fields Required (Header Fields)
+- Minimum UDF Fields Required (Header Fields)
 
 | **Field**          | **Description**                                                |
 |---------------------|----------------------------------------------------------------|
 | **UDF_RebateRoundUD** | Rebate Calc to Round Up or Round Down; Tick: Round Down; UnTick: Round Up |
 
-* Minimum UDF Fields Required (Item Fields)
+- Minimum UDF Fields Required (Item Fields)
 
 | **Field**          | **Description**                              |
 |---------------------|----------------------------------------------|
@@ -98,13 +99,13 @@ Fixed Unable to save Invoice if document is transfer from other Document
 | **UDF_FREEQTY**     | Free Qty                                     |
 | **UDF_ADDFEE**      | Additional Fixed Fee Charges                 |
 
-* Minimum UDF Fields Required (Header Fields)
+- Minimum UDF Fields Required (Header Fields)
 
 | **Name**        | **Data Type** | **Size** | **Sub Size** | **Caption**         | **Required** | **Default Value** | **Display Format** |
 |------------------|---------------|----------|--------------|---------------------|--------------|-------------------|--------------------|
 | **RebateRoundUD** | Boolean       |          |              | UDF_RebateRoundUD   | False        | 0                 | False              |
 
-* Minimum UDF Fields Required (Items Fields)
+- Minimum UDF Fields Required (Items Fields)
 
 | **Name**       | **Data Type** | **Size** | **Sub Size** | **Caption**                 | **Required** | **Default Value** | **Display Format**   |
 |----------------|---------------|----------|--------------|-----------------------------|--------------|-------------------|----------------------|
@@ -120,13 +121,13 @@ Fixed Unable to save Invoice if document is transfer from other Document
 
 *Menu: Stock | Maintain Stock Item...*
 
-* Need to keep 2 itemcode for 1 same item(physically)
+- Need to keep 2 itemcode for 1 same item(physically)
 
 - 1 for Norm Itemcode with Stock Control
 - 1 for Non-Stock ItemCode for Meter Reading
 - See example MACH_CANNON1(Norm Itemcode) & CANNON1(Meter Reading)
 
-* Below is for By Packages Only
+- Below is for By Packages Only
 
 | **ItemCode**  | **Description**     | **Quotation Detail Field Used**       |
 |---------------|---------------------|---------------------------------------|
@@ -149,7 +150,7 @@ Fixed Unable to save Invoice if document is transfer from other Document
 | **Qty Charges**    | `No. of Copies - FOC Qty - (No. of Copies * Rebate)`                            |
 | **Amount Charges** | `(Qty Charges * Unit Price) + Add Fees + Monthly Charge (if No. of Copies > FOC Qty); Add Fees + Monthly Charge (if No. of Copies <= FOC Qty)` |
 
-* Below is the field relation between Sales Quotation & Sales Invoice
+- Below is the field relation between Sales Quotation & Sales Invoice
 
 | **Invoice Field**  | **Quotation Field**                          |
 |---------------------|----------------------------------------------|
@@ -177,13 +178,13 @@ Fixed Unable to save Invoice if document is transfer from other Document
 | **Amount**          | Calculated based on formula above            |
 | **UDF_FromDocNo**   | DocNo                                        |
 
-* Minimum UDF Fields Required (Header Fields)
+- Minimum UDF Fields Required (Header Fields)
 
 | **Name**        | **Data Type** | **Size** | **Sub Size** | **Caption**       | **Required** | **Default Value** | **Display Format** |
 |-----------------|---------------|----------|--------------|-------------------|--------------|-------------------|--------------------|
 | **RebateRoundUD** | Boolean       |          |              | UDF_RebateRoundUD | False        | 0                 | False              |
 
-* Minimum UDF Fields Required (Items Fields)
+- Minimum UDF Fields Required (Items Fields)
 
 | **Name**       | **Data Type** | **Size** | **Sub Size** | **Caption**                 | **Required** | **Default Value** | **Display Format**     |
 |----------------|---------------|----------|--------------|-----------------------------|--------------|-------------------|------------------------|
@@ -231,10 +232,8 @@ Fixed Unable to save Invoice if document is transfer from other Document
     System will use Balancing Method to Calculate the Minimum Charges.
     Eg Min. Charge RM 300
 
-    A. Machine Usage	RM 6.86
-    B. Free Copy	RM 2.50
-    C. Spoil Copy	RM 0.14
-    D. Total before Min Charges (A - B - C)	RM 4.22
-    E. Min. Charge (RM 300 - D)	RM 295.78
-
-
+    A. Machine Usage RM 6.86
+    B. Free Copy RM 2.50
+    C. Spoil Copy RM 0.14
+    D. Total before Min Charges (A - B - C) RM 4.22
+    E. Min. Charge (RM 300 - D) RM 295.78

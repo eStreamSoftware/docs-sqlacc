@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: RTM Frequently Ask Question (FAQ)
+title: RTM FAQ
 description: How to do custom reports
 slug: /usage/tools/rtm/faq
 tags: ["SQL Account", "Usage", "Tools"]
@@ -49,7 +49,7 @@ Just Enter as Follow code:-
 <details>
     <summary>Code</summary>
 
-```
+```vb
 Procedure DBTxtDocNoOnGetText(var Text: String);
 
 begin
@@ -70,7 +70,7 @@ Just Enter as Follow code:-
 <details>
     <summary>Code</summary>
 
-        ```pascal
+```pascal
         Procedure DBTxtDocNoOnGetText(var Text: String);
 
         begin
@@ -80,7 +80,7 @@ Just Enter as Follow code:-
         Text := Text;
 
         end;
-        ```
+```
 
 </details>
 
@@ -88,7 +88,7 @@ Just Enter as Follow code:-
 
 Just Enter as Follow code in the DisplayFormat:-
 
-**dd 'hb'**
+**dd 'hb'** *
 
 ### 4. How if data is 1234-001 but I wanted to be printed as 1234 & the value is not fixed (i.e may 12345-001, 1234-001)?
 
@@ -144,7 +144,7 @@ begin
 
   s := Option.GetFieldValue('AccountingValueDisplayFormat');
 
-  d := ValueOfSemiColonStr(s, 1)+';'+ ValueOfSemiColonStr(s, 0);  
+  d := ValueOfSemiColonStr(s, 1)+';'+ ValueOfSemiColonStr(s, 0);
 
   DBTxtC4.DisplayFormat := d;
 
@@ -211,7 +211,7 @@ begin
 
   lDT := CurrentDateTime-0.0625; //(1.5/24)
 
-  Value := FormatDateTime('dd/MM/yyyy hh:mm AM/PM', lDT); 
+  Value := FormatDateTime('dd/MM/yyyy hh:mm AM/PM', lDT);
 
 end;
 ```
@@ -345,10 +345,6 @@ Only Available in Version 852 & above
    ![6](../../../../static/img/usage/tools/rtm-faq/6.png)
 
 7. Right click and compile , make sure no error > save > close the preview screen and try preview again.
-
-:::info[Note]
-You can also refer to the guidance video at [HERE](https://www.sql.com.my/) regarding the above issue.
-:::
 
 ## Display Exemption Number & Expiry Date in Invoice Template
 

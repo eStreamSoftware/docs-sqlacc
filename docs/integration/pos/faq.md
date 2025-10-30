@@ -7,15 +7,15 @@ tags: ["SQL Account", "FAQ", "POS"]
 ---
 ## Normal POS FAQ
 
-### 1. Error When install SQL POS : Must specify additional Parameter
+### Error When install SQL POS : Must specify additional Parameter
 
-![1](../../../static/img/integration/pos/qna/1.png)
+![1](../../../static/img/integration/pos/qna/installation-error.png)
 
 **Solution:**
 
     - **If New Installation:**
 
-![2](../../../static/img/integration/pos/qna/2.png)
+![2](../../../static/img/integration/pos/qna/new-installation.png)
 
     ```
     1. Delete all the Item from C:\itUnicode
@@ -24,42 +24,42 @@ tags: ["SQL Account", "FAQ", "POS"]
 
 - **If already have transactions:**
 
-    ![3](../../../static/img/integration/pos/qna/3.png)
+    ![3](../../../static/img/integration/pos/qna/new-installation1.png)
 
     1. Backup SQL POS first
 
-    2. Delete all the Item from C:\itUnicode
+    2. Delete all the Item from `C:\itUnicode`
 
     3. Control Panel | Uninstall SQL-POS
 
-### 2. Use Offline Mode
+### Use Offline Mode
 
 - Unable to capture live Master Transaction from SQL Acc Master
 
-### 3. SQL POS is only Standalone PC
+### SQL POS is only Standalone PC
 
 - The reason due to when Database corrupt, it won’t corrupt all, so preferable
     Standalone
 
-### 4. Even though I set to Each Bill(Real Time) still unable to get the UTD QTY in SQL POS?
+### Even though I set to Each Bill(Real Time) still unable to get the UTD QTY in SQL POS?
 
 - In Setting - > SQL Account -> Need to ticked Run This POS When call from
     SQLAcc
 
-    ![4](../../../static/img/integration/pos/qna/4.png)
+    ![4](../../../static/img/integration/pos/qna/unable-get-utd-qty.png)
 
-### 5.Why keep prompt me Network failed?
+### Why keep prompt me Network failed?
 
 1. Make sure have install Firebird
 
 2. SQL Account have to Set to **Firebird Server** if setting ticked **Run this POS when call from SQLAcc**
 
-### 6. Added Stock Item Code with Chinese word, prompt me unable to find this Product Code ???
+### Added Stock Item Code with Chinese word, prompt me unable to find this Product Code ???
 
 - SQL POS unable to support Unicode on Code, may key in the Chinese Word in Item Description
 - Code Only Alphanumeric
 
-### 7. Previously using IT Uni POS, how should I integrate in SQL?
+### Previously using IT Uni POS, how should I integrate in SQL?
 
 #### 1. SQL POS 316 -> FoxPro
 
@@ -67,7 +67,7 @@ tags: ["SQL Account", "FAQ", "POS"]
 
 2. In SQLPOS-> Setting -> System Tab -> Tools -> Select UniPos Migration ->
 
-    ![5](../../../static/img/integration/pos/qna/5.png)
+    ![5](../../../static/img/integration/pos/qna/integrate-it-uni-pos.png)
 
     1. Import From : C:\user\public\itposdata or C:\user\public\unipos
 
@@ -80,7 +80,7 @@ tags: ["SQL Account", "FAQ", "POS"]
 In SQL POS System -> Double click SQL POS -> Logon Screen -> Right Click
 Restore Database
 
-### 8. Print Receipt Chinese word show in ???
+### Print Receipt Chinese word show in ???
 
 - Reason due to Non-Unicode program set to Chinese
 
@@ -88,38 +88,38 @@ Solution :
 
 - Control Panel -> Regional -> Language for Non Unicode -> Set to English (United States)
 
-    ![6](../../../static/img/integration/pos/qna/6.png)
+    ![6](../../../static/img/integration/pos/qna/print-receipt-chinese-word.png)
 
 - Font change to Arial
 
 1. Click on Design report
 
-    ![7](../../../static/img/integration/pos/qna/7.png)
+    ![7](../../../static/img/integration/pos/qna/print-receipt-chinese-word1.png)
 
 2. Click on Modify
 
-    ![8](../../../static/img/integration/pos/qna/8.png)
+    ![8](../../../static/img/integration/pos/qna/print-receipt-chinese-word2.png)
 
 3. Click on Description Text Object -> Menu select Format -> Font
 
-    ![9](../../../static/img/integration/pos/qna/9.png)
+    ![9](../../../static/img/integration/pos/qna/print-receipt-chinese-word3.png)
 
 4. Change to Arial
 
-    ![10](../../../static/img/integration/pos/qna/10.png)
+    ![10](../../../static/img/integration/pos/qna/print-receipt-chinese-word4.png)
 
 5. Save the report
 
-### 9. Error Message : Warning : Assigned Printer does not exist : Print to PDF (Mac Desktop)
+### Error Message : Warning : Assigned Printer does not exist : Print to PDF (Mac Desktop)
 
-    ![11](../../../static/img/integration/pos/qna/11.png)
+    ![11](../../../static/img/integration/pos/qna/printer-not-exist.png)
 
 Solution:
 
 1. **Testing Database only** - Delete whole ITUnicode database
 2. **Real Database** – May request backup from user upload to us to check (suspect file corrupted)
 
-### 10. Unable to capture correct price Tag Price
+### Unable to capture correct price Tag Price
 
 Assigned price tag for item A and Item B, how come only first Item A will capture price tag
 price, but second item B ref price?
@@ -128,17 +128,17 @@ Solution :
 
 Setting -> SQL Account -> Ticked Unlink SQL Accounting when available
 
-![12](../../../static/img/integration/pos/qna/12.png)
+![12](../../../static/img/integration/pos/qna/printer-not-exist-solution.png)
 
-### 11. Error Message : Failed to Set
+### Error Message : Failed to Set
 
-![13](../../../static/img/integration/pos/qna/13.png)
+![13](../../../static/img/integration/pos/qna/failed-to-set-error.png)
 
 **Solution :**
 
 - Make sure install SQL With 759 & above
 
-### 12. What is Price Set in Stock Item?
+### What is Price Set in Stock Item?
 
 - Multiple price set in Maintain Stock Item, user allow to set multiple price with comma.
 
@@ -147,30 +147,30 @@ Setting -> SQL Account -> Ticked Unlink SQL Accounting when available
   - Price 2 : RM 15.
   - Price 3 : RM 20.
 
-    ![14](../../../static/img/integration/pos/qna/14.png)
+    ![14](../../../static/img/integration/pos/qna/price-set.png)
 
 - When select itemcode RED BEAN 500G, auto prompt the price for user to select
 
-    ![15](../../../static/img/integration/pos/qna/15.png)
+    ![15](../../../static/img/integration/pos/qna/price-set1.png)
 
-### 13. What to do if I want to print Barcode Label with Chinese Company Name?
+### What to do if I want to print Barcode Label with Chinese Company Name?
 
 - Save as JPEG, then load the picture into Foxit Design ~
 
-### 14. Error Message : File in use when design barcode report
+### Error Message : File in use when design barcode report
 
-![16](../../../static/img/integration/pos/qna/16.png)
+![16](../../../static/img/integration/pos/qna/file-in-use-error.png)
 
 - Try Exit the program and logon
 - Delete this report and design again
 
-### 15. Backup Error : C:\itUnicode\SQL-POS\SQL-POS-0001.fdb could not be read
+### Backup Error : C:\itUnicode\SQL-POS\SQL-POS-0001.fdb could not be read
 
 - Is due to IT Sync is running behind, may shut down IT Sync before Backup
 
-### 16. Close Counter Collect Payment Type is not match with Payment Method select in Bills
+### Close Counter Collect Payment Type is not match with Payment Method select in Bills
 
-![17](../../../static/img/integration/pos/qna/17.png)
+![17](../../../static/img/integration/pos/qna/payment-type-not-match.png)
 
 - Collect Payment Summary Payment Type is group by Account Code, may check
     whether the payment method is using same account code ~
@@ -182,15 +182,15 @@ Step to check Payment Method post to what Account
 
 :::
 
-### 17. Why in Setting Receipt & License Retrieve From SQL button is missing
+### Why in Setting Receipt & License Retrieve From SQL button is missing
 
-![18](../../../static/img/integration/pos/qna/18.png)
+![18](../../../static/img/integration/pos/qna/receipt-license-retrieve-button-missing.png)
 
 - Once License Registered, the button will disable ~
 
-### 18. Same receipt will auto cut to few pages
+### Same receipt will auto cut to few pages
 
-![19](../../../static/img/integration/pos/qna/19.png)
+![19](../../../static/img/integration/pos/qna/receipt-auto-cut.png)
 
 **Solution :**
 
@@ -200,17 +200,17 @@ Step to check Payment Method post to what Account
 
 - In Print Receipt -> Follow below step
 
-![20](../../../static/img/integration/pos/qna/20.png)
+![20](../../../static/img/integration/pos/qna/receipt-auto-cut-solution.png)
 
-### 19. Unable to key In Daily Cash Sales No with message : The Control is Read Only
+### Unable to key In Daily Cash Sales No with message : The Control is Read Only
 
-![21](../../../static/img/integration/pos/qna/21.png)
+![21](../../../static/img/integration/pos/qna/unable-key-in-daily-cash-sales.png)
 
 **Answer :**
 
 - Control by license, need email to request new license key, mean Counter ID and CashSales number prefix based on license.
 
-### 20. Receipt format unable to show Chinese word
+### Receipt format unable to show Chinese word
 
 1. Menu Screen -> Select **Print Receipt**
 
@@ -220,13 +220,13 @@ Step to check Payment Method post to what Account
 
 4. Double click on the object to show in Chinese
 
-    ![22](../../../static/img/integration/pos/qna/22.png)
+    ![22](../../../static/img/integration/pos/qna/unable-show-chinese-word.png)
 
 :::caution
 After Fill in \<UTF-8\> , remember save the report.
 :::
 
-### 21. Proper Step to set Branch SQL POS (Error Failed to Set )
+### Proper Step to set Branch SQL POS (Error Failed to Set )
 
 1. Configure and make sure SQL able to test successful
 
@@ -234,15 +234,15 @@ After Fill in \<UTF-8\> , remember save the report.
 
 3. In SQL POS :
 
-![23](../../../static/img/integration/pos/qna/23.png)
+![23](../../../static/img/integration/pos/qna/set-branch-pos.png)
 
 - Put in DNS Number
 - Ping result lost 0 = 0%
 - Unticked **DisableChkPing**
 
-### 22. Fail to assign Printer
+### Fail to assign Printer
 
-![24](../../../static/img/integration/pos/qna/24.png)
+![24](../../../static/img/integration/pos/qna/fail-assign-printer.png)
 
 **Solution :**
 
@@ -254,19 +254,19 @@ After Fill in \<UTF-8\> , remember save the report.
 
 3. Window XP -> Upgrade to Window 7 & Above
 
-### 23. How to disable preview receipt when payment done
+### How to disable preview receipt when payment done
 
-![25](../../../static/img/integration/pos/qna/25.png)
+![25](../../../static/img/integration/pos/qna/disable-preview-receipt.png)
 
 Solution :
 
 - SQL POS **Setting** - > **Receipt & License** Tab -> **No Copy of Receipt** set to **0**
 
-### 24. What to do if disallow User to return stock?
+### What to do if disallow User to return stock?
 
 Maintain User -> Refund Item ->
 
-![26](../../../static/img/integration/pos/qna/26.png)
+![26](../../../static/img/integration/pos/qna/disallow-user-return-stock.png)
 
 :::note
 Set to Yes, user allow to return stock with enter - 1
@@ -274,17 +274,17 @@ Set to Yes, user allow to return stock with enter - 1
 Set to No, user disallow to save negative stock
 :::
 
-### 25. How to un-closed counter?
+### How to un-closed counter?
 
 ➔ Close Counter -> Right click un-closed counter
 
-### 26. Unable to Sent Email from Gmail : Fail to sent email
+### Unable to Sent Email from Gmail : Fail to sent email
 
 :::info
 *(Menu -> Export Cash Sales -> Email Button -> Setting Email Server Button)*
 :::
 
-![27](../../../static/img/integration/pos/qna/27.png)
+![27](../../../static/img/integration/pos/qna/unable-sent-email.png)
 
 **Solution :**
 
@@ -292,15 +292,15 @@ Set to No, user disallow to save negative stock
 
 2. Click on **Less Secure App Access**
 
-    ![28](../../../static/img/integration/pos/qna/28.png)
+    ![28](../../../static/img/integration/pos/qna/unable-sent-email-solution.png)
 
 3. Press the scrolling bar to Turn on
 
-    ![29](../../../static/img/integration/pos/qna/29.png)
+    ![29](../../../static/img/integration/pos/qna/unable-sent-email-solution1.png)
 
-### 27. Post to SQL Account raise Error: Failed to Psot Payment of 02/6/2020 OLED IDispatch exception code 0 from : knockoff amount (0.00) must not exceed outstanding amount (321.6)
+### Post to SQL Account raise Error: Failed to Post Payment of 02/6/2020 OLED IDispatch exception code 0 from : knockoff amount (0.00) must not exceed outstanding amount (321.6)
 
-![30](../../../static/img/integration/pos/qna/30.png)
+![30](../../../static/img/integration/pos/qna/fail-post-payment.png)
 
 **Solution :**
 
@@ -310,8 +310,8 @@ Set to No, user disallow to save negative stock
 
 ## SQL POS F&B
 
-### 28. Error Message : Counter is closed, wait for Main Counter to open
+### Error Message : Counter is closed, wait for Main Counter to open
 
-    ![31](../../../static/img/integration/pos/qna/31.png)
+    ![31](../../../static/img/integration/pos/qna/counter-closed.png)
 
 - This error message mean when there have multiple POS link together, make sure Main Counter have to Open Counter first.

@@ -20,27 +20,23 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
    5. Click **Apply** to generate, whenever you change any setting under Step 3 or 4, please redo by clicking Apply
 
-      ![87](../../../static/img/usage/sales/sales-reports/86.png)
+      ![sales-document-listing](../../../static/img/usage/sales/sales-reports/sales-document-listing.png)
 
-   :::note
+#### Export report into Excel
 
-   1. **Export report into Excel**
+   1. **Right click on any title bar**
 
-      1. **Right click on any title bar**
+   2. **Click on Grid Export > Export to Excel**.
 
-      2. **Click on Grid Export > Export to Excel**.
+      ![export-report-into-excel](../../../static/img/usage/sales/sales-reports/export-report-into-excel.png)
 
-         ![88](../../../static/img/usage/sales/sales-reports/87.png)
+#### Batch Printing Invoices
 
-   2. **Batch Printing Invoices**
+   If you want to print out entire month invoices by batch and into a page-by-page format,
 
-      If you want to print out entire month invoices by batch and into a page-by-page format,
+   1. **Sales** > **Print Sales Document Listing**.
 
-      1. **Sales** > **Print Sales Document Listing**.
-
-      2. Tick **“Print Document Style”**
-
-   :::
+   2. Tick **“Print Document Style”**
 
    :::info
 
@@ -48,7 +44,7 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
    :::
 
-   ![89](../../../static/img/usage/sales/sales-reports/88.png)
+   ![batch-printing-invoices](../../../static/img/usage/sales/sales-reports/batch-printing-invoices.png)
 
 ### Outstanding Sales Document Listing (Require Partial Delivery Module)
 
@@ -72,8 +68,8 @@ This report can help you check the transfer document’s info, such as the amoun
 
 4. **Apply**
 
-   ![90](../../../static/img/usage/sales/sales-reports/89.png)
+   ![outstanding-sales-doc-listing](../../../static/img/usage/sales/sales-reports/outstanding-sales-doc-listing.png)
 
 5. If you want to know where this **document has already been transferred** to, you just **Preview** the report.
 
-   ![91](../../../static/img/usage/sales/sales-reports/90.png)
+   ![outstanding-sales-doc-listing-preview](../../../static/img/usage/sales/sales-reports/outstanding-sales-doc-listing-preview.png)

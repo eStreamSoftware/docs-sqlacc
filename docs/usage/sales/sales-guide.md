@@ -10,12 +10,12 @@ tags: ["SQL Account", "Usage", "Sales"]
 
 Example of sales process work flow aligned with SQL Account flow:
 
-![32](../../../static/img/usage/sales/sales-guide/32.png)
+![sales-work-flow](../../../static/img/usage/sales/sales-guide/sales-work-flow.png)
 
 ## Sales Quotation
 
 :::info
-Watch tutorial video here:  [Sales Quotation](http://www.sql.com.my/video/sqlacc_tutorial/06-01_Sales_Quotation.mp4)
+Watch tutorial video here:  [Sales Quotation](https://www.youtube.com/watch?v=2hKhtpaQfP4)
 :::
 
 1. **Sales** | **Quotation** | **New**
@@ -24,13 +24,13 @@ Watch tutorial video here:  [Sales Quotation](http://www.sql.com.my/video/sqlacc
 
 3. Insert the item that is requested by the customer, and you can estimate your profit & loss in this transaction by checking on **Profit Estimator**
 
-   ![33](../../../static/img/usage/sales/sales-guide/33.png)
+   ![profit-estimator](../../../static/img/usage/sales/sales-guide/profit-estimator.png)
 
 4. After everything is keyed in correctly, save the **Sales Quotation**
 
 5. **Preview** the report and you can **print** or **export** it into PDF/ Email/ RTF(Microsoft Word)/Excel or others.
 
-   ![34](../../../static/img/usage/sales/sales-guide/34.png)
+   ![preview-export](../../../static/img/usage/sales/sales-guide/preview-export.png)
 
 ### Project
 
@@ -40,7 +40,7 @@ There are 2 types of project you need to be take note.
 
 2. Detail Project. For detail project, you have to **insert the project column out from Field Chooser**.
 
-   ![229](../../../static/img/usage/sales/sales-guide/quotation-project.png)
+   ![quotation-project](../../../static/img/usage/sales/sales-guide/quotation-project.png)
 
 ### Attachment
 
@@ -52,7 +52,7 @@ You can use this feature to attach external PDF, excel, word documents and image
 
 3. Then choose the file from your computer that you want to attach
 
-   ![230](../../../static/img/usage/sales/sales-guide/quotation-attachment.png)
+   ![quotation-attachment](../../../static/img/usage/sales/sales-guide/quotation-attachment.png)
 
 ### Note
 
@@ -66,7 +66,7 @@ You can use this feature to attach external PDF, excel, word documents and image
 
 5. You will get prompted the Save changes? message. Click YES to save it.
 
-   ![231](../../../static/img/usage/sales/sales-guide/quotation-note.png)
+   ![quotation-note](../../../static/img/usage/sales/sales-guide/quotation-note.png)
 
 ## Sales Order
 
@@ -80,7 +80,7 @@ Watch tutorial video here: [Sales Invoicing Sales Order](https://www.youtube.com
 
 3. **Right Click on Sales Order title**, select **Transfer from Quotation**. You can either transfer the whole quotation or only part of the quotation document (*Partial Delivery Module requested)
 
-   ![35](../../../static/img/usage/sales/sales-guide/35.png)
+   ![document-transfer](../../../static/img/usage/sales/sales-guide/document-transfer.png)
 
 4. Save the **Sales Order**.
 
@@ -128,11 +128,11 @@ Watch tutorial video here: [Sales Invoicing Sales Invoice](https://www.youtube.c
 
 1. After you save then invoice then you can press on keyboard short cut key “ Ctrl + O” to get the show double entry result.
 
-   ![36](../../../static/img/usage/sales/sales-guide/36.png)
+   ![show-double-entry-1](../../../static/img/usage/sales/sales-guide/show-double-entry-1.png)
 
 2. After you save the invoice, you may right click on the wording of Invoice then select “Show Double Entry”.
 
-   ![37](../../../static/img/usage/sales/sales-guide/37.png)
+   ![show-double-entry-2](../../../static/img/usage/sales/sales-guide/show-double-entry-2.png)
 
 ## Cash Sales
 
@@ -144,9 +144,9 @@ Watch tutorial video here: [Sales Invoicing Sales Invoice](https://www.youtube.c
 
 4. When saving, the system will prompt a **Payment/ Change** dialog box
 
-   ![38](../../../static/img/usage/sales/sales-guide/38.png)
+   ![cash-sales-1](../../../static/img/usage/sales/sales-guide/cash-sales-1.png)
 
-   ![39](../../../static/img/usage/sales/sales-guide/39.png)
+   ![payment-received](../../../static/img/usage/sales/sales-guide/payment-received.png)
 
 ## Sales Credit Note
 
@@ -162,7 +162,7 @@ Watch tutorial video here: [Sales Invoicing Sales Credit Note](https://www.youtu
 
 4. **Save** the Credit Note.
 
-   ![40](../../../static/img/usage/sales/sales-guide/40.png)
+   ![sales-credit-note](../../../static/img/usage/sales/sales-guide/sales-credit-note.png)
 
 ## Sales Cancelled Note (required partial delivery module)
 
@@ -172,10 +172,10 @@ Sales Cancelled Note is used for the cancelling of any outstanding Sales Order.
 
 2. **Right Click on the Cancelled Note title**, select **Transfer from Sales Order**; (in Sales Cancelled Note, items can only be inserted by transferring from Sales Order)
 
-   ![41](../../../static/img/usage/sales/sales-guide/41.png)
+   ![sales-cancelled-note-1](../../../static/img/usage/sales/sales-guide/sales-cancelled-note-1.png)
 
 3. You can choose to transfer the sales order either by the whole document or partially.
 
-   ![41b](../../../static/img/usage/sales/sales-guide/41b.png)
+   ![sales-cancelled-note-2](../../../static/img/usage/sales/sales-guide/sales-cancelled-note-2.png)
 
 4. **Save** the Cancelled Note.

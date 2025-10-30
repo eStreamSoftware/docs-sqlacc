@@ -22,19 +22,19 @@ This is an additional module.
 
 2. Create finished good, raw material, WIP's closing stock account in your balance sheet current asset account as below
 
-    ![1](../../../static/img/usage/production/guide/create-gl-account-finished-goods.png)
+    ![create-gl-account-finished-goods](../../../static/img/usage/production/guide/create-gl-account-finished-goods.png)
 
-    ![2](../../../static/img/usage/production/guide/list-of-gl-account-stock-account-created.png)
+    ![list-of-gl-account-stock-account-created](../../../static/img/usage/production/guide/list-of-gl-account-stock-account-created.png)
 
 3. Create Manufacturing Account under Cost of Goods Sold (Profit & Loss)
 
     i. Highlight on Cost of Goods Sold and click on NEW Button, Insert GL Code, Description and make sure to tick on a special Account type Manufacturing Control Account.
 
-    ![3](../../../static/img/usage/production/guide/create-gl-account.png)
+      ![create-gl-account](../../../static/img/usage/production/guide/create-gl-account.png)
 
     ii. Highlight on Cost of Goods Sold and click on NEW Button, Insert GL Code, Description and make sure to tick on a special Account type Manufacturing Control Account.
 
-    ![4](../../../static/img/usage/production/guide/highlight-cost-of-goods-sold.png)
+      ![highlight-cost-of-goods-sold](../../../static/img/usage/production/guide/highlight-cost-of-goods-sold.png)
 
 ### Stock Group
 
@@ -50,23 +50,23 @@ To produce a chemical products, the costing calculation based on stock group:-
 
         - Costing Method : FIFO
 
-        ![5](../../../static/img/usage/production/guide/create-stock-group-raw-material.png)
-    
+        ![create-stock-group-raw-material](../../../static/img/usage/production/guide/create-stock-group-raw-material.png)
+
     2. Water
 
         Assigned your Raw Material Purchase code, Cash Purchase code, Purchase Return code.
 
         - Costing Method : Fixed Costing
 
-        ![6](../../../static/img/usage/production/guide/create-stock-group-water.png)
+        ![create-stock-group-water](../../../static/img/usage/production/guide/create-stock-group-water.png)
 
     3. Finished Goods
-        
+
         Assigned your Finished Goods Purchase code, Cash Purchase code, Purchase Return code.
-        
+
         - Costing Method : FIFO
 
-        ![7](../../../static/img/usage/production/guide/create-stock-group-finished-goods.png)
+        ![create-stock-group-finished-goods](../../../static/img/usage/production/guide/create-stock-group-finished-goods.png)
 
 ### Stock Item
 
@@ -76,7 +76,7 @@ Setup the stock item master data for all types of stock. Eg. raw materials, end 
 
     1. Create all your raw materials items and assigned stock group respectively.
 
-        ![8](../../../static/img/usage/production/guide/create-raw-materials-stock-item.png)
+        ![create-raw-materials-stock-item](../../../static/img/usage/production/guide/create-raw-materials-stock-item.png)
 
     2. Create your finished goods item and assign raw materials.
 
@@ -85,12 +85,12 @@ Setup the stock item master data for all types of stock. Eg. raw materials, end 
         2. go to the BOM tab, choose this product as a BOM item, and assign all the raw materials, quantity needed.
 
         Location is the Raw Materials kept and deducted from which warehouse.
-        
+
         Overhead Cost is a fixed additional cost to the material cost incurred during each material process.
-        
+
         Assembly Cost is a fixed cost incurred to the entire process for final products.
 
-        ![9](../../../static/img/usage/production/guide/assign-item-with-bom-item.png)
+        ![assign-item-with-bom-item](../../../static/img/usage/production/guide/assign-item-with-bom-item.png)
 
 ### Location (Warehouse)
 
@@ -106,7 +106,7 @@ Define the warehouse code to identify the stock movement between the locations.
 
 4. Work in progress stock kept in WIP Warehouse.
 
-![10](../../../static/img/usage/production/guide/overview-workflow-warehouse.png)
+![overview-workflow-warehouse](../../../static/img/usage/production/guide/overview-workflow-warehouse.png)
 
 ### Overview Workflow
 
@@ -116,9 +116,9 @@ Unless the stock is manufactured, then you have to proceed to the Job Order proc
 
 When products produce out, you have to transfer the Job Order to the Stock Assembly to commit the stock on hand.
 
-![1](../../../static/img/usage/production/guide/overview-workflow-so-jo.png)
+![overview-workflow-so-jo](../../../static/img/usage/production/guide/overview-workflow-so-jo.png)
 
-![2](../../../static/img/usage/production/guide/overview-of-manufacturing-business-flow.png)
+![overview-of-manufacturing-business-flow](../../../static/img/usage/production/guide/overview-of-manufacturing-business-flow.png)
 
 ## Job Order
 
@@ -137,23 +137,23 @@ It is required the SO -> PO and Job Order module. For more information about pri
 ### Sales Order
 
     1. Create Sales Order (SO)
-        
+
        Go to **Sales | Sales Order**
 
        Create and save the customer PO into Sales Order.
 
-       ![3](../../../static/img/usage/production/guide/sales-order.png)
+       ![sales-order](../../../static/img/usage/production/guide/sales-order.png)
 
     2. SO Check the Available Stock Balance
-       
+
        You can press F11 (Available Stock Balance) on the item code highlighted.
 
        Below is **CAR** stock available balance.
 
-       ![4](../../../static/img/usage/production/guide/car-available-balance.png)
+       ![car-available-balance](../../../static/img/usage/production/guide/car-available-balance.png)
 
        :::note
-       
+
        **Results for CAR Item:**
 
        SO Qty = -100.00
@@ -165,24 +165,24 @@ It is required the SO -> PO and Job Order module. For more information about pri
        Qty (On Hand) = 0.00
 
        Available Qty = -100.00
-       
+
        :::
 
        Below is **WHEEL** stock available balance.
 
-       ![5](../../../static/img/usage/production/guide/wheel-available-balance.png)
+       ![wheel-available-balance](../../../static/img/usage/production/guide/wheel-available-balance.png)
 
 ### Purchase Order (Transfer From So)
 
     1. Create New Purchase Order (PO)
-       
+
        Go to Purchase | Purchase Order
 
        1.  Click on the NEW button to start with a new PO
 
        2. Select the Supplier
 
-       ![6](../../../static/img/usage/production/guide/purchase-order-new.png)
+       ![purchase-order-new](../../../static/img/usage/production/guide/purchase-order-new.png)
 
     2. PO Transfer From SO
 
@@ -190,7 +190,7 @@ It is required the SO -> PO and Job Order module. For more information about pri
 
        2. Click on Transfer From Sales Order in the menu
 
-       ![7](../../../static/img/usage/production/guide/purchase-order-transfer-from.png)
+       ![purchase-order-transfer-from](../../../static/img/usage/production/guide/purchase-order-transfer-from.png)
 
     3. Document Transfer (SO -> PO)
 
@@ -200,21 +200,21 @@ It is required the SO -> PO and Job Order module. For more information about pri
 
        3. Click OK to proceed
 
-            ![8](../../../static/img/usage/production/guide/document-transfer.png)
+            ![document-transfer](../../../static/img/usage/production/guide/document-transfer.png)
 
        4.  Save the PO Document
 
             Click on the SAVE button
 
-            ![9](../../../static/img/usage/production/guide/purchase-order-save.png)
+            ![purchase-order-save](../../../static/img/usage/production/guide/purchase-order-save.png)
 
        5.   PO Check the Available Stock Balance
-            
+
             You can press F11 (Available Stock Balance) on the item code highlighted.
 
             Below is WHEEL stock available balance
 
-            ![10](../../../static/img/usage/production/guide/wheel-available-balance-after-save.png)
+            ![wheel-available-balance-after-save](../../../static/img/usage/production/guide/wheel-available-balance-after-save.png)
 
    :::note
 
@@ -235,19 +235,19 @@ It is required the SO -> PO and Job Order module. For more information about pri
 
 CLICK on the NEW button and SELECT the Customer.
 
-![11](../../../static/img/usage/production/guide/new-job-order.png)
+![new-job-order](../../../static/img/usage/production/guide/new-job-order.png)
 
 :::info
 
-> **Customer Info from SO**
+> Customer Info from SO
 
 Basically, the customer and others information copy from SO.
 
-> **Assembly Item Info (Header & Footer)**
+> Assembly Item Info (Header & Footer)
 
 Assembly item transferred from SO. It will determine the BOM Components required and the assembly unit cost.
 
-> **BOM Components Details**
+> BOM Components Details
 
 Total components quantity requirement to meet the total output.
 
@@ -263,7 +263,7 @@ Total components quantity requirement to meet the total output.
 
    2. Select the Customer
 
-   ![11](../../../static/img/usage/production/guide/new-job-order.png)
+   ![new-job-order](../../../static/img/usage/production/guide/new-job-order.png)
 
 2. JO Transfer From SO
 
@@ -271,7 +271,7 @@ Total components quantity requirement to meet the total output.
 
    2. Click on Transfer From Sales Order in the menu
 
-   ![12](../../../static/img/usage/production/guide/job-order-transfer-from.png)
+   ![job-order-transfer-from](../../../static/img/usage/production/guide/job-order-transfer-from.png)
 
 3. Document Transfer (SO --> JO)
 
@@ -281,7 +281,7 @@ Total components quantity requirement to meet the total output.
 
    3. Click OK to proceed
 
-   ![13](../../../static/img/usage/production/guide/production-document-transfer.png)
+   ![production-document-transfer](../../../static/img/usage/production/guide/production-document-transfer.png)
 
 4. Show Multilevel BOM in Flat Mode
 
@@ -303,13 +303,13 @@ Total components quantity requirement to meet the total output.
 
    Before FLAT MODE, BOM components show at **LEVEL 1**.
 
-   ![14](../../../static/img/usage/production/guide/click-show-multilevel-bom-in-flat-mode.png)
+   ![click-show-multilevel-bom-in-flat-mode](../../../static/img/usage/production/guide/click-show-multilevel-bom-in-flat-mode.png)
 
    Click on Show Multilevel BOM in Flat Mode button.
 
    It will prompt the below message.
 
-   ![15](../../../static/img/usage/production/guide/confirm-operation.png)
+   ![confirm-operation](../../../static/img/usage/production/guide/confirm-operation.png)
 
    Press NO to keep the BOM components at **LEVEL 1**.
 
@@ -317,13 +317,13 @@ Total components quantity requirement to meet the total output.
 
    After FLAT MODE, BOM components show at **LEVEL 3**.
 
-   ![16](../../../static/img/usage/production/guide/bom-components.png)
+   ![bom-components](../../../static/img/usage/production/guide/bom-components.png)
 
 5. Save the JO Document
 
    Click on the SAVE button.
 
-   ![17](../../../static/img/usage/production/guide/job-order-save.png)
+   ![job-order-save](../../../static/img/usage/production/guide/job-order-save.png)
 
 6. JO Check the Available Stock Balance
 
@@ -331,7 +331,7 @@ Total components quantity requirement to meet the total output.
 
    Below is component “FRAME” stock available balance.
 
-   ![18](../../../static/img/usage/production/guide/frame-available-balance.png)
+   ![frame-available-balance](../../../static/img/usage/production/guide/frame-available-balance.png)
 
    :::note
 
@@ -351,7 +351,7 @@ Total components quantity requirement to meet the total output.
 
    Below is component “WHEEL” stock available balance.
 
-   ![19](../../../static/img/usage/production/guide/wheel-available-balance-2.png)
+   ![wheel-available-balance-2](../../../static/img/usage/production/guide/wheel-available-balance-2.png)
 
    :::note
 
@@ -371,7 +371,7 @@ Total components quantity requirement to meet the total output.
 
    Below is component "Engine" stock available balance.
 
-   ![20](../../../static/img/usage/production/guide/engine-available-balance.png)
+   ![engine-available-balance](../../../static/img/usage/production/guide/engine-available-balance.png)
 
    :::note
 
@@ -393,7 +393,7 @@ Total components quantity requirement to meet the total output.
 
 What is the purpose of the OFFSET Qty in Sales Order? You will see a new column named “OffSet Qty”. It allows you to input a value to increase/reduce the original QTY to be transferred to Purchase Order and Job Order.
 
-![21](../../../static/img/usage/production/guide/offset-qty-so.png)
+![offset-qty-so](../../../static/img/usage/production/guide/offset-qty-so.png)
 
 1. Positive Offset Qty
 
@@ -408,20 +408,20 @@ What is the purpose of the OFFSET Qty in Sales Order? You will see a new column 
 
 2. Negative Offset Qty
 
-INCREASE the Transferable QTY to PO and JO.
+   INCREASE the Transferable QTY to PO and JO.
 
-For example,
+   For example,
 
-|**SO Original Qty**|**Offset Qty**|**Transferable to PO/JO**|
-|---|---|---|
-|100.00 | 0.00 (default) | 100.00 |
-|100.00 | -15.00 | 115.00 |
+   |**SO Original Qty**|**Offset Qty**|**Transferable to PO/JO**|
+   |---|---|---|
+   |100.00 | 0.00 (default) | 100.00 |
+   |100.00 | -15.00 | 115.00 |
 
 ### Split to X Process
 
 1. With this field, users are able to assign a number of processes/machines in one Job Order/Stock Item Assembly to produce the same End Products using the same range of BOM components.
 
-   ![22](../../../static/img/usage/production/guide/split-to-x-process.png)
+   ![split-to-x-process](../../../static/img/usage/production/guide/split-to-x-process.png)
 
 2. For example, To make a cup of MILO KAO KAO, it needs - MILO Powder x 5 spoons - Sugar x 0.5 spoon - Water x 100ml
 
@@ -441,7 +441,7 @@ For example,
 
 2. Click the "BOM Tree Entry" button.
 
-   ![23](../../../static/img/usage/production/guide/click-bom-tree-entry.png)
+   ![click-bom-tree-entry](../../../static/img/usage/production/guide/click-bom-tree-entry.png)
 
 3. You can drill down all the BOM structures.
 
@@ -449,13 +449,13 @@ For example,
 
 5. Press OK to confirm.
 
-![24](../../../static/img/usage/production/guide/stock-bom-tree-entry.png)
+   ![stock-bom-tree-entry](../../../static/img/usage/production/guide/stock-bom-tree-entry.png)
 
-|**Button**|**Function**|
-|---|---|
-|Add | To add new components at LEVEL 1 ONLY |
-|Add Child | To add new child components start from LEVEL 2 onwards |
-|Delete | To remove the components at all LEVEL 1, 2, 3, 4, ... |
+   |**Button**|**Function**|
+   |---|---|
+   |Add | To add new components at LEVEL 1 ONLY |
+   |Add Child | To add new child components start from LEVEL 2 onwards |
+   |Delete | To remove the components at all LEVEL 1, 2, 3, 4, ... |
 
 ### Stock Batch
 
@@ -471,25 +471,25 @@ This module commonly used in food manufacturing, pharmaceutical, cosmetic/skin c
 
    Insert the code, description, Expiry date, Manufacturing date & items that will expire on this expiry date.
 
-   ![40](../../../static/img/usage/production/guide/stock-batch.png)
+   ![stock-batch](../../../static/img/usage/production/guide/stock-batch.png)
 
 2. **Purchase** > **Purchase Invoice** > **New**
 
    You can enable Batch column from the hidden bar and assign your stock batch during purchase for every individual item.
 
-   ![41](../../../static/img/usage/production/guide/batch-in-pi.png)
+   ![batch-in-pi](../../../static/img/usage/production/guide/batch-in-pi.png)
 
 3. **Sales** > **Sales Invoice** > **New**
 
    In Sales Invoice, you can select the item issue out from which batch (expiry date), system will also show the expiry day & quantity available.
 
-   ![42](../../../static/img/usage/production/guide/batch-in-IV.png)
+   ![batch-in-IV](../../../static/img/usage/production/guide/batch-in-IV.png)
 
 4. **Stock** > **Print Stock Batch Expiry**
 
    You can also check the listing of your product that will be expire soon as well as you can trace the product manufacture date.
 
-   ![43](../../../static/img/usage/production/guide/print-stock-batch-expiry.png)
+   ![print-stock-batch-expiry](../../../static/img/usage/production/guide/print-stock-batch-expiry.png)
 
 ## Stock Item Assembly
 
@@ -505,7 +505,7 @@ Actual components (materials) used will be deducted out from the stock balance. 
 
     Click on the NEW button to start with a new AS.
 
-    ![25](../../../static/img/usage/production/guide/stock-item-assembly.png)
+    ![stock-item-assembly](../../../static/img/usage/production/guide/stock-item-assembly.png)
 
 2. AS Transfer From JO
 
@@ -513,7 +513,7 @@ Actual components (materials) used will be deducted out from the stock balance. 
 
    2. Click on Transfer From Job Order in the menu.
 
-   ![26](../../../static/img/usage/production/guide/item-assembly-transfer-from.png)
+      ![item-assembly-transfer-from](../../../static/img/usage/production/guide/item-assembly-transfer-from.png)
 
 3. Document Transfer (JO → AS)
 
@@ -523,13 +523,13 @@ Actual components (materials) used will be deducted out from the stock balance. 
 
    3. Click OK to proceed.
 
-   ![27](../../../static/img/usage/production/guide/production-document-transfer-2.png)
+      ![production-document-transfer-2](../../../static/img/usage/production/guide/production-document-transfer-2.png)
 
 4. Save the AS Document
 
    Click on SAVE button.
 
-   ![28](../../../static/img/usage/production/guide/item-assembly-save.png)
+   ![item-assembly-save](../../../static/img/usage/production/guide/item-assembly-save.png)
 
 5. AS Check the Available Stock Balance
 
@@ -537,7 +537,7 @@ Actual components (materials) used will be deducted out from the stock balance. 
 
    Below is **component “FRAME”** stock available balance.
 
-   ![29](../../../static/img/usage/production/guide/frame-available-balance-2.png)
+   ![frame-available-balance-2](../../../static/img/usage/production/guide/frame-available-balance-2.png)
 
    :::note
 
@@ -557,7 +557,7 @@ Actual components (materials) used will be deducted out from the stock balance. 
 
    Below is **component “WHEEL”** stock available balance.
 
-   ![30](../../../static/img/usage/production/guide/wheel-available-balance-3.png)
+   ![wheel-available-balance-3](../../../static/img/usage/production/guide/wheel-available-balance-3.png)
 
    :::note
 
@@ -577,7 +577,7 @@ Actual components (materials) used will be deducted out from the stock balance. 
 
    Below is **component “ENGINE”** stock available balance.
 
-   ![31](../../../static/img/usage/production/guide/engine-available-balance-2.png)
+   ![engine-available-balance-2](../../../static/img/usage/production/guide/engine-available-balance-2.png)
 
    :::note
 
@@ -603,21 +603,21 @@ Allow users to run Update Unit Cost for ALL or Stock Item Assembly selected.
 
 2. You will see the small menu. See screenshot below.
 
-   ![32](../../../static/img/usage/production/guide/batch-update-unit-cost.png)
+   ![batch-update-unit-cost](../../../static/img/usage/production/guide/batch-update-unit-cost.png)
 
 3. Click on Batch Update Unit Cost. You will see the screenshot below.
 
 4. You can highlight more than one Stock Assembly document. RIGHT click and "Tick Selection".
 
-   ![33](../../../static/img/usage/production/guide/stock-batch-update-unit-cost.png)
+   ![stock-batch-update-unit-cost](../../../static/img/usage/production/guide/stock-batch-update-unit-cost.png)
 
 5. After that, press the UPDATE button to start.
 
-   ![34](../../../static/img/usage/production/guide/confirm-stock-batch-update-unit-cost.png)
+   ![confirm-stock-batch-update-unit-cost](../../../static/img/usage/production/guide/confirm-stock-batch-update-unit-cost.png)
 
 6. Once completed, it will prompt the below message. Press OK to exit.
 
-   ![35](../../../static/img/usage/production/guide/confirm-stock-batch-update-unit-cost-2.png)
+   ![confirm-stock-batch-update-unit-cost-2](../../../static/img/usage/production/guide/confirm-stock-batch-update-unit-cost-2.png)
 
 ## Stock Item Disassembly
 
@@ -629,19 +629,19 @@ Components (materials) will be added into the stock balance. However, the final 
 
 1. CLICK on the **NEW** button.
 
-   ![36](../../../static/img/usage/production/guide/item-disassembly-new.png)
+   ![item-disassembly-new](../../../static/img/usage/production/guide/item-disassembly-new.png)
 
 2. Select the **Disassembly Code** to disassembly.
 
-   ![37](../../../static/img/usage/production/guide/select-disassembly-code.png)
+   ![select-disassembly-code](../../../static/img/usage/production/guide/select-disassembly-code.png)
 
 3. Enter the **quantity**. BOM components quantity based on the BOM master in **Maintain Stock Item**.
 
-   ![38](../../../static/img/usage/production/guide/select-disassembly-qty.png)
+   ![select-disassembly-qty](../../../static/img/usage/production/guide/select-disassembly-qty.png)
 
 4. CLICK on the **SAVE** button.
 
-   ![39](../../../static/img/usage/production/guide/item-disassembly-save.png)
+   ![item-disassembly-save](../../../static/img/usage/production/guide/item-disassembly-save.png)
 
 ### Stock Balance Result After Disassembly
 

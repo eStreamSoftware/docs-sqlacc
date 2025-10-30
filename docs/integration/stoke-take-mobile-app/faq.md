@@ -8,7 +8,7 @@ tags: ["SQL Account", "Stock","FAQ"]
 
 ## Stock Take
 
-### 1.How to Reset/Start New Batch/Job of Stock Take?
+### How to Reset/Start New Batch/Job of Stock Take?
 
 In SQL Accounting
 

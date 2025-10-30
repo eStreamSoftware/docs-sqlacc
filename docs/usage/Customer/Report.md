@@ -30,7 +30,7 @@ tags: ["SQL Account", "Usage", "Customer"]
 
 ![custInvoiceListReport](../../../static/img/usage/customer/customerFaq/cust-invoice-list-report.png)
 
-### Print Document Style 
+### Print Document Style
 
 * Tick relevant check boxes
 
@@ -68,7 +68,7 @@ tags: ["SQL Account", "Usage", "Customer"]
 
 ![custInvoiceListingreport](../../../static/img/usage/customer/customerFaq/cust-invoice-listing-report.png)
 
-## Print Customer Balance Report 
+## Print Customer Balance Report
 
 * Print Customer Balance Report can be used for you to **see all the customer's balance**.
 
@@ -106,17 +106,17 @@ In this report, you can print a reminder letter to remind customers of outstandi
 
 4. **Apply**.
 
-    ![82](../../../static/img/usage/customer/customerFaq/81.png)
+    ![cust-due-doc-list-apply](../../../static/img/usage/customer/customerFaq/cust-due-doc-list-apply.png)
 
 5. If you want to **print a reminder letter, make sure you tick the customer code under “group / sort by”** and **Apply**.
 
-    ![83](../../../static/img/usage/customer/customerFaq/82.png)
+    ![grp-sort-by-customer-code](../../../static/img/usage/customer/customerFaq/grp-sort-by-customer-code.png)
 
 6. Preview the report and you will see **Cust Overdue Letter**, choose your preferred format.
 
-    ![84](../../../static/img/usage/customer/customerFaq/83.png)
+    ![cust-overdue-letter](../../../static/img/usage/customer/customerFaq/cust-overdue-letter.png)
 
-    ![85](../../../static/img/usage/customer/customerFaq/84.png)
+    ![print-overdue-letter](../../../static/img/usage/customer/customerFaq/print-overdue-letter.png)
 
 7. Customer Analysis By Document
 
@@ -128,4 +128,4 @@ In this report, you can print a reminder letter to remind customers of outstandi
 
 10. **Apply**
 
-    ![86](../../../static/img/usage/customer/customerFaq/85.png)
+    ![cust-analysis-by-doc-apply](../../../static/img/usage/customer/customerFaq/cust-analysis-by-doc-apply.png)

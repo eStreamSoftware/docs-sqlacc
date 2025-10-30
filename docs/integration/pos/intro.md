@@ -46,11 +46,11 @@ The following requirements are needed in order to run SQL POS
 
 ## System
 
-### 1. System - System
+### System - System
 
-![2](../../../static/img/integration/pos/intro/pos1.png)
+![system-system](../../../static/img/integration/pos/intro/system-system.png)
 
-### 2. GST
+### GST
 
 | **Field** | **Description** |
 |------------|----------------|
@@ -60,7 +60,7 @@ The following requirements are needed in order to run SQL POS
 | **When Ask Price** | - **Tax Inclusive** – System will reverse the entered price to exclude tax amount<br />- **Tax Exclusive** – System will directly use the price entered<br />- **Follow Record** – System will follow the last selected setting |
 | **Tax Rate** | - The tax rate |
 
-### 3. Decimal Points
+### Decimal Points
 
 | **Field** | **Description** |
 |------------|----------------|
@@ -68,7 +68,7 @@ The following requirements are needed in order to run SQL POS
 | **Cost** | Stock Unit Cost Display format |
 | **Price** | Sales Unit Price Display format |
 
-### 4. Off Line Mode
+### Off Line Mode
 
 | **Field** | **Description** |
 |------------|----------------|
@@ -76,7 +76,7 @@ The following requirements are needed in order to run SQL POS
 | **Use Of Line Mode** | **Yes** – To Enable Off Line Mode Function <br /> **No** – To Disable Off Line Mode Function |
 | **Prepare Now** | Adhoc update Data |
 
-### 5. Stock Item
+### Stock Item
 
 | **Field** | **Description** |
 |------------|----------------|
@@ -85,7 +85,7 @@ The following requirements are needed in order to run SQL POS
 | **Round Decimal** | ??? |
 | **Category as** | **Stock Category** – ??? <br /> **Stock Group** – ??? |
 
-### 6. Add On Module
+### Add On Module
 
 | **Field** | **Description** |
 |------------|----------------|
@@ -97,7 +97,7 @@ The following requirements are needed in order to run SQL POS
 | **Multiple Currency Module** | **Yes** – ??? <br /> **No** – ??? <br /> **None** – ??? |
 | **Batch No. Module** | **Yes** – ??? <br /> **No** – ??? <br /> **None** – ??? |
 
-### 7. Import Export
+### Import Export
 
 | **Field** | **Description** |
 |------------|----------------|
@@ -105,7 +105,7 @@ The following requirements are needed in order to run SQL POS
 | **Import Cash Sales** | **Yes** – Allow Import Cash Sales Data (Default) <br /> **No** – Not Allow Import Cash Sales Data |
 | **Email while Close counter** | **Yes** – ??? <br /> **No** – (Default) |
 
-### 8. Group Type Date
+### Group Type Date
 
 This Option is to determine what date to post to SQL Accounting
 
@@ -115,7 +115,7 @@ This Option is to determine what date to post to SQL Accounting
 | **Open Counter Date** | Post Base on Open Counter Date. <br /> This is useful if Counter is closed on next Date but account needs to be posted on Today. |
 | **Close Counter Date** | Post Base on Open Counter Date. <br /> This is useful if Counter is closed on next Date and account needs to be posted on next Date. |
 
-### 9. Free Tools
+### Free Tools
 
 | **Field** | **Description** |
 |------------|----------------|
@@ -126,7 +126,7 @@ This Option is to determine what date to post to SQL Accounting
 | **Delete Zero Quantity Items** | ??? |
 | **Fix Firebird Shutdown Database** | ??? |
 
-### 10. Tools
+### Tools
 
 | **Field** | **Description** |
 |------------|----------------|
@@ -135,12 +135,12 @@ This Option is to determine what date to post to SQL Accounting
 | **Delete Data / Clean Test Data** | ??? |
 | **Unipos Migration** | ??? |
 
-### 11. Theme
+### Theme
 
 This function is allow user to change the Application Skin/Theme to suit the user. From form till grid & label
 
   ![3](../../../static/img/integration/pos/intro/pos2.png)
-  
+
 ## System - Receipt & License
 
 This Page is to:

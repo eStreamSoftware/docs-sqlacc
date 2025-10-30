@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Basic Guide
+title: FR3 Guide
 description: How to do custom reports 
 slug: /usage/tools/fast-report/guide
 tags: ["SQL Account", "Usage", "Tools"]
@@ -93,7 +93,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
             ![8](../../../../static/img/usage/tools/fastReport-basicGuide/8.png)
 
-            :::tip[SMALL TIPS]
+            :::tip[TIPS]
             1. Set Either Print Count or Stop Position
             2. use // to disable the command
             3. When you set both Print Count and Stop Position, system will capture Print Count.
@@ -453,7 +453,7 @@ Below is Example are doing following actions
 
     ```pascal
     procedure Memo18OnBeforePrint(Sender: TfrxComponent);
-    var V : Variant;                            
+    var V : Variant;
     begin
       V := Null;
       //Get RefCost*Qty
@@ -620,7 +620,7 @@ Below is Example are doing following action
     var V : Variant;
     begin
       V := Null;
-      if Trim(<Document_Detail."FromDocType">) <> '' then                                      
+      if Trim(<Document_Detail."FromDocType">) <> '' then
         V := CacheQuery_GetValue(pSL_QT, [<Document_Detail."FromDtlKey">], 'DocDate');
 
       if not VarIsNull(V) then
@@ -664,9 +664,9 @@ Below is Example are doing following actions
 6. Double Click OnBeforePrint
 7. Enter below script
 
-    ```pascal
+    ```vb
     procedure Memo18OnBeforePrint(Sender: TfrxComponent);
-    var V : Variant;                            
+    var V : Variant;
     begin
       V := Null;
       //For Email
@@ -764,115 +764,115 @@ Below is Example doing following actions
   <details>
     <summary>Supplier Bank Info Script - click to expand</summary>
 
- ```pascal
-    function FormatSQLDate(D: TDateTime): String;
-    var AFormat: string;
-    begin
-      AFormat := 'dd mmm yyyy'; //'dd/mmm/yyyy' if can't
-      Result := QuotedStr(FormatDateTime(AFormat, D));
-    end;
-
-    function GetBankName(const lCode:String):String;
-    begin
-      case lCode of
-      'AIBBMY' : Result := 'Affin Bank Berhad';
-      'RJHIMY' : Result := 'Al Rajhi Banking & Investment Corporation (Malaysia) Berhad';
-      'MFBBMY' : Result := 'Alliance Bank Malaysia Berhad';
-      'ARBKMY' : Result := 'AmBank (M) Berhad';
-      'BNPAMY' : Result := 'BNP Paribas Malaysia Berhad';
-      'BIMBMY' : Result := 'Bank Islam Malaysia Berhad';
-      'BKRMMY' : Result := 'Bank Kerjasama Rakyat Malaysia Berhad';
-      'BMMBMY' : Result := 'Bank Muamalat Malaysia Berhad';
-      'BOFAMY' : Result := 'Bank of America Malaysia Berhad';
-      'BOTKMY' : Result := 'Bank of Tokyo-Mitsubishi UFJ (Malaysia) Berhad';
-      'AGOBMY' : Result := 'Bank Pertanian Malaysia Berhad';
-      'BSNAMY' : Result := 'Bank Simpanan Nasional Berhad';
-      'CIBBMY' : Result := 'CIMB Bank Berhad';
-      'CITIMY' : Result := 'Citibank Berhad';
-      'DEUTMY' : Result := 'Deutsche Bank (Malaysia) Berhad';
-      'HLBBMY' : Result := 'Hong Leong Bank Berhad';
-      'HBMBMY' : Result := 'HSBC Bank Malaysia Berhad';
-      'ICBKMY' : Result := 'Industrial and Commercial Bank of China (Malaysia) Berhad';
-      'CHASMY' : Result := 'J.P. Morgan Chase Bank Berhad';
-      'KFHOMY' : Result := 'Kuwait Finance House (Malaysia) Berhad';
-      'MBBEMY' : Result := 'Malayan Banking Berhad';
-      'MHCBMY' : Result := 'Mizuho Bank (Malaysia) Berhad';
-      'OCBCMY' : Result := 'OCBC Bank (Malaysia) Berhad';
-      'PBBEMY' : Result := 'Public Bank Berhad';
-      'RHBBMY' : Result := 'RHB Bank Berhad';
-      'SCBLMY' : Result := 'Standard Chartered Bank Malaysia Berhad';
-      'SMBCMY' : Result := 'Sumitomo Mitsui Banking Corporation Malaysia Berhad';
-      'ABNAMY' : Result := 'The Royal Bank of Scotland Berhad';
-      'UOVBMY' : Result := 'United Overseas Bank (Malaysia) Bhd';
-      'ANZBSG' : Result := 'Australia and New Zealand Banking Group Limited';
-      'BKKBSG' : Result := 'Bangkok Bank Public Company Limited';
-      'BOFASG' : Result := 'Bank of America, National Association';
-      'BKCHSG' : Result := 'Bank of China Limited';
-      'BEASSG' : Result := 'The Bank of East Asia Limited';
-      'BNINSG' : Result := 'P.T. Bank Negara Indonesia (Persero)';
-      'BKIDSG' : Result := 'Bank of India';
-      'BOTKSG' : Result := 'Bank Of Tokyo-Mitsubishi UFJ Limited';
-      'BNPASG' : Result := 'BNP Paribas';
-      'CTCBSG' : Result := 'Chinatrust Commercial Bank Corporation Limited';
-      'CIBBSG' : Result := 'CIMB Bank Berhad';
-      'CITISG' : Result := 'Citibank, National Association';
-      'COBASG' : Result := 'Commerzbank AG';
-      'AGRISG' : Result := 'Credit Agricole Corporate And Investment Bank';
-      'DBSSSG' : Result := 'DBS Bank Limited';
-      'DEUTSG' : Result := 'Deutsche Bank AG';
-      'DNBASG' : Result := 'DNB Bank ASA';
-      'FAEASG' : Result := 'Far Eastern Bank Limited';
-      'FCBKSG' : Result := 'First Commercial Bank Limited';
-      'HLBBSG' : Result := 'HL Bank';
-      'HSBCSG' : Result := 'The Hongkong And Shanghai Banking Corporation Limited';
-      'ICICSG' : Result := 'ICICI Bank Limited';
-      'IDIBSG' : Result := 'Indian Bank';
-      'IOBASG' : Result := 'Indian Overseas Bank';
-      'iCBKSG' : Result := 'Industrial and Commercial Bank Of China';
-      'BCITSG' : Result := 'Intesa Sanpaolo SpA';
-      'CHASSG' : Result := 'JP Morgan Chase Bank, National Association';
-      'KOEXSG' : Result := 'Korea Exchange Bank';
-      'SOLASG' : Result := 'Landesbank Baden-Wurttemberg';
-      'MBBESG' : Result := 'Malayan Banking Bhd';
-      'MHCBSG' : Result := 'Mizuho Bank Limited';
-      'NATASG' : Result := 'National Australia Bank Limited';
-      'NDPBSG' : Result := 'Nordea Bank Finland PLC';
-      'OCBCSG' : Result := 'Oversea-Chinese Banking Corporation Limited';
-      'RHBBSG' : Result := 'RHB Bank Berhad';
-      'ESSESG' : Result := 'Skandinaviska Enskilda Banken AB';
-      'SOGESG' : Result := 'Societe Generale';
-      'SBSASG' : Result := 'Standard Chartered Bank';
-      'SBINSG' : Result := 'State Bank of India';
-      'SMBCSG' : Result := 'Sumitomo Mitsui Banking Corporation';
-      'HANDSG' : Result := 'Svenska Handelsbanken AB';
-      'RBOSSG' : Result := 'The Royal Bank of Scotland PLC';
-      'UBSWSG' : Result := 'UBS AG';
-      'UCBASG' : Result := 'UCO Bank';
-      'UOVBSG' : Result := 'United Overseas Bank Limited';
+  ```pascal
+      function FormatSQLDate(D: TDateTime): String;
+      var AFormat: string;
+      begin
+        AFormat := 'dd mmm yyyy'; //'dd/mmm/yyyy' if can't
+        Result := QuotedStr(FormatDateTime(AFormat, D));
       end;
-    end;
 
-    procedure SetUp_BankInfo;
-    var s : string;
-    begin
-      s := 'SELECT DocNo, BankAcc FROM AP_SP ';
+      function GetBankName(const lCode:String):String;
+      begin
+        case lCode of
+        'AIBBMY' : Result := 'Affin Bank Berhad';
+        'RJHIMY' : Result := 'Al Rajhi Banking & Investment Corporation (Malaysia) Berhad';
+        'MFBBMY' : Result := 'Alliance Bank Malaysia Berhad';
+        'ARBKMY' : Result := 'AmBank (M) Berhad';
+        'BNPAMY' : Result := 'BNP Paribas Malaysia Berhad';
+        'BIMBMY' : Result := 'Bank Islam Malaysia Berhad';
+        'BKRMMY' : Result := 'Bank Kerjasama Rakyat Malaysia Berhad';
+        'BMMBMY' : Result := 'Bank Muamalat Malaysia Berhad';
+        'BOFAMY' : Result := 'Bank of America Malaysia Berhad';
+        'BOTKMY' : Result := 'Bank of Tokyo-Mitsubishi UFJ (Malaysia) Berhad';
+        'AGOBMY' : Result := 'Bank Pertanian Malaysia Berhad';
+        'BSNAMY' : Result := 'Bank Simpanan Nasional Berhad';
+        'CIBBMY' : Result := 'CIMB Bank Berhad';
+        'CITIMY' : Result := 'Citibank Berhad';
+        'DEUTMY' : Result := 'Deutsche Bank (Malaysia) Berhad';
+        'HLBBMY' : Result := 'Hong Leong Bank Berhad';
+        'HBMBMY' : Result := 'HSBC Bank Malaysia Berhad';
+        'ICBKMY' : Result := 'Industrial and Commercial Bank of China (Malaysia) Berhad';
+        'CHASMY' : Result := 'J.P. Morgan Chase Bank Berhad';
+        'KFHOMY' : Result := 'Kuwait Finance House (Malaysia) Berhad';
+        'MBBEMY' : Result := 'Malayan Banking Berhad';
+        'MHCBMY' : Result := 'Mizuho Bank (Malaysia) Berhad';
+        'OCBCMY' : Result := 'OCBC Bank (Malaysia) Berhad';
+        'PBBEMY' : Result := 'Public Bank Berhad';
+        'RHBBMY' : Result := 'RHB Bank Berhad';
+        'SCBLMY' : Result := 'Standard Chartered Bank Malaysia Berhad';
+        'SMBCMY' : Result := 'Sumitomo Mitsui Banking Corporation Malaysia Berhad';
+        'ABNAMY' : Result := 'The Royal Bank of Scotland Berhad';
+        'UOVBMY' : Result := 'United Overseas Bank (Malaysia) Bhd';
+        'ANZBSG' : Result := 'Australia and New Zealand Banking Group Limited';
+        'BKKBSG' : Result := 'Bangkok Bank Public Company Limited';
+        'BOFASG' : Result := 'Bank of America, National Association';
+        'BKCHSG' : Result := 'Bank of China Limited';
+        'BEASSG' : Result := 'The Bank of East Asia Limited';
+        'BNINSG' : Result := 'P.T. Bank Negara Indonesia (Persero)';
+        'BKIDSG' : Result := 'Bank of India';
+        'BOTKSG' : Result := 'Bank Of Tokyo-Mitsubishi UFJ Limited';
+        'BNPASG' : Result := 'BNP Paribas';
+        'CTCBSG' : Result := 'Chinatrust Commercial Bank Corporation Limited';
+        'CIBBSG' : Result := 'CIMB Bank Berhad';
+        'CITISG' : Result := 'Citibank, National Association';
+        'COBASG' : Result := 'Commerzbank AG';
+        'AGRISG' : Result := 'Credit Agricole Corporate And Investment Bank';
+        'DBSSSG' : Result := 'DBS Bank Limited';
+        'DEUTSG' : Result := 'Deutsche Bank AG';
+        'DNBASG' : Result := 'DNB Bank ASA';
+        'FAEASG' : Result := 'Far Eastern Bank Limited';
+        'FCBKSG' : Result := 'First Commercial Bank Limited';
+        'HLBBSG' : Result := 'HL Bank';
+        'HSBCSG' : Result := 'The Hongkong And Shanghai Banking Corporation Limited';
+        'ICICSG' : Result := 'ICICI Bank Limited';
+        'IDIBSG' : Result := 'Indian Bank';
+        'IOBASG' : Result := 'Indian Overseas Bank';
+        'iCBKSG' : Result := 'Industrial and Commercial Bank Of China';
+        'BCITSG' : Result := 'Intesa Sanpaolo SpA';
+        'CHASSG' : Result := 'JP Morgan Chase Bank, National Association';
+        'KOEXSG' : Result := 'Korea Exchange Bank';
+        'SOLASG' : Result := 'Landesbank Baden-Wurttemberg';
+        'MBBESG' : Result := 'Malayan Banking Bhd';
+        'MHCBSG' : Result := 'Mizuho Bank Limited';
+        'NATASG' : Result := 'National Australia Bank Limited';
+        'NDPBSG' : Result := 'Nordea Bank Finland PLC';
+        'OCBCSG' : Result := 'Oversea-Chinese Banking Corporation Limited';
+        'RHBBSG' : Result := 'RHB Bank Berhad';
+        'ESSESG' : Result := 'Skandinaviska Enskilda Banken AB';
+        'SOGESG' : Result := 'Societe Generale';
+        'SBSASG' : Result := 'Standard Chartered Bank';
+        'SBINSG' : Result := 'State Bank of India';
+        'SMBCSG' : Result := 'Sumitomo Mitsui Banking Corporation';
+        'HANDSG' : Result := 'Svenska Handelsbanken AB';
+        'RBOSSG' : Result := 'The Royal Bank of Scotland PLC';
+        'UBSWSG' : Result := 'UBS AG';
+        'UCBASG' : Result := 'UCO Bank';
+        'UOVBSG' : Result := 'United Overseas Bank Limited';
+        end;
+      end;
 
-      if <Parameter."SelectDate"> = True then
-        s := Format(s, ['PostDate', FormatSQLDate(<Parameter."DateFrom">),
-                                    FormatSQLDate(<Parameter."DateTo">)]) else
-        s := Format(s, ['DocDate', FormatSQLDate(<Parameter."DocDateFrom">),
-                                  FormatSQLDate(<Parameter."DocDateTo">)]);
-      AddDataSet('pl_APPM', ['DocNo', 'BankAcc'])
-      .GetDBData(s)
-      .LinkTo('Main', 'DocNo', 'DocNo');
+      procedure SetUp_BankInfo;
+      var s : string;
+      begin
+        s := 'SELECT DocNo, BankAcc FROM AP_SP ';
 
-      s := 'SELECT * FROM AP_SUPPLIERBANKACC '+
-            'WHERE IsActive=''T'' ';
-      AddDataSet('pl_SUPPLIERBANKACC', ['Bank', 'AccNo', 'AccName'])
-      .GetDBData(s)
-      .LinkTo('pl_APPM', 'BankAcc', 'AutoKey');
-    end;
-   ```
+        if <Parameter."SelectDate"> = True then
+          s := Format(s, ['PostDate', FormatSQLDate(<Parameter."DateFrom">),
+                                      FormatSQLDate(<Parameter."DateTo">)]) else
+          s := Format(s, ['DocDate', FormatSQLDate(<Parameter."DocDateFrom">),
+                                    FormatSQLDate(<Parameter."DocDateTo">)]);
+        AddDataSet('pl_APPM', ['DocNo', 'BankAcc'])
+        .GetDBData(s)
+        .LinkTo('Main', 'DocNo', 'DocNo');
+
+        s := 'SELECT * FROM AP_SUPPLIERBANKACC '+
+              'WHERE IsActive=''T'' ';
+        AddDataSet('pl_SUPPLIERBANKACC', ['Bank', 'AccNo', 'AccName'])
+        .GetDBData(s)
+        .LinkTo('pl_APPM', 'BankAcc', 'AutoKey');
+      end;
+    ```
 
   </details>
 
@@ -1055,8 +1055,8 @@ Below is Example will group all the Overtime by Code, Description, Rate & PayRat
       AddDataSet('OTGroup', ['Employee', 'Code', 'Description', 'Rate', 'PayRate', 'WorkUnit','Amount'])
       .GetLocalData(SQL) // Execute the Query
       .SetDisplayFormat(['WorkUnit'],<Option."WorkUnitDisplayFormat">)
-      .SetDisplayFormat(['Rate','PayRate'],<Option."RateDisplayFormat">)      
-      .SetDisplayFormat(['Amount'],<Option."PayrollValueDisplayFormat">)      
+      .SetDisplayFormat(['Rate','PayRate'],<Option."RateDisplayFormat">)
+      .SetDisplayFormat(['Amount'],<Option."PayrollValueDisplayFormat">)
       .LinkTo('Main', 'Employee', 'Employee');
     end;
     ```
@@ -1144,7 +1144,7 @@ DataField : SVE
     ```pascal
     procedure Page1OnBeforePrint(Sender: TfrxComponent);
     begin
-      //For Version 721 & above 
+      //For Version 721 & above
       ShiftRelative([MmDesc, RichDesc3, RichSN]); // ShiftRelative([ComponentName1, ComponentName2, ComponentName3]) // For DetailData1
       ShiftRelative([MmDescM, RichDesc3M]); // For DetailData2
     end;
@@ -1329,6 +1329,7 @@ By default we got **3** types of Export to E Mail for Fast Report
 E-Mail Client
 
 - Pros
+
   - User still can change the E-Mail address, Subject & body (E-Mail Content) before Sent
   - Send E-Mail will keep in the Client E-Mail
   - Support HTML format
@@ -1355,9 +1356,9 @@ E-Mail Client (Batch)
   - User can't change the E-Mail address, Subject & body (E-Mail Content) before Sent
   - Must load the E-Mail Script
 
-  E-Mail (Native)
+E-Mail (Native)
 
-  - Pros
+- Pros
 
   - Easy to Setup
   - Support many attachment format
@@ -1366,10 +1367,10 @@ E-Mail Client (Batch)
 
 - Cons
 
-- No record is keeped for Sended E-Mail
-- Only For Single Document E-Mail
-- E-Mail Content only support plain text
-- Only support Single Attachment
+  - No record is keeped for Sended E-Mail
+  - Only For Single Document E-Mail
+  - E-Mail Content only support plain text
+  - Only support Single Attachment
 
 ### Requirements
 
@@ -1387,133 +1388,11 @@ Below is example using Sales Invoice
 1. Click the Code Tab
 2. Enter below Script at the First line
 
-<details>
-  <summary>E-Mail Script 1 (Last Script Update : 21 Apr 2016) - click to expand</summary>
-
-```pascal
-//const MaxInt = 2147483647;
-var lSQL : String;
-
-function StringReplace(const S, OldPattern, NewPattern: string;
-  iReplaceAll: boolean=true; iIgnoreCase :boolean=true): string;
-var
-  SearchStr, Patt, NewStr: string;
-  Offset: Integer;
-begin
-// Usage StringReplace(<Main."DOB">,'/','')
-  if iIgnoreCase then begin
-    SearchStr := UpperCase(S);
-    Patt := UpperCase(OldPattern);
-  end else begin
-    SearchStr := S;
-    Patt := OldPattern;
-  end;
-  NewStr := S;
-  Result := '';
-  while SearchStr <> '' do begin
-    Offset := Pos(Patt, SearchStr);
-    if Offset = 0 then begin
-      Result := Result + NewStr;
-      Break;
-    end;
-    Result := Result + Copy(NewStr, 1, Offset - 1) + NewPattern;
-    NewStr := Copy(NewStr, Offset + Length(OldPattern), MaxInt);
-    if not iReplaceAll then begin
-      Result := Result + NewStr;
-      Break;
-    end;
-    SearchStr := Copy(SearchStr, Offset + Length(Patt), MaxInt);
-  end;
-end;
-
-procedure GetEMailTpl;
-var D  : TfrxDataSet;
-   lFN : String;
-begin
-  lFN := Trim(Report.ReportOptions.Name);
-  lFN := StringReplace(lFN,'.fr3','');
-  D := Report.GetDataSet('plEMailTpl');
-  D.First;
-  While not D.Eof do begin
-    if Trim(D.Value('ReportName')) = lFN then
-      Break;
-    D.Next;
-  end;
-end;
-
-function GetFldInfo(const AStr:String):String;
-var D : TfrxDataSet;
-    nStr : String;
-    lSL,lPL : TStringList;
-    i, j : integer;
-begin
-  nStr := AStr;
-  lSL := TStringList.Create;
-  lPL := TStringList.Create;
-  with lPL do begin //Available Pipeline
-    Add('Main');
-    Add('Profile');
-  end;
-  try
-    for j:=0 to lPL.Count -1 do begin
-      D := Report.GetDataSet(lPL[j]);
-      D.GetFieldList(lSL);
-      for i:=0 to lSL.Count -1 do begin
-        if D.IsBlobField(lSL[i]) then
-          nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.Value(lSL[i])) else
-        nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.DisplayText(lSL[i]));
-      end;
-    end;
-    Result := nStr;
-  finally
-    lSL.Free;
-    lPL.Free;
-  end;
-end;
-
-//For E-Mail Client (Batch)
-procedure OnGetEmailSettings(EmailSettings: TStrings);
-var vEmail, vName: Variant;
-begin
-  GetEMailTpl;
-  vEmail := Trim(<Document_CompanyBranch."Email">);
-  vName := Trim(<Main."CompanyName">);
-
-  if (vName <> '' ) and (vEmail <> '') then begin
-    EmailSettings.Values['Recipients'] := vEmail;
-    EmailSettings.Values['Subject']    := GetFldInfo(<plEMailTpl."Subject">);
-    EmailSettings.Values['Body']       := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
-  end;
-  //ID uses for display on progress dialog
-  EmailSettings.Values['ID']        := vName;
-end;
-
-//For E-Mail (Native)
-function SQL_Email_GetInfo(Info: Integer): string;
-var vEmail, vName: Variant;
-begin
-  GetEMailTpl;
-  Result := '';
-  vEmail := Trim(<Document_CompanyBranch."Email">);
-  vName := Trim(<Main."CompanyName">);
-
-  if (vName <> '' ) and (vEmail <> '') then begin
-    case Info of
-      SQL_Email_Address: Result := vEmail;
-      SQL_Email_Subject: Result := GetFldInfo(<plEMailTpl."Subject">);
-      SQL_Email_Content: Result := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
-    end;
-  end;
-end;
-```
-
-</details>
-
-<details>
-  <summary>E-Mail Script 2 (Last Script Update : 22 Dec 2017) - click to expand</summary>
+  <details>
+    <summary>E-Mail Script 1 (Last Script Update : 21 Apr 2016) - click to expand</summary>
 
   ```pascal
-  //const MaxInt = 2147483647; // Only Available in Version 752 & above
+  //const MaxInt = 2147483647;
   var lSQL : String;
 
   function StringReplace(const S, OldPattern, NewPattern: string;
@@ -1563,13 +1442,6 @@ end;
     end;
   end;
 
-  function GetPassword:String;
-  begin
-    if Trim(<Document_Company."Remark">) <> '' then
-      Result := <Document_Company."Remark"> else
-      Result := <plEMailTpl."PDFPassWord">;                                         
-  end;
-
   function GetFldInfo(const AStr:String):String;
   var D : TfrxDataSet;
       nStr : String;
@@ -1582,7 +1454,6 @@ end;
     with lPL do begin //Available Pipeline
       Add('Main');
       Add('Profile');
-      Add('plEMailTpl');
     end;
     try
       for j:=0 to lPL.Count -1 do begin
@@ -1607,18 +1478,12 @@ end;
   begin
     GetEMailTpl;
     vEmail := Trim(<Document_CompanyBranch."Email">);
-    vName  := Trim(<Main."CompanyName">);
+    vName := Trim(<Main."CompanyName">);
 
     if (vName <> '' ) and (vEmail <> '') then begin
-      EmailSettings.Values['Recipients']  := vEmail;
-      EmailSettings.Values['CC']          := <plEMailTpl."CC">;
-      EmailSettings.Values['BCC']         := <plEMailTpl."BCC">;
-      EmailSettings.Values['Subject']     := GetFldInfo(<plEMailTpl."Subject">);
-      EmailSettings.Values['Body']        := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
-      if Trim(<plEMailTpl."PDFFileName">) <> '' then
-        EmailSettings.Values['FileName']    := GetFldInfo(<plEMailTpl."PDFFileName">);
-      if Trim(GetPassword) <> '' then
-        EmailSettings.Values['PDFPassword'] := GetPassword;
+      EmailSettings.Values['Recipients'] := vEmail;
+      EmailSettings.Values['Subject']    := GetFldInfo(<plEMailTpl."Subject">);
+      EmailSettings.Values['Body']       := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
     end;
     //ID uses for display on progress dialog
     EmailSettings.Values['ID']        := vName;
@@ -1643,7 +1508,143 @@ end;
   end;
   ```
 
-</details>
+  </details>
+
+  <details>
+    <summary>E-Mail Script 2 (Last Script Update : 22 Dec 2017) - click to expand</summary>
+
+    ```pascal
+    //const MaxInt = 2147483647; // Only Available in Version 752 & above
+    var lSQL : String;
+
+    function StringReplace(const S, OldPattern, NewPattern: string;
+      iReplaceAll: boolean=true; iIgnoreCase :boolean=true): string;
+    var
+      SearchStr, Patt, NewStr: string;
+      Offset: Integer;
+    begin
+    // Usage StringReplace(<Main."DOB">,'/','')
+      if iIgnoreCase then begin
+        SearchStr := UpperCase(S);
+        Patt := UpperCase(OldPattern);
+      end else begin
+        SearchStr := S;
+        Patt := OldPattern;
+      end;
+      NewStr := S;
+      Result := '';
+      while SearchStr <> '' do begin
+        Offset := Pos(Patt, SearchStr);
+        if Offset = 0 then begin
+          Result := Result + NewStr;
+          Break;
+        end;
+        Result := Result + Copy(NewStr, 1, Offset - 1) + NewPattern;
+        NewStr := Copy(NewStr, Offset + Length(OldPattern), MaxInt);
+        if not iReplaceAll then begin
+          Result := Result + NewStr;
+          Break;
+        end;
+        SearchStr := Copy(SearchStr, Offset + Length(Patt), MaxInt);
+      end;
+    end;
+
+    procedure GetEMailTpl;
+    var D  : TfrxDataSet;
+      lFN : String;
+    begin
+      lFN := Trim(Report.ReportOptions.Name);
+      lFN := StringReplace(lFN,'.fr3','');
+      D := Report.GetDataSet('plEMailTpl');
+      D.First;
+      While not D.Eof do begin
+        if Trim(D.Value('ReportName')) = lFN then
+          Break;
+        D.Next;
+      end;
+    end;
+
+    function GetPassword:String;
+    begin
+      if Trim(<Document_Company."Remark">) <> '' then
+        Result := <Document_Company."Remark"> else
+        Result := <plEMailTpl."PDFPassWord">;
+    end;
+
+    function GetFldInfo(const AStr:String):String;
+    var D : TfrxDataSet;
+        nStr : String;
+        lSL,lPL : TStringList;
+        i, j : integer;
+    begin
+      nStr := AStr;
+      lSL := TStringList.Create;
+      lPL := TStringList.Create;
+      with lPL do begin //Available Pipeline
+        Add('Main');
+        Add('Profile');
+        Add('plEMailTpl');
+      end;
+      try
+        for j:=0 to lPL.Count -1 do begin
+          D := Report.GetDataSet(lPL[j]);
+          D.GetFieldList(lSL);
+          for i:=0 to lSL.Count -1 do begin
+            if D.IsBlobField(lSL[i]) then
+              nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.Value(lSL[i])) else
+            nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.DisplayText(lSL[i]));
+          end;
+        end;
+        Result := nStr;
+      finally
+        lSL.Free;
+        lPL.Free;
+      end;
+    end;
+
+    //For E-Mail Client (Batch)
+    procedure OnGetEmailSettings(EmailSettings: TStrings);
+    var vEmail, vName: Variant;
+    begin
+      GetEMailTpl;
+      vEmail := Trim(<Document_CompanyBranch."Email">);
+      vName  := Trim(<Main."CompanyName">);
+
+      if (vName <> '' ) and (vEmail <> '') then begin
+        EmailSettings.Values['Recipients']  := vEmail;
+        EmailSettings.Values['CC']          := <plEMailTpl."CC">;
+        EmailSettings.Values['BCC']         := <plEMailTpl."BCC">;
+        EmailSettings.Values['Subject']     := GetFldInfo(<plEMailTpl."Subject">);
+        EmailSettings.Values['Body']        := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
+        if Trim(<plEMailTpl."PDFFileName">) <> '' then
+          EmailSettings.Values['FileName']    := GetFldInfo(<plEMailTpl."PDFFileName">);
+        if Trim(GetPassword) <> '' then
+          EmailSettings.Values['PDFPassword'] := GetPassword;
+      end;
+      //ID uses for display on progress dialog
+      EmailSettings.Values['ID']        := vName;
+    end;
+
+    //For E-Mail (Native)
+    function SQL_Email_GetInfo(Info: Integer): string;
+    var vEmail, vName: Variant;
+    begin
+      GetEMailTpl;
+      Result := '';
+      vEmail := Trim(<Document_CompanyBranch."Email">);
+      vName := Trim(<Main."CompanyName">);
+
+      if (vName <> '' ) and (vEmail <> '') then begin
+        case Info of
+          SQL_Email_Address: Result := vEmail;
+          SQL_Email_Subject: Result := GetFldInfo(<plEMailTpl."Subject">);
+          SQL_Email_Content: Result := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
+        end;
+      end;
+    end;
+    ```
+
+  </details>
 
   ![batch-email-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/batch-email-insert-code.jpg)
 
@@ -1820,7 +1821,7 @@ end;
 
 </details>
 
-:::note  
+:::note
 
 - User can use eg `<Main.DocNo>` (`<Pipeline.FieldName>`) to show variable data
 (eg Document Number) in the E-Mail Subject & Body.
@@ -2094,249 +2095,248 @@ Avoid use following character
 
 </details>
 
-<details>
+  <details>
 
   <summary>Sample E-Mail Template (Version 1.2021.196.166 & above) - click to expand</summary>
 
-```pascal
-<?xml version="1.0" standalone="yes"?> <DATAPACKET Version="2.0">
+      ```pascal
+      <?xml version="1.0" standalone="yes"?> <DATAPACKET Version="2.0">
 
- <METADATA>
-   <FIELDS>
-     <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-     <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-     <FIELD attrname="NAME" fieldtype="string.uni" WIDTH="320"/>
-     <FIELD attrname="NAME2" fieldtype="string.uni" WIDTH="320"/>
-     <FIELD attrname="GENDER" fieldtype="string.uni" required="true" WIDTH="2"/>
-     <FIELD attrname="DOB" fieldtype="date"/>
-     <FIELD attrname="ADDRESS1" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="ADDRESS2" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="ADDRESS3" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="ADDRESS4" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="PHONE1" fieldtype="string.uni" WIDTH="400"/>
-     <FIELD attrname="PHONE2" fieldtype="string.uni" WIDTH="400"/>
-     <FIELD attrname="MOBILE" fieldtype="string.uni" WIDTH="400"/>
-     <FIELD attrname="EMAIL" fieldtype="string.uni" WIDTH="400"/>
-     <FIELD attrname="NEWIC" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="OLDIC" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="PASSPORT" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="IMMIGRATIONNO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="BRANCH" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="HRGROUP" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="DEPARTMENT" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="CATEGORY" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="PROJECT" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="JOB" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="TASK" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="NATIONALITY" fieldtype="string.uni" required="true" WIDTH="4"/>
-     <FIELD attrname="RACE" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="CALENDAR" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="oISMANAGER" fieldtype="i2"/>
-     <FIELD attrname="oMGRAPPROVAL" fieldtype="i2"/>
-     <FIELD attrname="oMGRREVIEW" fieldtype="i2"/>
-     <FIELD attrname="JOBTITLE" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="JOINDATE" fieldtype="date"/>
-     <FIELD attrname="CONFIRMDATE" fieldtype="date"/>
-     <FIELD attrname="RESIGNDATE" fieldtype="date"/>
-     <FIELD attrname="RESIGNATTR" fieldtype="i4"/>
-     <FIELD attrname="MARITALSTATUS" fieldtype="string.uni" WIDTH="2"/>
-     <FIELD attrname="oISACTIVE" fieldtype="i2"/>
-     <FIELD attrname="WAGESTYPE" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="WAGES" fieldtype="fixedFMT" DECIMALS="4" WIDTH="18"/>
-     <FIELD attrname="CONTRIB" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="FREQUENCY" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="PAYMENTMETHOD" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="BANK" fieldtype="string.uni" WIDTH="12"/>
-     <FIELD attrname="BANKACCNO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="EPFNO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="NK" fieldtype="string.uni" WIDTH="2"/>
-     <FIELD attrname="INITIAL" fieldtype="string.uni" WIDTH="6"/>
-     <FIELD attrname="SOCSONO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="SOCSOTYPE" fieldtype="i4"/>
-     <FIELD attrname="EISTYPE" fieldtype="i4"/>
-     <FIELD attrname="EISCATEGORY" fieldtype="i4"/>
-     <FIELD attrname="TAXCATEGORY" fieldtype="string.uni" WIDTH="20"/>
-     <FIELD attrname="TAXBRANCH" fieldtype="string.uni" WIDTH="80"/>
-     <FIELD attrname="TAXNO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="oDISABLED" fieldtype="i2"/>
-     <FIELD attrname="oTAXRESIDENT" fieldtype="i2"/>
-     <FIELD attrname="EASERIALNO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="THNO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="SPOUSENAME" fieldtype="string.uni" WIDTH="320"/>
-     <FIELD attrname="SPOUSEADDRESS1" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="SPOUSEADDRESS2" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="SPOUSEADDRESS3" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="SPOUSEADDRESS4" fieldtype="string.uni" WIDTH="120"/>
-     <FIELD attrname="SPOUSEPHONE1" fieldtype="string.uni" WIDTH="400"/>
-     <FIELD attrname="SPOUSEPHONE2" fieldtype="string.uni" WIDTH="400"/>
-     <FIELD attrname="SPOUSEMOBILE" fieldtype="string.uni" WIDTH="400"/>
-     <FIELD attrname="SPOUSETAXBRANCH" fieldtype="string.uni" WIDTH="80"/>
-     <FIELD attrname="SPOUSETAXNO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="SPOUSEICNO" fieldtype="string.uni" WIDTH="40"/>
-     <FIELD attrname="oSPOUSEWORKING" fieldtype="i2"/>
-     <FIELD attrname="oSPOUSEDISABLED" fieldtype="i2"/>
-     <FIELD attrname="LEAVEGROUP" fieldtype="string.uni" required="true" WIDTH="40"/>
-     <FIELD attrname="PHOTO" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-     <FIELD attrname="NOTE" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-     <FIELD attrname="ATTACHMENTS" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-     <FIELD attrname="ROWVER" fieldtype="i4"/>
-     <FIELD attrname="DocNoSetKey" fieldtype="i8"/>
-     <FIELD attrname="Disabled" fieldtype="boolean"/>
-     <FIELD attrname="TaxResident" fieldtype="boolean"/>
-     <FIELD attrname="SpouseWorking" fieldtype="boolean"/>
-     <FIELD attrname="SpouseDisabled" fieldtype="boolean"/>
-     <FIELD attrname="IsActive" fieldtype="boolean"/>
-     <FIELD attrname="IsManager" fieldtype="boolean"/>
-     <FIELD attrname="MgrApproval" fieldtype="boolean"/>
-     <FIELD attrname="MgrReview" fieldtype="boolean"/>
-     <FIELD attrname="OverrideTaxCategory" fieldtype="boolean"/>
-     <FIELD attrname="SysCalcTaxCategory" fieldtype="string.uni" WIDTH="20"/>
-     <FIELD attrname="LeaveMY" fieldtype="boolean"/>
-     <FIELD attrname="Dirty" fieldtype="boolean"/>
-     <FIELD attrname="TaxBenefit" fieldtype="nested">
-       <FIELDS>
-         <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-         <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-         <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
-         <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-         <FIELD attrname="REF1" fieldtype="string.uni" WIDTH="40"/>
-         <FIELD attrname="REF2" fieldtype="string.uni" WIDTH="40"/>
-         <FIELD attrname="AMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
-         <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
-         <FIELD attrname="DATEFROM" fieldtype="date"/>
-         <FIELD attrname="DATETO" fieldtype="date"/>
-         <FIELD attrname="ROWVER" fieldtype="i4"/>
-         <FIELD attrname="PCB" fieldtype="boolean"/>
-       </FIELDS>
-       <PARAMS/>
-     </FIELD>
-     <FIELD attrname="Claim" fieldtype="nested">
-       <FIELDS>
-         <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-         <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-         <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
-         <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-         <FIELD attrname="YEARLYLIMIT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
-         <FIELD attrname="MONTHLYLIMIT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
-         <FIELD attrname="ROWVER" fieldtype="i4"/>
-       </FIELDS>
-       <PARAMS/>
-     </FIELD>
-     <FIELD attrname="Manager" fieldtype="nested">
-       <FIELDS>
-         <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-         <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-         <FIELD attrname="BRANCH" fieldtype="string.uni" WIDTH="40"/>
-         <FIELD attrname="DEPARTMENT" fieldtype="string.uni" WIDTH="40"/>
-         <FIELD attrname="ROWVER" fieldtype="i4"/>
-       </FIELDS>
-       <PARAMS/>
-     </FIELD>
-     <FIELD attrname="History" fieldtype="nested">
-       <FIELDS>
-         <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-         <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-         <FIELD attrname="POSTDATE" fieldtype="date" required="true"/>
-         <FIELD attrname="HISTORYTYPE" fieldtype="string.uni" required="true" WIDTH="40"/>
-         <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-         <FIELD attrname="ROWVER" fieldtype="i4"/>
-       </FIELDS>
-       <PARAMS/>
-     </FIELD>
-     <FIELD attrname="Child" fieldtype="nested">
-       <FIELDS>
-         <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-         <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-         <FIELD attrname="NAME" fieldtype="string.uni" WIDTH="320"/>
-         <FIELD attrname="DOB" fieldtype="date"/>
-         <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="1" WIDTH="9"/>
-         <FIELD attrname="TAXCODE" fieldtype="string.uni" WIDTH="40"/>
-         <FIELD attrname="ROWVER" fieldtype="i4"/>
-         <FIELD attrname="NumOfChildren" fieldtype="fixed" DECIMALS="4" WIDTH="32"/>
-       </FIELDS>
-       <PARAMS/>
-     </FIELD>
-     <FIELD attrname="Deduction" fieldtype="nested">
-       <FIELDS>
-         <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-         <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-         <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
-         <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-         <FIELD attrname="DEDUCTIONTYPE" fieldtype="i4"/>
-         <FIELD attrname="DEDUCTIONATTR" fieldtype="i4"/>
-         <FIELD attrname="WORKUNIT" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
-         <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
-         <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
-         <FIELD attrname="DATEFROM" fieldtype="date"/>
-         <FIELD attrname="DATETO" fieldtype="date"/>
-         <FIELD attrname="ROWVER" fieldtype="i4"/>
-         <FIELD attrname="EPF" fieldtype="boolean"/>
-         <FIELD attrname="SOCSO" fieldtype="boolean"/>
-         <FIELD attrname="PCB" fieldtype="boolean"/>
-         <FIELD attrname="OT" fieldtype="boolean"/>
-         <FIELD attrname="EA" fieldtype="boolean"/>
-         <FIELD attrname="HRDF" fieldtype="boolean"/>
-         <FIELD attrname="PA" fieldtype="boolean"/>
-         <FIELD attrname="EIS" fieldtype="boolean"/>
-       </FIELDS>
-       <PARAMS/>
-     </FIELD>
-     <FIELD attrname="Allowance" fieldtype="nested">
-       <FIELDS>
-         <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
-         <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
-         <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
-         <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
-         <FIELD attrname="ALLOWANCETYPE" fieldtype="i4"/>
-         <FIELD attrname="WORKUNIT" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
-         <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
-         <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
-         <FIELD attrname="TAXCODE" fieldtype="string.uni" WIDTH="40"/>
-         <FIELD attrname="DATEFROM" fieldtype="date"/>
-         <FIELD attrname="DATETO" fieldtype="date"/>
-         <FIELD attrname="ROWVER" fieldtype="i4"/>
-         <FIELD attrname="EPF" fieldtype="boolean"/>
-         <FIELD attrname="SOCSO" fieldtype="boolean"/>
-         <FIELD attrname="PCB" fieldtype="boolean"/>
-         <FIELD attrname="OT" fieldtype="boolean"/>
-         <FIELD attrname="EA" fieldtype="boolean"/>
-         <FIELD attrname="HRDF" fieldtype="boolean"/>
-         <FIELD attrname="PA" fieldtype="boolean"/>
-         <FIELD attrname="EIS" fieldtype="boolean"/>
-       </FIELDS>
-       <PARAMS/>
-     </FIELD>
-   </FIELDS>
-   <PARAMS MD_SEMANTICS="3">
-     <PARAM Name="KeyField" Value="QXV0b0tleQ==" Roundtrip="True"/>
-     <PARAM Name="CanInsert" Value="TRUE" Type="boolean" Roundtrip="True"/>
-     <PARAM Name="CanEdit" Value="TRUE" Type="boolean" Roundtrip="True"/>
-     <PARAM Name="CanDelete" Value="TRUE" Type="boolean" Roundtrip="True"/>
-     <PARAM Name="ID" Value="SFJfRU1Q" Roundtrip="True"/>
-     <PARAM Name="DatabaseBrand" Value="RmlyZWJpcmQ=" Roundtrip="True"/>
-     <PARAM Name="Dummy_0" Value="0" Type="i4"/>
-     <PARAM Name="Dummy_1" Value="0" Type="i4"/>
-   </PARAMS>
- </METADATA>
- <ROWDATA>
-   <ROW AUTOKEY="34" CODE="EMAIL" NAME="Version 1.2021.196.166 & above" NAME2="" GENDER="M" ADDRESS1="" ADDRESS2="" ADDRESS3="" ADDRESS4="" PHONE1="" PHONE2="" MOBILE="" EMAIL="" BRANCH="----" HRGROUP="----" DEPARTMENT="----" CATEGORY="----" PROJECT="----" JOB="----" TASK="----" NATIONALITY="MY" RACE="----" CALENDAR="----" oISMANAGER="0" oMGRAPPROVAL="0" oMGRREVIEW="0" JOBTITLE="" RESIGNATTR="0" MARITALSTATUS="S" oISACTIVE="0" WAGESTYPE="----" WAGES="0.0000" CONTRIB="----" FREQUENCY="----" PAYMENTMETHOD="----" SOCSOTYPE="1" EISTYPE="1" EISCATEGORY="0" oDISABLED="0" oTAXRESIDENT="1" oSPOUSEWORKING="0" oSPOUSEDISABLED="0" LEAVEGROUP="----" NOTE="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMjI2MjF9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE0IFtVc2VOYW1lMl1ccGFyDQowXHBhcg0KXHBhcg0KW0dsb2JhbFBhc3N3b3JkXVxwYXINClVzZU5hbWVJQ1Bhc3NccGFyDQpccGFyDQpccGFyDQpbUHJpdmF0ZVBhc3N3b3JkXVxwYXINCkVtcGxveWVlQ29kZT1QYXNzd29yZFxwYXINClxwYXINCltDQ11ccGFyDQpccGFyDQpbQkNDXVxwYXINClxwYXINCltQREZGaWxlTmFtZV1ccGFyDQpFQS08RW1wbG95ZWUuQ29kZT4tR2V0VGl0bGVccGFyDQpccGFyDQpbU3ViamVjdF1ccGFyDQpccGFyDQpccGFyDQpbQm9keV1ccGFyDQpEZWFyIDxFbXBsb3llZS5OYW1lPixccGFyDQpUaGlzIGlzIHlyIHNhbGFyeSBHZXRNb250aFxwYXINCkdldFRpdGxlXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciAuLi5ccGFyDQpccGFyDQpCZXN0IFJlZ2FyZHMsXHBhcg0KPFByb2ZpbGUuQ29tcGFueU5hbWU+XHBhcg0KfQ0KAA==" ROWVER="6" Disabled="FALSE" TaxResident="TRUE" SpouseWorking="FALSE" SpouseDisabled="FALSE" IsActive="FALSE" IsManager="FALSE" MgrApproval="FALSE" MgrReview="FALSE" OverrideTaxCategory="FALSE" LeaveMY="FALSE" Dirty="FALSE">
-     <TaxBenefit/>
-     <Claim/>
-     <Manager/>
-     <History/>
-     <Child/>
-     <Deduction/>
-     <Allowance/>
-   </ROW>
- </ROWDATA>
-</DATAPACKET> </syntaxhighlight>
-```
+      <METADATA>
+        <FIELDS>
+          <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+          <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+          <FIELD attrname="NAME" fieldtype="string.uni" WIDTH="320"/>
+          <FIELD attrname="NAME2" fieldtype="string.uni" WIDTH="320"/>
+          <FIELD attrname="GENDER" fieldtype="string.uni" required="true" WIDTH="2"/>
+          <FIELD attrname="DOB" fieldtype="date"/>
+          <FIELD attrname="ADDRESS1" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS2" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS3" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS4" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="PHONE1" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="PHONE2" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="MOBILE" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="EMAIL" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="NEWIC" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="OLDIC" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="PASSPORT" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="IMMIGRATIONNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="BRANCH" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="HRGROUP" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="DEPARTMENT" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="CATEGORY" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="PROJECT" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="JOB" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="TASK" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="NATIONALITY" fieldtype="string.uni" required="true" WIDTH="4"/>
+          <FIELD attrname="RACE" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="CALENDAR" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="oISMANAGER" fieldtype="i2"/>
+          <FIELD attrname="oMGRAPPROVAL" fieldtype="i2"/>
+          <FIELD attrname="oMGRREVIEW" fieldtype="i2"/>
+          <FIELD attrname="JOBTITLE" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="JOINDATE" fieldtype="date"/>
+          <FIELD attrname="CONFIRMDATE" fieldtype="date"/>
+          <FIELD attrname="RESIGNDATE" fieldtype="date"/>
+          <FIELD attrname="RESIGNATTR" fieldtype="i4"/>
+          <FIELD attrname="MARITALSTATUS" fieldtype="string.uni" WIDTH="2"/>
+          <FIELD attrname="oISACTIVE" fieldtype="i2"/>
+          <FIELD attrname="WAGESTYPE" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="WAGES" fieldtype="fixedFMT" DECIMALS="4" WIDTH="18"/>
+          <FIELD attrname="CONTRIB" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="FREQUENCY" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="PAYMENTMETHOD" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="BANK" fieldtype="string.uni" WIDTH="12"/>
+          <FIELD attrname="BANKACCNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="EPFNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="NK" fieldtype="string.uni" WIDTH="2"/>
+          <FIELD attrname="INITIAL" fieldtype="string.uni" WIDTH="6"/>
+          <FIELD attrname="SOCSONO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="SOCSOTYPE" fieldtype="i4"/>
+          <FIELD attrname="EISTYPE" fieldtype="i4"/>
+          <FIELD attrname="EISCATEGORY" fieldtype="i4"/>
+          <FIELD attrname="TAXCATEGORY" fieldtype="string.uni" WIDTH="20"/>
+          <FIELD attrname="TAXBRANCH" fieldtype="string.uni" WIDTH="80"/>
+          <FIELD attrname="TAXNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="oDISABLED" fieldtype="i2"/>
+          <FIELD attrname="oTAXRESIDENT" fieldtype="i2"/>
+          <FIELD attrname="EASERIALNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="THNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="SPOUSENAME" fieldtype="string.uni" WIDTH="320"/>
+          <FIELD attrname="SPOUSEADDRESS1" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="SPOUSEADDRESS2" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="SPOUSEADDRESS3" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="SPOUSEADDRESS4" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="SPOUSEPHONE1" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="SPOUSEPHONE2" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="SPOUSEMOBILE" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="SPOUSETAXBRANCH" fieldtype="string.uni" WIDTH="80"/>
+          <FIELD attrname="SPOUSETAXNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="SPOUSEICNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="oSPOUSEWORKING" fieldtype="i2"/>
+          <FIELD attrname="oSPOUSEDISABLED" fieldtype="i2"/>
+          <FIELD attrname="LEAVEGROUP" fieldtype="string.uni" required="true" WIDTH="40"/>
+          <FIELD attrname="PHOTO" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+          <FIELD attrname="NOTE" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+          <FIELD attrname="ATTACHMENTS" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+          <FIELD attrname="ROWVER" fieldtype="i4"/>
+          <FIELD attrname="DocNoSetKey" fieldtype="i8"/>
+          <FIELD attrname="Disabled" fieldtype="boolean"/>
+          <FIELD attrname="TaxResident" fieldtype="boolean"/>
+          <FIELD attrname="SpouseWorking" fieldtype="boolean"/>
+          <FIELD attrname="SpouseDisabled" fieldtype="boolean"/>
+          <FIELD attrname="IsActive" fieldtype="boolean"/>
+          <FIELD attrname="IsManager" fieldtype="boolean"/>
+          <FIELD attrname="MgrApproval" fieldtype="boolean"/>
+          <FIELD attrname="MgrReview" fieldtype="boolean"/>
+          <FIELD attrname="OverrideTaxCategory" fieldtype="boolean"/>
+          <FIELD attrname="SysCalcTaxCategory" fieldtype="string.uni" WIDTH="20"/>
+          <FIELD attrname="LeaveMY" fieldtype="boolean"/>
+          <FIELD attrname="Dirty" fieldtype="boolean"/>
+          <FIELD attrname="TaxBenefit" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="REF1" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="REF2" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="AMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
+              <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
+              <FIELD attrname="DATEFROM" fieldtype="date"/>
+              <FIELD attrname="DATETO" fieldtype="date"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+              <FIELD attrname="PCB" fieldtype="boolean"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Claim" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="YEARLYLIMIT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
+              <FIELD attrname="MONTHLYLIMIT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="18"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Manager" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="BRANCH" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="DEPARTMENT" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="History" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="POSTDATE" fieldtype="date" required="true"/>
+              <FIELD attrname="HISTORYTYPE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Child" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="NAME" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="DOB" fieldtype="date"/>
+              <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="1" WIDTH="9"/>
+              <FIELD attrname="TAXCODE" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+              <FIELD attrname="NumOfChildren" fieldtype="fixed" DECIMALS="4" WIDTH="32"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Deduction" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="DEDUCTIONTYPE" fieldtype="i4"/>
+              <FIELD attrname="DEDUCTIONATTR" fieldtype="i4"/>
+              <FIELD attrname="WORKUNIT" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
+              <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
+              <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
+              <FIELD attrname="DATEFROM" fieldtype="date"/>
+              <FIELD attrname="DATETO" fieldtype="date"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+              <FIELD attrname="EPF" fieldtype="boolean"/>
+              <FIELD attrname="SOCSO" fieldtype="boolean"/>
+              <FIELD attrname="PCB" fieldtype="boolean"/>
+              <FIELD attrname="OT" fieldtype="boolean"/>
+              <FIELD attrname="EA" fieldtype="boolean"/>
+              <FIELD attrname="HRDF" fieldtype="boolean"/>
+              <FIELD attrname="PA" fieldtype="boolean"/>
+              <FIELD attrname="EIS" fieldtype="boolean"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+          <FIELD attrname="Allowance" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="AUTOKEY" fieldtype="i8" required="true"/>
+              <FIELD attrname="CODE" fieldtype="string.uni" required="true" WIDTH="60"/>
+              <FIELD attrname="PICODE" fieldtype="string.uni" required="true" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="320"/>
+              <FIELD attrname="ALLOWANCETYPE" fieldtype="i4"/>
+              <FIELD attrname="WORKUNIT" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
+              <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="18"/>
+              <FIELD attrname="CONTRIBATTR" fieldtype="i4"/>
+              <FIELD attrname="TAXCODE" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="DATEFROM" fieldtype="date"/>
+              <FIELD attrname="DATETO" fieldtype="date"/>
+              <FIELD attrname="ROWVER" fieldtype="i4"/>
+              <FIELD attrname="EPF" fieldtype="boolean"/>
+              <FIELD attrname="SOCSO" fieldtype="boolean"/>
+              <FIELD attrname="PCB" fieldtype="boolean"/>
+              <FIELD attrname="OT" fieldtype="boolean"/>
+              <FIELD attrname="EA" fieldtype="boolean"/>
+              <FIELD attrname="HRDF" fieldtype="boolean"/>
+              <FIELD attrname="PA" fieldtype="boolean"/>
+              <FIELD attrname="EIS" fieldtype="boolean"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
+        </FIELDS>
+        <PARAMS MD_SEMANTICS="3">
+          <PARAM Name="KeyField" Value="QXV0b0tleQ==" Roundtrip="True"/>
+          <PARAM Name="CanInsert" Value="TRUE" Type="boolean" Roundtrip="True"/>
+          <PARAM Name="CanEdit" Value="TRUE" Type="boolean" Roundtrip="True"/>
+          <PARAM Name="CanDelete" Value="TRUE" Type="boolean" Roundtrip="True"/>
+          <PARAM Name="ID" Value="SFJfRU1Q" Roundtrip="True"/>
+          <PARAM Name="DatabaseBrand" Value="RmlyZWJpcmQ=" Roundtrip="True"/>
+          <PARAM Name="Dummy_0" Value="0" Type="i4"/>
+          <PARAM Name="Dummy_1" Value="0" Type="i4"/>
+        </PARAMS>
+      </METADATA>
+      <ROWDATA>
+        <ROW AUTOKEY="34" CODE="EMAIL" NAME="Version 1.2021.196.166 & above" NAME2="" GENDER="M" ADDRESS1="" ADDRESS2="" ADDRESS3="" ADDRESS4="" PHONE1="" PHONE2="" MOBILE="" EMAIL="" BRANCH="----" HRGROUP="----" DEPARTMENT="----" CATEGORY="----" PROJECT="----" JOB="----" TASK="----" NATIONALITY="MY" RACE="----" CALENDAR="----" oISMANAGER="0" oMGRAPPROVAL="0" oMGRREVIEW="0" JOBTITLE="" RESIGNATTR="0" MARITALSTATUS="S" oISACTIVE="0" WAGESTYPE="----" WAGES="0.0000" CONTRIB="----" FREQUENCY="----" PAYMENTMETHOD="----" SOCSOTYPE="1" EISTYPE="1" EISCATEGORY="0" oDISABLED="0" oTAXRESIDENT="1" oSPOUSEWORKING="0" oSPOUSEDISABLED="0" LEAVEGROUP="----" NOTE="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdFxkZWZsYW5nMTAzM3tcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMjI2MjF9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE0IFtVc2VOYW1lMl1ccGFyDQowXHBhcg0KXHBhcg0KW0dsb2JhbFBhc3N3b3JkXVxwYXINClVzZU5hbWVJQ1Bhc3NccGFyDQpccGFyDQpccGFyDQpbUHJpdmF0ZVBhc3N3b3JkXVxwYXINCkVtcGxveWVlQ29kZT1QYXNzd29yZFxwYXINClxwYXINCltDQ11ccGFyDQpccGFyDQpbQkNDXVxwYXINClxwYXINCltQREZGaWxlTmFtZV1ccGFyDQpFQS08RW1wbG95ZWUuQ29kZT4tR2V0VGl0bGVccGFyDQpccGFyDQpbU3ViamVjdF1ccGFyDQpccGFyDQpccGFyDQpbQm9keV1ccGFyDQpEZWFyIDxFbXBsb3llZS5OYW1lPixccGFyDQpUaGlzIGlzIHlyIHNhbGFyeSBHZXRNb250aFxwYXINCkdldFRpdGxlXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciAuLi5ccGFyDQpccGFyDQpCZXN0IFJlZ2FyZHMsXHBhcg0KPFByb2ZpbGUuQ29tcGFueU5hbWU+XHBhcg0KfQ0KAA==" ROWVER="6" Disabled="FALSE" TaxResident="TRUE" SpouseWorking="FALSE" SpouseDisabled="FALSE" IsActive="FALSE" IsManager="FALSE" MgrApproval="FALSE" MgrReview="FALSE" OverrideTaxCategory="FALSE" LeaveMY="FALSE" Dirty="FALSE">
+          <TaxBenefit/>
+          <Claim/>
+          <Manager/>
+          <History/>
+          <Child/>
+          <Deduction/>
+          <Allowance/>
+        </ROW>
+      </ROWDATA>
+      </DATAPACKET> </syntaxhighlight>
+      ```
 
-</details>
+      </details>
 
 3. Click **More | Paste Employee**
 4. Make sure Code is **EMAIL**
-
 5. Click **Save** after done change the
 
 - E-Mail Subject/Content/Body & other fields (Version 1.2020.182.158 & above)
@@ -2350,9 +2350,9 @@ Avoid use following character
 2. Select the Build-in/Customise **Fast Report** (eg Sales Invoice 7 (GST 2)-Email)
 3. Click **OK**
 
-![export-to-email](../../../../static/img/usage/tools/fastReport-basicGuide/export-to-email.jpg)
+    ![export-to-email](../../../../static/img/usage/tools/fastReport-basicGuide/export-to-email.jpg)
 
-5. Select either 1 of other following from the list
+4. Select either 1 of other following from the list
 
 - Export to E-Mail Client
 - Export to E-Mail Client (Batch)
@@ -2467,108 +2467,109 @@ SELECT * FROM Main Order By DocAmt Desc Limit 5
 
 Below is example on how to get CSV data from Maintain Agent UDF_AList field
 
-    ```pascal
+```pascal
     ProjectCode;Remark
     P12W5;Rmakr 1
     P13W4;Note 1234
-    ```
+```
 
 1. Enter below script in the Code Tab
 
-  <details>
-    <summary>Get CSV Data Script - click to expand</summary>
+      <details>
+        <summary>Get CSV Data Script - click to expand</summary>
 
-    ```pascal
-    function SetStrictDelimiter(const AStr:String):string;
-    var i, x, ALength  : integer;
-        s, s1 : string;
-        OrigList, MasterList, Row : TStringList;                              
-    begin
-      OrigList   := TStringList.Create;      
-      MasterList := TStringList.Create;
-      Row        := TStringList.Create;
-      Row.Delimiter := ';';
-      try
-        OrigList.Text := RichTextToPlainText(AStr);                                    
-        for I := 0 to OrigList.Count - 1 do
-          begin
-            Row.Clear;
-            s1 := '';
-            x := 1;
-            s := OrigList[I];
-            ALength := Length(s);
-            while (x <= ALength) do begin
-              if x = ALength then begin
-                s1 := s1 + s[x];
-                Row.Add(Trim(s1));
-              end;
-              if (s[x] = ';') then begin
-                  Row.Add(Trim(s1));
-                  s1 := '';
-                end else
-                s1 := s1 + s[x];           
-              inc(x);
+      ```pascal
+        function SetStrictDelimiter(const AStr:String):string;
+        var i, x, ALength  : integer;
+            s, s1 : string;
+            OrigList, MasterList, Row : TStringList;
+        begin
+          OrigList   := TStringList.Create;
+          MasterList := TStringList.Create;
+          Row        := TStringList.Create;
+          Row.Delimiter := ';';
+          try
+            OrigList.Text := RichTextToPlainText(AStr);
+            for I := 0 to OrigList.Count - 1 do
+              begin
+                Row.Clear;
+                s1 := '';
+                x := 1;
+                s := OrigList[I];
+                ALength := Length(s);
+                while (x <= ALength) do begin
+                  if x = ALength then begin
+                    s1 := s1 + s[x];
+                    Row.Add(Trim(s1));
+                  end;
+                  if (s[x] = ';') then begin
+                      Row.Add(Trim(s1));
+                      s1 := '';
+                    end else
+                    s1 := s1 + s[x];
+                  inc(x);
+                end;
+              MasterList.Add(Row.DelimitedText);
             end;
-          MasterList.Add(Row.DelimitedText);
+            Result := MasterList.Text;
+          finally
+            OrigList.Free;
+            MasterList.Free;
+            Row.Free;
+          end;
         end;
-        Result := MasterList.Text;                                          
-      finally
-        OrigList.Free;                  
-        MasterList.Free;
-        Row.Free;  
-      end;            
-    end;          
-      
-    function ValueOfSemiColonStrEx(const AStr: string; const AIndex: integer): string;
-    var S: TStringList;
-    begin
-      S := TStringList.Create;
-      try
-        S.Delimiter       := ';';
-        S.DelimitedText   := AStr;
-        if AIndex < S.Count then Result := S[AIndex]
-        else Result := '';
-      finally
-        S.Free;
-      end;
-    end;          
 
-    function GetAgentData(const AProject:String):String;
-    var S: TStringList;
-        i: integer;                         
-    begin
-      S := TStringList.Create;
-      try        
-        S.Text := SetStrictDelimiter(<Document_Agent."UDF_AList">);    
-        for I := 0 to S.Count - 1 do begin
-          if ValueOfSemiColonStrEx(S[i], 0) = AProject then //Same as Project Code CSV Column 1
-            Result := ValueOfSemiColonStrEx(S[i], 1);       //Show CSV Column 2   
-        end;    
-      finally
-        s.Free;              
-      end;            
-    end;
-    ```
+        function ValueOfSemiColonStrEx(const AStr: string; const AIndex: integer): string;
+        var S: TStringList;
+        begin
+          S := TStringList.Create;
+          try
+            S.Delimiter       := ';';
+            S.DelimitedText   := AStr;
+            if AIndex < S.Count then Result := S[AIndex]
+            else Result := '';
+          finally
+            S.Free;
+          end;
+        end;
 
-  </details>
+        function GetAgentData(const AProject:String):String;
+        var S: TStringList;
+            i: integer;
+        begin
+          S := TStringList.Create;
+          try
+            S.Text := SetStrictDelimiter(<Document_Agent."UDF_AList">);
+            for I := 0 to S.Count - 1 do begin
+              if ValueOfSemiColonStrEx(S[i], 0) = AProject then //Same as Project Code CSV Column 1
+                Result := ValueOfSemiColonStrEx(S[i], 1);       //Show CSV Column 2
+            end;
+          finally
+            s.Free;
+          end;
+        end;
+        ```
 
-  ![a-icon](../../../../static/img/usage/tools/fastReport-basicGuide/a-icon.jpg)
+      </details>
+
+    ![a-icon](../../../../static/img/usage/tools/fastReport-basicGuide/a-icon.jpg)
 
 2. Click the Red A Icon.
+
 3. Click on the place to be print/shown.
 
-![memo-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/memo-insert-code.jpg)
+    ![memo-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/memo-insert-code.jpg)
 
 4. Enter below Script in the memo
 
-```pascal
-[GetAgentData(<Document_Detail."Project">)]
-```
+    ```pascal
+    [GetAgentData(<Document_Detail."Project">)]
+    ```
 
 5. Click Ok button.
 6. Right Click the Memo
 
-![tick-stretch](../../../../static/img/usage/tools/fastReport-basicGuide/tick-stretch.jpg)
+    ![tick-stretch](../../../../static/img/usage/tools/fastReport-basicGuide/tick-stretch.jpg)
 
 7. Select Stretch
 8. File | Save As & enter New report Name after done.
@@ -2598,62 +2599,62 @@ Below is example using Sales Invoice
 2. Scroll down look for procedure SetUp
 3. Copy below script & paste it between the begin & end; in procedure SetUp
 
-```pascal
-SQL := 'SELECT B.Description As ReportName, B.Description3 As Body '+
-         'FROM SL_QT A ' +
-         'INNER JOIN SL_QTDTL B ON (A.Dockey=B.Dockey) ' +
-         'WHERE A.DocNo=''WHATSAPP'' ' +
-         'ORDER BY B.SEQ';
-  AddDataSet('plShareMsg', ['ReportName', 'Body'])
-  .GetDBData(SQL);
-```
+    ```pascal
+    SQL := 'SELECT B.Description As ReportName, B.Description3 As Body '+
+            'FROM SL_QT A ' +
+            'INNER JOIN SL_QTDTL B ON (A.Dockey=B.Dockey) ' +
+            'WHERE A.DocNo=''WHATSAPP'' ' +
+            'ORDER BY B.SEQ';
+      AddDataSet('plShareMsg', ['ReportName', 'Body'])
+      .GetDBData(SQL);
+    ```
 
 4. Click File | Save As... to save the file (eg Sales Invoice 8 (SST 2)-WhatApp)
 5. Click File | Exit to exit the report design
 6. Click Design again in the report designer for the file just save on Steps 5 (eg Sales Invoice 8 (SST 2)-WhatApp)
 7. Click the Code Tab
 
-![sales-invoice-strfloatdef-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/sales-invoice-strfloatdef-insert-code.jpg)
+    ![sales-invoice-strfloatdef-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/sales-invoice-strfloatdef-insert-code.jpg)
 
 8. Scroll down look for function StrToFloatDef(const lFld:Variant):string
 9. Copy below script & paste it above the function
 
-<details>
-  <summary>WhatsApp Script (Last Script Update : 05 Nov 2018)- click to expand</summary>
+    <details>
+      <summary>WhatsApp Script (Last Script Update : 05 Nov 2018)- click to expand</summary>
 
-  ```pascal
-  procedure GetShareMsg;
-  var D  : TfrxDataSet;
-    lFN : String;
-  begin
-    lFN := Trim(Report.ReportOptions.Name);
-    lFN := StringReplace(lFN,'.fr3','');
-    D := Report.GetDataSet('plShareMsg');
-    D.First;
-    While not D.Eof do begin
-      if Trim(D.Value('ReportName')) = lFN then
-        Break;
-      D.Next;
-    end;
-  end;
+      ```pascal
+      procedure GetShareMsg;
+      var D  : TfrxDataSet;
+        lFN : String;
+      begin
+        lFN := Trim(Report.ReportOptions.Name);
+        lFN := StringReplace(lFN,'.fr3','');
+        D := Report.GetDataSet('plShareMsg');
+        D.First;
+        While not D.Eof do begin
+          if Trim(D.Value('ReportName')) = lFN then
+            Break;
+          D.Next;
+        end;
+      end;
 
-  function GetShareText: string;
-  begin
-    GetShareMsg;
-    Result := GetFldInfo(RichTextToPlainText(<plShareMsg."Body">))
-  end;
-  ```
+      function GetShareText: string;
+      begin
+        GetShareMsg;
+        Result := GetFldInfo(RichTextToPlainText(<plShareMsg."Body">))
+      end;
+      ```
 
-</details>
+    </details>
 
-  ![getidinfo-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/getidinfo-insert-code.jpg)
+    ![getidinfo-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/getidinfo-insert-code.jpg)
 
 10. Scroll up again look for function GetFldInfo(const AStr:String):String;
 11. Copy below script & paste it between the Add('plEMailTpl'); & end;
 
-```pascal
-Add('Document_Currency');
-```
+    ```pascal
+    Add('Document_Currency');
+    ```
 
 12. Click File | Save to save the file
 13. Click File | Exit to exit the report design
@@ -2674,136 +2675,136 @@ SQL Accounting can Share message by different Content by report name
 1. Create New Quotation
 02. Copy below Sample E-Mail Template
 
-<details>
-  <summary>Sample Share Message Template - click to expand</summary>
+    <details>
+      <summary>Sample Share Message Template - click to expand</summary>
 
-```pascal
-<?xml version="1.0" standalone="yes"?>
-<DATAPACKET Version="2.0">
-  <METADATA>
-    <FIELDS>
-      <FIELD attrname="DOCKEY" fieldtype="i4"/>
-      <FIELD attrname="DOCNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="DOCNOEX" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="DOCDATE" fieldtype="date"/>
-      <FIELD attrname="POSTDATE" fieldtype="date"/>
-      <FIELD attrname="TAXDATE" fieldtype="date"/>
-      <FIELD attrname="CODE" fieldtype="string.uni" WIDTH="20"/>
-      <FIELD attrname="COMPANYNAME" fieldtype="string.uni" WIDTH="200"/>
-      <FIELD attrname="ADDRESS1" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="ADDRESS2" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="ADDRESS3" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="ADDRESS4" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="PHONE1" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="MOBILE" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="FAX1" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="ATTENTION" fieldtype="string.uni" WIDTH="140"/>
-      <FIELD attrname="AREA" fieldtype="string.uni" WIDTH="20"/>
-      <FIELD attrname="AGENT" fieldtype="string.uni" WIDTH="20"/>
-      <FIELD attrname="PROJECT" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="TERMS" fieldtype="string.uni" WIDTH="20"/>
-      <FIELD attrname="CURRENCYCODE" fieldtype="string.uni" WIDTH="12"/>
-      <FIELD attrname="CURRENCYRATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="19"/>
-      <FIELD attrname="SHIPPER" fieldtype="string.uni" WIDTH="60"/>
-      <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="COUNTRY" fieldtype="string.uni" WIDTH="100"/>
-      <FIELD attrname="CANCELLED" fieldtype="string.uni" WIDTH="2"/>
-      <FIELD attrname="DOCAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-      <FIELD attrname="LOCALDOCAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-      <FIELD attrname="VALIDITY" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="DELIVERYTERM" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="CC" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="DOCREF1" fieldtype="string.uni" WIDTH="50"/>
-      <FIELD attrname="DOCREF2" fieldtype="string.uni" WIDTH="50"/>
-      <FIELD attrname="DOCREF3" fieldtype="string.uni" WIDTH="50"/>
-      <FIELD attrname="DOCREF4" fieldtype="string.uni" WIDTH="50"/>
-      <FIELD attrname="BRANCHNAME" fieldtype="string.uni" WIDTH="200"/>
-      <FIELD attrname="DADDRESS1" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="DADDRESS2" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="DADDRESS3" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="DADDRESS4" fieldtype="string.uni" WIDTH="120"/>
-      <FIELD attrname="DATTENTION" fieldtype="string.uni" WIDTH="140"/>
-      <FIELD attrname="DPHONE1" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="DMOBILE" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="DFAX1" fieldtype="string.uni" WIDTH="400"/>
-      <FIELD attrname="TAXEXEMPTNO" fieldtype="string.uni" WIDTH="100"/>
-      <FIELD attrname="ATTACHMENTS" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-      <FIELD attrname="NOTE" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-      <FIELD attrname="TRANSFERABLE" fieldtype="string.uni" WIDTH="2"/>
-      <FIELD attrname="UPDATECOUNT" fieldtype="i4"/>
-      <FIELD attrname="PRINTCOUNT" fieldtype="i4"/>
-      <FIELD attrname="DOCNOSETKEY" fieldtype="i8"/>
-      <FIELD attrname="NEXTDOCNO" fieldtype="string.uni" WIDTH="40"/>
-      <FIELD attrname="CHANGED" fieldtype="string.uni" WIDTH="2"/>
-      <FIELD attrname="sdsDocDetail" fieldtype="nested">
+    ```pascal
+    <?xml version="1.0" standalone="yes"?>
+    <DATAPACKET Version="2.0">
+      <METADATA>
         <FIELDS>
-          <FIELD attrname="DTLKEY" fieldtype="i4" required="true"/>
-          <FIELD attrname="DOCKEY" fieldtype="i4" required="true"/>
-          <FIELD attrname="SEQ" fieldtype="i4"/>
-          <FIELD attrname="STYLEID" fieldtype="string.uni" WIDTH="10"/>
-          <FIELD attrname="NUMBER" fieldtype="string.uni" WIDTH="10"/>
-          <FIELD attrname="ITEMCODE" fieldtype="string.uni" WIDTH="60"/>
-          <FIELD attrname="LOCATION" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="BATCH" fieldtype="string.uni" WIDTH="60"/>
+          <FIELD attrname="DOCKEY" fieldtype="i4"/>
+          <FIELD attrname="DOCNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="DOCNOEX" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="DOCDATE" fieldtype="date"/>
+          <FIELD attrname="POSTDATE" fieldtype="date"/>
+          <FIELD attrname="TAXDATE" fieldtype="date"/>
+          <FIELD attrname="CODE" fieldtype="string.uni" WIDTH="20"/>
+          <FIELD attrname="COMPANYNAME" fieldtype="string.uni" WIDTH="200"/>
+          <FIELD attrname="ADDRESS1" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS2" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS3" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="ADDRESS4" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="PHONE1" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="MOBILE" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="FAX1" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="ATTENTION" fieldtype="string.uni" WIDTH="140"/>
+          <FIELD attrname="AREA" fieldtype="string.uni" WIDTH="20"/>
+          <FIELD attrname="AGENT" fieldtype="string.uni" WIDTH="20"/>
           <FIELD attrname="PROJECT" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="TERMS" fieldtype="string.uni" WIDTH="20"/>
+          <FIELD attrname="CURRENCYCODE" fieldtype="string.uni" WIDTH="12"/>
+          <FIELD attrname="CURRENCYRATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="19"/>
+          <FIELD attrname="SHIPPER" fieldtype="string.uni" WIDTH="60"/>
           <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="DESCRIPTION2" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="DESCRIPTION3" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-          <FIELD attrname="PERMITNO" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="QTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
-          <FIELD attrname="UOM" fieldtype="string.uni" WIDTH="20"/>
-          <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
-          <FIELD attrname="SQTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
-          <FIELD attrname="SUOMQTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
-          <FIELD attrname="UNITPRICE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="19"/>
-          <FIELD attrname="DELIVERYDATE" fieldtype="date"/>
-          <FIELD attrname="DISC" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="TAX" fieldtype="string.uni" WIDTH="20"/>
-          <FIELD attrname="TARIFF" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="TAXRATE" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="TAXAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-          <FIELD attrname="LOCALTAXAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-          <FIELD attrname="TAXINCLUSIVE" fieldtype="i2"/>
-          <FIELD attrname="AMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-          <FIELD attrname="LOCALAMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-          <FIELD attrname="PRINTABLE" fieldtype="string.uni" WIDTH="2"/>
+          <FIELD attrname="COUNTRY" fieldtype="string.uni" WIDTH="100"/>
+          <FIELD attrname="CANCELLED" fieldtype="string.uni" WIDTH="2"/>
+          <FIELD attrname="DOCAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+          <FIELD attrname="LOCALDOCAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+          <FIELD attrname="VALIDITY" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="DELIVERYTERM" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="CC" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="DOCREF1" fieldtype="string.uni" WIDTH="50"/>
+          <FIELD attrname="DOCREF2" fieldtype="string.uni" WIDTH="50"/>
+          <FIELD attrname="DOCREF3" fieldtype="string.uni" WIDTH="50"/>
+          <FIELD attrname="DOCREF4" fieldtype="string.uni" WIDTH="50"/>
+          <FIELD attrname="BRANCHNAME" fieldtype="string.uni" WIDTH="200"/>
+          <FIELD attrname="DADDRESS1" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="DADDRESS2" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="DADDRESS3" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="DADDRESS4" fieldtype="string.uni" WIDTH="120"/>
+          <FIELD attrname="DATTENTION" fieldtype="string.uni" WIDTH="140"/>
+          <FIELD attrname="DPHONE1" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="DMOBILE" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="DFAX1" fieldtype="string.uni" WIDTH="400"/>
+          <FIELD attrname="TAXEXEMPTNO" fieldtype="string.uni" WIDTH="100"/>
+          <FIELD attrname="ATTACHMENTS" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+          <FIELD attrname="NOTE" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
           <FIELD attrname="TRANSFERABLE" fieldtype="string.uni" WIDTH="2"/>
-          <FIELD attrname="REMARK1" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="REMARK2" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="INITIALPURCHASECOST" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-          <FIELD attrname="CHANGED" fieldtype="string.uni" required="true" WIDTH="2"/>
-          <FIELD attrname="CompanyItemCode" fieldtype="string.uni" WIDTH="60"/>
+          <FIELD attrname="UPDATECOUNT" fieldtype="i4"/>
+          <FIELD attrname="PRINTCOUNT" fieldtype="i4"/>
+          <FIELD attrname="DOCNOSETKEY" fieldtype="i8"/>
+          <FIELD attrname="NEXTDOCNO" fieldtype="string.uni" WIDTH="40"/>
+          <FIELD attrname="CHANGED" fieldtype="string.uni" WIDTH="2"/>
+          <FIELD attrname="sdsDocDetail" fieldtype="nested">
+            <FIELDS>
+              <FIELD attrname="DTLKEY" fieldtype="i4" required="true"/>
+              <FIELD attrname="DOCKEY" fieldtype="i4" required="true"/>
+              <FIELD attrname="SEQ" fieldtype="i4"/>
+              <FIELD attrname="STYLEID" fieldtype="string.uni" WIDTH="10"/>
+              <FIELD attrname="NUMBER" fieldtype="string.uni" WIDTH="10"/>
+              <FIELD attrname="ITEMCODE" fieldtype="string.uni" WIDTH="60"/>
+              <FIELD attrname="LOCATION" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="BATCH" fieldtype="string.uni" WIDTH="60"/>
+              <FIELD attrname="PROJECT" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="400"/>
+              <FIELD attrname="DESCRIPTION2" fieldtype="string.uni" WIDTH="400"/>
+              <FIELD attrname="DESCRIPTION3" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+              <FIELD attrname="PERMITNO" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="QTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
+              <FIELD attrname="UOM" fieldtype="string.uni" WIDTH="20"/>
+              <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
+              <FIELD attrname="SQTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
+              <FIELD attrname="SUOMQTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
+              <FIELD attrname="UNITPRICE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="19"/>
+              <FIELD attrname="DELIVERYDATE" fieldtype="date"/>
+              <FIELD attrname="DISC" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="TAX" fieldtype="string.uni" WIDTH="20"/>
+              <FIELD attrname="TARIFF" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="TAXRATE" fieldtype="string.uni" WIDTH="40"/>
+              <FIELD attrname="TAXAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+              <FIELD attrname="LOCALTAXAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+              <FIELD attrname="TAXINCLUSIVE" fieldtype="i2"/>
+              <FIELD attrname="AMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+              <FIELD attrname="LOCALAMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+              <FIELD attrname="PRINTABLE" fieldtype="string.uni" WIDTH="2"/>
+              <FIELD attrname="TRANSFERABLE" fieldtype="string.uni" WIDTH="2"/>
+              <FIELD attrname="REMARK1" fieldtype="string.uni" WIDTH="400"/>
+              <FIELD attrname="REMARK2" fieldtype="string.uni" WIDTH="400"/>
+              <FIELD attrname="INITIALPURCHASECOST" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+              <FIELD attrname="CHANGED" fieldtype="string.uni" required="true" WIDTH="2"/>
+              <FIELD attrname="CompanyItemCode" fieldtype="string.uni" WIDTH="60"/>
+            </FIELDS>
+            <PARAMS/>
+          </FIELD>
         </FIELDS>
         <PARAMS/>
-      </FIELD>
-    </FIELDS>
-    <PARAMS/>
-  </METADATA>
-  <ROWDATA>
-    <ROW DOCKEY="22" DOCNO="WHATSAPP" DOCDATE="20181103" POSTDATE="20181103" TAXDATE="20181103" AREA="----" AGENT="----" PROJECT="----" CURRENCYCODE="----" CURRENCYRATE="1.00000000" SHIPPER="----" DESCRIPTION="Quotation" CANCELLED="T" DOCAMT="0.00" LOCALDOCAMT="0.00" TRANSFERABLE="T" UPDATECOUNT="19" PRINTCOUNT="0" DOCNOSETKEY="0" CHANGED="F">
-      <sdsDocDetail>
-        <ROWsdsDocDetail DTLKEY="24" DOCKEY="22" SEQ="1" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Fast Report Name" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczIwXGxhbmcxMDMzICpGb3IgQm9sZCpccGFyDQpfRm9yIEl0YWxpY19ccGFyDQp+Rm9yIFN0cmlrZU91dH5cZjFccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-        <ROWsdsDocDetail DTLKEY="27" DOCKEY="22" SEQ="2" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Quotation 7 (GST 1)" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzICo8UHJvZmlsZS5cZjEgQWxpYXNcZjAgPipcZjEgIG1zZzogWW91ciBcZjAgUXVvdGF0aW9uXGYxIC4gTm8uIFxmMCA8TWFpbi5cZjEgRG9jTm9cZjAgPlxmMSAgLSBcZjAgPE1haW4uXGYxIERvY0RhdGVcZjAgPlxmMSAgLSBcZjAgPERvY3VtZW50X0N1cnJlbmN5LlN5bWJvbD48TWFpbi5cZjEgRG9jQW10XGYwID5cZjEgLlxwYXINCkNsaWNrIGJlbG93IGxpbmsgZm9yIGRldGFpbFxmMCAuXGYxXHBhcg0KDQpccGFyZFxmczE4XHBhcg0KfQ0KAA==" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-        <ROWsdsDocDetail DTLKEY="30" DOCKEY="22" SEQ="3" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Delivery Order 1" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzIFRoaXMgRE8gTm8uIDxNYWluLlxmMSBEb2NOb1xmMCA+XGYxICAtIFxmMCA8TWFpbi5cZjEgRG9jRGF0ZVxmMCA+XGYxICBcZjAgZnJvbSAqPFByb2ZpbGUuQ29tcGFueU5hbWU+Ki5cZjFccGFyDQpDbGljayBvbiB0aGUgbGluayBiZWxvdyB0byB2aWV3IGRvY3VtZW50LlxwYXINCg0KXHBhcmRcZnMxOFxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181105" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-        <ROWsdsDocDetail DTLKEY="23" DOCKEY="22" SEQ="4" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 8 (SST 1)" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzICo8UHJvZmlsZS5cZjEgQWxpYXNcZjAgPipcZjEgIG1zZzogWW91ciBJbnYuIE5vLiBcZjAgPE1haW4uXGYxIERvY05vXGYwID5cZjEgIC0gXGYwIDxNYWluLlxmMSBEb2NEYXRlXGYwID5cZjEgIC0gXGYwIDxEb2N1bWVudF9DdXJyZW5jeS5TeW1ib2w+PE1haW4uXGYxIERvY0FtdFxmMCA+XGYxIC5ccGFyDQpDbGljayBiZWxvdyBsaW5rIGZvciBkZXRhaWxcZjAgLlxmMVxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-        <ROWsdsDocDetail DTLKEY="25" DOCKEY="22" SEQ="5" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 8 (SST 2)" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzIFRoaXMgSW52b2ljZSBOby4gPE1haW4uXGYxIERvY05vXGYwID5cZjEgIC0gXGYwIDxNYWluLlxmMSBEb2NEYXRlXGYwID5cZjEgIC0gXGYwIDxEb2N1bWVudF9DdXJyZW5jeS5TeW1ib2w+PE1haW4uXGYxIERvY0FtdFxmMCA+IGZyb20gKjxQcm9maWxlLkNvbXBhbnlOYW1lPiouXGYxXHBhcg0KQ2xpY2sgb24gdGhlIGxpbmsgYmVsb3cgdG8gdmlldyBkb2N1bWVudC5ccGFyDQoNClxwYXJkXGZzMThccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-        <ROWsdsDocDetail DTLKEY="29" DOCKEY="22" SEQ="6" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Purchase Order 8 (SST 1)" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzIFRoaXMgUE8gTm8uIDxNYWluLlxmMSBEb2NOb1xmMCA+XGYxICAtIFxmMCA8TWFpbi5cZjEgRG9jRGF0ZVxmMCA+XGYxICAtIFxmMCA8RG9jdW1lbnRfQ3VycmVuY3kuU3ltYm9sPjxNYWluLlxmMSBEb2NBbXRcZjAgPiBmcm9tICo8UHJvZmlsZS5Db21wYW55TmFtZT4qLlxmMVxwYXINCkNsaWNrIG9uIHRoZSBsaW5rIGJlbG93IHRvIHZpZXcgZG9jdW1lbnQuXHBhcg0KDQpccGFyZFxmczE4XHBhcg0KfQ0KAA==" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181105" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-        <ROWsdsDocDetail DTLKEY="28" DOCKEY="22" SEQ="7" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Cust Statement 06 Mths 1" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzICo8UHJvZmlsZS5cZjEgQWxpYXNcZjAgPipcZjEgIG1zZzogV2UgYXJlIHBsZWFzZWQgdG8gZW5jbG9zZSB5b3VyIGVTdGF0ZW1lbnQgZm9yIHlvdXIgYWNjb3VudCBkYXRlZCBcZjAgPFBhcmFtZXRlci5TdGF0ZW1lbnREYXRlPlxmMSAuXHBhcg0KQ2xpY2sgYmVsb3cgbGluayBmb3IgZGV0YWlsXGYwIC5cZjFccGFyDQpcZnMxOFxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-        <ROWsdsDocDetail DTLKEY="26" DOCKEY="22" SEQ="8" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Default Template" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzICo8UHJvZmlsZS5cZjEgQWxpYXNcZjAgPipcZjEgIG1zZzogXHBhcg0KQ2xpY2sgYmVsb3cgbGluayBmb3IgZGV0YWlsXGYwIC5cZjFccGFyDQoNClxwYXJkXGZzMThccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-      </sdsDocDetail>
-    </ROW>
-  </ROWDATA>
-</DATAPACKET>
-```
+      </METADATA>
+      <ROWDATA>
+        <ROW DOCKEY="22" DOCNO="WHATSAPP" DOCDATE="20181103" POSTDATE="20181103" TAXDATE="20181103" AREA="----" AGENT="----" PROJECT="----" CURRENCYCODE="----" CURRENCYRATE="1.00000000" SHIPPER="----" DESCRIPTION="Quotation" CANCELLED="T" DOCAMT="0.00" LOCALDOCAMT="0.00" TRANSFERABLE="T" UPDATECOUNT="19" PRINTCOUNT="0" DOCNOSETKEY="0" CHANGED="F">
+          <sdsDocDetail>
+            <ROWsdsDocDetail DTLKEY="24" DOCKEY="22" SEQ="1" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Fast Report Name" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczIwXGxhbmcxMDMzICpGb3IgQm9sZCpccGFyDQpfRm9yIEl0YWxpY19ccGFyDQp+Rm9yIFN0cmlrZU91dH5cZjFccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+            <ROWsdsDocDetail DTLKEY="27" DOCKEY="22" SEQ="2" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Quotation 7 (GST 1)" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzICo8UHJvZmlsZS5cZjEgQWxpYXNcZjAgPipcZjEgIG1zZzogWW91ciBcZjAgUXVvdGF0aW9uXGYxIC4gTm8uIFxmMCA8TWFpbi5cZjEgRG9jTm9cZjAgPlxmMSAgLSBcZjAgPE1haW4uXGYxIERvY0RhdGVcZjAgPlxmMSAgLSBcZjAgPERvY3VtZW50X0N1cnJlbmN5LlN5bWJvbD48TWFpbi5cZjEgRG9jQW10XGYwID5cZjEgLlxwYXINCkNsaWNrIGJlbG93IGxpbmsgZm9yIGRldGFpbFxmMCAuXGYxXHBhcg0KDQpccGFyZFxmczE4XHBhcg0KfQ0KAA==" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+            <ROWsdsDocDetail DTLKEY="30" DOCKEY="22" SEQ="3" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Delivery Order 1" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzIFRoaXMgRE8gTm8uIDxNYWluLlxmMSBEb2NOb1xmMCA+XGYxICAtIFxmMCA8TWFpbi5cZjEgRG9jRGF0ZVxmMCA+XGYxICBcZjAgZnJvbSAqPFByb2ZpbGUuQ29tcGFueU5hbWU+Ki5cZjFccGFyDQpDbGljayBvbiB0aGUgbGluayBiZWxvdyB0byB2aWV3IGRvY3VtZW50LlxwYXINCg0KXHBhcmRcZnMxOFxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181105" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+            <ROWsdsDocDetail DTLKEY="23" DOCKEY="22" SEQ="4" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 8 (SST 1)" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzICo8UHJvZmlsZS5cZjEgQWxpYXNcZjAgPipcZjEgIG1zZzogWW91ciBJbnYuIE5vLiBcZjAgPE1haW4uXGYxIERvY05vXGYwID5cZjEgIC0gXGYwIDxNYWluLlxmMSBEb2NEYXRlXGYwID5cZjEgIC0gXGYwIDxEb2N1bWVudF9DdXJyZW5jeS5TeW1ib2w+PE1haW4uXGYxIERvY0FtdFxmMCA+XGYxIC5ccGFyDQpDbGljayBiZWxvdyBsaW5rIGZvciBkZXRhaWxcZjAgLlxmMVxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+            <ROWsdsDocDetail DTLKEY="25" DOCKEY="22" SEQ="5" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 8 (SST 2)" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzIFRoaXMgSW52b2ljZSBOby4gPE1haW4uXGYxIERvY05vXGYwID5cZjEgIC0gXGYwIDxNYWluLlxmMSBEb2NEYXRlXGYwID5cZjEgIC0gXGYwIDxEb2N1bWVudF9DdXJyZW5jeS5TeW1ib2w+PE1haW4uXGYxIERvY0FtdFxmMCA+IGZyb20gKjxQcm9maWxlLkNvbXBhbnlOYW1lPiouXGYxXHBhcg0KQ2xpY2sgb24gdGhlIGxpbmsgYmVsb3cgdG8gdmlldyBkb2N1bWVudC5ccGFyDQoNClxwYXJkXGZzMThccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+            <ROWsdsDocDetail DTLKEY="29" DOCKEY="22" SEQ="6" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Purchase Order 8 (SST 1)" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzIFRoaXMgUE8gTm8uIDxNYWluLlxmMSBEb2NOb1xmMCA+XGYxICAtIFxmMCA8TWFpbi5cZjEgRG9jRGF0ZVxmMCA+XGYxICAtIFxmMCA8RG9jdW1lbnRfQ3VycmVuY3kuU3ltYm9sPjxNYWluLlxmMSBEb2NBbXRcZjAgPiBmcm9tICo8UHJvZmlsZS5Db21wYW55TmFtZT4qLlxmMVxwYXINCkNsaWNrIG9uIHRoZSBsaW5rIGJlbG93IHRvIHZpZXcgZG9jdW1lbnQuXHBhcg0KDQpccGFyZFxmczE4XHBhcg0KfQ0KAA==" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181105" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+            <ROWsdsDocDetail DTLKEY="28" DOCKEY="22" SEQ="7" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Cust Statement 06 Mths 1" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzICo8UHJvZmlsZS5cZjEgQWxpYXNcZjAgPipcZjEgIG1zZzogV2UgYXJlIHBsZWFzZWQgdG8gZW5jbG9zZSB5b3VyIGVTdGF0ZW1lbnQgZm9yIHlvdXIgYWNjb3VudCBkYXRlZCBcZjAgPFBhcmFtZXRlci5TdGF0ZW1lbnREYXRlPlxmMSAuXHBhcg0KQ2xpY2sgYmVsb3cgbGluayBmb3IgZGV0YWlsXGYwIC5cZjFccGFyDQpcZnMxOFxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+            <ROWsdsDocDetail DTLKEY="26" DOCKEY="22" SEQ="8" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Default Template" DESCRIPTION3="e1xydGYxXGFuc2lcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTcxMzR9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczI0XGxhbmcxMDMzICo8UHJvZmlsZS5cZjEgQWxpYXNcZjAgPipcZjEgIG1zZzogXHBhcg0KQ2xpY2sgYmVsb3cgbGluayBmb3IgZGV0YWlsXGYwIC5cZjFccGFyDQoNClxwYXJkXGZzMThccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20181103" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+          </sdsDocDetail>
+        </ROW>
+      </ROWDATA>
+    </DATAPACKET>
+    ```
 
-</details>
+    </details>
 
 3. Right Click at the empty space below the Browse button
 4. Select Paste Quotation
 5. Set the Quot No to WHATSAPP
 6. Click Save after done change the Content
 
-:::note  
+:::note
 
 - User can use eg ` <Main.DocNo> `(` <Pipeline.FieldName> `) to show variable data
 (eg Document Number) in the E-Mail Subject & Body.
@@ -2820,16 +2821,16 @@ SQL Accounting can Share message by different Content by report name
 2. Select the Build-in/Customise Fast Report (eg Sales Invoice 8 (SST 2)-Email)
 3. Click OK
 
-![icons](../../../../static/img/usage/tools/fastReport-basicGuide/icons.jpg)
+    ![icons](../../../../static/img/usage/tools/fastReport-basicGuide/icons.jpg)
 
-5. Select WhatsApp icon PDF
+4. Select WhatsApp icon PDF
 
-![whatsapp-messages-testing](../../../../static/img/usage/tools/fastReport-basicGuide/whatsapp-messages-testing.jpg)
+    ![whatsapp-messages-testing](../../../../static/img/usage/tools/fastReport-basicGuide/whatsapp-messages-testing.jpg)
 
-6. Enter the Mobile No
-7. Click Send
+5. Enter the Mobile No
+6. Click Send
 
-:::note  
+:::note
  You can leave empty for Mobile No. if you wanted select from you Mobile Contact list.
 :::
 

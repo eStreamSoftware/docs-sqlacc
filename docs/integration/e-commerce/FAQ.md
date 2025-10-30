@@ -19,6 +19,7 @@ As default , all the eCommerce Product Information will be kept in *Maintain Ite
 ## What is the Max Character that the System is allowed to Keep in Stock Alternative ?
 
 Max Character allow is
+
 - 30 (5.2021.913.805 & below)
 - 35 (5.2021.914.806 & above)
 
@@ -33,14 +34,15 @@ For **Shopee** it uses the following formula :
 ```math
 shipping fee = (escrow + refund) - product price - commission - service - transaction
 ```
- * For **Lazada** & **WooCommerce** it calculates directly from the platform field.
-    * It will **not post** if the Shipping fee is **pay by the buyer**
+
+- For **Lazada** & **WooCommerce** it calculates directly from the platform field.
+- It will **not post** if the Shipping fee is **pay by the buyer**
 
 ## How to handle Serial Number ?
 
 If using Packing List :
-    * You can use **To Ship** Status Post to Sales Order first, then manually transfer to Invoice.  
-Make sure enter the <span style={{ color: 'blue' }}>Invoice Doc No = Order No</span> and Serial Number as well.
+    * You can use **To Ship** Status Post to Sales Order first, then manually transfer to Invoice.
+Make sure enter the **Invoice Doc No = Order No** and Serial Number as well.
 
 If Not using Packing List :
     * Just normal post to Invoice then enter the Serial Number after post
@@ -51,18 +53,19 @@ You can use **Project Code** for each Platform
 
 ## How does the system handles Opening Invoice ?
 
-* Users will need to fetch & post the last **1-2 months** orders (into sales invoice)
+- Users will need to fetch & post the last **1-2 months** orders (into sales invoice)
 
-* During load payment, if system detect have earlier system conversion date , it will prompt <span style={{ color: 'red' }}>red alert</span> please sync all, all you need to do is **right click**, **check** past invoice & **post** past invoice.
+- During load payment, if system detect have earlier system conversion date , it will prompt <span style={{ color: 'red' }}>red alert</span> please sync all, all you need to do is **right click**, **check** past invoice & **post** past invoice.
 
-* if future payment cycle have any adjustment related to past invoice, system will automatically update both SL_IV(itemise detail) & AR_IV (DocAmt).
+- if future payment cycle have any adjustment related to past invoice, system will automatically update both SL_IV(itemise detail) & AR_IV (DocAmt).
 
 ## Where to download the Statement for each Pplatform ?
 
 May refer link below :
-* [Lazada](https://sellercenter.lazada.com.my/seller/helpcenter/guide-to-view-the-fees-your-account-statement-8809.html?spm=a2a16.helpcenter-psc-article.articles-list.1.1af31e466syh4Y)
 
-* [Shopee](https://seller.shopee.com.my/edu/article/1651)
+- [Lazada](https://sellercenter.lazada.com.my/seller/helpcenter/guide-to-view-the-fees-your-account-statement-8809.html?spm=a2a16.helpcenter-psc-article.articles-list.1.1af31e466syh4Y)
+
+- [Shopee](https://seller.shopee.com.my/edu/article/1651)
 
 ## What or Which Transaction will be used for Setting ?
 
@@ -79,9 +82,10 @@ May refer link below :
 ## Where is the Help File for each PLatforms
 
 May refer to links below :
-* [Lazada](https://sellercenter.lazada.com.my/seller/helpcenter/)
-* [Shopee](https://seller.shopee.com.my/edu/home)
-* [WooCommerce](https://docs.woocommerce.com/)
+
+- [Lazada](https://sellercenter.lazada.com.my/seller/helpcenter/)
+- [Shopee](https://seller.shopee.com.my/edu/home)
+- [WooCommerce](https://docs.woocommerce.com/)
 
 ## Why non stock control item code transferable is set to False(untick) ?
 

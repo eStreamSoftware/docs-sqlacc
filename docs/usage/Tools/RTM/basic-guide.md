@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: RTM (Report Builder)
+title: RTM Guide
 description: How to do custom reports
 slug: /usage/tools/rtm/guide
 tags: ["SQL Account", "Usage", "Tools"]
@@ -128,21 +128,21 @@ At Sales Invoice to get Picture field from Maintain Item
    <details>
       <summary>Script</summary>
 
-   ```pascal
-   procedure Image1OnPrint;
+      ```pascal
+      procedure Image1OnPrint;
 
-   var s: string;
+      var s: string;
 
-   begin
+      begin
 
-   s := 'SELECT Picture FROM ST_ITEM ' +
+      s := 'SELECT Picture FROM ST_ITEM ' +
 
-            'WHERE Code='+ QuotedStr(Document_Detail.GetFieldValue('ItemCode'));
+               'WHERE Code='+ QuotedStr(Document_Detail.GetFieldValue('ItemCode'));
 
-   Image1.Visible := DBSQL_GetPicture(s, Image1.Picture);
+      Image1.Visible := DBSQL_GetPicture(s, Image1.Picture);
 
-   end;
-   ```
+      end;
+      ```
 
    </details>
 
@@ -173,7 +173,7 @@ Below is Example is to Get the who created the Document from Audit Table.
 
          s := 'SELECT UserName FROM AUDIT WHERE UPDATEKIND=''I'' ' +
 
-               'AND REFERENCE LIKE ' + 
+               'AND REFERENCE LIKE ' +
 
                QuotedStr('%'+
 
@@ -185,7 +185,7 @@ Below is Example is to Get the who created the Document from Audit Table.
 
                ',%');
 
-         Value := Trim(DBSQL_GetFieldValue(s));  
+         Value := Trim(DBSQL_GetFieldValue(s));
 
          end;
          ```
@@ -210,39 +210,39 @@ Below is Example is to Get the From Document Number at Invoice Header.
    <details>
       <summary>Script</summary>
 
-   ```pascal
-   procedure Variable2OnCalc(var value: Variant);
+         ```pascal
+      procedure Variable2OnCalc(var value: Variant);
 
-   var s, V : string;
+      var s, V : string;
 
-   begin
+      begin
 
-   s := 'SELECT First 1 FromDocType FROM SL_IVDTL '+
-
-         'WHERE Dockey=' + Main.GetFieldValue('Dockey') +
-
-         ' AND FROMDOCTYPE IS NOT NULL';
-
-   V := Trim(DBSQL_GetFieldValue(s)); 
-
-   if Trim(V) \<> '' then begin
-
-      s := 'SELECT DocNo FROM SL_' + v +
-
-            ' WHERE DocKey=(SELECT First 1 FromDockey FROM SL_IVDTL '+
+      s := 'SELECT First 1 FromDocType FROM SL_IVDTL '+
 
             'WHERE Dockey=' + Main.GetFieldValue('Dockey') +
 
-            ' AND FROMDOCTYPE IS NOT NULL)';
-         
-      Value := Trim(DBSQL_GetFieldValue(s));
+            ' AND FROMDOCTYPE IS NOT NULL';
 
-   end else
+      V := Trim(DBSQL_GetFieldValue(s)); 
 
-      Value := '';
+      if Trim(V) \<> '' then begin
 
-   end;
-   ```
+         s := 'SELECT DocNo FROM SL_' + v +
+
+               ' WHERE DocKey=(SELECT First 1 FromDockey FROM SL_IVDTL '+
+
+               'WHERE Dockey=' + Main.GetFieldValue('Dockey') +
+
+               ' AND FROMDOCTYPE IS NOT NULL)';
+
+         Value := Trim(DBSQL_GetFieldValue(s));
+
+      end else
+
+         Value := '';
+
+      end;
+        ```
 
    </details>
 
@@ -251,7 +251,7 @@ Below is Example is to Get the From Document Number at Invoice Header.
 ## Get Whole Table
 
 <details>
-    <summary><h2>Get Whole Table - click to expand</h2></summary>
+    <summary>Get Whole Table - click to expand</summary>
 
 ### Example 1 - Get Maintain Batch Information
 
@@ -267,10 +267,10 @@ Below is Example doing following actions
 4. Select Variables
 5. Add new/to existing as below variable
 
-      ```pascal
-      var
-         SQL_Batch: String;
-      ```
+            ```pascal
+            var
+               SQL_Batch: String;
+            ```
 
    ![event-oncreate-insert-code](../../../../static/img/usage/tools/rtm-basic-guide/event-oncreate-insert-code.jpg)
 
@@ -278,11 +278,11 @@ Below is Example doing following actions
 7. Select OnCreate
 8. Copy below script & paste to here
 
-   SQL_Batch := 'SELECT Code, Description, ExpDate, MfgDate, Remark1, Remark2 FROM ST_BATCH'; 
+   SQL_Batch := 'SELECT Code, Description, ExpDate, MfgDate, Remark1, Remark2 FROM ST_BATCH';
 
-   DBSQL_SELECT(plSQL_Batch, SQL_Batch, 'Code');  
+   DBSQL_SELECT(plSQL_Batch, SQL_Batch, 'Code');
 
-   SetDataPipelineFieldLink(Document_Detail, plSQL_Batch, 'Batch', 'Code');  
+   SetDataPipelineFieldLink(Document_Detail, plSQL_Batch, 'Batch', 'Code');
 
 9. Click File | Save As... to save the file (eg Sales Invoice 1)
 10. Click File | Exit to exit the report design
@@ -309,10 +309,10 @@ Below is Example Create SEQ Field base on SQL
 4. Select Variables
 5. Add new/to existing as below variable
 
-   ```pascal
-   var
-      **SQL_1: String;
-   ```
+         ```pascal
+         var
+            **SQL_1: String;
+         ```
 
 6. Select Events
 7. Select OnCreate
@@ -359,7 +359,7 @@ SQL_1 := 'SELECT DOCKEY, DTLKEY, SEQ, ROW_NUMBER() OVER (PARTITION BY DOCKEY ORD
 
       //  AFormat :='dd/mm/yyyy';
 
-      //  Result := '#'+FormatDateTime(AFormat, D)+'#';  
+      //  Result := '#'+FormatDateTime(AFormat, D)+'#';
 
       end;
       ```
@@ -374,7 +374,7 @@ SQL_1 := 'SELECT DOCKEY, DTLKEY, SEQ, ROW_NUMBER() OVER (PARTITION BY DOCKEY ORD
 19. Type NSeq
 20. Save the report
 
-:::warning  
+:::warning
 Preview/Print/Export will delay/slow a bit if compare with build in Preview/Print/Export report
 :::
 
@@ -399,10 +399,10 @@ Below is Example doing following actions
 4. Select Variables
 5. Add new/to existing as below variable
 
-      ```pascal
-      var
-         SQL_6: String;
-      ```
+            ```pascal
+            var
+               SQL_6: String;
+            ```
 
       ![event-oncreate-insert-code-datafrom-available-pipeline](../../../../static/img/usage/tools/rtm-basic-guide/event-oncreate-insert-code-datafrom-available-pipeline.jpg)
 
@@ -413,15 +413,15 @@ Below is Example doing following actions
 <details>
     <summary>Script</summary>
 
-```sql
-SQL_6 := 'SELECT DocKey,  Tax, TaxRate, Sum(LocalAmount) LocalAmount, Sum(LocalTaxAmt) localTaxAmt, '+ 
+      ```sql
+      SQL_6 := 'SELECT DocKey,  Tax, TaxRate, Sum(LocalAmount) LocalAmount, Sum(LocalTaxAmt) localTaxAmt, '+ 
 
-'Description  FROM Document_Detail ' +
+      'Description  FROM Document_Detail ' +
 
-'Where Tax \<> ''''' +
+      'Where Tax \<> ''''' +
 
-'GROUP BY Dockey, Tax, TaxRate';
-```
+      'GROUP BY Dockey, Tax, TaxRate';
+      ```
 
 </details>
 
@@ -513,10 +513,10 @@ Below is Example will get FromDocNo Field from the Detail Data
 4. Select Variables
 5. Add new/to existing as below variable
 
-      ```sql
-      var
-         SQL_6: String;
-      ```
+            ```sql
+            var
+               SQL_6: String;
+            ```
 
 6. Select Events
 7. Select OnCreate

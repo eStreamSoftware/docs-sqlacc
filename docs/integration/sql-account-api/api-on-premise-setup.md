@@ -9,10 +9,28 @@ tags: ["SQL Account", "SQL Account API", "On-Premise Setup"]
 
 ## Prerequisites
 
+- Microsoft Windows 11 and above (recommended with 64 bits windows)
+- Intel i5, i7 and above computer.
+- 8 GB of RAM (Recommended 12 GB and above).
 - `SQL Account` **version 5.2025.1038.875** or above
+- Firebird (Recommended Version 3.0.9 & above)
 - Fix server IP address (either DHCP Reservation or Static)
 - [Public IP Address](#public-ip-address)
 - [Port Forwarding](#step-3---port-forwarding)
+
+## Postman Collection
+
+- Updated 04 Aug 2025
+- [Postman Collection](https://download.sql.com.my/customer/Fairy/APICollection.zip)
+- [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](https://docs.aws.amazon.com/AmazonS3/latest/API/sigv4-query-string-auth.html)
+
+## Steps Import Collection
+
+- Click [here](https://download.sql.com.my/customer/Fairy/SQLAcc-API-001.gif) to see the guide
+
+### Update Access & Secret Key
+
+![steps-import-collection](../../../static/img/integration/sql-account-api/on-premise-setup/steps-import-collection.jpg)
 
 ## Public IP Address
 

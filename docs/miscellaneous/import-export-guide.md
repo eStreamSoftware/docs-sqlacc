@@ -40,7 +40,7 @@ For more details & updates, please click [here](https://wiki.sql.com.my/wiki/SQL
    5. Click Export > Select the location where you want to export > Enter the Export File Name > Press Save > Export the Data
    6. Done
 
-   ![export-succuess](../../static/img/miscellaneous/import-export-guide/export-success.png)
+   ![export-success](../../static/img/miscellaneous/import-export-guide/export-success.png)
 
 ## Import
 

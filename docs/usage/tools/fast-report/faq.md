@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: FR3 Frequently Ask Question (FAQ)
+title: FR3 FAQ
 description: How to do custom reports
 slug: /usage/tools/fast-report/faq
 tags: ["SQL Account", "Usage", "Tools"]
@@ -102,9 +102,9 @@ Result :
 
 4. Enter the expression :
 
-    ```pascal
+         ```pascal
      (<Leave."LeaveType"> ='AL') OR (<Leave."LeaveType"> ='MC')
-    ```
+         ```
 
 5. Press OK
 
@@ -120,9 +120,9 @@ Result :
 
  3. Drag data field from right to left box :
 
-     ```pascal
+            ```pascal
      [<Document_Detail."Amount"> / <Document_Detail."Qty">]
-     ```
+             ```
 
  4. Press OK
 
@@ -138,11 +138,11 @@ Result :
 
  2. Copy the below syntax and Paste into Memo:
 
-     ```pascal
+            ```pascal
      [IIF(<Document_Detail."UOM"> = 'UNIT'>,
      FormatFloat('#,0;-#,0 ', <Document_Detail."Qty">) ,
      FormatFloat('#,0.00;-#,0.00 ', <Document_Detail."Qty">))]
-     ```
+            ```
 
     ![59](../../../../static/img/usage/tools/fast-report-faq/59.png)
 
@@ -158,9 +158,9 @@ Result :
 
  2. Paste this syntax inside Memo
 
-     ```pascal
+            ```pascal
      [<GetbankName(pl_SUPPLIERBANKACC."Bank">)]
-     ```
+            ```
 
     ![61](../../../../static/img/usage/tools/fast-report-faq/61.png)
 
@@ -274,13 +274,13 @@ Make sure the **Paper Margin** for Top, Bottom, Left & Right not set to 0
 2. Click on the place to be print/shown
 3. Enter the below code (make sure in the report had the **AdjRound** pipeline & **GetTotal** function (refer to Sales Invoice 7 (GST 1))
 
-    ```
+            ```sql
         [FormatFloat(<Option."StockQuantityDisplayFormat">,
         IIF(Trim(<AdjRound."LocalAmount">)<>'0', 
               GetTotal('Qty')-1,
               GetTotal('Qty'))
         )]
-    ```
+            ```
 
 ## 22. How to print 2 pages in 1 A4?
 
@@ -531,7 +531,7 @@ Only Available in Version 852 & above
     end;
     ```
 
-:::success  
+:::success
 
 - The measurement is in Inch
 - This guide design for is for Laser Printer only
@@ -543,13 +543,13 @@ Only Available in Version 852 & above
 
 - Just add the script on procedure GroupHeader2OnBeforePrint
 
-    ```sql
+         ```sql
     procedure GroupHeader2OnBeforePrint(Sender: TfrxComponent);
     begin
     ...
       Memo69.Text := <Main."DocNo">; //Add your script
     end;
-    ```
+         ```
 
 ## 34. How to set A5 size to print on A4 paper?
 
@@ -605,12 +605,12 @@ Height
 
    Query:
 
-      ```sql
+            ```sql
         SQL_7 := 'SELECT DocKey, Tax, TaxRate, Sum(LocalAmount) LocalAmount, Sum(Qty) Qty, Sum(LocalTaxAmt) localTaxAmt, Description '+
             'FROM Document_Detail ' +
             'Where Tax &lt;> ''''' +
             'GROUP BY Dockey, Tax, TaxRate';
-      ```
+            ```
 
 6. Click on Event Handler | Select Procedure ReportBeforePrint | Look for Pipeline SQL_7 | Insert TaxRate
 

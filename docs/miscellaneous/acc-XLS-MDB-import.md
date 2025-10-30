@@ -1,9 +1,9 @@
 ---
 sidebar_position: 16
-id: acc-XLS-MDB-import
+id: acc-xls-mdb-import
 title: Excel Import Guide
 description: A quick guide on Excel Import Program for SQL Account
-slug: /miscellaneous/acc-XLS-MDB-import
+slug: /miscellaneous/acc-xls-mdb-import
 tags: ["SQL Account", "Excel", "Import"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["SQL Account", "Excel", "Import"]
 Click [here](https://download.sql.com.my/customer/Fairy/SQLAccXLSnMDBImp-setup.exe) to download the XLS n MDB import utility program.
 :::
 
-Whether you are setting up **SQL Account** for the first time or need to migrate financial data from other systems using **Microsoft Excel (XLS)** or **CSV** files, this page provides a straightforward solution.  
+Whether you are setting up **SQL Account** for the first time or need to migrate financial data from other systems using **Microsoft Excel (XLS)** or **CSV** files, this page provides a straightforward solution.
 
 Here, you'll find a detailed guide on how to effectively and effortlessly import your data into your **SQL Accounting** system.
 
@@ -32,7 +32,7 @@ Here, you'll find a detailed guide on how to effectively and effortlessly import
 - FREE import for Master file.
 - Support Schedule Auto Download from Simple FTP - Only available in Version 5.10.6.32 & above
 - Support Schedule Auto Import for Excel/CSV/TXT - Only available in Version 5.10.6.32 & above
-- Support import CSV/TXT(Bar(|),Comma(,),Semi Comma(;),Tilde(~)) Format - Only available in Version 5.10.9 & above
+- Support import CSV/TXT(`Bar(|)`,`Comma(,)`,`Semi Comma(;)`,`Tilde(~)`) Format - Only available in Version 5.10.9 & above
 - Support import Json Format - Only available in Version 5.11.10.43 & above
 - No rows limit (but recommended max 500 rows per file as more records, more hard & time consumption to check if have error)
 
@@ -131,7 +131,7 @@ It might had rounding issue after import
 
 :::info
 For Easy Export you can use " for all output value
-Eg "AL","161924123243970563"
+Eg `AL`,`161924123243970563`
 :::
 
 ## Import Program
@@ -140,370 +140,7 @@ Eg "AL","161924123243970563"
 - Version (4.5.4.37) - 01 Jun 2022 (UE Only) - (Deprecated)
 - Evaluation Limit : 100 rows Records per file (Except Master File with not limit)
 - [SQLAccXLSnMDBImp-setup.exe](https://download.sql.com.my/customer/Fairy/SQLAccXLSnMDBImp-setup.exe)
-- MD5 : A03B8F018B92822D4D3CC59680D9B812
-
-**History New/Updates/Changes**
-
-\--Build 104--
-
-- Fixed Verify Shown invalid Account code when No Value.
-- Fixed Export not filter untick records.
-
-\--Build 103--
-
-- Fixed Export parameter should not case sensitive.
-- Fixed Picture corrupted when do replace Stock Item when field not map.
-- Add #9 for Tab Delimiter csv import & Export.
-- Add Replace Header Only...Option.
-
-\--Build 102--
-
-- Upgrade to Version 5.19.20.
-- Fixed Verify Outstanding Qty not correct due to rounding issue.
-- Fixed unable to email using GMail.
-- Enable Download from sFTP.
-- Enable Auto Generate DocNo using prefix `<New>` for Customer/Supplier Payment.
-- Enable import Stock Item Barcode only.
-- Enable Upload to sFTP for Export CSV.
-
-\--Build 101--
-
-- Fixed Import Not follow UOM when using Barcode as Itemcode.
-- Fixed verify Payment unable to find record when user change Journal type BANK/CASH to Bank/Cash.
-- Fixed Customer/Supplier unable to Import GEOCOORDINATE field.
-- HDR Description Default Value not import if not mapping.
-
-\--Build 100--
-
-- Fixed Import Maintain Item - UOM & Price error due to over Quoted.
-
-\--Build 99--
-
-- Fixed Mapping for Customer/Supplier New not correct for State Field.
-- Force export out with only fieldname even is no record.
-- Fixed Job Order, Stock Assembly & Disassembly missing Detail Qty column.
-- Add Search for SALESTAXNO, SERVICETAXNO & TIN for customer/supplier Code.
-
-\--Build 98--
-
-- Enable Auto Get E-Invoice Info From Maintain Customer/Supplier when data field is Empty.
-- Change Register db Checking to Actual Register Info field.
-
-\--Build 97--
-
-- Add Get File From FTP option.
-- Fixed export CSV Last Export Date keep increasing.
-
-\--Build 96--
-
-- Fixed Import error when TaxInclusive empty.
-- Fixed AutoExport CSV Last export Date not save to db.
-- Fixed Company Name empty in Auto Import Setting.
-- Fixed data not Trim if import using csv.
-- Add Clear Default Value...option.
-
-\--Build 95--
-
-- Fixed Import Tax code error.
-
-\--Build 94--
-
-- Fixed Import Customer payment Voucher Error due to boolean type.
-- Fixed TaxInclusive not import when the value True.
-- Auto Select Show Uncheck Only for GL Acc after Verify have error.
-
-\--Build 93--
-
-- Fixed Import Opening SST Error due to typo error.
-- Fixed Tax field not Automap if FieldName is Tax.
-- Enable support RichText Import for UDF Memo type.
-- Fixed Replace Item Code for Maintain Item prompt Access Violation.
-
-\--Build 92--
-
-- Fixed verify error when Invalid UOM due to boolean type.
-
-\--Build 91--
-
-- Fixed unable to load record when Json record only 1.
-- Add support :LastModified filter.
-- Fixed some default value not update to support 860.
-- Fixed verify with transfer status error due to boolean type.
-
-\--Build 90--
-
-- Fixed Register activation code fail.
-
-\--Build 89--
-
-- Fix incorrect Auto Field mapping for CC & Tax.
-- Enable support Transfer IV,DN,CS to CN.
-- Add Save & Load From File setting for CSV Export Setting.
-- Fixed Same time record not posted due to Seq.
-- Enable support Version 860 & above.
-
-\--Build 88--
-
-- Fixed IDTYPE & SUBMISSIONTYPE should not have default value for transaction.
-- Fixed Replace enable verify shown Dockey Not found.
-- Change Auto Get Default Account Code from DB.
-
-\--Build 87--
-
-- Enable Support read mulitple line for csv with #13 indicator.
-- Enable Auto Height For Grid Data.
-- Fixed unable to EMail using GMail Setting.
-- Fixed AR/AP CN KnockOff verify Status not update when CN Not found.
-
-\--Build 86--
-
-- Add By Pass Verify... option.
-- Enable Import Extra DO & GRN.
-- Force always read 1st excel sheet for AutoImport.
-- Add EMail Error Log file... option.
-- Add Delimiter Option for CSV Export.
-- Fixed CSV output should double Quoted if had character same as delimiter.
-- Fixed Supplier Deposit Verify not correct.
-- Fixed Maintain Customer/Supplier - New missing CURRENCYCODE field.
-- Fixed TaxRate not import when mapping.
-
-\--Build 85--
-
-- Upgrade to Version 5.19.19.
-- Add Export CSV function.
-- Enable mapping for DocNoSetKey field.
-- Fixed Purchase not support Transfer Status.
-
-\--Build 84--
-
-- Fix not support mix data with Some have ItemCode & Same no ItemCode.
-- Fixed Scheduler still not support without Branch Info for Maintain Customer/Supplier - New option.
-- Fixed file not move when Replace Option is enabled.
-
-\--Build 83--
-
-- Fixed slow when delete for replace transactions with lot details.
-- Add Grid export for Stock Item Import.
-- Remove license checking for Maintain Customer/Supplier - New option.
-- Auto mapping with \_DTL &\_HDR ignore \_.
-- Allow import Customer/Supplier without Branch Info for Maintain Customer/Supplier - New option.
-
-\--Build 82--
-
-- Fixed Source Field have extra record.
-- Fixed Error when using JSon File.
-- Fixed Auto Import Setting not Save after Set.
-
-\--Build 81--
-
-- Fixed Convert Row To Column function still open file still use old function.
-- Fixed Convert Row To Column function not working due to Column 1 empty.
-- Fixed Access Violation on Get File for Maintain Customer & Supplier.
-- Fixed Payment still Import Even is Untick.
-
-\--Build 80--
-
-- Upgrade to Version 5.18.18
-- Allow Import Empty Seq for Maintain Stock Item - Price Tag Import.
-- Fixed GL Cash Book Data not link with docno.
-- Enable Transfer Status for Sales & Purchase Module.
-- Add highlighter for Error after verify.
-
-\--Build 79--
-
-- Upgrade to Version 5.17.17.
-- Add Maintain Stock Item - Category.
-- Fixed Access Violation when Get Data From mdb file.
-- Enable Auto get UnitPrice in SQL Acc by Not mapping UnitPrice & Set Default Value.
-- Fixed Maintain Stock Item no PreVerify for Code field.
-- Fixed CompanyName not check for field Mapping for Maintain Customer/Supplier Import.
-- Add GL Stock Value.
-- Add Job Order.
-- Add Option "System Auto Detail" for Job Order, Stock Assembly & Stock Disassembly.
-
-\--Build 78--
-
-- Fixed Verify Not correct when no Itemcode Mapping.
-
-\--Build 77--
-
-- Upgrade to Version 5.17.16.
-- Fixed Error on Function Memo to Column when split Memo row more then No of Columns.
-- Add Clear Cache Data Option.
-- Enable support Search Description2 for PaymentMethod Field.
-- Fixed Verify UOM not same as excel when if itemcode have more the 1 UOM with Rate=1.
-- Fixed ItemCode UOM sometime not correctly check.
-
-\--Build 76--
-
-- Upgrade to Version 5.17.15.
-- Fixed unable to find record if On Spot Change Code.
-- Fixed import csv with long number become scientific notation.
-- Fixed import csv with missing number begin with 00x.
-- Add F1 shortcut for Get User Guide... function.
-- Add Load Last Posted Status Information... function - For Transactions.
-- Fixed Auto Import Stock Item Fail.
-
-\--Build 75--
-
-- Enable Support Read UOM from Barcode & Stock Alt Item Table.
-- Fixed Detail Description should not have Default Value.
-- Fixed AR & AP KO should not show Agent & Area Mapping.
-- Fixed AP Verify Error.
-- Fixed Customer CN, Supplier DN & CN Default Value not correct.
-
-\--Build 74--
-
-- Upgrade to Version 5.17.14.
-- Enable Support Direct DB Connect for SQL Connect.
-- Enable Auto Remember by BizType for Auto Replace.
-- Fixed Error when Exit Program if the db is registered.
-- Fixed Verify DocNo for Customer should excluded code.
-- Fixed Default Open from Desktop else from My Document folder.
-- Fixed Verify Slow.
-- Add Option Auto KnockOff for Customer/Supplier Payment & Refund.
-
-\--Build 73--
-
-- Fixed Error after done import Maintain Customer/Supplier New format.
-
-\--Build 72--
-
-- Fixed Source Mapping Field have Extra Column.
-- Fixed Get CSV with Unicode Error.
-- Fixed Access Violation when posting Payment.
-
-\--Build 71--
-
-- Fixed Import SL & PH missing detail.
-
-\--Build 70--
-
-- Upgrade to Version 5.17.13.
-- Remove 'Mapping Field can't be empty' for Stock Transfer Header Code.
-- Enable Support Import Seq Field for Maintain Stock Item - BOM.
-- Fixed Duplicate DocNo when Exce/CSV file data not sort by DocNo.
-- Enable Read File in subfolder of pending for Auto Import.
-- Add new option Include SubFolder File(s)... for Auto Import for multi 3rd Party Export to different folder.
-- Enable Search AltCode for ItemCode field.
-- Enable Import Maintain Shipper.
-- Enable Auto Generate DocNo using prefix `<New>`.
-- Fixed Stock Transfer Customer code not checking other Maintain Customer fields.
-- Fixed Verify 2nd time data gone.
-- Fixed Verify Empty Value for Terms should bypass.
-- Add New Format for Maintain Customer & Maintain Supplier to support Replace Action.
-- Combine UE Function.
-- Add Option Get file(s) from FTP... for transactions import.
-- Enable Replace Option for Duplicate transaction for All Maintenance (Except Maintain Account).
-
-\--Build 69--
-
-- Add Remove Other Character(s)... function.
-- Fixed Copy Cell Value not enable for single table import.
-- Fixed SUOMQTY field missing from mapping.
-
-\--Build 68--
-
-- Fixed Field Auto Mapping not check equally match column.
-- Fixed Sales.Points.OPF can't Auto Import.
-- Fixed Import Attachment field become RichText.
-- Fixed Import GL PV & GL OR error.
-
-\--Build 67--
-
-- Change FTP download TransferType to Binary.
-- Fixed Error when download FTP file with folder.
-- Add Double Click Pending & Done label to open the folder.
-- Add Test FTP Download option on Right Click Pending label.
-
-\--Build 66--
-
-- Upgrade to Version 5.16.12.
-- Fixed Slow on Auto Mapping function.
-- Move Select Record Range to top.
-- Fixed Tab Order.
-- Add Batch Delete function.
-- Enable Replace Option for Item Template & Maintain Batch.
-- Fixed Import Stock Template not set 'Mapping Field can't be empty' for Code field.
-- Allow import Detail Maintain Currency.
-- Fixed FTP download Error.
-
-\--Build 65--
-
-- Fixed Points Verify Keep shown Invalid Customer code.
-- Fixed Points Post to Account prompt Access Violation.
-- Fixed Verify if Mapped field with empty data for Agent, Area, Project should by pass
-
-\--Build 64--
-
-- Upgrade to Version 5.16.11.
-- Add Import Stock Alternative.
-- Add Auto Resize Prefix Main Screen Size.
-
-\--Build 63--
-
-- Fixed Error Import Matrix Profile.
-- Fixed Disc have value even Excel don't have Disc Column.
-
-\--Build 62--
-
-- Upgrade to Version 5.16.
-- Enable Replace Option for Duplicate transaction.
-
-\--Build 61--
-
-- Fixed Add for detail Mapping override by automap.
-
-\--Build 60--
-
-- Fixed GL Acc Verify not correctly for SpecialAccount Type.
-- Add Filter for Untick Only, Tick Only & All option for GL Acc.
-- Misleading information at Stock Item Filter record to record when set 501 to 1000 become 500
-
-(conflict with to rec & max record)
-
-[\[top\]](https://wiki.sql.com.my/wiki/SQL_Acc_XLS_n_MDB_Import#top)
-
-**History New/Updates/Changes (UE Only) - (Deprecated)**
-
-\--Build 37--
-
-- Upgrade to Version 4.5.4.
-- Fixed Slow on Auto Mapping function.
-- Move Select Record Range to top.
-- Fixed Tab Order.
-
-\--Build 36--
-
-- Upgrade to Version 4.5.3.
-- Add Import Stock Alternative.
-- Add Auto Resize Prefix Main Screen Size.
-
-\--Build 35--
-
-- Upgrade to Version 4.5.
-- Add option Delete Existing Data for all Import Option except Maintain Stock Item.
-
-\--Build 34--
-
-- Fixed Add for detail Mapping override by automap.
-
-\--Build 33--
-
-- Misleading information at Stock Item Filter record to record when set 501 to 1000 become 500 (conflict with to rec & max record)
-
-\--Build 32--
-
-- Fixed Stock Item Not Auto Maping Field for Sub Table.
-- Fixed Import Unicode for More Description become ???
-
-\--Build 31--
-
-- Fixed More Description & Attachment not support Unicode.
-
-\--Build 30--
-
-- Fixed Prompt Error when excel UOM Rate is empty.
+- MD5 : `A03B8F018B92822D4D3CC59680D9B812`
 
 ## Steps
 
@@ -595,9 +232,8 @@ Menu: Tools | Check Duplicate Records...
 This Function is to check the duplicate records for the selected file
 01. Follow from Step [1 to 6](#transaction-data) as above.
     ![14](../../static/img/miscellaneous/XLS-MDB/check-dup-rec.png)
-
-07. Tick the Column(s) to Group
-08. Click 3. Verify... button
+02. Tick the Column(s) to Group
+03. Click 3. Verify... button
     ![15](../../static/img/miscellaneous/XLS-MDB/check-dup-rec-step8.png)
 
 ### Split Memo to Columns
@@ -607,14 +243,12 @@ Menu: Tools | Split Memo to Columns...
 This option is to Split the memo (Data more then 1 row in the cell) into individual Columns.
 01. Follow from Step [1 to 6](#transaction-data) as above.
     ![16](../../static/img/miscellaneous/XLS-MDB/split-memo.png)
-
-07. Set Number of Column(s) to split (Default is 4).
-08. Select the Column to be Split
-09. Click **5. Split** button.
+02. Set Number of Column(s) to split (Default is 4).
+03. Select the Column to be Split
+04. Click **5. Split** button.
     ![17](../../static/img/miscellaneous/XLS-MDB/split-memo-step9.png)
-
-10. Scroll to the right. Highlight in Yellow is the newly Columns Created.
-11. Click 6. Export Excel(*.xls) to export out the Result.
+05. Scroll to the right. Highlight in Yellow is the newly Columns Created.
+06. Click 6. Export Excel(*.xls) to export out the Result.
 
 ### Split String to Columns
 
@@ -626,14 +260,12 @@ This option is to Split the Long String into individual Columns (Max. 60 Charact
 
 01. Follow from Step [1 to 6](#transaction-data) as above.
     ![18](../../static/img/miscellaneous/XLS-MDB/split-string.png)
-
-07. Set Number of Column(s) to split (Default is 4).
-08. Select the Column to be Split
-09. Click 5. Split button.
+02. Set Number of Column(s) to split (Default is 4).
+03. Select the Column to be Split
+04. Click 5. Split button.
     ![19](../../static/img/miscellaneous/XLS-MDB/split-string-step9.png)
-
-10. Scroll to the right. Highlight in Yellow is the newly Columns Created.
-11. Click 6. Export Excel(*.xls) to export out the Result.
+05. Scroll to the right. Highlight in Yellow is the newly Columns Created.
+06. Click 6. Export Excel(*.xls) to export out the Result.
 
 ### Convert Rows to Columns
 
@@ -642,14 +274,12 @@ Menu: Tools | Convert Rows to Columns...
 Only available in Version 4.3.2.15 & above
 01. Follow from Step [1 to 6](#transaction-data) as above.
     ![20](../../static/img/miscellaneous/XLS-MDB/split-rows.png)
-
-07. Set Number of Column(s) to split (Default is 4).
-08. Select the Column to be Convert
-09. Click 5. Convert button.
+02. Set Number of Column(s) to split (Default is 4).
+03. Select the Column to be Convert
+04. Click 5. Convert button.
     ![21](../../static/img/miscellaneous/XLS-MDB/split-rows-step9.png)
-
-10. Scroll to the right. Highlight in Yellow is the newly Columns Created.
-11. Click 6. Export Excel(*.xls) to export out the Result.
+05. Scroll to the right. Highlight in Yellow is the newly Columns Created.
+06. Click 6. Export Excel(*.xls) to export out the Result.
 
 :::info
 System will use
@@ -659,10 +289,10 @@ The empty row as "Reset/End of" Record.
 
 ## Auto Import
 
--Only available
-\- in Version 4.9.6.31 & above.
-\- for Registered import Database.
-\- in **Firebird Server Setting** (Standalone can't Auto Import)
+- Only available
+        - in Version 4.9.6.31 & above.
+        - for Registered import Database.
+        - in **Firebird Server Setting** (Standalone can't Auto Import)
 
 - Excel Filename must be **BIZOBJECT.YYYYMMDDHHMMSS.xlsx** eg SL_IV.20190214101508.xlsx
 - Must only 1 Sheet in Excel File.
@@ -748,65 +378,65 @@ The file will download to the Pending Folder which is set at the Last Steps
 
 **Windows Schedule**
 
-**01\. Open Windows _Control Panel | Administrative Tools | Task Scheduler_**
+01. Open Windows *Control Panel | Administrative Tools | Task Scheduler*
 
-![27](../../static/img/miscellaneous/XLS-MDB/window-sche-step1.png)
+    ![27](../../static/img/miscellaneous/XLS-MDB/window-sche-step1.png)
 
-**02\. Click _Action | Create Basic Task..._**
+02. Click *Action | Create Basic Task...*
 
-![28](../../static/img/miscellaneous/XLS-MDB/window-sche-step2.png)
+    ![28](../../static/img/miscellaneous/XLS-MDB/window-sche-step2.png)
 
-**03\. Enter Task _Name_ (eg SQL Excel Export) & Click Next**
+03. Enter Task *Name* (eg SQL Excel Export) & Click Next
 
-![29](../../static/img/miscellaneous/XLS-MDB/window-sche-step3.png)
+    ![29](../../static/img/miscellaneous/XLS-MDB/window-sche-step3.png)
 
-**04\. Select Daily & Click Next**
+04. Select Daily & Click Next
 
-![30](../../static/img/miscellaneous/XLS-MDB/window-sche-step4.png)
+    ![30](../../static/img/miscellaneous/XLS-MDB/window-sche-step4.png)
 
-**05\. Set the _Start Date & Time_ to Start**
+05. Set the *Start Date & Time* to Start
 
-**06\. Set 1 for _Recur every_ field & Click Next**
+06. Set 1 for *Recur every* field & Click Next
 
-![31](../../static/img/miscellaneous/XLS-MDB/window-sche-step6.png)
+    ![31](../../static/img/miscellaneous/XLS-MDB/window-sche-step6.png)
 
-**07\. Select _Start a program_ & Click Next**
+07. Select *Start a program* & Click Next
 
-![32](../../static/img/miscellaneous/XLS-MDB/window-sche-step7.png)
+    ![32](../../static/img/miscellaneous/XLS-MDB/window-sche-step7.png)
 
-**08\. Click Browse button & find the SQLAccXLSnMDBImp.exe (Default at _C:\\eStream\\Utilities\\SQLAccXLSnMDBImp_)**
+08. Click Browse button & find the SQLAccXLSnMDBImp.exe (Default at *C:\\eStream\\Utilities\\SQLAccXLSnMDBImp*)
 
-**09\. Set the Add arguments(optional) as -Auto**
+09. Set the Add arguments(optional) as -Auto
 
-**10\. Set the Start in(optional) path to the Exe folder (eg. C:\\eStream\\Utilities\\SQLAccXLSnMDBImp) & Click Next**
+10. Set the Start in(optional) path to the Exe folder (eg. *C:\\eStream\\Utilities\\SQLAccXLSnMDBImp*) & Click Next
 
-![33](../../static/img/miscellaneous/XLS-MDB/window-sche-step10.png)
+    ![33](../../static/img/miscellaneous/XLS-MDB/window-sche-step10.png)
 
-**11\. Tick the option _Open the Properties dialog for this task when I click Finish_**
+11. Tick the option *Open the Properties dialog for this task when I click Finish*
 
-**12\. Click Finish**
+12. Click Finish
 
-![34](../../static/img/miscellaneous/XLS-MDB/window-sche-step12.png)
+    ![34](../../static/img/miscellaneous/XLS-MDB/window-sche-step12.png)
 
-**13\. Select the option _Run whether user is logged on or not_**
+13. Select the option *Run whether user is logged on or not*
 
-**14\. Click _Triggers_ tab at top**
+14. Click *Triggers* tab at top
 
-![35](../../static/img/miscellaneous/XLS-MDB/window-sche-step14.png)
+    ![35](../../static/img/miscellaneous/XLS-MDB/window-sche-step14.png)
 
-**15\. Click Edit... button**
+15. Click Edit... button
 
-![36](../../static/img/miscellaneous/XLS-MDB/window-sche-step15.png)
+    ![36](../../static/img/miscellaneous/XLS-MDB/window-sche-step15.png)
 
-**16\. Change the time to run**
+16. Change the time to run
 
-**17\. Click OK 2 times**
+17. Click OK 2 times
 
-![37](../../static/img/miscellaneous/XLS-MDB/window-sche-step17.png)
+    ![37](../../static/img/miscellaneous/XLS-MDB/window-sche-step17.png)
 
-**18\. Enter the window User Name & Password**
+18. Enter the window User Name & Password
 
-**19\. Click Ok**
+19. Click Ok
 
 ## Mini Data Modification Utilities
 
@@ -814,15 +444,15 @@ This utilities is to help user runtime to modify the data before begin import
 
 Steps
 
-01\. Follow from **Step 1 to 4** as above
+01. Follow from **Step 1 to 4** as above
 
-![38](../../static/img/miscellaneous/XLS-MDB/data-modify-step1-1.png)
+    ![38](../../static/img/miscellaneous/XLS-MDB/data-modify-step1-1.png)
 
-![39](../../static/img/miscellaneous/XLS-MDB/data-modify-step1-2.gif)
+    ![39](../../static/img/miscellaneous/XLS-MDB/data-modify-step1-2.gif)
 
-05\. Select the column to be Modify & Right Click
+02. Select the column to be Modify & Right Click
 
-06\. Select the Option you wanted to modify
+03. Select the Option you wanted to modify
 
 | Option/Function | Description |
 | --- | --- |
@@ -896,79 +526,79 @@ This happen when there is the problem in Excel Worksheet.
 
 Try below steps
 
-1\. Press _CTRL + Home_
+1. Press *CTRL + Home*
 
-2\. Press _CTRL + A_ (To Select All)
+2. Press *CTRL + A* (To Select All)
 
-3\. Press _CTRL + C_ (To Copy Selected)
+3. Press *CTRL + C* (To Copy Selected)
 
-4\. Press _Shift + F11_ (To inserts a New Worksheet into the active Workbook)
+4. Press *Shift + F11* (To inserts a New Worksheet into the active Workbook)
 
-5\. Press _CTRL + V_ (To Paste)
+5. Press *CTRL + V* (To Paste)
 
-6\. Save the Excel & Try again on New Worksheet
+6. Save the Excel & Try again on New Worksheet
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Prompt Error external table is not in the expected format when try Get Data from Excel
 
 Try save the file to other name using **File | Save As** in Excel
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### My excel date format is in YYYYMMDD format, how I convert it to dd/MM/yyyy?
 
-Can try use this formula _\=DATE(LEFT(A2,4),MID(A2,5,2),RIGHT(A2,2))_
+Can try use this formula *\=DATE(LEFT(A2,4),MID(A2,5,2),RIGHT(A2,2))*
 
 \* In Version 4.5.3.18 & above had function call **Convert YYYYMMDD to DD/MM/YYYY...** can help to convert it before import.
 
 Steps
 
-01\. Follow from **Step 1 to 4** as above
+01. Follow from **Step 1 to 4** as above
 
-![40](../../static/img/miscellaneous/XLS-MDB/faq-convert-date-step1.png)
+    ![40](../../static/img/miscellaneous/XLS-MDB/faq-convert-date-step1.png)
 
-05\. Select the column to be convert & Right Click
+02. Select the column to be convert & Right Click
 
-![41](../../static/img/miscellaneous/XLS-MDB/faq-convert-date-step5.png)
+    ![41](../../static/img/miscellaneous/XLS-MDB/faq-convert-date-step5.png)
 
-06\. Select **Convert YYYYMMDD to DD/MM/YYYY...**
+03. Select **Convert YYYYMMDD to DD/MM/YYYY...**
 
-07\. Continue Step 5 to 6 for other column
+04. Continue Step 5 to 6 for other column
 
-08\. Done can continue norm **Step 5 to 12**
+05. Done can continue norm **Step 5 to 12**
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### My excel date format is in dd-mmm-yyyy with time format, how I convert it to dd/MM/yyyy?
 
-Can try use this formula _\=TEXT(DATEVALUE(TEXT(A41,"dd-mmm-yyyy")),"dd/mm/yyyy")_
+Can try use this formula *\=TEXT(DATEVALUE(TEXT(A41,"dd-mmm-yyyy")),"dd/mm/yyyy")*
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Can I import without Tax Amount (i.e. SQL Account auto Calculate the Tax Amount)?
 
-Yes with Version _Build 10 & above_, just  
+Yes with Version *Build 10 & above*, just
 
 Don't Map the fields
 
-\- **Amount**
+- **Amount**
 
-\- **TaxAmt**
+- **TaxAmt**
 
-\- **TaxInclusive**
+- **TaxInclusive**
 
 Just Map Fields
 
-\- **Qty**
+- **Qty**
 
-\- **UnitPrice**
+- **UnitPrice**
 
-\- **Tax**
+- **Tax**
 
 ![42](../../static/img/miscellaneous/XLS-MDB/faq-import-xtax.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Why My Excel data shown as eg 5% but once I Get File become 0.05?
 
@@ -978,25 +608,25 @@ Solution :
 
 Use either one of the excel formula below:
 
-- _\=CONCATENATE(E1\*100,"%")_
+- *\=CONCATENATE(E1\*100,"%")*
 
 OR
 
-- _\=TEXT(E1,"0.00%")_
+- *\=TEXT(E1,"0.00%")*
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to add file link in the Attachments Fields?
 
-Just Add _File.Your Link file_
+Just Add *File.Your Link file*
 
 Eg With 2 Attachments file in 1 cell
 
-_File._[_https://cdn.bulbagarden.net/upload/3/36/648Meloetta-Pirouette.png_](https://cdn.bulbagarden.net/upload/3/36/648Meloetta-Pirouette.png)
+*File.*[https://cdn.bulbagarden.net/upload/3/36/648Meloetta-Pirouette.png_](https://cdn.bulbagarden.net/upload/3/36/648Meloetta-Pirouette.png)
 
-_File._[_https://cdn.bulbagarden.net/upload/6/63/Pokk%C3%A9n_Pikachu_Libre.png_](https://cdn.bulbagarden.net/upload/6/63/Pokk%C3%A9n_Pikachu_Libre.png)
+*File.*[https://cdn.bulbagarden.net/upload/6/63/Pokk%C3%A9n_Pikachu_Libre.png_](https://cdn.bulbagarden.net/upload/6/63/Pokk%C3%A9n_Pikachu_Libre.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### My Excel for Credit Note/Payment is in Negative Value, can it be import?
 
@@ -1006,21 +636,21 @@ No you can't import the document amount with Negative Value.
 
 Steps
 
-01\. Follow from **Step 1 to 4** as above
+01. Follow from **Step 1 to 4** as above
 
-![43](../../static/img/miscellaneous/XLS-MDB/faq-neg-value-step1.png)
+    ![43](../../static/img/miscellaneous/XLS-MDB/faq-neg-value-step1.png)
 
-05\. Select the column to be convert & Right Click
+02. Select the column to be convert & Right Click
 
-![44](../../static/img/miscellaneous/XLS-MDB/faq-neg-value-step5.png)
+    ![44](../../static/img/miscellaneous/XLS-MDB/faq-neg-value-step5.png)
 
-06\. Select **\*-1 All Data**
+03. Select **\*-1 All Data**
 
-07\. Continue Step 5 to 6 for other column
+04. Continue Step 5 to 6 for other column
 
-08\. Done can continue norm **Step 5 to 12**
+05. Done can continue norm **Step 5 to 12**
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### In My Excel Only had SSM or GST No. for Customer/Supplier can it be import?**
 
@@ -1053,7 +683,7 @@ It will search as following sequence (Available in Build 34 & above)
 - Remark
 - Note
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Can system Auto Set Tax code if my Excel don't had tax code column?
 
@@ -1061,7 +691,7 @@ Yes using Version 16 & above
 
 Just make sure **Default Value** field is Empty
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Prompt "Error Unexpected error from external database driver (1)" when Get file from excel
 
@@ -1072,13 +702,13 @@ Can try use **Get File 2...** under the arrow down button at **Get File...** but
 
 Solution 2
 
-01\. Save the Excel file to xlsx
+01. Save the Excel file to xlsx
 
-02\. Install [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=13255&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) (AccessDatabaseEngine.exe)
+02. Install [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=13255&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) (AccessDatabaseEngine.exe)
 
-03\. Reboot the PC.
+03. Reboot the PC.
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Prompt "Provider cannot be found. It may not be properly installed" when Get file from excel
 
@@ -1088,39 +718,39 @@ Can try use **Get File 2...** under the arrow down button at **Get File...** but
 
 Solution 2
 
-01\. Install [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=13255&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) (AccessDatabaseEngine.exe - 32 bits)
+01. Install [Microsoft Access Database Engine 2010 Redistributable](https://www.microsoft.com/en-us/download/details.aspx?id=13255&751be11f-ede8-5a0c-058c-2ee190a24fa6=True) (AccessDatabaseEngine.exe - 32 bits)
 
-02\. Reboot the PC.
+02. Reboot the PC.
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### My excel String size is longer then SQL, how I can reduce it?
 
-Can try use this formula _\=LEFT(A2,30)_ (eg for get 1st 30 character from A2)
+Can try use this formula *\=LEFT(A2,30)* (eg for get 1st 30 character from A2)
 
 - In Version 4.6.3.19 & above had function call **Truncate String...** can help to reduce it before import.
 
 Steps
 
-01\. Follow from **Step 1 to 4** as above
+01. Follow from **Step 1 to 4** as above
 
-![45](../../static/img/miscellaneous/XLS-MDB/faq-string-size-step1.png)
+    ![45](../../static/img/miscellaneous/XLS-MDB/faq-string-size-step1.png)
 
-05\. Select the column to be convert & Right Click
+02. Select the column to be convert & Right Click
 
-![46](../../static/img/miscellaneous/XLS-MDB/faq-string-size-step5.png)
+    ![46](../../static/img/miscellaneous/XLS-MDB/faq-string-size-step5.png)
 
-06\. Select **Truncate String...**
+03. Select **Truncate String...**
 
-![47](../../static/img/miscellaneous/XLS-MDB/faq-string-size-step6.png)
+    ![47](../../static/img/miscellaneous/XLS-MDB/faq-string-size-step6.png)
 
-07\. Enter the **New size**
+04. Enter the **New size**
 
-08\. Continue Step 5 to 6 for other column
+05. Continue Step 5 to 6 for other column
 
-09\. Done can continue norm **Step 5 to 12**
+06. Done can continue norm **Step 5 to 12**
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### My excel Don't had account code if got ItemCode can it be import?
 
@@ -1130,7 +760,7 @@ Yes just make sure Empty the Default Value for **Account** field so system can A
 
 ![49](../../static/img/miscellaneous/XLS-MDB/faq-item-code2.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### My excel only had Barcode can it be import?
 
@@ -1162,7 +792,7 @@ It will search as following sequence (Available in Build 34 & above)
 - CompanyItemCode
 - Note
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Why it keep only load lst 100 records even I had registered?
 
@@ -1170,7 +800,7 @@ It will search as following sequence (Available in Build 34 & above)
 
 Make sure you set the Value before you Click **Get File**
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### My CSV data is 00123 but after get data become 123 (missing 00)?
 
@@ -1178,15 +808,15 @@ Make sure you Double Quoted the value eg "00123"
 
 ### What is the Proper Steps to Import BOM?
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
-01\. Import all Finish Goods & Raw Material Item code using Stock | Maintain Stock Item...&
+01. Import all Finish Goods & Raw Material Item code using Stock | Maintain Stock Item...&
 
-Make sure ItemType for Finish Goods is Set to B
+    Make sure ItemType for Finish Goods is Set to B
 
-02\. Import using Stock | Maintain Stock Item - BOM...
+02. Import using Stock | Maintain Stock Item - BOM...
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Can I Import Payment/Credit Note without Knock off Information?
 
@@ -1194,7 +824,7 @@ Make sure ItemType for Finish Goods is Set to B
 
 Yes just set the column & Default Value for **DocType**, **KODocNo** & **KOAmt** to empty
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Why after verify all detail Status shown ok but Header Still untick?
 
@@ -1204,25 +834,25 @@ This happen when there is the problem in Excel Worksheet.
 
 Try below steps
 
-1\. Press _CTRL + Home_
+1. Press *CTRL + Home*
 
-2\. Press _CTRL + A_ (To Select All)
+2. Press *CTRL + A* (To Select All)
 
-3\. Press _CTRL + C_ (To Copy Selected)
+3. Press *CTRL + C* (To Copy Selected)
 
-4\. Press _Shift + F11_ (To inserts a New Worksheet into the active Workbook)
+4. Press *Shift + F11* (To inserts a New Worksheet into the active Workbook)
 
-5\. Press _CTRL + V_ (To Paste)
+5. Press *CTRL + V* (To Paste)
 
-6\. Save the Excel & Try again on New Worksheet
+6. Save the Excel & Try again on New Worksheet
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Why After Import to the Note/Attachment/Description3 data is truncated to 286 characters?
 
 Make sure In Your Excel Header name is using **Note/Description3/Attachment**
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Prompt "Access violation at address xxxxxx in module...." when Get file from excel
 
@@ -1230,7 +860,7 @@ Open the excel try delete few column at the end of excel (see example below)
 
 ![53](../../static/img/miscellaneous/XLS-MDB/faq-access-violation.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to prevent Import Price Tag with empty row?
 
@@ -1241,13 +871,13 @@ Make sure your Excel consist of
 - Price Tag Qty
 - Price Tag UOM (don't share same UOM for other field mapping for same Item code)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to convert the cell value so I can sum using formula in excel?
 
-Can try use this formula _\=Value(A2)_
+Can try use this formula *\=Value(A2)*
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Can I Reimport for Same Transactions?
 
@@ -1255,17 +885,17 @@ Yes for Version 5.16.10.62 & above
 
 ![55](../../static/img/miscellaneous/XLS-MDB/faq-reimport.png)
 
-01\. Right Click Here & Tick the option Auto Replace for Duplicate
+01. Right Click Here & Tick the option Auto Replace for Duplicate
 
-02\. Click Get file & Select Excel Sheet
+02. Click Get file & Select Excel Sheet
 
-03\. Click Get Data
+03. Click Get Data
 
-04\. Click Verify
+04. Click Verify
 
-05\. Click Post To A/c
+05. Click Post To A/c
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### What is alternative for FTP?
 
@@ -1276,13 +906,13 @@ You can use like
 - [Google Drive](https://www.google.com/drive/download/)
 - [One Drive](https://www.microsoft.com/en-my/microsoft-365/onedrive/download)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to add Excel Import Shortcut in SQL Accounting?
 
 You may refer [here](https://download.sql.com.my/customer/Fairy/Excel-Import-46.gif) for steps
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to enter Multi Line for More Description in Excel?
 
@@ -1290,7 +920,7 @@ You may refer [here](https://download.sql.com.my/customer/Fairy/Excel-Import-46.
 
 You can enter it all in 1 cell
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to enter Multi Line for More Description in csv/txt?
 
@@ -1298,19 +928,19 @@ You can enter it all in 1 cell
 
 eg ...|ERICSSON A10118s|Line 1#13Line 2#13Line 3|1|...
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to convert Excel to CSV file?
 
 ![58](../../static/img/miscellaneous/XLS-MDB/faq-exl-to-csv.gif)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to Load CSV file?
 
 ![59](../../static/img/miscellaneous/XLS-MDB/faq-load-csv.gif)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### I have problem to export field name with ( and ) can I ignore it?
 
@@ -1318,13 +948,13 @@ Yes you can just ignore the ( and )
 
 eg **Code(10)** can just export as Code10
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Why the Auto Mapping is not correctly map?
 
 Make sure the column position you export out is same as our template column position
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### I have more then 1 3rd party to import, can I create folder for each party?
 
@@ -1339,7 +969,7 @@ In the Auto Import
 
 ![61](../../static/img/miscellaneous/XLS-MDB/faq-3party-import2.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Can I use SQL Accounting Auto Generate DocNo?
 
@@ -1347,41 +977,41 @@ Yes can for Build 70 & above. Just Prefix `<New>`n in the DocNo field for each s
 
 ![62](../../static/img/miscellaneous/XLS-MDB/faq-auto-generate.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to Convert text number to number in Excel?
 
 ![63](../../static/img/miscellaneous/XLS-MDB/faq-text-num.gif)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Can I import without UnitPrice (i.e. SQL Account auto Calculate the UnitPrice)?
 
-Yes with Version _Build 79 & above_, just  
+Yes with Version *Build 79 & above*, just
 
 Don't Map & Set Empty For Default Value for the fields
 
-\- **UnitPrice**
+- **UnitPrice**
 
-\- **DISC**
+- **DISC**
 
-\- **TaxAmt**
+- **TaxAmt**
 
-\- **TaxInclusive**
+- **TaxInclusive**
 
-\- **Amount**
+- **Amount**
 
 ![64](../../static/img/miscellaneous/XLS-MDB/faq-x-price.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Can System Auto Knock off for Customer Payment Import?
 
-Yes with Version _Build 74 & above_, just tick the option
+Yes with Version *Build 74 & above*, just tick the option
 
 ![65](../../static/img/miscellaneous/XLS-MDB/faq-at-knockoff.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Can I reimport Customer/Supplier by just update few fields?
 
@@ -1396,13 +1026,13 @@ Below is steps how to import for update Maintain Customer Remark Field only
 
 [Click ME for steps](https://download.sql.com.my/customer/Fairy/Steps-Excel-Import-57.gif) for video
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to load last Save Field Mapping?
 
 ![66](../../static/img/miscellaneous/XLS-MDB/faq-load-last-save.gif)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Why after load excel some column had no data but my excel had?
 
@@ -1410,13 +1040,13 @@ This happen if 1 of the column is merge cell
 
 ![67](../../static/img/miscellaneous/XLS-MDB/faq-load-excel.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### How to enter multi IV number for CN FromDoc field in excel?
 
 ![68](../../static/img/miscellaneous/XLS-MDB/faq-multi-iv.png)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ### Scheduler Log show Auto Post List Had update. Please Resetup the Auto Import Settings
 
@@ -1424,206 +1054,206 @@ May click the Reset Lit button in the Auto Import Setting...
 
 ![69](../../static/img/miscellaneous/XLS-MDB/faq-log.gif)
 
-[\[FAQ\]](#faq) [\[top\]](#requirement)
+[[FAQ]](#faq) [[top]](#requirement)
 
 ## Template History New/Updates/Changes
 
-\--Update 16 Jun 2025--
+**Update 16 Jun 2025**
 
 - Add StockList_Barcode template
 
-\--Update 15 May 2025--
+**Update 15 May 2025**
 
 - Add Postcode_City_State list
 
-\--Update 09 May 2025--
+**Update 09 May 2025**
 
 - Update CashBookEntry_PV_OR some missing Note
 
-\--Update 03 May 2025--
+**Update 03 May 2025**
 
 - Update IDTYPE Parameter
 - Update CashBookEntry_PV_OR template by add E-Invoice Fields
 
-\--Update 28 Apr 2024--
+**Update 28 Apr 2024**
 
 - Fixed Stock Assembly & Disassembly Detail Qty Column Not correct.
 
-\--Update 14 Dec 2024--
+**Update 14 Dec 2024**
 
 - Update ST_Batch template for field ISActive fieldname & value
 
-\--Update 12 Nov 2024--
+**Update 12 Nov 2024**
 
 - Change Fieldname From EIVDateTime to EIV_UTC to support SQL Acc Version 5.2024.1001.858 & above
 
-\--Update 14 Aug 2024--
+**Update 14 Aug 2024**
 
 - Add SUBMISSIONTYPE & TAXEXEMPTIONREASON for Sales & Purchase
 - Remove IRBM_SELFBILLED for Sales & Purchase template
 
-\--Update 24 Jul 2024--
+**Update 24 Jul 2024**
 
 - Highlight with color for E-Invoicing fields
 - Add some Example for E-Invoicing fields
 
-\--Update 22 Jul 2024--
+**Update 22 Jul 2024**
 
 - Add New Field for E-Invoicing at Sales&Purchase template
 
-\--Update 08 Jul 2024--
+**Update 08 Jul 2024**
 
 - Add Country Tab list for Country field
 
-\--Update 02 Jul 2024--
+**Update 02 Jul 2024**
 
 - Add New Field for E-Invoicing at Customer&Supplier Master_New & Stock List template
 
-\--Update 14 Jun 2024--
+**Update 14 Jun 2024**
 
 - Add More Example for StockList
 - Update Note For StockList and Sales & Purchase
 
-\--Update 08 Jun 2024--
+**Update 08 Jun 2024**
 
 - Update Note on Sales & Purchase
 - Update CC field with field length & Sample Data in Sales & Purchase
 
-\--Update 01 Dec 2023--
+**Update 01 Dec 2023**
 
 - Add StockList_Category Template
 
-\--Update 18 Nov 2023--
+**Update 18 Nov 2023**
 
 - Update ChartOfAccount_GL FieldName not correct for auto mapping
 
-\--Update 13 Nov 2023--
+**Update 13 Nov 2023**
 
 - Update Sales & Purchase for Transfer Status Fields
 
-\--Update 25 Oct 2023--
+**Update 25 Oct 2023**
 
 - Add GL Stock & PD_JO (Job Order Template)
 - Update STAS_STDS template with note & fixed error sample value
 
-\--Update 09 Oct 2023--
+**Update 09 Oct 2023**
 
 - Update Note on some field which Can't Empty
 
-\--Update 03 Oct 2023--
+**Update 03 Oct 2023**
 
 - Change some field from Compulsory to Optional
 
-\--Update 25 Aug 2023--
+**Update 25 Aug 2023**
 
 - Update Bank Giro List
 
-\--Update 13 Dec 2022--
+**Update 13 Dec 2022**
 
 - Update StockItem_BOM Missing Column & data not sorting
 
-\--Update 25 Nov 2022--
+**Update 25 Nov 2022**
 
 - Add new Customer&Supplier Master Format
 - Add Maintain Shipper Format
 
-\--Update 28 Oct 2022--
+**Update 28 Oct 2022**
 
 - Fixed Payment Example Not Correct KO DocNo
 
-\--Update 18 Oct 2022--
+**Update 18 Oct 2022**
 
 - Add Example rounding for Sales & Purchase
 
-\--Update 06 Oct 2022--
+**Update 06 Oct 2022**
 
 - Add More sample for Journal Voucher
 - Add Note for Journal Voucher
 
-\--Update 01 Jun 2022--
+**Update 01 Jun 2022**
 
 - Add Batch Delete format
 - Add Currency With Detail format
 
-\--Update 14 Apr 2022--
+**Update 14 Apr 2022**
 
 - Add ST_Item_Alt format
 
-\--Update 19 Oct 2021--
+**Update 19 Oct 2021**
 
 - Update ARAP_Deposit Data to match Sample data
 - Add ARAP_CN_KO Format
 - Add ARAP_Deposit_Refund Format
 - Add ARAP_Deposit_Forfeit Format
 
-\--Update 05 Oct 2021--
+**Update 05 Oct 2021**
 
 - Update StockList Missing Isbase column & Required field for RATE1
 
-\--Update 11 Sep 2021--
+**Update 11 Sep 2021**
 
 - Add Price Tag Example for Stock List Template
 
-\--Update 18 Aug 2021--
+**Update 18 Aug 2021**
 
 - Add Enable Import Stock Item Matrix Profile Template
 
-\--Update 03 Apr 2021--
+**Update 03 Apr 2021**
 
 - Add GL_Budget Template
 - Add AR_CustomerBranch Template
 
-\--Update 14 Dec 2020--
+**Update 14 Dec 2020**
 
 - Add StockLit_PriceTagARAP Template
 - Update StockGroup, ST_ITEM_TPL, ST_Batch, Tariff & StockItem_BOM Template no mention field size
 
-\--Update 14 Aug 2020--
+**Update 14 Aug 2020**
 
 - Update ChartOfAccount_GL - Add More Example & Notes
 
-\--Update 04 Jul 2020--
+**Update 04 Jul 2020**
 
 - Update MaintainSupplier_Giro - Update to Match with Testing Company
 - Add StockList_UOMnPrice Template
 
-\--Update 03 Jun 2020--
+**Update 03 Jun 2020**
 
 - Split Stock Issue & Stock Receive Template
 
-\--Update 26 May 2020--
+**Update 26 May 2020**
 
 - Add Stock Assembly & Disassembly Template
 - Add more example for CashBookEntry_PV_OR
 - Add Customer Deposit Template
 
-\--Update 15 May 2020--
+**Update 15 May 2020**
 
 - Move file to Google Drive
 
-\--Update 12 Feb 2020--
+**Update 12 Feb 2020**
 
 - Update Sales & Purchase Tab Information to Match with Testing Company
 
-\--Update 03 Jan 2020--
+**Update 03 Jan 2020**
 
 - Add Point Format
 
 ## Program History New/Updates/Changes
 
-\--Build 104--
+**Build 104**
 
 - Fixed Verify Shown invalid Account code when No Value.
 - Fixed Export not filter untick records.
 
-\--Build 103--
+**Build 103**
 
 - Fixed Export parameter should not case sensitive.
 - Fixed Picture corrupted when do replace Stock Item when field not map.
 - Add #9 for Tab Delimiter csv import & Export.
 - Add Replace Header Only...Option.
 
-\--Build 102--
+**Build 102**
 
 - Upgrade to Version 5.19.20.
 - Fixed Verify Outstanding Qty not correct due to rounding issue.
@@ -1633,35 +1263,35 @@ May click the Reset Lit button in the Auto Import Setting...
 - Enable import Stock Item Barcode only.
 - Enable Upload to sFTP for Export CSV.
 
-\--Build 101--
+**Build 101**
 
 - Fixed Import Not follow UOM when using Barcode as Itemcode.
 - Fixed verify Payment unable to find record when user change Journal type BANK/CASH to Bank/Cash.
 - Fixed Customer/Supplier unable to Import GEOCOORDINATE field.
 - HDR Description Default Value not import if not mapping.
 
-\--Build 100--
+**Build 100**
 
 - Fixed Import Maintain Item - UOM & Price error due to over Quoted.
 
-\--Build 99--
+**Build 99**
 
 - Fixed Mapping for Customer/Supplier New not correct for State Field.
 - Force export out with only fieldname even is no record.
 - Fixed Job Order, Stock Assembly & Disassembly missing Detail Qty column.
 - Add Search for SALESTAXNO, SERVICETAXNO & TIN for customer/supplier Code.
 
-\--Build 98--
+**Build 98**
 
 - Enable Auto Get E-Invoice Info From Maintain Customer/Supplier when data field is Empty.
 - Change Register db Checking to Actual Register Info field.
 
-\--Build 97--
+**Build 97**
 
 - Add Get File From FTP option.
 - Fixed export CSV Last Export Date keep increasing.
 
-\--Build 96--
+**Build 96**
 
 - Fixed Import error when TaxInclusive empty.
 - Fixed AutoExport CSV Last export Date not save to db.
@@ -1669,39 +1299,39 @@ May click the Reset Lit button in the Auto Import Setting...
 - Fixed data not Trim if import using csv.
 - Add Clear Default Value...option.
 
-\--Build 95--
+**Build 95**
 
 - Fixed Import Tax code error.
 
-\--Build 94--
+**Build 94**
 
 - Fixed Import Customer payment Voucher Error due to boolean type.
 - Fixed TaxInclusive not import when the value True.
 - Auto Select Show Uncheck Only for GL Acc after Verify have error.
 
-\--Build 93--
+**Build 93**
 
 - Fixed Import Opening SST Error due to typo error.
 - Fixed Tax field not Automap if FieldName is Tax.
 - Enable support RichText Import for UDF Memo type.
 - Fixed Replace Item Code for Maintain Item prompt Access Violation.
 
-\--Build 92--
+**Build 92**
 
 - Fixed verify error when Invalid UOM due to boolean type.
 
-\--Build 91--
+**Build 91**
 
 - Fixed unable to load record when Json record only 1.
 - Add support :LastModified filter.
 - Fixed some default value not update to support 860.
 - Fixed verify with transfer status error due to boolean type.
 
-\--Build 90--
+**Build 90**
 
 - Fixed Register activation code fail.
 
-\--Build 89--
+**Build 89**
 
 - Fix incorrect Auto Field mapping for CC & Tax.
 - Enable support Transfer IV,DN,CS to CN.
@@ -1709,20 +1339,20 @@ May click the Reset Lit button in the Auto Import Setting...
 - Fixed Same time record not posted due to Seq.
 - Enable support Version 860 & above.
 
-\--Build 88--
+**Build 88**
 
 - Fixed IDTYPE & SUBMISSIONTYPE should not have default value for transaction.
 - Fixed Replace enable verify shown Dockey Not found.
 - Change Auto Get Default Account Code from DB.
 
-\--Build 87--
+**Build 87**
 
 - Enable Support read mulitple line for csv with #13 indicator.
 - Enable Auto Height For Grid Data.
 - Fixed unable to EMail using GMail Setting.
 - Fixed AR/AP CN KnockOff verify Status not update when CN Not found.
 
-\--Build 86--
+**Build 86**
 
 - Add By Pass Verify... option.
 - Enable Import Extra DO & GRN.
@@ -1734,20 +1364,20 @@ May click the Reset Lit button in the Auto Import Setting...
 - Fixed Maintain Customer/Supplier - New missing CURRENCYCODE field.
 - Fixed TaxRate not import when mapping.
 
-\--Build 85--
+**Build 85**
 
 - Upgrade to Version 5.19.19.
 - Add Export CSV function.
 - Enable mapping for DocNoSetKey field.
 - Fixed Purchase not support Transfer Status.
 
-\--Build 84--
+**Build 84**
 
 - Fix not support mix data with Some have ItemCode & Same no ItemCode.
 - Fixed Scheduler still not support without Branch Info for Maintain Customer/Supplier - New option.
 - Fixed file not move when Replace Option is enabled.
 
-\--Build 83--
+**Build 83**
 
 - Fixed slow when delete for replace transactions with lot details.
 - Add Grid export for Stock Item Import.
@@ -1755,20 +1385,20 @@ May click the Reset Lit button in the Auto Import Setting...
 - Auto mapping with \_DTL &\_HDR ignore \_.
 - Allow import Customer/Supplier without Branch Info for Maintain Customer/Supplier - New option.
 
-\--Build 82--
+**Build 82**
 
 - Fixed Source Field have extra record.
 - Fixed Error when using JSon File.
 - Fixed Auto Import Setting not Save after Set.
 
-\--Build 81--
+**Build 81**
 
 - Fixed Convert Row To Column function still open file still use old function.
 - Fixed Convert Row To Column function not working due to Column 1 empty.
 - Fixed Access Violation on Get File for Maintain Customer & Supplier.
 - Fixed Payment still Import Even is Untick.
 
-\--Build 80--
+**Build 80**
 
 - Upgrade to Version 5.18.18
 - Allow Import Empty Seq for Maintain Stock Item - Price Tag Import.
@@ -1776,7 +1406,7 @@ May click the Reset Lit button in the Auto Import Setting...
 - Enable Transfer Status for Sales & Purchase Module.
 - Add highlighter for Error after verify.
 
-\--Build 79--
+**Build 79**
 
 - Upgrade to Version 5.17.17.
 - Add Maintain Stock Item - Category.
@@ -1788,11 +1418,11 @@ May click the Reset Lit button in the Auto Import Setting...
 - Add Job Order.
 - Add Option "System Auto Detail" for Job Order, Stock Assembly & Stock Disassembly.
 
-\--Build 78--
+**Build 78**
 
 - Fixed Verify Not correct when no Itemcode Mapping.
 
-\--Build 77--
+**Build 77**
 
 - Upgrade to Version 5.17.16.
 - Fixed Error on Function Memo to Column when split Memo row more then No of Columns.
@@ -1801,7 +1431,7 @@ May click the Reset Lit button in the Auto Import Setting...
 - Fixed Verify UOM not same as excel when if itemcode have more the 1 UOM with Rate=1.
 - Fixed ItemCode UOM sometime not correctly check.
 
-\--Build 76--
+**Build 76**
 
 - Upgrade to Version 5.17.15.
 - Fixed unable to find record if On Spot Change Code.
@@ -1811,7 +1441,7 @@ May click the Reset Lit button in the Auto Import Setting...
 - Add Load Last Posted Status Information... function - For Transactions.
 - Fixed Auto Import Stock Item Fail.
 
-\--Build 75--
+**Build 75**
 
 - Enable Support Read UOM from Barcode & Stock Alt Item Table.
 - Fixed Detail Description should not have Default Value.
@@ -1819,7 +1449,7 @@ May click the Reset Lit button in the Auto Import Setting...
 - Fixed AP Verify Error.
 - Fixed Customer CN, Supplier DN & CN Default Value not correct.
 
-\--Build 74--
+**Build 74**
 
 - Upgrade to Version 5.17.14.
 - Enable Support Direct DB Connect for SQL Connect.
@@ -1830,21 +1460,21 @@ May click the Reset Lit button in the Auto Import Setting...
 - Fixed Verify Slow.
 - Add Option Auto KnockOff for Customer/Supplier Payment & Refund.
 
-\--Build 73--
+**Build 73**
 
 - Fixed Error after done import Maintain Customer/Supplier New format.
 
-\--Build 72--
+**Build 72**
 
 - Fixed Source Mapping Field have Extra Column.
 - Fixed Get CSV with Unicode Error.
 - Fixed Access Violation when posting Payment.
 
-\--Build 71--
+**Build 71**
 
 - Fixed Import SL & PH missing detail.
 
-\--Build 70--
+**Build 70**
 
 - Upgrade to Version 5.17.13.
 - Remove 'Mapping Field can't be empty' for Stock Transfer Header Code.
@@ -1863,27 +1493,27 @@ May click the Reset Lit button in the Auto Import Setting...
 - Add Option Get file(s) from FTP... for transactions import.
 - Enable Replace Option for Duplicate transaction for All Maintenance (Except Maintain Account).
 
-\--Build 69--
+**Build 69**
 
 - Add Remove Other Character(s)... function.
 - Fixed Copy Cell Value not enable for single table import.
 - Fixed SUOMQTY field missing from mapping.
 
-\--Build 68--
+**Build 68**
 
 - Fixed Field Auto Mapping not check equally match column.
 - Fixed Sales.Points.OPF can't Auto Import.
 - Fixed Import Attachment field become RichText.
 - Fixed Import GL PV & GL OR error.
 
-\--Build 67--
+**Build 67**
 
 - Change FTP download TransferType to Binary.
 - Fixed Error when download FTP file with folder.
 - Add Double Click Pending & Done label to open the folder.
 - Add Test FTP Download option on Right Click Pending label.
 
-\--Build 66--
+**Build 66**
 
 - Upgrade to Version 5.16.12.
 - Fixed Slow on Auto Mapping function.
@@ -1895,33 +1525,33 @@ May click the Reset Lit button in the Auto Import Setting...
 - Allow import Detail Maintain Currency.
 - Fixed FTP download Error.
 
-\--Build 65--
+**Build 65**
 
 - Fixed Points Verify Keep shown Invalid Customer code.
 - Fixed Points Post to Account prompt Access Violation.
 - Fixed Verify if Mapped field with empty data for Agent, Area, Project should by pass
 
-\--Build 64--
+**Build 64**
 
 - Upgrade to Version 5.16.11.
 - Add Import Stock Alternative.
 - Add Auto Resize Prefix Main Screen Size.
 
-\--Build 63--
+**Build 63**
 
 - Fixed Error Import Matrix Profile.
 - Fixed Disc have value even Excel don't have Disc Column.
 
-\--Build 62--
+**Build 62**
 
 - Upgrade to Version 5.16.
 - Enable Replace Option for Duplicate transaction.
 
-\--Build 61--
+**Build 61**
 
 - Fixed Add for detail Mapping override by automap.
 
-\--Build 60--
+**Build 60**
 
 - Fixed GL Acc Verify not correctly for SpecialAccount Type.
 - Add Filter for Untick Only, Tick Only & All option for GL Acc.
@@ -1929,45 +1559,45 @@ May click the Reset Lit button in the Auto Import Setting...
 
 (conflict with to rec & max record)
 
-[\[top\]](https://wiki.sql.com.my/wiki/SQL_Acc_XLS_n_MDB_Import#top)
+[[top]](#requirement)
 
 ## Program History New/Updates/Changes (UE Only) - (Deprecated)
 
-\--Build 37--
+**Build 37**
 
 - Upgrade to Version 4.5.4.
 - Fixed Slow on Auto Mapping function.
 - Move Select Record Range to top.
 - Fixed Tab Order.
 
-\--Build 36--
+**Build 36**
 
 - Upgrade to Version 4.5.3.
 - Add Import Stock Alternative.
 - Add Auto Resize Prefix Main Screen Size.
 
-\--Build 35--
+**Build 35**
 
 - Upgrade to Version 4.5.
 - Add option Delete Existing Data for all Import Option except Maintain Stock Item.
 
-\--Build 34--
+**Build 34**
 
 - Fixed Add for detail Mapping override by automap.
 
-\--Build 33--
+**Build 33**
 
 - Misleading information at Stock Item Filter record to record when set 501 to 1000 become 500 (conflict with to rec & max record)
 
-\--Build 32--
+**Build 32**
 
 - Fixed Stock Item Not Auto Maping Field for Sub Table.
 - Fixed Import Unicode for More Description become ???
 
-\--Build 31--
+**Build 31**
 
 - Fixed More Description & Attachment not support Unicode.
 
-\--Build 30--
+**Build 30**
 
 - Fixed Prompt Error when excel UOM Rate is empty.

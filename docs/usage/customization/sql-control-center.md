@@ -5,7 +5,7 @@ slug: /usage/customisation/sqlControlCenter
 tags: ["SQL Account"]
 ---
 
-## Shipping/Forwarding
+## Shipping/Forwarding (S/F)
 
 This Customisation is the simple calculation for the Shipping/Forwarding company.
 
@@ -13,7 +13,7 @@ This Customisation is the simple calculation for the Shipping/Forwarding company
 
 [Video](https://www.youtube.com/watch?v=LPoz1h3hyvQ)
 
-### History New/Updates/Changes
+### History New/Updates/Changes (S/F)
 
 14 May 2025
 
@@ -28,7 +28,7 @@ This Customisation is the simple calculation for the Shipping/Forwarding company
 
 07 Dec 2015
 
-Fixed 0Sales Local - Invoice Listing - Level 1 Ent column some shown empty when 0.
+Fixed Sales Local - Invoice Listing - Level 1 Ent column some shown empty when 0.
 02 Nov 2015
 
 * Fix Seq Error
@@ -49,15 +49,15 @@ Fixed 0Sales Local - Invoice Listing - Level 1 Ent column some shown empty when 
 * Fix 0Sales Local - Invoice Listing - Level 1 margin not correct
 * Convert DocRef3 to UDF_EntCost for 0Sales Local - Invoice Listing - Level 1 Ent column
 
-### Settings
+### Settings (S/F)
 
-#### Maintain User
+#### Maintain User (S/F)
 
 *Menu: Tools | Maintain User...*
 
 Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : Sales
 
-### Steps
+### Steps (S/F)
 
 #### Invoice
 
@@ -88,7 +88,7 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 5. Select report name 0Sales Local - Invoice Listing - Level 1
 6. Click Ok button
 
-## Bonus Point System
+## Bonus Point System (BPS)
 
 This Customisation is to calculate/maintain the Point/Bonus
 
@@ -110,7 +110,7 @@ This Customisation is to calculate/maintain the Point/Bonus
 
 [Sample Database](https://www.sql.com.my/document/ACC%20BK-%5BBonusVoucherPoint%5D.zip)
 
-### History New/Updates/Changes
+### History New/Updates/Changes (BPS)
 
 25 Dec 2015
 
@@ -120,16 +120,16 @@ This Customisation is to calculate/maintain the Point/Bonus
 * Fix Bonus Statement show $ symbol
 * Remove auto 5 cents rounding script
 
-### Modules Required
+### Modules Required (BPS)
 
 * DIY Field
 * DIY Script
 * Invoice ----> DO
 * Multiple Document Number Set
 
-### Settings
+### Settings (BPS)
 
-#### Maintain User
+#### Maintain User (BPS)
 
 *Menu: Tools | Maintain User...*
 
@@ -147,7 +147,7 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 
 2. For each item code enter the Voucher Rate (eg 0.5 point = RM 1)
 
-#### Sales Invoice
+***Sales Invoice***
 
 *Menu: Sales | Invoice...*
 
@@ -160,7 +160,7 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 | **UDF_UseQty**     | **Tick** → `UDF_Voucher = UDF_VoucherRate * Qty`. **UnTick** → `UDF_Voucher = UDF_VoucherRate * Amount`. |
 | **UDF_Voucher**    | `Total current item point`.                                                      |
 
-#### Extra Delivery Order
+***Extra Delivery Order***
 
 *Menu: Sales | Extra Delivery Order...*
 
@@ -176,9 +176,9 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 | **DocAmt**      | Total point for each transaction.                                                |
 | **UDF_CRPoint** | **Tick** → Claim/Deduct Transactions Point. **UnTick** → In/Add Transactions Point. |
 
-### Steps
+### Steps (BPS)
 
-#### Sales Invoice
+***Sales Invoice***
 
 Below is example in Sales Invoice with Voucher Claim
 *Menu: Sales | Invoice...*
@@ -195,7 +195,7 @@ Below is example in Sales Invoice with Voucher Claim
 * Just enter the UDF_VoucherRate as - (Negative Value) after enter the Negative UnitPrice
 :::
 
-#### Extra Delivery Order
+***Extra Delivery Order***
 
 *Menu: Sales | Extra Delivery Order...*
 
@@ -236,12 +236,12 @@ Branch Control Setting is done to prevent branch user from selecting Customer, P
 * Filter reports only using information assigned to the branch user
 * Generate accurate P&L, Stock Balance Report for branches
 
-### Modules Required
+### Modules Required (Branch Control)
 
 * DIY Field
 * DIY Script
 
-## Branch Control Module **Features**
+## Branch Control Module Features
 
 ### Project & Location
 
@@ -414,7 +414,7 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 
 **Steps :**
 
-### Insert DIY Field
+### Insert DIY Field (Unit Price Calculation)
 
 1. Click Tools | DIY | SQL Control Center...
 2. At the left panel look for Sales Invoice.
@@ -431,7 +431,7 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 6. Update operation successful message. Click OK.
 7. DONE
 
-### Insert DIY Script
+### Insert DIY Script (Unit Price Calculation)
 
 1. Click Tools | DIY | SQL Control Center...
 2. At the left panel look for Sales Invoice .
@@ -453,14 +453,14 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 9. Copy below script & paste to the Right Panel (Script Section).
 
         ```vb
-    begin
-        if SameText(EditingField, 'ItemCode')or
-          SameText(EditingField, 'UDF_mUnitPrice') then begin
-                DataSet.FindField('UnitPrice').AsFloat :=
-                DataSet.FindField('Rate').AsFloat * DataSet.FindField('UDF_mUnitPrice').AsFloat;
+        begin
+            if SameText(EditingField, 'ItemCode')or
+              SameText(EditingField, 'UDF_mUnitPrice') then begin
+                    DataSet.FindField('UnitPrice').AsFloat :=
+                    DataSet.FindField('Rate').AsFloat * DataSet.FindField('UDF_mUnitPrice').AsFloat;
 
-        end;
-    end.
+            end;
+        end.
         ```
 
 10. Click Save button.
@@ -469,7 +469,7 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 Avoid update the same existing field name Unit Price. You have to create different name ie. UDF_mUnitPrice.
 :::
 
-### Result Test
+### Result Test (Unit Price Calculation)
 
 1. Go to Stock | Maintain Stock Item...
 2. Edit the item code ANT.
@@ -496,19 +496,19 @@ Avoid update the same existing field name Unit Price. You have to create differe
 
       ```bash
 
-  Get UDF_PCS & UDF_CTN from Maintain Item to Sales Invoice Detail UDF_Price
+      Get UDF_PCS & UDF_CTN from Maintain Item to Sales Invoice Detail UDF_Price
 
-   If selected itemcode UOM is PCS then use UDF_PCS
-   if selected itemcode UOM is CTN then use UDF_CTN
-   if selected itemcode UOM not PCS or CTN then default is 1
+      If selected itemcode UOM is PCS then use UDF_PCS
+      if selected itemcode UOM is CTN then use UDF_CTN
+      if selected itemcode UOM not PCS or CTN then default is 1
 
       ```
 
 * Calculation for Unit Price := UDF_Price * UDF_Rate
 
-**Steps**
+**Steps :**
 
-### Insert DIY Field
+### Insert DIY Field (Master Data)
 
 1. Click Tools | DIY | SQL Control Center...
 2. At the left panel look for Stock | Stock Item .
@@ -540,7 +540,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
 12. Update operation successful message. Click OK.
 13. DONE.
 
-## Create Quick Form
+### Create Quick Form (Master Data)
 
 1. Click Tools | DIY | SQL Control Center...
 2. At the left panel look for Stock | Stock Item .
@@ -566,7 +566,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
 
 10. DONE.
 
-### Insert DIY Script
+### Insert DIY Script (Master Data)
 
 1. Click Tools | DIY | SQL Control Center...
 2. At the left panel look for Sales Invoice .
@@ -588,52 +588,52 @@ Avoid update the same existing field name Unit Price. You have to create differe
 9. Copy below script & paste to the Right Panel (Script Section).
 
         ```bash
-    var FComServer, lBizObj : Variant;
-        cdsData : TClientDataSet;
+        var FComServer, lBizObj : Variant;
+            cdsData : TClientDataSet;
 
-    function ComServer: Variant;
-    begin
-      if FComServer = Null then begin
-        FComServer := CreateOleObject('SQLAcc.BizApp');
-      end;
-      Result := FComServer;
-    end;
-
-    procedure GetStockInfo;
-    var lSQL, lCode  : String;
-    begin
-      FComServer := null;
-      cdsData    := TClientDataSet.Create(nil); // Create & preparing Component
-      try
-        lCode := Dataset.FindField('ItemCode').AsString;
-        lSQL  := Format('SELECT UDF_PCS, UDF_CTN FROM ST_ITEM WHERE Code=%s',[QuotedStr(lCode)]);
-
-        cdsData.Data := ComServer.DBManager.Execute(lSQL);
-      finally
-        lBizObj    := null;
-        FComServer := null;
-      end;
-    end;
-
-    begin
-      if SameText(EditingField, 'ItemCode') or
-        SameText(EditingField, 'UOM') or
-        SameText(EditingField, 'UDF_Rate') then begin
-        try
-          GetStockInfo;
-          if Dataset.FindField('UOM').AsString = 'PCS' then
-            Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_PCS').AsFloat else
-          if Dataset.FindField('UOM').AsString = 'CTN' then
-            Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_CTN').AsFloat else
-            Dataset.FindField('UDF_Price').AsFloat := 1;
-
-          Dataset.FindField('UnitPrice').AsFloat := Dataset.FindField('UDF_Price').AsFloat *
-                                                    Dataset.FindField('UDF_Rate').AsFloat;
-        finally
-          cdsData.Free;
+        function ComServer: Variant;
+        begin
+          if FComServer = Null then begin
+            FComServer := CreateOleObject('SQLAcc.BizApp');
+          end;
+          Result := FComServer;
         end;
-      end;
-    end.
+
+        procedure GetStockInfo;
+        var lSQL, lCode  : String;
+        begin
+          FComServer := null;
+          cdsData    := TClientDataSet.Create(nil); // Create & preparing Component
+          try
+            lCode := Dataset.FindField('ItemCode').AsString;
+            lSQL  := Format('SELECT UDF_PCS, UDF_CTN FROM ST_ITEM WHERE Code=%s',[QuotedStr(lCode)]);
+
+            cdsData.Data := ComServer.DBManager.Execute(lSQL);
+          finally
+            lBizObj    := null;
+            FComServer := null;
+          end;
+        end;
+
+        begin
+          if SameText(EditingField, 'ItemCode') or
+            SameText(EditingField, 'UOM') or
+            SameText(EditingField, 'UDF_Rate') then begin
+            try
+              GetStockInfo;
+              if Dataset.FindField('UOM').AsString = 'PCS' then
+                Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_PCS').AsFloat else
+              if Dataset.FindField('UOM').AsString = 'CTN' then
+                Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_CTN').AsFloat else
+                Dataset.FindField('UDF_Price').AsFloat := 1;
+
+              Dataset.FindField('UnitPrice').AsFloat := Dataset.FindField('UDF_Price').AsFloat *
+                                                        Dataset.FindField('UDF_Rate').AsFloat;
+            finally
+              cdsData.Free;
+            end;
+          end;
+        end.
        ```
 
 10. Click Save button.
@@ -642,7 +642,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
     Avoid update the same existing field name Unit Price and "Rate". You have to create different name ie. UDF_Price and UDF_Rate.
     :::
 
-### Result Test
+### Result Test (Master Data)
 
 1. Go to Stock | Maintain Stock Item...
 2. Create a new item code called PEN.
@@ -672,9 +672,9 @@ Avoid update the same existing field name Unit Price. You have to create differe
 * This assignment no need to create any DIY fields
 * Purpose is to display the total outstanding balance for the customer selected at the Invoice
 
-**Steps**
+**Steps :**
 
-### Insert DIY Field
+### Insert DIY Script (Outstanding Amount)
 
 1. Click Tools | DIY | SQL Control Center...
 2. At the left panel look for Sales Invoice .
@@ -696,93 +696,93 @@ Avoid update the same existing field name Unit Price. You have to create differe
 9. Copy below script & paste to the Right Panel (Script Section).
 
         ```bash
-    var FComServer, lBizObj : Variant;
-        C : TComponent;
-        T : TTimer;
-        M : TDataSource;
-        L1, L2 : TLabel;
-        cdsTemp : TClientDataset;
+        var FComServer, lBizObj : Variant;
+            C : TComponent;
+            T : TTimer;
+            M : TDataSource;
+            L1, L2 : TLabel;
+            cdsTemp : TClientDataset;
 
-    function ComServer: Variant;
-    begin
-      if FComServer = Null then
-        FComServer := CreateOleObject('SQLAcc.BizApp');
-      Result := FComServer;
-    end;
-
-    procedure Setup;
-    begin
-      T  := TTimer.Create(Self);
-      L1 := TLabel.Create(self);
-      L2 := TLabel.Create(self);
-    end;
-
-    procedure DocInfo;
-    var lSQL, lDocNo : String;
-    begin
-      lDocNo := M.Dataset.FindField('DocNo').AsString;
-
-      FComServer := null;
-      cdsTemp := TClientDataset.Create(nil);
-      lSQL := Format('SELECT (DocAmt - PaymentAmt) OS FROM AR_IV '+
-                    'WHERE DocNo=%s ',[QuotedStr(lDocNo)]);
-
-      try
-        cdsTemp.Data := ComServer.DBManager.Execute(lSQL);
-      finally
-        FComServer := null;
-      end;
-    end;
-
-    procedure OnTimer(Sender: TObject);
-    var AState : TDataSetState;
-    begin
-      AState := M.DataSet.State;
-      if AState = dsBrowse then begin
-        DocInfo;
-        L2.Caption := '';
-        try
-          L2.Caption := FormatCurr('#,0.00;-#,0.00', cdsTemp.FindField('OS').AsFloat);
-        finally
-          cdsTemp.Free;
+        function ComServer: Variant;
+        begin
+          if FComServer = Null then
+            FComServer := CreateOleObject('SQLAcc.BizApp');
+          Result := FComServer;
         end;
-      end;
-    end;
 
-    begin
-      M := TDataSource(Self.FindComponent('dsDocMaster'));
-      C := Self.FindComponent('frDataSetButton1');
-
-      if Assigned(C) then begin
-        T.Enabled  := True;
-        T.Interval := 1000; // = 1 sec
-        T.OnTimer  := @OnTimer;
-
-        with L1 do begin
-          Parent     := TWinControl(C);
-          Width      := 66;
-          Left       := 6;
-          Top        := 200;
-          Caption    := 'Outstanding';
-          Font.Color := clBlue;
-          Font.Style := [fsBold];
+        procedure Setup;
+        begin
+          T  := TTimer.Create(Self);
+          L1 := TLabel.Create(self);
+          L2 := TLabel.Create(self);
         end;
-        with L2 do begin
-          Parent     := TWinControl(C);
-          Width      := 66;
-          Left       := 6;
-          Top        := 215;
-          Caption    := 'DocNo';
-          Font.Color := clBlue;
-          Font.Style := [fsBold];
+
+        procedure DocInfo;
+        var lSQL, lDocNo : String;
+        begin
+          lDocNo := M.Dataset.FindField('DocNo').AsString;
+
+          FComServer := null;
+          cdsTemp := TClientDataset.Create(nil);
+          lSQL := Format('SELECT (DocAmt - PaymentAmt) OS FROM AR_IV '+
+                        'WHERE DocNo=%s ',[QuotedStr(lDocNo)]);
+
+          try
+            cdsTemp.Data := ComServer.DBManager.Execute(lSQL);
+          finally
+            FComServer := null;
+          end;
         end;
-      end;
-    end.
+
+        procedure OnTimer(Sender: TObject);
+        var AState : TDataSetState;
+        begin
+          AState := M.DataSet.State;
+          if AState = dsBrowse then begin
+            DocInfo;
+            L2.Caption := '';
+            try
+              L2.Caption := FormatCurr('#,0.00;-#,0.00', cdsTemp.FindField('OS').AsFloat);
+            finally
+              cdsTemp.Free;
+            end;
+          end;
+        end;
+
+        begin
+          M := TDataSource(Self.FindComponent('dsDocMaster'));
+          C := Self.FindComponent('frDataSetButton1');
+
+          if Assigned(C) then begin
+            T.Enabled  := True;
+            T.Interval := 1000; // = 1 sec
+            T.OnTimer  := @OnTimer;
+
+            with L1 do begin
+              Parent     := TWinControl(C);
+              Width      := 66;
+              Left       := 6;
+              Top        := 200;
+              Caption    := 'Outstanding';
+              Font.Color := clBlue;
+              Font.Style := [fsBold];
+            end;
+            with L2 do begin
+              Parent     := TWinControl(C);
+              Width      := 66;
+              Left       := 6;
+              Top        := 215;
+              Caption    := 'DocNo';
+              Font.Color := clBlue;
+              Font.Style := [fsBold];
+            end;
+          end;
+        end.
         ```
 
 10. Click Save button.
 
-### Result Test
+### Result Test (Outstanding Amount)
 
 1. Create a new sales invoice, eg. Invoice Amount = Rm1060.00
 
@@ -794,4 +794,4 @@ Avoid update the same existing field name Unit Price. You have to create differe
 
 3. You can get the document outstanding balance (Rm1060.00 - Rm636.00 = Rm424.00) at Sales Invoice.
 
-![outstanding-balance-sales-invoice](../../../static/img/miscellaneous/sqlControlCenter/outstanding-balance-sales-invoice.png)
+    ![outstanding-balance-sales-invoice](../../../static/img/miscellaneous/sqlControlCenter/outstanding-balance-sales-invoice.png)

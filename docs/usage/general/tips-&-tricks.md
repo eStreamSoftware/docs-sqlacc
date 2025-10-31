@@ -2,218 +2,9 @@
 sidebar_position: 2
 title: Tips & Tricks
 description: Other Info
-slug: /usage/general/tips&tricks
+slug: /usage/general/tips-&-tricks
 tags: ["SQL Account", "Usage"]
 ---
-
-### Show Chart
-
-`View | Show Chart`
-
-This function is enabled to view the sales/purchase price history data in chart form.
-
-1. Apply the Sales / Purchase Price History from `Sales | Print Sales Price History or Purchase | Print Purchase Price History` .
-
-2. Highlight the data in the grids.
-
-    ![1](../../../static/img/usage/general/tips-tricks/show-chart-step2.png)
-
-3. Click on `View | Show Chart`.
-
-4. 3 different chart types (Bar Chart, Line Chart, Pie Chart) will be prompted. Seet the screenshot below.
-
-    ![2](../../../static/img/usage/general/tips-tricks/show-chart-step4.png)
-
-Data transform into the chart depends on the data highlighted in the Sales/Purchase Price History grid.
-
-### Sales Price History (Shift+Ctrl+S)
-
-`View | Sales Price History...`
-
-This function is to quick check on the sales price history during the sales, purchase, and stock documents creation.
-
-`Shift + Ctrl + S`
-
-1. As long you are highlight the item code, eg. at Maintain Stock Item or during the sales/purchase documents creation.
-
-2. Press Shift + Ctrl + S to check theSales Price History... for the item.
-
-    ![3](../../../static/img/usage/general/tips-tricks/sales-ph-step2.png)
-
-3. Insert a Company Name column to compare the sales price history by company.
-
-    ![4](../../../static/img/usage/general/tips-tricks/sales-ph-step3.png)
-
-4. Set the latest number of records to be displayed for each sales document type (QT, SO, DO, IV, CS, CN, DN).
-
-    ![5](../../../static/img/usage/general/tips-tricks/sales-ph-step4.png)
-
-5. Click on Sales to exclude the sales document types.
-
-    ![6](../../../static/img/usage/general/tips-tricks/sales-ph-step5.png)
-
-Sales Price History always turns-on to quickly inquire the price history for customers.
-
-### Purchase Price History (Shift+Ctrl+P)
-
-`View | Purchase Price History...`
-
-This function is to quickly check on the purchase price history during the sales, purchase, and stock documents creation.
-
-`Shift + Ctrl + P`
-
-1. As long you are highlight the item code, eg. at Maintain Stock Item or during the sales/purchase documents creation.
-
-2. Press Shift + Ctrl + P to check thePurchase Price History... for the item.
-
-    ![7](../../../static/img/usage/general/tips-tricks/purchase-ph-step2.png)
-
-3. Insert a Company Name column to compare the Purchase price history by company.
-
-    ![8](../../../static/img/usage/general/tips-tricks/purchase-ph-step3.png)
-
-4. Set the latest number of records to be display for each purchase document types (PQ, PO, GR, PI, CP, SC, SD).
-
-    ![9](../../../static/img/usage/general/tips-tricks/purchase-ph-step4.png)
-
-5. Click on Purchase to exclude the purchase document types.
-
-    ![10](../../../static/img/usage/general/tips-tricks/purchase-ph-step5.png)
-
-Purchase Price History always turns-on to quickly inquire the price history for suppliers.
-
-### Available Stock Balance (Ctrl+F11)
-
-`View | Available Stock Balance...`
-
-This function is to quick check on the stock status during the sales, purchase, and stock documents creation.
-
-`Ctrl+F11`
-
-1. As long you are highlight the item code, eg. at Maintain Stock Item or during the sales/purchase documents creation.
-
-2. Press Ctrl+F11 - Available Stock Balance....
-
-    ![11](../../../static/img/usage/general/tips-tricks/stock-bal-step2.png)
-
-### Stock Card Qty By Location
-
-1. Stock Card Qty By Location tab will show the stock status summary by location and batch.
-
-2. See the screenshot below.
-
-    ![12](../../../static/img/usage/general/tips-tricks/stock-card-qty-step2.png)
-
-| Column Name | Explanation |
-| --- | --- |
-| Location | Stock qty balances group by location. |
-| Batch | Stock qty balances group by batch. |
-| S.O.Qty | Outstanding SO Qty (Back Order). |
-| P.O.Qty | Outstanding PO Qty (Back Order). |
-| J.O.Qty | Outstanding JO Qty (Job Order Outstanding). |
-| Qty | On hand Qty. |
-| Avail.Qty | Future Qty. |
-| Exp.Date | Batch expiry date. |
-
-### Back Order Detail
-
-1. To check the S.O.Qty, P.O.Qty and J.O.Qty in detail.
-2. Click on Back Order Detail tab. See the screenshot below.
-
-    ![13](../../../static/img/usage/general/tips-tricks/back-order-detail.png)
-
-### Alternative Stock Item
-
-1. Click on the Alternative Stock Item tab to check the alternative item code.
-2. See the screenshot below.
-
-    ![14](../../../static/img/usage/general/tips-tricks/alternative-stock-item.png)
-
-Available Stock Balance always turn-on to quickly inquire about the stock status.
-
-### Price Tag (Ctrl+T)
-
-`View | Price Tag...`
-
-This function is to quickly check on the Price Tag set for the item.
-
-`Ctrl + T`
-
-1. As long you are highlight the item code, eg. at Maintain Stock Item or during the sales/purchase documents creation.
-2. Press Ctrl + T to check the Price Tag... for the item.
-
-    ![15](../../../static/img/usage/general/tips-tricks/price-tag.png)
-
-Price Tag always turns-on to quickly inquire the price tag info for the item.
-
-### Stock Item Picture
-
-`View | Stock Item Picture`
-
-This function is to quickly view the picture of the stock item selected.
-
-1. As long you are highlight the item code, eg. at Maintain Stock Item or during the sales/purchase documents creation.
-2. Click on View | Stock Item Picture.
-
-    ![16](../../../static/img/usage/general/tips-tricks/stock-item-price.png)
-
-Stock Item Picture always turns-on to quickly view the picture of the stock item.
-
-### Stock Item Search (F9)
-
-`View | Stock Item Search`
-
-This function is to quickly search for the items by entering a keyword. It is easy to apply the item found into the sales/purchase/stock documents.
-
-![17](../../../static/img/usage/general/tips-tricks/stock-item-search.png)
-
-`F9`
-
-1. Enter a keyword to search the item out.
-
-    ![18](../../../static/img/usage/general/tips-tricks/stock-item-search-step1.png)
-
-2. You can highlight multiple items.
-
-    ![19](../../../static/img/usage/general/tips-tricks/stock-item-search-step2.png)
-
-3. Drag and drop the items highlighted into the invoice detail grid.
-
-    ![20](../../../static/img/usage/general/tips-tricks/stock-item-search-step3.png)
-
-4. Items will be inserted into the invoice detail grid. See the screenshot below.
-
-    ![21](../../../static/img/usage/general/tips-tricks/stock-item-search-step4.png)
-
-Item Search always turns-on to search the item when creating the next document.
-
-### Advance Search (Ctrl+F)
-
-`Edit | Find`
-
-This function is to find record by selected field(s) and parameters....
-
-`Ctrl + F`
-
-![22](../../../static/img/usage/general/tips-tricks/advance-search.png)
-
-| Field Name | Properties |
-| --- | --- |
-| Display Fields | Fields to be displayed on the Result Screen |
-| Tick Button | Select all. |
-| Cross Button | Unselect all. |
-| Plus Button | Add Condition |
-| Minus Button | Remove Selected Condition |
-| Match any of the following | Is OR condition. Find ANY Match Value on the Selected Condition. |
-| Match all of the following | Is an AND condition. Find ALL Match Value on the Selected Condition. |
-| Fields | Available Field(s) can Search for. |
-| Operator | Type of Search. |
-| Check Box | Selected Conditions which need to run/execute. |
-| Value 1 | Parameter 1 or What to Value to Find. |
-| Value 2 | Parameter 2 or What to Value to find and only Available for Operators between and not between. |
-| Search | Apply or Search the Value. |
-| Clear | To Clear All Conditions(Default Action) or All Value. |
-| Case Sensitive | Tick if you want to find the value is Case Sensitive. |
 
 ## SQL Accounting Linking
 
@@ -339,7 +130,7 @@ Before wanted to Import/Post to SQL Accounting Database, below information/setti
     | Agent Code | Tools => Maintain Agent |
     | Area Code | Tools => Maintain Area |
     | Currency Code | Tools => Maintain Currency |
-    | Tax Code | Tools => Maintain Tax (if had GST) |
+    | Tax Code | Tools => Maintain Tax (if had SST / GST) |
 
 7. Below is Optional (i.e. if had post/import item code to SQL Accounting)
 
@@ -358,7 +149,7 @@ Before wanted to Import/Post to SQL Accounting Database, below information/setti
 
 ### Normal Used Table/Biz Object Name
 
-**Sales Side**
+#### Sales Side
 
 | Biz Object | Description |
 | --- | --- |
@@ -372,7 +163,7 @@ Before wanted to Import/Post to SQL Accounting Database, below information/setti
 | `AR_DN` | Customer Debit Note |
 | `AR_CN` | Customer Credit Note |
 
-**Purchase Side**
+#### Purchase Side
 
 | Biz Object | Description |
 | --- | --- |
@@ -423,8 +214,9 @@ It will be had 4 transactions
 
 4. RM100 by CreditCard - Post to `AR_PM`
 
-Pros : Easy to Edit or Delete the transactions
-Cons : Many Posting document
+**Pros** : Easy to Edit or Delete the transactions
+
+**Cons** : Many Posting document
 
 #### Method 2
 
@@ -436,8 +228,9 @@ It will be had 3 transactions
 
 3. RM100 by CreditCard - Post to `AR_PM`
 
-Pros : Less Posting document
-Cons :
+**Pros** : Less Posting document
+
+**Cons** :
 
 - Not Easy to Edit or Delete the transactions
 - Cash Sales OR number unable to override (i.e. System Auto set/assign)
@@ -457,7 +250,7 @@ Cons :
         - Sub Total for SR = 150.24 => Disc (150.24 \* 10%) = 15.02
         - Sub Total for ZR = 988.88 => Disc (988.88 \* 10%) = 98.89
 
-    0r
+    Or
 
         - Doc Discount = 113.91
         - Sub Total for SR = 150.24 => Disc ((150.24/1139.12) \* 113.91) = 15.02
@@ -494,12 +287,12 @@ If still prompt after above steps
 
 This happen due to
 
-The fieldname is not match with SQL Accounting (eg SQLAcc fieldname `UDF_Width` yr had call for `UDF_Weight`)
+The fieldname is not match with SQL Accounting (eg, SQLAcc fieldname `UDF_Width`, but you had call for `UDF_Weight`)
 
 1. Old version of SQL Acc Import program, try update the SQL Acc Import program
-2. The fieldname had the empty space at the beginning and/or end (norm happen if import from Excel) eg 'DocNo ' or ' DocNo' instead of 'DocNo
+2. The fieldname had the empty space at the beginning and/or end (norm happen if import from Excel) eg 'DocNo ' or ' DocNo' instead of 'DocNo'
 
-## SQL Accounitng Linking FAQ
+## SQL Accounting Linking FAQ
 
 ### Prompt Invalid class string, ProdID: "SQLAcc.BizApp" error while try to link to SQL Accounting
 
@@ -562,7 +355,7 @@ Below is the proper steps to do posting/import
 
 You can insert 2 or more rows(depend how many level you had) of item as negative unitprice.
 
-But as mention above **Extra Notes** proportion by sub total amt for mix tax code.
+But as mention above [**Extra Notes**](./tips-tricks.md#extra-notes) proportion by sub total amt for mix tax code.
 
 ### Can I do like this, DR Bank/Cash In hand/Debtor & CR Sales Account using Journal?
 
@@ -570,15 +363,13 @@ No. The correct Double Entry is as following
 
 - **Invoice/Cash Sales**
 
-DR Debtor
-
-CR Sales Account
+  - DR - Debtor
+  - CR - Sales Account
 
 - **Payment Received**
 
-DR Bank/Cash In Hand
-
-CR Debtor
+  - DR - Bank/Cash In Hand
+  - CR - Debtor
 
 ### Can I use just ADMIN ID to Import/Posting?
 
@@ -588,9 +379,7 @@ It adviceable to create Another ID with less Access Right
 
 ### Can SQL Accounting & External Program(eg POS) Import/Posting doing Stock Control in same time?
 
-Yes, but we Recommended External Program(eg POS) to do all the Stock Control if the External Program(eg POS)
-
-able to do all the report Required by the User.
+Yes, but we Recommended External Program(eg POS) to do all the Stock Control if the External Program(eg POS) able to do all the report Required by the User.
 
 Reason :
 
@@ -626,17 +415,13 @@ It advisable to ask the user to Request **Full Tax Invoice** from their supplier
 
 Below is example(suggest) how we post to Simplified Invoice from supplier
 
-![23](../../../static/img/usage/general/tips-tricks/exceed500.png)
+![exceed-500-1](../../../static/img/usage/general/tips-tricks/exceed500.png)
 
-![24](../../../static/img/usage/general/tips-tricks/exceed500-2.png)
-
-[[top]](#sql-accounting-linking)
+![exceed-500-2](../../../static/img/usage/general/tips-tricks/exceed500-2.png)
 
 ### Prompt could not convert variant of type (Null) into type (Integer) error while try to post (eg Invoice)
 
 Make sure the database you login is had Started the GST.
-
-[[top]](#sql-accounting-linking)
 
 ### How to post SR with 6% for issue document after 01 Jun 2018?
 
@@ -649,8 +434,6 @@ Add TaxRate Field Script/Code
 #### Solution 2
 
 Create New Tax SR tax code with 6%(eg SR6) in SQL Accounting
-
-[[top]](#sql-accounting-linking)
 
 **Is there any changes in Linking for the SST?**
 
@@ -676,13 +459,11 @@ New Field added
 |----------------|----------------|----------------|----------------|------------------|--------------|
 | **TARIFF** | String | 20 | C |  | Tariff or HS Code<br/>**Mandatory** – If posting to:<br/>- GL Payment Voucher & GL Official Receipt<br/>- Customer Invoice, Debit Note & Credit Note<br/>- Supplier Invoice, Debit Note & Credit Note<br/>- All Sales & Purchase Module without Item Code<br/>**Not Required** – If posting Sales & Purchase with Item Code |
 
-[[top]](#sql-accounting-linking)
-
 ### How to SQL Accounting handle if had Discount/Cash Voucher?
 
 You can treat the Discount/Cash Voucher as Part of item row but is in Negative UnitPrice
 
-![23](../../../static/img/usage/general/tips-tricks/disc.png)
+![disc](../../../static/img/usage/general/tips-tricks/disc.png)
 
 ### Begin 11 Oct 2019 the Company ROC/BRN will increase to 12 digit characters. Any changes in Linking?
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Tools Guide
-description: Maintenance
+description: Components and Functions in Tools
 slug: /usage/tools/guide
 tags: ["SQL Account", "Usage", "Tools"]
 ---
@@ -20,9 +20,9 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 4. Click Save. Your new user account is now created.
 
-    :::success info
+:::info info
     SQL User license is per concurrent basis (i.e. how many users can login to the system at the same time). This mean that if you have 5 staffs in the office who can access SQL but you only 3 license for 3 concurrent users, you can still maintain all 5 users in the system but only 3 users can login and access at the same time.
-    :::
+:::
 
 ### User Access Right
 
@@ -211,9 +211,9 @@ This is a **paid module**. Contact your SQL Service to get this standalone appli
 
 2. Setting on value to be adjust
 
-    :::note
+  :::info note
     Scenario: You are trying to reduce price due to removal of GST (6% > 0%)
-    :::
+  :::
 
     ![5](../../../static/img/usage/tools/tools-basic-guide/5b.png)
 
@@ -376,7 +376,7 @@ Customer Invoice **invoice billing in USD**, but **payment paid in your local RM
 
 #### Scenario 2
 
-:::note
+:::info note
 Customer Invoice **billing in USD, Payment paid in your Foreign USD Bank**
 
 *([Advance Currency](../../usage/tools/faq#advanced-currency-module) modules required)*
@@ -400,7 +400,7 @@ Customer Invoice **billing in USD, Payment paid in your Foreign USD Bank**
 
 #### Scenario 3
 
-:::note
+:::info note
 Customer Invoice **billing in USD**, but **payment in others currency** eg SGD / RMB / EURO
 :::
 
@@ -414,7 +414,7 @@ Customer Invoice **billing in USD**, but **payment in others currency** eg SGD /
 
 ## Maintain Project (Required Project Module)
 
-:::note
+:::info note
 This is an extra module , which means have to buy , may contact customer support to purchase.
 :::
 
@@ -458,7 +458,7 @@ This module allows the user to maintain the project accounting on a branch or de
 
    ![143](../../../static/img/usage/tools/tools-basic-guide/143.png)
 
-   :::note
+   :::info note
 
    6 Columns = up to 6 projects
 
@@ -540,14 +540,14 @@ For example : If we set Credit Limit over RM30,000 will required override
 
 4. Login **Gmail Address** that you set in maintain user **Open ID (Google)**
 
-    :::info[note]
+   :::info[note]
 
-    - This step is for those send by **whatsapp** and **not use Gmail** to receive notification
-    - Those use **Gmail Address** to receive notification and approve can jump to **Step 6**
+      - This step is for those send by **whatsapp** and **not use Gmail** to receive notification
+      - Those use **Gmail Address** to receive notification and approve can jump to **Step 6**
 
-    :::
+   :::
 
-    ![13](../../../static/img/usage/tools/tools-basic-guide/13.png)
+   ![13](../../../static/img/usage/tools/tools-basic-guide/13.png)
 
 5. Enter your Gmail Password
 
@@ -650,24 +650,20 @@ These **ALL** can use Online Approval for user :
 
        - **Senario 1 : Use Same Gmail to Receive Notification and Give Approval**
 
-            ```
             Your Gmail address is : `XXXXXX@gmail.com`
 
             1. Open ID (Google) : `XXXXXX@gmail.com`
             2. Email : **Left as blank**
-            ```
 
          ![5](../../../static/img/usage/tools/tools-basic-guide/51.png)
 
         - **Senario 2 : Use Different email to received notification and give approval**
 
-            ```
             - To Give Approval Gmail Address is : `XXXXXX@gmail.com`
             - To Received notification Address is : `XXXXXX@estream.com`
-            ```
 
-            1. Open ID (Google) : Put your gmail address XXXXXX@gmail.com
-            2. Email : XXXXXX@estream.com
+               1. Open ID (Google) : Put your gmail address `XXXXXX@gmail.com`
+               2. Email : `XXXXXX@estream.com`
 
           ![6](../../../static/img/usage/tools/tools-basic-guide/61.png)
 
@@ -846,27 +842,28 @@ end;
 
 ## Maintain Withholding Tax
 
-Menu : Tools | Maintain Withholding Tax...
+*Menu : Tools | Maintain Withholding Tax...*
 
 ### Create Withholding Tax Code
 
 1. Click New.
 2. Input the following data:
 
-| Field Name        | Explanation                                  | Remark                                                                 |
-|-------------------|----------------------------------------------|------------------------------------------------------------------------|
-| **Code**          | Set a code                                   | WTH-TAX15                                                              |
-| **Description**   | Describe the meaning/usage of this code       | Withholding Tax 15%                                                    |
-| **Tax Rate**      | Withholding Tax Rate                         | 15%                                                                    |
-| **Tax Account (DR)** | Set to Withholding Tax Expense account       | At GL\Maintain Account, create the Withholding Tax Expense account under **Expenses** |
-| **Tax Account (CR)** | Set to Withholding Tax Payable account       | At GL\Maintain Account, create the Withholding Tax Payable account under **Current Liabilities** |
+   | Field Name        | Explanation                                  | Remark                                                                 |
+   |-------------------|----------------------------------------------|------------------------------------------------------------------------|
+   | **Code**          | Set a code                                   | WTH-TAX15                                                              |
+   | **Description**   | Describe the meaning/usage of this code       | Withholding Tax 15%                                                    |
+   | **Tax Rate**      | Withholding Tax Rate                         | 15%                                                                    |
+   | **Tax Account (DR)** | Set to Withholding Tax Expense account       | At GL\Maintain Account, create the Withholding Tax Expense account under **Expenses** |
+   | **Tax Account (CR)** | Set to Withholding Tax Payable account       | At GL\Maintain Account, create the Withholding Tax Payable account under **Current Liabilities** |
 
-![withholding-tax](../../../static/img/usage/tools/tools-basic-guide/withholding-tax.jpg)
+   ![withholding-tax](../../../static/img/usage/tools/tools-basic-guide/withholding-tax.jpg)
+
 3. Click on Save.
 
 ## Maintain Company Category
 
-Menu: Tools | Maintain Company Category...
+*Menu: Tools | Maintain Company Category...*
 
 1. Company Category usually use to categorize the customer/supplier. For example, 3rd Parties-Domestic, 3rd Parties-Export, Intercompany, etc.
 2. It is very useful when you are try to apply the reports by Company Category.
@@ -876,7 +873,7 @@ Menu: Tools | Maintain Company Category...
 
 ### Create New Company CAtegory
 
-* Screenshot below is the Company Category entry form.
+- Screenshot below is the Company Category entry form.
 
 ![maintain-company-category-entry](../../../static/img/usage/tools/tools-basic-guide/maintain-company-category-entry.jpg)
 
@@ -1020,7 +1017,7 @@ Reports by Company Category
 
 ## Maintain Tariff
 
-Menu: Tools | Maintain Tariff...
+*Menu: Tools | Maintain Tariff...*
 
 - Tariff classification is a complex yet extremely important aspect of **cross-border trading**.
 
@@ -1043,9 +1040,9 @@ HS Codes are made of **6-digit numbers** that are recognized internationally, al
 
 ## Print Audit Trail
 
-- Menu: Tools | Print Audit Trail...
+*Menu: Tools | Print Audit Trail...*
 
-> All questions regarding who created, edited, or deleted the data, and when, can be answered through the Print Audit Trails. 
+> All questions regarding who created, edited, or deleted the data, and when, can be answered through the Print Audit Trails.
 
 ![audit-trail](../../../static/img/usage/tools/tools-basic-guide/audit-trail.jpg)
 
@@ -1067,8 +1064,8 @@ HS Codes are made of **6-digit numbers** that are recognized internationally, al
 
   Menu: Tools | Analyse Data Integrity...
 
-:::Warning NOTE:
-RUN Analyse Data Integrity ONLY when you have at least 1-3 hours for operations in company and SQL Account to be fully stop...
+:::warning
+RUN Analyse Data Integrity ONLY when you have at least **1-3 hours** for operations in company and SQL Account to be **fully stop**...
 :::
 
   To analyse the data integrity check. It is recommended to perform this action **weekly** or **monthly**
@@ -1117,7 +1114,7 @@ b. Reposting (Optional)
 
 </details>
 
-:::success NOTE:
+:::info NOTE:
 
 1. Reposting might took longer time to perform repost for the documents selected.
 
@@ -2189,7 +2186,7 @@ Below is Example are doing following actions
 
 ### Create new field (DIY Fields Module)
 
-:::note DIY Fields
+:::info DIY Fields
 This is a paid module.
 :::
 
@@ -2442,4 +2439,4 @@ Each time user Click the [Maintain DIY](#maintain-diy) it will prompt below dial
 Make sure you had keep few copy of QRCode as once you lost all we not able to retrieve back the Access ID
 :::
 
-> More Customisations at [SQL Control Center](../../usage/customisation/sqlControlCenter)
+> More Customisations at [SQL Control Center](/usage/customisation/sqlControlCenter)

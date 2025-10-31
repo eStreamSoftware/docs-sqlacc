@@ -44,7 +44,7 @@ Quick inquiry the ledger transactions for General Ledger, Sales Ledger (Customer
 
 ### Access Control in Account Inquiry
 
-Go to **[Tools | Maintain User...]**
+*Tools | Maintain User...*
 
 1. You can set the access control to the access to General, Sales and Purchase Ledger.
 
@@ -197,6 +197,8 @@ Quick access to:-
 ![sql-purchase-assistant](../../static/img/usage/inquiry/sql-purchase-assistant.jpg)
 
 ## SQL Power Search
+
+*Inquiry | SQL Power Search*
 
 A powerful search with keywords in the company database.
 

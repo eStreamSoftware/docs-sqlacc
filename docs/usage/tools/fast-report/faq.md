@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: FR3 FAQ
-description: How to do custom reports
+description: Frequently Asked Questions in fast report
 slug: /usage/tools/fast-report/faq
 tags: ["SQL Account", "Usage", "Tools"]
 ---
@@ -290,9 +290,9 @@ Make sure the **Paper Margin** for Top, Bottom, Left & Right not set to 0
 02. Adjust the **Height** to fit in 1 page
 03. Select **Apply to all pages**
 04. Click Ok
-05. Set the **Zoom** to <span style={{ color: "blue" }}>100%</span> and/or <span style={{ color: "blue" }}>Page Within </span>
+05. Set the **Zoom** to 100% and/or Page Within
 06. Click Print Icon
-07. Set **Print Mode** to <span style={{ color: "blue" }}> Scale</span> & **Print on Sheet** to <span style={{ color: "blue" }}> A4 </span>
+07. Set **Print Mode** to Scale & **Print on Sheet** to A4
 08. Click Ok to print
 
 ## 23. How to Load Notes/More Description to TfrRichView using script?
@@ -324,7 +324,7 @@ Try use **Export to Excel Table (XML)** option & untick the Option **WYSIWYG**
 
 ## 25. Special Display Format
 
-### Q1 : How if data is Zero(0) and I wanted to be printed as - and some space on the back?
+### How if data is Zero(0) and I wanted to be printed as - and some space on the back?
 
 A  : Just Enter as Follow code:-
 
@@ -332,7 +332,7 @@ A  : Just Enter as Follow code:-
     [FormatFloat(',0.00;-,0.00;-   ',<Main."Amount">)]
     ```
 
-### Q2 : How to set a given string as this 123456121234 to show as 123456-12-1234?
+### How to set a given string as this 123456121234 to show as 123456-12-1234?
 
 A  : Just Enter as Follow code:-
 
@@ -340,7 +340,7 @@ A  : Just Enter as Follow code:-
     [FormatMaskText('000000-00-0000;0;',<Employee."NewIC">)]
     ```
 
-### Q3 : How to set displayformat follow the option for Grand Total?
+### How to set displayformat follow the option for Grand Total?
 
 A  : Just Enter as Follow code:-
 
@@ -354,9 +354,9 @@ OR
     [FormatFloat(<Option."AccountingValueDisplayFormat">, SUM(<Main."TotalAmt">,MasterData1))]
     ```
 
-### Q4 : How to set displayformat BlankWhenZero or Hide Zeros if using FormatFloat function?
+### How to set displayformat BlankWhenZero or Hide Zeros if using FormatFloat function?
 
-A  : Just set the display format at <span style={{ color: "blue" }}>Tools | Options | Misc</span> to
+A  : Just set the display format at Tools | Options | Misc to
 
     ```pascal
     #,0.00;-#,0.00; ;
@@ -372,7 +372,7 @@ A  : Just Enter as Follow code :-
         SimpleRoundTo(<Document_Detail."Qty">*<Document_Detail."UnitPrice">,-2)), '')]
     ```
 
-### Q5. How to Set Current Date Time plus/minus N?
+### How to Set Current Date Time plus/minus N?
 
     ```sql
     procedure DBTxtTimeOnBeforePrint(Sender: TfrxComponent);
@@ -384,7 +384,7 @@ A  : Just Enter as Follow code :-
     end;
     ```
 
-### Q6. Page print count base on qty
+### Page print count base on qty
 
     ```pascal
     procedure Page1OnBeforePrint(Sender: TfrxComponent);
@@ -393,7 +393,7 @@ A  : Just Enter as Follow code :-
     end;
     ```
 
-## 26. How to use Line function?
+## How to use Line function?
 
 By default system will use **Line#** this will result as
 
@@ -459,7 +459,7 @@ Expected result:
     End;
     ```
 
-## 29. How to make sure my report export to Excel as less column usage as possible?
+## How to make sure my report export to Excel as less column usage as possible?
 
 - Below is the guideline
 
@@ -479,7 +479,7 @@ Expected result:
 - Untick **Auto Width**
 - Tick **Stretch to Max Height** (for Detail)
 
-## 30. Why when I export to PDF with Chinese Word become "tofu" or box box?
+## Why when I export to PDF with Chinese Word become "tofu" or box box?
 
 This is because default Font is Tahoma is not support Unicode Font
 
@@ -504,7 +504,7 @@ This is because default Font is Tahoma is not support Unicode Font
         TfrxBrushFill(DetailData1.Fill).BackColor := clSilver;
     ```
 
-## 33. How to Add QR Code for E-Invoicing?
+## How to Add QR Code for E-Invoicing?
 
 :::note Note :
 Only Available in Version 852 & above
@@ -539,7 +539,7 @@ Only Available in Version 852 & above
 
 :::
 
-## 33. How to show Document Number at every Page Footer?
+## How to show Document Number at every Page Footer?
 
 - Just add the script on procedure GroupHeader2OnBeforePrint
 
@@ -551,7 +551,7 @@ Only Available in Version 852 & above
     end;
          ```
 
-## 34. How to set A5 size to print on A4 paper?
+## How to set A5 size to print on A4 paper?
 
 ![dclick-onbeforeprint-settings](../../../../static/img/usage/tools/fast-report-faq/dclick-onbeforeprint-settings.jpg)
 
@@ -569,7 +569,7 @@ Might have problem if too many knock off which more then 1 page
 Height
 :::
 
-## 35. Customise Sales Debit Note Prompt Error after upgrade
+## Customise Sales Debit Note Prompt Error after upgrade
 
 - Error
 
@@ -579,7 +579,7 @@ Height
 
 ![disable-code-using-curlybracket](../../../../static/img/usage/tools/fast-report-faq/disable-code-using-curlybracket.jpg)
 
-## 36. How to Fix Report Tax Rate show A instead of 6% ?
+## How to Fix Report Tax Rate show A instead of 6% ?
 
 ![1](../../../../static/img/usage/tools/fast-report-faq/1.png)
 

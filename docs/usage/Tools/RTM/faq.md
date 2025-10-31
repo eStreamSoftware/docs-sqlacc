@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: RTM FAQ
-description: How to do custom reports
+description: Frequently Asked Questions in report builder
 slug: /usage/tools/rtm/faq
 tags: ["SQL Account", "Usage", "Tools"]
 ---
@@ -14,7 +14,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 2. Click on the place to be print/shown
 3. At the Properties for XXXXXX, look for Identity | UserName & change the Name you like (Only Alphanumeric & no spacing)
 
-## Why when Export to PDF format the Company Logo look "ugly"?
+## Why when Export to PDF format the Company Logo looks "ugly"?
 
 ![image-compression-level-1](../../../../static/img/usage/tools/rtm-faq/image-compression-level-1.jpg)
 

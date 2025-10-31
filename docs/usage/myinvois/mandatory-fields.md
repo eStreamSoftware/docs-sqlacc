@@ -52,7 +52,7 @@ Supplier info will be used for issuing self-billed E-Invoice.
 
     ![maintain-supplier-classification](../../../static/img/usage/myinvois/guide/maintain-supplier-classification.png)
 
-5. Click on **Tax** tab, and fill in supplier tax info according to [guide](#customer--supplier-tax-info).
+5. Click on **Tax** tab, and fill in supplier tax info according to [customer/supplier tax info](#customer--supplier-tax-info).
 
 ## Info Request in Maintain Customer/Supplier
 

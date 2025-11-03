@@ -6,13 +6,14 @@ slug: /usage/general-ledger/report
 tags: ["SQL Account", "Usage"]
 ---
 
-## Ledger Report
+## Print Ledger Report
 
 1. Go to **GL** > **Print Ledger Report** > Select your date
 2. Filter by account, project, area, agent (optional)
 3. Tick whether you want to view General Ledger, Sales Ledger(Customer) or Purchase Ledger (Supplier)
 4. System can generate by group and give you a summary of each group (group/sort by)
 5. In Option Upper Level
+
     1. **Merge GL Code for same document** – if you have the same account in one single transaction, the system will automatically merge, if you want to separate the account code for the same document, please un-tick.
     2. **Exclude Project when merging** – exclude project when merge GL Account.
     3. **Use second description** – use second description which is maintained under GL > Maintain Chart of Account
@@ -20,9 +21,10 @@ tags: ["SQL Account", "Usage"]
     5. **Include Zero Transaction** – choose to show accounts in the report even if there are 0 transactions.
     6. **Local Currency & Foreign Currency** – If you have foreign currency transactions, you can tick the foreign currency so that the system will show the figures in foreign currency compare versus local currency.
     7. **Apply**
+
 ![1](../../../static/img/usage/general-ledger/glreport/ledge-rpt.png)
 
-### Balance Sheet
+## Print Balance Sheet
 
 1. Go to **GL** > **Print Balance Sheet** > Select your date
 
@@ -50,7 +52,7 @@ tags: ["SQL Account", "Usage"]
 
 ![2](../../../static/img/usage/general-ledger/glreport/bal-sheet.png)
 
-### Profit & Loss Statement
+## Print Profit & Loss Statement
 
 1. Go to **GL** > **Print Profit and Loss Statement** > Select your date
 
@@ -76,7 +78,34 @@ tags: ["SQL Account", "Usage"]
 
    ![3](../../../static/img/usage/general-ledger/glreport/pnl-state.png)
 
-### Trial Balance
+## Print Profit & Loss Statement (Consolidation)
+
+- **Consolidation** is refer to the aggregation of financial statements of a group company as consolidated financial statements.
+- New add-on module name : **Financial Consolidation**.
+- **Quick summary** of setup the group of companies database list to be display in Profit & Loss Statement.
+
+   ![pnl-consolidate](../../../static/img/usage/general-ledger/glreport/pnl-consolidate.png)
+
+1. Tick Print Consolidate.
+
+   ![pnl-consolidate1](../../../static/img/usage/general-ledger/glreport/pnl-consolidate1.png)
+
+2. Select (tick) on the company name from different Groups of Companies.
+3. Click Apply.
+4. It will merge the financial data from the companies selected. Represent a Short Company Name for each companies.
+
+   ![pnl-consolidate2](../../../static/img/usage/general-ledger/glreport/pnl-consolidate2.png)
+
+:::info[TIPS]
+
+1. **Short Company Name** will be display in the grid column when you apply the Financial Consolidation.
+2. It can be defined in File | Company Profile... **(More tab)**.
+
+   ![pnl-consolidate3](../../../static/img/usage/general-ledger/glreport/pnl-consolidate3.png)
+
+:::
+
+## Print Trial Balance
 
 1. Go to **GL** > **Print Trial Balance** > Select your date
 

@@ -105,7 +105,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
 2. You can use the Group by/Sort by table to choose how you want to group your report listing
 
-![print-stock-reorder-advice6](../../../static/img/usage/stock/stock-report/print-stock-reorder-advice6.png)
+    ![print-stock-reorder-advice6](../../../static/img/usage/stock/stock-report/print-stock-reorder-advice6.png)
 
 ## Print Stock Physical Worksheet
 
@@ -117,7 +117,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
    ![70](../../../static/img/usage/stock/stock-report/stock-physical-worksheet.png)
 
-4. lick on Preview & choose your report format.
+4. Click on Preview & choose your report format.
 
    ![71](../../../static/img/usage/stock/stock-report/stock-physical-worksheet1.png)
 
@@ -141,7 +141,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
 8. Based on the stock keeper’s Stock Take Report, **fill in the actual physical quantity** in your warehouse into the Stock Adjustment **Physical Qty column**, the system will calculate the variance based on the Book Qty and apply a correction to the Qty column.
 
-   :::note
+   :::info
 
    **Book Qty** = Quantity that is recorded in system.
 
@@ -201,7 +201,9 @@ print-stock-card
 ## Print Stock Aging
 
 - Print Stock Aging is used to see how many quantities of a certain stock that you have on hand and how much quantity of that stock is sold
+
 print-stock-aging
+
    ![print-stock-aging](../../../static/img/usage/stock/stock-report/print-stock-aging.png)
 
 ### How to Print Stock Aging
@@ -217,7 +219,7 @@ print-stock-aging
 
     ![print-stock-aging3](../../../static/img/usage/stock/stock-report/print-stock-aging3.png)
 
-4. set stock aging type
+4. Set stock aging type
 
     ![print-stock-aging4](../../../static/img/usage/stock/stock-report/print-stock-aging4.png)
 

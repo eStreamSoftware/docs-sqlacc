@@ -273,7 +273,7 @@ Items default output tax previously ZRL are **successfully changed to SR**.
 
 ### How to Set Multiple Warehouse
 
-:::note Case studies
+:::info Case studies
 HQ is helping the KL branch to order goods and goods shall be sending to KL branch warehouse.
 :::
 
@@ -293,7 +293,7 @@ From the stock card report, you can see the item is store in two locations, one 
 
 ### How to Do Consignment
 
-:::note Case studies
+:::info Case studies
 A batch of goods is consigned to your customer side for selling without billing first, will only bill after they sell out the goods.
 :::
 
@@ -425,7 +425,7 @@ Reorder quantity is the point at which a business must buy more inventory as to 
 
 ![3](../../../static/img/usage/stock/stock-faq/stock-reorder/check-reorder-lvl.png)
 
-:::note
+:::info
 Criteria A : There have option :
 
 1. On Hand Qty
@@ -504,7 +504,7 @@ There are 3 methods to apply serial no :
 
     ![9](../../../static/img/usage/stock/stock-faq/stock-serial-no/serial-number-setup8.png)
 
-4. **Sales** > Delivery Order > Click Add.
+4. **Sales > Delivery Order > Click Add.**
 
     ![10](../../../static/img/usage/stock/stock-faq/stock-serial-no/serial-number-setup9.png)
 
@@ -515,7 +515,7 @@ There are 3 methods to apply serial no :
 
     ![10](../../../static/img/usage/stock/stock-faq/stock-serial-no/serial-number-setup10.png)
 
-:::note
+:::info
 Stock Adjustment does not support serial no. May using Stock Received and Stock Issue to replace .
 :::
 

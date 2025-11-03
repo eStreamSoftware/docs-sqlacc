@@ -52,17 +52,17 @@ A purchase order document contains the details (quantity, unit price) of the ite
 
 3. **Insert Item**
 
-   3a. **Insert Item Code and details** (e.g. Qty, Unit Cost)
+   1. **Insert Item Code and details** (e.g. Qty, Unit Cost)
 
-      :::note
+      :::info
 
       You can navigate the search column by using the “TAB” button on your keyboard. It will apply to all drop down tables.
 
       :::
 
-   3b. **Click on the show/hide/move column icon to customize your column layout**.
+   2. **Click on the show/hide/move column icon to customize your column layout**.
 
-   3c. If you want to key in for a discount amount, you may tick the discount field by following step 3b and update the discount field. You can key in multiple levels of discount as shown by the picture attached.
+   3. If you want to key in for a discount amount, you may tick the discount field by following step 3b and update the discount field. You can key in multiple levels of discount as shown by the picture attached.
 
 4. **Write a description to explain your purchase order**
 
@@ -160,7 +160,7 @@ Goods Received is a document that is issued after receiving the delivery as proo
 
 ### Notes - Landing Cost
 
-:::note
+:::info
 This is an additional module.
 :::
 
@@ -186,7 +186,7 @@ Follow the below image:
 
 ![formula-subtotal](../../../static/img/usage/purchase/guide/formula-subtotal.png)
 
-:::note
+:::info
 
    Item 1 = A/B * C
 
@@ -200,7 +200,7 @@ Follow the below image:
 
 ![stock-card-check-cost](../../../static/img/usage/purchase/guide/stock-card-check-cost.png)
 
-:::note
+:::info
 
    How to get unit cost = 5.51?
 
@@ -218,7 +218,7 @@ Follow the below image:
 
 ![formula-quantity](../../../static/img/usage/purchase/guide/formula-quantity.png)
 
-:::note
+:::info
 
    Item 1 : 10 / 11 * 200 = 181.81
 
@@ -228,7 +228,7 @@ Follow the below image:
 
 ***Stock Card Report Outcome:***
 
-:::note
+:::info
 
    *Item ANT : unit cost will be 23.18, how to get 23.18 ?
 
@@ -248,7 +248,7 @@ Follow the below image:
 
 ![formula-smallest-quantity](../../../static/img/usage/purchase/guide/formula-smallest-quantity.png)
 
-:::note
+:::info
 
    Item 1 : 10 * 12 = 120 / 121 = 198.35
 
@@ -258,7 +258,7 @@ Follow the below image:
 
 ***Stock Card Report Outcome***
 
-:::note
+:::info
 
    Item 1 : Unit cost for ANT = [Unit Price + (Item Landing Cost1 / Item Qty)] / ItemRate = [30 + (198.35 / 10)] / 12 = 4.15
 
@@ -282,9 +282,9 @@ You can key in the purchase invoice after your purchase order has been approved 
 
 3. **Insert Item**
 
-   3a. **Insert Item Code and details** (e.g. Qty, Unit Cost)
+   1. **Insert Item Code and details** (e.g. Qty, Unit Cost)
 
-   :::note
+   :::info
 
       You can navigate the search column by using the "TAB" button on your keyboard. It will apply to all drop down tables.
 
@@ -331,9 +331,9 @@ Cash purchases are used for purchases that are paid for with cash and have no ou
 
 3. **Insert Item**
 
-   3a. **Insert Item Code and details** (e.g. Qty, Unit Cost)
+   1. **Insert Item Code and details** (e.g. Qty, Unit Cost)
 
-   :::note
+   :::info
 
       You can navigate the search column by using the "TAB" button on your keyboard. It will apply to all drop down tables.
 

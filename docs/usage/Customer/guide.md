@@ -8,11 +8,11 @@ tags: ["SQL Account", "Usage", "Customer"]
 
 ## Customer Work Flow (Account Receivable)
 
-Example of **customer (AR)** process work flow aligned with SQL Account flow:
+Example of **Customer (AR)** process work flow aligned with SQL Account flow:
 
 ![42](../../../static/img/usage/customer/customerBasicGuide/42.png)
 
-AR = Account Receivable
+**AR = Account Receivable**.
 
 * To keep the customer profile data such as addresses, telephone, fax, email, contact person, credit limits, credit terms, etc. In other words, it is your customer contacts list.
 
@@ -20,9 +20,9 @@ AR = Account Receivable
 
 ## Create New Customer
 
-* Click the 'NEW' button.
+* Click the **NEW** button.
 
-1. Customer | Maintain Customer | New
+1. **Customer** | **Maintain Customer** | **New**
 
 2. Enter the customer’s name and other information accordingly.
 
@@ -36,11 +36,11 @@ AR = Account Receivable
 
 | **Field Name** | **Explanation & Properties** |
 |-----------------|------------------------------|
-| **Company** | • Input the customer billing company name. / • **Field type:** Alphanumerical / • **Length:** 100 |
-| **Description 2** (underline below *Company*) | • An optional field recommended to input Chinese translated name, former company name, company register no, etc. / • **Field type:** Alphanumerical / • **Length:** 100 |
-| **Control A/c** | • Select an appropriate Customer Control Account to be posted to GL when customer documents are created. / • **Field type:** Lookup from Maintain Accounts (Special Type: Customer Control Account) / • **Length:** 10 |
-| **Code** | • AUTO/MANUAL generate the Customer Code. / • **Field type:** Alphanumerical / • **Length:** 10 |
-| **Cust Category** | • Categorize your customer for reporting purpose. / • **Field type:** Lookup from Maintain Company Category / • **Length:** 15 |
+| **Company** | • Input the customer billing company name.<br />• **Field type:** Alphanumerical<br />• **Length:** 100 |
+| **Description 2** (underline below *Company*) | • An optional field recommended to input Chinese translated name, former company name, company register no, etc.<br />• **Field type:** Alphanumerical<br />• **Length:** 100 |
+| **Control A/c** | • Select an appropriate Customer Control Account to be posted to GL when customer documents are created.<br />• **Field type:** Lookup from Maintain Accounts (Special Type: Customer Control Account)<br />• **Length:** 10 |
+| **Code** | • AUTO/MANUAL generate the Customer Code.<br />• **Field type:** Alphanumerical<br />• **Length:** 10 |
+| **Cust Category** | • Categorize your customer for reporting purpose.<br />• **Field type:** Lookup from Maintain Company Category<br />• **Length:** 15 |
 
 ## Maintain Customer
 
@@ -50,52 +50,20 @@ AR = Account Receivable
 
 | **Field Name** | **Explanation & Properties** |
 |----------------|------------------------------|
-| **Branch Name** | • You may maintain multiple sets of addresses by differentiating the Branch Name.  
-Default Branch Name: BILLING
-Field type: Alphanumerical
-Length: 100 |
-| **Address (4 lines)** | • Input the company addresses.
-Field type: Alphanumerical
-Length: 40 (each line) |
-| **Attention** | • Input the contact person.
-Field type: Alphanumerical
-Length: 70 |
-| **Phone 1 & 2** | • Input the telephone number(s).
-Field type: Alphanumerical
-Length: 30 |
-| **Fax 1 & 2** | • Input the fax number(s).
-Field type: Alphanumerical
-Length: 30 |
-| **Email** | • Input the email address.
-Field type: Alphanumerical
-Length: 60 |
-| **Area** | • Select a default Area.
-Field type: Lookup from Maintain Area
-Length: 10 |
-| **Agent** | • Select a default Agent.
-Field type: Lookup from Maintain Agent
-Length: 10 |
-| **Currency** | • Select a default Currency.
-Field type: Lookup from Maintain Currency
-Length: 6 |
-| **Credit Terms** | • Select a default Terms.
-Field type: Lookup from Maintain Terms
-Length: 10 |
-| **Credit Limit** | • Set the credit limit (for non-Advance Credit Control module).
-Field type: Numeric |
-| **Statement** | • Select a default statement type: Open Item or Brought Forward.
-Brought Forward: Summary Statement
-Open Item: Detail Statement
-Field type: Option
-Default: Open Item |
-| **Aging On** | • Select a default Aging type: Invoice Date or Due Date.
-Invoice Date: based on IV Date
-Due Date: based on after due date (terms)
-Field type: Option
-Default: Invoice Date |
-| **Price Tag** | • Set the price tag to the items.
-Field type: Lookup from Maintain Stock Price Tag
-Length: 10 |
+| **Branch Name** | • You may maintain multiple sets of addresses by differentiating the Branch Name.<br />Default Branch Name: BILLING<br />**Field type:** Alphanumerical<br />**Length:** 100 |
+| **Address (4 lines)** | • Input the company addresses.<br />**Field type:** Alphanumerical<br />**Length:** 40 (each line) |
+| **Attention** | • Input the contact person.<br />**Field type:** Alphanumerical<br />**Length:** 70 |
+| **Phone 1 & 2** | • Input the telephone number(s).<br />**Field type:** Alphanumerical<br />**Length:** 30 |
+| **Fax 1 & 2** | • Input the fax number(s).<br />**Field type:** Alphanumerical<br />**Length:** 30 |
+| **Email** | • Input the email address.<br />**Field type:** Alphanumerical<br />**Length:** 60 |
+| **Area** | • Select a default Area.<br />**Field type:** Lookup from Maintain Area<br />**Length:** 10 |
+| **Agent** | • Select a default Agent.<br />**Field type:** Lookup from Maintain Agent<br />**Length:** 10 |
+| **Currency** | • Select a default Currency.<br />**Field type:** Lookup from Maintain Currency<br />**Length:** 6 |
+| **Credit Terms** | • Select a default Terms.<br />**Field type:** Lookup from Maintain Terms<br />**Length:** 10 |
+| **Credit Limit** | • Set the credit limit (for non-Advance Credit Control module).<br />**Field type:** Numeric |
+| **Statement** | • Select a default statement type: Open Item or Brought Forward.<br />**Brought Forward:** Summary Statement<br/>**Open Item:** Detail Statement<br />**Field type:** Option<br />**Default:** Open Item |
+| **Aging On** | • Select a default Aging type: Invoice Date or Due Date.<br />**Invoice Date:** based on IV Date<br />**Due Date:** based on after due date (terms)<br />**Field type:** Option<br />**Default:** Invoice Date |
+| **Price Tag** | • Set the price tag to the items.<br />**Field type:** Lookup from Maintain Stock Price Tag<br />**Length:** 10 |
 
 1. You can categorize your customers into different groups, e.g. Category, agents, area How do you create your new agent/ area? Refer to the step below:
 
@@ -127,32 +95,13 @@ Length: 10 |
 
 | **Field Name** | **Explanation & Properties** |
 |----------------|------------------------------|
-| **Account Open Date** | • Represents the creation date of the account.
-Field type: Date |
-| **Remark** | • A note that will appear in Inquiry | Account Inquiry.
-Example: "Check payment refer to Ms Lee (012-345 67890)".
-Field type: Alphanumerical
-Length: 80 |
-| **Reg No. (new)** | • Company’s new registration number.
-Field type: Alphanumerical
-Length: 80 |
-| **Reg No. (old)** | • Use the magnifying icon to search for the old registration number.
-Field type: Alphanumerical
-Length: 80 |
-| **Biz Nature** | • Customer’s business nature.
-Example: Chemical Manufacturing, Car Service, etc.
-Field type: Alphanumerical
-Length: 100 |
-| **Note** | • Used to record the customer knowledge base.
-Supports Date Stamp feature for tracking.
-Field type: Alphanumerical
-Length: Rich Text |
-| **Status** |Indicates the operational state of the customer account:
-- Active → Can create official documents and print Customer Statement.
-- Inactive → Cannot create official documents and cannot print Customer Statement.
-- Suspend → Cannot create official documents but can print Customer Statement.
-- Prospect → Can create official documents and print Customer Statement.
-- Pending → Can create official documents and print Customer Statement. |
+| **Account Open Date** | • Represents the creation date of the account.<br />**Field type:** Date |
+| **Remark** | • A note that will appear in Inquiry → Account Inquiry.<br />**Example:** "Check payment refer to Ms Lee (012-345 67890)".<br />**Field type:** Alphanumerical<br />**Length:** 80 |
+| **Reg No. (new)** | • Company’s new registration number.<br />**Field type:** Alphanumerical<br />**Length:** 80 |
+| **Reg No. (old)** | • Use the magnifying icon to search for the old registration number.<br />**Field type:** Alphanumerical<br />**Length:** 80 |
+| **Biz Nature** | • Customer’s business nature.<br />**Example:** Chemical Manufacturing, Car Service, etc.<br />**Field type:** Alphanumerical<br />**Length:** 100 |
+| **Note** | • Used to record the customer knowledge base.<br />Supports **Date Stamp** feature for tracking.<br />**Field type:** Alphanumerical<br />**Length:** Rich Text |
+| **Status** | • Indicates the operational state of the customer account:<br />- **Active** → Can create official documents and print Customer Statement.<br />- **Inactive** → Cannot create official documents and cannot print Customer Statement.<br />- **Suspend** → Cannot create official documents but can print Customer Statement.<br />- **Prospect** → Can create official documents and print Customer Statement.<br />- **Pending** → Can create official documents and print Customer Statement. |
 
 ### Tax
 
@@ -164,12 +113,8 @@ Length: Rich Text |
 | **Tax Area** | • Not applicable to Malaysia/Singapore. |
 | **Sales Tax Area** | • Enter the company’s Sales Tax Number. |
 | **Service Tax Area** | • Enter the company’s Service Tax Number. |
-| **Exemption No** | • Input the Sales Tax Exemption number received from customer.|
-**Field type:** Alphanumerical
-**Length:** 50 |
-| **Expiry Date** | • Set the expiry date for tax exemption.|
-• The customer will be tax exempted before the expiry date.
-**Field type:** Date |
+| **Exemption No** | • Input the Sales Tax Exemption number received from customer.<br />**Field type:** Alphanumerical<br />**Length:** 50 |
+| **Expiry Date** | • Set the expiry date for tax exemption.<br />• The customer will be tax exempted before the expiry date.<br />**Field type:** Date |
 
 ### Tariff Code Setting
 
@@ -177,17 +122,10 @@ Length: Rich Text |
 
 | **Field Name** | **Explanation & Properties** |
 |-----------------|------------------------------|
-| **Tariff** | • Add tariff code of taxable goods to be sold in exemption.
-* You can find your tariff code at [https://ezhs.customs.gov.my/](https://ezhs.customs.gov.my/)
-* **Lookup:** Maintain Tariff
-* **Related Topic:** Maintain Stock Item#Main_Header |
-| **Tax** | * Select an appropriate tax code that falls under the Person Exempted in Schedule A, B, and C.
-* **Schedule A tax code:** SE
-* **Schedule B tax code:** SEB
-* **Schedule C tax codes:** SEC1, SEC2, SEC3, SEC4, SEC5
-* **Lookup:** Maintain Tax |
+| **Tariff** | • Add tariff code of taxable goods to be sold in exemption.<br />• You can find your tariff code at [https://ezhs.customs.gov.my/](https://ezhs.customs.gov.my/)<br />**Lookup:** Maintain Tariff<br />**Related Topic:** Maintain Stock Item#Main_Header |
+| **Tax** | • Select an appropriate tax code that falls under the Person Exempted in Schedule A, B, and C.<br />**Schedule A tax code:** SE<br />**Schedule B tax code:** SEB<br />**Schedule C tax codes:** SEC1, SEC2, SEC3, SEC4, SEC5<br />**Lookup:** Maintain Tax |
 
-* Press 'SAVE' button once you are done
+* Press **SAVE** button once you are done
 
 After Saving, you should see all your customer's information on this screen
 
@@ -270,13 +208,13 @@ Can be applied to the following document types:
 | Exceed Overdue Limit  | Override | PASSWORD REQUIRED   |
 
 :::note
->Unblock – No restrictions
+>**Unblock** – No restrictions
 >
->Block – Blocked for all users
+>**Block** – Blocked for all users
 >
->Override – Certain users which have access rights can key in their username & password to override.
+>**Override** – Certain users which have access rights can key in their username & password to override.
 >
->Suspended – Blocked with suspended message
+>**Suspended** – Blocked with suspended message
 >
 :::
 
@@ -295,7 +233,7 @@ The difference between Customer Invoice and Sales Invoice:
 
 |**Customer Invoice**| **Sales Invoice**|
 |---|---|
-|shows only the accounts code and does not show Qty / Unit Price.| linked to the stock and account modules. Hence, we advise users who need to key in stock items to use Sales Invoice. Once the information in the Sales Invoice is updated, the information in the Customer Invoice will automatically be updated by the system.|
+|• Shows only the accounts code and does not show Qty / Unit Price.| • Linked to the stock and account modules. Hence, we advise users who need to key in stock items to use Sales Invoice. Once the information in the Sales Invoice is updated, the information in the Customer Invoice will automatically be updated by the system.|
 
 ![custInvoiceEntry](../../../static/img/usage/customer/customerBasicGuide/cust-invoice-entry.png)
 
@@ -385,29 +323,29 @@ You can use this document to refund a customer. You can knock off with Customer 
 
 ## Customer Contra
 
-If you have a customer who is also a supplier, you may want to offset the outstanding customer and supplier invoices. This is known as a contra entry. You can offset the two invoices by using Customer Contra and Supplier Contra. This means that when you record the invoices as being paid, it will not affect your current bank account balance.
+If you have a customer who is also a supplier, you may want to offset the outstanding customer and supplier invoices. This is known as a **contra entry**. You can offset the two invoices by using Customer Contra and Supplier Contra. This means that when you record the invoices as being paid, it will not affect your current bank account balance.
 
-**Scenario:**
-
-**If you have an outstanding sales invoice for RM200 and a purchase invoice for RM150 for the same customer or company, the actual amount owed to you is RM50 and the contra entry amount is RM150.**
+>**Scenario:**
+>
+>If you have an outstanding sales invoice for RM200 and a purchase invoice for RM150 for the same customer or company, the actual amount owed to you is RM50 and the contra entry amount is RM150.
 
 ### Make sure you have a valid `Contra Account`
 
-1. Tools | Options
+1. **Tools** | **Options**
 
     ![1](../../../static/img/usage/customer/customerBasicGuide/1.png)
 
-2. General Ledger | make sure you had chosen a valid Contra Account
+2. **General Ledger** | make sure you had chosen a valid Contra Account
 
     ![2](../../../static/img/usage/customer/customerBasicGuide/2.png)
 
 ### Contra Entry
 
-   1. Go Customer | Customer Contra
+   1. Go **Customer** | **Customer Contra**
 
       ![3](../../../static/img/usage/customer/customerBasicGuide/3.png)
 
-   2. Press on NEW
+   2. Press on **NEW**
 
       ![4](../../../static/img/usage/customer/customerBasicGuide/4.png)
 
@@ -417,7 +355,7 @@ If you have a customer who is also a supplier, you may want to offset the outsta
 
         2c. Knock off your Invoice
 
-        2d. Press on SAVE Button
+        2d. Press on **SAVE** Button
 
         ![5](../../../static/img/usage/customer/customerBasicGuide/5.png)
 
@@ -429,13 +367,13 @@ If you have a customer who is also a supplier, you may want to offset the outsta
 
     ![7](../../../static/img/usage/customer/customerBasicGuide/7.png)
 
-      4a. Select your Supplier
+      4a. Select your **Supplier**
 
       4b. Enter Contra Amount (Must be same as Customer Contra Amount)
 
       4c. Knock off your Supplier Invoice
 
-      4d. Press on SAVE Button
+      4d. Press on **SAVE** Button
 
       ![8](../../../static/img/usage/customer/customerBasicGuide/8.png)
 

@@ -65,15 +65,15 @@ Tick relevant check boxes.
 
     |**Field Name**| **Explanation**|
     |---|---|
-    |Print Outstanding Item | Tick this include documents and items that have not been transferred to other documents|
-    |Print Fulfilled Item | Tick this include documents and items that have already been transferred to other documents|
+    |Print Outstanding Item | Tick this to include documents and items that have not been transferred to other documents|
+    |Print Fulfilled Item | Tick this to include documents and items that have already been transferred to other documents|
     |Include Cancelled Document | Tick this checkbox to include cancelled documents in the listing|
 
 5. Press Apply Button
 
 6. Click Preview
 
-    - Example of oustanding job order listing report.
+    - Example of outstanding job order listing report.
 
         ![outstanding-job-order-listing-report](../../../static/img/usage/production/report/outstanding-job-order-listing-report.png)
 
@@ -121,7 +121,7 @@ Tick relevant check boxes.
 
     |**Field Name** | **Explanation**|
     |---|---|
-    |Print Document Style| Tick this print all documents in this list as individual documents|
+    |Print Document Style| Tick this to print all documents in this list as individual documents|
     |Include Cancelled Document | Tick this checkbox to include cancelled documents in the listing|
 
     ![bom-listing-print-document-style](../../../static/img/usage/production/report/bom-listing-print-document-style.png)
@@ -186,7 +186,7 @@ Tick relevant check boxes.
 
     ![bom-wastage](../../../static/img/usage/production/report/bom-wastage.png)
 
-2. Set the date period, and select if you want to se Stock Assembly or Stock disassembly
+2. Set the date period, and select if you want to see Stock Assembly or Stock disassembly
 
     ![bom-wastage-select-date-range](../../../static/img/usage/production/report/bom-wastage-select-date-range.png)
 

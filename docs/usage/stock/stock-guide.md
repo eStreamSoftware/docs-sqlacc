@@ -534,7 +534,7 @@ Watch tutorial video here: [youtube](https://www.youtube.com/watch?v=uEbCRAftQ4A
 
 8. Based on the stock keeper’s Stock Take Report, **fill in the actual physical quantity** in your warehouse into the Stock Adjustment **Physical Qty column**, the system will calculate the variance based on the Book Qty and apply a correction to the Qty column.
 
-   :::note
+   :::info
 
    **Book Qty** = Quantity that is recorded in system.
 

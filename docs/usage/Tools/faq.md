@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: Tools FAQ
-description: Tools Related FAQ
+description: Frequently Asked Questions in Tools
 slug: /usage/tools/faq
 tags: ["SQL Account", "Usage", "Tools","Currency","Module"]
 ---
@@ -272,6 +272,6 @@ Go to tools > Maintain Payment Method
 
 ![5](../../../static/img/usage/tools/tools-faq/5e.png)
 
-:::note
+:::info note
 vice versa for Official Receipt
 :::

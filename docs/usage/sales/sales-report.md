@@ -40,7 +40,7 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
    :::info
 
-   Watch tutorial video here: [Sales Invoicing Batch Print Invoices](ttps://www.youtube.com/watch?v=MbNMVn0mBiw&feature=youtu.be)
+   Watch tutorial video here: [Sales Invoicing Batch Print Invoices](https://www.youtube.com/watch?v=MbNMVn0mBiw&feature=youtu.be)
 
    :::
 

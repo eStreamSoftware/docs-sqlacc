@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: FR3 Guide
-description: How to do custom reports 
+description: How to do custom reports in fast report
 slug: /usage/tools/fast-report/guide
 tags: ["SQL Account", "Usage", "Tools"]
 ---
@@ -1321,498 +1321,498 @@ end;
 
 ## Fast Report - E-Mail Client (Batch) & E-Mail (Native)
 
-<details>
-  <summary>E-Mail Client (Batch) & E-Mail (Native) - click to expand</summary>
-
-By default we got **3** types of Export to E Mail for Fast Report
-
-E-Mail Client
-
-- Pros
-
-  - User still can change the E-Mail address, Subject & body (E-Mail Content) before Sent
-  - Send E-Mail will keep in the Client E-Mail
-  - Support HTML format
-  - Can Attach more then 1 format
-  - Can use without E-Mail Script
-
-- Cons
-
-  - Not easy to setup
-  - Only For Single Document E-Mail
-  - Attachment only Support pdf, Excel & HTML format
-
-E-Mail Client (Batch)
-
-- Pros
-  - Can use for Batch & Single Document E-Mail
-  - Send E-Mail will keep in the Client E-Mail
-
-- Cons
-
-  - Not easy to setup
-  - Only support pdf attachment
-  - E-Mail Content only support plain text
-  - User can't change the E-Mail address, Subject & body (E-Mail Content) before Sent
-  - Must load the E-Mail Script
-
-E-Mail (Native)
-
-- Pros
-
-  - Easy to Setup
-  - Support many attachment format
-  - User still can change the E-Mail address, Subject & body (E-Mail Content) before Sent
-  - Can use without E-Mail Script
-
-- Cons
-
-  - No record is keeped for Sended E-Mail
-  - Only For Single Document E-Mail
-  - E-Mail Content only support plain text
-  - Only support Single Attachment
-
-### Requirements
-
-- Fast Report
-- Client E-Mail (eg Mozilla Thunderbird-Recommended) for E-Mail Client & E-Mail Client (Batch) Only
-- An E-Mail Account (eg GMail)
-- SQL Accounting Version 731 & above
-
-### Setting
-
-Below is example using Sales Invoice
-
-![batch-email](../../../../static/img/usage/tools/fastReport-basicGuide/batch-email.jpg)
-
-1. Click the Code Tab
-2. Enter below Script at the First line
-
   <details>
-    <summary>E-Mail Script 1 (Last Script Update : 21 Apr 2016) - click to expand</summary>
+    <summary>E-Mail Client (Batch) & E-Mail (Native) - click to expand</summary>
 
-  ```pascal
-  //const MaxInt = 2147483647;
-  var lSQL : String;
+  By default we got **3** types of Export to E Mail for Fast Report
 
-  function StringReplace(const S, OldPattern, NewPattern: string;
-    iReplaceAll: boolean=true; iIgnoreCase :boolean=true): string;
-  var
-    SearchStr, Patt, NewStr: string;
-    Offset: Integer;
-  begin
-  // Usage StringReplace(<Main."DOB">,'/','')
-    if iIgnoreCase then begin
-      SearchStr := UpperCase(S);
-      Patt := UpperCase(OldPattern);
-    end else begin
-      SearchStr := S;
-      Patt := OldPattern;
-    end;
-    NewStr := S;
-    Result := '';
-    while SearchStr <> '' do begin
-      Offset := Pos(Patt, SearchStr);
-      if Offset = 0 then begin
-        Result := Result + NewStr;
-        Break;
-      end;
-      Result := Result + Copy(NewStr, 1, Offset - 1) + NewPattern;
-      NewStr := Copy(NewStr, Offset + Length(OldPattern), MaxInt);
-      if not iReplaceAll then begin
-        Result := Result + NewStr;
-        Break;
-      end;
-      SearchStr := Copy(SearchStr, Offset + Length(Patt), MaxInt);
-    end;
-  end;
+  E-Mail Client
 
-  procedure GetEMailTpl;
-  var D  : TfrxDataSet;
-    lFN : String;
-  begin
-    lFN := Trim(Report.ReportOptions.Name);
-    lFN := StringReplace(lFN,'.fr3','');
-    D := Report.GetDataSet('plEMailTpl');
-    D.First;
-    While not D.Eof do begin
-      if Trim(D.Value('ReportName')) = lFN then
-        Break;
-      D.Next;
-    end;
-  end;
+  - Pros
 
-  function GetFldInfo(const AStr:String):String;
-  var D : TfrxDataSet;
-      nStr : String;
-      lSL,lPL : TStringList;
-      i, j : integer;
-  begin
-    nStr := AStr;
-    lSL := TStringList.Create;
-    lPL := TStringList.Create;
-    with lPL do begin //Available Pipeline
-      Add('Main');
-      Add('Profile');
-    end;
-    try
-      for j:=0 to lPL.Count -1 do begin
-        D := Report.GetDataSet(lPL[j]);
-        D.GetFieldList(lSL);
-        for i:=0 to lSL.Count -1 do begin
-          if D.IsBlobField(lSL[i]) then
-            nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.Value(lSL[i])) else
-          nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.DisplayText(lSL[i]));
+    - User still can change the E-Mail address, Subject & body (E-Mail Content) before Sent
+    - Send E-Mail will keep in the Client E-Mail
+    - Support HTML format
+    - Can Attach more then 1 format
+    - Can use without E-Mail Script
+
+  - Cons
+
+    - Not easy to setup
+    - Only For Single Document E-Mail
+    - Attachment only Support pdf, Excel & HTML format
+
+  E-Mail Client (Batch)
+
+  - Pros
+    - Can use for Batch & Single Document E-Mail
+    - Send E-Mail will keep in the Client E-Mail
+
+  - Cons
+
+    - Not easy to setup
+    - Only support pdf attachment
+    - E-Mail Content only support plain text
+    - User can't change the E-Mail address, Subject & body (E-Mail Content) before Sent
+    - Must load the E-Mail Script
+
+  E-Mail (Native)
+
+  - Pros
+
+    - Easy to Setup
+    - Support many attachment format
+    - User still can change the E-Mail address, Subject & body (E-Mail Content) before Sent
+    - Can use without E-Mail Script
+
+  - Cons
+
+    - No record is keeped for Sended E-Mail
+    - Only For Single Document E-Mail
+    - E-Mail Content only support plain text
+    - Only support Single Attachment
+
+  ### Requirements
+
+  - Fast Report
+  - Client E-Mail (eg Mozilla Thunderbird-Recommended) for E-Mail Client & E-Mail Client (Batch) Only
+  - An E-Mail Account (eg GMail)
+  - SQL Accounting Version 731 & above
+
+  ### Setting
+
+  Below is example using Sales Invoice
+
+  ![batch-email](../../../../static/img/usage/tools/fastReport-basicGuide/batch-email.jpg)
+
+  1. Click the Code Tab
+  2. Enter below Script at the First line
+
+      <details>
+        <summary>E-Mail Script 1 (Last Script Update : 21 Apr 2016) - click to expand</summary>
+
+      ```pascal
+      //const MaxInt = 2147483647;
+      var lSQL : String;
+
+      function StringReplace(const S, OldPattern, NewPattern: string;
+        iReplaceAll: boolean=true; iIgnoreCase :boolean=true): string;
+      var
+        SearchStr, Patt, NewStr: string;
+        Offset: Integer;
+      begin
+      // Usage StringReplace(<Main."DOB">,'/','')
+        if iIgnoreCase then begin
+          SearchStr := UpperCase(S);
+          Patt := UpperCase(OldPattern);
+        end else begin
+          SearchStr := S;
+          Patt := OldPattern;
+        end;
+        NewStr := S;
+        Result := '';
+        while SearchStr <> '' do begin
+          Offset := Pos(Patt, SearchStr);
+          if Offset = 0 then begin
+            Result := Result + NewStr;
+            Break;
+          end;
+          Result := Result + Copy(NewStr, 1, Offset - 1) + NewPattern;
+          NewStr := Copy(NewStr, Offset + Length(OldPattern), MaxInt);
+          if not iReplaceAll then begin
+            Result := Result + NewStr;
+            Break;
+          end;
+          SearchStr := Copy(SearchStr, Offset + Length(Patt), MaxInt);
         end;
       end;
-      Result := nStr;
-    finally
-      lSL.Free;
-      lPL.Free;
-    end;
-  end;
 
-  //For E-Mail Client (Batch)
-  procedure OnGetEmailSettings(EmailSettings: TStrings);
-  var vEmail, vName: Variant;
-  begin
-    GetEMailTpl;
-    vEmail := Trim(<Document_CompanyBranch."Email">);
-    vName := Trim(<Main."CompanyName">);
-
-    if (vName <> '' ) and (vEmail <> '') then begin
-      EmailSettings.Values['Recipients'] := vEmail;
-      EmailSettings.Values['Subject']    := GetFldInfo(<plEMailTpl."Subject">);
-      EmailSettings.Values['Body']       := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
-    end;
-    //ID uses for display on progress dialog
-    EmailSettings.Values['ID']        := vName;
-  end;
-
-  //For E-Mail (Native)
-  function SQL_Email_GetInfo(Info: Integer): string;
-  var vEmail, vName: Variant;
-  begin
-    GetEMailTpl;
-    Result := '';
-    vEmail := Trim(<Document_CompanyBranch."Email">);
-    vName := Trim(<Main."CompanyName">);
-
-    if (vName <> '' ) and (vEmail <> '') then begin
-      case Info of
-        SQL_Email_Address: Result := vEmail;
-        SQL_Email_Subject: Result := GetFldInfo(<plEMailTpl."Subject">);
-        SQL_Email_Content: Result := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
-      end;
-    end;
-  end;
-  ```
-
-  </details>
-
-  <details>
-    <summary>E-Mail Script 2 (Last Script Update : 22 Dec 2017) - click to expand</summary>
-
-    ```pascal
-    //const MaxInt = 2147483647; // Only Available in Version 752 & above
-    var lSQL : String;
-
-    function StringReplace(const S, OldPattern, NewPattern: string;
-      iReplaceAll: boolean=true; iIgnoreCase :boolean=true): string;
-    var
-      SearchStr, Patt, NewStr: string;
-      Offset: Integer;
-    begin
-    // Usage StringReplace(<Main."DOB">,'/','')
-      if iIgnoreCase then begin
-        SearchStr := UpperCase(S);
-        Patt := UpperCase(OldPattern);
-      end else begin
-        SearchStr := S;
-        Patt := OldPattern;
-      end;
-      NewStr := S;
-      Result := '';
-      while SearchStr <> '' do begin
-        Offset := Pos(Patt, SearchStr);
-        if Offset = 0 then begin
-          Result := Result + NewStr;
-          Break;
+      procedure GetEMailTpl;
+      var D  : TfrxDataSet;
+        lFN : String;
+      begin
+        lFN := Trim(Report.ReportOptions.Name);
+        lFN := StringReplace(lFN,'.fr3','');
+        D := Report.GetDataSet('plEMailTpl');
+        D.First;
+        While not D.Eof do begin
+          if Trim(D.Value('ReportName')) = lFN then
+            Break;
+          D.Next;
         end;
-        Result := Result + Copy(NewStr, 1, Offset - 1) + NewPattern;
-        NewStr := Copy(NewStr, Offset + Length(OldPattern), MaxInt);
-        if not iReplaceAll then begin
-          Result := Result + NewStr;
-          Break;
+      end;
+
+      function GetFldInfo(const AStr:String):String;
+      var D : TfrxDataSet;
+          nStr : String;
+          lSL,lPL : TStringList;
+          i, j : integer;
+      begin
+        nStr := AStr;
+        lSL := TStringList.Create;
+        lPL := TStringList.Create;
+        with lPL do begin //Available Pipeline
+          Add('Main');
+          Add('Profile');
         end;
-        SearchStr := Copy(SearchStr, Offset + Length(Patt), MaxInt);
+        try
+          for j:=0 to lPL.Count -1 do begin
+            D := Report.GetDataSet(lPL[j]);
+            D.GetFieldList(lSL);
+            for i:=0 to lSL.Count -1 do begin
+              if D.IsBlobField(lSL[i]) then
+                nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.Value(lSL[i])) else
+              nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.DisplayText(lSL[i]));
+            end;
+          end;
+          Result := nStr;
+        finally
+          lSL.Free;
+          lPL.Free;
+        end;
       end;
-    end;
 
-    procedure GetEMailTpl;
-    var D  : TfrxDataSet;
-      lFN : String;
-    begin
-      lFN := Trim(Report.ReportOptions.Name);
-      lFN := StringReplace(lFN,'.fr3','');
-      D := Report.GetDataSet('plEMailTpl');
-      D.First;
-      While not D.Eof do begin
-        if Trim(D.Value('ReportName')) = lFN then
-          Break;
-        D.Next;
+      //For E-Mail Client (Batch)
+      procedure OnGetEmailSettings(EmailSettings: TStrings);
+      var vEmail, vName: Variant;
+      begin
+        GetEMailTpl;
+        vEmail := Trim(<Document_CompanyBranch."Email">);
+        vName := Trim(<Main."CompanyName">);
+
+        if (vName <> '' ) and (vEmail <> '') then begin
+          EmailSettings.Values['Recipients'] := vEmail;
+          EmailSettings.Values['Subject']    := GetFldInfo(<plEMailTpl."Subject">);
+          EmailSettings.Values['Body']       := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
+        end;
+        //ID uses for display on progress dialog
+        EmailSettings.Values['ID']        := vName;
       end;
-    end;
 
-    function GetPassword:String;
-    begin
-      if Trim(<Document_Company."Remark">) <> '' then
-        Result := <Document_Company."Remark"> else
-        Result := <plEMailTpl."PDFPassWord">;
-    end;
+      //For E-Mail (Native)
+      function SQL_Email_GetInfo(Info: Integer): string;
+      var vEmail, vName: Variant;
+      begin
+        GetEMailTpl;
+        Result := '';
+        vEmail := Trim(<Document_CompanyBranch."Email">);
+        vName := Trim(<Main."CompanyName">);
 
-    function GetFldInfo(const AStr:String):String;
-    var D : TfrxDataSet;
-        nStr : String;
-        lSL,lPL : TStringList;
-        i, j : integer;
-    begin
-      nStr := AStr;
-      lSL := TStringList.Create;
-      lPL := TStringList.Create;
-      with lPL do begin //Available Pipeline
-        Add('Main');
-        Add('Profile');
-        Add('plEMailTpl');
-      end;
-      try
-        for j:=0 to lPL.Count -1 do begin
-          D := Report.GetDataSet(lPL[j]);
-          D.GetFieldList(lSL);
-          for i:=0 to lSL.Count -1 do begin
-            if D.IsBlobField(lSL[i]) then
-              nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.Value(lSL[i])) else
-            nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.DisplayText(lSL[i]));
+        if (vName <> '' ) and (vEmail <> '') then begin
+          case Info of
+            SQL_Email_Address: Result := vEmail;
+            SQL_Email_Subject: Result := GetFldInfo(<plEMailTpl."Subject">);
+            SQL_Email_Content: Result := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
           end;
         end;
-        Result := nStr;
-      finally
-        lSL.Free;
-        lPL.Free;
       end;
-    end;
+      ```
 
-    //For E-Mail Client (Batch)
-    procedure OnGetEmailSettings(EmailSettings: TStrings);
-    var vEmail, vName: Variant;
-    begin
-      GetEMailTpl;
-      vEmail := Trim(<Document_CompanyBranch."Email">);
-      vName  := Trim(<Main."CompanyName">);
+      </details>
 
-      if (vName <> '' ) and (vEmail <> '') then begin
-        EmailSettings.Values['Recipients']  := vEmail;
-        EmailSettings.Values['CC']          := <plEMailTpl."CC">;
-        EmailSettings.Values['BCC']         := <plEMailTpl."BCC">;
-        EmailSettings.Values['Subject']     := GetFldInfo(<plEMailTpl."Subject">);
-        EmailSettings.Values['Body']        := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
-        if Trim(<plEMailTpl."PDFFileName">) <> '' then
-          EmailSettings.Values['FileName']    := GetFldInfo(<plEMailTpl."PDFFileName">);
-        if Trim(GetPassword) <> '' then
-          EmailSettings.Values['PDFPassword'] := GetPassword;
-      end;
-      //ID uses for display on progress dialog
-      EmailSettings.Values['ID']        := vName;
-    end;
+      <details>
+        <summary>E-Mail Script 2 (Last Script Update : 22 Dec 2017) - click to expand</summary>
 
-    //For E-Mail (Native)
-    function SQL_Email_GetInfo(Info: Integer): string;
-    var vEmail, vName: Variant;
-    begin
-      GetEMailTpl;
-      Result := '';
-      vEmail := Trim(<Document_CompanyBranch."Email">);
-      vName := Trim(<Main."CompanyName">);
+        ```pascal
+        //const MaxInt = 2147483647; // Only Available in Version 752 & above
+        var lSQL : String;
 
-      if (vName <> '' ) and (vEmail <> '') then begin
-        case Info of
-          SQL_Email_Address: Result := vEmail;
-          SQL_Email_Subject: Result := GetFldInfo(<plEMailTpl."Subject">);
-          SQL_Email_Content: Result := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
+        function StringReplace(const S, OldPattern, NewPattern: string;
+          iReplaceAll: boolean=true; iIgnoreCase :boolean=true): string;
+        var
+          SearchStr, Patt, NewStr: string;
+          Offset: Integer;
+        begin
+        // Usage StringReplace(<Main."DOB">,'/','')
+          if iIgnoreCase then begin
+            SearchStr := UpperCase(S);
+            Patt := UpperCase(OldPattern);
+          end else begin
+            SearchStr := S;
+            Patt := OldPattern;
+          end;
+          NewStr := S;
+          Result := '';
+          while SearchStr <> '' do begin
+            Offset := Pos(Patt, SearchStr);
+            if Offset = 0 then begin
+              Result := Result + NewStr;
+              Break;
+            end;
+            Result := Result + Copy(NewStr, 1, Offset - 1) + NewPattern;
+            NewStr := Copy(NewStr, Offset + Length(OldPattern), MaxInt);
+            if not iReplaceAll then begin
+              Result := Result + NewStr;
+              Break;
+            end;
+            SearchStr := Copy(SearchStr, Offset + Length(Patt), MaxInt);
+          end;
         end;
-      end;
-    end;
-    ```
 
-  </details>
+        procedure GetEMailTpl;
+        var D  : TfrxDataSet;
+          lFN : String;
+        begin
+          lFN := Trim(Report.ReportOptions.Name);
+          lFN := StringReplace(lFN,'.fr3','');
+          D := Report.GetDataSet('plEMailTpl');
+          D.First;
+          While not D.Eof do begin
+            if Trim(D.Value('ReportName')) = lFN then
+              Break;
+            D.Next;
+          end;
+        end;
 
-  ![batch-email-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/batch-email-insert-code.jpg)
+        function GetPassword:String;
+        begin
+          if Trim(<Document_Company."Remark">) <> '' then
+            Result := <Document_Company."Remark"> else
+            Result := <plEMailTpl."PDFPassWord">;
+        end;
 
-3. Scroll down look for procedure SetUp
-4. Copy below script & paste it between the begin & end; in procedure SetUp
+        function GetFldInfo(const AStr:String):String;
+        var D : TfrxDataSet;
+            nStr : String;
+            lSL,lPL : TStringList;
+            i, j : integer;
+        begin
+          nStr := AStr;
+          lSL := TStringList.Create;
+          lPL := TStringList.Create;
+          with lPL do begin //Available Pipeline
+            Add('Main');
+            Add('Profile');
+            Add('plEMailTpl');
+          end;
+          try
+            for j:=0 to lPL.Count -1 do begin
+              D := Report.GetDataSet(lPL[j]);
+              D.GetFieldList(lSL);
+              for i:=0 to lSL.Count -1 do begin
+                if D.IsBlobField(lSL[i]) then
+                  nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.Value(lSL[i])) else
+                nStr := StringReplace(nStr, '<'+ lPL[j] + '.' + lSL[i] + '>',D.DisplayText(lSL[i]));
+              end;
+            end;
+            Result := nStr;
+          finally
+            lSL.Free;
+            lPL.Free;
+          end;
+        end;
 
-    ```pascal
-    SQL := 'SELECT B.Description As ReportName, B.Description2 As Subject, B.Description3 As Body, '+
-            'A.Address1 As CC, A.Address2 As BCC, B.Remark1 As PDFPassWord, B.Remark2 As PDFFileName ' +
-            'FROM SL_QT A ' +
-            'INNER JOIN SL_QTDTL B ON (A.Dockey=B.Dockey) ' +
-            'WHERE A.DocNo=''EMAIL'' ' +
-            'ORDER BY B.Seq ';
-      AddDataSet('plEMailTpl', ['ReportName', 'Subject', 'Body', 'PDFPassWord', 'PDFFileName', 'CC', 'BCC'])
-      .GetDBData(SQL);
-    ```
+        //For E-Mail Client (Batch)
+        procedure OnGetEmailSettings(EmailSettings: TStrings);
+        var vEmail, vName: Variant;
+        begin
+          GetEMailTpl;
+          vEmail := Trim(<Document_CompanyBranch."Email">);
+          vName  := Trim(<Main."CompanyName">);
 
-5. Click File | Save As... to save the file (eg Sales Invoice 7 (GST 2)-Email)
-6. Click File | Exit to exit the report design
-7. Click Design again in the report designer for the file just save on Steps 5 (eg Sales Invoice 7 (GST 2)-Email)
-8. Click the Code Tab
-9. Remove the // at the First line of the Script
-10. Click File | Save to save the file
-11. Click File | Exit to exit the report design
+          if (vName <> '' ) and (vEmail <> '') then begin
+            EmailSettings.Values['Recipients']  := vEmail;
+            EmailSettings.Values['CC']          := <plEMailTpl."CC">;
+            EmailSettings.Values['BCC']         := <plEMailTpl."BCC">;
+            EmailSettings.Values['Subject']     := GetFldInfo(<plEMailTpl."Subject">);
+            EmailSettings.Values['Body']        := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
+            if Trim(<plEMailTpl."PDFFileName">) <> '' then
+              EmailSettings.Values['FileName']    := GetFldInfo(<plEMailTpl."PDFFileName">);
+            if Trim(GetPassword) <> '' then
+              EmailSettings.Values['PDFPassword'] := GetPassword;
+          end;
+          //ID uses for display on progress dialog
+          EmailSettings.Values['ID']        := vName;
+        end;
 
-### Quotation
+        //For E-Mail (Native)
+        function SQL_Email_GetInfo(Info: Integer): string;
+        var vEmail, vName: Variant;
+        begin
+          GetEMailTpl;
+          Result := '';
+          vEmail := Trim(<Document_CompanyBranch."Email">);
+          vName := Trim(<Main."CompanyName">);
 
-<details>
-  <summary>Quotation - click to expand</summary>
+          if (vName <> '' ) and (vEmail <> '') then begin
+            case Info of
+              SQL_Email_Address: Result := vEmail;
+              SQL_Email_Subject: Result := GetFldInfo(<plEMailTpl."Subject">);
+              SQL_Email_Content: Result := GetFldInfo(RichTextToPlainText(<plEMailTpl."Body">));
+            end;
+          end;
+        end;
+        ```
 
-**Menu: Sales | Quotation...**
+      </details>
 
-- SQL Accounting can E Mail by different Subject & E Mail Content by report name
+    ![batch-email-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/batch-email-insert-code.jpg)
 
-![batch-email-paste-quotation](../../../../static/img/usage/tools/fastReport-basicGuide/batch-email-paste-quotation.jpg)
+  3. Scroll down look for procedure SetUp
+  4. Copy below script & paste it between the begin & end; in procedure SetUp
 
-| Field Name                         | Description                     |
-|------------------------------------|---------------------------------|
-| Address1                           | CC E-Mail Address               |
-| Address2                           | BCC E-Mail Address              |
-| Description                        | Fast Report Name                |
-| Description2                       | E-Mail Subject                  |
-| Description3 (More Description)    | E-Mail Content/Body             |
-| Remark1                            | Global PDF Password             |
-| Remark2                            | PDF FileName                    |
-| Remark (Maintain Customer/Supplier)| Private/Individual PDF Password |
+      ```pascal
+      SQL := 'SELECT B.Description As ReportName, B.Description2 As Subject, B.Description3 As Body, '+
+              'A.Address1 As CC, A.Address2 As BCC, B.Remark1 As PDFPassWord, B.Remark2 As PDFFileName ' +
+              'FROM SL_QT A ' +
+              'INNER JOIN SL_QTDTL B ON (A.Dockey=B.Dockey) ' +
+              'WHERE A.DocNo=''EMAIL'' ' +
+              'ORDER BY B.Seq ';
+        AddDataSet('plEMailTpl', ['ReportName', 'Subject', 'Body', 'PDFPassWord', 'PDFFileName', 'CC', 'BCC'])
+        .GetDBData(SQL);
+      ```
 
-1. Create New Quotation
-2. Copy below Sample E-Mail Template
+  5. Click File | Save As... to save the file (eg Sales Invoice 7 (GST 2)-Email)
+  6. Click File | Exit to exit the report design
+  7. Click Design again in the report designer for the file just save on Steps 5 (eg Sales Invoice 7 (GST 2)-Email)
+  8. Click the Code Tab
+  9. Remove the // at the First line of the Script
+  10. Click File | Save to save the file
+  11. Click File | Exit to exit the report design
 
-<details>
-  <summary>Sample E-Mail Template - click to expand</summary>
+  ### Quotation
 
-    ```pascal
-    <?xml version="1.0" standalone="yes"?>
-    <DATAPACKET Version="2.0">
-      <METADATA>
-        <FIELDS>
-          <FIELD attrname="DOCKEY" fieldtype="i4"/>
-          <FIELD attrname="DOCNO" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="DOCNOEX" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="DOCDATE" fieldtype="date"/>
-          <FIELD attrname="POSTDATE" fieldtype="date"/>
-          <FIELD attrname="TAXDATE" fieldtype="date"/>
-          <FIELD attrname="CODE" fieldtype="string.uni" WIDTH="20"/>
-          <FIELD attrname="COMPANYNAME" fieldtype="string.uni" WIDTH="200"/>
-          <FIELD attrname="ADDRESS1" fieldtype="string.uni" WIDTH="120"/>
-          <FIELD attrname="ADDRESS2" fieldtype="string.uni" WIDTH="120"/>
-          <FIELD attrname="ADDRESS3" fieldtype="string.uni" WIDTH="120"/>
-          <FIELD attrname="ADDRESS4" fieldtype="string.uni" WIDTH="120"/>
-          <FIELD attrname="PHONE1" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="FAX1" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="ATTENTION" fieldtype="string.uni" WIDTH="140"/>
-          <FIELD attrname="AREA" fieldtype="string.uni" WIDTH="20"/>
-          <FIELD attrname="AGENT" fieldtype="string.uni" WIDTH="20"/>
-          <FIELD attrname="PROJECT" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="TERMS" fieldtype="string.uni" WIDTH="20"/>
-          <FIELD attrname="CURRENCYCODE" fieldtype="string.uni" WIDTH="12"/>
-          <FIELD attrname="CURRENCYRATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="19"/>
-          <FIELD attrname="SHIPPER" fieldtype="string.uni" WIDTH="60"/>
-          <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="COUNTRY" fieldtype="string.uni" WIDTH="100"/>
-          <FIELD attrname="CANCELLED" fieldtype="string.uni" WIDTH="2"/>
-          <FIELD attrname="DOCAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-          <FIELD attrname="LOCALDOCAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-          <FIELD attrname="VALIDITY" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="DELIVERYTERM" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="CC" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="DOCREF1" fieldtype="string.uni" WIDTH="50"/>
-          <FIELD attrname="DOCREF2" fieldtype="string.uni" WIDTH="50"/>
-          <FIELD attrname="DOCREF3" fieldtype="string.uni" WIDTH="50"/>
-          <FIELD attrname="DOCREF4" fieldtype="string.uni" WIDTH="50"/>
-          <FIELD attrname="BRANCHNAME" fieldtype="string.uni" WIDTH="200"/>
-          <FIELD attrname="DADDRESS1" fieldtype="string.uni" WIDTH="120"/>
-          <FIELD attrname="DADDRESS2" fieldtype="string.uni" WIDTH="120"/>
-          <FIELD attrname="DADDRESS3" fieldtype="string.uni" WIDTH="120"/>
-          <FIELD attrname="DADDRESS4" fieldtype="string.uni" WIDTH="120"/>
-          <FIELD attrname="DATTENTION" fieldtype="string.uni" WIDTH="140"/>
-          <FIELD attrname="DPHONE1" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="DFAX1" fieldtype="string.uni" WIDTH="400"/>
-          <FIELD attrname="ATTACHMENTS" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-          <FIELD attrname="NOTE" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-          <FIELD attrname="TRANSFERABLE" fieldtype="string.uni" WIDTH="2"/>
-          <FIELD attrname="UPDATECOUNT" fieldtype="i4"/>
-          <FIELD attrname="PRINTCOUNT" fieldtype="i4"/>
-          <FIELD attrname="DOCNOSETKEY" fieldtype="i8"/>
-          <FIELD attrname="NEXTDOCNO" fieldtype="string.uni" WIDTH="40"/>
-          <FIELD attrname="CHANGED" fieldtype="string.uni" WIDTH="2"/>
-          <FIELD attrname="sdsDocDetail" fieldtype="nested">
-            <FIELDS>
-              <FIELD attrname="DTLKEY" fieldtype="i4" required="true"/>
-              <FIELD attrname="DOCKEY" fieldtype="i4" required="true"/>
-              <FIELD attrname="SEQ" fieldtype="i4"/>
-              <FIELD attrname="STYLEID" fieldtype="string.uni" WIDTH="10"/>
-              <FIELD attrname="NUMBER" fieldtype="string.uni" WIDTH="10"/>
-              <FIELD attrname="ITEMCODE" fieldtype="string.uni" WIDTH="60"/>
-              <FIELD attrname="LOCATION" fieldtype="string.uni" WIDTH="40"/>
-              <FIELD attrname="BATCH" fieldtype="string.uni" WIDTH="60"/>
-              <FIELD attrname="PROJECT" fieldtype="string.uni" WIDTH="40"/>
-              <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="400"/>
-              <FIELD attrname="DESCRIPTION2" fieldtype="string.uni" WIDTH="400"/>
-              <FIELD attrname="DESCRIPTION3" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
-              <FIELD attrname="PERMITNO" fieldtype="string.uni" WIDTH="40"/>
-              <FIELD attrname="QTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
-              <FIELD attrname="UOM" fieldtype="string.uni" WIDTH="20"/>
-              <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
-              <FIELD attrname="SQTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
-              <FIELD attrname="SUOMQTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
-              <FIELD attrname="UNITPRICE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="19"/>
-              <FIELD attrname="DELIVERYDATE" fieldtype="date"/>
-              <FIELD attrname="DISC" fieldtype="string.uni" WIDTH="40"/>
-              <FIELD attrname="TAX" fieldtype="string.uni" WIDTH="20"/>
-              <FIELD attrname="TAXRATE" fieldtype="string.uni" WIDTH="40"/>
-              <FIELD attrname="TAXAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-              <FIELD attrname="LOCALTAXAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-              <FIELD attrname="TAXINCLUSIVE" fieldtype="i2"/>
-              <FIELD attrname="AMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-              <FIELD attrname="LOCALAMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-              <FIELD attrname="PRINTABLE" fieldtype="string.uni" WIDTH="2"/>
-              <FIELD attrname="TRANSFERABLE" fieldtype="string.uni" WIDTH="2"/>
-              <FIELD attrname="REMARK1" fieldtype="string.uni" WIDTH="400"/>
-              <FIELD attrname="REMARK2" fieldtype="string.uni" WIDTH="400"/>
-              <FIELD attrname="INITIALPURCHASECOST" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
-              <FIELD attrname="CHANGED" fieldtype="string.uni" required="true" WIDTH="2"/>
-              <FIELD attrname="CompanyItemCode" fieldtype="string.uni" WIDTH="60"/>
-            </FIELDS>
-            <PARAMS/>
-          </FIELD>
-        </FIELDS>
-        <PARAMS/>
-      </METADATA>
-      <ROWDATA>
-        <ROW DOCKEY="76" DOCNO="EMAIL" DOCDATE="20171212" POSTDATE="20171212" TAXDATE="20171212" ADDRESS1="CC@mail.com.my,CC2@mail.com.my" ADDRESS2="BCC@mail.com.my,BCC2@mail.com.my" ADDRESS4="" AREA="----" AGENT="----" PROJECT="----" CURRENCYCODE="----" CURRENCYRATE="1.00000000" SHIPPER="----" DESCRIPTION="Quotation" CANCELLED="T" DOCAMT="0.00" LOCALDOCAMT="0.00" TRANSFERABLE="T" UPDATECOUNT="13" PRINTCOUNT="0" DOCNOSETKEY="0" CHANGED="F">
-          <sdsDocDetail>
-            <ROWsdsDocDetail DTLKEY="77" DOCKEY="76" SEQ="1" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Fast Report Name" DESCRIPTION2="E-Mail Subject" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIEUtTWFpbCBCb2R5XHBhcg0KT25seSBQbGFpbiBUZXh0XGYxXHBhcg0KfQ0KAA==" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="Global PDF Password" REMARK2="PDF FileName" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-            <ROWsdsDocDetail DTLKEY="78" DOCKEY="76" SEQ="2" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 7 (GST 1)" DESCRIPTION2="Invoice :  &lt;Main.DocNo&gt; - &lt;Main.CompanyName&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZzd2lzc1xmY2hhcnNldDEzNCBNaWNyb3NvZnQgWWFIZWk7fX0NCntcKlxnZW5lcmF0b3IgUmljaGVkMjAgMTAuMC4xNDM5M31cdmlld2tpbmQ0XHVjMSANClxwYXJkXGYwXGZzMThcbGFuZzEwMzMgRGVhciA8TWFpbi5BdHRlbnRpb24+LFxwYXINCihcZjFcJ2NjXCdlY1wnYjNcJ2NmXGYwIClccGFyDQpUaGlzIGlzIGFuIGF1dG8tZ2VuZXJhdGVkIGVtYWlsLCBwbGVhc2UgZG8gbm90IHJlcGx5IHRvIHRoaXMgZW1haWwuXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciBvdXIgVGF4IEludm9pY2UgOi0gPE1haW4uRG9jTm8+XHBhcg0KXHBhcg0KXHBhcg0KQmVzdCBSZWdhcmRzLFxwYXINCjxQcm9maWxlLkNvbXBhbnlOYW1lPlxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-            <ROWsdsDocDetail DTLKEY="83" DOCKEY="76" SEQ="3" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 7 (GST 2)" DESCRIPTION2="Invoice :  &lt;Main.DocNo&gt; - &lt;Main.CompanyName&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIERlYXIgPE1haW4uQXR0ZW50aW9uPixccGFyDQpccGFyDQpUaGlzIGlzIGFuIGF1dG8tZ2VuZXJhdGVkIGVtYWlsLCBwbGVhc2UgZG8gbm90IHJlcGx5IHRvIHRoaXMgZW1haWwuXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciBvdXIgVGF4IEludm9pY2UgOi0gPE1haW4uRG9jTm8+XHBhcg0KXHBhcg0KXHBhcg0KQmVzdCBSZWdhcmRzLFxwYXINCjxQcm9maWxlLkNvbXBhbnlOYW1lPlxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-            <ROWsdsDocDetail DTLKEY="79" DOCKEY="76" SEQ="4" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Cust Statement 06 Mths 1" DESCRIPTION2="Statement : &lt;Main.CompanyName&gt; - [&lt;Parameter.StatementDate&gt;]" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIERlYXIgPENvbXBhbnkuQXR0ZW50aW9uPixccGFyDQpccGFyDQpUaGlzIGlzIGFuIGF1dG8tZ2VuZXJhdGVkIGVtYWlsLCBwbGVhc2UgZG8gbm90IHJlcGx5IHRvIHRoaXMgZW1haWwuXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciBzdGF0ZW1lbnQgb2YgPFBhcmFtZXRlci5TdGF0ZW1lbnREYXRlPlxwYXINClxwYXINClxwYXINCkJlc3QgUmVnYXJkcyxccGFyDQo8UHJvZmlsZS5Db21wYW55TmFtZT5ccGFyDQpcZjFccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-            <ROWsdsDocDetail DTLKEY="84" DOCKEY="76" SEQ="5" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="GL Official Receipt - Detail - Half (GST)" DESCRIPTION2="Official Receipt : &lt;Main.DocNo&gt; - &lt;Document_Detail.Description&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIERlYXIgPENvbXBhbnlfSW5mby5BdHRlbnRpb24+LFxwYXINClxwYXINClRoaXMgaXMgYW4gYXV0by1nZW5lcmF0ZWQgZW1haWwsIHBsZWFzZSBkbyBub3QgcmVwbHkgdG8gdGhpcyBlbWFpbC5ccGFyDQpccGFyDQpQbGVhc2UgY2hlY2sgdGhlIGF0dGFjaG1lbnQgZm9yIG91ciBPZmZpY2lhbCBSZWNlaXB0IDotIDxNYWluLkRvY05vPlxwYXINClxwYXINClxwYXINCkJlc3QgUmVnYXJkcyxccGFyDQo8UHJvZmlsZS5Db21wYW55TmFtZT5ccGFyDQpcZjFccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160825" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="" REMARK2="" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-            <ROWsdsDocDetail DTLKEY="1075" DOCKEY="76" SEQ="6" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 7 (GST 1)-Mail" DESCRIPTION2="Invoice :  &lt;Main.DocNo&gt; - &lt;Main.CompanyName&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZzd2lzc1xmY2hhcnNldDEzNCBNaWNyb3NvZnQgWWFIZWk7fX0NCntcKlxnZW5lcmF0b3IgUmljaGVkMjAgMTAuMC4xNDM5M31cdmlld2tpbmQ0XHVjMSANClxwYXJkXGYwXGZzMThcbGFuZzEwMzMgRGVhciA8TWFpbi5BdHRlbnRpb24+LFxwYXINCihcZjFcJ2NjXCdlY1wnYjNcJ2NmXGYwIClccGFyDQpUaGlzIGlzIGFuIGF1dG8tZ2VuZXJhdGVkIGVtYWlsLCBwbGVhc2UgZG8gbm90IHJlcGx5IHRvIHRoaXMgZW1haWwuXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciBvdXIgVGF4IEludm9pY2UgOi0gPE1haW4uRG9jTm8+XHBhcg0KXHBhcg0KXHBhcg0KQmVzdCBSZWdhcmRzLFxwYXINCjxQcm9maWxlLkNvbXBhbnlOYW1lPlxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="12@Abc" REMARK2="&lt;plEMailTpl.ReportName&gt; - &lt;Main.DocNo&gt; - &lt;Main.CompanyName&gt;" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-            <ROWsdsDocDetail DTLKEY="82" DOCKEY="76" SEQ="7" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Default Template" DESCRIPTION2="&lt;Main.DocNo&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIERlYXIgU2lyL01hZGFtLFxwYXINClNlZSBhdHRhY2htZW50Li4uXHBhcg0KXHBhcg0KVGhpcyBpcyBhbiBhdXRvLWdlbmVyYXRlZCBlbWFpbCwgcGxlYXNlIGRvIG5vdCByZXBseSB0byB0aGlzIGVtYWlsLlxwYXINClxwYXINClxwYXINCkJlc3QgUmVnYXJkcyxccGFyDQo8UHJvZmlsZS5Db21wYW55TmFtZT5ccGFyDQpccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160418" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
-          </sdsDocDetail>
-        </ROW>
-      </ROWDATA>
-    </DATAPACKET>
-    ```
+  <details>
+    <summary>Quotation - click to expand</summary>
 
-  </details>
+  **Menu: Sales | Quotation...**
+
+  - SQL Accounting can E Mail by different Subject & E Mail Content by report name
+
+  ![batch-email-paste-quotation](../../../../static/img/usage/tools/fastReport-basicGuide/batch-email-paste-quotation.jpg)
+
+  | Field Name                         | Description                     |
+  |------------------------------------|---------------------------------|
+  | Address1                           | CC E-Mail Address               |
+  | Address2                           | BCC E-Mail Address              |
+  | Description                        | Fast Report Name                |
+  | Description2                       | E-Mail Subject                  |
+  | Description3 (More Description)    | E-Mail Content/Body             |
+  | Remark1                            | Global PDF Password             |
+  | Remark2                            | PDF FileName                    |
+  | Remark (Maintain Customer/Supplier)| Private/Individual PDF Password |
+
+  1. Create New Quotation
+  2. Copy below Sample E-Mail Template
+
+  <details>
+    <summary>Sample E-Mail Template - click to expand</summary>
+
+      ```pascal
+      <?xml version="1.0" standalone="yes"?>
+      <DATAPACKET Version="2.0">
+        <METADATA>
+          <FIELDS>
+            <FIELD attrname="DOCKEY" fieldtype="i4"/>
+            <FIELD attrname="DOCNO" fieldtype="string.uni" WIDTH="40"/>
+            <FIELD attrname="DOCNOEX" fieldtype="string.uni" WIDTH="40"/>
+            <FIELD attrname="DOCDATE" fieldtype="date"/>
+            <FIELD attrname="POSTDATE" fieldtype="date"/>
+            <FIELD attrname="TAXDATE" fieldtype="date"/>
+            <FIELD attrname="CODE" fieldtype="string.uni" WIDTH="20"/>
+            <FIELD attrname="COMPANYNAME" fieldtype="string.uni" WIDTH="200"/>
+            <FIELD attrname="ADDRESS1" fieldtype="string.uni" WIDTH="120"/>
+            <FIELD attrname="ADDRESS2" fieldtype="string.uni" WIDTH="120"/>
+            <FIELD attrname="ADDRESS3" fieldtype="string.uni" WIDTH="120"/>
+            <FIELD attrname="ADDRESS4" fieldtype="string.uni" WIDTH="120"/>
+            <FIELD attrname="PHONE1" fieldtype="string.uni" WIDTH="400"/>
+            <FIELD attrname="FAX1" fieldtype="string.uni" WIDTH="400"/>
+            <FIELD attrname="ATTENTION" fieldtype="string.uni" WIDTH="140"/>
+            <FIELD attrname="AREA" fieldtype="string.uni" WIDTH="20"/>
+            <FIELD attrname="AGENT" fieldtype="string.uni" WIDTH="20"/>
+            <FIELD attrname="PROJECT" fieldtype="string.uni" WIDTH="40"/>
+            <FIELD attrname="TERMS" fieldtype="string.uni" WIDTH="20"/>
+            <FIELD attrname="CURRENCYCODE" fieldtype="string.uni" WIDTH="12"/>
+            <FIELD attrname="CURRENCYRATE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="19"/>
+            <FIELD attrname="SHIPPER" fieldtype="string.uni" WIDTH="60"/>
+            <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="400"/>
+            <FIELD attrname="COUNTRY" fieldtype="string.uni" WIDTH="100"/>
+            <FIELD attrname="CANCELLED" fieldtype="string.uni" WIDTH="2"/>
+            <FIELD attrname="DOCAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+            <FIELD attrname="LOCALDOCAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+            <FIELD attrname="VALIDITY" fieldtype="string.uni" WIDTH="400"/>
+            <FIELD attrname="DELIVERYTERM" fieldtype="string.uni" WIDTH="400"/>
+            <FIELD attrname="CC" fieldtype="string.uni" WIDTH="400"/>
+            <FIELD attrname="DOCREF1" fieldtype="string.uni" WIDTH="50"/>
+            <FIELD attrname="DOCREF2" fieldtype="string.uni" WIDTH="50"/>
+            <FIELD attrname="DOCREF3" fieldtype="string.uni" WIDTH="50"/>
+            <FIELD attrname="DOCREF4" fieldtype="string.uni" WIDTH="50"/>
+            <FIELD attrname="BRANCHNAME" fieldtype="string.uni" WIDTH="200"/>
+            <FIELD attrname="DADDRESS1" fieldtype="string.uni" WIDTH="120"/>
+            <FIELD attrname="DADDRESS2" fieldtype="string.uni" WIDTH="120"/>
+            <FIELD attrname="DADDRESS3" fieldtype="string.uni" WIDTH="120"/>
+            <FIELD attrname="DADDRESS4" fieldtype="string.uni" WIDTH="120"/>
+            <FIELD attrname="DATTENTION" fieldtype="string.uni" WIDTH="140"/>
+            <FIELD attrname="DPHONE1" fieldtype="string.uni" WIDTH="400"/>
+            <FIELD attrname="DFAX1" fieldtype="string.uni" WIDTH="400"/>
+            <FIELD attrname="ATTACHMENTS" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+            <FIELD attrname="NOTE" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+            <FIELD attrname="TRANSFERABLE" fieldtype="string.uni" WIDTH="2"/>
+            <FIELD attrname="UPDATECOUNT" fieldtype="i4"/>
+            <FIELD attrname="PRINTCOUNT" fieldtype="i4"/>
+            <FIELD attrname="DOCNOSETKEY" fieldtype="i8"/>
+            <FIELD attrname="NEXTDOCNO" fieldtype="string.uni" WIDTH="40"/>
+            <FIELD attrname="CHANGED" fieldtype="string.uni" WIDTH="2"/>
+            <FIELD attrname="sdsDocDetail" fieldtype="nested">
+              <FIELDS>
+                <FIELD attrname="DTLKEY" fieldtype="i4" required="true"/>
+                <FIELD attrname="DOCKEY" fieldtype="i4" required="true"/>
+                <FIELD attrname="SEQ" fieldtype="i4"/>
+                <FIELD attrname="STYLEID" fieldtype="string.uni" WIDTH="10"/>
+                <FIELD attrname="NUMBER" fieldtype="string.uni" WIDTH="10"/>
+                <FIELD attrname="ITEMCODE" fieldtype="string.uni" WIDTH="60"/>
+                <FIELD attrname="LOCATION" fieldtype="string.uni" WIDTH="40"/>
+                <FIELD attrname="BATCH" fieldtype="string.uni" WIDTH="60"/>
+                <FIELD attrname="PROJECT" fieldtype="string.uni" WIDTH="40"/>
+                <FIELD attrname="DESCRIPTION" fieldtype="string.uni" WIDTH="400"/>
+                <FIELD attrname="DESCRIPTION2" fieldtype="string.uni" WIDTH="400"/>
+                <FIELD attrname="DESCRIPTION3" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+                <FIELD attrname="PERMITNO" fieldtype="string.uni" WIDTH="40"/>
+                <FIELD attrname="QTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
+                <FIELD attrname="UOM" fieldtype="string.uni" WIDTH="20"/>
+                <FIELD attrname="RATE" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
+                <FIELD attrname="SQTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
+                <FIELD attrname="SUOMQTY" fieldtype="fixedFMT" DECIMALS="4" WIDTH="19"/>
+                <FIELD attrname="UNITPRICE" fieldtype="fixedFMT" DECIMALS="8" WIDTH="19"/>
+                <FIELD attrname="DELIVERYDATE" fieldtype="date"/>
+                <FIELD attrname="DISC" fieldtype="string.uni" WIDTH="40"/>
+                <FIELD attrname="TAX" fieldtype="string.uni" WIDTH="20"/>
+                <FIELD attrname="TAXRATE" fieldtype="string.uni" WIDTH="40"/>
+                <FIELD attrname="TAXAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+                <FIELD attrname="LOCALTAXAMT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+                <FIELD attrname="TAXINCLUSIVE" fieldtype="i2"/>
+                <FIELD attrname="AMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+                <FIELD attrname="LOCALAMOUNT" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+                <FIELD attrname="PRINTABLE" fieldtype="string.uni" WIDTH="2"/>
+                <FIELD attrname="TRANSFERABLE" fieldtype="string.uni" WIDTH="2"/>
+                <FIELD attrname="REMARK1" fieldtype="string.uni" WIDTH="400"/>
+                <FIELD attrname="REMARK2" fieldtype="string.uni" WIDTH="400"/>
+                <FIELD attrname="INITIALPURCHASECOST" fieldtype="fixedFMT" DECIMALS="2" WIDTH="19"/>
+                <FIELD attrname="CHANGED" fieldtype="string.uni" required="true" WIDTH="2"/>
+                <FIELD attrname="CompanyItemCode" fieldtype="string.uni" WIDTH="60"/>
+              </FIELDS>
+              <PARAMS/>
+            </FIELD>
+          </FIELDS>
+          <PARAMS/>
+        </METADATA>
+        <ROWDATA>
+          <ROW DOCKEY="76" DOCNO="EMAIL" DOCDATE="20171212" POSTDATE="20171212" TAXDATE="20171212" ADDRESS1="CC@mail.com.my,CC2@mail.com.my" ADDRESS2="BCC@mail.com.my,BCC2@mail.com.my" ADDRESS4="" AREA="----" AGENT="----" PROJECT="----" CURRENCYCODE="----" CURRENCYRATE="1.00000000" SHIPPER="----" DESCRIPTION="Quotation" CANCELLED="T" DOCAMT="0.00" LOCALDOCAMT="0.00" TRANSFERABLE="T" UPDATECOUNT="13" PRINTCOUNT="0" DOCNOSETKEY="0" CHANGED="F">
+            <sdsDocDetail>
+              <ROWsdsDocDetail DTLKEY="77" DOCKEY="76" SEQ="1" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Fast Report Name" DESCRIPTION2="E-Mail Subject" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIEUtTWFpbCBCb2R5XHBhcg0KT25seSBQbGFpbiBUZXh0XGYxXHBhcg0KfQ0KAA==" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="Global PDF Password" REMARK2="PDF FileName" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+              <ROWsdsDocDetail DTLKEY="78" DOCKEY="76" SEQ="2" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 7 (GST 1)" DESCRIPTION2="Invoice :  &lt;Main.DocNo&gt; - &lt;Main.CompanyName&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZzd2lzc1xmY2hhcnNldDEzNCBNaWNyb3NvZnQgWWFIZWk7fX0NCntcKlxnZW5lcmF0b3IgUmljaGVkMjAgMTAuMC4xNDM5M31cdmlld2tpbmQ0XHVjMSANClxwYXJkXGYwXGZzMThcbGFuZzEwMzMgRGVhciA8TWFpbi5BdHRlbnRpb24+LFxwYXINCihcZjFcJ2NjXCdlY1wnYjNcJ2NmXGYwIClccGFyDQpUaGlzIGlzIGFuIGF1dG8tZ2VuZXJhdGVkIGVtYWlsLCBwbGVhc2UgZG8gbm90IHJlcGx5IHRvIHRoaXMgZW1haWwuXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciBvdXIgVGF4IEludm9pY2UgOi0gPE1haW4uRG9jTm8+XHBhcg0KXHBhcg0KXHBhcg0KQmVzdCBSZWdhcmRzLFxwYXINCjxQcm9maWxlLkNvbXBhbnlOYW1lPlxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+              <ROWsdsDocDetail DTLKEY="83" DOCKEY="76" SEQ="3" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 7 (GST 2)" DESCRIPTION2="Invoice :  &lt;Main.DocNo&gt; - &lt;Main.CompanyName&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIERlYXIgPE1haW4uQXR0ZW50aW9uPixccGFyDQpccGFyDQpUaGlzIGlzIGFuIGF1dG8tZ2VuZXJhdGVkIGVtYWlsLCBwbGVhc2UgZG8gbm90IHJlcGx5IHRvIHRoaXMgZW1haWwuXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciBvdXIgVGF4IEludm9pY2UgOi0gPE1haW4uRG9jTm8+XHBhcg0KXHBhcg0KXHBhcg0KQmVzdCBSZWdhcmRzLFxwYXINCjxQcm9maWxlLkNvbXBhbnlOYW1lPlxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+              <ROWsdsDocDetail DTLKEY="79" DOCKEY="76" SEQ="4" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Cust Statement 06 Mths 1" DESCRIPTION2="Statement : &lt;Main.CompanyName&gt; - [&lt;Parameter.StatementDate&gt;]" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIERlYXIgPENvbXBhbnkuQXR0ZW50aW9uPixccGFyDQpccGFyDQpUaGlzIGlzIGFuIGF1dG8tZ2VuZXJhdGVkIGVtYWlsLCBwbGVhc2UgZG8gbm90IHJlcGx5IHRvIHRoaXMgZW1haWwuXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciBzdGF0ZW1lbnQgb2YgPFBhcmFtZXRlci5TdGF0ZW1lbnREYXRlPlxwYXINClxwYXINClxwYXINCkJlc3QgUmVnYXJkcyxccGFyDQo8UHJvZmlsZS5Db21wYW55TmFtZT5ccGFyDQpcZjFccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+              <ROWsdsDocDetail DTLKEY="84" DOCKEY="76" SEQ="5" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="GL Official Receipt - Detail - Half (GST)" DESCRIPTION2="Official Receipt : &lt;Main.DocNo&gt; - &lt;Document_Detail.Description&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZuaWwgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIERlYXIgPENvbXBhbnlfSW5mby5BdHRlbnRpb24+LFxwYXINClxwYXINClRoaXMgaXMgYW4gYXV0by1nZW5lcmF0ZWQgZW1haWwsIHBsZWFzZSBkbyBub3QgcmVwbHkgdG8gdGhpcyBlbWFpbC5ccGFyDQpccGFyDQpQbGVhc2UgY2hlY2sgdGhlIGF0dGFjaG1lbnQgZm9yIG91ciBPZmZpY2lhbCBSZWNlaXB0IDotIDxNYWluLkRvY05vPlxwYXINClxwYXINClxwYXINCkJlc3QgUmVnYXJkcyxccGFyDQo8UHJvZmlsZS5Db21wYW55TmFtZT5ccGFyDQpcZjFccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160825" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="" REMARK2="" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+              <ROWsdsDocDetail DTLKEY="1075" DOCKEY="76" SEQ="6" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Sales Invoice 7 (GST 1)-Mail" DESCRIPTION2="Invoice :  &lt;Main.DocNo&gt; - &lt;Main.CompanyName&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO317XGYxXGZzd2lzc1xmY2hhcnNldDEzNCBNaWNyb3NvZnQgWWFIZWk7fX0NCntcKlxnZW5lcmF0b3IgUmljaGVkMjAgMTAuMC4xNDM5M31cdmlld2tpbmQ0XHVjMSANClxwYXJkXGYwXGZzMThcbGFuZzEwMzMgRGVhciA8TWFpbi5BdHRlbnRpb24+LFxwYXINCihcZjFcJ2NjXCdlY1wnYjNcJ2NmXGYwIClccGFyDQpUaGlzIGlzIGFuIGF1dG8tZ2VuZXJhdGVkIGVtYWlsLCBwbGVhc2UgZG8gbm90IHJlcGx5IHRvIHRoaXMgZW1haWwuXHBhcg0KXHBhcg0KUGxlYXNlIGNoZWNrIHRoZSBhdHRhY2htZW50IGZvciBvdXIgVGF4IEludm9pY2UgOi0gPE1haW4uRG9jTm8+XHBhcg0KXHBhcg0KXHBhcg0KQmVzdCBSZWdhcmRzLFxwYXINCjxQcm9maWxlLkNvbXBhbnlOYW1lPlxwYXINCn0NCgA=" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160416" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" REMARK1="12@Abc" REMARK2="&lt;plEMailTpl.ReportName&gt; - &lt;Main.DocNo&gt; - &lt;Main.CompanyName&gt;" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+              <ROWsdsDocDetail DTLKEY="82" DOCKEY="76" SEQ="7" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Default Template" DESCRIPTION2="&lt;Main.DocNo&gt;" DESCRIPTION3="e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcZGVmZjBcbm91aWNvbXBhdHtcZm9udHRibHtcZjBcZm5pbFxmY2hhcnNldDAgVGFob21hO319DQp7XCpcZ2VuZXJhdG9yIFJpY2hlZDIwIDEwLjAuMTA1ODZ9XHZpZXdraW5kNFx1YzEgDQpccGFyZFxmMFxmczE4XGxhbmcxMDMzIERlYXIgU2lyL01hZGFtLFxwYXINClNlZSBhdHRhY2htZW50Li4uXHBhcg0KXHBhcg0KVGhpcyBpcyBhbiBhdXRvLWdlbmVyYXRlZCBlbWFpbCwgcGxlYXNlIGRvIG5vdCByZXBseSB0byB0aGlzIGVtYWlsLlxwYXINClxwYXINClxwYXINCkJlc3QgUmVnYXJkcyxccGFyDQo8UHJvZmlsZS5Db21wYW55TmFtZT5ccGFyDQpccGFyDQp9DQoA" QTY="0.0000" RATE="1.0000" SQTY="0.0000" SUOMQTY="0.0000" UNITPRICE="0.00000000" DELIVERYDATE="20160418" DISC="" TAX="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="0.00" LOCALAMOUNT="0.00" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F"/>
+            </sdsDocDetail>
+          </ROW>
+        </ROWDATA>
+      </DATAPACKET>
+      ```
+
+    </details>
 
 3. Right Click at the empty space below the Browse button
 4. Select Paste Quotation
@@ -2415,7 +2415,7 @@ SELECT SUM(CAST(DocAmt AS REAL)) DocAmt FROM Main
 Try use **CASE WHEN... THEN... ELSE... END**
 
 ```pascal
-SELECT CAST(CASE WHEN C1 IS NULL THEN 0.00 ELSE C1 END AS REAL) C1 FROM Main 
+SELECT CAST(CASE WHEN C1 IS NULL THEN 0.00 ELSE C1 END AS REAL) C1 FROM Main
 ```
 
 ### Why in Query for Date type field (eg DocDate) the date is in yyyymmdd format ?
@@ -2476,7 +2476,7 @@ Below is example on how to get CSV data from Maintain Agent UDF_AList field
 1. Enter below script in the Code Tab
 
       <details>
-        <summary>Get CSV Data Script - click to expand</summary>
+      <summary>Get CSV Data Script - click to expand</summary>
 
       ```pascal
         function SetStrictDelimiter(const AStr:String):string;

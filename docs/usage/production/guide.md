@@ -54,7 +54,7 @@ To produce a chemical products, the costing calculation based on stock group:-
 
     2. Water
 
-        Assigned your Raw Material Purchase code, Cash Purchase code, Purchase Return code.
+        Assign your Raw Material Purchase code, Cash Purchase code, Purchase Return code.
 
         - Costing Method : Fixed Costing
 
@@ -62,7 +62,7 @@ To produce a chemical products, the costing calculation based on stock group:-
 
     3. Finished Goods
 
-        Assigned your Finished Goods Purchase code, Cash Purchase code, Purchase Return code.
+        Assign your Finished Goods Purchase code, Cash Purchase code, Purchase Return code.
 
         - Costing Method : FIFO
 
@@ -74,13 +74,13 @@ Stock -> Maintain Stock Item
 
 Setup the stock item master data for all types of stock. Eg. raw materials, end products, trading products, etc.
 
-    1. Create all your raw materials items and assigned stock group respectively.
+    1. Create all your raw materials items and assign stock group respectively.
 
         ![create-raw-materials-stock-item](../../../static/img/usage/production/guide/create-raw-materials-stock-item.png)
 
     2. Create your finished goods item and assign raw materials.
 
-        1. assigned stock group, enter based UOM, ref cost and ref price.
+        1. assign stock group, enter based UOM, ref cost and ref price.
 
         2. go to the BOM tab, choose this product as a BOM item, and assign all the raw materials, quantity needed.
 
@@ -114,7 +114,7 @@ Sales coordinator usually will input the Sales Order (SO) based on the customer 
 
 Unless the stock is manufactured, then you have to proceed to the Job Order process. How much of the materials/components required to meet the products ordered by the customer? This question was raised by the Material Planning department. Therefore, the Job Order takes place as the order to be input after the Sales Order. It will plan the materials/components required based on the qty ordered from Sales Order.
 
-When products produce out, you have to transfer the Job Order to the Stock Assembly to commit the stock on hand.
+When products are produced out, you have to transfer the Job Order to the Stock Assembly to commit the stock on hand.
 
 ![overview-workflow-so-jo](../../../static/img/usage/production/guide/overview-workflow-so-jo.png)
 
@@ -124,13 +124,13 @@ When products produce out, you have to transfer the Job Order to the Stock Assem
 
 Sales coordinator usually will input the Sales Order (SO) based on the customer PO received. The stock products will be updated into the system as ordered qty.
 
-How much of the materials/components required to meet the products ordered by the customer? This question was raised by the Material Planning department. Therefore, the Job Order takes place as the order to be input after the Sales Order. It will plan the materials/components required based on the qty ordered from Sales Order. When products produce out, basically you have to transfer the Job Order to the Stock Assembly to commit the stock on hand.
+How much of the materials/components required to meet the products ordered by the customer? This question was raised by the Material Planning department. Therefore, the Job Order takes place as the order to be input after the Sales Order. It will plan the materials/components required based on the qty ordered from Sales Order. When products are produced out, basically you have to transfer the Job Order to the Stock Assembly to commit the stock on hand.
 
 IMPORTANT: It is required for the Job Order module. For more information about price, please refer to our sales personnel.
 
 :::important
 
-It is required the SO -> PO and Job Order module. For more information about price, please refer to our sales personal.
+It is required the SO -> PO and Job Order module. For more information about price, please refer to our sales personnel.
 
 :::
 
@@ -285,7 +285,7 @@ Total components quantity requirement to meet the total output.
 
 4. Show Multilevel BOM in Flat Mode
 
-   This function enables it to drill down to the flatten level of the multilevel BOM structure. For example, the CAR multilevel BOM structure.
+   This function enables users to drill down to the flatten level of the multilevel BOM structure. For example, the CAR multilevel BOM structure.
 
    |**Level 0** | **Level 1** | **Level 2** | **Level 3** |
    |---|---|---|---|
@@ -313,7 +313,7 @@ Total components quantity requirement to meet the total output.
 
    Press NO to keep the BOM components at **LEVEL 1**.
 
-   Press YES to continue flatten the multilevel BOM to **LEVEL 3**.
+   Press YES to continue to flatten the multilevel BOM to **LEVEL 3**.
 
    After FLAT MODE, BOM components show at **LEVEL 3**.
 
@@ -425,7 +425,7 @@ What is the purpose of the OFFSET Qty in Sales Order? You will see a new column 
 
 2. For example, To make a cup of MILO KAO KAO, it needs - MILO Powder x 5 spoons - Sugar x 0.5 spoon - Water x 100ml
 
-   In order to make 100 cups of milo from one Job Order created, we need 10 persons to make it more efficient. Therefore, we have to input "Split to 10 process(s)", it means 10 persons processing. Job Order will be break the BOM components into 10 processes like below:
+   In order to make 100 cups of milo from one Job Order created, we need 10 persons to make it more efficient. Therefore, we have to input "Split to 10 process(s)", it means 10 persons processing. Job Order will break down the BOM components into 10 processes like below:
 
    |**No of process(s)** | **1** | **2** | **3** | **4** | **5** | **6** | **7** | **8** | **9** | **10** | **TOTAL** |
    |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -483,7 +483,7 @@ This module commonly used in food manufacturing, pharmaceutical, cosmetic/skin c
 
    In Sales Invoice, you can select the item issue out from which batch (expiry date), system will also show the expiry day & quantity available.
 
-   ![batch-in-IV](../../../static/img/usage/production/guide/batch-in-IV.png)
+   ![batch-in-IV](../../../static/img/usage/production/guide/batch-in-iv.png)
 
 4. **Stock** > **Print Stock Batch Expiry**
 

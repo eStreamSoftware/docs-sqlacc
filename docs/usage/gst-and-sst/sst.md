@@ -609,7 +609,7 @@ Director General may remit the whole or any part of:
 
 ### Refund of overpaid tax
 
-Any person who has overpaid or erroneously paid of sales tax, penalty, surcharge, fee; or If any person who has paid sales tax and then exemption or remission of sales tax has granted by Minister.
+Any person who has overpaid or erroneously paid of sales tax, penalty, surcharge, fee; or If any person who has paid sales tax and then exemption or remission of sales tax is granted by Minister.
 
 Claim to be made in form JKDM No. 2 within one year from the date of over payment or erroneously payment; or entitlement of refund.
 
@@ -671,7 +671,7 @@ Evasion of sales tax:
 
    1. Service Tax Regulations 2018
 
-   2. Service Tax (Customs Ruling) Regulatons 2018
+   2. Service Tax (Customs Ruling) Regulations 2018
 
    3. Service Tax (Compounding of Offences) Regulations 2018
 
@@ -731,7 +731,7 @@ Value of taxable service provided by a service provider for a period of 12 month
 
 ## Rate of Services
 
-All taxable services are fixed charged at a rate of 6%, except the provision of credit card/charge card services are charged at a specific rate of tax of RM25 is imposed upo issuance of principal or supplementary card and every subsequent year or part thereof.
+All taxable services are fixed charged at a rate of 6%, except the provision of credit card/charge card services are charged at a specific rate of tax of RM25 is imposed upon issuance of principal or supplementary card and every subsequent year or part thereof.
 
 ## Service Tax Registration
 
@@ -819,7 +819,7 @@ Registered person is allowed to deduct service tax in his return for any cancell
 
 ### Credit Note & Debit Note
 
-   Both credit note and debit note are allowed to issue by registered person. It shall contained the prescribed particular and make an adjustment in his SST-02 return.
+   Both credit note and debit note are allowed to issue by registered person. It shall contain the prescribed particular and make an adjustment in their SST-02 return.
 
 ## Accounting Basis and Taxable Period
 
@@ -1092,17 +1092,17 @@ To change to Accrual Basis(i.e. Pay Kastam even no payment), Just Set as below
 
 ![des-sstfaq-change-the-service-tax-type-to-accrual-basis-1](../../../static/img/usage/gst-and-sst/sst/sstfaq-change-the-service-tax-type-to-accrual-basis-1.jpg)
 
-### 2.Why preview my SST-02 report is no value even at screen had amount?
+### 2.Why preview my SST-02 report is no value even though the screen shows an amount?
 
 **Solution:**
 
-Make sure you had enter your **Service Tax** and/or **Sales Tax No.** in File | Company Profile
+Make sure you have entered your **Service Tax** and/or **Sales Tax No.** in File | Company Profile
 
 ### 3.Why does the tax code (ST5) used in my sales invoices not appear in SST-02, but it shows up in the SST-02 listing?
 
 **Solution:**
 
-Make sure you had enter your **Sales Tax no** instead of **Service Tax** no in File | Company Profile
+Make sure you have entered your **Sales Tax no** instead of **Service Tax** no in File | Company Profile
 
 ### 4.Why Some Service Tax Transaction not shown in SST-02 even the document is fully paid?
 
@@ -1127,7 +1127,7 @@ Change the **Knock-off Tax Date** (follow the payment date)
 
 ![des-sstfaq-service-invoice-knockoff-not-appear-in-sst02-2](../../../static/img/usage/gst-and-sst/sst/sstfaq-service-invoice-knockoff-not-appear-in-sst02-2.jpg)
 
-### 6.Can I mixed the sales tax and service tax in single invoice?
+### 6.Can I mix the sales tax and service tax in single invoice?
 
 **Issue:**
 
@@ -1150,7 +1150,7 @@ Sales tax and service tax having different accounting basis as explained below.
     - Service Tax required to be accounted at the time when the payments is received.
     - On the day following period of twelve month when any whole or part of the payment is not received from the date of the invoice for the taxable service provided
 
-### 7.What circumstanaces to use tax code SV and SVA for Credit Note?
+### 7.What circumstances to use tax code SV and SVA for Credit Note?
 
 **Issue:**
 
@@ -1177,7 +1177,7 @@ There will be 2 cases of service tax where credit note has taken in place:
 
 New service tax effectively come into operation on **1 January 2020**.
 
-***Characterics***
+***Characteristics***
 
 - delivered or subscribed over the **internet or other electronic network**
 - delivered through **information technology medium** (human eye cannot see and touch)
@@ -1203,7 +1203,7 @@ New service tax effectively come into operation on **1 January 2020**.
     - any person who is **outside Malaysia operating an online platform** for buying and selling goods
     - providing services (whether or not such person provides any digital services) who makes transactions for provision of digital services **on behalf of any person**
 
-2. Threshold exceed RM500,000 (historical or future 12 months)
+2. Threshold exceeds RM500,000 (historical or future 12 months)
 
    **Accounting Basis**
 
@@ -1253,7 +1253,7 @@ How should the double entry be recorded for a service tax invoice and credit not
 
 1. **Full Service Tax Invoice issue**
 
-   | GL Acc   | Desciption        | Tax | DR     | CR     |
+   | GL Acc   | Description        | Tax | DR     | CR     |
    |----------|-------------------|-----|--------|--------|
    | 300-A0001| Customer ABC      |     | 1060.00|        |
    | 500-000  | Service Sales     | SV  |        | 1000.00|
@@ -1261,21 +1261,21 @@ How should the double entry be recorded for a service tax invoice and credit not
 
 2. **Partial Payment** knock-off with invoice
 
-   | GL Acc   | Desciption   | Tax | DR   | CR   |
+   | GL Acc   | Description   | Tax | DR   | CR   |
    |----------|--------------|-----|------|------|
    | 330-000  | BANK         |     | 530.00|      |
    | 300-A0001| Customer ABC |     |       | 530.00|
 
    System auto reverse the SST-Deferred Tax after knock-off
 
-   | GL Acc  | Desciption        | Tax | DR   | CR   |
+   | GL Acc  | Description        | Tax | DR   | CR   |
    |---------|-------------------|-----|------|------|
    | SST-203 | SST - Deferred Tax|     | 30.00|      |
    | SST-202 | SST - Service Tax |     |      | 30.00|
 
 3. Reduce/cancel the partly of the service amount. Issue CN using **tax code: SV**
 
-   | GL Acc   | Desciption     | Tax | DR    | CR    |
+   | GL Acc   | Description     | Tax | DR    | CR    |
    |----------|----------------|-----|-------|-------|
    | 500-000  | Service Sales  | SV  | 500.00|       |
    | SST-203  | SST - Deferred Tax | SV  | 30.00 |       |

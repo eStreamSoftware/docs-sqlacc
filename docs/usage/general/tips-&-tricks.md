@@ -355,7 +355,7 @@ Below is the proper steps to do posting/import
 
 You can insert 2 or more rows(depend how many level you had) of item as negative unitprice.
 
-But as mention above [**Extra Notes**](./tips-tricks.md#extra-notes) proportion by sub total amt for mix tax code.
+But as mention above [**Extra Notes**](./tips-&-tricks.md#extra-notes) proportion by sub total amt for mix tax code.
 
 ### Can I do like this, DR Bank/Cash In hand/Debtor & CR Sales Account using Journal?
 

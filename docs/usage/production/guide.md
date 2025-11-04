@@ -483,7 +483,7 @@ This module commonly used in food manufacturing, pharmaceutical, cosmetic/skin c
 
    In Sales Invoice, you can select the item issue out from which batch (expiry date), system will also show the expiry day & quantity available.
 
-   ![batch-in-IV](../../../static/img/usage/production/guide/batch-in-IV.png)
+   ![batch-in-IV](../../../static/img/usage/production/guide/batch-in-iv.png)
 
 4. **Stock** > **Print Stock Batch Expiry**
 

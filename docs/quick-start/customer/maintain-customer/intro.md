@@ -12,6 +12,11 @@ import {TOC} from '@src/components/toc.js';
 <TOC
 dataEntryList = {[
 {
+  "text": "Maintain Customer",
+  "link": "./how-to-maintain-customer",
+  "videoId": "oWBmQIovcrM"
+},
+{
   "text": "TIN Lookup Via Maintain Customer/Supplier",
   "link": "../e-invoice/how-to-tin-lookup-via-maintain-customer",
   "videoId": "EMpDTDBVB2o"

@@ -10,7 +10,7 @@ tags: ["SQL Account", "Usage", "GST"]
 
 ## GST Count Down Timer
 
-It is a Count Down of Submission the GST Return due. Generally it will shown 7 Days before GST Return Due Date Time.
+This is a countdown timer for the submission of the GST Return. It is generally displayed 7 days before the GST Return due date.
 
 **Example GST Count Down Timer:**
 
@@ -23,9 +23,13 @@ Visible := (Return Due - Today Date - 1) < 7
 ### Example
 
 Frequently : Monthly
+
 Next Submission : Nov 2016
+
 Count Down begin shown : 24 Dec 2016
+
 Today date : 27 Dec 2016
+
 Count Down Shown : 3 Days+++
 
 ## GST Return
@@ -49,10 +53,10 @@ To process and close the GST Returns period. You can generate the GST-03 and GAF
 
 ### Draft GST Return
 
-You are able to draft the GST-03 before the final GST-03 submission by process as draft.
+You can draft the GST-03 before the final GST-03 submission by processing it as a draft.
 
-1. Click on the arrow key down at the Process button (Y).
-2. See below screenshot.
+1. Click the dropdown arrow nect to the Process button (Y).
+2. Refer to the screenshot below.
 
    ![des-draft-gst-return-1](../../../static/img/usage/gst-and-sst/gst/draft-gst-return-1.jpg)
 
@@ -62,18 +66,18 @@ You are able to draft the GST-03 before the final GST-03 submission by process a
 
 :::note
 
-You still can amend the documents where the DRAFT GST return has generated. You can draft as many before FINAL process the GST Returns for the period.
+You can still amend documents while the GST return is in **DRAFT** status. Multiple drafts can be created before FINAL process the GST Returns for the period.
 
 :::
 
 ### Final GST Return
 
-1. Click on the Process button.
-2. See below screenshot.
+1. Click the Process button.
+2. Refer to the screenshot below.
 
    ![des-final-gst-return-1](../../../static/img/usage/gst-and-sst/gst/final-gst-return-1.jpg)
 
-3. Final GST Return will not show the word DRAFT in the status column.
+3. The finalized GST Return will no longer display "DRAFT" in the status column.
 
    ![des-final-gst-return-2](../../../static/img/usage/gst-and-sst/gst/final-gst-return-2.jpg)
 
@@ -87,8 +91,8 @@ You cannot amend the documents anymore where the FINAL GST return has generated.
 
 #### AR & AP Bad Debt Relief
 
-1. Bad Debt Relief screen will be prompted (see the screenshot below) if the system found there are outstanding Tax Invoices has expired at 6 months.
-2. Sales documents from the company with empty GST No will be un-ticked. You can tick the documents if you think this company is a GST Registered person.
+1. Bad Debt Relief screen will appear (see the screenshot below) if the system detects outstanding Tax Invoices that have expired for 6 months.
+2. Sales documents from the company without GST No. will be un-ticked. You can tick the documents if you believe the company is GST-Registered.
 
    ![des-gst-bad-debt-relief-1](../../../static/img/usage/gst-and-sst/gst/gst-bad-debt-relief-1.jpg)
 
@@ -100,19 +104,19 @@ You cannot amend the documents anymore where the FINAL GST return has generated.
 
    :::
 
-3. Press OK if get a "confirm" message prompted (see the screenshot below), it means there are some company do not have GST No.
-4. If you have confirmed that the company is Non-GST Registered person then you can press YES to proceed.
-5. Otherwise press NO, you have to update the GST No at Maintain Customer to confirm the company is a GST Registered person before process the GST Return.
+3. Press OK if a "confirm" message is prompted (see the screenshot below), This indicates that some companies do not have a GST No.
+4. If you confirmed that the company is Non-GST Registered, press YES to proceed.
+5. Otherwise, press NO and update the GST No. in Maintain Customer to confirm the company is GST-registered before processing the GST Return.
 
    ![des-gst-bad-debt-relief-3](../../../static/img/usage/gst-and-sst/gst/gst-bad-debt-relief-3.jpg)
 
 #### Capital Goods Acquired
 
-1. If you have get a prompt for the **GST Return - Capital Goods Acquired**, then it means there have some credit adjustment transactions for Fixed Asset Account. See below screenshot.
+1. If you receive a prompt for **GST Return - Capital Goods Acquired**, it indicates that there are credit adjustment transactions for Fixed Asset Account. See below screenshot.
 
    ![des-gst-capital-goods-acquired-1](../../../static/img/usage/gst-and-sst/gst/gst-capital-goods-acquired-1.jpg)
 
-2. Tick on the transactions line to take in the credit adjustment (eg. Rm15,000.00). Otherwise, it will capture the value Rm60,000.00 in GST-03 item 16. See the screenshot below.
+2. Select the transactions line to include the credit adjustment (eg. Rm15,000.00). Otherwise, the system will capture the value of Rm60,000.00 in GST-03 item 16. See the screenshot below.
 
    ![des-gst-capital-goods-acquired-2](../../../static/img/usage/gst-and-sst/gst/gst-capital-goods-acquired-2.jpg)
 
@@ -2746,13 +2750,13 @@ GST on **Imported Services** (Sec 13) is accounted by way of the reverse charge 
 
 **Reverse Charge Mechanism** (also known as Self Recipient Accounting-RSA)
 
-A supplier who does not belong in Malaysia and supplies services to a customer in Malaysia does not have to charge GST. However, the customer who received the services is required to account for GST by a reverse charge mechanism.
+A supplier who is not based in Malaysia and supplies services to a customer in Malaysia does not charge GST. However, the customer receiving the services is required to account for GST using the reverse charge mechanism.
 
-The recipient has to pay tax for the imported services he received and the same time claim input tax in his GST return. Reverse charge mechanism is an accounting procedure where a recipient (as the customer) of the supply, acts as both, the supplies and the recipient of the services.
+The recipient must pay GST for the imported services received and simultaneously claim input tax in their GST return. The reverse charge mechanism is an accounting procedure where the recipient acts as both the supplier and the recipient of the services.
 
 **Example:**
 
-1. Royalty fee charged in Malaysia by non resident business situated outside Malaysia from Jan - Dec 2016 = USD 200,000
+1. Royalty fee charged in Malaysia by a non-resident business situated outside Malaysia from Jan - Dec 2016 = USD 200,000
 2. Date of invoice = 10 March 2016
 3. Bank prevailing rate = Rm2.50 (Date: 10 March 2016)
 

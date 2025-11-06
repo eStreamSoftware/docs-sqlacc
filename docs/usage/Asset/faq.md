@@ -21,9 +21,9 @@ A - FIRST acquire date of the asset
 B - System Conversion Date -1 day
 :::
 
-## I have posted the depreciation until December 2021. How to record my new asset?
+## I have posted the depreciation until December 2021. How do I record my new asset?
 
-### Method 1 : Simple follow Last Asset Net Book Value from Balance Sheet
+### Method 1 : Use the Last Asset Net Book Value from Balance Sheet
 
 Maintain the Asset Item as below:
 
@@ -48,29 +48,29 @@ Maintain the Asset as below :
 5. Tick *Cancelled* to the Journal posted from Step 4
 ![je-cancellled](../../../static/img/usage/asset/assetFaq/je-cancellled.jpg)
 
-## Somehow the depreciation value is different from my previous Journal, can I edit the depreciation value calculated in Maintain Asset Item?
+## If the depreciation value differs from my previous Journal, can I edit the depreciation value calculated in Maintain Asset Item?
 
-Yes, it is allowed to change the depreciation value in Maintain Asset Item (Depreciation Schedule).
+Yes, you can change the depreciation value in Maintain Asset Item (Depreciation Schedule).
 
 ![asset-amount](../../../static/img/usage/asset/assetFaq/asset-amount.jpg)
 
 ![depr-value](../../../static/img/usage/asset/assetFaq/depr-value.jpg)
 
-## Can the amortization of Intangible Assets like license be used in Asset Module?
+## Can the amortization of Intangible Assets such as licenses, be managed in the Asset Module?
 
-Yes, it can. Just maintain as usual like __Tangible Asset__ (Fixed Asset).
+Yes, it can. Maintain it as you would a __Tangible Asset__ (Fixed Asset).
 
-For __Intangible Asset__ (eg. goodwill, license), the __amortization calculation__ is using __straight line method__ can choosen in the Asset Group. It is calculated by taking the difference between the cost of the asset and its anticipated salvage or book value and dividing that figure by the total number of years it will be used.
+For __Intangible Asset__ (eg. goodwill, license), the __amortization calculation__ uses the __straight line method__ , which can be selected in the Asset Group. The calculation involves subtracting the asset's anticipated salvage or book value from its cost and dividing the result by the total number of years it will be used.
 
-## Can I import the asset list using Excel instead of key-in?
+## Can I import the asset list using Excel instead of manually key-in?
 
-Yes, you can. Asset import function available in SQL Account version 5.2022.948.826
+Yes, you can. The asset import function is available in SQL Account version 5.2022.948.826
 
 Refer to [Import-Asset Master List](../../usage/asset/guide#importing-asset-master-list)
 
-## How to handle additional cost for the Fixed Asset?
+## How do I handle additional cost for the Fixed Asset?
 
-Create new asset code to handle additional cost, eg.
+Create new asset code to handle additional cost, eg.:
 
 | __Asset Code__ | __Description__            | __Remark__          |
 |----------------|-----------------------------|---------------------|
@@ -78,7 +78,7 @@ Create new asset code to handle additional cost, eg.
 | MV-0001A       | TOYOTA VIOS - BZZ 999       | Additional Cost     |
 
 :::info
-    Don't mix up the depreciation value between original and additional.
+    Do not mix the depreciation value of the original asset and the additional cost.
 :::
 
 ### Quick Steps
@@ -93,11 +93,11 @@ Create new asset code to handle additional cost, eg.
     ![paste-asset](../../../static/img/usage/asset/assetFaq/paste-asset.jpg)
 
 4. *Change the asset code* by inserting any characters to differentiate it
-    - Acquire date = Date incurred additional cost
+    - Acquire date = Date the additional cost was incurred.
     - Cost = Additional Cost
 
     ![depr-rate](../../../static/img/usage/asset/assetFaq/depr-rate.jpg)
 
-## Cost in Maintain Asset Item should key-in as local currency or original currency (eg. purchase in USD)?
+## Should the cost in Maintain Asset Item be key-in in local currency or the original currency (eg. purchase in USD)?
 
-Cost should key-in as __Local value__. So, depreciation value will calculated and posted in local value.
+The cost should be key-in as the __Local value__. The depreciation value will then be calculated and posted in the local currency.

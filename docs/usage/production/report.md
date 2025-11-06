@@ -36,7 +36,7 @@ This is an additional module.
 
 ### Print Document Style
 
-Tick relevant check boxes.
+Select the relevant checkboxes.
 
 ![job-order-listing-print-document-style](../../../static/img/usage/production/report/job-order-listing-print-document-style.png)
 
@@ -57,11 +57,11 @@ Tick relevant check boxes.
 
     ![outstanding-production-document-listing-report-type](../../../static/img/usage/production/report/outstanding-production-document-listing-report-type.png)
 
-3. Select how you want to filter your report
+3. Choose how you want to filter your report
 
     ![outstanding-production-document-listing-filter](../../../static/img/usage/production/report/outstanding-production-document-listing-filter.png)
 
-4. Tick the relevant options
+4. Select the relevant options.
 
     |**Field Name**| **Explanation**|
     |---|---|
@@ -93,7 +93,7 @@ Tick relevant check boxes.
 
     ![bom-relation-select-item](../../../static/img/usage/production/report/bom-relation-select-item.png)
 
-3. Press Apply
+3. Press Apply button
 
     ![bom-relation-click-apply](../../../static/img/usage/production/report/bom-relation-click-apply.png)
 

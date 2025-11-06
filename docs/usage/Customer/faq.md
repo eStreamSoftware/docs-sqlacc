@@ -10,7 +10,7 @@ tags: ["SQL Account", "Usage", "Customer","faq"]
 
 ### Customer Invoice
 
-Invoice with amount USD100 | Rate 3.00 | Local net total = RM300
+Invoice amount USD 100 | Rate 3.00 | Local net total = RM300
 
 ![1](../../../static/img/usage/customer/customerFaq/bounce-payment/1.png)
 
@@ -44,7 +44,7 @@ Please follow the steps below to do the bounce payment:
 
 ### Supplier Invoice
 
-Supplier Invoice with amount USD100 | Rate 3.00 | Local net total = RM300
+Supplier Invoice amount USD100 | Rate 3.00 | Local net total = RM300
 
 ![8](../../../static/img/usage/customer/customerFaq/bounce-payment/8.png)
 
@@ -102,7 +102,7 @@ Please follow the steps below to do the bounce payment:
 
     ![3](../../../static/img/usage/customer/customerFaq/foreign/3.png)
 
-7. System will show the report with the auto calculated UnRealised Gain/Loss Amount
+7. System will show the report with the auto-calculated UnRealised Gain/Loss Amount
 
     ![4](../../../static/img/usage/customer/customerFaq/foreign/4.png)
 
@@ -130,11 +130,11 @@ Opening Bank Deposit can be done when you are banking in 2 or more cheques at a 
 
 ### Steps to open bank deposit
 
-1. Firstly, point to ***“Customer”*** tab and select ***“Customer Payment”***.
+1. Firstly, point to **“Customer”** tab and select **“Customer Payment”**.
 
     ![1](../../../static/img/usage/customer/customerFaq/open-bank-deposit/1.png)
 
-2. Click on ***“New”***
+2. Click on **“New”** 
 
     ![2](../../../static/img/usage/customer/customerFaq/open-bank-deposit/2.png)
 
@@ -146,7 +146,7 @@ Opening Bank Deposit can be done when you are banking in 2 or more cheques at a 
 
     ![4](../../../static/img/usage/customer/customerFaq/open-bank-deposit/4.png)
 
-5. You will come to this interface. Key in the transaction slip number, select the correct date and account.
+5. You will come to this interface. Enter the transaction slip number, select the correct date and account.
     ![5](../../../static/img/usage/customer/customerFaq/open-bank-deposit/5.png)
     ![6](../../../static/img/usage/customer/customerFaq/open-bank-deposit/6.png)
 
@@ -186,7 +186,7 @@ Opening Bank Deposit can be done when you are banking in 2 or more cheques at a 
 
 ### Opening Bank Deposit at cash book entry
 
-“Opening Bank Deposit” an also be done at cash book entry. Firstly, point to **“GL”** and select **“Cash Book Entry”**.
+“Opening Bank Deposit” can also be done at cash book entry. Firstly, point to **“GL”** and select **“Cash Book Entry”**.
 
     ![16](../../../static/img/usage/customer/customerFaq/open-bank-deposit/16.png)
 
@@ -261,10 +261,10 @@ Refer to  Step 1 in [Scenario 1](#1-customer-paid-in-rm--payment-received-in-rm)
 
 1. For this case where customer currency is USD and payment also in USD, there’ll be a few more step to do.
 
-    1. you have to maintain a USD Bank in GL Account (**GL > Maintain Account**) where this will be the bank you’ll be getting your
+    1. you need to maintain a USD Bank in GL Account (**GL > Maintain Account**) where this will be the bank you’ll be getting your
     payment in.
 
-    2. after maintain the GL Account, go to **Tools > Maintain Payment Method** to assign the currency of the
+    2. After maintained the GL Account, go to **Tools > Maintain Payment Method** to assign the currency of the
     payment method in the particular bank.
 
     ![6](../../../static/img/usage/customer/customerFaq/payment-guide/6.png)
@@ -280,7 +280,7 @@ Refer to  Step 1 in [Scenario 1](#1-customer-paid-in-rm--payment-received-in-rm)
     **Customer > Payment**
 
     :::info
-    Only Customer currency that is same with payment currency will enable the editing of Rate for currency on top right corner
+    The currency rate in the top-right corner can only be edited if the customer's currency matches the payment currency.
     :::
 
     ![8](../../../static/img/usage/customer/customerFaq/payment-guide/8.png)
@@ -390,7 +390,7 @@ Post-dated cheque is a cheque written by the drawer (payer) for a date in the fu
 
     ![4](../../../static/img/usage/customer/customerFaq/post-dated-bounced-cheque/4.png)
 
-5. Select the actual posting date of the cheque. eg: 16th of July 2015. Then, click **OK**.
+5. Select the actual posting date of the cheque (e.g., 16th of July 2015). Then, click **OK**.
 
     ![5](../../../static/img/usage/customer/customerFaq/post-dated-bounced-cheque/5.png)
 
@@ -436,7 +436,7 @@ A bounced cheque is a cheque that cannot be processed because the payer has insu
 
     ![15](../../../static/img/usage/customer/customerFaq/post-dated-bounced-cheque/15.png)
 
-5. Tick in box to bounce the payment. And set the bounce date. (For this case, the cheque is posted on 16th of July 2015, thus the bounce date should be later that 16th of July 2015). Click **OK**.
+5. Tick in checkbox to bounce the payment. And set the bounce date. (For this case, the cheque is posted on 16th of July 2015, thus the bounce date should be later that 16th of July 2015). Click **OK**.
 
     ![16](../../../static/img/usage/customer/customerFaq/post-dated-bounced-cheque/16.png)
 
@@ -452,15 +452,15 @@ A bounced cheque is a cheque that cannot be processed because the payer has insu
 
 ### Read Customer Info using MyKad Reader
 
-1. Link your Smart Card Reader to your computer
+1. Link your Smart Card Reader to your computer.
 
-2. Reader will turn red light when you success link to your computer
+2. The reader will display a red light when successfully linked to your computer.
 
     ![1](../../../static/img/usage/customer/customerFaq/read-mykad/1.png)
 
 3. Put MyKad into reader
 
-4. Reader will show blue light when success read your MyKad
+4. The reader will display a blue light when it successfully reads your MyKad.
 
     ![2](../../../static/img/usage/customer/customerFaq/read-mykad/2.png)
 
@@ -476,6 +476,6 @@ A bounced cheque is a cheque that cannot be processed because the payer has insu
 
     ![5](../../../static/img/usage/customer/customerFaq/read-mykad/5.png)
 
-8. Inside System will auto fill up MyKad Detail ***(NAME , ADDRESS , ID Number)***
+8. The system will automatically fill in MyKad details ***(NAME , ADDRESS , ID Number)***
 
     ![6](../../../static/img/usage/customer/customerFaq/read-mykad/6.png)

@@ -14,7 +14,7 @@ Example of **Customer (AR)** process work flow aligned with SQL Account flow:
 
 **AR = Account Receivable**.
 
-* To keep the customer profile data such as addresses, telephone, fax, email, contact person, credit limits, credit terms, etc. In other words, it is your customer contacts list.
+* To maintain customer profile data such as addresses, phone numbers, fax, email, contact persons, credit limits, credit terms, etc. In other words, it is your customer contacts list.
 
 ![maintain-cust](../../../static/img/usage/customer/customerBasicGuide/maintain-cust.png)
 
@@ -28,7 +28,7 @@ Example of **Customer (AR)** process work flow aligned with SQL Account flow:
 
 ![newCust](../../../static/img/usage/customer/customerBasicGuide/new-cust.png)
 
-* Key in your customer's details
+* Enter your customer's details
 
 ![custEntry](../../../static/img/usage/customer/customerBasicGuide/cust-entry.png)
 
@@ -37,7 +37,7 @@ Example of **Customer (AR)** process work flow aligned with SQL Account flow:
 | **Field Name** | **Explanation & Properties** |
 |-----------------|------------------------------|
 | **Company** | • Input the customer billing company name.<br />• **Field type:** Alphanumerical<br />• **Length:** 100 |
-| **Description 2** (underline below *Company*) | • An optional field recommended to input Chinese translated name, former company name, company register no, etc.<br />• **Field type:** Alphanumerical<br />• **Length:** 100 |
+| **Description 2** (underline below *Company*) | • An optional field where you can enter Chinese translated name, former company name, company register no, etc.<br />• **Field type:** Alphanumerical<br />• **Length:** 100 |
 | **Control A/c** | • Select an appropriate Customer Control Account to be posted to GL when customer documents are created.<br />• **Field type:** Lookup from Maintain Accounts (Special Type: Customer Control Account)<br />• **Length:** 10 |
 | **Code** | • AUTO/MANUAL generate the Customer Code.<br />• **Field type:** Alphanumerical<br />• **Length:** 10 |
 | **Cust Category** | • Categorize your customer for reporting purpose.<br />• **Field type:** Lookup from Maintain Company Category<br />• **Length:** 15 |
@@ -65,21 +65,21 @@ Example of **Customer (AR)** process work flow aligned with SQL Account flow:
 | **Aging On** | • Select a default Aging type: Invoice Date or Due Date.<br />**Invoice Date:** based on IV Date<br />**Due Date:** based on after due date (terms)<br />**Field type:** Option<br />**Default:** Invoice Date |
 | **Price Tag** | • Set the price tag to the items.<br />**Field type:** Lookup from Maintain Stock Price Tag<br />**Length:** 10 |
 
-1. You can categorize your customers into different groups, e.g. Category, agents, area How do you create your new agent/ area? Refer to the step below:
+1. You can categorize your customers into different groups such as category, agents, area. How to create a new agent/ area? Refer to the step below:
 
    ![custGroup](../../../static/img/usage/customer/customerBasicGuide/cust-group.png)
 
 2. You can also insert more than one billing / delivery addresses (unlimited)
 
-3. There are different options for viewing a customer aging and customer statement
+3. There are different options for viewing customer aging and customer statement
 
 :::note
 
 1. Customer Statement
 
-   * Brought Forward: Summary Statement
+* Brought Forward: Summary Statement
 
-   Open Item: Detail Statement
+* Open Item: Detail Statement
 
 2. Customer Aging
 
@@ -113,7 +113,7 @@ Example of **Customer (AR)** process work flow aligned with SQL Account flow:
 | **Tax Area** | • Not applicable to Malaysia/Singapore. |
 | **Sales Tax Area** | • Enter the company’s Sales Tax Number. |
 | **Service Tax Area** | • Enter the company’s Service Tax Number. |
-| **Exemption No** | • Input the Sales Tax Exemption number received from customer.<br />**Field type:** Alphanumerical<br />**Length:** 50 |
+| **Exemption No** | • Enter the Sales Tax Exemption number received from customer.<br />**Field type:** Alphanumerical<br />**Length:** 50 |
 | **Expiry Date** | • Set the expiry date for tax exemption.<br />• The customer will be tax exempted before the expiry date.<br />**Field type:** Date |
 
 ### Tariff Code Setting
@@ -122,23 +122,23 @@ Example of **Customer (AR)** process work flow aligned with SQL Account flow:
 
 | **Field Name** | **Explanation & Properties** |
 |-----------------|------------------------------|
-| **Tariff** | • Add tariff code of taxable goods to be sold in exemption.<br />• You can find your tariff code at [https://ezhs.customs.gov.my/](https://ezhs.customs.gov.my/)<br />**Lookup:** Maintain Tariff<br />**Related Topic:** Maintain Stock Item#Main_Header |
+| **Tariff** | • Add tariff code of taxable goods to be sold in exemption.<br />• You can find your tariff code at [https://ezhs.customs.gov.my/](https://ezhs.customs.gov.my/)<br />**Lookup:** Maintain Tariff<br />**Related Topic:** [Maintain Stock Item → Main Header](../../usage/stock/stock-guide#maintain-stock-item) |
 | **Tax** | • Select an appropriate tax code that falls under the Person Exempted in Schedule A, B, and C.<br />**Schedule A tax code:** SE<br />**Schedule B tax code:** SEB<br />**Schedule C tax codes:** SEC1, SEC2, SEC3, SEC4, SEC5<br />**Lookup:** Maintain Tax |
 
 * Press **SAVE** button once you are done
 
-After Saving, you should see all your customer's information on this screen
+After Saving, you should see all your customer's information on this screen.
 
 ![custAfterSave](../../../static/img/usage/customer/customerBasicGuide/cust-after-save.png)
 
 ## Customer Code Format
 
-* Customer code are generated AUTOMATICALLY after pressing the SAVE button
+* Customer code are generated AUTOMATICALLY after pressing the SAVE button.
 
 >IMPORTANT :
 >
 >1. Every customer code is unique.
->2. If the system found there is an duplicate code trying to save, users will be notify by warning message.
+>2. If the system found there is a duplicate code trying to save, users will be notified with a warning message.
 >See screenshot below.
 >
 
@@ -165,7 +165,7 @@ After Saving, you should see all your customer's information on this screen
 
 > This is a **paid module**.
 
-* Credit Control use to control the customer outstanding within the specific overdue and credit limit given. See screenshot below.
+* Credit Control is used to manage the customer outstanding within the specific overdue and credit limit given. See screenshot below.
 
 ![custCreditControl](../../../static/img/usage/customer/customerBasicGuide/cust-credit-control.png)
 
@@ -194,7 +194,7 @@ Can be applied to the following document types:
 6. DN - Debit Note
 :::
 
-* You have to tick "Apply To" in order to set the further action (eg. unblock, block or override) to control the exceed credit and overdue limit. See screenshot below:
+* You have to tick "Apply To" in order to set the further action (e.g. unblock, block or override) to control the exceed credit and overdue limit. See screenshot below:
 
 ![credContAction](../../../static/img/usage/customer/customerBasicGuide/cred-cont-action.png)
 
@@ -221,7 +221,7 @@ Can be applied to the following document types:
 ### Suspended
 
 * You have to tick "Apply To" any document type in order to tick the SUSPENDED.
-* At the same times, you can input the suspended message to prompt to the user when they try to save the documents. See screenshot below:
+* At the same time, you can enter the suspended message to prompt the user when they try to save the document. See screenshot below:
 
 ![suspend-CreditControl](../../../static/img/usage/customer/customerBasicGuide/suspend-credit-control.png)
 
@@ -229,7 +229,7 @@ Can be applied to the following document types:
 
 ### Customer Invoice vs Sales Invoice
 
-The difference between Customer Invoice and Sales Invoice:
+The differences between a Customer Invoice and a Sales Invoice are as follows:
 
 |**Customer Invoice**| **Sales Invoice**|
 |---|---|
@@ -335,7 +335,7 @@ If you have a customer who is also a supplier, you may want to offset the outsta
 
     ![1](../../../static/img/usage/customer/customerBasicGuide/1.png)
 
-2. **General Ledger** | make sure you had chosen a valid Contra Account
+2. **General Ledger** | Make sure you have selected a valid Contra Account
 
     ![2](../../../static/img/usage/customer/customerBasicGuide/2.png)
 
@@ -359,7 +359,7 @@ If you have a customer who is also a supplier, you may want to offset the outsta
 
         ![5](../../../static/img/usage/customer/customerBasicGuide/5.png)
 
-   3. System will auto generated a Contra Number, jot down the number and go **Supplier | Supplier Contra** to edit it.
+   3. The system will automatically generate a Contra Number, jot down the number and go to **Supplier | Supplier Contra** to edit it.
 
       ![6](../../../static/img/usage/customer/customerBasicGuide/6.png)
 

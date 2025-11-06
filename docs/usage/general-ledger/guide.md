@@ -9,9 +9,9 @@ tags: ["SQL Account", "Usage"]
 ## Maintain Chart of Account
 
 1. Creating a New Account
-    1. Select **GL** | **Maintain Account** | Select category (e.g. Fixed Assets) | **New**
+    1. Select **GL** | **Maintain Account** | Select category (e.g., Fixed Assets) | **New**
     2. Enter the **GL Code** and **Description** (alphanumeric characters are acceptable)
-    3. Check the **Special Account Type** if applicable, e.g. the account is belonging to Accumulated Deprn Account (Fixed Assets)
+    3. Check the Special Account Type if applicable, e.g., the account belongs to the Accumulated Deprn Account (Fixed Assets).
     4. Click **OK**. Your new account is now created.
 
     ![1](../../../static/img/usage/general-ledger/glguide/chart-step1-1.png)
@@ -34,7 +34,7 @@ Watch tutorial video here: [youtube](https://www.youtube.com/watch?v=rh0L-Kol1ts
 
 :::
 
-Cash book entry is normally used for a non-customer/ supplier payment or receipt e.g. payment for salaries, utilities etc.
+Cash book entry is normally used for a non-customer/ supplier payment or receipt e.g., payment for salaries, utilities etc.
 
 1. **GL** > **Cash Book Entry** > **New** (choose between Payment Voucher or Official Receipt)
 
@@ -54,13 +54,13 @@ Watch tutorial video here: [youtube](https://www.youtube.com/watch?v=WHzNMsCmFHg
 
 1. **GL > Journal Entry**
 2. **Key in your double entry**
-3. Click on **Save** (System will blocked in Dr and Cr are not tally)
+3. Click on **Save** (The system will block the entry if the DR and CR amounts do not tally.)
 
 ![6](../../../static/img/usage/general-ledger/glguide/jr-entry.png)
 
 ## Foreign Bank Adjustment
 
-- To revalue the foreign bank balance every end of the month
+- To revalue the foreign bank balance at the end of each month
 - Calculate and post double entry for the unrealized FOREX gain/loss
 
 Refer this ledger:
@@ -78,7 +78,7 @@ Local Balance is now RM 57,350 and you wish to revalue it using a monthly exchan
     ![8](../../../static/img/usage/general-ledger/glguide/f-bank-adj-entry-step3.png)
 
 4. Choose the foreign bank, the system will get the bank balance from the ledger as per the date.
-5. Enter the **Revalue currency rate**, eg. 4.5000. The system will auto calculate the unrealized FOREX gain/loss.
+5. Enter the **Revalue currency rate**, eg. 4.5000. The system will automatically calculate the unrealized FOREX gain/loss.
 
     ![9](../../../static/img/usage/general-ledger/glguide/f-bank-adj-entry-step5.png)
 
@@ -99,7 +99,7 @@ Local Balance is now RM 57,350 and you wish to revalue it using a monthly exchan
 ## Bank Reconciliation
 
 1. **GL > Bank Reconciliation > New**
-2. Right click, to see Opening Bank Reconciliation
+2. Right-click to view Opening Bank Reconciliation
 3. Set the **Date** (before System Conversion Date)
 
 ![12](../../../static/img/usage/general-ledger/glguide/bank-recon.png)
@@ -116,7 +116,7 @@ Local Balance is now RM 57,350 and you wish to revalue it using a monthly exchan
 ## Maintain Budget
 
 - Press **EDIT**.
-- Start input the budget value into each months.
+- Start input the budget value into each month.
 - After input finished, **SAVE** it.
 
 ![15](../../../static/img/usage/general-ledger/glguide/maintain-budget.png)

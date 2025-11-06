@@ -36,7 +36,7 @@ Not every user is going to have the same access rights as ADMIN, and ADMIN user 
 
 2. Click on **More** Options and look for **Access Right**.
 
-3. You need to check the transactions / functions (row), compare with the user (column) and **tick = Allowed** or **untick = Disallowed**, the action for a particular user for particular transactions. For example, base on the setting in the following images, the user is not allowed to delete Customers or to view Customer Payments.
+3. You need to check the transactions / functions (row), compare with the user (column) and **tick = Allowed** or **untick = Disallowed**, the action for a particular user for particular transactions. For example, base on the settings in the following images, the user is not allowed to delete Customers or to view Customer Payments.
 
    ![112](../../../static/img/usage/tools/tools-basic-guide/111.png)
 
@@ -247,7 +247,7 @@ This is a **paid module**. Contact your SQL Service to get this standalone appli
 
     - Tick on which option you want to adjust / update eg : Reference Price
     - You can also tick Record change history then system will update this changes history in your note
-    - Once you complete setting, click on Change
+    - Once you complete the setting, click on Change
 
 ### 4. Check & Post
 
@@ -257,7 +257,7 @@ This is a **paid module**. Contact your SQL Service to get this standalone appli
 
 ## Maintain Form Mode
 
-Form Mode helps to filter data based on defined criteria. It is used to restrict users to view only specific sets of data for a certain document. For example, agent **Lip Fong can view and access the sales invoices belonging to his agent code** LF ONLY.
+Form Mode helps filter data based on defined criteria. It is used to restrict users to view only specific sets of data for a certain document. For example, agent **Lip Fong can view and access the sales invoices belonging to his agent code** LF ONLY.
 
 ### New Form Mode
 
@@ -871,7 +871,7 @@ end;
 
 ![maintain-company-category](../../../static/img/usage/tools/tools-basic-guide/maintain-company-category.jpg)
 
-### Create New Company CAtegory
+### Create New Company Category
 
 - Screenshot below is the Company Category entry form.
 

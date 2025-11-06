@@ -8,13 +8,13 @@ tags: ["SQL Account", "Usage", "Inquiry"]
 
 ## Account Inquiry
 
-Quick inquiry the ledger transactions for General Ledger, Sales Ledger (Customer) and Purchase Ledger (Supplier).
+Quick inquiry into the ledger transactions for the General Ledger, Sales Ledger (Customer), and Purchase Ledger (Supplier).
 
 ![account-inquiry](../../static/img/usage/inquiry/account-inquiry.jpg)
 
 ### General Ledger
 
-1. Select the date ranged.
+1. Select the date range.
 
 2. Select a GL account code.
 
@@ -24,7 +24,7 @@ Quick inquiry the ledger transactions for General Ledger, Sales Ledger (Customer
 
 ### Sales Ledger (Customer)
 
-1. Select the date ranged.
+1. Select the date range.
 
 2. Select a Customer account code.
 
@@ -34,7 +34,7 @@ Quick inquiry the ledger transactions for General Ledger, Sales Ledger (Customer
 
 ### Purchase Ledger (Supplier)
 
-1. Select the date ranged.
+1. Select the date range.
 
 2. Select a Supplier account code.
 
@@ -46,7 +46,7 @@ Quick inquiry the ledger transactions for General Ledger, Sales Ledger (Customer
 
 *Tools | Maintain User...*
 
-1. You can set the access control to the access to General, Sales and Purchase Ledger.
+1. You can set the access control for General, Sales and Purchase Ledger.
 
 2. Tick or untick Execute to:
 
@@ -61,7 +61,7 @@ Quick inquiry the ledger transactions for General Ledger, Sales Ledger (Customer
 
 ## Cash Flow Inquiry
 
-Quick inquiry the Cash Flow for all the **bank** and **cash** account type.
+Quick inquiry the Cash Flow for all the **bank** and **cash** account types.
 
 ![cash-flow-inquiry](../../static/img/usage/inquiry/cash-flow-inquiry.jpg)
 
@@ -78,7 +78,7 @@ Quick inquiry the Cash Flow for all the **bank** and **cash** account type.
 
 :::info
     1. The Balance b/d is Total of all Payment Method as at From Date Selected -1.
-    2. Example above is as as 05 Feb 2016 in GL Ledger
+    2. Example above is as at 05 Feb 2016 in GL Ledger
 :::
 
 ![cash-flow-forecast](../../static/img/usage/inquiry/cash-flow-forecast.jpg)

@@ -6,16 +6,16 @@ slug: /usage/myinvois/onboarding
 tags: ["SQL Account", "Usage", "MyInvois", "E-Invoice", "Onboarding"]
 ---
 
-To streamline the e-invoice submission through SQL Account, you will need to go through a simple onboarding process.
+To streamline e-invoice submission through SQL Account, you need to go through a simple onboarding process.
 
 ## Company Profile Setup
 
-1. Go to **File** > **Company Profile** > **General** and make sure the country have been set to **Malaysia** to enable E-Invoice feature.
+1. Go to **File** > **Company Profile** > **General** and make sure the country has been set to **Malaysia** to enable the E-Invoice feature.
 
     ![company-profile-country](../../../static/img/usage/myinvois/onboarding/company-profile-country.png)
 
 2. Go to **File** > **Company Profile** > **MyInvois**.
-   1. Make sure your company registration number (BRN) is correctly filled in. (click on the magnifying glass to utilize our auto BRN lookup feature)
+   1. Make sure your company registration number (BRN) is filled in correctly. (Click on the magnifying glass to utilize our auto BRN lookup feature)
    2. Make sure the TIN number has been filled in correctly.
    3. Click on 💾 **Save**.
 
@@ -71,7 +71,7 @@ The E-Invoice Start Date is not limited to the three provided options. You can s
 ### Production Credentials & Intermediary
 
 :::info[Note]
-You may skip this part if you only intend to try out e-invoice features using demo database.
+You may skip this part if you only intend to try out e-invoice features using a demo database.
 :::
 
 1. Login to MyInvois Portal on the right side.
@@ -103,11 +103,11 @@ You may skip this part if you only intend to try out e-invoice features using de
 
     ![myinvois-production-add-intermediary-2](../../../static/img/usage/myinvois/onboarding/myinvois-production-add-intermediary-2.png)
 
-6. Setup the **Representation From**, **Representantion To** (leave empty to avoid expiry), and make sure all permissions has been enabled. Click on **Add Intermediary** to finish.
+6. Setup the **Representation From**, **Representantion To** (leave empty to avoid expiry), and make sure all permissions have been enabled. Click on **Add Intermediary** to finish.
 
     ![myinvois-production-add-intermediary-3](../../../static/img/usage/myinvois/onboarding/myinvois-production-add-intermediary-3.png)
 
-7. Click on **Test Intermediary** and you shall see all permissions can be retrieved successfully.
+7. Click on **Test Intermediary** and you should see that all permissions can be retrieved successfully.
 
     ![myinvois-production-add-intermediary-4](../../../static/img/usage/myinvois/onboarding/myinvois-production-add-intermediary-4.png)
 
@@ -119,7 +119,7 @@ You may skip this part if you only intend to try out e-invoice features using de
 
     ![myinvois-production-add-erp-2](../../../static/img/usage/myinvois/onboarding/myinvois-production-add-erp-2.png)
 
-10. Click on the copy button in sequence as shown below and you shall see the client id & secrets are being automatically filled on the left. Tick the **checkbox** & click on **Done**.
+10. Click on the copy button in sequence as shown below and you should see the client id & secrets are automatically filled on the left. Tick the **checkbox** & click on **Done**.
 
     ![myinvois-production-add-erp-3](../../../static/img/usage/myinvois/onboarding/myinvois-production-add-erp-3.png)
 
@@ -128,7 +128,7 @@ You may skip this part if you only intend to try out e-invoice features using de
 ### Sandbox Credentials & Intermediary
 
 :::info[Note]
-You will need to setup Sandbox Credentials if you wished to:
+You will need to setup Sandbox Credentials if you wish to:
 
 1. Utilize **Test E-Invoice Validation** Feature.
 2. Training / Testing.
@@ -137,7 +137,7 @@ Follow this [guide](https://preprod-mytax.hasil.gov.my/assets/pdf/usermanualweb(
 
 :::
 
-1. Click on the empty Client ID input and you will find see that the right panel now switched to **Sandbox MyInvois Portal**. Proceed to login.
+1. Click on the empty Client ID input and you will see that the right panel now switched to **Sandbox MyInvois Portal**. Proceed to login.
 
     ![myinvois-sandbox-login](../../../static/img/usage/myinvois/onboarding/myinvois-sandbox-login.png)
 
@@ -166,11 +166,11 @@ Follow this [guide](https://preprod-mytax.hasil.gov.my/assets/pdf/usermanualweb(
 
     ![myinvois-sandbox-add-intermediary-2](../../../static/img/usage/myinvois/onboarding/myinvois-sandbox-add-intermediary-2.png)
 
-6. Setup the **Representation From**, **Representantion To** (leave empty to avoid expiry), and make sure all permissions has been enabled. Click on **Add Intermediary** to finish.
+6. Setup the **Representation From**, **Representantion To** (leave empty to avoid expiry), and make sure all permissions have been enabled. Click on **Add Intermediary** to finish.
 
     ![myinvois-sandbox-add-intermediary-3](../../../static/img/usage/myinvois/onboarding/myinvois-sandbox-add-intermediary-3.png)
 
-7. Click on **Test Intermediary** and you shall see all permissions can be retrieved successfully and remained valid (**green**).
+7. Click on **Test Intermediary** and you should see that all permissions can be retrieved successfully and remained valid (**green**).
 
     ![myinvois-sandbox-add-intermediary-4](../../../static/img/usage/myinvois/onboarding/myinvois-sandbox-add-intermediary-4.png)
 
@@ -182,7 +182,7 @@ Follow this [guide](https://preprod-mytax.hasil.gov.my/assets/pdf/usermanualweb(
 
     ![myinvois-sandbox-add-erp-2](../../../static/img/usage/myinvois/onboarding/myinvois-sandbox-add-erp-2.png)
 
-10. Click on the copy button in sequence as shown below and you shall see the client id & secrets are being automatically filled on the left. Tick the **checkbox** & click on **Done**.
+10. Click on the copy button in sequence as shown below and you should see the client id & secrets are automatically filled on the left. Tick the **checkbox** & click on **Done**.
 
     ![myinvois-sandbox-add-erp-3](../../../static/img/usage/myinvois/onboarding/myinvois-sandbox-add-erp-3.png)
 

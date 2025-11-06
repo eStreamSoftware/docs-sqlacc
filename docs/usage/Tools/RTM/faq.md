@@ -10,9 +10,9 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 ![rename-component](../../../../static/img/usage/tools/rtm-faq/rename-component.jpg)
 
-1. Click Icon here (eg DBText)
+1. Click the icon here (eg DBText)
 2. Click on the place to be print/shown
-3. At the Properties for XXXXXX, look for Identity | UserName & change the Name you like (Only Alphanumeric & no spacing)
+3. At the Properties for XXXXXX, look for Identity | UserName & change the Name as you like (Only Alphanumeric & no spacing)
 
 ## Why when Export to PDF format the Company Logo looks "ugly"?
 
@@ -221,7 +221,7 @@ end;
 ## How to Maintain the QR Code Size with large Data?
 
 :::note
-It might unable to scan if size too small & data too large
+It might be unable to scan if the size is too small & the data is too large
 :::
 
 ![qrcode-autosize](../../../../static/img/usage/tools/rtm-faq/qrcode-autosize.jpg)
@@ -235,7 +235,7 @@ Only Available in Version 852 & above
 ![qrcode-settings](../../../../static/img/usage/tools/rtm-faq/qrcode-settings.jpg)
 
 - The measurement is in Inch
-- This guide design for is for Laser Printer only
+- This guide is designed for Laser Printer only
 - For Dot Matrix Printer make sure set to 1 for Height & Width
 
 ## How to Add FromDocNo and FromDocDate Variable in Report Design ?
@@ -407,7 +407,7 @@ Only Available in Version 852 & above
 ## How to Drag XML Report into SQL ?
 
 :::info[note]
-If this XML Report is Customer Aging, go Customer Aging to drag the XML Report
+If this XML Report is for Customer Aging, go to Customer Aging to drag the XML Report
 
 If this XML report is Supplier Aging Report, go to Supplier Aging to drag the XML Report
 :::

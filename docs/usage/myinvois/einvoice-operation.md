@@ -8,7 +8,7 @@ tags: ["SQL Account", "Usage", "MyInvois", "E-Invoice", "Submission"]
 
 ## Submission
 
-In the E-Invoice system, there are few types of documents that can be submitted. The table below shows how each document type in SQL Account is mapped to its corresponding E-Invoice document type. Refer to each section for more detailed information on the specific document types.
+In the E-Invoice system, there are a few types of documents that can be submitted. The table below shows how each document type in SQL Account is mapped to its corresponding E-Invoice document type. Refer to each section for more detailed information on the specific document types.
 
 | SQL Account Document Type                                     | E-Invoice Document Type           |
 | ------------------------------------------------------------- | --------------------------------- |
@@ -59,9 +59,9 @@ In the scenario where you already issued a lot of invoices but yet to submit E-I
 
 ### Resolving Submitting Status
 
-Submitting status is not a common status you will encounter. It will only stuck at submitting status during the event SQL Account fails to receive response from MyInvois Portal when the document may or may not be submitted. This mechanism is to **prevent double submission**.
+Submitting status is not a common status you will encounter. It will only be stuck at submitting status during the event SQL Account fails to receive response from MyInvois Portal when the document may or may not be submitted. This mechanism is to **prevent double submission**.
 
-Below show the icon of submitting status, it is a **red** submitted icon.
+Below show the icon for submitting status, it is a **red** submitted icon.
 
     ![submitting-status-detail](../../../static/img/usage/myinvois/einvoice/submitting-status-detail.png)
 
@@ -72,7 +72,7 @@ There are 2 way to resolve submitting status.
     - Using [refresh status (Single Document)](#refresh-status-single-document).
     - Using [batch refresh status](#batch-refresh-status).
 
-1. After refresh status is clicked, SQL Account will automatically check if the document was submitted successfully to MyInvois Portal. In the event that:
+1. After refresh status is clicked, SQL Account will automatically check if the document was submitted successfully to the MyInvois Portal. In the event that:
 
     1. Document is **successfully found** in MyInvois Portal. Confirmation dialog will be prompted. (1) show the current document number that is being resolved. Select the correct document and click **OK** (2) to complete resolving submitting status.
 
@@ -83,7 +83,7 @@ There are 2 way to resolve submitting status.
         ![submitting-status-resolving-error](../../../static/img/usage/myinvois/einvoice/submitting-status-resolving-error.png)
 
         :::warning
-        Sometimes it take a long time for the submitted document to appear in MyInvois Portal. Please ensure it has not been submitted before Reset E-Invoice status to avoid double submission.
+        Sometimes it take a long time for the submitted document to appear in the MyInvois Portal. Please ensure it has not been submitted before Reset E-Invoice status to avoid double submission.
         :::
 
         - Click **Search again** to retry find from MyInvois Portal again.
@@ -105,7 +105,7 @@ This ensures that the invoice can be successfully submitted at a later stage.
 
     ![test-einvoice-validation](../../../static/img/usage/myinvois/einvoice/test-einvoice-validation-button.png)
 
-2. If there's some missing data, error list or dialog will be shown, you can update the incorrect data and try validate again.
+2. If there's some missing data, an error list or dialog will be shown, you can update the incorrect data and try validate again.
 
     Example error dialog:
 
@@ -208,7 +208,7 @@ This process will retrieve the latest status for all submitted documents, ensuri
 
 ## Submission Log
 
-You can view all past submission and cancellation log of an invoice.
+You can view all past submission and cancellation logs of an invoice.
 
 1. Click on **MyInvois** > **MyInvois Log**
 
@@ -218,9 +218,9 @@ You can view all past submission and cancellation log of an invoice.
 
 ## Transaction
 
-MyInvois Transaction is a feature that will list all MyInvois documents.
+MyInvois Transaction is a feature that list all MyInvois documents.
 
-You can access MyInvois Transaction from cloud category in menu bar.
+You can access MyInvois Transaction from cloud category in the menu bar.
 
 ![myinvois-trans-location](../../../static/img/usage/myinvois/einvoice/myinvois-trans-location.png)
 
@@ -238,7 +238,7 @@ MyInvois Transaction feature:
 
     ![myinvois-trans-sync](../../../static/img/usage/myinvois/einvoice/myinvois-trans-sync.png)
 
-    - SQL Account will help sync MyInvois documents from MyInvois portal in background when **MyInvois Transaction** or [**Import**](#import) form is opened.
+    - SQL Account will help sync MyInvois documents from the MyInvois portal in background when **MyInvois Transaction** or [**Import**](#import) form is opened.
     - There are 2 kinds of sync task:
         - **Loading all documents** - Sync all MyInvois documents starting from the latest and going back to 1 Aug 2024 for first time only, it may takes a long time to complete.
         - **Syncing recent documents** - Sync recent documents only.
@@ -247,7 +247,7 @@ MyInvois Transaction feature:
 
         ![myinvois-trans-resync](../../../static/img/usage/myinvois/einvoice/myinvois-trans-resync.png)
 
-    - Click refresh button to query MyInvois documents synced from MyInvois portal into your database.
+    - Click refresh button to query MyInvois documents synced from the MyInvois portal into your database.
 
         ![myinvois-trans-refresh](../../../static/img/usage/myinvois/einvoice/myinvois-trans-refresh.png)
 
@@ -261,7 +261,7 @@ MyInvois Transaction feature:
 
         ![myinvois-trans-state](../../../static/img/usage/myinvois/einvoice/myinvois-trans-state.png)
 
-    There are 3 Invoice state:
+    There are 3 Invoice states:
 
         - **None** - The document has no issues.
         - **Missing** (Highlighted in **red** for submitted documents) - The document exists in MyInvois portal, but does not exists in your accounting document entry.
@@ -273,7 +273,7 @@ MyInvois Transaction feature:
 
 3. ### Cancel / Reject
 
-    - Click cancel to initiate document cancellation on submitted document.
+    - Click cancel to initiate document cancellation on a submitted document.
 
         ![myinvois-trans-cancel](../../../static/img/usage/myinvois/einvoice/myinvois-trans-cancel.png)
 
@@ -315,7 +315,7 @@ To ensure proper import, it's important to understand how the document types in 
 
 ### Batch Import
 
-You can view all received documents and batch import into SQL Account.
+You can view all received documents and batch import them into SQL Account.
 
 1. Click on **MyInvois** > **Batch import E-Invoice**
 
@@ -323,7 +323,7 @@ You can view all received documents and batch import into SQL Account.
 
     ![purchase-invoice-batch-import-form](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-form.png)
 
-2. Opening Import form will also start [Sync MyInvois documents](#sync-myinvois-documents). The first sync may take longer as it syncs documents from latest to oldest. Please wait if you need to import older documents.
+2. Opening Import form will also start [Sync MyInvois documents](#sync-myinvois-documents). The first sync may take longer as it syncs documents from the latest to the oldest. Please wait if you need to import older documents.
 
     ![purchase-invoice-batch-import-sync](../../../static/img/usage/myinvois/einvoice/purchase-invoice-batch-import-sync.png)
 
@@ -451,7 +451,7 @@ You can download the shared invoice PDF from SQL supplier.
 1. Click on **MyInvois** > **Download PDF from SQL Supplier (Experimental)**
 
     :::info[NOTE]
-    The option will be enabled if the supplier uploaded the PDF
+    The option will be enabled if the supplier has uploaded the PDF
     :::
 
     ![purchase-invoice-download-pdf-button](../../../static/img/usage/myinvois/einvoice/purchase-invoice-download-pdf-button.png)
@@ -544,7 +544,7 @@ When selected invoices include those with E-Invoice Request (Hourglass icon), th
     ![batch-submit](../../../static/img/usage/myinvois/einvoice-request/batch-submit.png)
 
     :::info[NOTE]
-    You may click the Valid icon to perform refresh status
+    You may click the Valid icon to perform refresh the status
     :::
 
     ![batch-submit-valid](../../../static/img/usage/myinvois/einvoice-request/batch-submit-valid.png)

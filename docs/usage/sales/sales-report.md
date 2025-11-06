@@ -10,33 +10,33 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
 ### Sales Document Listing
 
-   1. Go to **Sales** > **Print Sales Document Listing** >  filter which type of document you want: for example, **Sales Quotation /Sales Order/ Deliver Order/ Invoice Listing**
+   1. Go to **Sales > Print Sales Document Listing**, and filter the document type you want, for example: **Sales Quotation, Sales Order, Delivery Order, Invoice Listing.**
 
-   2. Filter by **date**, if left untick means all periods will be shown
+   2. Filter by **date**. If left unchecked, all periods will be shown
 
    3. Filter area by pipelines (It’s optional)
 
-   4. System can generate by group and can give you a summary on each diff group (group/sort by)
+   4. The system can group results and provide a summary for each different group (group/sort by)
 
-   5. Click **Apply** to generate, whenever you change any setting under Step 3 or 4, please redo by clicking Apply
+   5. Click **Apply** to generate. If you change any settings in Steps 3 or 4, click Apply again.
 
       ![sales-document-listing](../../../static/img/usage/sales/sales-reports/sales-document-listing.png)
 
 #### Export report into Excel
 
-   1. **Right click on any title bar**
+   1. **Right click any title bar**
 
-   2. **Click on Grid Export > Export to Excel**.
+   2. **Click Grid Export > Export to Excel**.
 
       ![export-report-into-excel](../../../static/img/usage/sales/sales-reports/export-report-into-excel.png)
 
 #### Batch Printing Invoices
 
-   If you want to print out entire month invoices by batch and into a page-by-page format,
+   If you want to print an entire month's invoices in batch (page‑by‑page format),
 
    1. **Sales** > **Print Sales Document Listing**.
 
-   2. Tick **“Print Document Style”**
+   2. Check **“Print Document Style”**
 
    :::info
 
@@ -46,30 +46,30 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
    ![batch-printing-invoices](../../../static/img/usage/sales/sales-reports/batch-printing-invoices.png)
 
-### Outstanding Sales Document Listing (Require Partial Delivery Module)
+### Outstanding Sales Document Listing (Requires Partial Delivery Module)
 
-This report can help you check the transfer document’s info, such as the amount of outstanding items for the particular document and; which invoices the DO have been transferred to.
+This report can help you check the transfer document’s information such as the number of outstanding items for the particular document and which invoices the DO have been transferred to.
 
-1. **Sales** > **Print Outstanding Sales Document Listing**.
+1. Sales > Print Outstanding Sales Document Listing.
 
-2. Filter the information that you want and apply.
+2. Filter the information that you want and click **Apply**.
 
 3. Criteria
 
-   1. **Print Outstanding Item** – to check outstanding items which have not yet been transferred.
+   1. **Print Outstanding Item** – to check items that have not yet been transferred.
 
-   2. **Print Fulfilled Item** – to check those documents which have been fully transferred and transferred to which document.
+   2. **Print Fulfilled Item** – to check documents that have been fully transferred and to which document they were transferred.
 
    3. **Include cancelled documents** – tick to show cancelled documents in the report.
 
-   4. **Outstanding SO & PO** – to check the number of outstanding items from sales order and purchase order
+   4. **Outstanding SO & PO** – to check the number of outstanding items from sales orders and purchase orders.
 
-   5. **Transfer Doc Date Follow Filtered Date** – tick this if you want the document transfer date (e.g. transfer document Sales Order to Invoice both will followed filtered date.)
+   5. **Transfer Doc Date Follow Filtered Date** – tick this if you want the transfer document date to follow the filtered date (e.g., if a Sales Order is transferred to an Invoice, both will follow the filtered date).
 
-4. **Apply**
+4. Click **Apply**
 
    ![outstanding-sales-doc-listing](../../../static/img/usage/sales/sales-reports/outstanding-sales-doc-listing.png)
 
-5. If you want to know where this **document has already been transferred** to, you just **Preview** the report.
+5. To see where this document has been transferred, **preview** the report.
 
    ![outstanding-sales-doc-listing-preview](../../../static/img/usage/sales/sales-reports/outstanding-sales-doc-listing-preview.png)

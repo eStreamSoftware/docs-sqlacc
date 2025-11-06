@@ -10,7 +10,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
 ### How to Setup Barcode
 
-1. Download GRN Barcode Report Template from below link.
+1. Download the GRN Barcode Report Template from the link below.
 
    1. Barcode Capture from Maintain Stock Item Barcode as Barcode.
       - Template: [GRN BarCode (20×40) Capture Item BarCode](https://www.sql.com.my/webstore/templates/template-detail/?id=4047)
@@ -18,7 +18,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
    2. Barcode Capture from Maintain Stock Item as Barcode.
       - Template: [GRN BarCode (35×25) Capture Item Code](https://www.sql.com.my/webstore/templates/template-detail/?id=4058)
 
-2. Step to Import the report to SQL.
+2. Steps to import the report into SQL.
 
     :::info
     Refer to this [guide](../../usage/tools/rtm/guide) for details
@@ -35,7 +35,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
    - Click on blue color link to enter into Report Design.
 
-4. Change the Report type to MM due to Barcode size is small.
+4. Change the report type to MM due to the barcode size is small.
 
     ![2](../../../static/img/usage/stock/stock-faq/barcode/barcode-setup1.png)
 
@@ -65,7 +65,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
    ![6](../../../static/img/usage/stock/stock-faq/barcode/barcode-setup5.png)
 
-    This step is to capture Item Qty, if Qty 10, will repeat 10 Barcode label.
+    This step captures the item quantity. For example, if the quantity is 10, it will generate 10 barcode labels.
 
 ### How to Do Cash Drawer Setting
 
@@ -106,7 +106,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
 ## Print Barcode (Winodws Printer)
 
-- To print the bar code label using Windows Printer for the items created in Maintain Stock Item.
+- To print the barcode label using a Windows Printer for the items created in Maintain Stock Item.
 
 ![windows-printer](../../../static/img/usage/stock/stock-faq/barcode/windows-printer.png)
 
@@ -130,7 +130,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
 ### How to Load the Previous Item Barcode Listing
 
-1. Click on a Carbinet button to load from the previous file for item bar code listing (eg.BarCode_Items_31122015). Click on OPEN.
+1. Click on a Carbinet button to load the previous file for the item barcode listing (eg.BarCode_Items_31122015). Click on OPEN.
 
     ![item-barcode-listing4](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing4.png)
 
@@ -142,7 +142,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","FAQ"]
 
     ![item-barcode-listing6](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing6.png)
 
-4. You can continue update the new items and save as new file name.
+4. You can continue updating the new items and save as new file name.
 
     ![item-barcode-listing7](../../../static/img/usage/stock/stock-faq/barcode/item-barcode-listing7.png)
 
@@ -313,7 +313,7 @@ From the stock card report, you can see the item is sold out from your customer 
 
 ## Stock Adjustment & Stock Take
 
-- Allow user to key-in quantity in and out from the system, just like combination of stock received and stock issue, normally use it for stock take purpose. (Stock > Stock Adjustment > New).
+- Allows users to key in quantities in and out of the system, similar to a combination of stock received and stock issued. It is normally used for stock-taking purposes. (Stock > Stock Adjustment > New).
 
 ### How SQL System can help during Stock Take ?
 
@@ -321,7 +321,7 @@ From the stock card report, you can see the item is sold out from your customer 
 
     ![1](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stoke-take.png)
 
-2. **Filter** the date, stock group or others **information** that you want to do for the stock take, please **make sure that you have choose the correct location and batch if you have this 2 modules**.
+2. **Filter** the date, stock group or others **information** that you want to do for the stock take, please **ensure that you have chosen the correct location and batch if you have these 2 modules.**
 
     ![2](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stoke-take1.png)
 
@@ -355,7 +355,7 @@ From the stock card report, you can see the item is sold out from your customer 
 
 ## Stock Price Tag Module
 
-- This module mainly to set different pricing groups from different customer and supplier, normally is use to setcdifferent customer category with different pricing. In order to do individual customer then you can group your customer into different price groups.
+- This module is mainly used to set different pricing groups for different customers and suppliers. It is normally used to set different customer categories with different pricing. In order to do individual customer then you can group your customer into different price groups.
 
 ### How to Setup Price Tag
 
@@ -369,7 +369,7 @@ From the stock card report, you can see the item is sold out from your customer 
 
 3. Edit Customer Price Tag.
 
-   - After create the category of the customer at maintain stock price tag then click on **Customer > Maintain Customer > Edit the Price Tag and assign accordingly**.
+   - After creating the customer category in Maintain Stock Price Tag, click on **Customer > Maintain Customer > Edit the Price Tag and assign it accordingly.**
 
     ![3](../../../static/img/usage/stock/stock-faq/stock-price-tag/price-tag-setup2.png)
 
@@ -441,7 +441,7 @@ VS
 
 :::
 
-There is a faster way to create PO with Reoder QTY. Please see below Screen :
+There is a faster way to create Purchase Order (PO) with Reoder QTY. Please see below Screen :
 
 ![4](../../../static/img/usage/stock/stock-faq/stock-reorder/check-reorder-lvl1.png)
 
@@ -454,7 +454,7 @@ Step :
 
 ### How to Setup Control Serial Number
 
-1. Please go to **Stock > Maintain Stock Item > Edit > Checked Serial No** if this item you would like to control serial number.
+1. Go to **Stock > Maintain Stock Item > Edit > Checked Serial No** if you would like to control the serial number for this item.
 
     ![1](../../../static/img/usage/stock/stock-faq/stock-serial-no/serial-number-setup.png)
 
@@ -516,7 +516,7 @@ There are 3 methods to apply serial no :
     ![10](../../../static/img/usage/stock/stock-faq/stock-serial-no/serial-number-setup10.png)
 
 :::info
-Stock Adjustment does not support serial no. May using Stock Received and Stock Issue to replace .
+Stock Adjustment does not support serial no. You may use Stock Received and Stock Issue as a replacement.
 :::
 
 ## Serial No Report
@@ -546,7 +546,7 @@ Stock Adjustment does not support serial no. May using Stock Received and Stock 
 
 7. **Sales > S/N Profit & Loss by Document**.
 
-    - This Report Cost is capture exactly from Stock In Serial Number Cost.
+    1. This Report Cost is capture exactly from Stock In Serial Number Cost.
     If DO transfer to IV, due to DO have deducted Serial number, so will not have any result for this report.
 
 ### How to USe Access Right for Serial No
@@ -567,7 +567,7 @@ Stock Adjustment does not support serial no. May using Stock Received and Stock 
 ### Why cannot update the GL Stock Value at Stock Month End Balance?
 
 - **Issue**
-- Click **Update** button at Stock Month End Balance, but no stock value has been updated to GL Maintain Stock Value.
+- Click the Update button at Stock Month End Balance, but no stock value is updated to GL Maintain Stock Value.
 
     ![update-gl-stock-value-smeb](../../../static/img/usage/stock/stock-faq/stock-month-end-balance/update-gl-stock-value-smeb.png)
 

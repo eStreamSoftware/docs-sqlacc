@@ -10,15 +10,15 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 1. **Stock** > **Maintain Stock Group**.
 
-2. It commonly use to categorize the stock based on the following points into considerations.
-    - Brandings, eg. **Apple, Sony, Samsung, LG**, etc;
+2. It is commonly used to categorize the stock based on the following considerations.
+    - Brandings, e.g., **Apple, Sony, Samsung, LG**, etc.
     - Different **costing method**;
     - Product types, eg. **raw materials, trading products, manufactured products**;
     - To report different sales/purchase account in **Profit & Loss Statement**.
 
     ![mtn-stock-grp-list](../../../static/img/usage/stock/stock-guide/mtn-stock-grp-list.png)
 
-3. Maintain Stock Group form as shown the screenshot below.
+3. Maintain Stock Group form as shown in the screenshot below.
 
     ![mtn-stock-grp](../../../static/img/usage/stock/stock-guide/mtn-stock-grp.png)
 
@@ -38,29 +38,29 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 1. **Stock** > **Maintain Stock Item**.
 
-2. To setup the stock item list.
+2. To set up the stock item list.
 
 ![mtn-stock-item-list](../../../static/img/usage/stock/stock-guide/mtn-stock-item-list.png)
 
 ### Main Header
 
-1. Maintain Stock Item entry form as shown the screenshot below.
+1. Maintain Stock Item entry form is shown in the screenshot below.
 
 ![mtn-stock-item-main-header](../../../static/img/usage/stock/stock-guide/mtn-stock-item-main-header.png)
 
 | **Field Name** | **Explanation & Properties** |
 |----------------|-------------------------------|
 | **Code** | • Input the new Stock Code <br /> • Field type: Alphanumerical <br /> • Length: 30 |
-| **Description** | • Input the Stock Description (This usually will appear in most of the documents print-out, eg. invoice, purchase order, etc...) <br /> • Field type: Alphanumerical <br /> • Length: 200 |
+| **Description** | • Input the Stock Description (This usually appears in most of the documents printouts, e.g., invoices, purchase orders, etc...) <br /> • Field type: Alphanumerical <br /> • Length: 200 |
 | **2nd Description** | • Input the 2nd Description, eg. size, alternative product name <br /> • Field type: Alphanumerical <br /> • Length: 200 |
 | **Serial No.** | • Tick to enable serial control items (Requires Serial Number module) <br /> • Field type: Checkbox |
-| **Stock Control** | • Tick to enable stock control. System will check availability so stock balance is not below zero or re-order level <br /> • Field type: Checkbox |
+| **Stock Control** | • Tick to enable stock control. The system will check availability to ensure the stock balance does not fall below zero or the reorder level. <br /> • Field type: Checkbox |
 | **Active** | • Tick for the stock in use <br /> • Untick for discontinued stock <br /> • Field type: Checkbox |
 | **Item Group** | • Select an appropriate Stock Group |
 | **Base UOM** | • Enter a base UOM for stock valuation, eg. UNIT |
 | **Ref. Cost** | • Enter a standard cost |
 | **Ref. Price** | • Enter a standard selling price |
-| **Shelf** | • Enter a shelf/rank no., eg. A-01, A-02, A-03 in location A |
+| **Shelf** | • Enter a shelf/rank no., e.g., A-01, A-02, A-03 in location A |
 | **Reorder Level** | • Enter a stock reorder level to alert new order <br /> • Refer to menu: Stock \ Print Stock Reorder Advice... |
 | **Reorder Qty** | • Enter a reorder qty (MOQ) |
 | **Lead Time** | • Enter a lead time to receive the goods |
@@ -74,26 +74,26 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ### UOM
 
-1. Allow to set multiple UOM, eg. 1 carton = 12 units.
-2. Beside that, you can set the default UOM for Sales, Purchase and Stock entry form.
+1. Allow to set multiple UOM, e.g., 1 carton = 12 units.
+2. Besides that, you can set the default UOM for Sales, Purchase and Stock entry form.
 3. See the screenshot below.
 
 ![mtn-stock-item-uom](../../../static/img/usage/stock/stock-guide/mtn-stock-item-uom.png)
 
 ### Cust.Price
 
-1. Allow to set **multiple pricing/contract price** for customer.
+1. Allow to set **multiple pricing/contract prices** for customer.
 2. You can use **price tag** to tag the price for a customer.
-3. It is required **multiple pricing** module.
+3. The **Multiple Pricing** module is required.
 4. See the screenshot below.
 
 ![mtn-stock-item-cust-price](../../../static/img/usage/stock/stock-guide/mtn-stock-item-cust-price.png)
 
 ### Supp.Price
 
-1. Allow to set **multiple pricing/contract** price for supplier.
+1. Allow to set **multiple pricing/contract prices** for supplier.
 2. You can use **price tag** to tag the price for a supplier.
-3. It is required **multiple pricing** module.
+3. The **Multiple Pricing** module is required.
 4. See the screenshot below.
 
 ![mtn-stock-item-supp-price](../../../static/img/usage/stock/stock-guide/mtn-stock-item-supp-price.png)
@@ -103,7 +103,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 ### BOM
 
 1. Allow to setup **recipes/ingredients** for a manufactured product.
-2. It is required **Bill of Materials** module.
+2. The **Bill of Materials** module is required.
 3. See the screenshot below.
 
 ![mtn-stock-item-bom](../../../static/img/usage/stock/stock-guide/mtn-stock-item-bom.png)
@@ -122,34 +122,33 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ### Opn Bal
 
-1. To enter the Opening Stock qty and value balances.
+1. Used to enter the opening stock quantity and value balances.
 
 ![mtn-stock-item-opn-bal](../../../static/img/usage/stock/stock-guide/mtn-stock-item-opn-bal.png)
 
 ### Category
 
-1. To set the multiple stock category for reporting purpose, eg. country origins, brands, etc.
+1. Used to set multiple stock categories for reporting purposes, e.g., country origins, brands, etc.
 2. See the screenshot below.
 
 ![mtn-stock-item-category](../../../static/img/usage/stock/stock-guide/mtn-stock-item-category.png)
 
 ### Alternative
 
-1. Enable to identify the alternative items to replace.
+1. Enable to identify the alternative items for replacement.
 
 ![mtn-stock-item-alternative](../../../static/img/usage/stock/stock-guide/mtn-stock-item-alternative.png)
 
 ### Cust. Item
 
 1. To enter the **customer item code** and **description**.
-2. Purpose is to search or print the customer item code and description in tax invoice instead of using the original item description.
-
+2. The purpose is to search for or print the customer item code and description in a tax invoice instead of using the original item description.
 ![mtn-stock-item-cust-item](../../../static/img/usage/stock/stock-guide/mtn-stock-item-cust-item.png)
 
 ### Supp. Item
 
 1. To enter the **supplier item code** and **description**.
-2. Purpose is to search or print the supplier item code and description in purchase invoice instead of using the original item description.
+2. The purpose is to search for or print the supplier item code and description in a purchase invoice instead of using the original item description.
 
 ![mtn-stock-item-supp-item](../../../static/img/usage/stock/stock-guide/mtn-stock-item-supp-item.png)
 
@@ -182,9 +181,9 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ## Maintain Stock Category
 
-1. It can be use as to extend to categorize the stock besides the stock group.
+1. It can be used to further categorize stock besides the stock group.
 2. It allows to set multiple stock category for an stock item code.
-3. Commonly use for:-
+3. Commonly used for:-
     1. Brandings, eg. Apple, Sony, Samsung, LG, etc;
     2. Country origins;
     3. Product types, eg. raw materials, trading products, manufactured products;
@@ -248,8 +247,8 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ## Maintain Item Template
 
-1. It is usually use for a set or package items.
-2. It can be create a template consists of the item selected and use in Sales/Purchase/Stock documents.
+1. It is usually used for sets or package items.
+2. You can create a template consisting of selected items to use in Sales, Purchase, or Stock documents.
 3. **Stock** > **Maintain Item Template**.
 
     ![mtn-item-template](../../../static/img/usage/stock/stock-guide/mtn-item-template.png)
@@ -280,7 +279,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ## Maintain Item Matrix Profile
 
-1. It commonly use to organize the coding requirement to generate the item code. Very frequent use in the following industries:
+1. It is commonly used to organize coding requirements for generating item codes. It is frequently used in the following industries:
 2. **Stock** > **Maintain Stock Item Matrix Profile**.
 
     ![mtn-item-matrix-profile](../../../static/img/usage/stock/stock-guide/mtn-item-matrix-profile.png)
@@ -339,8 +338,8 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock"]
 
 ## Maintain Location
 
-1. It is use for warehouse, inter-branch transfer, consignment, van-sales, etc.
-2. It is require **Multiple Location (Warehouse)** module.
+1. It is used for warehouses, inter-branch transfers, consignment, van sales, etc.
+2. The **Multiple Location (Warehouse)** module is required.
 3. **Stock** > **Maintain Location**.
 
     ![mtn-location](../../../static/img/usage/stock/stock-guide/mtn-location.png)
@@ -453,7 +452,7 @@ Allows user to **decrease stock quantity without selling**. It is normally used 
 
 ## Stock Transfer
 
-**Stock Transfer** is an entry to handle the stock movement from one location to another location, **eg. location A to B**. Commonly use for:
+**Stock Transfer** is an entry to handle the stock movement from one location to another location, **eg. location A to B**. Commonly used for:
 
 - Consignment stock;
 - Van sales location represent van;
@@ -467,7 +466,7 @@ Allows user to **decrease stock quantity without selling**. It is normally used 
     ![stock-transfer1](../../../static/img/usage/stock/stock-guide/stock-transfer1.png)
 
 2. Enter the **Description** to describe the stock transfer entry, eg. "Stock Transfer from BALAKONG TO BATU CAVE".
-3. Add the items to be transfer.
+3. Add the items to be transferred.
 4. You may enter the **reason, remark and authorised by** for future reference.
 
     ![stock-transfer2](../../../static/img/usage/stock/stock-guide/stock-transfer2.png)
@@ -496,7 +495,7 @@ Allows user to **decrease stock quantity without selling**. It is normally used 
 Check out our new [stock take app](https://www.sql.com.my/sqlstocktake/)
 :::
 
-Allows user to key-in quantity in and quantity out from the system, just like a combination of stock received and stock issue. Normally used for stock take purposes. **(Stock > Stock Adjustment > New)**
+Allows users to key in quantity in and quantity out from the system, just like a combination of stock received and stock issue. Normally used for stock take purposes. **(Stock > Stock Adjustment > New)**
 
 :::info
 Watch tutorial video here: [youtube](https://www.youtube.com/watch?v=uEbCRAftQ4A&feature=youtu.be)
@@ -510,7 +509,7 @@ Watch tutorial video here: [youtube](https://www.youtube.com/watch?v=uEbCRAftQ4A
 
    ![70](../../../static/img/usage/stock/stock-guide/stock-adjustment.png)
 
-4. lick on Preview & choose your report format.
+4. Click on Preview & choose your report format.
 
    ![71](../../../static/img/usage/stock/stock-guide/stock-adjustment1.png)
 

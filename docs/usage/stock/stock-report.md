@@ -8,7 +8,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
 ## Print Stock Document Listing
 
-- Print Stock Document Listing can be used for you to see all the stock adjustment documents that you have issued.
+- Print Stock Document Listing can be used to view all the stock adjustment documents that you have issued.
 - You can see Stock Received Listing, Stock Issue Listing, Stock Transfer Listing, Stock Adjustment Listing.
 
 ### How to Print Stock Document Listing
@@ -21,11 +21,11 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
     ![print-stock-document-listing1](../../../static/img/usage/stock/stock-report/print-stock-document-listing1.png)
 
-3. Press Apply Button
+3. Press the Apply Button
 
     ![print-stock-document-listing2](../../../static/img/usage/stock/stock-report/print-stock-document-listing2.png)
 
-4. Click Preveiw & Listing Report
+4. Click Preview & Listing Report
 5. Example of stock document listing report
 
     ![print-stock-document-listing3](../../../static/img/usage/stock/stock-report/print-stock-document-listing3.png)
@@ -41,7 +41,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
     | **Print Document Style** | Tick this checkbox to print out bulk report or send batch email |
     | **Include Cancelled Documents** | Tick this checkbox to include cancelled documents in the listing |
 
-2. If you Tick Print Document Style , you will see that you will able able to choose purchase document report format.
+2. If you Tick Print Document Style , you will be able to choose a purchase document report format.
 
     ![print-stock-document-listing5](../../../static/img/usage/stock/stock-report/print-stock-document-listing5.png)
 
@@ -61,7 +61,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
 ## Print Stock Reorder Advice
 
-- Print Stock Reorder Advice can be used for you to check which items have quantities below the set reorder level (set in maintain stock item)
+- Print Stock Reorder Advice can be used to check which items have quantities below the set reorder level (set in Maintain Stock Item)
 
 ### How to Print Stock Reorder Advice
 
@@ -75,7 +75,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
 2. Press Apply Button
 
-3. Click Preveiw & Listing Report
+3. Click Preview & Listing Report
 4. Example of stock reorder report
 
 ![print-stock-reorder-advice3](../../../static/img/usage/stock/stock-report/print-stock-reorder-advice3.png)
@@ -95,7 +95,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
     | **On Hand - SO Qty (+/-) JO Qty** | Stock balance quantity minus Sales Order Quantity plus Job Order Quantity |
     | **On Hand + PO Qty - SO Qty (+/-) JO Qty** | Stock balance quantity plus Purchase Order Quantity minus Sales Order Quantity minus Job Order Quantity |
 
-2. After that, select the type of comparison. Will the balance quantities be compared to the Max Value, Min Value or the Reorder level . All set in Maintain Stock Item.
+2. After that, select the type of comparison. The balance quantities will be compared to the Max Value, Min Value or the Reorder Level. All set in Maintain Stock Item.
 
 ### Group/Sort By
 
@@ -113,7 +113,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
 2. Choose **Print Stock Physical Worksheet**
 
-3. **Filter** by date, stock group or others **information** that you want to do for the stock take, please **make sure that you choose the correct location and batch if you have these two modules**.
+3. **Filter** by date, stock group or other **information** for the stock take, please **make sure that you choose the correct location and batch if you have these two modules**.
 
    ![70](../../../static/img/usage/stock/stock-report/stock-physical-worksheet.png)
 
@@ -127,7 +127,7 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
    ![72](../../../static/img/usage/stock/stock-report/stock-physical-worksheet2.png)
 
-6. After complete updating the stock take report by your stock-keeper, do your stock adjustment in system from **Stock** > **Stock Adjustment** > **and drag out Book Qty and Physical Qty**.
+6. After complete updating the stock take report by your stock-keeper, perform your stock adjustment in system by going to **Stock** > **Stock Adjustment** > **and dragging out Book Qty and Physical Qty**.
 
    ![73](../../../static/img/usage/stock/stock-report/stock-physical-worksheet3.png)
 
@@ -143,17 +143,17 @@ tags: ["SQL Account", "Usage", "Inventory", "Stock","Report"]
 
    :::info
 
-   **Book Qty** = Quantity that is recorded in system.
+   **Book Qty** = The quantity recorded in the system.
 
    **Physical Qty** = Actual Quantity at your warehouse.
 
-   **Qty** = Variance between Physical and Book Quantity, system will auto-adjust then update accordingly. (Physical Qty – Book Qty)
+   **Qty** = The variance between Physical and Book Quantity. The system will automatically adjust and update accordingly. (Physical Qty – Book Qty)
 
    :::
 
 ## Print Stock Card & Print Stock Card Qty
 
-- Print Card can be used to see your stock movement and stock cost during a certain period of time.
+- Print Stock Card can be used to view your stock movement and stock cost during a certain period of time.
 - You can see your stock movement based on location and batch.
 
 ### How to Print Stock Card
@@ -172,11 +172,11 @@ print-stock-card
 
 ### How to Print Stock Card Qty
 
-- Same as Print Stock Card the different is this report is just shown Qty
+- Similar to Print Stock Card, but this report only shows the quantity.
 
 ## Print Stock Month End Balance
 
-- Print Stock Month End Balance can be used to see your month end stock quantity and total cost .
+- Print Stock Month End Balance can be used to view your month end stock quantity and total cost .
 
 ### How to Print Stock Month End Balance
 
@@ -188,7 +188,7 @@ print-stock-card
 
     ![print-stock-month-end-balance1](../../../static/img/usage/stock/stock-report/print-stock-month-end-balance1.png)
 
-3. You can set your filters, you can filter yout stock month end by location, and stock group and item
+3. You can set your filters to filter your stock month end by location, stock group and item
 
     ![print-stock-month-end-balance2](../../../static/img/usage/stock/stock-report/print-stock-month-end-balance2.png)
 
@@ -200,7 +200,7 @@ print-stock-card
 
 ## Print Stock Aging
 
-- Print Stock Aging is used to see how many quantities of a certain stock that you have on hand and how much quantity of that stock is sold
+- Print Stock Aging is used to view the quantity of a certain stock on hand and how much of that stock has been sold.
 
 print-stock-aging
 
@@ -223,9 +223,9 @@ print-stock-aging
 
     ![print-stock-aging4](../../../static/img/usage/stock/stock-report/print-stock-aging4.png)
 
-5. Months = aging calculated by every 1 months
-6. Months + 5 Years = aging calculated for every month and also above 5 years
-7. 3 motnhs = aging calculated every 3 months
+5. Months = Aging calculated for every 1 months
+6. Months + 5 Years = Aging calculated for every month and also above 5 years
+7. 3 months = Aging calculated every 3 months
 8. Press Apply Button
 9. Click Preview
 
@@ -233,7 +233,7 @@ print-stock-aging
 
 ## Print Stock Analysis By Document
 
-- Print Stock Analysis By Document can be used to see your stock movement quantity for each document type like Invoice, Cash sales, purchase invoice etc.
+- Print Stock Analysis By Document can be used to view your stock movement quantity for each document type like Invoice, Cash sales, Purchase Invoice, etc.
 
 ### How to Print Stock Analysis By Document
 
@@ -251,7 +251,7 @@ print-stock-aging
 
 ## Print Stock Batch Expiry
 
-- Print Stock Batch Expiry to see all the items in your batches along with their manufacturing dates and expiry dates.
+- Print Stock Batch Expiry can be used to view all the items in your batches along with their manufacturing and expiry dates.
 
 ### How to Print Stock Batch Expiry
 
@@ -270,7 +270,7 @@ print-stock-aging
 
 ### How to Assign Batch to Your Stock Item
 
-- For example, After you have created your batch codes and assigned the items at "Maintain Batch" go to Sales Invoice. Select the stock item and slect the batch
+- For example, After creating your batch codes and assigning the items at "Maintain Batch", go to Sales Invoice. Select the stock item and select the batch
 
 ![print-stock-batch-expiry3](../../../static/img/usage/stock/stock-report/print-stock-batch-expiry3.png)
 
@@ -278,9 +278,9 @@ print-stock-aging
 
 ## Print Stock Serial Number Conflict
 
-- Print Stock Serial Number Conflict to see
-- SN item issue out with SN without receiving SN
-- Duplicate SN received at same location and batch
+- Print Stock Serial Number Conflict an be used to view
+- SN items issued out without receiving SN
+- Duplicate SN received at the same location and batch
 
 ![print-stock-serial-number-conflict](../../../static/img/usage/stock/stock-report/print-stock-serial-number-conflict.png)
 
@@ -327,8 +327,8 @@ print-stock-aging
 
 ## Print Stock Serial Number Outstanding
 
-- Print Stock Serial Number Outstanding to see if you did not assign any serial number to you purchase stock items.
-- Example of missing out a serial number can be seen in this purchase invoice.
+- Print Stock Serial Number Outstanding can be used to check if you did not assign any serial number to you purchased stock items.
+- An example of a missing serial number can be seen in this purchase invoice.
 print-stock-serial-number-outstanding
 ![print-stock-serial-number-outstanding](../../../static/img/usage/stock/stock-report/print-stock-serial-number-outstanding.png)
 

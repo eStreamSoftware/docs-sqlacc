@@ -24,7 +24,7 @@ I have selected "Group by Document No" in Sales Profit and Loss by Document. How
 
     ![steps-1](../../../static/img/usage/general/grid-layout/clear-sorting/steps-1.png)
 
-3. All the grid columns will be clear the sorting and follow the Group By command.
+3. All grid columns will have their sorting cleared and will follow the Group By command.
 
     ![steps-2](../../../static/img/usage/general/grid-layout/clear-sorting/steps-2.png)
 
@@ -40,11 +40,11 @@ I have selected "Group by Document No" in Sales Profit and Loss by Document. How
 
     ![right-click-properties](../../../static/img/usage/general/grid-layout/rename-header/right-click-properties.png)
 
-2. Look for the column and change the caption. Click Ok to confirm.
+2. Find the column you want to rename and change its caption. Click OK to confirm.
 
     ![grid-properties](../../../static/img/usage/general/grid-layout/rename-header/grid-properties.png)
 
-3. Original column name “Ref 1” has been changed to “Cust PO”.
+3. The original column name “Ref 1” has now been changed to “Cust PO”.
 
     ![column-result](../../../static/img/usage/general/grid-layout/rename-header/column-result.png)
 
@@ -86,34 +86,34 @@ If your screen looks like the one above , select the **layout | press DELETE | S
 
     ![13](../../../static/img/usage/general/grid-layout/save-manage-layout/call-out-hidden-field.png)
 
-2. **Right click on the Grid** , Eg: point on wording “Description” and right click | **Grid Layout | Save Layout**
+2. **Right-click on the grid** (for example, right-click the “Description” column) and select **Grid Layout | Save Layout**.
 
     ![save-layout-1](../../../static/img/usage/general/grid-layout/save-manage-layout/save-layout-1.png)
 
-3. Enter a Layout Name , and checked on “**Save as Default Layout**” if you wish to set this as your **Default Layout** | **Save**
+3. Enter a layout name. Check “**Save as Default Layout**” if you want to set this as your default layout, then click **Save**.
 
     ![save-layout-2](../../../static/img/usage/general/grid-layout/save-manage-layout/save-layout-2.png)
 
 ### How to assign this layout to others users?
 
-1. After you had save your layout, **Right click on the Grid** , Eg : point on wording “Description” and right click | **Grid Layout | Manage Layout**
+1. After saving your layout, **right-click on the grid** (for example, right-click the “Description” column) and select **Grid Layout | Manage Layout**.
 
     ![manage-layout](../../../static/img/usage/general/grid-layout/save-manage-layout/manage-layout.png)
 
-2. You can assign your layout either by users or by groups , Let’s said by Users
+2. You can assign your layout either by users or by groups. For example, to assign by users:
 
     ![manage-layout-users](../../../static/img/usage/general/grid-layout/save-manage-layout/manage-layout-users.png)
 
-3. Click on the arrow down key from the users name and select & SAVE.
+3. Click the arrow next to the user's name, select the user, and click **SAVE**.
 
     ![manage-layout-users-select](../../../static/img/usage/general/grid-layout/save-manage-layout/manage-layout-users-select.png)
 
 :::note
-**Default** : Make this layout default
+**Default**: Make this layout the default for the user.
 
 − : Empty it without setting any layout for this user
 
-**Deny** : To hide this layout , so when this user try to Load Layout unable to see this layout .
+**Deny**: Hide this layout so the user cannot see or load it.
 :::
 
 ### How to disable users access right to go field chooser and customize layout ?
@@ -130,6 +130,6 @@ If your screen looks like the one above , select the **layout | press DELETE | S
 
     ![access-control-3](../../../static/img/usage/general/grid-layout/save-manage-layout/access-control-3.png)
 
-4. Go to Group : Misc | unchecked on Customize grid (field chooser) & Manage Grid Layout | SAVE
+4. Go to Group: Misc, uncheck **Customize grid (field chooser)** and **Manage Grid Layout**, then click **SAVE**.
 
     ![access-control-4](../../../static/img/usage/general/grid-layout/save-manage-layout/access-control-4.png)

@@ -8,8 +8,9 @@ tags: ["SQL Account", "Others", "Display Pole"]
 
 ## Introduction
 
-If you had upgrade you windows to Windows 10 & using this Display Pole - VFD-800-U (might happen on other model), you might had problem in communicate with SQL Accounting.
-The problem is because the build in or Original driver provided is incompatible with windows 10.
+If you upgraded to Windows 10 and are using the Display Pole VFD-800-U (this may affect other models), you may experience communication problems with SQL Accounting.
+
+This occurs because the built-in or original driver is incompatible with Windows 10.
 
 ## Tools & Driver Required
 
@@ -28,11 +29,11 @@ When you run the USBDeview.exe you will see the above problem.
 
 1. Right Click **This PC | Properties**
 2. Click **Device Manager**
-3. Right Click at the Com had problem
+3. Right-click on the problematic COM port
 
     ![display-solution1](../../../../static/img/usage/general/others/display-pole/display-solution1.jpg)
 
-4. Select Delete the driver for software for this device
+4. Select "Delete the driver software for this device"
 
     ![display-solution2](../../../../static/img/usage/general/others/display-pole/display-solution2.jpg)
 

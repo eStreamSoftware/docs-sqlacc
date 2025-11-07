@@ -8,17 +8,17 @@ tags: ["SQL Account", "Others", "GST", "Gain Loss"]
 
 ## Scenario
 
-1. Foreign Customer/Supplier but set In Local Currency in SQL Accounting.
-2. Not buying the Currency Module & force to set Foreign Customer/Supplier to Local Currency in SQL Accounting.
+1. Foreign Customer/Supplier accounts set in local currency in SQL Accounting
+2. Using local currency for Foreign Customer/Supplier accounts without the Currency Module in SQL Accounting
 
 ## Solution
 
-By using Customer/Supplier
+Use the following documents for Customer/Supplier transactions:
 
-1. Debit Note
-2. Credit Note
-3. GL Journal Voucher
-4. Foreign Gain/Loss Account (Set Tax Code to IES (Replace for ES43))
+1. Debit Notes
+2. Credit Notes
+3. GL Journal Vouchers
+4. Foreign Gain/Loss Account (with Tax Code IES, replacing ES43)
 
 ### Customer Side
 

@@ -8,32 +8,34 @@ tags: ["SQL Account", "Others", "Upgrade", "Script"]
 
 ## Introduction
 
-This happen if you had write script to get the **TaxRate** from Maintain Tax on
+This issue occurs if you have a script that reads the **TaxRate** from Maintain Tax in either:
 
-- **OnGridColumnValueChange** Script and/or
-- **OnBeforeSave** Script
+- the **OnGridColumnValueChange** script, or
+- the **OnBeforeSave** script
 
-This due to changing SQLAccounting Coding Structure to cater future Changes in Tax Rate.
+The error is caused by changes in SQL Accounting's coding structure that affect how tax rates are provided to user-defined scripts.
 
 ## Problem
 
-You will get below error when you either selecting itemcode or changes value in you UDF which trigger the function.
+You will see the error shown below when selecting an item code or changing a value in your UDF that triggers the function.
 
 ![upgrade-problem](../../../../static/img/usage/general/others/upgrade721-error/upgrade-problem.jpg)
 
 ## Solution
 
-Below is example error happen at **Sales Invoice**:
+The following example shows the error occurring in **Sales Invoice**.
 
 1. Click **Tools | DIY | SQL Control Center...**
-2. At the left panel look for **Sales Invoice | OnGridColumnValuechange** and/or **OnBeforeSave**
+2. In the left panel, locate **Sales Invoice > OnGridColumnValueChange** and/or **OnBeforeSave**.
 
     ![upgrade-solution](../../../../static/img/usage/general/others/upgrade721-error/upgrade-solution.jpg)
 
-3. Look for the script like **function GetTaxedValue(AValue: Variant; lTaxRate: string): Variant;**
-4. Change all to below new script
+3. Find the function definition similar to:
 
-**For OnGridColumnValueChange Script:**
+   **function GetTaxedValue(AValue: Variant; lTaxRate: string): Variant;**
+4. Replace the existing function with the updated version below.
+
+Use this version for the **OnGridColumnValueChange** script:
 
 ```pascal
 function GetTaxedValue(AValue: Variant; lTaxRate: string): Variant;
@@ -70,7 +72,7 @@ begin
 end;
 ```
 
-**For OnBeforeSave Script:**
+Use this version for the **OnBeforeSave** script:
 
 ```pascal
 function GetTaxedValue(AValue: Variant; lTaxRate: string): Variant;

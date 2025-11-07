@@ -8,7 +8,7 @@ tags: ["SQL Account", "Others", "Properties"]
 
 ## Introduction
 
-By default firebird not fully utilies the RAM. Using this new function user can self allocate size of RAM to be use for each Database.
+By default, Firebird does not fully utilize the available RAM. This feature allows you to manually allocate RAM size for each database, optimizing performance.
 
 1. Pros
     1. Fully use the available RAM in server
@@ -31,13 +31,16 @@ By default firebird not fully utilies the RAM. Using this new function user can 
 ![properties-detail](../../../../static/img/usage/general/others/properties/properties-detail.jpg)
 
 :::info
-    Things to take note when you have untick - Write data to hard disc immediately:
-    1. Server PC must protected by a reliable UPS (ie. backup power battery).
-    2. Make sure the server properly shutdown.
-    3. Operating System must at least minimum is Win7, Windows Server 2012 and above.
+Important considerations when disabling "Write data to hard disk immediately":
+1. Server must be protected by a reliable UPS (backup power supply)
+2. Ensure proper server shutdown procedures are followed
+3. Minimum operating system requirements:
+   - Windows 7
+   - Windows Server 2012
+   - Or newer versions
 :::
 
 | Function | Description |
 |-----------|-------------|
-| Write data to hard disc immediately | **Tick (Default):** Data is flushed to disk on COMMIT — safest for your data. <br /> **Untick:** The operating system controls when data is actually written to disk. *(Not recommended)* |
-| Page Buffers (in MB) | **16 (Default)** |
+| Write data to hard disk immediately | **Enabled (Default):** Data is immediately written to disk on COMMIT — provides maximum data safety <br /> **Disabled:** The operating system manages data writing to disk *(Not recommended)* |
+| Page Buffers (in MB) | **Default: 16 MB** - Adjust based on your server's available RAM and performance requirements |

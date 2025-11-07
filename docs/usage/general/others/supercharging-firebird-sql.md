@@ -8,17 +8,17 @@ tags: ["SQL Account", "Others", "Supercharging", "FirebirdSQL"]
 
 ## Introduction
 
-By Default firebird will not fully utilise the available RAM. Below is the how to Supercharging the FirebirdSQL so that
+By default, Firebird does not fully utilize the available RAM. The steps below show how to adjust Firebird's page cache settings to:
 
-1. Fully utilise the available RAM (about 90% depend how big is the FDB size & number of FDB connected)
-
-2. Improve performance
+1. Make better use of available RAM (up to ~90% depending on database size and number of attached databases)
+2. Improve database performance
 
 ## Requirement
 
-1. 64 bit Firebird Server
+- 64-bit Firebird Server
+- Minimum 16 GB of RAM (recommended)
 
-2. Minimum 16 GB & above RAM
+Important: Make sure the server has a reliable UPS and that you test changes in a non-production environment first. Adjusting cache settings can significantly increase memory use and may affect system stability if not tested.
 
 ## Steps
 

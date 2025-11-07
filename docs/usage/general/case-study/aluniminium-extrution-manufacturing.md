@@ -38,7 +38,7 @@ Stock group will be used as the Product Grade to categorise the stock items list
 
 ### Sales Document Entry
 
-1. Sales documents entry are:-
+1. Sales document types include:
 
       - Quotation
       - Sales Order

@@ -16,29 +16,29 @@ A common usage of backup script is execute the script in **Windows Task Schedule
 
 This command line backup script is only applicable for **Windows 7 & above** only.
 
-## Generate Backup Script in Database Group
+## Generate Backup Script for Database Group
 
-1. To generate backup script for all the databases under the selected database group.
-2. Right click the database group that you want to generate backup script.
+1. To generate a backup script for all databases in the selected group:
+2. Right-click the desired database group and select "Generate Backup Script"
 
 ![generate-backup-script-grp](../../../../static/img/usage/general/others/generate-backup-script/generate-backup-script-grp.jpg)
 
-## Generate Backup Script in Database Item
+## Generate Backup Script for Single Database
 
-1. To generate backup script for single database
-2. Right click the database that you want to generate backup script
+1. To generate a backup script for a single database:
+2. Right-click the desired database and select "Generate Backup Script"
 
 ![generate-backup-script-item](../../../../static/img/usage/general/others/generate-backup-script/generate-backup-script-item.jpg)
 
 ## Generate Backup Script
 
-1. **Database (optional)**: If database is not specified, all databases under the database group will be backup
-2. **Backup to**: Choose backup to directory
-3. **Admin Password(s)**: Admin user passwords that login to the database(s). If database group contains more databases with different admin passwords, please separate each passwords with comma. The button beside this field is to toggle show password in plain text or asterisk
-4. **Send Mail**: Tick if need to receive notification email of backup status
-5. **Zip Backup**: Compress backup into zip file
-6. **Test Email**: Click to test whether email sent successfully to receiver email accounts
-7. **Copy**: The command text will be automatically copy to your clipboard, it is ready to paste in window Task Scheduler (there is a shortcut "Launch Window Task Scheduler")
+1. **Database (optional)**: If no database is specified, all databases in the group will be backed up
+2. **Backup to**: Select the backup directory
+3. **Admin Password(s)**: Enter admin user passwords for database access. For multiple databases with different admin passwords, separate passwords with commas. Use the adjacent button to toggle between plain text and masked password display
+4. **Send Mail**: Enable to receive backup status notifications via email
+5. **Zip Backup**: Enable to compress the backup into a zip file
+6. **Test Email**: Click to verify successful email delivery to recipient accounts
+7. **Copy**: The command text will be automatically copied to your clipboard for pasting into Windows Task Scheduler (accessible via the "Launch Window Task Scheduler" shortcut)
 
 ![generate-backup-script-step1](../../../../static/img/usage/general/others/generate-backup-script/generate-backup-script-step1.jpg)
 
@@ -89,22 +89,22 @@ The following a sample setting. Configure according to your private mail server 
 
 Unsupported
 
-## Add Backup task to Window 7 Task Scheduler
+## Adding Backup Task to Windows Task Scheduler
 
-1. Click window menu **Start -> Accessories -> System Tools -> Task Scheduler**
-2. Click **Action -> Create Basic Task**
+1. Navigate to **Start > Accessories > System Tools > Task Scheduler**
+2. Click **Action > Create Basic Task**
 
     ![add-task-to-scheduler-1](../../../../static/img/usage/general/others/generate-backup-script/add-task-to-scheduler-1.jpg)
 
-3. Enter Task name
+3. Enter a name for the task
 
     ![add-task-to-scheduler-2](../../../../static/img/usage/general/others/generate-backup-script/add-task-to-scheduler-2.jpg)
 
-4. Click next, choose when you want to trigger the task (e.g Daily)
+4. Click Next and select when to trigger the task (e.g., Daily)
 
     ![add-task-to-scheduler-3](../../../../static/img/usage/general/others/generate-backup-script/add-task-to-scheduler-3.jpg)
 
-5. Click next, choose the start date and start time and recur every 1 day
+5. Click Next, then set the start date, start time, and daily recurrence
 
     ![add-task-to-scheduler-4](../../../../static/img/usage/general/others/generate-backup-script/add-task-to-scheduler-4.jpg)
 
@@ -148,6 +148,6 @@ Unsupported
 
 ## Recommendations
 
-- Try to set the backup schedule timer after working hours, eg. mid-night start from 1.00am.
-- Do not shutdown the server while running the auto backup.
-- You can set the schedule to shutdownn and wake-up the server during weekend.
+- Schedule backups during off-hours (e.g., starting at 1:00 AM)
+- Do not shut down the server while automatic backups are running
+- Consider scheduling server shutdown and startup times for weekends as needed

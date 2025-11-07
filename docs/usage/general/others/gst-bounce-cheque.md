@@ -34,10 +34,10 @@ At GST Period Jan 2017:
 
 ### Supplier Side
 
-At GST Period Jan 2017
+For GST Period January 2017:
 
-1. DR GST-102 - GST - PURCHASE DEFERRED TAX
-2. CR GST-201 - GST - PAYABLE --> (PH-AJS-BD)
+1. Debit: GST-102 - GST - PURCHASE DEFERRED TAX
+2. Credit: GST-201 - GST - PAYABLE → (PH-AJS-BD)
 
 ![supplier-side-1](../../../../static/img/usage/general/others/gst-bounce-cheque/supplier-side-1.jpg)
 

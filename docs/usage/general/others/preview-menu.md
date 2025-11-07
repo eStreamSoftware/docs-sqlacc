@@ -8,11 +8,11 @@ tags: ["SQL Account", "Others", "Preview", "Menu"]
 
 ## Introduction
 
-On each report grid output (after click apply) there is small arrow on the Preview Button on the right which can see a list of some function as shown below.
+After clicking "Apply" on any report grid output, you'll find a small arrow on the Preview Button located on the right side. Clicking this arrow reveals a dropdown menu with various export and preview functions, as shown below:
 
 ![menu-list](../../../../static/img/usage/general/others/preview-menu/menu-list.jpg)
 
-Below is the detail of each function (From Top)
+Below are the details of each function (listed from top to bottom):
 
 | Name | Properties |
 |------|-------------|

@@ -8,17 +8,17 @@ tags: ["SQL Account", "Others", "SQL Diagnosis"]
 
 ## Introduction
 
-This is External Utility to Fixing & Managing SQL Firebird Database.
+SQL Diagnosis is an external utility for fixing and managing SQL Firebird Databases. It provides essential tools for database maintenance, repair, and optimization.
 
 ![diagnosis-intro](../../../../static/img/usage/general/others/sql-diagnosis/diagnosis-intro.jpg)
 
-## Program
+## Software Download
 
 1. [sql-diagnosis-v2](https://download.sql.com.my/customer/Fairy/SQLDiagnosisV2-setup.exe)
 
-## Requirement
+## System Requirements
 
-1. Firebird Server (even is Standalone user)
+- Firebird Server (required for both networked and standalone installations)
 
 ## Database Patch
 
@@ -27,7 +27,7 @@ This is External Utility to Fixing & Managing SQL Firebird Database.
     - Patch From Estream
     - Build In Patch
 
-### Database Patch Steps
+### Applying Database Patches
 
 1. Click **Database Patch** button (**Icon A**).
 2. Click This button to **select the SQL Firebird Database.**
@@ -36,7 +36,7 @@ This is External Utility to Fixing & Managing SQL Firebird Database.
 
 ### Scenario 1 : Patch From Estream (Continue Database Patch Steps)
 
-1. Right Click Here (under Step 2)
+1. Right-click in the area below Step 2
 2. Select **Load From File 1...**
 
     ![patch-scenario1-1](../../../../static/img/usage/general/others/sql-diagnosis/patch-scenario1-1.jpg)
@@ -56,7 +56,7 @@ This is External Utility to Fixing & Managing SQL Firebird Database.
 2. Select the Patch from the available list.
 3. Click **Execute...** button (In **Steps 3** Section).
 
-### Patch File type & description
+### Available Patch Types and Descriptions
 
 | Patch File Type | Description |
 |------------------|-------------|
@@ -98,18 +98,18 @@ The Database Validate function helps repair and maintain the integrity of your d
 
     ![validate-step](../../../../static/img/usage/general/others/sql-diagnosis/validate-step.jpg)
 
-5. Click This button to select the **Copied** SQL Firebird Database.
-6. Click **Validate** button.
+5. Click the button to select your **copied** SQL Firebird Database
+6. Click the **Validate** button
 
     :::info
     You can Click few times **Validate** button to make sure it can maximise the database fixing
     :::
 
-7. Click **Backup**... button.
+7. Click the **Backup...** button to access these options:
 
-    - **Backup Metadata...**: To Extract Empty Database Structure for IB Pump to copy to New Database.
-    - **SQL DB Copy Table...**: Open the Database Pump which use to Copy data to New Database.
-    - **Direct Zip...**: Use this to Zip & upload to Estream if still unable to fix the problem.
+    - **Backup Metadata...**: Extracts an empty database structure for use with IB Pump when creating a new database
+    - **SQL DB Copy Table...**: Opens the Database Pump utility for copying data to a new database
+    - **Direct Zip...**: Creates a compressed file for uploading to Estream support if issues persist
 
 ### Backup MetaData
 
@@ -120,34 +120,34 @@ Use this option when normal backup is fail.
 
     ![validate-backup-metadata-1](../../../../static/img/usage/general/others/sql-diagnosis/validate-backup-metadata-1.jpg)
 
-3. Click Start Copy to begin copy
+3. Click **Start Copy** to begin copying.
 
-    1. **Start Copy...**: Using Single Connection to copy the table to New Database.
-    2. **Start Multi Copy...**:
-        - Using 2 Connections in same time to copy the table to New Database.
-        - Connection 1 - AUDIT, AUDITDTL, GST_TR & ST_TR
-        - Connection 2 - Other then Connection 1
+    - **Start Copy...**: Uses a single connection to copy tables to the new database.
+    - **Start Multi Copy...**:
+        - Uses two connections simultaneously to copy tables to the new database.
+        - Connection 1: AUDIT, AUDITDTL, GST_TR, ST_TR
+        - Connection 2: All other tables
 
 :::warning
-Using **Start Multi Copy...** might will cause following problem:
+Using **Start Multi Copy...** may cause the following issues:
 
-- Application User Interface will scramble
-- Will prompt out of memory
-- Access Violation on close window or Exit Application
+- The application UI may become scrambled
+- You may encounter out-of-memory errors
+- You may see Access Violations when closing windows or exiting the application
 
-If above happen just Restart the SQL Diagnosis
-Refer below picture after done copy using **Start Multi Copy...**
+If this occurs, restart SQL Diagnosis.
+Refer to the image below after completing a copy using **Start Multi Copy...**
 :::
 
     ![validate-backup-metadata-2](../../../../static/img/usage/general/others/sql-diagnosis/validate-backup-metadata-2.jpg)
 
-4. Click OK when see Done message
-5. Click Close Button.
-6. Click **Backup...** Button.
+4. Click **OK** when you see the "Done" message.
+5. Click **Close**.
+6. Click the **Backup...** button.
 
 :::info
-Wanted to Import Specific Table Only?
-Just Delete the table which you don't wanted to Import from the list.
+Want to import specific tables only?
+Remove any tables you do not want to import from the list before starting.
 :::
 
 :::warning
@@ -161,13 +161,13 @@ Adhoc Backup allows you to manually create a backup of your SQL Firebird databas
 ### Adhoc Backup Steps
 
 1. Click **Adhoc Backup** button (Icon C).
-2. Click This button to select the SQL Firebird Database.
-3. Click **Backup** button.
+2. Click the button to select the SQL Firebird database.
+3. Click the **Backup** button.
 
     ![adhoc-backup-step1](../../../../static/img/usage/general/others/sql-diagnosis/adhoc-backup-step1.jpg)
 
-4. Select the Backup Folder (Default will Save to Desktop).
-5. Click OK to Start Backup.
+4. Choose the backup folder (default: Desktop).
+5. Click **OK** to start the backup.
 
     ![adhoc-backup-step2](../../../../static/img/usage/general/others/sql-diagnosis/adhoc-backup-step2.jpg)
 
@@ -177,23 +177,23 @@ The Database Online function is designed to bring your database back online when
 
 ### Database Online Steps
 
-1. **Restart** the Firebird.
-2. Click **Database Online** button (Icon D).
-3. Click This button to select the SQL Firebird Database.
+1. Restart the Firebird service.
+2. Click the **Database Online** button (Icon D).
+3. Click the button to select the SQL Firebird database.
 
 ![database-online-step](../../../../static/img/usage/general/others/sql-diagnosis/database-online-step.jpg)
 
 ## Batch Backup
 
-A function that allows you to back up all databases with 1 click or through a scheduled backup. This feature is especially useful when managing multiple databases that require regular backups.
+Batch Backup allows you to back up multiple databases at once or via a scheduled task. This is useful when managing several databases that require regular backups.
 
-1. Click Batch Backup... button(Icon E)
-2. Click New button.
-3. Enter the Server Name/IP Address
+1. Click the **Batch Backup...** button (Icon E).
+2. Click **New**.
+3. Enter the server name or IP address.
 
     ![batch-backup-step-1](../../../../static/img/usage/general/others/sql-diagnosis/batch-backup-step-1.jpg)
 
-4. Click on 3 dot button for Target Backup Folder field
+4. Click the three-dot button for the **Target Backup Folder** field and choose a folder, then click **OK**.
 
     ![batch-backup-step-2](../../../../static/img/usage/general/others/sql-diagnosis/batch-backup-step-2.jpg)
 
@@ -248,44 +248,38 @@ Using Windows Schedule to Automatically run Batch Backup.
 
 ### For Build 32 & above (Following Steps)
 
-1. Click Browse button & find the **SQLDiagnosisV2.exe** (Default at `C:\eStream\Utilities\SQLDiagnosis`)
-
-2. Set the Add arguments(optional) as **-Auto**
+1. Click **Browse** and locate **SQLDiagnosisV2.exe** (default: `C:\eStream\Utilities\SQLDiagnosis`).
+2. Set the **Add arguments (optional)** field to **-Auto**.
 
 ### For Build till 31 (Following Steps)
 
-1. Click Browse button & find the **SQLScheduleV2.exe** (eg. `C:\eStream\Utilities\SQLDiagnosis\SQLScheduleV2.exe`)
-2. Set the Start in(optional) path to the Exe folder (eg. `C:\eStream\Utilities\SQLDiagnosis`) & Click Next
-3. Tick the option Open the Properties dialog for this task when I click Finish
-4. Click Finish
+1. Click **Browse** and locate **SQLScheduleV2.exe** (e.g., `C:\eStream\Utilities\SQLDiagnosis\SQLScheduleV2.exe`).
+2. Set **Start in (optional)** to the exe folder (e.g., `C:\eStream\Utilities\SQLDiagnosis`) and click **Next**.
+3. Tick **Open the Properties dialog for this task when I click Finish**.
+4. Click **Finish**.
 
     ![backup-for-build31-step1](../../../../static/img/usage/general/others/sql-diagnosis/backup-for-build31-step1.jpg)
 
-5. Select the option Run whether user is logged on or not
+5. Select **Run whether user is logged on or not**.
 
     ![backup-for-build31-step2](../../../../static/img/usage/general/others/sql-diagnosis/backup-for-build31-step2.jpg)
 
-6. Click Triggers tab at top
-7. Click Edit... button
+6. Go to the **Triggers** tab and click **Edit...** to change the trigger time.
 
     ![backup-for-build31-step3](../../../../static/img/usage/general/others/sql-diagnosis/backup-for-build31-step3.jpg)
 
-8. Change the time to run
+7. Change the scheduled time as required.
 
     ![backup-for-build31-step4](../../../../static/img/usage/general/others/sql-diagnosis/backup-for-build31-step4.jpg)
 
-9. Click OK 2 times
-10. Enter the window User Name & Password
-
-    ![backup-for-build31-step5](../../../../static/img/usage/general/others/sql-diagnosis/backup-for-build31-step5.jpg)
-
-11. Click Ok
+8. Click **OK** twice.
+9. Enter the Windows user name and password when prompted, then click **OK**.
 
 :::info
-You can set below command for Schedule Stop & Start Firebird:
+Commands you can use in scheduled tasks to stop and start Firebird:
 
-- Stop Firebird => `C:\WINDOWS\SYSTEM32\NET.EXE` stop "Firebird Server - DefaultInstance"
-- Start Firebird => `C:\WINDOWS\SYSTEM32\NET.EXE` start "Firebird Server - DefaultInstance"
+- Stop Firebird: `C:\WINDOWS\SYSTEM32\NET.EXE` stop "Firebird Server - DefaultInstance"
+- Start Firebird: `C:\WINDOWS\SYSTEM32\NET.EXE` start "Firebird Server - DefaultInstance"
 
 :::
 

@@ -8,7 +8,7 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
 ## Sales Report
 
-### Sales Document Listing
+### Print Sales Document Listing
 
    1. Go to **Sales > Print Sales Document Listing**, and filter the document type you want, for example: **Sales Quotation, Sales Order, Delivery Order, Invoice Listing.**
 
@@ -46,7 +46,7 @@ tags: ["SQL Account", "Sales", "Sales Report"]
 
    ![batch-printing-invoices](../../../static/img/usage/sales/sales-reports/batch-printing-invoices.png)
 
-### Outstanding Sales Document Listing (Requires Partial Delivery Module)
+### Print Outstanding Sales Document Listing
 
 This report can help you check the transfer document’s information such as the number of outstanding items for the particular document and which invoices the DO have been transferred to.
 

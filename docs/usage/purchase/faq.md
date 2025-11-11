@@ -6,7 +6,7 @@ slug: /usage/purchase/faq
 tags: ["SQL Account", "Usage", "Purchase", "FAQ"]
 ---
 
-## 1. Why user still cannot view the unit price and subtotal where show cost in Purchase Goods Received Note / Invoice have granted rights
+## 1. Why user still cannot view the unit price and subtotal where show cost in Goods Received Note / Invoice have granted rights
 
 **Issue:**
 

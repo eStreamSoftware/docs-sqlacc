@@ -489,7 +489,7 @@ Allows user to **decrease stock quantity without selling**. It is normally used 
 | 2 | Use Strict Costing | Unit cost calculated from the Costing Method set in Maintain Stock Group. |
 | 3 | Use Serial Number Costing | Unit cost will be based on the serial number. |
 
-## Stock Adjustment / Stock Take
+## Stock Adjustment
 
 :::success[INFO]
 Check out our new [stock take app](https://www.sql.com.my/sqlstocktake/)

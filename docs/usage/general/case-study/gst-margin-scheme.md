@@ -35,12 +35,12 @@ See below the overview of Margin Scheme process flow:
 
 ### History New/Updates/Changes
 
-*8*Last Customisation Update : 27 Nov 2015***
+***Last Customisation Update: 27 Nov 2015***
 
-- Move Cars Information to Maintain Project
-- Auto Capture Initial Cost on Select Project
+- Moved Cars Information to Maintain Project
+- Added Auto Capture Initial Cost on Project Selection
 
-***Last Customisation Update : 20 Feb 2016***
+***Last Customisation Update: 20 Feb 2016***
 
 - Empty item code (eg. repairs) will not update the Project - Purchase Details.
 - Run the SQL Accounting Diagnosis - DB Patch and apply the patch files can be download from Patch-Margin Scheme-20160220.zip

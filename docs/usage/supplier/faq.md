@@ -17,7 +17,7 @@ How to capture the JomPay Ref 2 (bill no) in the bank payment file format?
 **Solution:**
 
 1. Go to **Tools | DIY | SQL Control Center**...
-2. Add the JomPAY Ref2 field under **Supplier | Supplier Payment | Payment Fields**.
+2. Add the JomPAY Ref 2 field under **Supplier | Supplier Payment | Payment Fields**.
 
    | Field Name  | Data Type | Size |
    |-------------|-----------|------|
@@ -29,7 +29,7 @@ How to capture the JomPay Ref 2 (bill no) in the bank payment file format?
 
    ![supplier-faq-add-reference2-3](../../../static/img/usage/supplier/supplier-faq-images/supplier-faq-add-ref2-3.jpg)
 
-4. At **Supplier Payment**, key-in the bill no into UDF_JomPAY_Ref2 under JOMPAY tab.
+4. At **Supplier Payment**, key in the bill no into UDF_JomPAY_Ref2 under JOMPAY tab.
 
    ![supplier-faq-add-reference2-4](../../../static/img/usage/supplier/supplier-faq-images/supplier-faq-add-ref2-4.jpg)
 
@@ -41,6 +41,6 @@ How to capture the JomPay Ref 2 (bill no) in the bank payment file format?
 The above solution is using SQL Account version 784 and above. Modules required:
 
 1. Interbank GIRO
-2. DIY field (or Professional Set).
+2. DIY Field (or Professional Set).
 
 :::

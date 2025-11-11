@@ -6,9 +6,9 @@ slug: /usage/tools/fast-report/faq
 tags: ["SQL Account", "Usage", "Tools"]
 ---
 
-## 1. When Unit price is 0, how to display as Free of Charge (FOC) ?
+## 1. When Unit price is 0, how to display it as Free of Charge (FOC) ?
 
-In Memo, enter following syntax :
+In Memo, enter the following syntax :
 
     ```pascal
     [FormatFloat(',0.00;-,0.00;FOC ',<Document_Detail."UnitPrice">)]
@@ -78,7 +78,7 @@ Right click on Memo, **unticked Shift** and **Unticked Shift when Overlapped**
 
 ![53](../../../../static/img/usage/tools/fast-report-faq/53.png)
 
-## 8. How to capture remark1 as url path?
+## 8. How to capture remark1 as a url path?
 
 In Memo properties :
 
@@ -178,7 +178,7 @@ After :
 
 ![64](../../../../static/img/usage/tools/fast-report-faq/64.png)
 
-## 14. Why is it not same when preview?
+## 14. Why is it not the same when preview?
 
 ![stacked-content-when-preview](../../../../static/img/usage/tools/fast-report-faq/stacked-content-when-preview.jpg)
 
@@ -192,13 +192,13 @@ After :
 
 01. Click the Red A Icon.
 02. Click on the place to be print/shown
-03. At the **Object Inspector**, look for **Name** & change the Name you like (Only Alphanumeric & no spacing)
+03. At the **Object Inspector**, look for **Name** & change the Name as you like (Only Alphanumeric & no spacing)
 
 ## 17. How to draw line for whole report?
 
 ![draw-line](../../../../static/img/usage/tools/fast-report-faq/draw-line.jpg)
 
-01. Click at empty place of outer report.
+01. Click an empty place of outer report.
 02. At the **Object Inspector**, look for Frame & click the + sign
 03. Under the **Frame**, look for **Typ** & set to True for ftLeft, ftRight, ftTop & ftBottom.
 
@@ -212,23 +212,23 @@ Make sure the **Paper Margin** for Top, Bottom, Left & Right not set to 0
 
 ![spacing-2reports-height](../../../../static/img/usage/tools/fast-report-faq/spacing-2reports-height.jpg)
 
-1. Right Click at **DetailData**.
+1. Right Click on **DetailData**.
 
     ![add-child-band](../../../../static/img/usage/tools/fast-report-faq/add-child-band.jpg)
 
 2. Select **Add child band**.
-3. At the **Object Inspector**, look for **Height** & set the gap Height you wanted
+3. At the **Object Inspector**, look for **Height** & set the gap Height you want
 
 ## 19. My More Description is very long & it shown page 1 empty & shown in page 2
 
 ![grp-footer-issue](../../../../static/img/usage/tools/fast-report-faq/grp-footer-issue.jpg)
 
-1. Right Click at **DetailData**.
+1. Right Click on **DetailData**.
 
     ![right-click-allow-split](../../../../static/img/usage/tools/fast-report-faq/right-click-allow-split.jpg)
 
 2. Select **Allow Split**.
-3. Click at **GroupFooter:GroupFooter1**.
+3. Click on **GroupFooter:GroupFooter1**.
 4. Double Click **OnBeforePrint**
 
     ![on-before-print-remove-height-60](../../../../static/img/usage/tools/fast-report-faq/on-before-print-remove-height-60.jpg)
@@ -237,7 +237,7 @@ Make sure the **Paper Margin** for Top, Bottom, Left & Right not set to 0
 
     ![navigate-to-onaftercalcheight](../../../../static/img/usage/tools/fast-report-faq/navigate-to-onaftercalcheight.jpg)
 
-6. Click at **DetailData:DetailData1**.
+6. Click on **DetailData:DetailData1**.
 7. Double Click **OnAfterCalcHeight**
 
     ![comment-if-tfrxdetaildata](../../../../static/img/usage/tools/fast-report-faq/comment-if-tfrxdetaildata.jpg)
@@ -248,15 +248,15 @@ Make sure the **Paper Margin** for Top, Bottom, Left & Right not set to 0
 
     ![show-note-at-header](../../../../static/img/usage/tools/fast-report-faq/show-note-at-header.jpg)
 
-1. Right Click at **GroupHeader:GroupHeader1**.
+1. Right Click on **GroupHeader:GroupHeader1**.
 
     ![add-child-band-right-click](../../../../static/img/usage/tools/fast-report-faq/add-child-band-right-click.jpg)
 
 2. Select **Add Child Band** & Select **Stretch**
-3. Adjust the Child band Height as you wanted
-4. Right click at Child Band & Select **Stretch**
+3. Adjust the Child band Height as you want
+4. Right click on Child Band & Select **Stretch**
 5. Move all the Title to **Child:Child1**
-6. Click Blue A icon (RichText Object)
+6. Click the Blue A icon (RichText Object)
 7. Click on the place to be print/shown & set as below setting in Right Click
 
     - Stretch = True
@@ -408,7 +408,7 @@ By default system will use **Line#** this will result as
     6
     ```
 
-Use Line this will result as
+Use Line will result in
 
     ```pascal
     Group 1
@@ -422,9 +422,9 @@ Use Line this will result as
     ```
 
 01. Select **System Text**
-02. Enter as **Line** in Text field
+02. Enter as **Line** in the Text field
 
-## 27. Can I do running Total for each footer?
+## 27. Can I do a running Total for each footer?
 
 Yes just add , 2 in the SUM formula
 
@@ -469,13 +469,13 @@ Expected result:
 
 ![align-to-grid](../../../../static/img/usage/tools/fast-report-faq/align-to-grid.jpg)
 
-- No gap between to component
+- No gap between two component
 - Must Align between top & Bottom of component
 
 ![diagonal-false](../../../../static/img/usage/tools/fast-report-faq/diagonal-false.jpg)
 
-- Untick **Diagonal** when use Line
-- Avoid use Rich Text (TfrRichView)
+- Untick **Diagonal** when using Line
+- Avoid using Rich Text (TfrRichView)
 - Untick **Auto Width**
 - Tick **Stretch to Max Height** (for Detail)
 
@@ -489,7 +489,7 @@ This is because default Font is Tahoma is not support Unicode Font
 
 ## 31. How to Maintain the QR Code Size with large Data?
 
-:::note  NOTE: It might unable to scan if size too small & data too large
+:::note  NOTE: It might be unable to scan if size too small & data too large
 :::
 
 ![untick-auto-size](../../../../static/img/usage/tools/fast-report-faq/untick-auto-size.jpg)
@@ -534,7 +534,7 @@ Only Available in Version 852 & above
 :::success
 
 - The measurement is in Inch
-- This guide design for is for Laser Printer only
+- This guide is designed for for Laser Printer only
 - For Dot Matrix Printer make sure set to 1 for Height
 
 :::

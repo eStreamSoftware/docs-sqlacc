@@ -8,16 +8,16 @@ tags: ["SQL Account", "Reports"]
 
 ## Print Supplier Document Listing
 
-- Print Supplier Document Listing can be used to see all the customer transactions that you have keyed into this system
-- You can see Supplier Invoices, Supplier Payment, Supplier Credit Note,Supplier Debit Note, Supplier Refund, and Supplier Contra listings.
+- Print Supplier Document Listing can be used to see all the supplier transactions that you have entered into this system
+- You can see Supplier Invoices, Supplier Payment, Supplier Credit Note, Supplier Debit Note, Supplier Refund, and Supplier Contra listings.
 - You can use Document Listing to batch print and batch email your Supplier's documents.
-- At the bottom of the screen, you can se the payment details for each document
+- At the bottom of the screen, you can see the payment details for each document
 
 ### How to Print Document Listing
 
 ![des-print-document-listing-step1](../../../static/img/usage/supplier/supplier-reports-images/print-document-listing-step1.png)
 
-- Select which Document listing you want to see. Follow the image below :
+- Select which Document Listing you want to see. Follow the image below :
 
 ![des-print-document-listing-step2](../../../static/img/usage/supplier/supplier-reports-images/print-document-listing-step2.png)
 
@@ -38,7 +38,7 @@ tags: ["SQL Account", "Reports"]
 | Print Document Style         | Tick this checkbox to print out bulk report or send batch email.     |
 | Include Cancelled Documents  | Tick this checkbox to include cancelled documents in the listing.    |
 
-- If you Tick Print Document Style , you will see that you will able able to choose customer invoice report format.
+- If you Tick Print Document Style , you will be able to choose supplier invoice report format.
 
 ![des-print-document-style-2](../../../static/img/usage/supplier/supplier-reports-images/print-document-style-2.png)
 
@@ -48,11 +48,11 @@ tags: ["SQL Account", "Reports"]
 
 ![des-print-document-style-filter1](../../../static/img/usage/supplier/supplier-reports-images/print-document-style-filter1.png)
 
-- You can use the Group by/Sort by table to choose how you want to group your report listing
+- You can use the Group/Sort By table to choose how you want to group your report listing
 
 ![des-print-document-style-group-sort1](../../../static/img/usage/supplier/supplier-reports-images/print-document-style-group-sort1.png)
 
-- For example. you select to group by "Supplier Code"
+- For example, you can group the report by "Supplier Code" 
 
 ![des-print-document-style-group-sort2](../../../static/img/usage/supplier/supplier-reports-images/print-document-style-group-sort2.png)
 
@@ -63,21 +63,21 @@ tags: ["SQL Account", "Reports"]
 
 ## Print Supplier Balance Report
 
-- Print Supplier Balance Report can be used for you to see all the supplier's balance.
+- Print Supplier Balance Report allows you to **see all the supplier's balance**.
 
 ### How to Print Supplier Balance Report
 
 ![des-print-supplier-lisiting-step1](../../../static/img/usage/supplier/supplier-reports-images/print-supplier-lisiting-step1.png)
 
-- Select the date period for the balance report
+- Select the date period for the balance report.
 
 ![des-print-supplier-lisiting-step2](../../../static/img/usage/supplier/supplier-reports-images/print-supplier-lisiting-step2.png)
 
-- You can filter the report selecting the supplier, agent, area, project of the transaction
+- You can filter the report selecting the supplier, agent, area, project of the transaction.
 
 ![des-print-supplier-lisiting-step3](../../../static/img/usage/supplier/supplier-reports-images/print-supplier-lisiting-step3.png)
 
-- Example, filtering by supplier name.
+- For example, filtering by supplier name.
 
 ![des-print-supplier-lisiting-step4](../../../static/img/usage/supplier/supplier-reports-images/print-supplier-lisiting-step4.png)
 
@@ -91,7 +91,7 @@ tags: ["SQL Account", "Reports"]
 
 ## Print Supplier Due Document
 
-- Print Supplier Due Document can be used for you to see all the supplier's overdue and undue balance
+- Print Supplier Due Document allows you to see all the supplier's overdue and undue balance.
 
 ### How to Print Supplier Due Document Report
 
@@ -111,7 +111,7 @@ tags: ["SQL Account", "Reports"]
 
 ## Print Supplier Aging Report
 
-- Print Supplier Aging to see unpaid invoice balances along with the duration for which the customer has been outstanding
+- Print Supplier Aging to see unpaid invoice balances along with the duration for which the supplier has been outstanding.
 
 ### How to Print Supplier Aging Report
 
@@ -139,7 +139,7 @@ tags: ["SQL Account", "Reports"]
 
 ## Print Supplier Statement
 
-A statement of account, also known as an account statement or Supplier statement, is a document that outlines the transactions between a buyer and a seller.
+A statement of account, also known as an account statement or Supplier Statement, is a document that outlines the transactions between a buyer and a seller.
 
 - We use Supplier Statement to :
   1. Calculate an outstanding account balance
@@ -200,7 +200,7 @@ A statement of account, also known as an account statement or Supplier statement
 ![des-print-suppier-analysis-by-document-step1](../../../static/img/usage/supplier/supplier-reports-images/print-suppier-analysis-by-document-step1.png)
 
 - Set the date
-- Select how you want to group your report by ticking the boxes at the Group/SortBy.
+- Select how you want to group your report by ticking the checkboxes at the Group/Sort By.
 
 ![des-print-suppier-analysis-by-document-step2](../../../static/img/usage/supplier/supplier-reports-images/print-suppier-analysis-by-document-step2.png)
 
@@ -210,7 +210,7 @@ A statement of account, also known as an account statement or Supplier statement
 
 ## Print Supplier Purchase and Payment Analysis
 
-- We use this report to see the monthly payment and purchases for you supplier
+- We use this report to see the monthly payment and purchases for your supplier.
 
 ![des-print-supplier-purchase-and-payment-analysis-step1](../../../static/img/usage/supplier/supplier-reports-images/print-supplier-purchase-and-payment-analysis-step1.png)
 
@@ -219,10 +219,10 @@ A statement of account, also known as an account statement or Supplier statement
 
 ![des-print-supplier-purchase-and-payment-analysis-step2](../../../static/img/usage/supplier/supplier-reports-images/print-supplier-purchase-and-payment-analysis-step2.png)
 
-- If you tick "payment" Click the preview icon and view/print your collection report.
+- If you tick "Payment" Click the preview icon and view/print your collection report.
 
 ![des-print-supplier-purchase-and-payment-analysis-step3](../../../static/img/usage/supplier/supplier-reports-images/print-supplier-purchase-and-payment-analysis-step3.png)
 
-- If you tick "purchases" Click the preview icon and view/print your sales analysis report.
+- If you tick "Purchase" Click the preview icon and view/print your sales analysis report.
 
 ![des-print-supplier-purchase-and-payment-analysis-step4](../../../static/img/usage/supplier/supplier-reports-images/print-supplier-purchase-and-payment-analysis-step4.png)

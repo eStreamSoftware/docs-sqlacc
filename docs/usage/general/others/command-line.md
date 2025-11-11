@@ -8,9 +8,9 @@ tags: ["SQL Account", "Others", "Command Line"]
 
 ## Introduction
 
-The following switches are available when start SQL application from the command line.
+The following switches are available when starting the SQL application from the command line.
 
-You must precede all switches (unless otherwise noted) with a dash (-).
+All switches must be preceded by a dash (-), unless otherwise noted.
 
 The switches are case-sensitive.
 
@@ -32,13 +32,13 @@ The switches are case-sensitive.
 | `-u <username>` | Optional. Login username. |
 | `-p <password>` | Optional. Login password. |
 
-## Unit testing switches
+## Unit Testing Switches
 
 | Command | Description |
 |----------|-------------|
 | `-testparams <parameters>` | Optional. Unit testing parameters. |
 
-## Backup switches
+## Backup Switches
 
 | Command | Description |
 |----------|-------------|

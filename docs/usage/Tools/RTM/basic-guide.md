@@ -18,7 +18,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 3. Follow the steps below :
 
-   1. Change the report type to **SQL Report(*rtm)**
+   1. Change the report type to **SQL Report(rtm)**
 
    2. Select your **Report**
 
@@ -28,7 +28,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 ## Simple Calculation
 
-* In Report Builder you can also do some simple calculation using the Variable (The Calculator Icon)
+* In Report Builder, you can also do some simple calculation using the Variable (The Calculator Icon)
 
 ![variable-to-double](../../../../static/img/usage/tools/rtm-basic-guide/variable-to-double.jpg)
 
@@ -41,7 +41,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 5. Right click here & Select Event & find the component just now we had placed (eg Variable2)
 6. Click OnCalc
-7. Click here & enter the below script:
+7. Click here & enter the script below:
 
    <details>
       <summary>Script</summary>
@@ -71,7 +71,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 * Example 1 - Get Shelf Field from Maintain Item
 
       - Below is Example are doing following actions using Variable
-      - At Sales Invoice to get Shelf field from Maintain Item
+      - At Sales Invoice, get the Shelf field from Maintain Item
 
 ![output-type](../../../../static/img/usage/tools/rtm-basic-guide/output-type.jpg)
 
@@ -84,7 +84,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 5. Right click here & Select Event & find the component just now we had placed (eg Variable2)
 6. Click OnCalc
-7. Click here & enter the below script:
+7. Click here & enter the script below:
 
    <details>
       <summary>Script</summary>
@@ -113,7 +113,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 Below is Example are doing following actions using Image
 
-At Sales Invoice to get Picture field from Maintain Item
+At Sales Invoice, get the Picture field from Maintain Item
 
 * Steps
 
@@ -129,6 +129,7 @@ At Sales Invoice to get Picture field from Maintain Item
       <summary>Script</summary>
 
       ```pascal
+      
       procedure Image1OnPrint;
 
       var s: string;
@@ -585,7 +586,7 @@ Below Example is to Get total SVE for 6%
 15. Click DBText icon
 16. Click the place you wanted to show/print at the Header
 
-      ![pipeline-field-place](../../../../static/img/usage/tools/rtm-basic-guide/pipeline-field-place.jpg)
+      ![pipeline-field-place](../../../../static/img/usage/tools/rtm-basic-guide/pipeline-field-place.jpg) 
 
 17. Select plSQL_6 pipeline
 18. Select SVE field

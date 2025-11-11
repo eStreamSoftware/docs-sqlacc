@@ -20,7 +20,7 @@ This is an additional module.
 
 1. GL > Maintain Account
 
-2. Create finished good, raw material, WIP's closing stock account in your balance sheet current asset account as below
+2. Create finished good, raw material, and WIP's closing stock account in your balance sheet current asset account as shown below
 
     ![create-gl-account-finished-goods](../../../static/img/usage/production/guide/create-gl-account-finished-goods.png)
 
@@ -50,7 +50,7 @@ To produce a chemical products, the costing calculation based on stock group:-
 
         - Costing Method : FIFO
 
-        ![create-stock-group-raw-material](../../../static/img/usage/production/guide/create-stock-group-raw-material.png)
+         ![create-stock-group-raw-material](../../../static/img/usage/production/guide/create-stock-group-raw-material.png)
 
     2. Water
 
@@ -58,7 +58,7 @@ To produce a chemical products, the costing calculation based on stock group:-
 
         - Costing Method : Fixed Costing
 
-        ![create-stock-group-water](../../../static/img/usage/production/guide/create-stock-group-water.png)
+         ![create-stock-group-water](../../../static/img/usage/production/guide/create-stock-group-water.png)
 
     3. Finished Goods
 
@@ -66,7 +66,7 @@ To produce a chemical products, the costing calculation based on stock group:-
 
         - Costing Method : FIFO
 
-        ![create-stock-group-finished-goods](../../../static/img/usage/production/guide/create-stock-group-finished-goods.png)
+         ![create-stock-group-finished-goods](../../../static/img/usage/production/guide/create-stock-group-finished-goods.png)
 
 ### Stock Item
 
@@ -76,7 +76,7 @@ Setup the stock item master data for all types of stock. Eg. raw materials, end 
 
     1. Create all your raw materials items and assign stock group respectively.
 
-        ![create-raw-materials-stock-item](../../../static/img/usage/production/guide/create-raw-materials-stock-item.png)
+      ![create-raw-materials-stock-item](../../../static/img/usage/production/guide/create-raw-materials-stock-item.png)
 
     2. Create your finished goods item and assign raw materials.
 
@@ -90,7 +90,7 @@ Setup the stock item master data for all types of stock. Eg. raw materials, end 
 
         Assembly Cost is a fixed cost incurred to the entire process for final products.
 
-        ![assign-item-with-bom-item](../../../static/img/usage/production/guide/assign-item-with-bom-item.png)
+         ![assign-item-with-bom-item](../../../static/img/usage/production/guide/assign-item-with-bom-item.png)
 
 ### Location (Warehouse)
 
@@ -110,11 +110,11 @@ Define the warehouse code to identify the stock movement between the locations.
 
 ### Overview Workflow
 
-Sales coordinator usually will input the Sales Order (SO) based on the customer PO received. The stock products will be updated into the system as ordered qty. If the stock is purchased from a supplier, then the purchaser has to transfer from SO to PO.
+The sales coordinator usually inputs the Sales Order (SO) based on the customer's PO. The stock products will be updated in the system as the ordered quantity. If the stock is purchased from a supplier, then the purchaser needs to transfer from SO to PO.
 
-Unless the stock is manufactured, then you have to proceed to the Job Order process. How much of the materials/components required to meet the products ordered by the customer? This question was raised by the Material Planning department. Therefore, the Job Order takes place as the order to be input after the Sales Order. It will plan the materials/components required based on the qty ordered from Sales Order.
+If the stock is manufactured, then you have to proceed to the Job Order process. How much material/components are required to meet the products ordered by the customer? This question is raised by the Material Planning department. Therefore, the Job Order takes place as an order to be input after the Sales Order. It will plan the materials/components required based on the quantity ordered from the Sales Order.
 
-When products are produced out, you have to transfer the Job Order to the Stock Assembly to commit the stock on hand.
+When products are produced, you have to transfer the Job Order to the Stock Assembly to commit the stock on hand.
 
 ![overview-workflow-so-jo](../../../static/img/usage/production/guide/overview-workflow-so-jo.png)
 
@@ -130,7 +130,7 @@ IMPORTANT: It is required for the Job Order module. For more information about p
 
 :::important
 
-It is required the SO -> PO and Job Order module. For more information about price, please refer to our sales personnel.
+The SO -> PO and Job Order modules are required. For more information about price, please refer to our sales personnel.
 
 :::
 
@@ -142,7 +142,7 @@ It is required the SO -> PO and Job Order module. For more information about pri
 
        Create and save the customer PO into Sales Order.
 
-       ![sales-order](../../../static/img/usage/production/guide/sales-order.png)
+      ![sales-order](../../../static/img/usage/production/guide/sales-order.png)
 
     2. SO Check the Available Stock Balance
 
@@ -150,7 +150,7 @@ It is required the SO -> PO and Job Order module. For more information about pri
 
        Below is **CAR** stock available balance.
 
-       ![car-available-balance](../../../static/img/usage/production/guide/car-available-balance.png)
+      ![car-available-balance](../../../static/img/usage/production/guide/car-available-balance.png)
 
        :::note
 
@@ -170,9 +170,9 @@ It is required the SO -> PO and Job Order module. For more information about pri
 
        Below is **WHEEL** stock available balance.
 
-       ![wheel-available-balance](../../../static/img/usage/production/guide/wheel-available-balance.png)
+      ![wheel-available-balance](../../../static/img/usage/production/guide/wheel-available-balance.png)
 
-### Purchase Order (Transfer From So)
+### Purchase Order (Transfer From SO)
 
     1. Create New Purchase Order (PO)
 
@@ -182,21 +182,21 @@ It is required the SO -> PO and Job Order module. For more information about pri
 
        2. Select the Supplier
 
-       ![purchase-order-new](../../../static/img/usage/production/guide/purchase-order-new.png)
+      ![purchase-order-new](../../../static/img/usage/production/guide/purchase-order-new.png)
 
     2. PO Transfer From SO
 
-       1.  Right click on P/Oder (Title)
+       1.  Right click on P/Order (Title)
 
        2. Click on Transfer From Sales Order in the menu
 
-       ![purchase-order-transfer-from](../../../static/img/usage/production/guide/purchase-order-transfer-from.png)
+      ![purchase-order-transfer-from](../../../static/img/usage/production/guide/purchase-order-transfer-from.png)
 
     3. Document Transfer (SO -> PO)
 
        1.   Pick the Item from the SO list
 
-       2.  Input X/F Qty to transfer over PO
+       2.  Input Transfer Qty to transfer over PO
 
        3. Click OK to proceed
 
@@ -233,7 +233,7 @@ It is required the SO -> PO and Job Order module. For more information about pri
 
 ### Create New Job Order
 
-CLICK on the NEW button and SELECT the Customer.
+Click on the NEW button and select the Customer.
 
 ![new-job-order](../../../static/img/usage/production/guide/new-job-order.png)
 
@@ -241,15 +241,15 @@ CLICK on the NEW button and SELECT the Customer.
 
 > Customer Info from SO
 
-Basically, the customer and others information copy from SO.
+Basically, the customer and other information is copied from the SO.
 
 > Assembly Item Info (Header & Footer)
 
-Assembly item transferred from SO. It will determine the BOM Components required and the assembly unit cost.
+The assembly item is transferred from the SO. It will determine the BOM Components required and the assembly unit cost.
 
 > BOM Components Details
 
-Total components quantity requirement to meet the total output.
+Total components quantity requirements to meet the total output.
 
 :::
 
@@ -277,7 +277,7 @@ Total components quantity requirement to meet the total output.
 
    1. Pick the Item from the SO list
 
-   2. Input X/F Qty to transfer over JO
+       2.  Input Transfer Qty to transfer over JO
 
    3. Click OK to proceed
 
@@ -285,7 +285,7 @@ Total components quantity requirement to meet the total output.
 
 4. Show Multilevel BOM in Flat Mode
 
-   This function enables users to drill down to the flatten level of the multilevel BOM structure. For example, the CAR multilevel BOM structure.
+   This function enables users to drill down to the flattened level of the multilevel BOM structure. For example, the CAR multilevel BOM structure.
 
    |**Level 0** | **Level 1** | **Level 2** | **Level 3** |
    |---|---|---|---|
@@ -391,7 +391,7 @@ Total components quantity requirement to meet the total output.
 
 ### Offset Qty In Sales Order
 
-What is the purpose of the OFFSET Qty in Sales Order? You will see a new column named “OffSet Qty”. It allows you to input a value to increase/reduce the original QTY to be transferred to Purchase Order and Job Order.
+What is the purpose of the Offset Qty in Sales Order? You will see a new column named “Offset Qty”. It allows you to input a value to increase or reduce the original QTY to be transferred to Purchase Order and Job Order.
 
 ![offset-qty-so](../../../static/img/usage/production/guide/offset-qty-so.png)
 
@@ -419,7 +419,7 @@ What is the purpose of the OFFSET Qty in Sales Order? You will see a new column 
 
 ### Split to X Process
 
-1. With this field, users are able to assign a number of processes/machines in one Job Order/Stock Item Assembly to produce the same End Products using the same range of BOM components.
+1. Use this field to assign multiple processes/machines in one Job Order/Stock Item Assembly to produce the same End Products using the same range of BOM components.
 
    ![split-to-x-process](../../../static/img/usage/production/guide/split-to-x-process.png)
 

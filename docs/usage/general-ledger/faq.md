@@ -10,7 +10,7 @@ tags: ["SQL Account", "Usage"]
 
 **Issue:**
 
-Year To Date DR and CR not balanced in Trial Balance because Retained Earnings account has missing.
+Year To Date DR and CR not balanced in Trial Balance because Retained Earnings account is missing.
 
 ![1](../../../static/img/usage/general-ledger/glfaq/tb-not-balance-iss.png)
 
@@ -22,13 +22,13 @@ Year To Date DR and CR not balanced in Trial Balance because Retained Earnings a
     ![2](../../../static/img/usage/general-ledger/glfaq/tb-not-balance-sol.png)
 
 3. Apply the Trial Balance again.
-4. Retained Earning Account has restored back into Trial Balance, Year To Date DR and CR are balanced now.
+4. Retained Earning Account has restored to Trial Balance, Year To Date DR and CR are now balanced.
 
 ## How to make the foreign bank account record as USD
 
 **Issue:**
 
-I cannot key-in the foreign bank transactions in USD.
+I cannot key in the foreign bank transactions in USD.
 
 ![3](../../../static/img/usage/general-ledger/glfaq/fb-usd-iss.png)
 
@@ -36,7 +36,7 @@ I cannot key-in the foreign bank transactions in USD.
 
 Please make sure you have the following add-on modules:
 
-- Multi-Currency (allow to add more currency code, eg. USD, SGD,etc)
+- Multi-Currency (allow to add more currency code, eg. USD, SGD, etc)
 - Advance Currency (allow bank account to select foreign currency)
 
 1. Go to Tools | Maintain Payment Method...
@@ -45,7 +45,7 @@ Please make sure you have the following add-on modules:
 
     ![4](../../../static/img/usage/general-ledger/glfaq/fb-usd-sol1.png)
 
-4. Foreign bank account will be value at USD currency now. See example in Supplier Payment.
+4. The foreign bank account will now be valued in USD. See example in Supplier Payment.
 
 ![5](../../../static/img/usage/general-ledger/glfaq/fb-usd-sol2.png)
 
@@ -58,7 +58,7 @@ Please make sure you have the following add-on modules:
 2. Key in the double entry for recording accumulated depreciation.
 
    :::info
-   Eg: Record the depreciation of motor vehicle in year 2015
+   e.g.: Record the depreciation of motor vehicle in year 2015
    Debit Depreciation Expenses RM1000
    Credit Accumulated Depreciation of Motor Vehicle RM1000
    :::
@@ -90,7 +90,7 @@ Please make sure you have the following add-on modules:
 
 :::caution
 
-required SQL Account version 839 and above.
+Required SQL Account version 839 and above.
 
 :::
 
@@ -125,7 +125,7 @@ required SQL Account version 839 and above.
     ![13](../../../static/img/usage/general-ledger/glfaq/auto-post-gl-stock-value/4.png)
 
     :::note
-    Ensure that all Stock Groups are mapped to the **Balance Sheet Account Code (A)**
+    Ensure that all Stock Groups are mapped to the **Balance Sheet Account Code (A)**.
     :::
 
     ![14](../../../static/img/usage/general-ledger/glfaq/auto-post-gl-stock-value/5.png)
@@ -147,8 +147,7 @@ required SQL Account version 839 and above.
     ![16](../../../static/img/usage/general-ledger/glfaq/auto-post-gl-stock-value/7.png)
 
     :::info
-    Ensure that all Location are mapped to the **Project Code (A)**
-    :::
+    Ensure that all Location are mapped to the **Project Code (A)**.
 
     ![17](../../../static/img/usage/general-ledger/glfaq/auto-post-gl-stock-value/8.png)
 
@@ -198,7 +197,7 @@ Value from the Stock Month End Balance and will silently bypass the update.
 Require SQL Account version 748 & above.
 :::
 
-This feature allow system auto post the stock value from Maintain Month End value to GL Maintain Stock Value.
+This feature allows the system to automatically post the stock value from Maintain Month End value to GL Maintain Stock Value.
 
 ### Step 1: Stock > Maintain Stock Group
 
@@ -209,7 +208,7 @@ This feature allow system auto post the stock value from Maintain Month End valu
 ![22](../../../static/img/usage/general-ledger/glfaq/auto-post-stock-month-end-value/2.png)
 
 :::info Note :
-Required to fill in Balance Sheet Account in Stock Group in order able to show the update GL Stock Value.
+Required to fill in the Balance Sheet Account in the Stock Group to update GL Stock Value.
 :::
 
 ### Step 3: GL > Maintain Stock Value
@@ -238,7 +237,7 @@ Required to fill in Balance Sheet Account in Stock Group in order able to show t
 
    ![26](../../../static/img/usage/general-ledger/glfaq/auto-recon/3.png)
 
-7. System loading.
+7. System loading...
 
    ![27](../../../static/img/usage/general-ledger/glfaq/auto-recon/4.png)
 
@@ -258,7 +257,7 @@ Required to fill in Balance Sheet Account in Stock Group in order able to show t
    2. Description + Amount
    :::
 
-10. System will auto match the transactions with the bank statement and auto ticked. **(yellow highlighted)**.
+10. System will automatically match the transactions with the bank statement and automatically tick them. **(yellow highlighted)**.
 
    But some transactions may not be able to auto match **[red box]**
 
@@ -272,7 +271,7 @@ Required to fill in Balance Sheet Account in Stock Group in order able to show t
 
    ![31](../../../static/img/usage/general-ledger/glfaq/auto-recon/8.png)
 
-2. Click on “Match” when this is the correct bank transactions for **[Salary for Ali]**.
+2. Click on **“Match”** when this is the correct bank transactions for **[Salary for Ali]**.
 
    ![32](../../../static/img/usage/general-ledger/glfaq/auto-recon/9.png)
 
@@ -297,7 +296,7 @@ A bank reconciliation is a process performed by a company to ensure that the com
 ### Bank Reconciliation
 
 - Select the Bank Statement Date
-- Select the Bank Account, eg. Hong Leong Bank
+- Select the Bank Account, e.g. Hong Leong Bank
 - Display Period (normally the date from period will be BLANK, and date to will be same as per Bank Statement Date)
 - Check(√) Show Unticked Transaction
 - Check(√) Show Current Recon Transaction
@@ -346,7 +345,7 @@ Account Amount / Total Sales * 100
 
 #### How to get E % = 3.4?
 
-- Using Expenses value / Total Sales / 6 \* 100= 10,000/296,502.11 \* 100 = 3.4%
+- Using Expenses value / Total Sales \* 100= 10,000/296,502.11 \* 100 = 3.4%
 
 #### How to get F % = 91.7 ?
 
@@ -409,7 +408,7 @@ Account Amount / Total Sales * 100
 
 6. Enter monthly budget amounts to update quarterly, half-yearly, and yearly budgets automatically.
 
-7. Key your budget by account code.
+7. Enter your budget by account code.
 
 8. Click **Save**.
 
@@ -457,7 +456,7 @@ Account Amount / Total Sales * 100
 
     ![50](../../../static/img/usage/general-ledger/glfaq/p&l-more-than-12/2.png)
 
-3. Click on the report name **This year-2 Column** > click and drag it to desktop.
+3. Click on the report name **This Year - 2 Column** > click and drag it to desktop.
 
     ![51](../../../static/img/usage/general-ledger/glfaq/p&l-more-than-12/3.png)
 
@@ -469,7 +468,7 @@ Account Amount / Total Sales * 100
 
     ![53](../../../static/img/usage/general-ledger/glfaq/p&l-more-than-12/5.png)
 
-6. Double click on the report name **This year-2Column** *(in blue colour font)*.
+6. Double click on the report name **This Year - 2 Column** *(in blue colour font)*.
 
     ![54](../../../static/img/usage/general-ledger/glfaq/p&l-more-than-12/6.png)
 
@@ -479,7 +478,7 @@ Account Amount / Total Sales * 100
 
    3. **Param 1** : Date **From**.
 
-      **Param 2** : Date **to**.
+      **Param 2** : Date **To**.
 
    4. Click on **OK**.
 
@@ -509,7 +508,7 @@ Repeat the same step on GL > Print Balance Sheet Statement
 
     ![58](../../../static/img/usage/general-ledger/glfaq/p&l-statement-appropriation-acc/3.png)
 
-    EG : Dr Dividend 2,000 Cr Bank 2,000
+    e.g: Dr Dividend 2,000 Cr Bank 2,000
 
 3. GL > Print P&L Statement.
 
@@ -529,7 +528,7 @@ Repeat the same step on GL > Print Balance Sheet Statement
 
 ## General Ledger Report Ref1(DocNo) appear as (New)
 
-When you see General Ledger Report `Ref1(DocNo)` appeared as `<<New>>`, use the method below to fix it.
+When you see General Ledger Report `Ref1(DocNo)` appears as `<<New>>`, use the method below to fix it.
 
 ![62](../../../static/img/usage/general-ledger/glfaq/solution-gl-report-ref1-as-new/1.png)
 
@@ -553,7 +552,7 @@ When you see General Ledger Report `Ref1(DocNo)` appeared as `<<New>>`, use the 
 
 ## Trial Balance not tally
 
-If you trial balance is not tally, may try running the following check.
+If your trial balance is not tally, try running the following checks.
 
 ## Make sure Retained Earning must have 1 Account code
 
@@ -578,7 +577,7 @@ If your Retained Earning is empty, you may create under Reserve, then only drag 
 ## Not tally due to current transaction
 
 :::tip
-If above 2 step is tally, which mean is current transaction cause not tally, kindly follow below step
+If the above two steps are correct, it means the current transaction is causing the imbalance. Please follow the steps below.
 :::
 
 1. **GL** > **Print Journal of Transaction Listing** > Choose the date period which is not tally.
@@ -600,7 +599,7 @@ Go to **GL > Maintain Account**.
 |460-XXX     |Witholding Tax Payable|Under Current Liabilities|
 
 :::note
-GL Account not compulsory to be the same.
+GL Account is not compulsory to be the same.
 :::
 
 ## Maintain Withholding Tax
@@ -660,7 +659,7 @@ Available in multiple menus:
     ![71](../../../static/img/usage/general-ledger/glfaq/witholding-tax/4.png)
 
 :::note
-Withholding tax amount will not add into the purchase invoice amount.
+The withholding tax amount will not be added to the purchase invoice amount.
 :::
 
 ## Payment of Withholding Tax

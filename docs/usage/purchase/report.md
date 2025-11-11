@@ -10,19 +10,19 @@ tags: ["SQL Account", "Usage", "Purchase", "Report"]
 
 ### How to Print Purchase Document Listing
 
-1. Go to Purchase and click Print Purchase Document Listing
+1. Go to Purchase and click Print Purchase Document Listing.
 
     ![navigate-purchase-document-listing](../../../static/img/usage/purchase/report/navigate-purchase-document-listing.png)
 
-2. Select which Document listing you want to see. Follow the image
+2. Select which Document listing you want to view. Refer the image below.
 
     ![purchase-document-listing](../../../static/img/usage/purchase/report/purchase-document-listing.png)
 
-3. Press Apply Button
+3. Press Apply Button.
 
     ![purchase-document-listing-apply](../../../static/img/usage/purchase/report/purchase-document-listing-apply.png)
 
-4. Click Preview & Listing Report
+4. Click Preview & Listing Report.
 
     ![purchase-document-listing-select-report](../../../static/img/usage/purchase/report/purchase-document-listing-select-report.png)
 
@@ -41,7 +41,7 @@ Tick relevant check boxes.
 |Print Document Style| Tick this checkbox to print out bulk report or send batch email|
 |Include Cancelled Documents| Tick this checkbox to include cancelled documents in the listing|
 
-If you Tick Print Document Style , you will see that you will able able to choose purchase document report format.
+If you Tick Print Document Style , you will able to choose purchase document report format.
 
 ![purchase-document-listing-print-document-style-2](../../../static/img/usage/purchase/report/purchase-document-listing-print-document-style-2.png)
 
@@ -69,15 +69,15 @@ Here is an example of the report.
 
 ![navigate-outstanding-purchase-document-listing](../../../static/img/usage/purchase/report/navigate-outstanding-purchase-document-listing.png)
 
-1. Select which Document listing you want to see. Follow the image
+1. Select which Document listing you want to view. Refer to the image below.
 
     ![outstanding-purchase-document-listing](../../../static/img/usage/purchase/report/outstanding-purchase-document-listing.png)
 
-2. Press Apply Button
+2. Press Apply Button.
 
     ![outstanding-purchase-document-listing-apply](../../../static/img/usage/purchase/report/outstanding-purchase-document-listing-apply.png)
 
-3. Click Preview & Listing Report
+3. Click Preview & Listing Report.
 
     ![outstanding-purchase-document-listing-select-report](../../../static/img/usage/purchase/report/outstanding-purchase-document-listing-select-report.png)
 
@@ -123,15 +123,15 @@ Select the Listing Report.
 
 1. Select which Document listing you want to see. Follow the image
 
-2. Filter the documents by supplier, agent, area etc
+2. Filter the documents by supplier, agent, area, etc.
 
     ![purchase-price-history](../../../static/img/usage/purchase/report/purchase-price-history.png)
 
-3. Select how many records you want to display
+3. Select how many records you want to display.
 
     ![purchase-price-history-set-records-number](../../../static/img/usage/purchase/report/purchase-price-history-set-records-number.png)
 
-4. Press Apply Button
+4. Press Apply Button.
 
     ![purchase-price-history-apply](../../../static/img/usage/purchase/report/purchase-price-history-apply.png)
 
@@ -188,19 +188,19 @@ Select the Listing Report.
 
 ![navigate-purchase-analysis-by-document](../../../static/img/usage/purchase/report/navigate-purchase-analysis-by-document.png)
 
-1. Filter the documents by supplier, agent, area etc
+1. Filter the documents by supplier, agent, area, etc.
 
     ![purchase-analysis-by-document-filter](../../../static/img/usage/purchase/report/purchase-analysis-by-document-filter.png)
 
-2. Select which documents you want to see, if you want to see RM amount or quantity , and if you want to include tax and foreign currency.
+2. Select which documents you want to view, if you want to see the RM amount or quantity , and whether to include tax and foreign currency.
 
     ![purchase-analysis-by-document-select-document](../../../static/img/usage/purchase/report/purchase-analysis-by-document-select-document.png)
 
-3. Press Apply Button
+3. Press Apply Button.
 
     ![purchase-analysis-by-document-apply](../../../static/img/usage/purchase/report/purchase-analysis-by-document-apply.png)
 
-4. Click Preveiw & Listing Report
+4. Click Preveiw & Listing Report.
 
 - Example of the analysis report.
 
@@ -220,28 +220,28 @@ You can use the Group by/Sort by table to choose how you want to group your repo
 
 ![navigate-yearly-purchase-analysis](../../../static/img/usage/purchase/report/navigate-yearly-purchase-analysis.png)
 
-1. Filter the documents by supplier, agent, area etc
+1. Filter the documents by supplier, agent, area, etc.
 
     ![yearly-purchase-analysis-filter](../../../static/img/usage/purchase/report/yearly-purchase-analysis-filter.png)
 
-2. Set how you want to group the report by going to group by / sort by
+2. Set how you want to group the report by using Group by / Sort by.
 
     ![yearly-purchase-analysis-sort-group-by](../../../static/img/usage/purchase/report/yearly-purchase-analysis-sort-group-by.png)
 
-3. Select if you want to see the yearly amount or yearly quantity of your purchase
+3. Select if you want to view the yearly amount or yearly quantity of your purchase.
 
     ![yearly-purchase-analysis-amount-quantity](../../../static/img/usage/purchase/report/yearly-purchase-analysis-amount-quantity.png)
 
-4. Press Apply Button
+4. Press Apply Button.
 
     ![yearly-purchase-analysis-apply](../../../static/img/usage/purchase/report/yearly-purchase-analysis-apply.png)
 
-5. Click Preveiw & Listing Report
+5. Click Preveiw & Listing Report.
 
-    - Example If you ticked "Qty" , your report will show yearly quantity.
+    - For example, if you tick "Qty", your report will show the yearly quantity.
 
         ![yearly-purchase-analysis-qty-report](../../../static/img/usage/purchase/report/yearly-purchase-analysis-qty-report.png)
 
-    - Example If you ticked "Amount" , your report will show yearly amount.
+    - For example, if you tick "Amount", your report will show the yearly amount.
 
         ![yearly-purchase-analysis-amount-report](../../../static/img/usage/purchase/report/yearly-purchase-analysis-amount-report.png)

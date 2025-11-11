@@ -8,13 +8,13 @@ tags: ["SQL Account", "Others", "Upgrade", "Report"]
 
 ## Introduction
 
-This happen if you had write script to get the **TaxRate** from Maintain Tax in the report.
+This issue occurs when a report contains a script that retrieves the **TaxRate** from Maintain Tax.
 
-This due to changing SQLAccounting Coding Structure to cater future Changes in Tax Rate.
+The error is caused by changes in SQL Accounting's coding structure that affect how tax rates are provided to reports.
 
 ## Problem
 
-You will get below error when you preview the report.
+You will see the following error when previewing the report:
 
 ![rtm-report-problem](../../../../static/img/usage/general/others/upgrade721-tax-rtmreport/rtm-report-problem.jpg)
 

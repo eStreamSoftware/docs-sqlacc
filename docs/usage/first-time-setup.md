@@ -9,16 +9,16 @@ tags: ["SQL Account", "Usage", "Setup"]
 ## Financial Period & System Conversion Date
 
 :::info
-Watch tutorial video here : [Youtube](https://www.youtube.com/watch?v=yH8VfNGjEr0&feature=youtu.be)
+Watch the tutorial video here: [YouTube](https://www.youtube.com/watch?v=yH8VfNGjEr0&feature=youtu.be)
 :::
 
 1. **Tools** | **Options**
 
     ![tools-options](../../static/img/usage/first-time-setup/tools-options.png)
 
-    :::note
-    Once you have set up your Financial Start Period & System Conversion Date, it is not possible to change it again. This configuration can only be set once during the creation of a new database.
-    :::
+   :::note
+   Once you have set up your Financial Start Period and System Conversion Date, it is not possible to change them later. This configuration can only be set once when creating a new database.
+   :::
 
 2. Select **General Ledger**
 
@@ -27,7 +27,7 @@ Watch tutorial video here : [Youtube](https://www.youtube.com/watch?v=yH8VfNGjEr
    ![options-gl](../../static/img/usage/first-time-setup/options-gl.png)
 
    :::note Scenario 1
-   My financial period starts on 1st January every year, I start using SQL from 1/1/2015.
+   My financial period starts on 1 January every year. I started using SQL on 1/1/2015.
 
    **Financial Start Period** = 1/1/2015
 
@@ -35,7 +35,7 @@ Watch tutorial video here : [Youtube](https://www.youtube.com/watch?v=yH8VfNGjEr
    :::
 
    :::note Scenario 2
-   My financial period starts on 1st January every year, I start using SQL from 1/4/2015.
+   My financial period starts on 1 January every year. I started using SQL on 1/4/2015.
 
    **Financial Start Period** = 1/1/2015
 
@@ -46,25 +46,25 @@ Watch tutorial video here : [Youtube](https://www.youtube.com/watch?v=yH8VfNGjEr
 
 ### Activate SST
 
-1. In SQL Account, click on the menu **SST/GST** -> **Start SST now...**
+1. In SQL Account, click the menu **SST/GST** → **Start SST now...**
 
    ![start-sst-1](../../static/img/usage/first-time-setup/start-sst-1.png)
 
-2. For the country, select **Malaysia**, and click Next
+2. Select **Malaysia** as the country, then click **Next**.
 
    ![start-sst-2](../../static/img/usage/first-time-setup/start-sst-2.png)
 
 3. Fill in **SST Effective Date**
 
-4. Tick **I have SST registered number** if you have a valid SST registration number from the government (skip to *Step 6* if you don't have one)
+4. Tick **I have an SST registration number** if you have a valid SST registration number from the government (skip to *Step 6* if you don't).
 
    ![start-sst-3](../../static/img/usage/first-time-setup/start-sst-3.png)
 
-5. Fill in your **Sales Tax No** and **Service Tax No** (These details will be auto updated in your company profile)
+5. Fill in your **Sales Tax No** and **Service Tax No**. These details will be auto-updated in your company profile.
 
    ![start-sst-4](../../static/img/usage/first-time-setup/start-sst-4.png)
 
-6. In the next step, click Next to auto generate **SST GL Account**
+6. In the next step, click **Next** to auto-generate the **SST GL Account**.
 
    ![start-sst-5](../../static/img/usage/first-time-setup/start-sst-5.png)
 
@@ -72,23 +72,23 @@ Watch tutorial video here : [Youtube](https://www.youtube.com/watch?v=yH8VfNGjEr
 
    ![start-sst-6](../../static/img/usage/first-time-setup/start-sst-6.png)
 
-8. System will prompt to re-login, and you are good to go
+8. The system will prompt you to log in again; after that, you're ready to go.
 
-9. After log-in, you will see a new drop down list for SST Functions, the SST setup is now completed.
+9. After logging in, you will see a new drop-down list for SST functions. The SST setup is now complete.
 
 ### Maintain Tariff
 
 Go to **Tools** | **Maintain tariff** | **New**
 
-Insert your product tariff code here, you can also find out your product tariff code from Malaysia Custom [JKDM HS Explorer](https://ezhs.customs.gov.my/)
+Insert your product tariff code here. You can also look up your product tariff code using the Malaysia Customs [JKDM HS Explorer](https://ezhs.customs.gov.my/)
 
 ![maintain-tarrif](../../static/img/usage/first-time-setup/maintain-tarrif.png)
 
 ## Company Profile
 
-1. Go To **File** | **Company Profile**
+1. Go to **File** | **Company Profile**
 
-   Fill in your company particulars and if this company is subject to both sales and service tax, fill in the Sales Tax number / Service Tax number.
+   Fill in your company particulars. If the company is subject to both sales and service tax, enter the Sales Tax and Service Tax numbers.
 
    ![company-profile-sst](../../static/img/usage/first-time-setup/company-profile-sst.png)
 

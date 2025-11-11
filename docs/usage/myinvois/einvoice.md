@@ -13,7 +13,7 @@ Submitting E-Invoices via SQL Account is seamless and integrates smoothly with y
 ### Sales Invoice / Cash Sales
 
 :::info[NOTE]
-These documents generate MyInvois Invoice which is a commercial document that itemises and records a transaction between your customer and you.
+These documents generate a MyInvois Invoice which is a commercial document that itemises and records a transaction between you and your customer.
 :::
 
 1. Go to **Sales** > **Invoice / Cash Sales** > **New** to issue a new invoice / cash sales.
@@ -21,7 +21,7 @@ These documents generate MyInvois Invoice which is a commercial document that it
 
     ![sales-invoice-customer](../../../static/img/usage/myinvois/einvoice/sales-invoice-customer.png)
 
-3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
+3. Click on **More** (1) to view the mandatory info required for e-invoice, it will be prefilled with information from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
 
     ![sales-invoice-more](../../../static/img/usage/myinvois/einvoice/sales-invoice-more.png)
 
@@ -36,7 +36,7 @@ These documents generate MyInvois Invoice which is a commercial document that it
 
     ![sales-invoice-submission-type](../../../static/img/usage/myinvois/einvoice/sales-invoice-submission-type.png)
 
-5. Continue with usual invoice / cash sales entry and **Save**.
+5. Continue with the usual invoice / cash sales entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-sales-invoice}
 
@@ -58,7 +58,7 @@ After saving your Sales Invoice or Cash Sales document, you can access E-Invoice
 ### Credit Note
 
 :::info[NOTE]
-This document generate MyInvois Credit Note which is issued by you to correct errors, apply discounts, or account for returns in a previously issued E-Invoice with the purpose of reducing the value of the original E-Invoice. This is used in situations where the reduction of the original E-Invoice does not involve return of monies to your customer.
+This document generates a MyInvois Credit Note which is issued by you to correct errors, apply discounts, or account for returns in a previously issued E-Invoice with the purpose of reducing the value of the original E-Invoice. This is used in situations where the reduction of the original E-Invoice does not involve the return of monies to your customer.
 :::
 
 When creating a credit note, you have the option to reference validated E-Invoices. There are three methods to do this:
@@ -83,15 +83,15 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
     ![sales-credit-note-more](../../../static/img/usage/myinvois/einvoice/sales-credit-note-more.png)
 
-4. Continue with usual credit note entry and **Save**.
+4. Continue with the usual credit note entry and **Save**.
 
 #### Transfer From
 
 1. Go to **Sales** > **Credit Note** > **New** to issue a new credit note.
 
-2. **Right Click on Credit Note title**, select **Transfer From Sales Invoice** / **Transfer From Cash Sale**, then do transfer from operation as usual (Choose validated documents for valid references).
+2. **Right Click on the Credit Note title**, select **Transfer From Sales Invoice** / **Transfer From Cash Sale**, then do transfer from operation as usual (Choose validated documents for valid references).
 
-3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from the validated invoice / cash sales. Click on 📌(2) to pin the tab for easier view.
+3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with information from the validated invoice / cash sales. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
     - None – Exclude this document from Credit Note submission.
@@ -101,7 +101,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
     ![sales-credit-note-more](../../../static/img/usage/myinvois/einvoice/sales-credit-note-more.png)
 
-4. Continue with usual credit note entry and **Save**.
+4. Continue with the usual credit note entry and **Save**.
 
 #### From Doc
 
@@ -111,7 +111,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
     ![sales-credit-note-customer](../../../static/img/usage/myinvois/einvoice/sales-credit-note-customer.png)
 
-3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
+3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with information from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
     - None – Exclude this document from Credit Note submission.
@@ -129,7 +129,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
     ![sales-credit-note-fromdoc](../../../static/img/usage/myinvois/einvoice/sales-credit-note-fromdoc.png)
 
-5. Continue with usual credit note entry and **Save**.
+5. Continue with the usual credit note entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-sales-credit-note}
 
@@ -149,7 +149,7 @@ After saving your Credit Note document, you can access E-Invoice operations thro
 ### Debit Note
 
 :::info[NOTE]
-This document generate MyInvois Debit Note which is issued by you to indicate additional charges on a previously issued E-Invoice.
+This document generates a MyInvois Debit Note which is issued by you to indicate additional charges on a previously issued E-Invoice.
 :::
 
 When creating a debit note, you have the option to reference validated E-Invoices.
@@ -164,7 +164,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
     ![sales-debit-note-customer](../../../static/img/usage/myinvois/einvoice/sales-debit-note-customer.png)
 
-3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with the info from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
+3. Click on **More** (1) to view mandatory info required for e-invoice, it will be prefilled with information from existing customer's profile. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
     - None – Exclude this document from Debit Note submission.
@@ -182,7 +182,7 @@ Please ensure that the referenced documents are validated E-Invoices. If they ar
 
     ![sales-debit-note-fromdoc](../../../static/img/usage/myinvois/einvoice/sales-debit-note-fromdoc.png)
 
-5. Continue with usual debit note entry and **Save**.
+5. Continue with the usual debit note entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-sales-debit-note}
 
@@ -204,7 +204,7 @@ After saving your Debit Note document, you can access E-Invoice operations throu
 ### Purchase Invoice / Cash Purchase
 
 :::info[NOTE]
-These documents generate MyInvois Self-Billed Invoice which is a commercial document to document expenses that itemises and records a transaction between your supplier and you. For E-Invoice purposes, you shall issue Self-Billed E-Invoices for the following transactions:
+These documents generate a MyInvois Self-Billed Invoice which is a commercial document to document expenses that itemises and records a transaction between you and your supplier. For E-Invoice purposes, you shall issue Self-Billed E-Invoices for the following transactions:
 
 1. Payment to agents, dealers, distributors, etc.
 2. Goods sold or services rendered by foreign suppliers
@@ -225,7 +225,7 @@ These documents generate MyInvois Self-Billed Invoice which is a commercial docu
 
     ![purchase-invoice-supplier](../../../static/img/usage/myinvois/einvoice/purchase-invoice-supplier.png)
 
-3. Click on **More** (1) to view mandatory info required for Self-Billed E-Invoice, it will be prefilled with the info from existing supplier's profile. Click on 📌(2) to pin the tab for easier view.
+3. Click on **More** (1) to view mandatory info required for Self-Billed E-Invoice, it will be prefilled with information from existing supplier's profile. Click on 📌(2) to pin the tab for easier view.
 
     ![purchase-invoice-more](../../../static/img/usage/myinvois/einvoice/purchase-invoice-more.png)
 
@@ -240,7 +240,7 @@ These documents generate MyInvois Self-Billed Invoice which is a commercial docu
 
     ![purchase-invoice-submission-type](../../../static/img/usage/myinvois/einvoice/purchase-invoice-submission-type.png)
 
-5. Continue with usual purchase invoice / cash purchase entry and **Save**.
+5. Continue with the usual purchase invoice / cash purchase entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-purchase-invoice}
 
@@ -262,7 +262,7 @@ After saving your Purchase Invoice or Cash Purchase document, you can access E-I
 ### Purchase Returned
 
 :::info[NOTE]
-This document generate MyInvois Self-Billed Credit Note which is issued by you to correct errors, apply discounts, or account for returns in a previously issued Self-Billed E-Invoice with the purpose of reducing the value of the original Self-Billed E-Invoice. This is used in situations where the reduction of the original Self-Billed E-Invoice does not involve return of monies to the you
+This document generates a MyInvois Self-Billed Credit Note which is issued by you to correct errors, apply discounts, or account for returns in a previously issued Self-Billed E-Invoice with the purpose of reducing the value of the original Self-Billed E-Invoice. This is used in situations where the reduction of the original Self-Billed E-Invoice does not involve the return of monies to the you
 :::
 
 When creating a purchase returned, you have the option to reference validated Self-Billed E-Invoices. There are three methods to do this:
@@ -287,7 +287,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
     ![purchase-returned-more](../../../static/img/usage/myinvois/einvoice/purchase-returned-more.png)
 
-4. Continue with usual purchase returned entry and **Save**.
+4. Continue with the usual purchase returned entry and **Save**.
 
 #### Transfer From {#transfer-from-purchase-returned}
 
@@ -305,7 +305,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
     ![purchase-invoice-more](../../../static/img/usage/myinvois/einvoice/purchase-invoice-more.png)
 
-4. Continue with usual purchase returned entry and **Save**.
+4. Continue with the usual purchase returned entry and **Save**.
 
 #### From Doc {#from-doc-purchase-returned}
 
@@ -333,7 +333,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
     ![purchase-returned-fromdoc](../../../static/img/usage/myinvois/einvoice/purchase-returned-fromdoc.png)
 
-5. Continue with usual purchase returned entry and **Save**.
+5. Continue with the usual purchase returned entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-purchase-returned}
 
@@ -354,7 +354,7 @@ After saving your Purchase Returned document, you can access E-Invoice operation
 ### Purchase Debit Note
 
 :::info[NOTE]
-This document generate MyInvois Self-Billed Debit Note which is issued by you to indicate additional charges on a previously issued Self-Billed E-Invoice.
+This document generates a MyInvois Self-Billed Debit Note which is issued by you to indicate additional charges on a previously issued Self-Billed E-Invoice.
 :::
 
 When creating a purchase debit note, you have the option to reference validated Self-Billed E-Invoices.
@@ -369,7 +369,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
     ![purchase-debit-note-supplier](../../../static/img/usage/myinvois/einvoice/purchase-debit-note-supplier.png)
 
-3. Click on **More** (1) to view mandatory info required for Self-Billed Debit Note, it will be prefilled with the info from existing supplier's profile. Click on 📌(2) to pin the tab for easier view.
+3. Click on **More** (1) to view mandatory info required for Self-Billed Debit Note, it will be prefilled with information from existing supplier's profile. Click on 📌(2) to pin the tab for easier view.
 
     :::info[SUBMISSION]
     - None – Exclude this document from Self-Billed Debit Note submission.
@@ -387,7 +387,7 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
     ![purchase-debit-note-fromdoc](../../../static/img/usage/myinvois/einvoice/purchase-debit-note-fromdoc.png)
 
-5. Continue with usual purchase debit note entry and **Save**.
+5. Continue with the usual purchase debit note entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-purchase-debit-note}
 
@@ -449,7 +449,7 @@ This document can generate either MyInvois Self-Billed Invoice or MyInvois Refun
 #### Self-Billed Invoice
 
 :::info[NOTE]
-Self-Billed Invoice is a commercial document that itemises and records a transaction between your supplier and you.
+Self-Billed Invoice is a commercial document that itemises and records a transaction between you and your supplier.
 
 For E-Invoice purposes, you shall issue Self-Billed E-Invoices for the following transactions:
 
@@ -469,13 +469,13 @@ For E-Invoice purposes, you shall issue Self-Billed E-Invoices for the following
 
 1. Go to **GL** > **Cash Book Entry** > **New PV** to issue a new payment voucher.
 
-2. Fill in mandatory fields following the [guide](#mandatory-fields).
+2. Fill in the mandatory fields following the [guide](#mandatory-fields).
 
 3. Select **Self-billed** submission type.
 
     ![payment-voucher-submission-self-billed](../../../static/img/usage/myinvois/einvoice/payment-voucher-submission-self-billed.png)
 
-4. Continue with usual payment voucher entry and **Save**.
+4. Continue with the usual payment voucher entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-payment-voucher-self-billed}
 
@@ -507,13 +507,13 @@ Please ensure that the referenced documents are validated E-Invoices (Receipt Vo
 
     ![payment-voucher-fromdoc](../../../static/img/usage/myinvois/einvoice/payment-voucher-fromdoc.png)
 
-3. Fill in mandatory fields following the [guide](#mandatory-fields).
+3. Fill in the mandatory fields following the [guide](#mandatory-fields).
 
 4. Select **E-Invoice Refund** submission type.
 
     ![payment-voucher-submission-e-invoice-refund](../../../static/img/usage/myinvois/einvoice/payment-voucher-submission-e-invoice-refund.png)
 
-5. Continue with usual payment voucher entry and **Save**.
+5. Continue with the usual payment voucher entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-payment-voucher-e-invoice-refund}
 
@@ -548,13 +548,13 @@ Invoice is a commercial document that itemises and records a transaction between
 
 1. Go to **GL** > **Cash Book Entry** > **New OR** to issue a new receipt voucher.
 
-2. Fill in mandatory fields following the [guide](#mandatory-fields).
+2. Fill in the mandatory fields following the [guide](#mandatory-fields).
 
 3. Select **E-Invoice** submission type.
 
     ![receipt-voucher-submission-e-invoice](../../../static/img/usage/myinvois/einvoice/receipt-voucher-submission-e-invoice.png)
 
-4. Continue with usual receipt voucher entry and **Save**.
+4. Continue with the usual receipt voucher entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-receipt-voucher-e-invoice}
 
@@ -586,13 +586,13 @@ Please ensure that the referenced documents are validated Self-Billed E-Invoices
 
     ![receipt-voucher-fromdoc](../../../static/img/usage/myinvois/einvoice/receipt-voucher-fromdoc.png)
 
-3. Fill in mandatory fields following the [guide](#mandatory-fields).
+3. Fill in the mandatory fields following the [guide](#mandatory-fields).
 
 4. Select **Self-billed Refund** submission type.
 
     ![receipt-voucher-submission-self-billed-refund](../../../static/img/usage/myinvois/einvoice/receipt-voucher-submission-self-billed-refund.png)
 
-5. Continue with usual receipt voucher entry and **Save**.
+5. Continue with the usual receipt voucher entry and **Save**.
 
 #### E-Invoice Operation {#e-invoice-operation-receipt-voucher-self-billed-refund}
 

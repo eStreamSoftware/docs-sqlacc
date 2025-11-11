@@ -14,9 +14,9 @@ Example of sales process work flow aligned with SQL Account flow:
 
 ## Purchase Request
 
-Purchase Request is an internal document used within a company between departments to request for purchase or a product.
+Purchase Request is an internal document used within a company between departments to request a purchase or product.
 
-For example, you want to purchase more office supplies. You have to submit a purchase request to the purchasing department.
+For example, you want to purchase more office supplies. You must submit a Purchase Request to the purchasing department.
 
 ![purchase-request](../../../static/img/usage/purchase/guide/purchase-request.png)
 
@@ -26,9 +26,9 @@ For example, you want to purchase more office supplies. You have to submit a pur
 
 2. **Select Supplier Code**
 
-3. **Insert Item Code and details** (e.g. Qty, Unit Cost)
+3. **Insert Item Code and details** (e.g., Qty, Unit Cost)
 
-4. **Write a description to explain your purchase request**
+4. **Write a description to explain your Purchase Request**
 
    ![purchase-request-data-entry](../../../static/img/usage/purchase/guide/purchase-request-data-entry.png)
 
@@ -62,7 +62,7 @@ A purchase order document contains the details (quantity, unit price) of the ite
 
    2. **Click on the show/hide/move column icon to customize your column layout**.
 
-   3. If you want to key in for a discount amount, you may tick the discount field by following step 3b and update the discount field. You can key in multiple levels of discount as shown by the picture attached.
+   3. If you want to key in the discount amount, you may tick the discount field by following step 3b and update the discount field. You can key in multiple levels of discount as shown by the picture attached.
 
 4. **Write a description to explain your purchase order**
 
@@ -80,9 +80,9 @@ There are 2 types of project you need to be take note:
 
 2.Detail Project
 
-For **document project**, you need to point to **MORE** section **(on the left side bar)**.
+For **document project**, you need to point to **MORE** section **(on the left sidebar)**.
 
-For **detail project**, you have to insert the **project** column out from Field Chooser.
+For **detail project**, you have to add the **project** column from the Field Chooser.
 
 ![detail-project](../../../static/img/usage/purchase/guide/detail-project.png)
 
@@ -96,7 +96,7 @@ You can use this feature to attach external PDF, excel, word documents and image
 
 2. Click the small black arrow at the link icon
 
-3. Select ‘Attach files to Local Drive’, and choose the file from your computer that you want to attach
+3. Select ‘Attach files to Local Drive’ and choose the file from your computer to attach
 
 ### Note
 
@@ -104,7 +104,7 @@ You can use this feature to attach external PDF, excel, word documents and image
 
 2. RIGHT click it, you will see the Rich Text Editor pop-up.
 
-3. You can start key-in the note. See the example screenshot below.
+3. You can start typing the note. See the example screenshot below.
 
 4. Click on the X button to save and exit the Rich Text Editor.
 
@@ -126,7 +126,7 @@ A QR code will appear on the screen. Scan the QR code with your Whatsapp's Whats
 
 ## Goods Received
 
-Goods Received is a document that is issued after receiving the delivery as proof of the order receipt.
+Goods Received is a document issued after receiving a delivery as proof of the order receipt.
 
 ![goods-received](../../../static/img/usage/purchase/guide/goods-received.png)
 
@@ -138,7 +138,7 @@ Goods Received is a document that is issued after receiving the delivery as proo
 
 3. **Insert Item Code and details (e.g. Qty, Unit Cost)**
 
-4. **Write a description to explain your goods receive**
+4. **Write a description to explain your Goods Receive**
 
    ![goods-received-data-entry](../../../static/img/usage/purchase/guide/goods-received-data-entry.png)
 
@@ -164,7 +164,7 @@ Goods Received is a document that is issued after receiving the delivery as proo
 This is an additional module.
 :::
 
-Landing Cost is to handle the cost to the warehouse that is not billed by the same supplier. In other words, it is an additional cost to increase your stock cost. This cost is depending on the company whether they want to add in or not. For Instant, I buy the product from Supplier A, but ship by Transport company B, this transport charges you may enter at landing cost to increase your product cost.
+Landing Cost is to handle the cost to the warehouse that is not billed by the same supplier. In other words, it is an additional cost to increase your stock cost. This cost depends on the company and whether they want to add in or not. For instance, if you buy a product from Supplier A but it is shipped by Transport company B, you must enter the transport charges as a landing cost to increase your product cost.
 
 ![landing-cost-1](../../../static/img/usage/purchase/guide/landing-cost-1.png)
 
@@ -270,7 +270,7 @@ That seed will grow to be a peach tree. You may wish for an apple or an orange, 
 
 ## Purchase Invoice
 
-You can key in the purchase invoice after your purchase order has been approved and after you have received your goods.
+You can key in the Purchase Invoice after your Purchase Order has been approved and the goods have been received.
 
 ![purchase-invoice](../../../static/img/usage/purchase/guide/purchase-invoice.png)
 
@@ -292,7 +292,7 @@ You can key in the purchase invoice after your purchase order has been approved 
 
    ![search-supplier-column](../../../static/img/usage/purchase/guide/search-supplier-column.png)
 
-4. **Write a description to explain your purchase invoice**
+4. **Write a description to explain your Purchase Invoice**
 
 5. **Click the Save button once you are done.  Below is the example of the entry created:**
 
@@ -317,7 +317,7 @@ You can key in the purchase invoice after your purchase order has been approved 
 
 ## Cash Purchase
 
-You can key in cash purchase after your purchase order has been approved and after you have received your goods.
+You can key in Cash Purchase after your Purchase Order has been approved and the goods have been received.
 
 Cash purchases are used for purchases that are paid for with cash and have no outstanding payment.
 
@@ -341,7 +341,7 @@ Cash purchases are used for purchases that are paid for with cash and have no ou
 
    ![search-supplier-column-2](../../../static/img/usage/purchase/guide/search-supplier-column-2.png)
 
-4. Write a description to explain your cash purchase
+4. Write a description to explain your Cash Purchase
 
 5. Click the **Save** button once you are done.
 
@@ -371,7 +371,7 @@ Once you have **SAVED** your "Cash Purchase", The system will have created a Sup
 
 ## Extra Goods Received
 
-Extra Goods received is usually used by businesses where Invoices are issued before Goods Received.
+Extra Goods Received is usually used by businesses where Invoices are issued before Goods Received.
 
 You would need an Invoice -> DO module in order to issue Extra Goods Received Note.
 
@@ -383,7 +383,7 @@ You would need an Invoice -> DO module in order to issue Extra Goods Received No
 
 3. **Insert Item Code and details** (e.g. Qty, Unit Cost)
 
-4. **Write a description to explain your extra goods receive**
+4. **Write a description to explain your Extra Goods Receive**
 
    ![extra-goods-received-data-entry](../../../static/img/usage/purchase/guide/extra-goods-received-data-entry.png)
 
@@ -399,7 +399,7 @@ All you have to do is RIGHT-CLICK at the "Extra Goods Received" title.
 
 ## Purchase Debit Note
 
-Purchase Debit note is used to increase your expense amount.
+Purchase Debit Note is used to increase your expense amount.
 
 Or to increase the amount of credit that you owe your supplier.
 
@@ -411,7 +411,7 @@ Or to increase the amount of credit that you owe your supplier.
 
 3. **Insert Item Code and details** (e.g. Qty, Unit Cost)
 
-4. **Write a description to explain your purchase debit note**
+4. **Write a description to explain your Purchase Debit Note**
 
    ![purchase-debit-note-data-entry](../../../static/img/usage/purchase/guide/purchase-debit-note-data-entry.png)
 
@@ -429,7 +429,7 @@ All you have to do is RIGHT-CLICK at the "Purchase Debit Note" title.
 
 ## Purchase Returned
 
-Purchase return document is created when you return purchased goods back to the supplier.
+Purchase Return document is created when you return purchased goods to the supplier.
 
 ![purchase-returned](../../../static/img/usage/purchase/guide/purchase-returned.png)
 
@@ -439,7 +439,7 @@ Purchase return document is created when you return purchased goods back to the 
 
 3. **Insert Item Code and details** (e.g. Qty, Unit Cost)
 
-4. **Write a description to explain your purchase debit note**
+4. **Write a description to explain your Purchase Return**
 
    ![purchase-returned-data-entry](../../../static/img/usage/purchase/guide/purchase-returned-data-entry.png)
 
@@ -457,7 +457,7 @@ All you have to do is RIGHT-CLICK at the "Purchase Return" title.
 
 ## Purchase Cancelled Note
 
-You can key in the purchase cancelled note to remove any outstanding documents at purchase order.
+You can key in the Purchase Cancelled Note to remove any outstanding Purchase Orders.
 
 ![purchase-cancelled-note](../../../static/img/usage/purchase/guide/purchase-cancelled-note.png)
 
@@ -467,7 +467,7 @@ You can key in the purchase cancelled note to remove any outstanding documents a
 
 3. **Insert Item Code and details** (e.g. Qty, Unit Cost)
 
-4. **Write a description to explain your purchase debit note**
+4. **Write a description to explain your Purchase Cancelled Note**
 
    ![purchase-cancelled-note-data-entry](../../../static/img/usage/purchase/guide/purchase-cancelled-note-data-entry.png)
 

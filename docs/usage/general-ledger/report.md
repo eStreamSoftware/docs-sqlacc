@@ -10,15 +10,15 @@ tags: ["SQL Account", "Usage"]
 
 1. Go to **GL** > **Print Ledger Report** > Select your date
 2. Filter by account, project, area, agent (optional)
-3. Tick whether you want to view General Ledger, Sales Ledger(Customer) or Purchase Ledger (Supplier)
-4. System can generate by group and give you a summary of each group (group/sort by)
+3. Tick whether you want to view General Ledger, Sales Ledger (Customer) or Purchase Ledger (Supplier)
+4. System can generate reports by group and provide a summary for each group (Group/Sort by)
 5. In Option Upper Level
 
-    1. **Merge GL Code for same document** – if you have the same account in one single transaction, the system will automatically merge, if you want to separate the account code for the same document, please un-tick.
-    2. **Exclude Project when merging** – exclude project when merge GL Account.
-    3. **Use second description** – use second description which is maintained under GL > Maintain Chart of Account
-    4. **Include Zero Closing Balance** – choose to show accounts in the report even if their amount is 0
-    5. **Include Zero Transaction** – choose to show accounts in the report even if there are 0 transactions.
+    1. **Merge GL Code for same document** – If you have the same account in one single transaction, the system will automatically merge, if you want to separate the account code for the same document, please un-tick.
+    2. **Exclude Project when merging** – Exclude the project when merging GL Account.
+    3. **Use second description** – Use second description which is maintained under GL > Maintain Chart of Account.
+    4. **Include Zero Closing Balance** – Choose to show accounts in the report even if their amount is 0.
+    5. **Include Zero Transaction** – Choose to show accounts in the report even if there are 0 transactions.
     6. **Local Currency & Foreign Currency** – If you have foreign currency transactions, you can tick the foreign currency so that the system will show the figures in foreign currency compare versus local currency.
     7. **Apply**
 
@@ -30,23 +30,23 @@ tags: ["SQL Account", "Usage"]
 
 2. Choose your preferred format
 
-3. “Show Up to Level” under Option refer to the depth of sub-accounts in your Maintain Chart of Account, the higher the value, the more level of detail will be shown.
+3. “Show Up to Level” under Option refers to the depth of sub-accounts in your Maintain Chart of Account, the higher the value, the more level of detail will be shown.
 
 4. In Option Upper Level
 
-    1. **Use second description** – use second description which is controlled at GL > Maintain Chart of Account
+    1. **Use second description** – Use second description which is controlled at GL > Maintain Chart of Account.
 
-    2. **Zero Balance Account** – choose to show accounts in the report even if their amount is 0.
+    2. **Zero Balance Account** – Choose to show accounts in the report even if their amount is 0.
 
-    3. **Display Trade Debtor/Creditor in Details** – show per customer account in detail
+    3. **Display Trade Debtor/Creditor in Details** – Show detailed information for each customer account.
 
 5. In Option Bottom Level
 
-    1. **Print Sub Account Only** – Select a certain account to view
+    1. **Print Sub Account Only** – Select a certain account to view.
 
-    2. **Print Project Comparison** – you are allowed to view your report by project (project module requested)
+    2. **Print Project Comparison** – You are allowed to view your report by project (project module requested).
 
-    3. **Show Column Options** – you can preset setting as attached
+    3. **Show Column Options** – You can preset setting as attached.
 
 6. **Apply**
 
@@ -60,17 +60,17 @@ tags: ["SQL Account", "Usage"]
 
 3. In Option Upper Level
 
-   1. **Use second description** – use second description which is maintained under GL > Maintain Chart of Account
+   1. **Use second description** – Use second description which is maintained under GL > Maintain Chart of Account.
 
-   2. **Zero Balance Account** – choose to show accounts in the report even if their amount is 0
+   2. **Zero Balance Account** – Choose to show accounts in the report even if their amount is 0.
 
 4. In Option Upper Level
 
-   1. **Print Sub Account Only** – Select a certain account to view
+   1. **Print Sub Account Only** – Select a certain account to view.
 
-   2. **Print Manufacturing Account** – you are only allowed to view manufacturing account if you have set it up under Maintain Chart of Account
+   2. **Print Manufacturing Account** – You are only allowed to view manufacturing account if you have set it up under Maintain Chart of Account.
 
-   3. **Print Project Comparison** – you are allowed to view your report by project (project module requested)
+   3. **Print Project Comparison** – You are allowed to view your report by project (project module requested).
 
    4. **Show Column Options** – refer Balance Sheet
 
@@ -80,9 +80,9 @@ tags: ["SQL Account", "Usage"]
 
 ## Print Profit & Loss Statement (Consolidation)
 
-- **Consolidation** is refer to the aggregation of financial statements of a group company as consolidated financial statements.
+- **Consolidation** refers to the aggregation of financial statements of a group company as consolidated financial statements.
 - New add-on module name : **Financial Consolidation**.
-- **Quick summary** of setup the group of companies database list to be display in Profit & Loss Statement.
+- **Quick summary** of setup the group of companies database list to be displayed in Profit & Loss Statement.
 
    ![pnl-consolidate](../../../static/img/usage/general-ledger/glreport/pnl-consolidate.png)
 
@@ -92,7 +92,7 @@ tags: ["SQL Account", "Usage"]
 
 2. Select (tick) on the company name from different Groups of Companies.
 3. Click Apply.
-4. It will merge the financial data from the companies selected. Represent a Short Company Name for each companies.
+4. It will merge the financial data from the companies selected. Represent a Short Company Name for each company.
 
    ![pnl-consolidate2](../../../static/img/usage/general-ledger/glreport/pnl-consolidate2.png)
 
@@ -115,9 +115,9 @@ tags: ["SQL Account", "Usage"]
 
 4. In Option Upper Level
 
-   1. **Use second description** – use second description is which maintained under GL > Maintain Chart of Account
+   1. **Use second description** – Use second description is which maintained under GL > Maintain Chart of Account.
 
-   2. **Zero Balance Account** – choose to show accounts in the report even if their amount is 0
+   2. **Zero Balance Account** – Choose to show accounts in the report even if their amount is 0.
 
 5. **Apply**
 

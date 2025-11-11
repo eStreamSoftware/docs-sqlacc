@@ -10,7 +10,7 @@ tags: ["SQL Account", "Usage", "SST"]
 
 ## SST Introduction
 
-Introduced in September 2018, SST replaced the former 6% Goods and Services Tax (GST) system. SST comprises two parts: Sales tax and Service tax. Sales tax is a single-stage tax levied on all taxable goods manufactured in and imported into Malaysia; whereas Service tax is a single-stage tax charged on any taxable services provided in Malaysia by a registered person in conducting the business. Malaysia has a few special designated areas that are exempted from service tax, namely Langkawi Island, Tioman Island and Federal Territory of Labuan.
+Introduced in September 2018, SST replaced the former 6% Goods and Services Tax (GST) system. SST consists of two parts: Sales Tax and Service Tax. Sales Tax is a single-stage tax applied to all taxable goods manufactured in or imported into Malaysia; while Service Tax is a single-stage tax imposed on taxable services provided in Malaysia by a registered business. Certain designated areas in Malaysia such as Langkawi Island, Tioman Island, and the Federal Territory of Labuan, are exempt from Service Tax.
 
 ### Sales and Service Tax 2018 Model and Scope
 
@@ -32,7 +32,7 @@ SST tax code structures and mapping to SST-02:
 
 :::info
 
-SQL Account process SST02 step : [Youtube](https://youtu.be/laLjRJWh2j8)
+Follow the steps to process SST-02 in SQL Account : [Youtube](https://youtu.be/laLjRJWh2j8)
 
 :::
 
@@ -42,13 +42,13 @@ SQL Account process SST02 step : [Youtube](https://youtu.be/laLjRJWh2j8)
 
 2. Enter your taxable period
 
-3. Key in declaration, this declaration will appear in SST02 form part F, this is required to key in 1 time only, in the following return will automatic show out.
+3. Key in declaration, which will appear in Part F of the SST02 form. This declaration only needs to be entered once, as it will automatically appear in subsequent returns.
 
-4. click on Process
+4. click Process
 
    ![des-sst-introduction-example-of-sst02-2](../../../static/img/usage/gst-and-sst/sst/sst-introduction-example-of-sst02-2.png)
 
-5. click on SST-02
+5. click SST-02
 
    ![des-sst-introduction-example-of-sst02-3](../../../static/img/usage/gst-and-sst/sst/sst-introduction-example-of-sst02-3.png)
 
@@ -114,7 +114,7 @@ To process and close the SST returns period. You can generate the SST-02.
 
 ## Draft SST Return
 
-You are able to draft the SST-02 before the final SST-02 submission by process as draft.  
+You can draft the SST-02 before final submission by processing it as draft.  
 
 1. Click on the arrow key down at the Process button (Y).
 2. See below screenshot.
@@ -127,7 +127,7 @@ You are able to draft the SST-02 before the final SST-02 submission by process a
 
 :::note Note:
 
-You still can amend the documents where the DRAFT SST return has generated. You can draft as many before FINAL process the SST Returns for the period.
+You still can amend the documents where the DRAFT SST return has generated. You may create multiple drafts before finalizing the SST return for the period.
 
 :::
 
@@ -138,13 +138,13 @@ You still can amend the documents where the DRAFT SST return has generated. You 
 
    ![des-sst-return-1](../../../static/img/usage/gst-and-sst/sst/sst-return-1.png)
 
-3. Final SST Return will not show the word DRAFT in the status column.
+3. Final SST Return will no longer display "DRAFT" in the status column.
 
    ![des-sst-return-2](../../../static/img/usage/gst-and-sst/sst/sst-return-2.png)
 
 :::note Note:
 
-You cannot amend the documents anymore where the FINAL SST return has generated.
+Once the SST return is finalized, you cannot amend the documents.
 
 :::
 
@@ -164,7 +164,7 @@ You cannot amend the documents anymore where the FINAL SST return has generated.
 
       ![des-sst-posting-3](../../../static/img/usage/gst-and-sst/sst/sst-posting-3.png)
 
-   2. Process SST Return from 01/09/2018 to 31/10/2018. Total Tax Payable is RM 0. Due to no payment is receive for the invoices issued.
+   2. Process SST Return for the period 01/09/2018 to 31/10/2018. Total Tax Payable is RM 0 because no payment was received for the invoices issued.
 
       ![des-sst-posting-4](../../../static/img/usage/gst-and-sst/sst/sst-posting-4.png)
 
@@ -172,7 +172,7 @@ You cannot amend the documents anymore where the FINAL SST return has generated.
 
       ![des-sst-posting-5](../../../static/img/usage/gst-and-sst/sst/sst-posting-5.png)
 
-   4. Process second cycle of taxable period, the tax payable will be capture as payment is received.
+   4. Process the second cycle of taxable period. The tax payable will be recorded as payment is received.
 
       ![des-sst-posting-6](../../../static/img/usage/gst-and-sst/sst/sst-posting-6.png)
 
@@ -180,7 +180,7 @@ You cannot amend the documents anymore where the FINAL SST return has generated.
 
       ![des-sst-posting-7](../../../static/img/usage/gst-and-sst/sst/sst-posting-7.png)
 
-   6. the taxable amount of RM 1,000.00 and Tax Amount of RM 60.00 will also capture in SST-02 Part B2, number 11c.
+   6. The taxable amount of RM 1,000.00 and the tax amount of RM 60.00 will also be recorded in SST-02 Part B2, item 11c.
 
       ![des-sst-posting-8](../../../static/img/usage/gst-and-sst/sst/sst-posting-8.png)
 
@@ -316,7 +316,7 @@ Taxable person is a person who manufacturing taxable goods and is:
 
 ### Liability To Register
 
-Taxable goods manufacturers are required / liable to be registered when SALES VALUE OF TAXABLE GOODS has exceeded RM 500,000 for 12 months period.
+Manufactures of taxable goods are required to register when the **sales value of taxable goods** exceeds RM 500,000 over a 12 months period.
 
 Manufacturers who carry out sub-contract work on taxable goods where the VALUE of work performed exceeds RM500,000 for 12 months period.
 
@@ -367,7 +367,7 @@ Manufacturers should calculate the sales value of taxable goods for a period of 
 
 ### Transitional Registration (Sales)
 
-   Manufacturer who is liable to be registered is required to register before 1 September 2018. Registration commencement date will be on 1 September 2018.
+   Manufacturer liable for registration must register before September 1, 2018. The registration commencement date is September 1, 2018.
 
    1. Automatic Registration
 
@@ -383,11 +383,11 @@ Manufacturers should calculate the sales value of taxable goods for a period of 
 
 ### Taxable Goods
 
-Taxable goods means goods of a class or kind of **not exempted** from sales tax.
+Taxable goods refer to goods of a class or kind **not exempted** from sales tax.
 
 In another words, goods which are not listed in **Sales Tax (Goods Exempted From Sales Tax) Order 2018.**
 
-Example of taxable goods are:
+Example of taxable goods include:
 
 ![des-taxable-goods-1](../../../static/img/usage/gst-and-sst/sst/taxable-goods-1.png)
 
@@ -409,7 +409,7 @@ How to determine the rate of sales tax for goods?
 
 ### Exempted Goods
 
-   **Exempted goods** means goods of a class or kind of exempted from sales tax which are listed in **Sales Tax (Goods Exempted From Sales Tax) Order 2018**.
+   **Exempted goods** refer to goods of a class or kind that are exempted from sales tax, as listed in the **Sales Tax (Goods Exempted From Sales Tax) Order 2018**.
 
    Example of exempted goods are:
 
@@ -595,7 +595,7 @@ Payment for tax due and payable declared in SST-02. Failure to submit return is 
 
 ### Remission
 
-Minister may remit the whole or any part of sale tax due and payable.
+The Minister may remit the whole or any part of sale tax due and payable.
 
 Director General may remit the whole or any part of:
 
@@ -615,7 +615,7 @@ Claim to be made in form JKDM No. 2 within one year from the date of over paymen
 
 ### Drawback
 
-Director General may allow drawback of the full amount of sales tax paid by a person in respect of taxable goods which are subsequently exported. This is not applicable to petroleum.
+Director General may allow a drawback of the full amount of sales tax paid by a person for taxable goods that are subsequently exported. This does not apply to petroleum.
 
 Conditions:
 
@@ -753,7 +753,7 @@ Service provider should calculate the value of taxable services provided for a p
 
 ### Transitional Registration (Service)
 
-   Any person who liable to register are required to register before 1 September 2018 and registration commencement date will be on 1 September 2018.
+   Any person liable to register must do so before September 1, 2018. The registration commencement date is 1 September 2018.
 
    1. Automatic Registration
 
@@ -1092,7 +1092,7 @@ To change to Accrual Basis(i.e. Pay Kastam even no payment), Just Set as below
 
 ![des-sstfaq-change-the-service-tax-type-to-accrual-basis-1](../../../static/img/usage/gst-and-sst/sst/sstfaq-change-the-service-tax-type-to-accrual-basis-1.jpg)
 
-### 2.Why preview my SST-02 report is no value even though the screen shows an amount?
+### 2.Why does my SST-02 report preview show no value even though the screen display an amount?
 
 **Solution:**
 
@@ -1127,7 +1127,7 @@ Change the **Knock-off Tax Date** (follow the payment date)
 
 ![des-sstfaq-service-invoice-knockoff-not-appear-in-sst02-2](../../../static/img/usage/gst-and-sst/sst/sstfaq-service-invoice-knockoff-not-appear-in-sst02-2.jpg)
 
-### 6.Can I mix the sales tax and service tax in single invoice?
+### 6.Can I mix sales tax and service tax in a single invoice?
 
 **Issue:**
 

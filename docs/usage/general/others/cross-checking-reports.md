@@ -12,7 +12,7 @@ Sometimes we want to ensure all data is correctly posted/recorded, so we need so
 
 - Top Management
 - Auditors
-- Kastam
+- Customs (Kastam)
 
 ## Reports
 

@@ -6,7 +6,7 @@ slug: /usage/myinvois/mandatory-fields
 tags: ["SQL Account", "Usage", "MyInvois", "E-Invoice", "Customer", "Stock"]
 ---
 
-Before issuing an E-Invoice or self-billed E-Invoice, you will need to make sure some mandatory fields is updated correctly.
+Before issuing an E-Invoice or self-billed E-Invoice, you need to make sure some mandatory fields are updated correctly.
 
 ## Update Customer Info
 
@@ -27,7 +27,7 @@ Customer info will be used for issuing E-Invoice.
 
     ![maintain-customer-submission-type](../../../static/img/usage/myinvois/guide/maintain-customer-submission-type.png)
 
-4. Click on **Tax** tab, and fill in customer tax info according to [guide](#customer--supplier-tax-info).
+4. Click on **Tax** tab, and fill in the customer tax info according to [guide](#customer--supplier-tax-info).
 
 ## Update Supplier Info
 
@@ -52,7 +52,7 @@ Supplier info will be used for issuing self-billed E-Invoice.
 
     ![maintain-supplier-classification](../../../static/img/usage/myinvois/guide/maintain-supplier-classification.png)
 
-5. Click on **Tax** tab, and fill in supplier tax info according to [customer/supplier tax info](#customer--supplier-tax-info).
+5. Click on **Tax** tab, and fill in the supplier tax info according to [customer/supplier tax info](#customer--supplier-tax-info).
 
 ## Info Request in Maintain Customer/Supplier
 
@@ -90,7 +90,7 @@ To collect the submitted data and update the customer's or supplier’s record
 
     ![info-request-valid](../../../static/img/usage/myinvois/guide/info-request-valid.png)
 
-4. Once you close the dialog, the record will be update automatically with the new information
+4. Once you close the dialog, the record will be updated automatically with the new information
 
     ![maintain-customer-retrieve-info](../../../static/img/usage/myinvois/guide/maintain-customer-retrieve-info.png)
 
@@ -99,7 +99,7 @@ To collect the submitted data and update the customer's or supplier’s record
 To retrieve and update information for multiple customers or suppliers at once
 
 :::info[NOTE]
-An hourglass icon will appear next to customers or suppliers who has created Info Request
+An hourglass icon will appear next to customers or suppliers who has created an Info Request
 ![maintain-customer-info-request](../../../static/img/usage/myinvois/guide/maintain-customer-info-request.png)
 :::
 
@@ -167,7 +167,7 @@ This feature allows you to upload a customer's or supplier's MyInvois Taxpayer Q
 
 ### Local Business (Companies registered with local authorities)
 
-If your customers / suppliers are a registered entity in Malaysia (e.g.: SSM registered), you must fill in the BRN & TIN of the customer in order to issue E-Invoice / self-billed E-Invoice to the buyer / supplier.
+If your customers / suppliers are a registered entity in Malaysia (e.g.: SSM registered), you must fill in the BRN & TIN of the customer in order to issue an E-Invoice / self-billed E-Invoice to the buyer / supplier.
 
     ![maintain-customer-tax](../../../static/img/usage/myinvois/guide/maintain-customer-tax.png)
 
@@ -175,7 +175,7 @@ If your customers / suppliers are a registered entity in Malaysia (e.g.: SSM reg
 
 In facilitating a more efficient E-Invoice issuance process as well as to ease the burden of individuals in providing their Tax Identification Number (TIN) and identification number details, IRBM provides the following concession to individuals:
 
-1. For Malaysian Individuals to provider either:
+1. For Malaysian Individuals to provide either:
    1. TIN only
    2. MyKad / MyTentera identification number only
    3. Both TIN and MyKad / MyTentera identification number

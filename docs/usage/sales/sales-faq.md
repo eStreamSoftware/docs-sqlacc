@@ -10,38 +10,38 @@ tags: ["SQL Account", "Sales", "FAQ"]
 
 ### Setup
 
-1. Tools > Option > Click on Barcode
+1. Tools > Options > Click on Barcode
 
-    - **Option 1 : Direct Kick Out** -> Cash Drawer direct connects to your PC.
+    - **Option 1 :** Direct Kick Out -> The cash drawer connects directly to your PC.
 
         ![barcode-direct-kick-out](../../../static/img/usage/sales/sales-faq/cash-drawer-kick-out/barcode-direct-kick-out.png)
 
         :::tip[tip]
-        Select the correct *Port No* and then click on **Kick Out** button to test whether the *Cash Drawer* success kicks out, if the port no did not showing in list, may manually type in your *Port No*.
+        Select the correct *Port No* and click the **Kick Out** button to test whether the *Cash Drawer* opens. If the port number doesn't appear in the list, you may type it manually.
         :::
 
-    - **Option 2**: Printer Kick Out -> Cash Drawer direct connect to Printer
+    - **Option 2**: Printer Kick Out -> The Cash Drawer direct connect to Printer
 
         ![barcode-printer-kick-out](../../../static/img/usage/sales/sales-faq/cash-drawer-kick-out/barcode-printer-kick-out.png)
 
         :::tip[tip]
-        Select your Printer Name and then click on **Kick Out** button to test whether the *Cash Drawer* success kicks out
+        Select your Printer and click the **Kick Out** button to test whether the *Cash Drawer* opens.
         :::
 
         :::info[note]
-        There are the problem if you are using cash drawer RJ 11, RJ 14, may change to Com Port (**Need USB Cash Drawer**)
+        There are the problem if you are using cash drawer RJ 11, RJ 14, may switch to a COM port (USB cash drawer required).
         :::
 
-**If you met the problem on direct kick out, may reply the question below before call in :**
+**If you met the problem on direct kick out, please answer the questions below before calling support :**
 
-1. Check Window OS
+1. Check Windows OS
 2. Check SQL Account version
-3. Try preview and print see able to print out nicely?
-4. Try window Test Print receipt printer
-5. Try Tools > Option Kick out whether can response
-6. Check receipt printer Model
-7. Check what receipt printer driver install
-8. Check Cash Drawer model (you are not allowed to use RJ11, use USB Com direct connect to PC instead)
+3. Try previewing and printing to see if the output prints correctly.
+4. Run Windows 'Test Print' on the receipt printer.
+5. Try Tools > Options > Kick Out to see if it responds.
+6. Check the receipt printer Model.
+7. Check which receipt printer driver is installed.
+8. Check the cash drawer model. RJ11 is not supported; use a USB/COM cash drawer connected directly to the PC.
 
 ## Why prompt error message when apply the Sales Price History?
 
@@ -51,7 +51,7 @@ tags: ["SQL Account", "Sales", "FAQ"]
 
 1. Don't have **multi currency module.**
 
-2. Don't have big currency value like Indonesia country.
+2. Don't have big currency value like Indonesia.
 
 ![sales-price-history-issue](../../../static/img/usage/sales/sales-faq/error-msg-sales-price-history/sales-price-history-issue.jpg)
 
@@ -61,6 +61,6 @@ tags: ["SQL Account", "Sales", "FAQ"]
 
 2. Click on **Miscellaneous.**
 
-3. Change the **Currency Rate** the display format to **#,0.0000** (represent 4 decimals).
+3. Change the **Currency Rate** display format to **#,0.0000** (4 decimals places).
 
 ![sales-price-history-solution](../../../static/img/usage/sales/sales-faq/error-msg-sales-price-history/sales-price-history-solution.jpg)

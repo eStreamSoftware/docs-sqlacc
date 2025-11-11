@@ -8,34 +8,27 @@ tags: ["SQL Account", "Others", "Loopback", "Adapter"]
 
 ## Introduction
 
-This only need to be install if
+A Loopback Adapter is a virtual network adapter that enables network communications between applications on the same computer, even without a physical network connection. 
 
-1. Using Firebird 3.0
+You need to install the Loopback Adapter only if both of these conditions apply:
 
-2. No Network Environment
+1. You are using Firebird 3.0 database server
+2. Your computer is in a non-networked environment (not connected to any network)
 
-## Steps
+## Installation Steps
 
-Below the steps on how to install Loopback Adapter
+Follow these steps to install the Loopback Adapter:
 
-1. Click **Windows + R**
-
-2. Enter `hdwwiz` & Hit Enter
-
-3. Click Next
-
-4. Select Install the hardware that I manually select from a list (Advanced)
-
-5. Click Next
-
-6. Scroll & Select **Network adapters**
-
-7. Click Next
-
-8. Select Microsoft in the **Manufacturer** column
-
-9. Scroll & Select Microsoft Loopback Adapter or Microsoft KM-TEST Loopback Adapter in the **Model** column
-
-10. Click Next till finish
-
-11. Restart the PC
+1. Press **Windows + R** to open Run dialog
+2. Type `hdwwiz` and press Enter
+3. Click **Next**
+4. Select "Install the hardware that I manually select from a list (Advanced)"
+5. Click **Next**
+6. Scroll down and select **Network adapters**
+7. Click **Next**
+8. Select "Microsoft" in the **Manufacturer** column
+9. In the **Model** column, select either:
+   - Microsoft Loopback Adapter, or
+   - Microsoft KM-TEST Loopback Adapter
+10. Click **Next** and follow the prompts to complete installation
+11. Restart your computer

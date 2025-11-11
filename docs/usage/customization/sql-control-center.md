@@ -7,11 +7,11 @@ tags: ["SQL Account"]
 
 ## Shipping/Forwarding (S/F)
 
-This Customisation is the simple calculation for the Shipping/Forwarding company.
+This Customisation provides simple calculations for shipping/forwarding companies.
 
 [Sample Database](https://download.sql.com.my/customer/Fairy/ACC%20BK-%5bShipping%5d.zip)
 
-[Video](https://www.youtube.com/watch?v=LPoz1h3hyvQ)
+[YouTube video](https://www.youtube.com/watch?v=LPoz1h3hyvQ)
 
 ### History New/Updates/Changes (S/F)
 
@@ -20,34 +20,34 @@ This Customisation is the simple calculation for the Shipping/Forwarding company
 * Use Maintain Currency for Currency Symbol & Currency Rate for detail UDF
 05 Feb 2016
 
-* Fixed TaxInvoice-Fowarding2 batch print Tax summary mixing together
-* Fixed Quotation & Debit Note OnBeforeSave Script Seq not correct.
+* Fixed TaxInvoice-Fowarding2 batch print: tax summary mixed together.
+* Fixed Quotation & Debit Note OnBeforeSave script sequence not correct.
 04 Jan 2016
 
-* Fixed TaxInvoice-Fowarding2 Title missing Tax word
+* Fixed TaxInvoice-Fowarding2 title missing the word "Tax".
 
 07 Dec 2015
 
-Fixed Sales Local - Invoice Listing - Level 1 Ent column some shown empty when 0.
+Fixed Sales Local - Invoice Listing - Level 1: Ent column showed empty values when 0.
 02 Nov 2015
 
-* Fix Seq Error
-* Fix TaxInvoice-Fowarding2 format show A instead Tax Rate
+* Fixed sequence error.
+* Fixed TaxInvoice-Fowarding2 format: showed 'A' instead of the tax rate.
 
 20 Oct 2015
 
-* Fix Transfer Document TaxAmt calculate incorrectly if using UDF_ExRate \<> 1
-* Fix Partial Transfer Qty TaxAmt calculate incorrectly
+* Fixed Transfer document TaxAmt calculation when using UDF_ExRate \<> 1.
+* Fixed partial transfer quantity TaxAmt calculation.
 
 19 Oct 2015
 
-* Fix upgrade to Version 721 error.
-* Fix Transfer Document TaxAmt calculate incorrectly
+* Fixed upgrade to Version 721 error.
+* Fixed Transfer document TaxAmt calculation.
 
 14 Oct 2015
 
-* Fix 0Sales Local - Invoice Listing - Level 1 margin not correct
-* Convert DocRef3 to UDF_EntCost for 0Sales Local - Invoice Listing - Level 1 Ent column
+* Fixed 0Sales Local - Invoice Listing - Level 1: margin not correct.
+* Converted DocRef3 to UDF_EntCost for 0Sales Local - Invoice Listing - Level 1 Ent column.
 
 ### Settings (S/F)
 
@@ -55,7 +55,7 @@ Fixed Sales Local - Invoice Listing - Level 1 Ent column some shown empty when 0
 
 *Menu: Tools | Maintain User...*
 
-Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : Sales
+Untick the "Access Right for Prompt Replace Unit Price Dialog" under the Group: Sales.
 
 ### Steps (S/F)
 
@@ -81,12 +81,12 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 
 ![printProfit&LossByDoc](../../../static/img/miscellaneous/sqlControlCenter/printProfit&LossByDoc.png)
 
-1. Select Invoice Listing & Range Date
-2. Tick Group by Customer Code
-3. Click Apply
-4. Press F6 to preview
-5. Select report name 0Sales Local - Invoice Listing - Level 1
-6. Click Ok button
+1. Select Invoice Listing and date range.
+2. Tick 'Group by Customer Code'.
+3. Click Apply.
+4. Press F6 to preview.
+5. Select the report named '0Sales Local - Invoice Listing - Level 1'.
+6. Click OK.
 
 ## Bonus Point System (BPS)
 
@@ -114,17 +114,17 @@ This Customisation is to calculate/maintain the Point/Bonus
 
 25 Dec 2015
 
-* Enable Support GST Version
-* Add UnClaim Voucher Listing report
-* Add Bonus-Sales Invoice 7 (GST 2) report
-* Fix Bonus Statement show $ symbol
-* Remove auto 5 cents rounding script
+* Enabled GST support.
+* Added UnClaim Voucher Listing report.
+* Added Bonus-Sales Invoice 7 (GST 2) report.
+* Fixed Bonus Statement currency symbol issue.
+* Removed auto 5-cent rounding script.
 
-### Modules Required (BPS)
+### Modules required (BPS)
 
 * DIY Field
 * DIY Script
-* Invoice ----> DO
+* Invoice → DO
 * Multiple Document Number Set
 
 ### Settings (BPS)
@@ -133,7 +133,7 @@ This Customisation is to calculate/maintain the Point/Bonus
 
 *Menu: Tools | Maintain User...*
 
-Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : Sales
+Untick the "Access Right for Prompt Replace Unit Price Dialog" under the Group: Sales.
 
 #### Maintain Item
 
@@ -141,7 +141,7 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 
 ![stockItemClaimRate](../../../static/img/miscellaneous/sqlControlCenter/stockItemClaimRate.jpg)
 
-1. Item Code to be create - Voucher => For Claim use (eg 1 point = RM 0.01)
+1. Create an item code for the voucher (example: Voucher — used for claims, e.g. 1 point = RM0.01).
 
     ![stockItemVoucherRate](../../../static/img/miscellaneous/sqlControlCenter/stockItemVoucherRate.jpg)
 
@@ -156,7 +156,7 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 | **UDF Field**      | **Description**                                                                 |
 |---------------------|---------------------------------------------------------------------------------|
 | **UDF_VoucherNo**  | Enter the Voucher Number (Extra DO DocNo). Amount will be based on the Extra DO DocAmt. Not applicable for Sales Credit Note. |
-| **UDF_VoucherRate**| From maintain item. User can still adjust the rate if needed.                    |
+| **UDF_VoucherRate**| From Maintain Item. The user can still adjust the rate if needed.               |
 | **UDF_UseQty**     | **Tick** → `UDF_Voucher = UDF_VoucherRate * Qty`. **UnTick** → `UDF_Voucher = UDF_VoucherRate * Amount`. |
 | **UDF_Voucher**    | `Total current item point`.                                                      |
 
@@ -180,7 +180,7 @@ Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : S
 
 ***Sales Invoice***
 
-Below is example in Sales Invoice with Voucher Claim
+Below is an example of Sales Invoice with voucher claim.
 *Menu: Sales | Invoice...*
 
 ![utdPoint](../../../static/img/miscellaneous/sqlControlCenter/utdPoint.jpg)

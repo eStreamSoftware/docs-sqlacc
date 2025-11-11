@@ -83,7 +83,7 @@ No further support other then this but we will try our best to help.
 - Make sure when click **Test Connection** is shown Connection successful! then only continue others Steps
 - To access the FDB with network environment you can enter the ServerName or ServerIPAddress:Database Path at Database field
 
-Example:
+Examples:
 
 1. ServerPC: `C:\Program Files\estream\SQLAccounting\DB\ACC-0001.FDB`
 2. 192.168.0.18: `C:\Program Files\estream\SQLAccounting\DB\ACC-0001.FDB`

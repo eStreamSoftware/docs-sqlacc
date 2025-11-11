@@ -48,7 +48,7 @@ Stock group will be used as the Product Grade and Branding to categorise the sto
     Weight MT = Weight KG/1000
 
 
-    Both formula results are rounding up to 4 decimals.
+    Both formula results are rounded to 4 decimal places.
     ```
 
 3. Under Tools | DIY | SQL Control Center...Browse to Stock | Stock Item and insert new event OnBeforeSave with the DIY Script below:
@@ -72,7 +72,7 @@ end.
 
 ### Sales Document Entry
 
-1. Sales documents entry are:-
+1. Sales document types include:
 
     - Quotation
     - Sales Order

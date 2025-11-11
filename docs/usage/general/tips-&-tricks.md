@@ -8,7 +8,7 @@ tags: ["SQL Account", "Usage"]
 
 ## SQL Accounting Linking
 
-We had 4 Methods to Integrate/Link to SQL Accounting
+There are four methods to integrate or link with SQL Accounting
 
 - [Restful API](https://wiki.sql.com.my/wiki/Restful_API) (Recommended - For two way communication & SQL Public Connect User)
 - [SDK Live](/integration/sdk-live/basic-guide#documentation) (Recommended - For two way communication)
@@ -18,26 +18,26 @@ We had 4 Methods to Integrate/Link to SQL Accounting
 
 ### Choosing Method
 
-SQL Accounting had 3 Environment Setup & below is available method option
+SQL Accounting has three environment setups. Below are the available method options:
 
 1. Public Cloud ([SQL Public Connect](https://connect.sql.com.my/))
 
-    Data is Host at our Public Server
+    Data is hosted on our public server.
 
     - [Restful API](https://wiki.sql.com.my/wiki/Restful_API)
     - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-xls-mdb-import)
 
 2. On Premise Cloud ([SQL Private Connect](https://private.sql.com.my/))
 
-    Data is Host at User own Office
+    Data is hosted at the user's office.
 
     - [Restful API](https://wiki.sql.com.my/wiki/Restful_API)
     - [SDK Live](https://wiki.sql.com.my/wiki/SDK_Live)
     - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-xls-mdb-import)
 
-3. On Premise(Offline)
+3. On Premise (Offline)
 
-    Data is Host at User own Office
+    Data is hosted at the user's office.
 
     - [SDK Live](https://wiki.sql.com.my/wiki/SDK_Live)
     - [SQL Acc XLS n MDB Import](../../miscellaneous/acc-xls-mdb-import)
@@ -62,7 +62,7 @@ SQL Accounting had 3 Environment Setup & below is available method option
 2. Click Create New Database
 3. Follow the wizard
 
-**\*Default UserName & Password is ADMIN**
+**Default username and password is ADMIN**
 
 ### Things To Consider Before Import/Post
 
@@ -116,7 +116,7 @@ Before wanted to Import/Post to SQL Accounting Database, below information/setti
     - Prompt Replace Unit Price Dialog
     - Show Payment / Change Dialog in Cash Sales
 
-6. Must be had/valid in SQL Accounting
+6. The following must exist and be valid in SQL Accounting
 
     | Field | In SQL Accounting |
     | --- | --- |
@@ -195,16 +195,16 @@ Before wanted to Import/Post to SQL Accounting Database, below information/setti
         - Service Charges
         - Rounding
 
-- Eg. Today got 10 transactions
-        - 8 is Simplified Invoice - Group as 1 Doc No - POS-00001
-        - 2 is Full Tax Invoice/Credit Sales Invoice - 1 by 1 in - POS-00002, POS-00003
+For example, if there are 10 transactions today:
+    - 8 are Simplified Invoices, grouped as one Doc No: POS-00001
+    - 2 are Full Tax Invoices/Credit Sales Invoices, each with its own Doc No: POS-00002, POS-00003
 
-- All can post to `SL_CS` & `AR_PM`
-- Below is example Today Total Simplified Invoice Sales is RM1000
+All can be posted to `SL_CS` and `AR_PM`.
+Below is an example: Today's total Simplified Invoice sales is RM1000.
 
 #### Method 1 (Recommended)
 
-It will be had 4 transactions
+This will result in four transactions
 
 1. RM1000 - Post to `SL_CS` & (`P_DocNo`, `P_PaymentMethod` field is empty & `P_Amount`, `P_PaidAmount` field is 0)
 
@@ -220,15 +220,13 @@ It will be had 4 transactions
 
 #### Method 2
 
-It will be had 3 transactions
+This approach results in three transactions:
 
-1. RM700 by Cash - Post to `SL_CS` `P_PaymentMethod` field
+1. RM700 by Cash — Post to `SL_CS` and set the `P_PaymentMethod` field
+2. RM200 by MasterCard — Post to `AR_PM`
+3. RM100 by CreditCard — Post to `AR_PM`
 
-2. RM200 by MasterCard - Post to `AR_PM`
-
-3. RM100 by CreditCard - Post to `AR_PM`
-
-**Pros** : Less Posting document
+**Pros**: Fewer posting documents
 
 **Cons** :
 
@@ -243,12 +241,11 @@ It will be had 3 transactions
         - Default is `SR`
         - Will auto reverse once it being Knock-Off
 
-- Doc Disc should proportion by sub total amt for mix tax code (See Cash Sales POS-DocDisc)
+- Document discounts should be apportioned by subtotal amounts when mixing tax codes (see Cash Sales POS-DocDisc).
 
-    Example
-        - Doc Discount = 10% of Document Discount
-        - Sub Total for SR = 150.24 => Disc (150.24 \* 10%) = 15.02
-        - Sub Total for ZR = 988.88 => Disc (988.88 \* 10%) = 98.89
+    Example (10% document discount):
+    - Subtotal for SR = 150.24 → Discount = 150.24 * 10% = 15.02
+    - Subtotal for ZR = 988.88 → Discount = 988.88 * 10% = 98.89
 
     Or
 
@@ -256,10 +253,10 @@ It will be had 3 transactions
         - Sub Total for SR = 150.24 => Disc ((150.24/1139.12) \* 113.91) = 15.02
         - Sub Total for ZR = 988.88 => Disc ((988.88/1139.12) \* 113.91) = 98.89
 
-- Mixed Supplies Tax Code
-        - ES
-        - TX-ES (Replace TX-N43)
-        - TX-RE
+- Mixed supplies tax codes include:
+    - ES
+    - TX-ES (replaces TX-N43)
+    - TX-RE
 
 - Realise Bad Debts Use CN as Normal
         - System will contra the provision bad debts done at GST-03 by 6 mth bad debts
@@ -283,9 +280,9 @@ If still prompt after above steps
 3. Reinstall SQL Accounting
 4. Run the above steps again
 
-**Prompt Access Violation when import.**
+**Prompt Access Violation when importing**
 
-This happen due to
+This can happen due to:
 
 The fieldname is not match with SQL Accounting (eg, SQLAcc fieldname `UDF_Width`, but you had call for `UDF_Weight`)
 
@@ -310,7 +307,9 @@ If still prompt after above steps
 - Reinstall SQL Accounting
 - Run the above steps again
 
-### Prompt Access Violation when import
+### Prompt Access Violation when importing
+
+This can happen due to:
 
 This happen due to
 
@@ -341,21 +340,21 @@ If you wanted posted in Detail Field also can
 | Remark2 | Invoice Date | Field Size : 200 |
 | Description2 | Reason | Field Size : 200 |
 
-### Can I post/import to SQL Accounting in Monthly Basis?
+### Can I post/import to SQL Accounting on a monthly basis?
 
-No for GST/SST Era. It advice able to do **Daily** Basis posting/import as user had more time to verify if posting/import had Error/Problem
+No. For the GST/SST era, we recommend posting/importing on a **daily** basis so users have time to verify and correct any errors.
 
-Below is the proper steps to do posting/import
+Below is the proper steps to perform posting/importing
 
 - Backup
 - Post/Import to SQL Accounting
-- Compare Listing in SQL Accounting with the POS/External Program Listing
+- Compare listings in SQL Accounting with your POS/external program
 
-### In my system had multiple level document discount, how to post to SQL Accounting?
+### I have multiple levels of document discounts — how do I post to SQL Accounting?
 
-You can insert 2 or more rows(depend how many level you had) of item as negative unitprice.
+You can insert two or more rows (depending on the number of discount levels) with negative unit prices.
 
-But as mention above [**Extra Notes**](./tips-&-tricks.md#extra-notes) proportion by sub total amt for mix tax code.
+As mentioned above in [**Extra Notes**](./tips-&-tricks.md#extra-notes), proportion the discount by subtotal amount when mixing tax codes.
 
 ### Can I do like this, DR Bank/Cash In hand/Debtor & CR Sales Account using Journal?
 
@@ -371,9 +370,9 @@ No. The correct Double Entry is as following
   - DR - Bank/Cash In Hand
   - CR - Debtor
 
-### Can I use just ADMIN ID to Import/Posting?
+### Can I use the ADMIN ID for importing/posting?
 
-No. *ADMIN* had full Access Right & if had problem user might had problem trace back who doing the importing...
+No. *ADMIN* has full access rights; if a problem occurs it can be difficult to trace who performed the import. We recommend creating a separate user with limited access rights for importing/posting.
 
 It adviceable to create Another ID with less Access Right
 
@@ -383,25 +382,25 @@ Yes, but we Recommended External Program(eg POS) to do all the Stock Control if 
 
 Reason :
 
-01. Faster Import time
+01. Faster import time
 
 02. Timing issue as in SQL Acc the Qty is *ALWAYS* outdated cause real *Stock In/Out* is from the External Program(eg POS)
 
-03. Data redundancy as 2 same data for different system
+03. Data redundancy when two systems store the same data
 
 04. Avoid wasting time on Sync correctness stock data between 2 system
 
 Related Ref : [Can I control my Stock when I link with other Application?](https://wiki.sql.com.my/wiki/SDK_Live#Can_I_control_my_Stock_when_I_link_with_other_Application.3F)
 
-### Can SQL Acc accept negative amount?
+### Can SQL Acc accept negative amounts?
 
-Yes if for Item Row Amount
+Yes, for item row amounts.
 
 No all document amount(DocAmt field) must not below 0
 
-### Is there any setting for transaction without Tax?
+### Is there any setting for transactions without tax?
 
-No there is no special setting. All you had to do is to set the following field to
+No, there is no special setting. Set the following fields:
 
 | Field | Value |
 | --- | --- |
@@ -409,11 +408,11 @@ No there is no special setting. All you had to do is to set the following field 
 | TaxInclusive | 0   |
 | TaxAmt | 0   |
 
-### How to post If supplier given is Simplified Invoice but exceed RM500?
+### How to post when a supplier issues a simplified invoice but it exceeds RM500?
 
 It advisable to ask the user to Request **Full Tax Invoice** from their supplier as user might pay double Tax due to add back for non claimable amount to the company profit by their Audit/Accountant.
 
-Below is example(suggest) how we post to Simplified Invoice from supplier
+Below is a suggested example of how to post a simplified supplier invoice.
 
 ![exceed-500-1](../../../static/img/usage/general/tips-tricks/exceed500.png)
 
@@ -421,21 +420,21 @@ Below is example(suggest) how we post to Simplified Invoice from supplier
 
 ### Prompt could not convert variant of type (Null) into type (Integer) error while try to post (eg Invoice)
 
-Make sure the database you login is had Started the GST.
+Ensure the database you are logged into has GST started/enabled.
 
-### How to post SR with 6% for issue document after 01 Jun 2018?
+### How to post SR with 6% for documents issued after 01 Jun 2018?
 
-There are 2 solutions
+There are two solutions:
 
 #### Solution 1
 
-Add TaxRate Field Script/Code
+Add a TaxRate field script/code.
 
 #### Solution 2
 
-Create New Tax SR tax code with 6%(eg SR6) in SQL Accounting
+Create a new SR tax code with 6% (e.g., SR6) in SQL Accounting.
 
-**Is there any changes in Linking for the SST?**
+**Is there any change in linking for SST?**
 
 - GST to No SST
 
@@ -443,7 +442,7 @@ May follow [Non GST](https://wiki.sql.com.my/wiki/SQL_Accounting_Linking#Is_ther
 
 - GST to SST
 
-There is no much changes. Just treat is like normal GST only different is the Tax Code
+    There are not many changes — treat it like normal GST; only the tax codes differ.
 
 | Tax Code | Description | Rate | Required Tariff Code |
 | --- | --- | --- | --- |
@@ -453,7 +452,7 @@ There is no much changes. Just treat is like normal GST only different is the Ta
 | STE | Sales Tax Exempted |     | N   |
 | SVE | Service Tax Exempted |     | N   |
 
-New Field added
+New field added:
 
 | **Field Name** | **Field Type** | **Field Size** | **Mandatory** | **Default Value** | **Remarks** |
 |----------------|----------------|----------------|----------------|------------------|--------------|

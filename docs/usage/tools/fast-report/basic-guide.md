@@ -6,7 +6,7 @@ slug: /usage/tools/fast-report/guide
 tags: ["SQL Account", "Usage", "Tools"]
 ---
 
-## Understand on Toolbar
+## Understanding the Toolbar
 
 1. **Report Object**
 
@@ -16,13 +16,13 @@ tags: ["SQL Account", "Usage", "Tools"]
 
     ![2](../../../../static/img/usage/tools/fastReport-basicGuide/2.png)
 
-## Sales Inovice Bands
+## Sales Invoice Bands
 
-1. Understand on Bands
+1. Understanding Bands
 
    1. Group Header
       - Grouping Header
-      - To Print on every page, right click on ***Group Header Band***, select ***reprint on new page***
+      - To Print on every page, right-click on ***Group Header Band***, select ***reprint on new page***
 
    2. Master Data
       - The ***Main*** Dataset of the report
@@ -37,7 +37,7 @@ tags: ["SQL Account", "Usage", "Tools"]
       - Display on ***Last Page*** only
 
    5. Page Footer
-      - Display on ***Every Pages***
+      - Display on ***Every Page***
 
 2. Sample Layout in Design Mode
 
@@ -51,7 +51,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
    - Group Footer content will be printed at the pixel value input.
    - Higher Value = Higher Footer
-   - without setting with print position, the group footer will be printed after the document
+   - without setting the print position, the group footer will be printed after the document
    detail records.
    - Example Source Code:
 
@@ -80,8 +80,8 @@ tags: ["SQL Account", "Usage", "Tools"]
     | Stop Position | Print Count |
     | :---:          |    :----:   |
     | Details will stop at the input value| Details will stop by number of records inputs|
-    | Recommend    | Not recommend if using More Description        |
-    | Value in Pixel    | Number of Records |
+    | Recommended    | Not recommend if using More Description        |
+    | Value in Pixels    | Number of Records |
 
    1. How to do the Stop Position in Report?
 
@@ -89,24 +89,24 @@ tags: ["SQL Account", "Usage", "Tools"]
 
             ![7](../../../../static/img/usage/tools/fastReport-basicGuide/7.png)
 
-      2. Setting the stop position
+      2. Set the stop position
 
             ![8](../../../../static/img/usage/tools/fastReport-basicGuide/8.png)
 
             :::tip[TIPS]
             1. Set Either Print Count or Stop Position
             2. use // to disable the command
-            3. When you set both Print Count and Stop Position, system will capture Print Count.
+            3. When you set both Print Count and Stop Position, the system will capture Print Count.
             :::
 
       3. Sample on Print Position / Stop Position
 
             ![9](../../../../static/img/usage/tools/fastReport-basicGuide/9.png)
 
-## How to design Simple Sales Invoice?
+## How to design a Simple Sales Invoice?
 
 - Preview Invoice
-- Click on Report Name to enter to Design Mode
+- Click on Report Name to enter Design Mode
 
 1. **Add PICTURE**
 
@@ -124,13 +124,13 @@ tags: ["SQL Account", "Usage", "Tools"]
 
             ![12](../../../../static/img/usage/tools/fastReport-basicGuide/12.png)
 
-         2. Select the Picture on your local drive
+         2. Select the Picture from your local drive
 
          3. Click on ![tick](../../../../static/img/usage/tools/fastReport-basicGuide/tick.png)
 
             ![13](../../../../static/img/usage/tools/fastReport-basicGuide/13.png)
 
-         4. Adjust to the desire size
+         4. Adjust to the desired size
 
             ![14](../../../../static/img/usage/tools/fastReport-basicGuide/14.png)
 
@@ -146,13 +146,13 @@ tags: ["SQL Account", "Usage", "Tools"]
 
           ![16](../../../../static/img/usage/tools/fastReport-basicGuide/16.png)
 
-      2. Place on Report Page
+      2. Place it on the Report Page
 
       3. Enter Text : Email
-
+ 
             ![17](../../../../static/img/usage/tools/fastReport-basicGuide/17.png)
 
-      4. Repeat Step i & ii
+      4. Repeat Steps i & ii
 
       5. Select Document_CompanyBranch -> Email Expression
 
@@ -180,7 +180,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
             ![21](../../../../static/img/usage/tools/fastReport-basicGuide/21.png)
 
-        2. Place on the Report Page
+        2. Place it on the Report Page
 
         3. Select Aggregate value
 
@@ -192,7 +192,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
       ![23](../../../../static/img/usage/tools/fastReport-basicGuide/23.png)
 
-   2. Place on the Report Page
+   2. Place it on the Report Page
 
    3. Draw a line
 
@@ -202,7 +202,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
    - Display the object in center horizontal
 
-     1. Click on Object you want to show in center horizontal
+     1. Click on the Object you want to show in center horizontal
 
      2. Click on Center Horizontally In Band
 
@@ -218,7 +218,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
    1. File -> Save As -> Enter Report Name -> Save
 
-   2. Preview and see the result
+   2. Preview to see the result
 
    Result:
 
@@ -227,7 +227,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 ## How to create the Subreport in Report?
 
 - Preview Invoice
-- Click on ***Report Name*** to enter to Design Mode
+- Click on ***Report Name*** to enter  Design Mode
 
    ![28](../../../../static/img/usage/tools/fastReport-basicGuide/28.png)
 
@@ -239,11 +239,11 @@ tags: ["SQL Account", "Usage", "Tools"]
 
      ![30](../../../../static/img/usage/tools/fastReport-basicGuide/30.png)
 
-  3. System will prompt a new blank page for Subreport
+  3. System will prompt a new blank page for the Subreport
 
       ![31](../../../../static/img/usage/tools/fastReport-basicGuide/31.png)
 
-  4. Click on **Insert Band** to design the layout or insert the data
+  4. Click on **Insert Band** to design the layout or insert data
 
       ![32](../../../../static/img/usage/tools/fastReport-basicGuide/32.png)
 
@@ -259,7 +259,7 @@ tags: ["SQL Account", "Usage", "Tools"]
 
       ![34](../../../../static/img/usage/tools/fastReport-basicGuide/34.png)
 
-   3. Press on the button
+   3. Press the button
 
       ![35](../../../../static/img/usage/tools/fastReport-basicGuide/35.png)
 
@@ -325,12 +325,12 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 - In Fast Report you can also do some simple calculation using the Memo (Red A Icon)
 
-1. Below is example using Sales Invoice to get Net Unit Price (after Discount)
+1. Below is an example using Sales Invoice to get Net Unit Price (after Discount)
 
 ![netUnitPrice](../../../../static/img/usage/tools/fastReport-basicGuide/net-unit-price.jpg)
 
 1. Click the Red A Icon.
-2. Click on the place to be print/shown.
+2. Click on the place to print/shown.
 
    ![memoABC](../../../../static/img/usage/tools/fastReport-basicGuide/memo-abc.jpg)
 
@@ -352,9 +352,9 @@ tags: ["SQL Account", "Usage", "Tools"]
 
 ## Fast Report - Get Data Directly from DB
 
-Sometime in the report you might wanted some extra information but you not able to select in the report design. So you had to self query to get the extra information.
+Sometime in the report you might want some extra information that you are not able to select in the report design. So you had to self query to get the extra information.
 
-There are 2 ways to Get the data directly from Database
+There are 2 ways to Get the data directly from the Database
 
 - Cache Query
 - Get DB Data Query
@@ -370,13 +370,13 @@ There are 2 ways to Get the data directly from Database
 
 1. Easy to write
 
-2. Can direct filter data from Local Pipeline
+2. Can direct filter data from the Local Pipeline
 
 3. Less data Loading
 
 - Cons
 
-1. Unable to Total the all result shown
+1. Unable to Total all result shown
 
 2. Only support = in the Query
 
@@ -391,13 +391,13 @@ There are 2 ways to Get the data directly from Database
    ![fr3GetShelfField](../../../../static/img/usage/tools/fastReport-basicGuide/fr3-get-shelf-field.jpg)
 
 1. Click the Red A Icon.
-2. Click on the place to be print/shown.
+2. Click on the place to print/shown.
 3. Right Click the Memo.
 
    ![rightClickMemo](../../../../static/img/usage/tools/fastReport-basicGuide/right-click-memo.jpg)
 
 4. Select Stretch
-5. Click on Events tab
+5. Click on the Events tab
 6. Double Click OnBeforePrint
 7. Enter below script
 
@@ -444,7 +444,7 @@ Below is Example are doing following actions
 - Use RefCost * Qty in Sales Invoice
 
 1. Click the Red A Icon.
-2. Click on the place to be print/shown.
+2. Click on the place to print/shown.
 3. Right Click the Memo.
 4. Select Stretch
 5. Click on Events tab
@@ -494,7 +494,7 @@ Below is Example are doing following actions
    ![pictureField](../../../../static/img/usage/tools/fastReport-basicGuide/picture-field.jpg)
 
 1. Click on Picture Icon (Below Red A icon)
-2. Click on the place to be print/shown.
+2. Click on the place to print/shown.
 3. Click on Event tab on Object Inspector
 4. Double Click OnBeforePrint
 5. Enter below script
@@ -538,7 +538,7 @@ Below is Example are doing following actions
 Below is Example is to Get the who created the Document from Audit Table.
 
 1. Click the Red A Icon.
-2. Click on the place to be print/shown.
+2. Click on the place to print/shown.
 3. Right Click the Memo.
 4. Select Stretch
 5. Click on Events tab
@@ -591,7 +591,7 @@ Below is Example are doing following action
 - Get the Quotation number & Date in the Invoice Detail
 
 1. Click the Red A Icon.
-2. Click on the place to be print/shown (In DetailData).
+2. Click on the place to print/shown (In DetailData).
 3. Right Click the Memo.
 4. Select Stretch
 5. Click on Events tab
@@ -657,7 +657,7 @@ Below is Example are doing following actions
 - Sales Invoice to get Branch Email field from Maintain Customer
 
 1. Click the Red A Icon.
-2. Click on the place to be print/shown.
+2. Click on the place to print/shown.
 3. Right Click the Memo.
 4. Select Stretch
 5. Click on Events tab
@@ -2556,7 +2556,7 @@ Below is example on how to get CSV data from Maintain Agent UDF_AList field
 
 2. Click the Red A Icon.
 
-3. Click on the place to be print/shown.
+3. Click on the place to print/shown.
 
     ![memo-insert-code](../../../../static/img/usage/tools/fastReport-basicGuide/memo-insert-code.jpg)
 

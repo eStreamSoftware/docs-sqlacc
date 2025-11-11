@@ -8,7 +8,7 @@ tags: ["SQL Account", "Usage", "Supplier"]
 
 ## Maintain Supplier
 
-To keep the Supplier profile data such as addresses, telephone, fax, email, contact person, credit limits, credit
+To maintain the supplier profile data such as addresses, phone numbers, fax, email, contact persons, credit limits, credit
 terms, etc. In other words, it is your supplier contacts list.
 
 ![des-maintain-supplier-1](../../../static/img/usage/supplier/supplier-guide-images/maintain-supplier-1.jpg)
@@ -19,7 +19,7 @@ To create NEW supplier, CLICK on NEW button. See screenshot below.
 
 ![des-maintain-supplier-new-supplier-1](../../../static/img/usage/supplier/supplier-guide-images/maintain-supplier-new-supplier-1.jpg)
 
-You will get a blank form to be fill-in with the supplier data.
+You will get a blank form to be filled in with the supplier data.
 
 ![des-maintain-supplier-new-supplier-2](../../../static/img/usage/supplier/supplier-guide-images/maintain-supplier-new-supplier-2.jpg)
 
@@ -28,8 +28,8 @@ You may start input the following fields:
 | **Field Name**       | **Field Type**                                                                                       | **Length** | **Explanation**                                                                                       |
 |-----------------------|------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------------------------------------|
 | Company              | Alphanumerical                                                                                        | 100        | Input the supplier billing company name.                                                              |
-| Description 2 (under Company) | Alphanumerical                                                                                        | 100        | Optional field recommended to input Chinese translated name, former company name, company register no, etc. |
-| Control A/c          | Lookup from Maintain Accounts (Special Type: Customer Control Account)                                | 10         | Select an appropriate Supplier Control Account to be posted to GL when customer documents are created. |
+| Description 2 (under Company) | Alphanumerical                                                                                        | 100        | An optional field where you can enter Chinese translated name, former company name, company register no, etc. |
+| Control A/c          | Lookup from Maintain Accounts (Special Type: Supplier Control Account)                                | 10         | Select an appropriate Supplier Control Account to be posted to GL when supplier documents are created. |
 | Code                 | Alphanumerical                                                                                        | 10         | AUTO/MANUAL generate the Supplier Code.                                                               |
 | Cust Category        | Lookup from Maintain Company Category                                                                 | 15         | Categorize your supplier for reporting purpose.                                                       |
 
@@ -39,7 +39,7 @@ You may start input the following fields:
 
 | **Field Name**  | **Field Type**                               | **Length**              | **Explanation**                                                                 |
 |------------------|----------------------------------------------|-------------------------|---------------------------------------------------------------------------------|
-| Branch Name      | Alphanumerical                               | 100                     | You may maintain multiple sets of addresses by differentiating the Branch Name. Default Branch Name: BILLING |
+| Branch Name      | Alphanumerical                               | 100                     | You may maintain multiple sets of addresses by differentiating the Branch Name<br />Default Branch Name: BILLING |
 | Address (4 lines)| Alphanumerical                               | 40 (each line)          | Input the company addresses.                                                    |
 | Attention        | Alphanumerical                               | 70                      | Input the contact person.                                                       |
 | Phone 1 & 2      | Alphanumerical                               | 30                      | Input the telephone number.                                                     |
@@ -50,8 +50,8 @@ You may start input the following fields:
 | Currency         | Lookup from Maintain Currency                | 6                       | Select a default Currency.                                                      |
 | Credit Terms     | Lookup from Maintain Terms                   | 10                      | Select a default Terms.                                                         |
 | Credit Limit     | Numeric                                      | —                       | Set the credit limit.                                                           |
-| Statement        | Option                                       | —                       | Select a default statement type, i.e., Open Item or Brought Forward. Default: Open Item |
-| Aging On         | Option                                       | —                       | Select a default Aging type, i.e., Invoice Date or Due Date. Default: Invoice Date |
+| Statement        | Option                                       | —                       | Select a default statement type, e.g., Open Item or Brought Forward. <br />Default: Open Item |
+| Aging On         | Option                                       | —                       | Select a default Aging type, e.g., Invoice Date or Due Date. Default: Invoice Date |
 | Price Tag        | Lookup from Maintain Stock Price Tag         | 10                      | Set the price tag to the items.                                                 |
 
 #### Note
@@ -123,7 +123,7 @@ You can EDIT the supplier, CLICK on EDIT button. See screenshot below.
 
 :::note
 
- 1. User able to EDIT the supplier data depends on the user access rights granted.
+ 1. Users are able to EDIT the supplier data depends on the user access rights granted.
  2. Any EDITING the system will be audited (logged) with changes made.
 
 :::
@@ -155,7 +155,7 @@ Supplier code can be AUTO generate or overwrite it manually. See screenshot belo
 :::note Important
 
  1. Every supplier code is unique.
- 2. If the system found there is an duplicate code trying to save, users will be notify by warning message. See screenshot below.
+ 2. If the system found there is a duplicate code trying to save, users will be notified with a warning message.
 
 :::
 
@@ -178,7 +178,7 @@ For example,
 
 ## Supplier Invoice (SI)
 
-- General invoice received from supplies likes purchase of service, insurance, stationery or any non-stock control billing.
+- General invoice received from suppliers likes purchase of service, insurance, stationery or any non-stock control billing.
 - Besides that, you can check the invoices status such as outstanding and payment history.
 
 ![des-supplier-invoice-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-invoice-1.jpg)
@@ -190,7 +190,7 @@ For example,
 
    ![des-supplier-invoice-entry-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-invoice-entry-1.jpg)
 
-3. Select the Supplier Code. You direct key-in and search by either supplier code or name.
+3. Select the Supplier Code. You direct key in and search by either supplier code or name.
 4. Input the Purchase A/c and amount to be debit.
 5. Below is the example of the entry created:
 
@@ -206,7 +206,7 @@ For example,
 - There are 2 types of project you need to be take note.
   1) Document Project
   2) Detail Project
-- For document project, you need to point to MORE section (on the left side bar).
+- For document project, you need to point to More section (on the left side bar).
 - For detail project, you have to insert the project column out from Field Chooser.
 
 ![des-supplier-invoice-project-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-invoice-project-1.jpg)
@@ -219,7 +219,7 @@ For example,
 ### Attachment (SI)
 
 - It is very useful to attach any supporting documents to an invoice.
-- In future, you able to retrieve and refer the attachment file easily.
+- In future, you are able to retrieve and refer the attachment file easily.
 
 ![des-supplier-invoice-attachment-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-invoice-attachment-1.jpg)
 
@@ -244,7 +244,7 @@ For example,
 
 ### Invoice description (SI)
 
-1. To show the document description in Supplier Statement, eg. Purchase-Stationery April 2015.
+1. To show the document description in Supplier Statement, e.g., Purchase-Stationery April 2015.
 
    ![des-supplier-invoice-invoice-description-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-invoice-invoice-description-1.jpg)
 
@@ -266,7 +266,7 @@ For example,
 
    ![des-supplier-payment-entry-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-payment-entry-1.jpg)
 
-3. Select the Supplier Code. Direct key-in and search by either Supplier code or name.
+3. Select the Supplier Code. Direct key in and search by either Supplier code or name.
 4. Select the Payment Method (bank or cash account) in Payment By.
 5. Enter the Paid Amount (follow the bank account currency).
 6. Below is the example of the entry created:
@@ -331,7 +331,7 @@ Purpose to knock-off the invoices:
 ### Attachment (SP)
 
 - It is very useful to attach any supporting documents.
-- In future, you able to retrieve and refer the attachment file easily.
+- In future, you are able to retrieve and refer the attachment file easily.
 
 ![des-supplier-payment-attachment-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-payment-attachment-1.jpg)
 
@@ -359,7 +359,7 @@ Purpose to knock-off the invoices:
 
 ### Description (SP)
 
-To show the Supplier payment description in the Supplier Statement, eg. Payment For Jan & Feb 2016.
+To show the Supplier payment description in the Supplier Statement, e.g., Payment For Jan & Feb 2016.
 
 ![des-supplier-payment-description-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-payment-description-1.jpg)
 
@@ -381,7 +381,7 @@ Sample of Supplier statement screenshot below.
 
    ![des-supplier-debit-note-entry-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-debit-note-entry-1.jpg)
 
-3. Select the Supplier Code. You direct key-in and search by either supplier code or name.
+3. Select the Supplier Code. You direct key in and search by either supplier code or name.
 4. Input the Purchase A/c and amount to be debit.
 5. Below is the example of the entry created:
 
@@ -399,7 +399,7 @@ Sample of Supplier statement screenshot below.
 - There are 2 types of project you need to be take note.
   1. Document Project
   2. Detail Project
-- For document project, you need to point to MORE section (on the left side bar).
+- For document project, you need to point to More section (on the left side bar).
 - For detail project, you have to insert the project column out from Field Chooser.
 
 ![des-supplier-debit-note-project-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-debit-note-project-1.jpg)
@@ -412,7 +412,7 @@ Sample of Supplier statement screenshot below.
 ### Attachment (SDN)
 
 - It is very useful to attach any supporting documents to a debit note.
-- In future, you able to retrieve and refer the attachment file easily.
+- In future, you are able to retrieve and refer the attachment file easily.
 
 ![des-supplier-debit-note-attachment-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-debit-note-attachment-1.jpg)
 
@@ -437,7 +437,7 @@ Sample of Supplier statement screenshot below.
 
 ### D/N Description (SDN)
 
-1. To show the document description in Supplier Statement, eg. Undercharged-Stationery April 2015.
+1. To show the document description in Supplier Statement, e.g., Undercharged-Stationery April 2015.
 
    ![des-supplier-debit-note-dn-description-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-debit-note-dn-description-1.jpg)
 
@@ -447,12 +447,12 @@ Sample of Supplier statement screenshot below.
 
 ## Supplier Credit Note (SCN)
 
-- Credit note is use to reduce and offset the outstanding invoices or debit note.
-- For those Credit Note created from Purchase module, you are require to offset against the outstanding Invoices/Debit Note here.
+- Credit note is used to reduce and offset the outstanding invoices or debit note.
+- For those Credit Note created from Purchase module, you are required to offset against the outstanding invoices/debit note here.
 - You can check any unapplied amount for a credit note. Unapplied amount meaning the credit note amount must find the invoice / debit note to knock-off.
 
 ![des-supplier-credit-note-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-credit-note-1.jpg)
-
+ 
 ### Basic Entry (SCN)
 
 1. Click on New button.
@@ -460,7 +460,7 @@ Sample of Supplier statement screenshot below.
 
    ![des-supplier-credit-note-entry-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-credit-note-entry-1.jpg)
 
-3. Select the Supplier Code. You direct key-in and search by either supplier code or name.
+3. Select the Supplier Code. You direct key in and search by either supplier code or name.
 4. Input the Purchase A/c and amount to be credit.
 5. Below is the example of the entry created:
 
@@ -492,7 +492,7 @@ Sample of Supplier statement screenshot below.
 - There are 2 types of project you need to be take note.
   1. Document Project
   2. Detail Project
-- For document project, you need to point to MORE section (on the left side bar).
+- For document project, you need to point to More section (on the left side bar).
 - For detail project, you have to insert the project column out from Field Chooser.
 
 ![des-supplier-credit-note-project-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-credit-note-project-1.jpg)
@@ -505,7 +505,7 @@ Sample of Supplier statement screenshot below.
 ### Attachment (SCN)
 
 - It is very useful to attach any supporting documents to a credit note.
-- In future, you able to retrieve and refer the attachment file easily.
+- In future, you are able to retrieve and refer the attachment file easily.
 
 ![des-supplier-credit-note-attachment-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-credit-note-attachment-1.jpg)
 
@@ -530,7 +530,7 @@ Sample of Supplier statement screenshot below.
 
 ### C/N Description (SCN)
 
-1. To show the document description in Supplier Statement, eg. Overcharged-Stationery April 2015.
+1. To show the document description in Supplier Statement, e.g., Overcharged-Stationery April 2015. 
 
    ![des-supplier-credit-note-cn-description-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-credit-note-cn-description-1.jpg)
 
@@ -559,7 +559,7 @@ Sample of Supplier statement screenshot below.
 
    ![des-supplier-refund-entry-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-refund-entry-1.jpg)
 
-3. Select the Supplier Code. Direct key-in and search by either Supplier code or name.
+3. Select the Supplier Code. Direct key in and search by either Supplier code or name.
 4. Select the Payment Method (bank or cash account) in Received In.
 5. Enter the Refund Amount (follow the bank account currency).
 6. Below is the example of the entry created:
@@ -577,7 +577,7 @@ Sample of Supplier statement screenshot below.
 
    ![des-supplier-refund-entry-3](../../../static/img/usage/supplier/supplier-guide-images/supplier-refund-entry-3.jpg)
 
-8. Lets said the bank charges = Rm2.00, therefore the double entry posting will be:-
+8. Let's say the bank charges = RM2.00; therefore, the double entry posting will be:-
 
    | **Account**      | **DR (RM)** | **CR (RM)** |
    |------------------|-------------|-------------|
@@ -623,7 +623,7 @@ Purpose to knock-off the invoices:
 ### Attachment (SR)
 
 - It is very useful to attach any supporting documents.
-- In future, you able to retrieve and refer the attachment file easily.
+- In future, you are able to retrieve and refer the attachment file easily.
 
 ![des-supplier-refund-attachment-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-refund-attachment-1.jpg)
 
@@ -651,7 +651,7 @@ Purpose to knock-off the invoices:
 
 ### Description (SR)
 
-To show the supplier refund description in the Supplier Statement, eg. Refund For SC-00002 & PV-00004..
+To show the supplier refund description in the Supplier Statement, e.g., Refund For SC-00002 & PV-00004..
 
 ![des-supplier-refund-description-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-refund-description-1.jpg)
 
@@ -668,14 +668,14 @@ Sample of supplier statement screenshot below.
 
 ### Basic Entry (SC)
 
-Assume that you have create the [Customer Contra](../../usage/customer/guide#customer-contra). You will found the same contra no. appeared in the Supplier Contra.
+Assume that you have created the [Customer Contra](../../usage/customer/guide#customer-contra). You will found the same contra no. appeared in the Supplier Contra.
 
 1. Highlight the Contra No to edit. Click on Edit button.
-2. See the Supplier Contra entry form screenshot below.
+2. See the Supplier Contra entry from screenshot below.
 
    ![des-supplier-contra-entry-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-contra-entry-1.jpg)
 
-3. Select the Supplier Code. Direct key-in and search by either supplier code or name.
+3. Select the Supplier Code. Direct key in and search by either supplier code or name.
 4. Enter the Contra Amount (follow the supplier currency).
 5. Below is the example of the entry created:
 
@@ -731,7 +731,7 @@ Purpose to knock-off the invoices:
 ### Attachment (SC)
 
 - It is very useful to attach any supporting documents.
-- In future, you able to retrieve and refer the attachment file easily.
+- In future, you are able to retrieve and refer the attachment file easily.
 
 ![des-supplier-contra-attachment-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-contra-attachment-1.jpg)
 
@@ -759,18 +759,18 @@ Purpose to knock-off the invoices:
 
 ### Description (SC)
 
-To show the supplier contra description in the Supplier Statement, eg. Contra IV-00005 .
+To show the supplier contra description in the Supplier Statement, e.g., Contra IV-00005 .
 
 ![des-supplier-contra-description-1](../../../static/img/usage/supplier/supplier-guide-images/supplier-contra-description-1.jpg)
 
 Sample of supplier statement screenshot below.
 
 ![des-supplier-contra-description-2](../../../static/img/usage/supplier/supplier-guide-images/supplier-contra-description-2.jpg)
-
+ 
 ### GL Ledger - Contra Account
 
 1. Select the date range.
-2. Select the account code, eg. 450-000 CONTRA ACCOUNT.
+2. Select the account code, e.g., 450-000 CONTRA ACCOUNT.
 3. Tick on General Ledger.
 4. Click Apply button.
 5. Example of the Contra Account ledger as shown below.

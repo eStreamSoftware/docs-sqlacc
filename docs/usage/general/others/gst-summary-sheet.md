@@ -8,11 +8,11 @@ tags: ["SQL Account", "Others", "GST", "Summary"]
 
 ## Introduction
 
-This report is available since 01 Apr 2015. It shown summary by the tax and transaction type. But this report unavailable in the latest GST Accounting Guidelines (02 Mar 2017). They is no detail on what to shown the amount from the Kastam web.
+This report has been available since April 1, 2015. It provides a summary by tax and transaction type. However, this report is not included in the latest GST Accounting Guidelines (March 2, 2017). The Customs (Kastam) website does not provide details about how amounts should be displayed.
 
 ## Column Detail
 
-Below is the column detail on how the amount is arrive from base on Users and Accountant Feedback:
+The following details explain how amounts are calculated, based on user and accountant feedback:
 
 ### Input Tax
 

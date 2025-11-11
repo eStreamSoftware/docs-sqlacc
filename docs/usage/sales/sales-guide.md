@@ -15,14 +15,14 @@ Example of sales process work flow aligned with SQL Account flow:
 ## Sales Quotation
 
 :::info
-Watch tutorial video here:  [Sales Quotation](https://www.youtube.com/watch?v=2hKhtpaQfP4)
+Watch the tutorial video here:  [Sales Quotation](https://www.youtube.com/watch?v=2hKhtpaQfP4)
 :::
 
 1. **Sales** | **Quotation** | **New**
 
 2. Select **Customer Code**
 
-3. Insert the item that is requested by the customer, and you can estimate your profit & loss in this transaction by checking on **Profit Estimator**
+3. Insert the requested item by the customer and estimate profit & loss using the **Profit Estimator**
 
    ![profit-estimator](../../../static/img/usage/sales/sales-guide/profit-estimator.png)
 
@@ -124,9 +124,9 @@ Watch tutorial video here: [Sales Invoicing Sales Invoice](https://www.youtube.c
    Watch tutorial video here: [Ctrl + O](https://www.youtube.com/watch?v=FAKSzjEezjo&t=9s)
    :::
 
-**There have 2 methods to show double entry of the transactions:**
+**There are 2 methods to show the double entry for a transaction:**
 
-1. After you save then invoice then you can press on keyboard short cut key “ Ctrl + O” to get the show double entry result.
+1. After saving the invoice, press the keyboard shortcut key "Ctrl + O" to display the double entry result.
 
    ![show-double-entry-1](../../../static/img/usage/sales/sales-guide/show-double-entry-1.png)
 
@@ -158,7 +158,7 @@ Watch tutorial video here: [Sales Invoicing Sales Credit Note](https://www.youtu
 
 2. Select **Customer Code**
 
-3. **Right Click on Credit Note title**, select **Transfer from Sales Invoice/ Cash Sales**, enter the returned quality in X/F column.
+3. **Right Click on Credit Note title**, select **Transfer from Sales Invoice/ Cash Sales**, enter the returned quantity in X/F column.
 
 4. **Save** the Credit Note.
 
@@ -166,7 +166,7 @@ Watch tutorial video here: [Sales Invoicing Sales Credit Note](https://www.youtu
 
 ## Sales Cancelled Note (required partial delivery module)
 
-Sales Cancelled Note is used for the cancelling of any outstanding Sales Order.
+The Sales Cancelled Note is used to cancel any outstanding Sales Order.
 
 1. **Sales** | **Sales Cancelled Note** | **New**.
 

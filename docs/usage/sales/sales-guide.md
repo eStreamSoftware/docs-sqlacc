@@ -88,7 +88,7 @@ Watch tutorial video here: [Sales Invoicing Sales Order](https://www.youtube.com
    For additional reports showing outstanding sales orders, you can access **Sales | Print Outstanding Sales Document Listing**, and select **Sales Order** to view. This also applies to other sales documents.
    :::
 
-## Sales Delivery Order
+## Delivery Order
 
 1. **Sales** | **Delivery Order** | **New**
 
@@ -102,7 +102,7 @@ Watch tutorial video here: [Sales Invoicing Sales Order](https://www.youtube.com
    Once the delivery order is saved, the stock will be deducted.
    :::
 
-## Sales Invoice
+## Invoice
 
 ### Create New Invoice
 
@@ -148,7 +148,7 @@ Watch tutorial video here: [Sales Invoicing Sales Invoice](https://www.youtube.c
 
    ![payment-received](../../../static/img/usage/sales/sales-guide/payment-received.png)
 
-## Sales Credit Note
+## Credit Note
 
 :::info
 Watch tutorial video here: [Sales Invoicing Sales Credit Note](https://www.youtube.com/watch?v=2LrsegwiWJM&feature=youtu.be)
@@ -164,7 +164,7 @@ Watch tutorial video here: [Sales Invoicing Sales Credit Note](https://www.youtu
 
    ![sales-credit-note](../../../static/img/usage/sales/sales-guide/sales-credit-note.png)
 
-## Sales Cancelled Note (required partial delivery module)
+## Sales Cancelled Note
 
 The Sales Cancelled Note is used to cancel any outstanding Sales Order.
 

@@ -203,7 +203,7 @@ This feature allows the system to automatically post the stock value from Mainta
 
 ![21](../../../static/img/usage/general-ledger/glfaq/auto-post-stock-month-end-value/1.png)
 
-### Step 2: Stock > Stock Month End Balance Report
+### Step 2: Stock > Print Stock Month End Balance Report
 
 ![22](../../../static/img/usage/general-ledger/glfaq/auto-post-stock-month-end-value/2.png)
 
@@ -414,7 +414,7 @@ Account Amount / Total Sales * 100
 
     ![46](../../../static/img/usage/general-ledger/glfaq/maintain-budget/2.png)
 
-### Profit And Loss Statement with Budget Report
+### Profit & Loss Statement with Budget Report
 
 1. This Month vs Month Budget - This Year vs Year Budget.
 
@@ -422,7 +422,7 @@ Account Amount / Total Sales * 100
 
 3. This Year vs Last Year Budget.
 
-    This is a sample of a Profit and Loss Statement report comparing **This Month vs. Monthly Budget** and **This Year vs. Yearly Budget**
+    This is a sample of a Profit & Loss Statement report comparing. **This Month vs. Monthly Budget** and **This Year vs. Yearly Budget**
 
     A : Month to date Vs Monthly Budget
 
@@ -448,7 +448,7 @@ Account Amount / Total Sales * 100
 
 ## P&L Statement more than 12 months
 
-1. **GL** > **Profit and Loss Statement**.
+1. **GL** > **Print Profit & Loss Statement**.
 
     ![49](../../../static/img/usage/general-ledger/glfaq/p&l-more-than-12/1.png)
 
@@ -504,8 +504,8 @@ Repeat the same step on GL > Print Balance Sheet Statement
 
     3. Insert **GL Code** and **GL Description** > After Done Press **OK**.
 
-2. **GL** > **Print Journal Entry** > Create **New**.
-
+2. **GL** > **Journal Entry** > Create **New**.
+ 
     ![58](../../../static/img/usage/general-ledger/glfaq/p&l-statement-appropriation-acc/3.png)
 
     e.g: Dr Dividend 2,000 Cr Bank 2,000
@@ -556,7 +556,7 @@ If your trial balance is not tally, try running the following checks.
 
 ## Make sure Retained Earning must have 1 Account code
 
-1. **GL** > **Maintain Chart of Account**
+1. **GL** > **Maintain Account**
 
     ![66](../../../static/img/usage/general-ledger/glfaq/trial-balance-not-tally/1.png)
 
@@ -564,8 +564,8 @@ If your trial balance is not tally, try running the following checks.
 If your Retained Earning is empty, you may create under Reserve, then only drag into Retained Earning.
 :::
 
-## Make Sure Maintain Opening Is Tally
-
+## Make Sure Maintain Opening Balance is Tally
+ 
 1. **GL** > **Maintain Opening Balance**.
 
 2. Untick Project at left top.
@@ -664,7 +664,7 @@ The withholding tax amount will not be added to the purchase invoice amount.
 
 ## Payment of Withholding Tax
 
-1. Go to **GL > Cash Book Entry..**
+1. Go to **GL > Cash Book Entry.**
 
 2. Create **New PV**.
 

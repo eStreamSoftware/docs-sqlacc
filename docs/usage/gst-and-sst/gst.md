@@ -538,8 +538,11 @@ Spacing is very important to make your search more accurate.
    ![des-gst-listing-pivot-table-1](../../../static/img/usage/gst-and-sst/gst/gst-listing-pivot-table-1.jpg)
 
 3. At Pivot Table, there are 3 sections as below:
+   
    a. **Data Fields** – Data field will auto inserted when you launch the pivot table.
+
    b. **Row Fields** – To structure the grouping for Rows.
+
    c. **Column Fields** – To structure the grouping for Columns.
 
    ![des-gst-listing-pivot-table-2](../../../static/img/usage/gst-and-sst/gst/gst-listing-pivot-table-2.jpg)

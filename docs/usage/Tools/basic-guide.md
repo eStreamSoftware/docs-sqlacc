@@ -40,7 +40,7 @@ Not every user is going to have the same access rights as ADMIN, and ADMIN user 
 
    ![112](../../../static/img/usage/tools/tools-basic-guide/111.png)
 
-## Bar Navigator
+### Bar Navigator
 
 *Tools | Maintain User... | More | Bar Navigator*
 
@@ -189,7 +189,7 @@ Maintain Acceptable Transaction Date allows you to control which documents you a
 
         ![116](../../../static/img/usage/tools/tools-basic-guide/116.png)
 
-## SQL Global Price Change
+### SQL Global Price Change
 
 SQL Global Price Change will help you **mark down price** for all items with few clicks
 
@@ -199,7 +199,7 @@ This is a **paid module**. Contact your SQL Service to get this standalone appli
 
 ![3](../../../static/img/usage/tools/tools-basic-guide/3b.png)
 
-## Setup
+### Setup
 
 1. Select your group of item
 
@@ -249,7 +249,7 @@ This is a **paid module**. Contact your SQL Service to get this standalone appli
     - You can also tick Record change history then system will update this changes history in your note
     - Once you complete the setting, click on Change
 
-### 4. Check & Post
+ 4. Check & Post
 
 ![7](../../../static/img/usage/tools/tools-basic-guide/7b.png)
 
@@ -486,7 +486,7 @@ This module allows the user to maintain the project accounting on a branch or de
 
    ![146](../../../static/img/usage/tools/tools-basic-guide/146.png)
 
-## 5 Cents Rounding
+### 5 Cents Rounding
 
 We can pre-set the system to automatically round your invoice or cash sales amounts to the nearest 5 cents.
 
@@ -504,7 +504,7 @@ Watch tutorial video here: [Youtube](https://www.youtube.com/watch?v=VSnX55l_3xw
 
    ![148](../../../static/img/usage/tools/tools-basic-guide/148.png)
 
-## Online Mobile Approval
+### Online Mobile Approval
 
 ### How it works?
 
@@ -724,7 +724,7 @@ These **ALL** can use Online Approval for user :
 
 ![options-gl-cust-dn](../../../static/img/usage/tools/tools-basic-guide/options-gl-cust-dn.jpg)
 
-## Reporting by Journal
+### Reporting by Journal
 
 GL | Print Journal of Transaction Listing...See below screenshot :
 
@@ -1352,13 +1352,13 @@ Others setting.
 
  ![trans-date-out](../../../static/img/usage/tools/tools-basic-guide/trans-date-out.jpg)
 
-### Post Audit Trail for Stock/Sales/Purchase Detail
+#### Post Audit Trail for Stock/Sales/Purchase Detail
 
 - To audit log the changes has been made in Sales and Purchase detail.
 
 ![audit-sales-and-purchase](../../../static/img/usage/tools/tools-basic-guide/audit-sales-and-purchase.jpg)
 
-### Default UOM
+#### Default UOM
 
 - Default the base UOM when create new item in Maintain Stock Item.
 
@@ -1421,7 +1421,7 @@ Others setting.
 | GST-Payable (Kastam)                 | GST-KASTAM| RMCD accounts.                                                              |
 | Unclaimable GST Account              | GST-301   | Applicable to Mixed Supplies only.                                          |
 
-### Default Journal
+#### Default Journal
 
 1. To classify the transactions into the Journal created in Maintain Journal. Usually leave it as default.
 2. It is very useful for applying the Journal of Transactions Listing and Summary report.
@@ -1530,7 +1530,7 @@ Others setting.
    b. Keyword excluded: persatuan (non-case sensitive)
    c. Customer Code= 300-K0001
 
-### Default Customer Aging Format
+#### Default Customer Aging Format
 
 1. Set a default customer aging format to show the aging result at **Inquiry | Account Inquiry (Customer)**.
 
@@ -1547,7 +1547,7 @@ Others setting.
 
 ![same-doc-no-cash-sales-offic-receipt](../../../static/img/usage/tools/tools-basic-guide/same-doc-no-cash-sales-offic-receipt.jpg)
 
-### Perform Tax / Local Amount Rounding
+#### Perform Tax / Local Amount Rounding
 
 1. Choose a method to calculate the tax amount consistently.
 2. By default, it is always **untick**.
@@ -1591,6 +1591,7 @@ B. One Cent Different: Tick
 
 ![adjust-cash-sales-amt](../../../static/img/usage/tools/tools-basic-guide/adjust-cash-sales-amt.jpg)
 
+### Supplier
 <details>
    <summary>Supplier - click to expand</summary>
 
@@ -1618,7 +1619,7 @@ B. One Cent Different: Tick
 
 ![options-supplier-def-input-tax](../../../static/img/usage/tools/tools-basic-guide/options-supplier-def-input-tax.jpg)
 
-### **Supplier Account Code Format**
+#### Supplier Account Code Format
 
    1. To Define the supplier code format.
    2. Format explanation as per below.
@@ -1657,7 +1658,7 @@ B. One Cent Different: Tick
 
 3. Supplier Code = **4001-AL01**
 
-### Exceptional Supplier Code Format (Regular Expression)
+#### Exceptional Supplier Code Format (Regular Expression)
 
    1. Copy and paste the below regular express line into Supplier Format field (see the screenshot below).
 
@@ -1679,7 +1680,7 @@ B. One Cent Different: Tick
 2. Keyword excluded: persatuan (non-case sensitive)
 3. Supplier Code= **400-B0001**
 
-### Default Supplier Aging Format
+#### Default Supplier Aging Format
 
 1. Set a default supplier aging format to show the aging result at **Inquiry | Account Inquiry (Supplier)**.
 2. Supplier aging format list:
@@ -2258,7 +2259,7 @@ Below is the example for Sales Invoice
 
  ![new-event-](../../../static/img/usage/tools/tools-basic-guide/new-event-.jpg)
 
-## Advance Form Design
+### Advance Form Design
 
  This mode is only for the user who known how to use the Delphi.
 
@@ -2373,7 +2374,7 @@ Below is the example for Sales Invoice
 4. Drag the UDF field from the Customization Dialog
 5. Drop it the column you wanted to shown (eg In between Description Column & Qty Column)
 
-### DIY Authenticator
+## DIY Authenticator
 
 *Tools | DIY | DIY Authenticator...*
 

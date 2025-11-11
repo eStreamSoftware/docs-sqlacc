@@ -174,7 +174,7 @@ end;
 
 </details>
 
-## 8. How to Combine Currency Symbol with DocAmt or DBCalc.Value using TppVariable?
+### 8. How to Combine Currency Symbol with DocAmt or DBCalc.Value using TppVariable?
 
 <details>
     <summary>Code</summary>

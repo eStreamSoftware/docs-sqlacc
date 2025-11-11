@@ -393,7 +393,7 @@ A  : Just Enter as Follow code :-
     end;
     ```
 
-## How to use Line function?
+## 26. How to use Line function?
 
 By default system will use **Line#** this will result as
 
@@ -459,7 +459,7 @@ Expected result:
     End;
     ```
 
-## How to make sure my report export to Excel as less column usage as possible?
+## 29. How to make sure my report export to Excel as less column usage as possible?
 
 - Below is the guideline
 
@@ -479,7 +479,7 @@ Expected result:
 - Untick **Auto Width**
 - Tick **Stretch to Max Height** (for Detail)
 
-## Why when I export to PDF with Chinese Word become "tofu" or box box?
+## 30. Why when I export to PDF with Chinese Word become "tofu" or box box?
 
 This is because default Font is Tahoma is not support Unicode Font
 
@@ -504,7 +504,7 @@ This is because default Font is Tahoma is not support Unicode Font
         TfrxBrushFill(DetailData1.Fill).BackColor := clSilver;
     ```
 
-## How to Add QR Code for E-Invoicing?
+## 33. How to Add QR Code for E-Invoicing?
 
 :::note Note :
 Only Available in Version 852 & above
@@ -539,7 +539,7 @@ Only Available in Version 852 & above
 
 :::
 
-## How to show Document Number at every Page Footer?
+## 34. How to show Document Number at every Page Footer?
 
 - Just add the script on procedure GroupHeader2OnBeforePrint
 
@@ -551,7 +551,7 @@ Only Available in Version 852 & above
     end;
          ```
 
-## How to set A5 size to print on A4 paper?
+## 35. How to set A5 size to print on A4 paper?
 
 ![dclick-onbeforeprint-settings](../../../../static/img/usage/tools/fast-report-faq/dclick-onbeforeprint-settings.jpg)
 
@@ -569,7 +569,7 @@ Might have problem if too many knock off which more then 1 page
 Height
 :::
 
-## Customise Sales Debit Note Prompt Error after upgrade
+## 36. Customise Sales Debit Note Prompt Error after upgrade
 
 - Error
 
@@ -579,7 +579,7 @@ Height
 
 ![disable-code-using-curlybracket](../../../../static/img/usage/tools/fast-report-faq/disable-code-using-curlybracket.jpg)
 
-## How to Fix Report Tax Rate show A instead of 6% ?
+## 37. How to Fix Report Tax Rate show A instead of 6% ?
 
 ![1](../../../../static/img/usage/tools/fast-report-faq/1.png)
 

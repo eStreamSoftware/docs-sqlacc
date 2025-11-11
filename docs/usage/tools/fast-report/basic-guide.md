@@ -2659,7 +2659,7 @@ Below is example using Sales Invoice
 12. Click File | Save to save the file
 13. Click File | Exit to exit the report design
 
-## Quotation
+### Quotation
 
 Menu: Sales | Quotation...
 

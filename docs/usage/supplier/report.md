@@ -6,10 +6,10 @@ slug: /usage/supplier/Reports
 tags: ["SQL Account", "Reports"]
 ---
 
-## Print Supplier Document Listing
+## Print Supplier Document (InterBank GIRO) Listing
 
-- Print Supplier Document Listing can be used to see all the supplier transactions that you have entered into this system
-- You can see Supplier Invoices, Supplier Payment, Supplier Credit Note, Supplier Debit Note, Supplier Refund, and Supplier Contra listings.
+- Print Supplier Document (InterBank GIRO) Listing can be used to see all the supplier transactions that you have entered into this system
+- You can see Supplier Invoice, Supplier Payment, Supplier Credit Note, Supplier Debit Note, Supplier Refund, and Supplier Contra listings.
 - You can use Document Listing to batch print and batch email your Supplier's documents.
 - At the bottom of the screen, you can see the payment details for each document
 
@@ -208,7 +208,7 @@ A statement of account, also known as an account statement or Supplier Statement
 
 ![des-print-suppier-analysis-by-document-step3](../../../static/img/usage/supplier/supplier-reports-images/print-suppier-analysis-by-document-step3.png)
 
-## Print Supplier Purchase and Payment Analysis
+## Print Supplier Bills and Payment Analysis
 
 - We use this report to see the monthly payment and purchases for your supplier.
 

@@ -24,9 +24,9 @@ tags: ["SQL Account", "Usage"]
 
 ![1](../../../static/img/usage/general-ledger/glreport/ledge-rpt.png)
 
-## Print Balance Sheet
+## Print Balance Sheet Statement
 
-1. Go to **GL** > **Print Balance Sheet** > Select your date
+1. Go to **GL** > **Print Balance Sheet Statement** > Select your date
 
 2. Choose your preferred format
 
@@ -54,7 +54,7 @@ tags: ["SQL Account", "Usage"]
 
 ## Print Profit & Loss Statement
 
-1. Go to **GL** > **Print Profit and Loss Statement** > Select your date
+1. Go to **GL** > **Print Profit & Loss Statement** > Select your date
 
 2. Choose your preferred format
 

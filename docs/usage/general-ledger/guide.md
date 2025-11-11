@@ -6,7 +6,7 @@ slug: /usage/general-ledger/guide
 tags: ["SQL Account", "Usage"]
 ---
 
-## Maintain Chart of Account
+## Maintain Account
 
 1. Creating a New Account
     1. Select **GL** | **Maintain Account** | Select category (e.g., Fixed Assets) | **New**
@@ -87,7 +87,7 @@ Local Balance is now RM 57,350 and you wish to revalue it using a monthly exchan
 
 ![10](../../../static/img/usage/general-ledger/glguide/f-bank-adj-entry-step7.png)
 
-## Opening Balance General Ledger
+## Maintain Opening Balance
 
 1. **GL** > **Maintain Opening Balance**
 2. Highlight the account that you wish to key in as opening balance and click **Edit**.
@@ -104,7 +104,7 @@ Local Balance is now RM 57,350 and you wish to revalue it using a monthly exchan
 
 ![12](../../../static/img/usage/general-ledger/glguide/bank-recon.png)
 
-## Stock Value
+## Maintain Stock Value
 
 1. **GL** > **Maintain Stock Value** > **Edit**
 2. Set the **Year**

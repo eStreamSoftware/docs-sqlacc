@@ -184,7 +184,7 @@ Opening Bank Deposit can be done when you are banking in 2 or more cheques at a 
 
     ![15](../../../static/img/usage/customer/customerFaq/open-bank-deposit/15.png)
 
-### Opening Bank Deposit at cash book entry
+### Opening Bank Deposit at Cash Book Entry
 
 “Opening Bank Deposit” can also be done at cash book entry. Firstly, point to **“GL”** and select **“Cash Book Entry”**.
 
@@ -213,7 +213,7 @@ Then, right click at the blank space beside Payment Voucher, you will see **“O
 
 1. First step to know the customer for currency RM by default is with “----“ sign.
 
-    **Tools > Maintain Customer**
+    **Customer > Maintain Customer**
 
     ![1](../../../static/img/usage/customer/customerFaq/payment-guide/1.png)
 
@@ -404,7 +404,7 @@ Post-dated cheque is a cheque written by the drawer (payer) for a date in the fu
 
     ![8](../../../static/img/usage/customer/customerFaq/post-dated-bounced-cheque/8.png)
 
-8. To view the listing of post-dated cheques. Go to **Customer Reports** and select **Post Dated Cheque Listing**.
+8. To view the listing of post-dated cheques. Go to **Customer Reports** and select **Print Customer Post Dated Cheque Listing**.
 
     ![9](../../../static/img/usage/customer/customerFaq/post-dated-bounced-cheque/9.png)
 

@@ -94,7 +94,7 @@ tags: ["SQL Account", "Usage", "Customer"]
 
 ![previewCustBalance](../../../static/img/usage/customer/customerReport/preview-cust-balance.png)
 
-### Customer Due Document Listing
+## Print Customer Due Document Listing
 
 Customer Due Document allows you to print reminder letters for customers with outstanding amounts.
 
@@ -122,7 +122,7 @@ Customer Due Document allows you to print reminder letters for customers with ou
 
     This report is used to analyse all customer documents. You can check total Invoice, Credit Note, Debit Note, Payment and the rest of the document amount.
 
-8. **Customer** > **Customer Analysis By Document**
+8. **Customer** > **Print Customer Analysis By Document**
 
 9. Filter by Document Date and any others optional field to display.
 

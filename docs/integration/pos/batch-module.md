@@ -1,5 +1,6 @@
 ---
 title: Batch Number Module
+sidebar_position: 2
 description: A guide to Batch Number Module for SQL POS System
 slug: /integration/pos/batch-module
 tags: ["SQL Account", "POS"]
@@ -26,25 +27,25 @@ This feature is very useful and widely explore for alternative usage like:
 
 2. Fill in the batch details:
 
-    ![1](../../../static/img/pos/batch-module/1.png)
+    ![1](../../../static/img/integration/pos/batch-module/batch-module.png)
 
-    ![2](../../../static/img/pos/batch-module/2.png)
+    ![2](../../../static/img/integration/pos/batch-module/batch-module1.png)
 
 3. Assign the stock item to the batch number.
 
-    ![3](../../../static/img/pos/batch-module/3.png)
+    ![3](../../../static/img/integration/pos/batch-module/batch-module2.png)
 
 4. In SQL Pos -> Setting -> System -> Batch No. Module -> Tick **YES**
 
-    ![4](../../../static/img/pos/batch-module/4.png)
+    ![4](../../../static/img/integration/pos/batch-module/batch-module3.png)
 
 5. In SQL Pos, when you select the item, it will prompt out to ask you to choose on the batch for this item.
 
-    ![5](../../../static/img/pos/batch-module/5.png)
+    ![5](../../../static/img/integration/pos/batch-module/batch-module4.png)
 
 6. When you print out the receipt, the receipt will show out your batch number.
     The description for batch that prints out in receipt will follow the setting that you had done.
 
-    ![6](../../../static/img/pos/batch-module/6.png)
+    ![6](../../../static/img/integration/pos/batch-module/batch-module5.png)
 
-    ![7](../../../static/img/pos/batch-module/7.png)
+    ![7](../../../static/img/integration/pos/batch-module/batch-module6.png)

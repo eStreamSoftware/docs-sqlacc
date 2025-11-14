@@ -8,7 +8,7 @@ tags: ["SQL Account","Tax Code"]
 
 Access list of Tax Codes in SQL Account by browsing **Tools > Maintain Tax**.
 
-![205](../../static/img/getting-started/user-guide/205.png)
+![205](../../static/img/miscellaneous/tax-code/205.png)
 
 ### Default SST Account
 

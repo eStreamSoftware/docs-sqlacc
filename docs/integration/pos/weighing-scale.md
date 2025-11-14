@@ -1,11 +1,12 @@
 ---
 title: POS - Weighing Scale
+sidebar_position: 10
 description: A guide to setup Weighing Scale for SQL POS System
 slug: /integration/pos/weighing-scale
 tags: ["SQL Account", "POS"]
 ---
 
-## 1. Maintain Stock Item
+## Maintain Stock Item
 
 - Item Code must be 7 Character(Cannot more and less)
 - First 2 Characters of Item Code must Fix, mostly use 88 or 99
@@ -21,23 +22,23 @@ tags: ["SQL Account", "POS"]
 
     4. Save
 
-![1](../../../static/img/pos/weighing-scale/1.png)
+![1](../../../static/img/integration/pos/weighing-scale/maintain-stock-item.png)
 
 :::note
 You are recommend to create all the item code first
 :::
 
-## 2. IN SQL POS Setting
+## IN SQL POS Setting
 
 1. Others Tab
 
 2. Scale Barcode Set to Price
 
-    ![2](../../../static/img/pos/weighing-scale/2.png)
+    ![2](../../../static/img/integration/pos/weighing-scale/sql-pos-setting.png)
 
 3. Click on Fill
 
-    ![3](../../../static/img/pos/weighing-scale/3.png)
+    ![3](../../../static/img/integration/pos/weighing-scale/sql-pos-setting1.png)
 
 4. Fill Scale Items
 
@@ -47,15 +48,15 @@ You are recommend to create all the item code first
     - Ticked Price Revert Quantity
     - Click on button Fill items which are Match
 
-    ![4](../../../static/img/pos/weighing-scale/4.png)
+    ![4](../../../static/img/integration/pos/weighing-scale/sql-pos-setting2.png)
 
 5. Click on Yes
 
-    ![5](../../../static/img/pos/weighing-scale/5.png)
+    ![5](../../../static/img/integration/pos/weighing-scale/sql-pos-setting3.png)
 
 6. Click on OK
 
-    ![6](../../../static/img/pos/weighing-scale/6.png)
+    ![6](../../../static/img/integration/pos/weighing-scale/sql-pos-setting4.png)
 
 7. Close & Save the Setting
 
@@ -65,23 +66,23 @@ You are recommend to create all the item code first
 
     In Stock Item, for the items have fulfil the criteria will auto ticked with Price Revert Quantity and Barcode with Price.
 
-    ![7](../../../static/img/pos/weighing-scale/7.png)
+    ![7](../../../static/img/integration/pos/weighing-scale/sql-pos-setting5.png)
 
-## 3. Step to update Price to weighing scale
+## Step to update Price to weighing scale
 
 1. Stock Item | Right click on More | Select Export to Scale Machine
 
-    ![8](../../../static/img/pos/weighing-scale/8.png)
+    ![8](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale.png)
 
 2. Here is the model able to support by SQL POS
 
-    ![9](../../../static/img/pos/weighing-scale/9.png)
+    ![9](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale1.png)
 
 3. Select Model | Tick Assign Export FileName
 
     - Assign Export FileName = C:\ITUnicode\PLU.TXP
 
-    ![10](../../../static/img/pos/weighing-scale/10.png)
+    ![10](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale2.png)
 
 4. Click Button Pooling.
 
@@ -89,16 +90,16 @@ You are recommend to create all the item code first
 
 5. System will auto open RLS1000 Program
 
-    ![11](../../../static/img/pos/weighing-scale/11.png)
+    ![11](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale3.png)
 
 6. File | FSetting
 
-    ![12](../../../static/img/pos/weighing-scale/12.png)
+    ![12](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale4.png)
 
     - Set Exported folder C:\ITUnicode\
     - Directory of Work : C:\ITUnicode\
 
-    ![17](../../../static/img/pos/weighing-scale/17.png)
+    ![17](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale5.png)
 
 7. Click on Confirm
 
@@ -115,7 +116,7 @@ You are recommend to create all the item code first
 
     - Plu_file = PLU.TXP
 
-    ![13](../../../static/img/pos/weighing-scale/13.png)
+    ![13](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale6.png)
 
     :::note
     Above example is 2 weighing scale
@@ -123,15 +124,15 @@ You are recommend to create all the item code first
 
 9. Click Green arrow button to Pooling latest selling price into scale Machine.
 
-    ![14](../../../static/img/pos/weighing-scale/14.png)
+    ![14](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale7.png)
 
 10. Click confirm.
 
-    ![15](../../../static/img/pos/weighing-scale/15.png)
+    ![15](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale8.png)
 
 11. Status mention OK mean is connected
 
-    ![16](../../../static/img/pos/weighing-scale/16.png)
+    ![16](../../../static/img/integration/pos/weighing-scale/update-price-weighing-scale9.png)
 
     :::note
     **After setting for first time, when there is the price to update to weighing scale, you just have to refer to Step 3.1 & 3.4 & 3.9 & 3.10**

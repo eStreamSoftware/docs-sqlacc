@@ -1,0 +1,8 @@
+{
+    "label": "Stock (Inventory)",
+    "position": 7,
+    "link": {
+        "type": "generated-index",
+        "description": "Stock usage guide"
+    }
+}

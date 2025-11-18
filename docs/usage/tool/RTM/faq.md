@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: RTM FAQ
+title: FAQ
 description: Frequently Asked Questions in report builder
 slug: /usage/tools/rtm/faq
 tags: ["SQL Account", "Usage", "Tools"]

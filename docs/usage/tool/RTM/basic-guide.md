@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: RTM Guide
+title: Guide
 description: How to do custom reports in report builder
 slug: /usage/tools/rtm/guide
 tags: ["SQL Account", "Usage", "Tools"]

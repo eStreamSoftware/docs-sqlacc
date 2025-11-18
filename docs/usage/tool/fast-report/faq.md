@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: FR3 FAQ
+title: FAQ
 description: Frequently Asked Questions in fast report
 slug: /usage/tools/fast-report/faq
 tags: ["SQL Account", "Usage", "Tools"]

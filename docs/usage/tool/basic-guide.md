@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Tools Guide
+title: Guide
 description: Components and Functions in Tools
 slug: /usage/tools/guide
 tags: ["SQL Account", "Usage", "Tools"]

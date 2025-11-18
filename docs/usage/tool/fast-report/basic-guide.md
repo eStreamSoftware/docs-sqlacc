@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: FR3 Guide
+title: Guide
 description: How to do custom reports in fast report
 slug: /usage/tools/fast-report/guide
 tags: ["SQL Account", "Usage", "Tools"]

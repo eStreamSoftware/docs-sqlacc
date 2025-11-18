@@ -5,13 +5,19 @@ slug: /usage/customisation/sqlControlCenter
 tags: ["SQL Account"]
 ---
 
+:::warning
+
+Any DIY Scripts in this page should be used in SQL Accounting x86 (32bit) instead of x64 (64bit) version
+
+:::
+
 ## Shipping/Forwarding (S/F)
 
-This Customisation provides simple calculations for shipping/forwarding companies.
+This Customisation is the simple calculation for the Shipping/Forwarding company.
 
 [Sample Database](https://download.sql.com.my/customer/Fairy/ACC%20BK-%5bShipping%5d.zip)
 
-[YouTube video](https://www.youtube.com/watch?v=LPoz1h3hyvQ)
+[Video](https://www.youtube.com/watch?v=LPoz1h3hyvQ)
 
 ### History New/Updates/Changes (S/F)
 
@@ -20,34 +26,34 @@ This Customisation provides simple calculations for shipping/forwarding companie
 * Use Maintain Currency for Currency Symbol & Currency Rate for detail UDF
 05 Feb 2016
 
-* Fixed TaxInvoice-Fowarding2 batch print: tax summary mixed together.
-* Fixed Quotation & Debit Note OnBeforeSave script sequence not correct.
+* Fixed TaxInvoice-Fowarding2 batch print Tax summary mixing together
+* Fixed Quotation & Debit Note OnBeforeSave Script Seq not correct.
 04 Jan 2016
 
-* Fixed TaxInvoice-Fowarding2 title missing the word "Tax".
+* Fixed TaxInvoice-Fowarding2 Title missing Tax word
 
 07 Dec 2015
 
-Fixed Sales Local - Invoice Listing - Level 1: Ent column showed empty values when 0.
+Fixed Sales Local - Invoice Listing - Level 1 Ent column some shown empty when 0.
 02 Nov 2015
 
-* Fixed sequence error.
-* Fixed TaxInvoice-Fowarding2 format: showed 'A' instead of the tax rate.
+* Fix Seq Error
+* Fix TaxInvoice-Fowarding2 format show A instead Tax Rate
 
 20 Oct 2015
 
-* Fixed Transfer document TaxAmt calculation when using UDF_ExRate \<> 1.
-* Fixed partial transfer quantity TaxAmt calculation.
+* Fix Transfer Document TaxAmt calculate incorrectly if using UDF_ExRate \<> 1
+* Fix Partial Transfer Qty TaxAmt calculate incorrectly
 
 19 Oct 2015
 
-* Fixed upgrade to Version 721 error.
-* Fixed Transfer document TaxAmt calculation.
+* Fix upgrade to Version 721 error.
+* Fix Transfer Document TaxAmt calculate incorrectly
 
 14 Oct 2015
 
-* Fixed 0Sales Local - Invoice Listing - Level 1: margin not correct.
-* Converted DocRef3 to UDF_EntCost for 0Sales Local - Invoice Listing - Level 1 Ent column.
+* Fix 0Sales Local - Invoice Listing - Level 1 margin not correct
+* Convert DocRef3 to UDF_EntCost for 0Sales Local - Invoice Listing - Level 1 Ent column
 
 ### Settings (S/F)
 
@@ -55,7 +61,7 @@ Fixed Sales Local - Invoice Listing - Level 1: Ent column showed empty values wh
 
 *Menu: Tools | Maintain User...*
 
-Untick the "Access Right for Prompt Replace Unit Price Dialog" under the Group: Sales.
+Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : Sales
 
 ### Steps (S/F)
 
@@ -81,12 +87,12 @@ Untick the "Access Right for Prompt Replace Unit Price Dialog" under the Group: 
 
 ![printProfit&LossByDoc](../../../static/img/miscellaneous/sqlControlCenter/printProfit&LossByDoc.png)
 
-1. Select Invoice Listing and date range.
-2. Tick 'Group by Customer Code'.
-3. Click Apply.
-4. Press F6 to preview.
-5. Select the report named '0Sales Local - Invoice Listing - Level 1'.
-6. Click OK.
+1. Select Invoice Listing & Range Date
+2. Tick Group by Customer Code
+3. Click Apply
+4. Press F6 to preview
+5. Select report name 0Sales Local - Invoice Listing - Level 1
+6. Click Ok button
 
 ## Bonus Point System (BPS)
 
@@ -114,17 +120,17 @@ This Customisation is to calculate/maintain the Point/Bonus
 
 25 Dec 2015
 
-* Enabled GST support.
-* Added UnClaim Voucher Listing report.
-* Added Bonus-Sales Invoice 7 (GST 2) report.
-* Fixed Bonus Statement currency symbol issue.
-* Removed auto 5-cent rounding script.
+* Enable Support GST Version
+* Add UnClaim Voucher Listing report
+* Add Bonus-Sales Invoice 7 (GST 2) report
+* Fix Bonus Statement show $ symbol
+* Remove auto 5 cents rounding script
 
-### Modules required (BPS)
+### Modules Required (BPS)
 
 * DIY Field
 * DIY Script
-* Invoice → DO
+* Invoice ----> DO
 * Multiple Document Number Set
 
 ### Settings (BPS)
@@ -133,7 +139,7 @@ This Customisation is to calculate/maintain the Point/Bonus
 
 *Menu: Tools | Maintain User...*
 
-Untick the "Access Right for Prompt Replace Unit Price Dialog" under the Group: Sales.
+Untick the Access Right for Prompt Replace Unit Price Dialog under the Group : Sales
 
 #### Maintain Item
 
@@ -141,7 +147,7 @@ Untick the "Access Right for Prompt Replace Unit Price Dialog" under the Group: 
 
 ![stockItemClaimRate](../../../static/img/miscellaneous/sqlControlCenter/stockItemClaimRate.jpg)
 
-1. Create an item code for the voucher (example: Voucher — used for claims, e.g. 1 point = RM0.01).
+1. Item Code to be create - Voucher => For Claim use (eg 1 point = RM 0.01)
 
     ![stockItemVoucherRate](../../../static/img/miscellaneous/sqlControlCenter/stockItemVoucherRate.jpg)
 
@@ -156,7 +162,7 @@ Untick the "Access Right for Prompt Replace Unit Price Dialog" under the Group: 
 | **UDF Field**      | **Description**                                                                 |
 |---------------------|---------------------------------------------------------------------------------|
 | **UDF_VoucherNo**  | Enter the Voucher Number (Extra DO DocNo). Amount will be based on the Extra DO DocAmt. Not applicable for Sales Credit Note. |
-| **UDF_VoucherRate**| From Maintain Item. The user can still adjust the rate if needed.               |
+| **UDF_VoucherRate**| From maintain item. User can still adjust the rate if needed.                    |
 | **UDF_UseQty**     | **Tick** → `UDF_Voucher = UDF_VoucherRate * Qty`. **UnTick** → `UDF_Voucher = UDF_VoucherRate * Amount`. |
 | **UDF_Voucher**    | `Total current item point`.                                                      |
 
@@ -180,7 +186,7 @@ Untick the "Access Right for Prompt Replace Unit Price Dialog" under the Group: 
 
 ***Sales Invoice***
 
-Below is an example of Sales Invoice with voucher claim.
+Below is example in Sales Invoice with Voucher Claim
 *Menu: Sales | Invoice...*
 
 ![utdPoint](../../../static/img/miscellaneous/sqlControlCenter/utdPoint.jpg)
@@ -403,7 +409,7 @@ Tick the Lock Project option. Tick IsSearchProjectCode to allow searching by pro
 
 ![lockProject](../../../static/img/miscellaneous/sqlControlCenter/lockProject.jpg)
 
-## Assignment : To Create the Unit Price Calculation
+## Assignment 1 : To Create the Unit Price Calculation
 
 * Create the DIY field such as UDF_mUnitPrice in Sales documents (eg. sales invoice)
 * Purpose: User will key-in the base unit price to convert into new unit price based on the UOM rate in Maintain Stock Item.
@@ -488,7 +494,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
 
 ![input-values-for-udf](../../../static/img/miscellaneous/sqlControlCenter/input-values-for-udf.png)
 
-## Assignment : How to get the data from Master Table into entry form?
+## Assignment 2 : How to get the data from Master Table into entry form?
 
 * Create the DIY fields such as UDF_PCS, UDF_CTN in Maintain Stock Item; and
 * UDF_Price in Sales Documents (eg. sales invoice).
@@ -590,6 +596,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
         ```bash
         var FComServer, lBizObj : Variant;
             cdsData : TClientDataSet;
+            D : TDataSource;
 
         function ComServer: Variant;
         begin
@@ -605,7 +612,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
           FComServer := null;
           cdsData    := TClientDataSet.Create(nil); // Create & preparing Component
           try
-            lCode := Dataset.FindField('ItemCode').AsString;
+            lCode := D.Dataset.FindField('ItemCode').AsString;
             lSQL  := Format('SELECT UDF_PCS, UDF_CTN FROM ST_ITEM WHERE Code=%s',[QuotedStr(lCode)]);
 
             cdsData.Data := ComServer.DBManager.Execute(lSQL);
@@ -616,30 +623,34 @@ Avoid update the same existing field name Unit Price. You have to create differe
         end;
 
         begin
+          D := TDataSource(Self.FindComponent('dsDocDetail'));
+
           if SameText(EditingField, 'ItemCode') or
             SameText(EditingField, 'UOM') or
             SameText(EditingField, 'UDF_Rate') then begin
             try
               GetStockInfo;
-              if Dataset.FindField('UOM').AsString = 'PCS' then
-                Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_PCS').AsFloat else
-              if Dataset.FindField('UOM').AsString = 'CTN' then
-                Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_CTN').AsFloat else
-                Dataset.FindField('UDF_Price').AsFloat := 1;
+              if D.Dataset.FindField('UOM').AsString = 'PCS' then
+                D.Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_PCS').AsFloat else
+              if D.Dataset.FindField('UOM').AsString = 'CTN' then
+                D.Dataset.FindField('UDF_Price').AsFloat := cdsData.FindField('UDF_CTN').AsFloat else
+                D.Dataset.FindField('UDF_Price').AsFloat := 1;
 
-              Dataset.FindField('UnitPrice').AsFloat := Dataset.FindField('UDF_Price').AsFloat *
-                                                        Dataset.FindField('UDF_Rate').AsFloat;
+              Dataset.FindField('UnitPrice').AsFloat := D.Dataset.FindField('UDF_Price').AsFloat *
+                                                        D.Dataset.FindField('UDF_Rate').AsFloat;
             finally
               cdsData.Free;
             end;
           end;
         end.
-       ```
+        ```
 
 10. Click Save button.
 
     :::warning
     Avoid update the same existing field name Unit Price and "Rate". You have to create different name ie. UDF_Price and UDF_Rate.
+
+    Remember to Register the "Automation Server Registration" in Tools -> Options -> General -> Register.
     :::
 
 ### Result Test (Master Data)
@@ -667,7 +678,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
 
     ![valuesfor-udfprice-udfrate](../../../static/img/miscellaneous/sqlControlCenter/valuesfor-udfprice-udfrate.png)
 
-## Assignment : How to get Outstanding IV amount & show below the Browse button at Sales Invoice?
+## Assignment 3 : How to get Outstanding IV amount & show below the Browse button at Sales Invoice?
 
 * This assignment no need to create any DIY fields
 * Purpose is to display the total outstanding balance for the customer selected at the Invoice
@@ -762,7 +773,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
               Parent     := TWinControl(C);
               Width      := 66;
               Left       := 6;
-              Top        := 200;
+              Top        := 350;
               Caption    := 'Outstanding';
               Font.Color := clBlue;
               Font.Style := [fsBold];
@@ -771,7 +782,7 @@ Avoid update the same existing field name Unit Price. You have to create differe
               Parent     := TWinControl(C);
               Width      := 66;
               Left       := 6;
-              Top        := 215;
+              Top        := 365;
               Caption    := 'DocNo';
               Font.Color := clBlue;
               Font.Style := [fsBold];

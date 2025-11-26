@@ -1,6 +1,6 @@
 {
     "label": "E-Invoice (MyInvois)",
-    "position": 11,
+    "position": 14,
     "link": {
         "type": "generated-index",
         "description": "E-Invoice onboarding and usage guide"

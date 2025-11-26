@@ -11,7 +11,7 @@ slug: /
 
 SQL Account is a centralize system to assist the business (or departments) to record and process daily documents from sales, purchase, stock, and bank. It is also a tool for SST reporting.
 
-![1](../static/img/getting-started/user-guide/1.png)
+![1](/img/introduction/1.png)
 
 1. **General Ledger**, a general ledger accounting where records all transactions posted from various journal (eg. general, sales, purchase, bank), an entry for general journal and expenses payment (eg. sales person claims, water and electricity expenses). Bank reconciliation, cash flow statement and financial reports are available in this module.
 

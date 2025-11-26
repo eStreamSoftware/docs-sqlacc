@@ -1,0 +1,8 @@
+{
+    "label": "General Ledger",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "description": "SQL Account GL Guide"
+    }
+}

@@ -40,7 +40,7 @@ For more details & updates, please click [here](https://wiki.sql.com.my/wiki/SQL
    5. Click Export > Select the location where you want to export > Enter the Export File Name > Press Save > Export the Data
    6. Done
 
-   ![export-succuess](../../static/img/miscellaneous/import-export-guide/export-success.png)
+   ![export-success](../../static/img/miscellaneous/import-export-guide/export-success.png)
 
 ## Import
 
@@ -131,3 +131,75 @@ If you encounter this error message:
 
 **Solution:**
 Check if you have any DIY Fields in the source database and ensure the destination database has the same DIY Fields configured.
+
+## FAQ
+
+### Why the SO or PH Deposit is not Imported even the XML had the information?
+
+It because the D_DocNo field can't set. User had to export the OR/PV from Customer Payment/Supplier Payment
+
+### Why AR_PM, AR_CN, AP_SP & AP_SC can't don't had the Replace Action?
+
+It due to
+
+- Gain Loss
+- Refund knock off can't be replace
+- GST-03 Item 12 Net Gain in Forex
+
+### Why after upgrade SQL Acc Version 742 & above when import GL_PV, GL_OR & GL_JE prompt Access Violation
+
+It due to from Version 742 & above the Detail field TAXREF is change to GSTNO;
+
+### I had 2 or more database/Company to import but how can I avoid import wrong zip file?
+
+- Using Version 5.6.0.21 you can add in the zip file with Profile.txt with content "CompanyName";"Remark";
+eg "Testing Company";"2017"; in the Profile.txt
+- This function unavailable for Fast XML Import function.
+- Remember to set to 1 in Tools | Options | CheckProfile
+- This function is only Alert user if not match & user still can by ignore the Alert & continue import
+
+### In my zip file consist of xml file which filename had follow the requirement but why still empty when Get file?
+
+Make sure the xml file Attributes for the following setting is selected (Right Click | Properties | General | Advanced...)
+
+- File is ready for archiving
+- Allow this file to have contents indexed in addition to file properties
+
+### Do the XML import Description3 support multi line?
+
+Yes but you need to adjust the Field SUBTYPE from Binary to Text
+
+Original
+
+```pascal
+...
+<FIELD attrname="DESCRIPTION3" fieldtype="bin.hex" SUBTYPE="Binary" WIDTH="8"/>
+...
+```
+
+Original
+
+```pascal
+...
+<FIELD attrname="DESCRIPTION3" fieldtype="bin.hex" SUBTYPE="Text"/>
+...
+```
+
+And Data input as below
+
+```pascal
+...
+      <sdsDocDetail>
+        <ROWsdsDocDetail DTLKEY="-1" DOCKEY="-1" SEQ="1" ITEMCODE="1000679600" LOCATION="----" BATCH="" PROJECT="----" DESCRIPTION="Batch for Diamond" DESCRIPTION3="Line 1
+#Line 2
+Line 3" QTY="3.0000" UOM="CON" RATE="1.0000" SQTY="3.0000" SUOMQTY="0.0000" UNITPRICE="7.90000000" DELIVERYDATE="20190425" DISC="" TAX="" TARIFF="" TAXAMT="0.00" LOCALTAXAMT="0.00" TAXINCLUSIVE="0" AMOUNT="1747.52" LOCALAMOUNT="1747.52" TAXABLEAMT="1747.52" ACCOUNT="500-000" PRINTABLE="T" TRANSFERABLE="T" INITIALPURCHASECOST="0.00" CHANGED="F">
+...
+```
+
+Result
+
+```pascal
+Line 1
+#Line 2
+Line 3
+```

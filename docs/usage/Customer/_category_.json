@@ -1,0 +1,8 @@
+{
+    "label": "Customer",
+    "position": 4,
+    "link": {
+        "type": "generated-index",
+        "description": "Customer workflow"
+    }
+}

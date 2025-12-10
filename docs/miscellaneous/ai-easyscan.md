@@ -3,7 +3,7 @@ title: AI EasyScan
 description: A guide about AI EasyScan for SQL Account
 slug: /miscellaneous/ai-easyscan
 tags: ["SQL Account"]
-form_name: TfmAIEasyScan
+form_name: TfmWhatsappScan
 ---
 
 SQL AI EasyScan feature enables users to manage transactions more efficiently by uploading invoices, bills, or receipts through WhatsApp. It performs instant data entry using AI-powered auto extraction, which supports images, documents and text. Users can easily organize and attach these files to the following document types within SQL Account.

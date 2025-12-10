@@ -30,6 +30,11 @@ dataEntryList = {[
   "text": "Read MyInvois TaxPayer QR Code into Customer Master",
   "link": "../e-invoice/read-myinvois-qr",
   "videoId": "dAaucBNuD18"
+},
+{
+  "text": "LHDN E-Invoice Mandatory Fields Setup in SQL",
+  "link": "../e-invoice/lhdn-e-invoice-mandatory-fields",
+  "videoId": "3HRn76nLFSA"
 }
 ]}
 />

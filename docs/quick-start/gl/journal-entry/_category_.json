@@ -1,6 +1,6 @@
 {
     "label": "Journal Entry",
-    "position": 2,
+    "position": 3,
     "link": {
         "type": "doc",
         "id": "quick-start/gl/journal-entry/intro"

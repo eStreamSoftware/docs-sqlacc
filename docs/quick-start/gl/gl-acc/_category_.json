@@ -1,9 +1,9 @@
 {
-    "label": "General",
+    "label": "GL Account",
     "position": 1,
     "link": {
         "type": "doc",
-        "id": "quick-start/general/intro"
+        "id": "quick-start/gl/gl-acc/intro"
     },
     "collapsible": false
 }

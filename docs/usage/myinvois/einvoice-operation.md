@@ -229,8 +229,8 @@ Below show the MyInvois Transaction form with 3 tabs.
 ![myinvois-trans-overview](../../../static/img/myinvois/einvoice/myinvois-trans-overview.png)
 
 1. All - List all MyInvois documents.
-2. Submitted - List MyInvois documents that you submitted.
-3. Received - List MyInvois documents that you received.
+2. Submitted - E-Invoices submitted to your customers / suppliers
+3. Received - E-Invoices received from your customers / suppliers
 
 MyInvois Transaction feature:
 

@@ -96,9 +96,14 @@ dataEntryList = {[
   "videoId": "3HRn76nLFSA"
 },
 {
-  "text": "How to Register E-Invoice on LHDN Mytax Myinvois Portal",
+  "text": "How to Register E-Invoice on LHDN MyTax MyInvois Portal",
   "link": "./e-invoice/how-to-register-e-invoice-on-lhdn-mytax-myinvois-portal",
   "videoId": "JtZqHKzVj24"
+},
+{
+  "text": "MyInvois Transaction",
+  "link": "./cloud/how-to-use-myinvois-transaction",
+  "videoId": "X3vDnm51y5k"
 }
 ]}
 />

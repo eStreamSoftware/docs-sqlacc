@@ -1,0 +1,9 @@
+{
+    "label": "MyInvois Transaction",
+    "position": 1,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/cloud/myinvois-transaction/intro"
+    },
+    "collapsible": false
+}

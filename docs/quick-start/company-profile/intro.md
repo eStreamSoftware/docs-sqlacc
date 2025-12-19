@@ -25,4 +25,17 @@ englishList = {[
   "videoId": "JtZqHKzVj24"
 }
 ]}
+
+chineseList = {[
+{
+  "text": "LHDN电子发票必填资料",
+  "link": "./e-invoice/zh/lhdn-e-invoice-mandatory-fields",
+  "videoId": "OYgWwOi1jmY"
+},
+{
+  "text": "如何在 LHDN Mytax MyInvois 网站上注册电子发票",
+  "link": "./e-invoice/zh/how-to-register-e-invoice-on-lhdn-mytax-myinvois-portal",
+  "videoId": "7ghTNU0eDgA"
+}
+]}
 />

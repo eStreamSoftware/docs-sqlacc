@@ -25,4 +25,17 @@ englishList = {[
   "videoId": "9ur8nNSI15o"
 }
 ]}
+
+chineseList = {[
+{
+  "text": "通过维护客户信息查找税号",
+  "link": "../e-invoice/zh/how-to-tin-lookup-via-maintain-customer",
+  "videoId": "KHazcF1ZoLY"
+},
+{
+  "text": "通过维护客户创建信息请求",
+  "link": "../e-invoice/zh/how-to-request-customer-info",
+  "videoId": "CFJFuxtwpow"
+}
+]}
 />

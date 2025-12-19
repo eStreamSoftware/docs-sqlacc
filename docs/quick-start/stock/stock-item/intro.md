@@ -25,4 +25,17 @@ englishList = {[
   "videoId": "3HRn76nLFSA"
 }
 ]}
+
+chineseList = {[
+{
+  "text": "批量更新库存物料分类代码",
+  "link": "../e-invoice/zh/batch-update-classification-code",
+  "videoId": "DMmzfeUQqFc"
+},
+{
+  "text": "LHDN电子发票必填资料",
+  "link": "../e-invoice/zh/lhdn-e-invoice-mandatory-fields",
+  "videoId": "OYgWwOi1jmY"
+}
+]}
 />

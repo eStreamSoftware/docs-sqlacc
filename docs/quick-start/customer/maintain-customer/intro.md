@@ -35,4 +35,27 @@ englishList = {[
   "videoId": "3HRn76nLFSA"
 }
 ]}
+
+chineseList = {[
+{
+  "text": "通过维护客户信息查找税号",
+  "link": "../e-invoice/zh/how-to-tin-lookup-via-maintain-customer",
+  "videoId": "KHazcF1ZoLY"
+},
+{
+  "text": "通过维护客户创建信息请求",
+  "link": "../e-invoice/zh/how-to-request-customer-info",
+  "videoId": "CFJFuxtwpow"
+},
+{
+  "text": "读取MyInvois纳税人二维码并更新客户资料",
+  "link": "../e-invoice/zh/read-myinvois-qr",
+  "videoId": "KPnPifzA7bM"
+},
+{
+  "text": "LHDN电子发票必填资料",
+  "link": "../e-invoice/zh/lhdn-e-invoice-mandatory-fields",
+  "videoId": "OYgWwOi1jmY"
+}
+]}
 />

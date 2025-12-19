@@ -50,4 +50,42 @@ englishList = {[
   "videoId": "AKLkzWVApLY"
 }
 ]}
+
+chineseList = {[
+{
+  "text": "如何提交电子发票",
+  "link": "../e-invoice/zh/how-to-submit-e-invoice",
+  "videoId": "G4kLBGzNGjw"
+},
+{
+  "text": "合并电子发票",
+  "link": "../e-invoice/zh/how-to-consolidate-e-invoice",
+  "videoId": "edxORZrOjS4"
+},
+{
+  "text": "如何取消已验证的电子发票",
+  "link": "../e-invoice/zh/how-to-cancel-e-invoice",
+  "videoId": "_brttd-zM_s"
+},
+{
+  "text": "批量提交电子发票",
+  "link": "../e-invoice/zh/how-to-batch-submit-e-invoice",
+  "videoId": "9jxcHxLhw9o"
+},
+{
+  "text": "将PDF分享至SQL买方",
+  "link": "../e-invoice/zh/how-to-share-pdf-to-sql-buyer",
+  "videoId": "A7sDCUjIArw"
+},
+{
+  "text": "拒绝已验证的电子发票",
+  "link": "../e-invoice/zh/how-to-reject-validated-e-invoice",
+  "videoId": "yrXt0Op-sI4"
+},
+{
+  "text": "测试电子发票验证",
+  "link": "../e-invoice/zh/how-to-test-e-invoice-validation",
+  "videoId": "G_hrS8JWwDo"
+},
+]}
 />

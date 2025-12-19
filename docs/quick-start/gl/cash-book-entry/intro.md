@@ -30,4 +30,17 @@ englishList = {[
   "videoId": "AKLkzWVApLY"
 }
 ]}
+
+chineseList = {[
+{
+  "text": "通过付款凭证开具的自开电子发票",
+  "link": "../e-invoice/zh/how-to-self-billed-via-payment-voucher",
+  "videoId": "tA48mmbim4s"
+},
+{
+  "text": "测试电子发票验证",
+  "link": "../e-invoice/zh/how-to-test-e-invoice-validation",
+  "videoId": "G_hrS8JWwDo"
+}
+]}
 />

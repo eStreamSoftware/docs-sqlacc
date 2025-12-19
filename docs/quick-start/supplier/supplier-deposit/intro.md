@@ -8,7 +8,7 @@ form_name: TfmAPSI
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "How To Process Supplier Deposit",
   "link": "./how-to-process-supplier-deposit",

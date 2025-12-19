@@ -7,7 +7,7 @@ slug: /quick-start/e-invoice
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "MyInvois Request - Buyer/Customer self-service to key in TIN information",
   "link": "./e-invoice/how-to-activate-myinvois-request",

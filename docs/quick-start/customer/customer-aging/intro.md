@@ -8,7 +8,7 @@ form_name: TrfmARAging
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "How To Print Customer Aging Report",
   "link": "./how-to-print-customer-aging-report",

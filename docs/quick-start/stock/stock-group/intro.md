@@ -8,7 +8,7 @@ form_name: TfmSTGroup
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Maintain Stock Group",
   "link": "./maintain-stock-group",

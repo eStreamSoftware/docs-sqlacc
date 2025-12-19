@@ -8,7 +8,7 @@ form_name: TfmARCustomer
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Maintain Customer",
   "link": "./how-to-maintain-customer",

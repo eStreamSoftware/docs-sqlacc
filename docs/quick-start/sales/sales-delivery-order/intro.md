@@ -8,7 +8,7 @@ form_name: TfmSLDO
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Sales Delivery Order",
   "link": "./create-sales-delivery-order",

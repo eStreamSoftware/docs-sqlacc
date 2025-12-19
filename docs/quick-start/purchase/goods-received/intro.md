@@ -8,7 +8,7 @@ form_name: TfmPHGR
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Goods Received",
   "link": "./create-goods-received",

@@ -8,7 +8,7 @@ form_name: TfmSTIS
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Stock Issue",
   "link": "./create-stock-issue",

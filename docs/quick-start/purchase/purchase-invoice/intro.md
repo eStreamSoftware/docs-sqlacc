@@ -8,7 +8,7 @@ form_name: TfmPHPI
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Purchase Invoice",
   "link": "./create-purchase-invoice",

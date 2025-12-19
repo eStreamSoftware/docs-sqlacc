@@ -8,7 +8,7 @@ form_name: TfmPHSD
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Purchase Debit Note",
   "link": "./create-purchase-debit-note",

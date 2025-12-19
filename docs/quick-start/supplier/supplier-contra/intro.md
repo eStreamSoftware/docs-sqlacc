@@ -8,7 +8,7 @@ form_name: TfmAPST
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "How To Process Supplier Contra",
   "link": "./how-to-process-supplier-contra",

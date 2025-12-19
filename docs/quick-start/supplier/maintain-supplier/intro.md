@@ -8,7 +8,7 @@ form_name: TfmAPSupplier
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Maintain Supplier",
   "link": "./how-to-maintain-supplier",

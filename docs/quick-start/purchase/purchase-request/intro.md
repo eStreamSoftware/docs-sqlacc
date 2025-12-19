@@ -8,7 +8,7 @@ form_name: TfmPHPQ
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Purchase Request",
   "link": "./create-purchase-request",

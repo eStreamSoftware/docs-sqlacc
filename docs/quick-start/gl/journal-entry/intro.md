@@ -8,7 +8,7 @@ form_name: TfmGLJE
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Journal Entry",
   "link": "./create-journal-entry",

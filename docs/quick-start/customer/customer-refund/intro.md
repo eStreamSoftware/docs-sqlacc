@@ -8,7 +8,7 @@ form_name: TfmARCF
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "How To Process Customer Refund",
   "link": "./how-to-process-customer-refund",

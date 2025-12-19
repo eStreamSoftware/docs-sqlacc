@@ -8,7 +8,7 @@ form_name: TfmARPM
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Customer Payment in Local Currency",
   "link": "./create-customer-payment-in-local-currency",

@@ -8,7 +8,7 @@ form_name: TfmSLCC
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Sales Cancelled Note",
   "link": "./create-sales-cancelled-note",

@@ -8,7 +8,7 @@ form_name: TfmMyInvois_Trans
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "How To Use MyInvois Transaction",
   "link": "./how-to-use-myinvois-transaction",

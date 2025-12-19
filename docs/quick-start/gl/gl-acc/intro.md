@@ -8,7 +8,7 @@ form_name: TfmGLAccount
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Maintain Chart of Account",
   "link": "./maintain-chart-of-account",

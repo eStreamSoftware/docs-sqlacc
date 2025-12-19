@@ -8,7 +8,7 @@ form_name: TrfmARDueDocument
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "How To Print Customer Due Document",
   "link": "./how-to-print-customer-due-document",

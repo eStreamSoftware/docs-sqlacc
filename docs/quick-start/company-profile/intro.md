@@ -8,7 +8,7 @@ form_name: "{E0653098-62D0-4A0C-9CBB-B0FFA3AB497C}"
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Setup Company Profile",
   "link": "./company-profile/setup-company-profile",

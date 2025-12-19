@@ -32,8 +32,8 @@ const Card = ({ text, link, videoId }) => {
     return (
       <a href={link} className="toc-card toc-card-video">
         <div className="toc-card-thumbnail">
-          <img 
-            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`} 
+          <img
+            src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
           />
         </div>
         <div className="toc-card-content">
@@ -42,43 +42,43 @@ const Card = ({ text, link, videoId }) => {
       </a>
     );
   }
-  
+
   return (<a href={link} className="toc-card">{text}</a>);
 }
 
-export const TOC = ({ dataEntryList = [], advancedList = [] }) => {
+export const TOC = ({ englishList = [], chineseList = [] }) => {
   return (
     <div style={containerStyle}>
-      {/* Data Entry Section */}
-      {dataEntryList.length > 0 && (
+      {/* English Section */}
+      {englishList.length > 0 && (
         <div style={sectionStyle}>
           {/* Headers */}
-          <h2 style={headerStyle}>📘 Data Entry</h2>
+          <h2 style={headerStyle}>English</h2>
           {/* Content Grid */}
           <div style={gridStyle}>
-            {dataEntryList.map((entry, index) => (
-              <Card 
-                key={`data-entry-${index}`}
-                text={entry.text} 
-                link={entry.link} 
-                videoId={entry.videoId} 
+            {englishList.map((entry, index) => (
+              <Card
+                key={`english-${index}`}
+                text={entry.text}
+                link={entry.link}
+                videoId={entry.videoId}
               />
             ))}
           </div>
         </div>
       )}
 
-      {/* Advanced Section */}
-      {advancedList.length > 0 && (
+      {/* Chinese Section */}
+      {chineseList.length > 0 && (
         <div style={sectionStyle}>
           {/* Headers */}
-          <h2 style={headerStyle}>🚀 Advanced</h2>
+          <h2 style={headerStyle}>中文</h2>
           {/* Content Grid */}
           <div style={gridStyle}>
-            {advancedList.map((entry, index) => (
-              <Card 
-                key={`advanced-${index}`}
-                text={entry.text} 
+            {chineseList.map((entry, index) => (
+              <Card
+                key={`chinese-${index}`}
+                text={entry.text}
                 link={entry.link}
                 videoId={entry.videoId}
               />

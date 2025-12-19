@@ -8,7 +8,7 @@ form_name: TfmAPSP
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Supplier Payment in Local Currency",
   "link": "./create-supplier-payment-in-local-currency",

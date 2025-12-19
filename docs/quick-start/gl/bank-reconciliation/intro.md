@@ -8,7 +8,7 @@ form_name: TfmGLBankRecon
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "How To Process Bank Reconciliation",
   "link": "./how-to-process-bank-reconciliation",

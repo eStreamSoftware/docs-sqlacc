@@ -8,7 +8,7 @@ form_name: TfmPHCP
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Cash Purchase",
   "link": "./create-cash-purchase",

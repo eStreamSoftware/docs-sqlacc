@@ -8,7 +8,7 @@ form_name: TfmGLCB
 import {TOC} from '@src/components/toc.js';
 
 <TOC
-dataEntryList = {[
+englishList = {[
 {
   "text": "Create Payment Voucher",
   "link": "./create-cash-book-entry-payment-voucher",

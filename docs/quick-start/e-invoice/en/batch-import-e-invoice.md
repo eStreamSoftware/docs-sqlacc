@@ -1,7 +1,7 @@
 ---
-title: Reject Validated E-Invoice
-description: How to reject validated e-invoice in SQL Accounting
-slug: /quick-start/e-invoice/how-to-reject-validated-e-invoice
+title: Batch Import E-Invoice
+description: How to batch import E-Invoice in SQL Accounting
+slug: /quick-start/e-invoice/en/how-to-batch-import-e-invoice
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true
@@ -12,5 +12,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout
-    videoId="FCxszVvHAq0"
+    videoId="K_p98wYEH7c"
 />

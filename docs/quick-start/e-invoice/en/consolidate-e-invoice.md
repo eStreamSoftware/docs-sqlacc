@@ -1,7 +1,7 @@
 ---
 title: Consolidate E-Invoice
 description: How to Consolidate E-Invoice in SQL Accounting
-slug: /quick-start/e-invoice/how-to-consolidate-e-invoice
+slug: /quick-start/e-invoice/en/how-to-consolidate-e-invoice
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true

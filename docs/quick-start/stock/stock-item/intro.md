@@ -16,12 +16,12 @@ englishList = {[
 },
 {
   "text": "Batch Update Classifiation Code in Stock Item",
-  "link": "../e-invoice/batch-update-classification-code",
+  "link": "../e-invoice/en/batch-update-classification-code",
   "videoId": "DxG6Okbn3e4"
 },
 {
   "text": "LHDN E-Invoice Mandatory Fields Setup in SQL",
-  "link": "../e-invoice/lhdn-e-invoice-mandatory-fields",
+  "link": "../e-invoice/en/lhdn-e-invoice-mandatory-fields",
   "videoId": "3HRn76nLFSA"
 }
 ]}

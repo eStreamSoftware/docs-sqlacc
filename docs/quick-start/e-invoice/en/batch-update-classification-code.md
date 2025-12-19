@@ -1,7 +1,7 @@
 ---
-title: Download PDF from SQL supplier
-description: How to download pdf from SQL supplier in SQL Accounting
-slug: /quick-start/e-invoice/how-to-download-pdf-from-sql-supplier
+title: Batch Update Classification Code
+description: How to batch update classification code in SQL Accounting
+slug: /quick-start/e-invoice/en/batch-update-classification-code
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true
@@ -12,5 +12,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout
-    videoId="QYxoVcAW0Dw"
+    videoId="DxG6Okbn3e4"
 />

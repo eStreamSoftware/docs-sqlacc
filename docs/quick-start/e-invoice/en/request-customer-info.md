@@ -1,7 +1,7 @@
 ---
-title: Read MyInvois TaxPayer QR Code into Customer Master
-description: How to read MyInvois taxpayer qr code into customer master
-slug: /quick-start/e-invoice/read-myinvois-qr
+title: Request Customer Info
+description: How to Request Customer/Supplier Info in SQL Accounting
+slug: /quick-start/e-invoice/en/how-to-request-customer-info
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true
@@ -12,5 +12,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout
-    videoId="dAaucBNuD18"
+    videoId="9ur8nNSI15o"
 />

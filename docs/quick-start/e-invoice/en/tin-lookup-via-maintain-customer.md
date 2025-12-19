@@ -1,7 +1,7 @@
 ---
 title: TIN Lookup Via Maintain Customer/Supplier
 description: How to lookup TIN via maintain customer in SQL Accounting
-slug: /quick-start/e-invoice/how-to-tin-lookup-via-maintain-customer
+slug: /quick-start/e-invoice/en/how-to-tin-lookup-via-maintain-customer
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true

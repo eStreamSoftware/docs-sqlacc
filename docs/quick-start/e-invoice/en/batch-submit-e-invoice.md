@@ -1,7 +1,7 @@
 ---
-title: Self Billed Via Purchase Invoice
-description: How to self billed via purchase invoice in SQL Accounting
-slug: /quick-start/e-invoice/how-to-self-billed-via-purchase-invoice
+title: Batch Submit E-Invoice
+description: How to batch submit E-Invoice in SQL Accounting
+slug: /quick-start/e-invoice/en/how-to-batch-submit-e-invoice
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true
@@ -12,5 +12,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout
-    videoId="vFA7APA5djw"
+    videoId="X9cMxTRuNno"
 />

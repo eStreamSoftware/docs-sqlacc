@@ -16,12 +16,12 @@ englishList = {[
 },
 {
   "text": "TIN Lookup Via Maintain Customer/Supplier",
-  "link": "../e-invoice/how-to-tin-lookup-via-maintain-customer",
+  "link": "../e-invoice/en/how-to-tin-lookup-via-maintain-customer",
   "videoId": "EMpDTDBVB2o"
 },
 {
   "text": "How to Request Customer/Supplier Info",
-  "link": "../e-invoice/how-to-request-customer-info",
+  "link": "../e-invoice/en/how-to-request-customer-info",
   "videoId": "9ur8nNSI15o"
 }
 ]}

@@ -1,7 +1,7 @@
 ---
-title: Batch Update Classification Code
-description: How to batch update classification code in SQL Accounting
-slug: /quick-start/e-invoice/batch-update-classification-code
+title: LHDN E-Invoice Mandatory Fields Setup in SQL
+description: How to setup LHDN E-Invoice mandatory fields in SQL
+slug: /quick-start/e-invoice/en/lhdn-e-invoice-mandatory-fields
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true
@@ -12,5 +12,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout
-    videoId="DxG6Okbn3e4"
+    videoId="3HRn76nLFSA"
 />

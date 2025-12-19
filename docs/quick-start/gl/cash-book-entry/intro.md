@@ -21,12 +21,12 @@ englishList = {[
 },
 {
   "text": "How To Self Billed Via Payment Voucher",
-  "link": "../e-invoice/how-to-self-billed-via-payment-voucher",
+  "link": "../e-invoice/en/how-to-self-billed-via-payment-voucher",
   "videoId": "S27uXKVaD5M"
 },
 {
   "text": "How to Test E Invoice Validation",
-  "link": "../e-invoice/how-to-test-e-invoice-validation",
+  "link": "../e-invoice/en/how-to-test-e-invoice-validation",
   "videoId": "AKLkzWVApLY"
 }
 ]}

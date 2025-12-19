@@ -1,7 +1,7 @@
 ---
-title: Activate MyInvois Request
-description: How to activate MyInvois Request in SQL Accounting
-slug: /quick-start/e-invoice/how-to-activate-myinvois-request
+title: Share PDF To SQL Buyer
+description: How to share pdf to SQL buyer in SQL Accounting
+slug: /quick-start/e-invoice/en/how-to-share-pdf-to-sql-buyer
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true
@@ -12,5 +12,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout
-    videoId="mDzVrqbXwI0"
+    videoId="-bvJlufvqHM"
 />

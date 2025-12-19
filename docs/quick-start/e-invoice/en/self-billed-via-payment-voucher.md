@@ -1,7 +1,7 @@
 ---
-title: Submit E-Invoice
-description: How to submit E-Invoice in SQL Accounting
-slug: /quick-start/e-invoice/how-to-submit-e-invoice
+title: Self Billed Via Payment Voucher
+description: How to self billed via payment voucher in SQL Accounting
+slug: /quick-start/e-invoice/en/how-to-self-billed-via-payment-voucher
 tags: ["E Invoice"]
 hide_title: true
 hide_table_of_contents: true
@@ -12,5 +12,5 @@ import '@src/css/sidebar.css';
 import { YtLayout } from '@src/components/yt-layout';
 
 <YtLayout
-    videoId="z4QQeFo6QiA"
+    videoId="S27uXKVaD5M"
 />

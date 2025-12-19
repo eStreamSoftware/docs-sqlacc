@@ -16,12 +16,12 @@ englishList = {[
 },
 {
   "text": "LHDN E-Invoice Mandatory Fields Setup in SQL",
-  "link": "./e-invoice/lhdn-e-invoice-mandatory-fields",
+  "link": "./e-invoice/en/lhdn-e-invoice-mandatory-fields",
   "videoId": "3HRn76nLFSA"
 },
 {
   "text": "How to Register E-Invoice on LHDN Mytax Myinvois Portal",
-  "link": "./e-invoice/how-to-register-e-invoice-on-lhdn-mytax-myinvois-portal",
+  "link": "./e-invoice/en/how-to-register-e-invoice-on-lhdn-mytax-myinvois-portal",
   "videoId": "JtZqHKzVj24"
 }
 ]}

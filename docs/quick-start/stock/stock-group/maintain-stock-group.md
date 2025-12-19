@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Maintain Stock Group
 description: How to maintain stock group in SQL Accounting
 slug: /quick-start/stock/maintain-stock-group

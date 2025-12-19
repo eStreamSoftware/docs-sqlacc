@@ -1,5 +1,4 @@
 ---
-sidebar_position: 4
 title: Cancel E-Invoice
 description: How to Cancel E-Invoice in SQL Accounting
 slug: /quick-start/e-invoice/how-to-cancel-e-invoice

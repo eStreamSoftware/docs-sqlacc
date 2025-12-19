@@ -1,5 +1,4 @@
 ---
-sidebar_position: 8
 title: Create Purchase Cancelled Note
 hide_title: true
 hide_table_of_contents: true

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 7
 title: How To Print Customer Aging Report
 description: How to print customer aging report in SQL Accounting
 slug: /quick-start/customer/how-to-print-customer-aging-report

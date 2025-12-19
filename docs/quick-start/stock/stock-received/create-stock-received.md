@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Create Stock Received
 description: How to create stock received in SQL Accounting
 slug: /quick-start/stock/create-stock-received

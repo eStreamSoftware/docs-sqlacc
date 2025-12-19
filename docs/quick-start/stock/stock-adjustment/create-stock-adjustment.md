@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Create Stock Adjustment
 description: How to create stock adjustment in SQL Accounting
 slug: /quick-start/stock/create-stock-adjustment

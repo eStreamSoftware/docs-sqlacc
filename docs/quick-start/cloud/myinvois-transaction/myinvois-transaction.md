@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: MyInvois Transaction
 description: How to use MyInvois Transaction in SQL
 slug: /quick-start/cloud/how-to-use-myinvois-transaction

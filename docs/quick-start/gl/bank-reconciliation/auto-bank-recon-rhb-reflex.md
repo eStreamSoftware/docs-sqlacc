@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Auto Bank Reconciliation | RHB Reflex
 description: How to process bank reconciliation in SQL Accounting with RHB Reflex
 slug: /quick-start/gl/auto-bank-reconciliation-rhb-reflex

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Test E Invoice Validation
 description: How to test e invoice validation in SQL Accounting
 slug: /quick-start/e-invoice/how-to-test-e-invoice-validation

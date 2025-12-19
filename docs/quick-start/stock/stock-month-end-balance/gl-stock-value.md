@@ -1,5 +1,4 @@
 ---
-sidebar_position: 8
 title: Auto GL Stock Value By Project
 description: How to Auto Post GL Stock Value by Project
 slug: /quick-start/stock/gl-stock-value

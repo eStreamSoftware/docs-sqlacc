@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Maintain Stock Item
 description: How to maintain stock item in SQL Accounting
 slug: /quick-start/stock/maintain-stock-item

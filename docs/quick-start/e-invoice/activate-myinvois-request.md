@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Activate MyInvois Request
 description: How to activate MyInvois Request in SQL Accounting
 slug: /quick-start/e-invoice/how-to-activate-myinvois-request

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Share PDF To SQL Buyer
 description: How to share pdf to SQL buyer in SQL Accounting
 slug: /quick-start/e-invoice/how-to-share-pdf-to-sql-buyer

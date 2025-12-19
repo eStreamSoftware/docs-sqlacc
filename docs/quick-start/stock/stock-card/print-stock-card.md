@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Stock Card
 description: How to print stock card in SQL Accounting
 slug: /quick-start/stock/print-stock-card

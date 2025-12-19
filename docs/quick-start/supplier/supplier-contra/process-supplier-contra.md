@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: How To Process Supplier Contra
 description: How to process supplier contra in SQL Accounting
 slug: /quick-start/supplier/how-to-process-supplier-contra

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Reject Validated E-Invoice
 description: How to reject validated e-invoice in SQL Accounting
 slug: /quick-start/e-invoice/how-to-reject-validated-e-invoice

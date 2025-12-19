@@ -1,5 +1,4 @@
 ---
-sidebar_position: 10
 title: SQL Stock Analysis By Document
 description: SQL Stock Analysis By Document in SQL Accounting
 slug: /quick-start/stock/print-stock-analysis-document

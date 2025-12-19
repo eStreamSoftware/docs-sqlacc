@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Consolidate E-Invoice
 description: How to Consolidate E-Invoice in SQL Accounting
 slug: /quick-start/e-invoice/how-to-consolidate-e-invoice

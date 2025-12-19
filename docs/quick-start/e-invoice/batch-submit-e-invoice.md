@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Batch Submit E-Invoice
 description: How to batch submit E-Invoice in SQL Accounting
 slug: /quick-start/e-invoice/how-to-batch-submit-e-invoice

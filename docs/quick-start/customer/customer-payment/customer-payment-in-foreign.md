@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Create Customer Payment In Foreign Currency
 hide_title: true
 hide_table_of_contents: true

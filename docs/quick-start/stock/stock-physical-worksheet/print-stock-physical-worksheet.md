@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Print Stock Physical Worksheet
 description: How to print stock physical worksheet in SQL Accounting
 slug: /quick-start/stock/print-stock-physical-worksheet

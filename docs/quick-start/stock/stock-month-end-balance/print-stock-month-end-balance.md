@@ -1,5 +1,4 @@
 ---
-sidebar_position: 8
 title: SQL Stock Month End Balance
 description: SQL Stock Month End Balance in SQL Accounting
 slug: /quick-start/stock/print-stock-month-end-balance

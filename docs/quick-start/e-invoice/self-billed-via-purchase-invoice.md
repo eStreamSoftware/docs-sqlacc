@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Self Billed Via Purchase Invoice
 description: How to self billed via purchase invoice in SQL Accounting
 slug: /quick-start/e-invoice/how-to-self-billed-via-purchase-invoice

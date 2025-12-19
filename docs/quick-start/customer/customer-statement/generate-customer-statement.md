@@ -1,5 +1,4 @@
 ---
-sidebar_position: 6
 title: How To Generate Customer Statement
 description: How to generate customer statement in SQL Accounting
 slug: /quick-start/customer/how-to-generate-customer-statement

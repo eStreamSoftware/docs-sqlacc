@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Batch Import E-Invoice
 description: How to batch import E-Invoice in SQL Accounting
 slug: /quick-start/e-invoice/how-to-batch-import-e-invoice

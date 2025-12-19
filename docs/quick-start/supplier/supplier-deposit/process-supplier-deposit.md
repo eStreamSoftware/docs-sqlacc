@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: How To Process Supplier Deposit
 description: How to process supplier deposit in SQL Accounting
 slug: /quick-start/supplier/how-to-process-supplier-deposit

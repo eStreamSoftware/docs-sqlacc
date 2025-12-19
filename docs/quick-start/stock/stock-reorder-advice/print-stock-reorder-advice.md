@@ -1,5 +1,4 @@
 ---
-sidebar_position: 9
 title: SQL Stock Reorder Advice
 description: SQL Stock Reorder Advice in SQL Accounting
 slug: /quick-start/stock/print-stock-reorder-advice

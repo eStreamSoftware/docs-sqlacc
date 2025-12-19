@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: How To Maintain Customer
 description: How to maintain customer in SQL Accounting
 slug: /quick-start/customer/how-to-maintain-customer

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: How To Process Supplier Refund
 description: How to process supplier refund in SQL Accounting
 slug: /quick-start/supplier/how-to-process-supplier-refund

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 5
 title: How To Process Customer Contra
 description: How to process customer contra in SQL Accounting
 slug: /quick-start/customer/how-to-process-customer-contra

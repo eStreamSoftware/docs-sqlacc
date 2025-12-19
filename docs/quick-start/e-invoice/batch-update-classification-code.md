@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Batch Update Classification Code
 description: How to batch update classification code in SQL Accounting
 slug: /quick-start/e-invoice/batch-update-classification-code

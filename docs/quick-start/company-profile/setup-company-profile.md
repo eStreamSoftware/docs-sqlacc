@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Setup Company Profile
 description: How to setup company profile in SQL Accounting
 slug: /quick-start/company-profile/setup-company-profile

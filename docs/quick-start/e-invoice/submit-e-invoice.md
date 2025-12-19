@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Submit E-Invoice
 description: How to submit E-Invoice in SQL Accounting
 slug: /quick-start/e-invoice/how-to-submit-e-invoice

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Auto Bank Reconciliation | Maybank
 description: How to process bank reconciliation in SQL Accounting with Maybank
 slug: /quick-start/gl/auto-bank-reconciliation-maybank

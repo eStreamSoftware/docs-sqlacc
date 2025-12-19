@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: Read MyInvois TaxPayer QR Code into Customer Master
 description: How to read MyInvois taxpayer qr code into customer master
 slug: /quick-start/e-invoice/read-myinvois-qr

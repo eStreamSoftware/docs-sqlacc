@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Auto Bank Reconciliation | Bank Statement
 description: How to process bank reconciliation in SQL Accounting with bank statement
 slug: /quick-start/gl/auto-bank-reconciliation-statement

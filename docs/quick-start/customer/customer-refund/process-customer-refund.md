@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: How To Process Customer Refund
 description: How to process customer refund in SQL Accounting
 slug: /quick-start/customer/how-to-process-customer-refund

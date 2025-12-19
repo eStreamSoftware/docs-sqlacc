@@ -1,5 +1,4 @@
 ---
-sidebar_position: 7
 title: Create Purchase Returned
 hide_title: true
 hide_table_of_contents: true

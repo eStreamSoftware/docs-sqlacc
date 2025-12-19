@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Stock Card Qty
 description: How to print stock card quantity in SQL Accounting
 slug: /quick-start/stock/print-stock-card-qty

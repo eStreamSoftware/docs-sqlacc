@@ -1,5 +1,4 @@
 ---
-sidebar_position: 4
 title: Create Purchase Invoice
 hide_title: true
 hide_table_of_contents: true

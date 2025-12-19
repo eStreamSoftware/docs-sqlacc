@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: How To Maintain Supplier
 description: How to maintain supplier in SQL Accounting
 slug: /quick-start/supplier/how-to-maintain-supplier

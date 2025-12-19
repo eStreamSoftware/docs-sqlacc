@@ -1,5 +1,4 @@
 ---
-sidebar_position: 2
 title: TIN Lookup Via Maintain Customer/Supplier
 description: How to lookup TIN via maintain customer in SQL Accounting
 slug: /quick-start/e-invoice/how-to-tin-lookup-via-maintain-customer

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Process Bank Reconciliation
 description: How to process bank reconciliation in SQL Accounting
 slug: /quick-start/gl/how-to-process-bank-reconciliation

@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Maintain Chart of Account
 description: How to maintain chart of account in SQL Accounting
 slug: /quick-start/gl/maintain-chart-of-account

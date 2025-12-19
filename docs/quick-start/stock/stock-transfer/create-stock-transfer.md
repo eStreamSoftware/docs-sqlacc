@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Create Stock Transfer
 description: How to create stock trasnfer in SQL Accounting
 slug: /quick-start/stock/create-stock-transfer

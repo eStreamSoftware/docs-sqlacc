@@ -1,5 +1,4 @@
 ---
-sidebar_position: 3
 title: Create Stock Issue
 description: How to create stock issue in SQL Accounting
 slug: /quick-start/stock/create-stock-issue

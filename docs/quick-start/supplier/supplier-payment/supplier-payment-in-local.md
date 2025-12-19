@@ -1,5 +1,4 @@
 ---
-sidebar_position: 1
 title: Create Supplier Payment In Local Currency
 hide_title: true
 hide_table_of_contents: true

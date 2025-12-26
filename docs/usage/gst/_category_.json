@@ -1,8 +1,8 @@
 {
-    "label": "GST and SST ",
+    "label": "GST",
     "position": 10,
     "link": {
         "type": "generated-index",
-        "description": "GST and SST guide"
+        "description": "GST guide"
     }
 }

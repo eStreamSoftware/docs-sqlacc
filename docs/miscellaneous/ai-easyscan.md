@@ -209,6 +209,7 @@ Based on **Doc Type** and **Category**, the corresponding document type will be 
 1. [Edit Filename and Caption](#edit-filename-and-caption)
 2. [Batch Edit Doc Type and Caption](#batch-edit-doc-type-and-caption)
 3. [Switch System Layout](#switch-system-layout)
+4. [Multi Companies](#multi-companies)
 4. [Share File](#share-file)
 5. [Delete File](#delete-file)
 
@@ -258,21 +259,57 @@ Based on **Doc Type** and **Category**, the corresponding document type will be 
 
     ![46](../../static/img/miscellaneous/ai-easyscan/46.png)
 
+### Multi Companies
+
+1. Register several companies followed **Pre-requisite: Registration**.
+
+2. Type **"/help"** to call out help dialog.
+
+    ![47](../../static/img/miscellaneous/ai-easyscan/47.png)
+
+3. List Companies - Switch and upload following document to different company.
+
+    1. Click **List Companies** > Companies linked to this mobile number will be shown.
+
+        ![48](../../static/img/miscellaneous/ai-easyscan/48.png)
+
+    2. **(Active)** indicates that this company is current active company > Type **"/switch 2"** to switch to (2.) company > Click **Send**.
+
+        ![49](../../static/img/miscellaneous/ai-easyscan/49.png)
+
+    3. System will show a successful message when succesfully switched.
+
+        ![50](../../static/img/miscellaneous/ai-easyscan/50.png)
+
+4. Unlink Company - Deregister a linked company.
+
+    1. Click **Unlink Company** > Companies linked to this mobile number will be shown.
+
+        ![51](../../static/img/miscellaneous/ai-easyscan/51.png)
+
+    2. Type **"/unlink 2"** to unlink (2.) company > Click **Send**.
+
+        ![52](../../static/img/miscellaneous/ai-easyscan/52.png)
+
+    3. System will show a successful message when succesfully deregister.
+
+        ![53](../../static/img/miscellaneous/ai-easyscan/53.png)
+
 ### Share File
 
 1. To **Share**, select the file(s) or folder(s), then either:
 
     1. Go to **Toolbar** > Click **Share** button.
 
-        ![47](../../static/img/miscellaneous/ai-easyscan/47.png)
+        ![54](../../static/img/miscellaneous/ai-easyscan/54.png)
 
     2. Right Click > **Share Files...**.
 
-        ![48](../../static/img/miscellaneous/ai-easyscan/48.png)
+        ![55](../../static/img/miscellaneous/ai-easyscan/55.png)
 
 2. Choose the following channel to share the file.
 
-    ![49](../../static/img/miscellaneous/ai-easyscan/49.png)
+    ![56](../../static/img/miscellaneous/ai-easyscan/56.png)
 
 ### Delete File
 
@@ -280,12 +317,12 @@ Based on **Doc Type** and **Category**, the corresponding document type will be 
 
     1. Go to **Toolbar** > Click **Delete** button.
 
-        ![50](../../static/img/miscellaneous/ai-easyscan/50.png)
+        ![57](../../static/img/miscellaneous/ai-easyscan/57.png)
 
     2. Right Click > **Delete Files...**.
 
-        ![51](../../static/img/miscellaneous/ai-easyscan/51.png)
+        ![58](../../static/img/miscellaneous/ai-easyscan/58.png)
 
 2. Click **OK** to confirm the deletion.
 
-    ![52](../../static/img/miscellaneous/ai-easyscan/52.png)
+    ![59](../../static/img/miscellaneous/ai-easyscan/59.png)

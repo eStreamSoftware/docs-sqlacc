@@ -18,6 +18,10 @@ Clipboard Import allows users to import master and transaction data by simply co
     videoId="LBAQw9rl5TM"
 />
 
+## Download Excel Template
+
+[Click to Download](https://cdn.sql.com.my/wp-content/uploads/2026/01/SQLAcc-ClipboardImport.xlsx)
+
 ## About Excel Template
 
 The first row is field name and number inside the bracket is the field size. Field that starts with '_' (underscore) represents the detail table.

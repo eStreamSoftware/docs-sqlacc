@@ -51,7 +51,7 @@ The **Create Product** feature allows you to publish new products to a specific 
 
 2. In the **Other Information** section, you'll find logistics details.
 
-    - If your input weight or dimensions **exceed the logistics item limit**, the specific logistics option will be diabled.
+    - If your input weight or dimensions **exceed the logistics item limit**, the specific logistics option will be disabled.
 
     - You can read the **error hint** and **logistics item limit** in the tooltip.
 

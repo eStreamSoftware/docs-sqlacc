@@ -8,7 +8,7 @@ tags: ["e-Commerce", "X-Store", "Getting Started"]
 
 ## Sign In
 
-If you already have an account, you can [sign in](https://x-store-demo.sql.com.my/login) using one of the following methods:
+If you already have an account, you can [sign in](https://x-store.sql.com.my/login) using one of the following methods:
 
 - **Sign in with Passkey** - Use your registered passkey for quick and secure access
 - **Sign in with Email** - Enter your email address and click the verification link to sign in
@@ -20,7 +20,7 @@ For detailed instructions, please refer to the [sign up section](#sign-up) below
 
 ## Sign Up
 
-If you don't have an account yet, click [sign up here](https://x-store-demo.sql.com.my/register) to create a new account.
+If you don't have an account yet, click [sign up here](https://x-store.sql.com.my/register) to create a new account.
 
 ### Sign Up with Passkey
 
@@ -97,12 +97,6 @@ For email-based registration:
    ![email-verification](../../../static/img/xstore/getting-started/email-verification.png)
 
 8. Once successful, you'll be redirected to the **Company List** page
-
-## Try Demo
-
-Feel free to explore the available features in X-Store by using **Try Demo** without signing in.
-
-![demo-overview](../../../static/img/xstore/getting-started/demo-overview.png)
 
 ## Company List Page
 

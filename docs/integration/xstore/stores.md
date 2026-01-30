@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 title: Stores
-description: Complete guide to link e-commerce stores and perform code mapping for product mapping and order posting
+description: A guide on Store
 slug: /integration/xstore/stores
 tags: ["e-Commerce", "X-Store", "Stores"]
 ---
@@ -18,27 +18,25 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
 ### Lazada
 
-1. Select Lazada
-
-2. Click the Link Store button
+1. Select Lazada from dropdown
 
     ![select-lazada](../../../static/img/xstore/stores/select-lazada.png)
 
-3. Select Region
+2. Select Region
 
-4. Click Use Seller Login
+3. Click Use Seller Login
 
     ![lazada-login](../../../static/img/xstore/stores/lazada-login.png)
 
-5. Login using Lazada credentials
+4. Login using Lazada credentials
 
     ![input-lazada-credentials](../../../static/img/xstore/stores/lazada-credentials.png)
 
-6. Click authorize
+5. Click authorize
 
     ![lazada-authorize](../../../static/img/xstore/stores/lazada-authorize.png)
 
-7. After successful linking
+6. After successful linking
 
     - A success message will appear
 
@@ -50,11 +48,13 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
 1. Select Shopee
 
+    ![select-shopee](../../../static/img/xstore/stores/select-shopee.png)
+
 2. Select Region
 
 3. Click the Link Store button
 
-    ![select-shopee](../../../static/img/xstore/stores/select-shopee.png)
+    ![select-shopee-region](../../../static/img/xstore/stores/select-shopee-region.png)
 
 4. If Linking a **Shop Account**
 
@@ -106,37 +106,47 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
 1. Select Tiktok
 
-2. Click the Link Store button
-
     ![select-tiktok](../../../static/img/xstore/stores/select-tiktok.png)
 
-3. Select your account type to start the authorization process
+2. Select your account type to start the authorization process
 
     ![tiktok-selectAcc](../../../static/img/xstore/stores/tiktok-selectAcc.png)
 
-4. Select and input tiktok account credentials
+3. Select and input tiktok account credentials
 
-5. Click Confirm to Install
+4. Click Confirm to Install
 
     ![tiktok-login](../../../static/img/xstore/stores/tiktok-login.png)
 
-6. Review the data-sharing permissions and tick the checkbox to acknowledge
+5. Review the data-sharing permissions and tick the checkbox to acknowledge
 
-7. Click Authorize
+6. Click Authorize
 
     ![input-tiktok-credentials](../../../static/img/xstore/stores/tiktok-credentials.png)
 
-8. Click Done to complete the setup
+7. Click Done to complete the setup
 
     ![tiktok-auth](../../../static/img/xstore/stores/tiktok-auth.png)
 
-9. After successful linking
+8. After successful linking
 
     - A success message will appear
 
     - The linked store will be added to the data table.
 
         ![link-tiktok](../../../static/img/xstore/stores/link-tiktok.png)
+
+### Shopify
+
+1. Select Shopify
+
+    ![select-woo](../../../static/img/xstore/stores/select-shopify.png)
+
+### WooCommerce
+
+1. Select WooCommerce
+
+    ![select-woo](../../../static/img/xstore/stores/select-woo.png)
 
 > 📌**If store authorization expires, click the link icon (🔗) to re-link the store or click Link Store**
 

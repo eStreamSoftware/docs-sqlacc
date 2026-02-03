@@ -8,11 +8,11 @@ tags: ["e-Commerce", "X-Store", "Order Detail"]
 
 ## Overview
 
-The **Order Detail** module allows you to view individual order information and perform actions such as cancellations, returns, and refunds.
-
-To access this page, click the **document icon** on any order row.
+**Order Detail** allows you to view individual order information and perform actions such as cancellations, returns, and refunds. To access this page, click the **Document** icon on any order row.
 
 ![order-detail-enter](../../../../static/img/xstore/order-details/order-detail-enter.png)
+
+![order-detail-overview](../../../../static/img/xstore/order-details/order-detail-overview.png)
 
 The Order Details interface allows you to:
 
@@ -20,25 +20,13 @@ The Order Details interface allows you to:
 - Perform order actions (cancel, return, refund)
 - Map order items to stock items
 
-![order-detail-overview](../../../../static/img/xstore/order-details/order-detail-overview.png)
-
 > **Quick Feature:** Use the mapping button to quickly link order items to your stock items directly from this page.
-
-## Platform-Specific Guides
-
-Each e-commerce platform has unique order detail layouts and available actions. Select your platform below:
-
-- [Lazada](#lazada)
-- [Shopee](#shopee)
-- [TikTok](#tiktok)
 
 ## Lazada
 
 ### Order Detail Page
 
 ![lazada-order-detail](../../../../static/img/xstore/order-details/lazada/order-detail.png)
-
-The order information section displays:
 
 | Section              | Details                                     |
 | -------------------- | ------------------------------------------- |
@@ -263,16 +251,104 @@ When a buyer requests cancellation, choose your response:
 
 ![tiktok-reject-cancellation](../../../../static/img/xstore/order-details/tiktok/buyer-cancel-order-reject.png)
 
-### Return Order (Buyer-Initiated)
+### Return or Refund Order (Buyer-Initiated)
 
-![tiktok-return-request](../../../../static/img/xstore/order-details/tiktok/buyer-return-order.png)
+The buttons will be shown according to the **Return Type** and **Return Status**
 
-When a buyer initiates a return, review the request and respond:
+![tiktok-return-or-refund-request](../../../../static/img/xstore/order-details/tiktok/buyer-return-order.png)
+
+**Reject Return or Refund:**
+
+![tiktok-reject-return-or-refund](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-reject.png)
 
 **Approve Return:**
 
-![tiktok-approve-return](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-approve.png)
+![tiktok-approve-return](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-approve-return.png)
 
-**Reject Return:**
+**Full Refund:**
 
-![tiktok-reject-return](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-reject.png)
+![tiktok-approve-refund](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-approve-refund.png)
+
+**Partial Refund:**
+
+![tiktok-approve-partial-refund](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-approve-partial-refund.png)
+
+## Shopify
+
+### Order Detail Page
+
+![shopify-order-detail](../../../../static/img/xstore/order-details/shopify/order-detail.png)
+
+The order information section displays:
+
+| Section              | Details        |
+| -------------------- | -------------- |
+| **Buyer Details**    | Name and Email |
+| **Payment Details**  | Payment Method |
+| **Shipping Details** | Address        |
+
+Allow seller to add Private or Customer Note
+
+### Order Actions
+
+![shopify-actions](../../../../static/img/xstore/order-details/shopify/order-actions.png)
+
+| Actions             | Details                                            |
+| ------------------- | -------------------------------------------------- |
+| **Mark As Paid**    | Mark order as paid order                           |
+| **Update Tracking** | Update carrier, tracking number, and url for buyer |
+| **Create Return**   | Create return for buyer                            |
+| **Restock Item**    | Restock returned item                              |
+| **Cancel Order**    | Cancel an order                                    |
+
+**Update Tracking:**
+
+![shopify-update-tracking](../../../../static/img/xstore/order-details/shopify/seller-update-tracking.png)
+
+**Create Return:**
+
+![shopify-create-return](../../../../static/img/xstore/order-details/shopify/seller-create-return.png)
+
+**Restock Item:**
+
+![shopify-restock-item](../../../../static/img/xstore/order-details/shopify/seller-restock-item.png)
+
+**Cancel Order:**
+
+![shopify-cancel-order](../../../../static/img/xstore/order-details/shopify/seller-cancel-order.png)
+
+## WooCommerce
+
+### Order Detail Page
+
+![woo-order-detail](../../../../static/img/xstore/order-details/woocommerce/order-detail.png)
+
+The order information section displays:
+
+| Section              | Details                                                            |
+| -------------------- | ------------------------------------------------------------------ |
+| **Payment Details**  | Currency, Payment Method, Method Title, Tax Included, Payment time |
+| **Shipping Details** | Shipping Address and Billing Address                               |
+
+### Order Notes
+
+![woo-order-note](../../../../static/img/xstore/order-details/woocommerce/order-notes.png)
+
+Allow seller to add Private or Customer Note
+
+### Order Actions
+
+![woo-order-action](../../../../static/img/xstore/order-details/woocommerce/order-actions.png)
+
+| Actions            | Details                                                                                   |
+| ------------------ | ----------------------------------------------------------------------------------------- |
+| **Cancel Order**   | Cancel a created order, available for **Pending**, **On Hold**, and **Precessing** orders |
+| **Process Refund** | Refund an order                                                                           |
+
+**Cancel Order:**
+
+![woo-seller-cancel-order](../../../../static/img/xstore/order-details/woocommerce/seller-cancel-order.png)
+
+**Process Refund:**
+
+![woo-seller-create-refund](../../../../static/img/xstore/order-details/woocommerce/seller-create-refund.png)

@@ -54,26 +54,23 @@ The order processing flow moves through several stages. Different actions are av
 
 ### Step 2: Process Orders for Shipping
 
-![to-process-tab](../../../../static/img/xstore/orders/order-to-process.png)
+![to-process-tab](../../../../static/img/xstore/orders/to-process.png)
 
-1. Select the orders you want to process by checking the boxes
+1. Select orders by clicking the checkbox next to each order
+2. Click the **To Ship** button
+3. Orders will move to the **To Ship** tab
+4. (Optional) Click the **Scan** icon to use the **Scan To Ship** feature for faster processing.
 
-2. **Print Picking Documents:**
+#### Print Picking Document
 
-   ![picking-list-options](../../../../static/img/xstore/orders/pickinglist-doc.png)
+![picking-list-options](../../../../static/img/xstore/orders/pickinglist-doc.png)
 
-   Use the **Action** dropdown to print:
-
-   - **Picking List Summary** – A consolidated list of all order items for batch picking
-   - **Picking List** – Individual picking lists per order
-
-3. Click **To Ship** to update order status on the marketplace and move orders to the "To Ship" tab
-
-4. _(Optional)_ Click the **Scan** icon for the Scan to Ship interface
+1. Click the **Print Picking List** button o generate the following:
+   - **Picking List Summary:** A consolidated list of all order items for batch picking
+   - **Picking List:** Individual picking lists generated per order, including barcodes 
+2. The printed picking list can be used together with the **Scan To Ship** feature to speed up order fulfillment
 
 ### Step 3: Scan to Ship (Optional)
-
-Use this feature to quickly verify and ship orders by scanning.
 
 ![scan-to-ship-interface](../../../../static/img/xstore/orders/scan-to-ship-empty.png)
 
@@ -82,54 +79,44 @@ Use this feature to quickly verify and ship orders by scanning.
 
 ![scanned-orders](../../../../static/img/xstore/orders/scan-to-ship.png)
 
-**Available Actions:**
+| Action                     | Description                            |
+| -------------------------- | -------------------------------------- |
+| **Print AWB**              | Print Air Waybills for selected orders |
+| **Print Courier Manifest** | Generate a manifest for courier pickup |
 
-- **Print AWB** – Print Air Waybills for selected orders
-- **Print Courier Manifest** – Generate a manifest for courier pickup
-
-### Step 4: Ship Orders & Print Documentation
+### Step 4: To Ship
 
 ![to-ship-tab](../../../../static/img/xstore/orders/to-ship.png)
-
-![action-menu](../../../../static/img/xstore/orders/to-ship-action.png)
-
-**Available Actions:**
 
 | Action                     | Description                            |
 | -------------------------- | -------------------------------------- |
 | **Print AWB**              | Print Air Waybills for selected orders |
 | **Print Courier Manifest** | Generate a manifest for courier pickup |
 
-**Seller Own Fulfillment (SOF):**
+### Step 5: Self Deliver
 
-![mark-as-delivered](../../../../static/img/xstore/orders/mark-as-delivered.png)
+![self-deliver-tab](../../../../static/img/xstore/orders/self-deliver.png)
 
-If you handle delivery yourself:
+| Action                     | Description                            |
+| -------------------------- | -------------------------------------- |
+| **Mark as Delivered**      | Mark the order as delivered            |
 
-1. Toggle the **SOF** switch to enable self-fulfillment mode
-2. Select the delivered orders
-3. Click **Mark as Delivered**
-
-### Step 5: Post Completed Orders to SQL Account
+### Step 6: Post Orders to SQL Account
 
 ![completed-orders](../../../../static/img/xstore/orders/completed.png)
 
 Once orders reach **Shipped**, **Delivered**, or **Completed** status:
 
-1. **Post Order** – Click to post orders to **SQL Account**
-
+1. **Post Order:** Click to post orders to **SQL Account**
    > The orders posted will match the current tab's status. For example, clicking **Post Order** on the Shipped tab posts only shipped orders.
 
-2. **Status** – Click the **icon next to the Post Order button** to view order posting history and status
+2. **Status:** Click the **icon next to the Post Order button** to view order posting history and status
+   - **🔵 Blue:** Posting in progress
+   - **🟢 Green:** Posting completed and available to check post order status
+   - **🔴 Red:** Posting failed
 
-   | Icon Colour | Status     |
-   | ----------- | ---------- |
-   | 🔵 Blue     | Processing |
-   | 🟢 Green    | Success    |
-   | 🔴 Red      | Failed     |
-
-3. **Archived Orders** – Turn on the switch to view orders that have been posted to SQL Account.  
-   Note\*: If orders are updated after posting, they will be moved back to the **non-archived** page.
+3. **Archived Orders:** Turn on the switch to view orders that have been posted to SQL Account.  
+   > Note: If orders are updated after posting, they will be moved back to the **non-archived** page.
 
 ## General Features
 

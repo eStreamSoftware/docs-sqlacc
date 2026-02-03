@@ -279,43 +279,80 @@ The buttons will be shown according to the **Return Type** and **Return Status**
 
 ![shopify-order-detail](../../../../static/img/xstore/order-details/shopify/order-detail.png)
 
-The order information section displays:
+The order information section includes:
 
-| Section              | Details        |
-| -------------------- | -------------- |
-| **Buyer Details**    | Name and Email |
-| **Payment Details**  | Payment Method |
-| **Shipping Details** | Address        |
-
-Allow seller to add Private or Customer Note
+| Section              | Details                    |
+| -------------------- | -------------------------- |
+| **Buyer Details**    | Customer name and email    |
+| **Payment Details**  | Payment method             |
+| **Shipping Details** | Delivery address           |
 
 ### Order Actions
 
 ![shopify-actions](../../../../static/img/xstore/order-details/shopify/order-actions.png)
 
-| Actions             | Details                                            |
-| ------------------- | -------------------------------------------------- |
-| **Mark As Paid**    | Mark order as paid order                           |
-| **Update Tracking** | Update carrier, tracking number, and url for buyer |
-| **Create Return**   | Create return for buyer                            |
-| **Restock Item**    | Restock returned item                              |
-| **Cancel Order**    | Cancel an order                                    |
+| Action              | Description                                        | Availability                                        |
+| ------------------- | -------------------------------------------------- | --------------------------------------------------- |
+| **Mark As Paid**    | Manually record an order as paid.                  | Only for orders awaiting payment.                   |
+| **Update Tracking** | Update carrier, tracking number, and tracking URL. | Available for all orders.                           |
+| **Create Return**   | Initiate a return and refund for the buyer.        | Only for fulfilled orders.                          |
+| **Cancel Order**    | Cancel the order.                                  | Only for orders that have not been fulfilled.       |
 
-**Update Tracking:**
+#### Update Tracking
 
 ![shopify-update-tracking](../../../../static/img/xstore/order-details/shopify/seller-update-tracking.png)
 
-**Create Return:**
+Update the carrier name, tracking number, and shipment URL to keep the buyer informed.
+
+#### Create Return
 
 ![shopify-create-return](../../../../static/img/xstore/order-details/shopify/seller-create-return.png)
 
-**Restock Item:**
+Sellers can create a return and refund for specific items in an order.
 
-![shopify-restock-item](../../../../static/img/xstore/order-details/shopify/seller-restock-item.png)
+*   **Reason:** A return reason is required and can be selected from the dropdown menu.
+*   **Quantity:** Adjust the number of items being returned.
 
-**Cancel Order:**
+![shopify-create-return-reason](../../../../static/img/xstore/order-details/shopify/seller-create-return-reason.png)
+
+**Refund Options:**
+You can choose from three refund methods:
+1.  **No Refund:** Mark the return without issuing a refund.
+2.  **Refund Selected Item:** Refund only the cost of the items.
+3.  **Refund Selected Item with Shipping Cost:** Refund both the items and the shipping fee.
+
+![shopify-create-return-refund-options](../../../../static/img/xstore/order-details/shopify/seller-create-return-refund.png)
+
+> Sellers can manually adjust the final refund amount. You can also choose whether to **restock** the items during this process.
+
+#### Cancel Order
 
 ![shopify-cancel-order](../../../../static/img/xstore/order-details/shopify/seller-cancel-order.png)
+
+This action is only available for orders that are **not yet fulfilled**.
+
+*   **Reason:** Selecting a cancellation reason is mandatory.
+*   **Refund:** For paid orders, you can choose whether to process a refund immediately.
+*   **Notification:** You can choose to notify the customer about the cancellation.
+
+#### Return/Refund (Buyer-Initiated)
+
+This section is available when a buyer requests a return or refund.
+
+![shopify-return-request](../../../../static/img/xstore/order-details/shopify/buyer-request-return-refund.png)
+
+Sellers can choose from the following actions:
+
+*   **Accept and Refund**: Approve the request and issue a full refund to the buyer.
+*   **Decline Return**: Reject the request. This does not close the case, and the request may be resubmitted.
+*   **Close Return**: Stop the return and refund process. No further action will be taken.
+*   **Restock items**: Return the product quantities to your inventory.
+
+![shopify-decline-return](../../../../static/img/xstore/order-details/shopify/buyer-request-return-refund-decline.png)
+
+> For buyer-initiated requests, the refund amount cannot be manually adjusted.
+
+
 
 ## WooCommerce
 

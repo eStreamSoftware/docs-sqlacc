@@ -1,7 +1,7 @@
 ---
 sidebar_position: 4
 title: Dashboard
-description: A guide on Dashboard
+description: Guide to Dashboard
 slug: /integration/xstore/dashboard
 tags: ["e-Commerce", "X-Store", "Dashboard"]
 ---

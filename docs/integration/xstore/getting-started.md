@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Getting Started
-description: A guide to getting started
+description: Guide to Getting Started
 slug: /integration/xstore/getting-started
 tags: ["e-Commerce", "X-Store", "Getting Started"]
 ---
@@ -10,8 +10,8 @@ tags: ["e-Commerce", "X-Store", "Getting Started"]
 
 If you already have an account, you can [sign in](https://x-store.sql.com.my/login) using one of the following methods:
 
-- **Sign in with Passkey** - Use your registered passkey for quick and secure access
-- **Sign in with Email** - Enter your email address and click the verification link to sign in
+- **Sign in with Passkey** - Use your registered passkey for quick and secure access.
+- **Sign in with Email** - Enter your email address and click the verification link to sign in.
 - **Google Single Sign-On (SSO)** - Sign in with your Google account (Gmail only). Click the Google button, select your Gmail account, and you'll be signed in automatically.
 
 For detailed instructions, please refer to the [sign up section](#sign-up) below.
@@ -53,7 +53,7 @@ Passkeys provide a secure, passwordless way to access your account.
 6. Use your smartphone to scan the QR code displayed
 
    :::info
-   Ensure both **Bluetooth** and **WiFi/Mobile data** are turned on for both your laptop and smartphone.
+   Ensure both **Bluetooth** and **Wi-Fi/Mobile data** are turned on for both your laptop and smartphone.
    :::
 
    ![passkey-creation](../../../static/img/xstore/getting-started/passkey-creation.png)

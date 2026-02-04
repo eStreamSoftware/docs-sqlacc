@@ -1,14 +1,14 @@
 ---
 sidebar_position: 3
 title: Side Menu
-description: A guide on Side Menu
+description: Guide to the Side Menu
 slug: /integration/xstore/side-menu
 tags: ["e-Commerce", "X-Store", "Side Menu"]
 ---
 
 ## Overview
 
-The side menu is the secondary navigation component for the e-Commerce integration system.
+The Side Menu is the secondary navigation component for the e-Commerce integration system.
 
 ![side-menu](../../../static/img/xstore/sidemenu/sidemenu.png)
 
@@ -38,7 +38,7 @@ The User Profile page displays your account information.
 
    ![update-user-profile](../../../static/img/xstore/sidemenu/edit-profile-button.png)
 
-2. Update field and click **Save**.
+2. Update the fields and click **Save**.
 
    ![update-user-profile-2](../../../static/img/xstore/sidemenu/edit-profile-page.png)
 
@@ -64,7 +64,7 @@ Manage your registered passkeys for secure authentication.
 
 ### Rename Passkey
 
-1. Click **More** icon and click **Rename**.
+1. Click the **More** icon and select **Rename**.
 
 2. Rename your passkey and click **Save**.
 
@@ -72,7 +72,7 @@ Manage your registered passkeys for secure authentication.
 
 ### Revoke Passkey
 
-1. Click **More** icon and click **Revoke** to revoke passkey immediately.
+1. Click the **More** icon and select **Revoke** to remove the passkey immediately.
 
 ## Sessions
 

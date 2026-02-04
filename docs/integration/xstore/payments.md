@@ -1,7 +1,7 @@
 ---
 sidebar_position: 8
 title: Payments
-description: A guide on Payments
+description: Guide to Payments
 slug: /integration/xstore/payments
 tags: ["e-Commerce", "X-Store", "Payments"]
 ---

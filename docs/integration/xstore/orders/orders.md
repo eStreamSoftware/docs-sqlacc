@@ -59,18 +59,18 @@ The order processing flow moves through several stages. Different actions are av
 1. Select orders by clicking the checkbox next to each order
 2. Click the **To Ship** button
 3. Orders will move to the **To Ship** tab
-4. (Optional) Click the **Scan** icon to use the **Scan To Ship** feature for faster processing.
+4. (Optional) Click the **Scan** icon to use the **Scan To Ship** feature for faster processing
 
 #### Print Picking Document
 
 ![picking-list-options](../../../../static/img/xstore/orders/pickinglist-doc.png)
 
-1. Click the **Print Picking List** button o generate the following:
+1. Click the **Print Picking List** button to generate the following:
    - **Picking List Summary:** A consolidated list of all order items for batch picking
    - **Picking List:** Individual picking lists generated per order, including barcodes 
 2. The printed picking list can be used together with the **Scan To Ship** feature to speed up order fulfillment
 
-### Step 3: Scan to Ship (Optional)
+### Step 3: Scan To Ship (Optional)
 
 ![scan-to-ship-interface](../../../../static/img/xstore/orders/scan-to-ship-empty.png)
 
@@ -115,7 +115,7 @@ Once orders reach **Shipped**, **Delivered**, or **Completed** status:
    - **🟢 Green:** Posting completed and available to check post order status
    - **🔴 Red:** Posting failed
 
-3. **Archived Orders:** Turn on the switch to view orders that have been posted to SQL Account.  
+3. **Archived Orders:** Turn on the switch to view orders that have been posted to SQL Account  
    > Note: If orders are updated after posting, they will be moved back to the **non-archived** page.
 
 ## General Features

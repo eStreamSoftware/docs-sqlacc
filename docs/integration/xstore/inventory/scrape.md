@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 title: Scrape Product
-description: A guide on scrape product
+description: Guide to Scrape Product
 slug: /integration/xstore/scrape
 tags: ["e-Commerce", "X-Store", "Inventory", "Scrape Product"]
 ---

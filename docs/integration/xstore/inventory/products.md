@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 title: Products
-description: A comprehensive guide on managing products in X-Store
+description: Guide to managing products in X-Store
 slug: /integration/xstore/products
 tags: ["e-Commerce", "X-Store", "Inventory", "Products"]
 ---

@@ -32,8 +32,8 @@ The Order Details interface allows you to:
 | -------------------- | ------------------------------------------- |
 | **Order Details**    | Order ID, Shop ID, Payment Method           |
 | **Payment Details**  | Currency, Payment Time                      |
-| **Shipment Details** | Provider type, Shipping type, address, etc. |
-| **Voucher Details**  | Applied discounts and promotions on an item |
+| **Shipment Details** | Provider Type, Shipping Type, Address, etc. |
+| **Voucher Details**  | Applied Discounts and Promotions on an Item |
 
 Order items are grouped by package and tracking ID.
 
@@ -132,8 +132,8 @@ The order information section displays:
 
 | Section              | Details                                   |
 | -------------------- | ----------------------------------------- |
-| **Buyer Details**    | Customer username, user ID and address    |
-| **Payment Details**  | Payment method, Currency and Payment time |
+| **Buyer Details**    | Customer Username, User ID, and Address   |
+| **Payment Details**  | Payment Method, Currency, and Payment Time |
 | **Shipment Details** | Carrier information                       |
 | **Extra Details**    | Additional order notes and info           |
 
@@ -210,9 +210,9 @@ The order information section displays:
 
 | Section              | Details                                   |
 | -------------------- | ----------------------------------------- |
-| **Order Details**    | Order ID, Order status, Payment method    |
-| **Buyer Details**    | Customer name and shipping address        |
-| **Payment Details**  | Payment method, Currency and Payment time |
+| **Order Details**    | Order ID, Order Status, Payment Method    |
+| **Buyer Details**    | Customer Name and Shipping Address        |
+| **Payment Details**  | Payment Method, Currency, and Payment Time |
 | **Shipping Details** | Carrier information                       |
 
 ### Cancel Order Info
@@ -283,9 +283,9 @@ The order information section includes:
 
 | Section              | Details                    |
 | -------------------- | -------------------------- |
-| **Buyer Details**    | Customer name and email    |
-| **Payment Details**  | Payment method             |
-| **Shipping Details** | Delivery address           |
+| **Buyer Details**    | Customer Name and Email    |
+| **Payment Details**  | Payment Method             |
+| **Shipping Details** | Delivery Address           |
 
 ### Order Actions
 
@@ -364,14 +364,14 @@ The order information section displays:
 
 | Section              | Details                                                            |
 | -------------------- | ------------------------------------------------------------------ |
-| **Payment Details**  | Currency, Payment Method, Method Title, Tax Included, Payment time |
+| **Payment Details**  | Currency, Payment Method, Method Title, Tax Included, Payment Time |
 | **Shipping Details** | Shipping Address and Billing Address                               |
 
 ### Order Notes
 
 ![woo-order-note](../../../../static/img/xstore/order-details/woocommerce/order-notes.png)
 
-Allow seller to add Private or Customer Note
+Allows the seller to add Private or Customer Notes
 
 ### Order Actions
 
@@ -379,7 +379,7 @@ Allow seller to add Private or Customer Note
 
 | Actions            | Details                                                                                   |
 | ------------------ | ----------------------------------------------------------------------------------------- |
-| **Cancel Order**   | Cancel a created order, available for **Pending**, **On Hold**, and **Precessing** orders |
+| **Cancel Order**   | Cancel a created order, available for **Pending**, **On Hold**, and **Processing** orders |
 | **Process Refund** | Refund an order                                                                           |
 
 **Cancel Order:**

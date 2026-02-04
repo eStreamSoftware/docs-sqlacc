@@ -1,7 +1,7 @@
 ---
 sidebar_position: 9
 title: Settings
-description: A guide on Settings
+description: Guide to Settings
 slug: /integration/estore/settings
 tags: ["e-Commerce", "X-Store", "Settings"]
 ---
@@ -18,7 +18,7 @@ The Settings module consists of three main sections to help you manage your orga
 
 View and update your company's information, including business details and API configurations.
 :::info
-Check out our [setup-guide](../xstore/setup#step-1-create-company) for detailed instructions on creating your company profile.
+Check out our [Setup Guide](../xstore/setup#step-1-create-company) for detailed instructions on creating your company profile.
 :::
 
 ![company-overview](../../../static/img/xstore/settings/company-overview.png)
@@ -111,8 +111,8 @@ The users table displays all team members with their name, ID (with copy functio
 You can modify a user's role and status directly in the table.
 
 1. Click the **Edit** icon in the user's row
-1. Update the desired fields
-2. Click the **Save** button
+2. Update the desired fields.
+3. Click the **Save** button.
 
 ![user-management-update](../../../static/img/xstore/settings/user-management-update.png)
 
@@ -200,7 +200,7 @@ Register a new account, log in automatically, and redirect to the Company List p
 ## Permissions Settings
 
 :::info
-Currently add, edit and delete roles are not available
+Currently, adding, editing, and deleting roles are not available.
 :::
 
 ### Overview

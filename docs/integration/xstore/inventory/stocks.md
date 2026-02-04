@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: Stocks
-description: A guide on stocks
+description: Guide to Stocks
 slug: /integration/xstore/stocks
 tags: ["e-Commerce", "X-Store", "Inventory", "Stocks"]
 ---

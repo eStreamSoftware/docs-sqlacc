@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 title: Stores
-description: A guide on Store
+description: Guide to Stores
 slug: /integration/xstore/stores
 tags: ["e-Commerce", "X-Store", "Stores"]
 ---
@@ -24,11 +24,11 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
 2. Select Region
 
-3. Click **Use Seller Login**
+3. Click **Use Seller Login**.
 
     ![lazada-login](../../../static/img/xstore/stores/lazada-login.png)
 
-4. Login using Lazada credentials
+4. Log in using your Lazada credentials
 
     ![input-lazada-credentials](../../../static/img/xstore/stores/lazada-credentials.png)
 
@@ -56,7 +56,7 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
     ![select-shopee-region](../../../static/img/xstore/stores/select-shopee-region.png)
 
-4. If Linking a **Shop Account**
+4. If Linking a **Shop Account**:
 
     1. Enter shop account credentials
 
@@ -72,7 +72,7 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
         ![shopee-storeAuthPeriod](../../../static/img/xstore/stores/shopee-storeAuthPeriod.png)
 
-5. If Linking a **Main Account**
+5. If Linking a **Main Account**:
 
     1. Click **Switch to Main Account**
 
@@ -104,7 +104,7 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
 ### Tiktok
 
-1. Select **Tiktok** from dropdown
+1. Select **TikTok** from dropdown
 
     ![select-tiktok](../../../static/img/xstore/stores/select-tiktok.png)
 
@@ -112,19 +112,19 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
     ![tiktok-selectAcc](../../../static/img/xstore/stores/tiktok-selectAcc.png)
 
-3. Select and input tiktok account credentials
+3. Select and input your TikTok account credentials
 
-4. Click **Confirm to Install**
+4. Click **Confirm to Install**.
 
     ![tiktok-login](../../../static/img/xstore/stores/tiktok-login.png)
 
-5. Review the data-sharing permissions and tick the checkbox to acknowledge
+5. Review the data-sharing permissions and tick the checkbox to acknowledge.
 
-6. Click **Authorize**
+6. Click **Authorize**.
 
     ![input-tiktok-credentials](../../../static/img/xstore/stores/tiktok-credentials.png)
 
-7. Click **Done** to complete the setup
+7. Click **Done** to complete the setup.
 
     ![tiktok-auth](../../../static/img/xstore/stores/tiktok-auth.png)
 
@@ -142,17 +142,17 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
     ![select-shopify](../../../static/img/xstore/stores/select-shopify.png)
 
-2. A dialog will open, allowing user to enter store credentials.
+2. A dialog will open, allowing you to enter store credentials.
 
 3. Enter **Shop Domain** and click **Link Store**
 
     ![shopify-shopname](../../../static/img/xstore/stores/shopify-shopname.png)
 
-4. User can obtain domain via store dashboard
+4. You can obtain the domain via the store dashboard
 
     ![shopify-domain](../../../static/img/xstore/stores/shopify-domain.png)
 
-5. Shopify authorization page will open, where the user can enter their account credentials or select an existing account to log in
+5. The Shopify authorization page will open, where you can enter your account credentials or select an existing account to log in
 
     ![shopify-selectAcc](../../../static/img/xstore/stores/shopify-selectAcc.png)
 
@@ -170,7 +170,7 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
     ![select-woo](../../../static/img/xstore/stores/select-woo.png)
 
-2. A dialog will open, allowing user to enter store credentials.
+2. A dialog will open, allowing you to enter store credentials.
 
     ![woo-details](../../../static/img/xstore/stores/woo-details.png)
 
@@ -250,7 +250,7 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
             ![woo-linkSuccess](../../../static/img/xstore/stores/woo-linkSuccess.png)
 
-4. If you want to **upload images** when creating products later, you must also provide a **Username** and **Application Password**
+4. If you want to **upload images** when creating products later, you must also provide a **Username** and **Application Password**:
 
     - Access the admin site
 

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 title: Setup
-description: A guide to set up SQL X-Store App
+description: Guide to setting up the SQL X-Store App
 slug: /integration/xstore/setup
 tags: ["e-Commerce", "X-Store", "Setup"]
 ---
@@ -12,7 +12,7 @@ This guide walks you through the complete setup of the **SQL X-Store** App — f
 
 ### Step 1: Create Company
 
-1. Click **Create Company** in Company List page
+1. Click **Create Company** on the Company List page
 
     ![create-company](../../../static/img/xstore/setup/create-company.png)
 
@@ -42,7 +42,7 @@ Connect E-commerce stores to sync **store**, **product**, **order**, and **payme
 
     ![link-store](../../../static/img/xstore/setup/link-store.png)
 
-> 📌 For detailed instructions on linking store, navigate to **Integration > XStore > [Stores](./stores.md)**
+> 📌 For detailed instructions on linking a store, navigate to **Integration > XStore > [Stores](./stores.md)**
 
 **Auto-Sync Behavior**
 
@@ -120,7 +120,7 @@ Sync stock items from SQL Account for **product mapping** and **quantity control
 
 ## Manual Sync
 
-If platform data failed to sync during store linking, you can sync manually
+If platform data failed to sync during store linking, you can sync manually.
 
 ### Sync Product Data
 
@@ -164,7 +164,7 @@ If platform data failed to sync during store linking, you can sync manually
 
             ![sync-selected](../../../static/img/xstore/setup/sync-selected.png)
 
-    2. Sync without **Date Filter** (will only sync past 3 days data)
+    2. Sync without **Date Filter** (will only sync data from the past 3 days)
 
         1. Tick checkboxes to select stores
 
@@ -196,7 +196,7 @@ If platform data failed to sync during store linking, you can sync manually
 
             ![sync-selected](../../../static/img/xstore/setup/sync-selected.png)
 
-    2. Sync without **Date Filter** (will only sync past 3 days data)
+    2. Sync without **Date Filter** (will only sync data from the past 3 days)
 
         1. Tick checkboxes to select stores
 

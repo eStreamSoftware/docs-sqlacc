@@ -93,27 +93,26 @@ Manage your team members, including viewing, editing, inviting, and removing use
 
 ### Active Users Table
 
-The users table displays all team members with their name, ID (with copy function), email, phone number, assigned role, status, and removal action. Use the search bar to filter users by name, ID, email, or phone number. Your account always appears in the first row.
+The users table displays all team members with their name, ID (with copy function), email, phone number, assigned role, status, and actions. Use the search bar to filter users by name, ID, email, or phone number. Your account always appears in the first row.
+
+![user-management-table](../../../static/img/xstore/settings/user-management-table.png)
 
 | Column         | Description                 |
 | -------------- | --------------------------- |
 | User Name & ID | Full name with copyable ID  |
 | Email          | Contact email address       |
 | Phone Number   | Contact phone number        |
-| Role           | Assigned role in the system |
-| Status         | Active/Inactive status      |
-| Actions        | Remove user button          |
-
-![user-management-table](../../../static/img/xstore/settings/user-management-table.png)
+| Role           | User role in company        |
+| Status         | User status in company      |
+| Actions        | Edit and Remove user        |
 
 ### Editing User Details
 
 You can modify a user's role and status directly in the table.
 
+1. Click the **Edit** icon in the user's row
 1. Update the desired fields
 2. Click the **Save** button
-3. Confirm your changes in the dialog
-4. Click **Continue** to apply (or **Cancel** to discard any unsaved modifications)
 
 ![user-management-update](../../../static/img/xstore/settings/user-management-update.png)
 
@@ -199,6 +198,10 @@ Register a new account, log in automatically, and redirect to the Company List p
 ![user-invitation-accept-email](../../../static/img/xstore/settings/user-invitation-accept-email.png)
 
 ## Permissions Settings
+
+:::info
+Currently add, edit and delete roles are not available
+:::
 
 ### Overview
 

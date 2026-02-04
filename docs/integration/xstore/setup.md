@@ -94,6 +94,10 @@ Sync **Stock**, **Customer**, **Location**, and **Payment** codes from SQL Accou
 
 Sync stock items from SQL Account for **product mapping** and **quantity control**.
 
+:::warning
+   Ensure your store is mapped to the correct stock item location, or mapped items won't appear.
+:::
+
 1. Click **Inventory > Stocks** in the sidebar
 
     ![stock-sidebar](../../../static/img/xstore/setup/stock-sidebar.png)
@@ -158,9 +162,7 @@ If platform data failed to sync during store linking, you can sync manually
 
         3. Click **Sync Selected**
 
-        4. To change the selected date, click **Change**
-
-            ![change-sync-date](../../../static/img/xstore/setup/change-syncDate.png)
+            ![sync-selected](../../../static/img/xstore/setup/sync-selected.png)
 
     2. Sync without **Date Filter** (will only sync past 3 days data)
 
@@ -192,9 +194,7 @@ If platform data failed to sync during store linking, you can sync manually
 
         3. Click **Sync Selected**
 
-        4. To change the selected date, click **Change**
-
-            ![change-sync-date](../../../static/img/xstore/setup/change-syncDate.png)
+            ![sync-selected](../../../static/img/xstore/setup/sync-selected.png)
 
     2. Sync without **Date Filter** (will only sync past 3 days data)
 

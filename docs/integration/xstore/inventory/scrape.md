@@ -60,7 +60,7 @@ Scrape Products from E-Commerce Platforms
 
     ![select-create](../../../../static/img/xstore/scrape/select-create.png)
 
-<!-- 📌 For detailed instructions on creating product, navigate to **Integration > XStore > [Inventory](./products.md)** -->
+📌 For detailed instructions on creating product, navigate to **Integration > XStore > [Products](./products.md)**
 
 13. To clear all scrape products, can click **Clear All** button
 

@@ -20,7 +20,9 @@ The Order Details interface allows you to:
 - Perform order actions (cancel, return, refund)
 - Map order items to stock items
 
-> **Quick Feature:** Use the mapping button to quickly link order items to your stock items directly from this page.
+:::info
+**Quick Feature:** Use the mapping button to quickly link order items to your stock items directly from this page.
+:::
 
 ## Lazada
 
@@ -28,95 +30,88 @@ The Order Details interface allows you to:
 
 ![lazada-order-detail](../../../../static/img/xstore/order-details/lazada/order-detail.png)
 
-| Section              | Details                                     |
-| -------------------- | ------------------------------------------- |
-| **Order Details**    | Order ID, Shop ID, Payment Method           |
-| **Payment Details**  | Currency, Payment Time                      |
-| **Shipment Details** | Provider Type, Shipping Type, Address, etc. |
-| **Voucher Details**  | Applied Discounts and Promotions on an Item |
+| Section            | Details                                                                                   |
+| -------------------| ------------------------------------------------------------------------------------------|
+| **Order Items**    | The item details in the order, including the status and shipping details                  |
+| **Order Details**  | The other information of the order, including payment details. shipping details, and etc. |
+| **Summary**        | The summary payment information                                                           |
 
-Order items are grouped by package and tracking ID.
-
-![lazada-cancelled-order-item](../../../../static/img/xstore/order-details/lazada/cancelled-order-item.png)
-
-> **Note:** Cancelled items display a red badge indicating the cancellation reason.
-
-### Return Order Info
+#### Return Order Info
 
 ![lazada-return-order-info](../../../../static/img/xstore/order-details/lazada/return-order-info.png)
 
-### Cancel Order Info
+#### Cancel Order Info
 
 ![lazada-cancel-order-info](../../../../static/img/xstore/order-details/lazada/cancel-order-info.png)
 
 ### Repack Order
 
+:::info
+Available for orders in the **To Process** tab
+:::
+
 ![lazada-repack-order](../../../../static/img/xstore/order-details/lazada/repack-order.png)
 
-**Available for:** Orders in the **To Process** tab
-
-Use the Repack action to repack specific items in the order after cancellation of specific items.
+Use the **Repack** action to repack specific items in the order after cancellation of specific items.
 
 ### Cancel Order (Seller-Initiated)
 
+:::info
+Available for orders in the **New Order**, **To Process**, and **To Ship** tabs
+:::
+
 ![lazada-cancel-order-button](../../../../static/img/xstore/order-details/lazada/seller-cancel-order.png)
 
-**Available for:** Orders in **New Order**, **To Process**, or **To Ship** tabs
+1. Click the **Cancel Order** button at the top right corner
 
-**Steps to cancel:**
+2. Select the cancellation reason and choose the items to cancel
 
-1. Click the **Cancel Order** button
-2. Select the cancellation reason
-3. Choose the items to cancel
-4. Submit the cancellation request
+    ![lazada-cancel-order-form](../../../../static/img/xstore/order-details/lazada/seller-cancel-order-form.png)
 
-![lazada-cancel-order-form](../../../../static/img/xstore/order-details/lazada/seller-cancel-order-form.png)
+3. Submit the cancellation request
+
+:::warning
+Hover over the warning icon to see Lazada's cancellation policies and potential consequences on this order.
 
 ![lazada-cancel-order-warning](../../../../static/img/xstore/order-details/lazada/seller-cancel-order-form-warning.png)
-
-> **Warning:** Hover over the warning icon to see Lazada's cancellation policies and potential consequences on this order.
+:::
 
 ### Return Order (Buyer-Initiated)
 
-![lazada-return-order](../../../../static/img/xstore/order-details/lazada/buyer-return-order.png)
-
+:::info
 When a buyer initiates a return, the order moves to the **To Return** tab for seller approval.
 
-**Return Processing Options:** May vary based on reason details
+Return and Refund process may **vary based on the reason** selected by buyers.
+:::
 
-| Option                | Description                                |
-| --------------------- | ------------------------------------------ |
-| **Refund Only**       | Issue refund without requiring item return |
-| **Return and Refund** | Refund after receiving returned item       |
-| **Reject Refund**     | Decline the refund request with evidence   |
+![lazada-return-order](../../../../static/img/xstore/order-details/lazada/buyer-return-order.png)
 
-**1. Refund Only**
+#### 1. Refund Only
 
 During **"Request Initiate"** status, process the refund directly to the buyer.
 
-**2. Return and Refund**
+#### 2. Return and Refund
 
 ![lazada-confirm-return-receipt](../../../../static/img/xstore/order-details/lazada/buyer-return-order-confirm-return-receipt.png)
 
 During **"Buyer Return Item"** status:
+  1. Wait for the item to be returned
+  2. Click **Confirm Return Receipt** when received
+  3. Refresh or Resync the order to go to next step
+  4. Process or Reject the refund request
+    
+    ![lazada-process-refund](../../../../static/img/xstore/order-details/lazada/buyer-return-order-process-refund.png)
 
-1. Wait for the item to be returned
-2. Click **Confirm Return Receipt** when received
-3. Process the refund
-
-![lazada-process-refund](../../../../static/img/xstore/order-details/lazada/buyer-return-order-process-refund.png)
-
-**3. Reject Refund**
+#### 3. Reject Refund
 
 ![lazada-reject-refund](../../../../static/img/xstore/order-details/lazada/buyer-return-order-reject.png)
 
 To reject a refund request:
+  1. Provide a reason for rejection
+  2. Upload supporting evidence
+  3. Submit for platform review
 
-1. Provide a reason for rejection
-2. Upload supporting evidence
-3. Submit for platform review
-
-**4. Refund Pending**
+#### 4. Refund Pending
 
 ![lazada-refund-pending](../../../../static/img/xstore/order-details/lazada/buyer-return-order-refund-pending.png)
 
@@ -128,37 +123,43 @@ After processing, the status changes to **Refund Pending** while Lazada processe
 
 ![shopee-order-detail](../../../../static/img/xstore/order-details/shopee/order-detail.png)
 
-The order information section displays:
+| Section            | Details                                                                                   |
+| -------------------| ------------------------------------------------------------------------------------------|
+| **Order Items**    | The item details in the order, including the status and shipping details                  |
+| **Order Details**  | The other information of the order, including buyer details. payment details, and etc.    |
+| **Summary**        | The summary payment information                                                           |
 
-| Section              | Details                                   |
-| -------------------- | ----------------------------------------- |
-| **Buyer Details**    | Customer Username, User ID, and Address   |
-| **Payment Details**  | Payment Method, Currency, and Payment Time |
-| **Shipment Details** | Carrier information                       |
-| **Extra Details**    | Additional order notes and info           |
-
-### Return Order Info
+#### Return Order Info
 
 ![shopee-return-order-info](../../../../static/img/xstore/order-details/shopee/return-order-info.png)
 
+#### Cancel Order Info
+
+![shopee-cancel-order-info](../../../../static/img/xstore/order-details/shopee/cancel-order-info.png)
+
 ### Cancel Order (Seller-Initiated)
+
+:::info
+Available for orders in the **New Order** and **To Process** tabs
+:::
 
 ![shopee-cancel-order-button](../../../../static/img/xstore/order-details/shopee/seller-cancel-order.png)
 
-**Available for:** Orders in the **New Order** and **To Process** tabs
+1. Click the **Cancel Order** button at the top right corner
 
-![shopee-cancel-order-form](../../../../static/img/xstore/order-details/shopee/seller-cancel-order-form.png)
+2. Select the cancellation reason
 
-**Out of Stock Cancellation:**
+  ![shopee-cancel-order-form](../../../../static/img/xstore/order-details/shopee/seller-cancel-order-form.png)
 
-![shopee-cancel-order-out-of-stock](../../../../static/img/xstore/order-details/shopee/seller-cancel-order-outofstock.png)
+3. For **Our of stock cancellation**, need to select the out of stock items
 
-When selecting "Out of Stock" as the reason:
+  ![shopee-cancel-order-out-of-stock](../../../../static/img/xstore/order-details/shopee/seller-cancel-order-outofstock.png)
 
-1. Select the out-of-stock items
-2. Submit the cancellation
+4. Submit the cancellation request
 
-> **Note:** Cancelling with "Out of Stock" may reset the item quantity to 0 on the platform.
+:::warning
+Cancelling with "Out of Stock" may reset the item quantity to 0 on the platform
+:::
 
 ### Cancel Order (Buyer-Initiated)
 
@@ -168,35 +169,35 @@ Sellers can accept or reject the buyer's cancellation request.
 
 ### Return Order (Buyer-Initiated)
 
-**1. Refund Only**
+#### 1. Refund Only
 
 ![shopee-refund-only](../../../../static/img/xstore/order-details/shopee/buyer-refund-only.png)
 
-When a buyer requests **Refund Only**, review the request and choose between approving or rejecting.
+When a buyer requests **Refund Only**, review the request and confirm refund.
 
-**2. Return and Refund (Buyer's Offer)**
+#### 2. Return and Refund (Buyer's Offer)
 
-![shopee-return-refund-action](../../../../static/img/xstore/order-details/shopee/buyer-return-refund-action.png)
+![shopee-return-refund-action](../../../../static/img/xstore/order-details/shopee/buyer-return-refund.png)
 
 When the latest offer is from the buyer, you can:
 
-| Action           | Description                       |
-| ---------------- | --------------------------------- |
-| **Create Offer** | Counter with a new offer amount   |
-| **Accept Offer** | Accept the buyer's proposed terms |
-| **Dispute**      | Escalate to Shopee for resolution |
+  | Action           | Description                       |
+  | ---------------- | --------------------------------- |
+  | **Create Offer** | Counter with a new offer amount   |
+  | **Accept Offer** | Accept the buyer's proposed terms |
+  | **Dispute**      | Escalate to Shopee for resolution |
 
-**3. Return and Refund (Seller's Offer)**
+#### 3. Return and Refund (Seller's Offer)
 
-![shopee-return-refund-order](../../../../static/img/xstore/order-details/shopee/buyer-return-refund.png)
+![shopee-return-refund-order](../../../../static/img/xstore/order-details/shopee/seller-return-refund.png)
 
 When you've made an offer and are awaiting buyer response, you can still modify your offer.
 
-**Create Offer Form:**
+#### Create Offer Form:
 
 ![shopee-create-offer-form](../../../../static/img/xstore/order-details/shopee/buyer-return-refund-create-offer.png)
 
-**Dispute Form:**
+#### Dispute Form:
 
 ![shopee-dispute-form](../../../../static/img/xstore/order-details/shopee/buyer-return-refund-dispute.png)
 
@@ -206,72 +207,61 @@ When you've made an offer and are awaiting buyer response, you can still modify 
 
 ![tiktok-order-detail](../../../../static/img/xstore/order-details/tiktok/order-detail.png)
 
-The order information section displays:
+| Section            | Details                                                                                   |
+| -------------------| ------------------------------------------------------------------------------------------|
+| **Order Items**    | The item details in the order, including the status and shipping details                  |
+| **Order Details**  | The other information of the order, including buyer details. payment details, and etc.    |
+| **Summary**        | The summary payment information                                                           |
 
-| Section              | Details                                   |
-| -------------------- | ----------------------------------------- |
-| **Order Details**    | Order ID, Order Status, Payment Method    |
-| **Buyer Details**    | Customer Name and Shipping Address        |
-| **Payment Details**  | Payment Method, Currency, and Payment Time |
-| **Shipping Details** | Carrier information                       |
-
-### Cancel Order Info
+#### Cancel Order Info
 
 ![tiktok-cancel-order-info](../../../../static/img/xstore/order-details/tiktok/cancel-order-info.png)
 
-Displays cancellation details including the cancel reason and initiator when an order has been cancelled.
-
-### Return Order Info
+#### Return Order Info
 
 ![tiktok-return-order-info](../../../../static/img/xstore/order-details/tiktok/return-order-info.png)
 
-Displays return request details including the return reason, status, and refund amount when a buyer initiates a return.
-
 ### Cancel Order (Seller-Initiated)
+
+:::info
+Available for orders in the **New Order** and **To Process** tabs
+:::
 
 ![tiktok-cancel-order-button](../../../../static/img/xstore/order-details/tiktok/seller-cancel-order.png)
 
-**Available for:** Orders in the **New Order** and **To Process** tabs
+1. Click the **Cancel Order** button at the top right corner
 
-![tiktok-cancel-order-form](../../../../static/img/xstore/order-details/tiktok/seller-cancel-order-form.png)
+2. Select the cancellation reason
 
-Select a cancellation reason and submit to cancel the order.
+  ![tiktok-cancel-order-form](../../../../static/img/xstore/order-details/tiktok/seller-cancel-order-form.png)
+
+3. Submit the cancellation request
 
 ### Cancel Order (Buyer-Initiated)
 
 ![tiktok-buyer-cancel-request](../../../../static/img/xstore/order-details/tiktok/buyer-cancel-order.png)
 
 When a buyer requests cancellation, choose your response:
+  1. **Approve Cancellation:**
 
-**Approve Cancellation:**
+    ![tiktok-approve-cancellation](../../../../static/img/xstore/order-details/tiktok/buyer-cancel-order-approve.png)
 
-![tiktok-approve-cancellation](../../../../static/img/xstore/order-details/tiktok/buyer-cancel-order-approve.png)
+  2. **Reject Cancellation:**
 
-**Reject Cancellation:**
-
-![tiktok-reject-cancellation](../../../../static/img/xstore/order-details/tiktok/buyer-cancel-order-reject.png)
+    ![tiktok-reject-cancellation](../../../../static/img/xstore/order-details/tiktok/buyer-cancel-order-reject.png)
 
 ### Return or Refund Order (Buyer-Initiated)
 
-The buttons will be shown according to the **Return Type** and **Return Status**
-
 ![tiktok-return-or-refund-request](../../../../static/img/xstore/order-details/tiktok/buyer-return-order.png)
 
-**Reject Return or Refund:**
+The buttons will be shown according to the **Return Type** and **Return Status**
+  1. **Reject Return or Refund:**
 
-![tiktok-reject-return-or-refund](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-reject.png)
+    ![tiktok-reject-return-or-refund](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-reject.png)
 
-**Approve Return:**
+  2. **Approve Return:**
 
-![tiktok-approve-return](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-approve-return.png)
-
-**Full Refund:**
-
-![tiktok-approve-refund](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-approve-refund.png)
-
-**Partial Refund:**
-
-![tiktok-approve-partial-refund](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-approve-partial-refund.png)
+    ![tiktok-approve-return](../../../../static/img/xstore/order-details/tiktok/buyer-return-order-approve-return.png)
 
 ## Shopify
 
@@ -279,26 +269,28 @@ The buttons will be shown according to the **Return Type** and **Return Status**
 
 ![shopify-order-detail](../../../../static/img/xstore/order-details/shopify/order-detail.png)
 
-The order information section includes:
-
-| Section              | Details                    |
-| -------------------- | -------------------------- |
-| **Buyer Details**    | Customer Name and Email    |
-| **Payment Details**  | Payment Method             |
-| **Shipping Details** | Delivery Address           |
+| Section            | Details                                                                                   |
+| -------------------| ------------------------------------------------------------------------------------------|
+| **Order Items**    | The item details in the order, including the status and shipping details                  |
+| **Order Details**  | The other information of the order, including payment details. shipping details, and etc. |
+| **Summary**        | The summary payment information                                                           |
 
 ### Order Actions
 
 ![shopify-actions](../../../../static/img/xstore/order-details/shopify/order-actions.png)
 
-| Action              | Description                                        | Availability                                        |
-| ------------------- | -------------------------------------------------- | --------------------------------------------------- |
-| **Mark As Paid**    | Manually record an order as paid.                  | Only for orders awaiting payment.                   |
-| **Update Tracking** | Update carrier, tracking number, and tracking URL. | Available for all orders.                           |
-| **Create Return**   | Initiate a return and refund for the buyer.        | Only for fulfilled orders.                          |
-| **Cancel Order**    | Cancel the order.                                  | Only for orders that have not been fulfilled.       |
+| Action              | Description                                        | 
+| ------------------- | -------------------------------------------------- | 
+| **Mark As Paid**    | Manually record an order as paid.                  | 
+| **Update Tracking** | Update carrier, tracking number, and tracking URL. | 
+| **Create Return**   | Initiate a return and refund for the buyer.        | 
+| **Cancel Order**    | Cancel the order.                                  | 
 
 #### Update Tracking
+
+:::info
+Available for all orders
+:::
 
 ![shopify-update-tracking](../../../../static/img/xstore/order-details/shopify/seller-update-tracking.png)
 
@@ -306,14 +298,20 @@ Update the carrier name, tracking number, and shipment URL to keep the buyer inf
 
 #### Create Return
 
+:::info
+Available for fulfilled orders only
+:::
+
 ![shopify-create-return](../../../../static/img/xstore/order-details/shopify/seller-create-return.png)
+
+![shopify-create-return-reason](../../../../static/img/xstore/order-details/shopify/seller-create-return-reason.png)
 
 Sellers can create a return and refund for specific items in an order.
 
 *   **Reason:** A return reason is required and can be selected from the dropdown menu.
 *   **Quantity:** Adjust the number of items being returned.
 
-![shopify-create-return-reason](../../../../static/img/xstore/order-details/shopify/seller-create-return-reason.png)
+![shopify-create-return-refund-options](../../../../static/img/xstore/order-details/shopify/seller-create-return-refund.png)
 
 **Refund Options:**
 You can choose from three refund methods:
@@ -321,21 +319,22 @@ You can choose from three refund methods:
 2.  **Refund Selected Item:** Refund only the cost of the items.
 3.  **Refund Selected Item with Shipping Cost:** Refund both the items and the shipping fee.
 
-![shopify-create-return-refund-options](../../../../static/img/xstore/order-details/shopify/seller-create-return-refund.png)
-
-> Sellers can manually adjust the final refund amount. You can also choose whether to **restock** the items during this process.
+Sellers can manually adjust the final refund amount. You can also choose whether to **restock** the items during this process.
 
 #### Cancel Order
 
+:::info
+Available for orders that have not been fulfilled
+:::
+
 ![shopify-cancel-order](../../../../static/img/xstore/order-details/shopify/seller-cancel-order.png)
 
-This action is only available for orders that are **not yet fulfilled**.
+1. Click the **Cancel Order** button at the top right corner
+2. Select the cancellation reason
+3. You can choose to notify the customer about the cancellation or process refund
+4. Submit the cancellation request
 
-*   **Reason:** Selecting a cancellation reason is mandatory.
-*   **Refund:** For paid orders, you can choose whether to process a refund immediately.
-*   **Notification:** You can choose to notify the customer about the cancellation.
-
-#### Return/Refund (Buyer-Initiated)
+### Return or Refund Order (Buyer-Initiated)
 
 This section is available when a buyer requests a return or refund.
 
@@ -343,16 +342,13 @@ This section is available when a buyer requests a return or refund.
 
 Sellers can choose from the following actions:
 
-*   **Accept and Refund**: Approve the request and issue a full refund to the buyer.
-*   **Decline Return**: Reject the request. This does not close the case, and the request may be resubmitted.
-*   **Close Return**: Stop the return and refund process. No further action will be taken.
-*   **Restock items**: Return the product quantities to your inventory.
+*   **Accept and Refund**: Approve the request and issue a full refund to the buyer
+*   **Decline Return**: Reject the request. This does not close the case, and the request may be resubmitted
+*   **Close Return**: Stop the return and refund process. No further action will be taken
 
-![shopify-decline-return](../../../../static/img/xstore/order-details/shopify/buyer-request-return-refund-decline.png)
-
-> For buyer-initiated requests, the refund amount cannot be manually adjusted.
-
-
+:::info
+For buyer-initiated requests, the refund amount cannot be manually adjusted
+:::
 
 ## WooCommerce
 
@@ -360,12 +356,11 @@ Sellers can choose from the following actions:
 
 ![woo-order-detail](../../../../static/img/xstore/order-details/woocommerce/order-detail.png)
 
-The order information section displays:
-
-| Section              | Details                                                            |
-| -------------------- | ------------------------------------------------------------------ |
-| **Payment Details**  | Currency, Payment Method, Method Title, Tax Included, Payment Time |
-| **Shipping Details** | Shipping Address and Billing Address                               |
+| Section            | Details                                                                                   |
+| -------------------| ------------------------------------------------------------------------------------------|
+| **Order Items**    | The item details in the order, including the status and shipping details                  |
+| **Order Details**  | The other information of the order, including payment details. shipping details, and etc. |
+| **Summary**        | The summary payment information                                                           |
 
 ### Order Notes
 
@@ -377,15 +372,19 @@ Allows the seller to add Private or Customer Notes
 
 ![woo-order-action](../../../../static/img/xstore/order-details/woocommerce/order-actions.png)
 
-| Actions            | Details                                                                                   |
-| ------------------ | ----------------------------------------------------------------------------------------- |
-| **Cancel Order**   | Cancel a created order, available for **Pending**, **On Hold**, and **Processing** orders |
-| **Process Refund** | Refund an order                                                                           |
+| Actions            | Details                |
+| ------------------ | -----------------------|
+| **Cancel Order**   | Cancel a created order |
+| **Process Refund** | Refund an order        |
 
-**Cancel Order:**
+#### Cancel Order:
+
+:::info
+Available for **Pending**, **On Hold** and **Processing** orders
+:::
 
 ![woo-seller-cancel-order](../../../../static/img/xstore/order-details/woocommerce/seller-cancel-order.png)
 
-**Process Refund:**
+#### Process Refund:
 
 ![woo-seller-create-refund](../../../../static/img/xstore/order-details/woocommerce/seller-create-refund.png)

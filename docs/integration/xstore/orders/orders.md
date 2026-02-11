@@ -105,23 +105,33 @@ The order processing flow moves through several stages. Different actions are av
 
 ![completed-orders](../../../../static/img/xstore/orders/completed.png)
 
-Once orders reach **Shipped**, **Delivered**, or **Completed** status:
+Once orders reach **Shipped**, **Delivered**, or **Completed** status, you may post orders to SQL Account:
 
-1. **Post Order:** Click to post orders to **SQL Account**
-   > The orders posted will match the current tab's status. For example, clicking **Post Order** on the Shipped tab posts only shipped orders.
+1. Select orders by clicking the checkbox next to each order
 
-2. **Status:** Click the **icon next to the Post Order button** to view order posting history and status
-   - **🔵 Blue:** Posting in progress
-   - **🟢 Green:** Posting completed and available to check post order status
-   - **🔴 Red:** Posting failed
+2. Click the **Post Order** button, pop dialog will be shown as below
+   
+   ![post-order-dialog](../../../../static/img/xstore/orders/post-order-dialog.png)
 
-3. **Archived Orders:** Turn on the switch to view orders that have been posted to SQL Account  
-   > Note: If orders are updated after posting, they will be moved back to the **non-archived** page.
+3. Select **Include Cancelled Orders** to post the cancelled orders too
+
+4. Once post order finish, toast will be shown as below
+   
+   ![post-order-completed](../../../../static/img/xstore/orders/post-order-completed.png)
+
+5. Each order post status can be check in the table under **Post Status** column:
+   - **Failed Reason:** there is some error when posting the order
+   - **Posted Date:** the order had been posted before. May try to repost in **[Settings > Repost](../settings.md#repost)**
 
 ## General Features
 
-| Feature               | Description                                                        |
-| --------------------- | ------------------------------------------------------------------ |
-| **Search**            | Find orders by **Order ID** or **Store Name** using the search bar |
-| **Date Range**        | Filter orders by creation date using the date picker               |
-| **Column Visibility** | Click the column icon to show/hide specific table columns          |
+![order-filter](../../../../static/img/xstore/orders/order-filter.png)
+
+| Feature                         | Description                                                                                             |
+|---------------------------------|---------------------------------------------------------------------------------------------------------|
+| **Search**                      | Find orders by **Order ID**, **Store Name**, **Package ID** or **Tracking Number** using the search bar |
+| **Column Visibility**           | Click the most left button to show/hide specific table columns                                          |
+| **Filter by Platform**          | Displays orders based on platform filtered                                                              |
+| **Filter by Platform Status**   | Displays orders based on platform status filtered                                                       |
+| **Filter by Shipment Provider** | Displays orders based on shipment provider filtered                                                     |
+| **Date Range**                  | Filter orders by created or updated date using the date picker                                          |

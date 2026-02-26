@@ -1,5 +1,6 @@
 {
     "label": "Banks",
+    "position": 4,
     "link": {
         "type": "generated-index",
         "slug": "/integration/banks-category",

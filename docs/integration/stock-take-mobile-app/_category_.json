@@ -1,0 +1,9 @@
+{
+    "label": "Stock Take Mobile App",
+    "position": 3,
+    "link": {
+        "type": "generated-index",
+        "slug": "/integration/stock-take-mobile-app-category",
+        "description": "A quick guide on Stock Take App for SQL Account"
+    }
+}

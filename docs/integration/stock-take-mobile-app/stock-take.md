@@ -57,16 +57,16 @@ Users who already have an SQL Drive account that was previously used for SQL Pay
 
 1. Navigate to Stock > **Stock Take**
 
-   ![1](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take.png)
+   ![1](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take.png)
 
 2. Click **Allow Access** if Windows prompts the above warning
 
-   ![2](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take1.png)
+   ![2](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take1.png)
 
 3. Leave this screen opens as it will auto sync & update and begins with to record stock.
 4. After finish taking, click on Calculate Stock Take (System will compare with Month End As At Posted)
 
-   ![3](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take2.png)
+   ![3](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take2.png)
 
 5. Click **Post Stock Adjustments**
 
@@ -79,33 +79,33 @@ Users who already have an SQL Drive account that was previously used for SQL Pay
 | **Export To CSV**          | • To Export Grid Result to CSV                                                                                                 |
 | **Post Stock Adjustments** | • To Post Grid Result to Stock Adjustment                                                                                      |
 
-### Stoke Take (Mobile App)
+### Stock Take (Mobile App)
 
-![4](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take3.png)
-![12](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take4.png)
+![4](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take3.png)
+![12](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take4.png)
 
 1. In the mobile app, the last update indicator is displayed at the bottom of the screen
 
-   ![5](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take5.png)
+   ![5](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take5.png)
 
 2. After finish with the sync, Click Stock Take
 
-   ![13](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take6.png)
-   ![6](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take7.png)
+   ![13](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take6.png)
+   ![6](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take7.png)
 
 3. Click "Scan" to begin with scanning the stock
 
-   ![7](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take8.png)
+   ![7](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take8.png)
 
 4. If the item code has more than 1 UOM, it will prompt for selection.
 5. Select the UOM and confirm
 
-   ![8](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take9.png)
+   ![8](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take9.png)
 
 6. In the following screen, user can adjust the quantity of the stock (optional)
 7. Click Stop if you wish to stop the scanning
 
-   ![9](../../../static/img/integration/stoke-take-mobile-app/stoke-take/stoke-take10.png)
+   ![9](../../../static/img/integration/stock-take-mobile-app/stock-take/stock-take10.png)
 
 ## Stock Take Items List Import
 

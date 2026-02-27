@@ -10,8 +10,8 @@ tags: ["Stock Take", "Stock", "FAQ"]
 
 In SQL Accounting
 
-   ![1](../../../static/img/integration/stoke-take-mobile-app/faq/stoke-take-faq.png)
+   ![1](../../../static/img/integration/stock-take-mobile-app/faq/stock-take-faq.png)
 
 In Stock Take App
 
-   ![2](../../../static/img/integration/stoke-take-mobile-app/faq/stoke-take-faq1.png)
+   ![2](../../../static/img/integration/stock-take-mobile-app/faq/stock-take-faq1.png)

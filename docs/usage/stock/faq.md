@@ -317,29 +317,29 @@ From the stock card report, you can see the item is sold out from your customer 
 
 1. Go to **Stock > Print Stock Physical Worksheet**.
 
-    ![1](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stoke-take.png)
+    ![1](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stock-take.png)
 
 2. **Filter** by date, stock group, or other **information** for the stock take. Please **ensure that you have chosen the correct location and batch if you have these 2 modules.**
 
-    ![2](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stoke-take1.png)
+    ![2](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stock-take1.png)
 
 3. Click on **Apply and Preview**.
 
-    ![3](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stoke-take2.png)
+    ![3](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stock-take2.png)
 
 4. **Print out this Stock Physical Worksheet (Stock Take Sheet)** for the storekeeper to manually fill in the actual stock physical quantity at the warehouse. The storekeeper just has to **fill in the actual quantity into the Physical Qty column**.
 
 5. After completing the stock take report, go to **Stock > Stock Adjustment > Drag Out Book Qty and Physical Qty.**
 
-    ![4](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stoke-take3.png)
+    ![4](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stock-take3.png)
 
-    ![5](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stoke-take4.png)
+    ![5](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stock-take4.png)
 
 6. **Repeat Steps 1 & 2** to call out the Stock Physical Worksheet again. Open 2 screens simultaneously: one for Stock Adjustment and another for Stock Physical Worksheet. Then click on **Window > Tile Vertical**.
 
 7. Click on the first item in **Stock Physical Worksheet**, press **Ctrl + A** on the keyboard to select all items. **Then Drag & Drop into Stock Adjustment**.
 
-    ![6](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stoke-take5.png)
+    ![6](../../../static/img/usage/stock/stock-faq/stock-adjustment-take/stock-take5.png)
 
 8. Based on the storekeeper’s Stock Take Report, **fill in the actual physical quantity** in your warehouse into the Stock Adjustment **Physical Qty column**. The system will calculate the variance based on the Book Qty and apply it to the Qty column.
 

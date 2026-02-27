@@ -22,7 +22,7 @@ If you are using **SQL Connect Public Cloud**, you may **skip Steps 1 to 3**. Th
 
 ### Step 1 – Install SQL BI Dashboard Sync Tool
 
-1. Download [Sqlsync tool](https://drive.google.com/file/d/1MeOmnmYXZg0-LCPcld1ZCoI_-h39REJN/view)
+1. Download [Sqlsync tool](https://drive.sql.com.my/s/NiHaxCAPAfK8N7G/download/sqlsync%20%2864bits%29-V3000.exe)
 
    :::warning
    If computer previously installed Sqlsync or Gobi sync, please proceed to [Complete Uninstall](./complete-uninstall).

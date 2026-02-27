@@ -16,6 +16,10 @@ tags: ["BI Dashboard", "On-Premise Setup"]
 
 ## Setup
 
+:::note[SQL Connect Public Cloud Users]
+If you are using **SQL Connect Public Cloud**, you may **skip Steps 1 to 3**. The installation and token insertion will be handled by our team.
+:::
+
 ### Step 1 – Install SQL BI Dashboard Sync Tool
 
 1. Download [Sqlsync tool](https://drive.google.com/file/d/1MeOmnmYXZg0-LCPcld1ZCoI_-h39REJN/view)

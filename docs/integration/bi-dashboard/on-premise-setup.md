@@ -28,8 +28,6 @@ If you are using **SQL Connect Public Cloud**, you may **skip Steps 1 to 3**. Th
    If computer previously installed Sqlsync or Gobi sync, please proceed to [Complete Uninstall](./complete-uninstall).
    :::
 
-   ![download-sqlsync-tool](../../../static/img/integration/bi-dashboard/on-premise-setup/1.png)
-
 2. Select `sqlsync (64bits)-V3000.exe` > Right click > **Run as administrator**
 
    ![run-as-administrator](../../../static/img/integration/bi-dashboard/on-premise-setup/2.png)

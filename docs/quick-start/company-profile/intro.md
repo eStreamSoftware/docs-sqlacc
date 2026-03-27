@@ -23,6 +23,11 @@ englishList = {[
   "text": "How to Register E-Invoice on LHDN Mytax Myinvois Portal",
   "link": "./e-invoice/en/how-to-register-e-invoice-on-lhdn-mytax-myinvois-portal",
   "videoId": "JtZqHKzVj24"
+},
+{
+  "text": "Activate SST Module",
+  "link": "./sst/activate-sst-module",
+  "videoId": "pHvYom5OcZ8"
 }
 ]}
 

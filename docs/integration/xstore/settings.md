@@ -12,18 +12,17 @@ The Settings module consists of three main sections to help you manage your orga
 - **Users** - Control team member access and invitations
 - **Permissions** - Define roles and access control
 
-## Company Settings
+## Company
 
-### Overview
-
-View and update your company's information, including business details and API configurations.
 :::info
 Check out our [Setup Guide](../xstore/setup#step-1-create-company) for detailed instructions on creating your company profile.
 :::
 
+View and update your company's information, including business details and API configurations.
+
 ![company-overview](../../../static/img/xstore/settings/company-overview.png)
 
-### Company Information
+### Company Profile
 
 Your company profile displays:
 
@@ -34,23 +33,32 @@ Your company profile displays:
 - Email address
 - Phone number
 
-**SQL Account Integration**
+![company-profile](../../../static/img/xstore/settings/company-profile.png)
+
+#### Update Company Logo
+
+Click on your current logo to upload a new one.
+
+![company-logo](../../../static/img/xstore/settings/company-logo.png)
+
+#### SQL Account Integration
+
+:::info
+For more details on SQL Account configuration, see our [Setup Guide](../xstore/setup#step-3-configure-company-settings).
+:::
 
 Configure your SQL Account API access by setting up:
 
 - Access key
 - Secret key
 
-![company-information](../../../static/img/xstore/settings/company-information.png)
-:::info
-For more details on SQL Account configuration, see our [Setup Guide](../xstore/setup#step-3-configure-company-settings).
-:::
+![company-keys](../../../static/img/xstore/settings/company-keys.png)
 
-#### Update Company Logo
+#### Company Setting
 
-Click on your current logo to upload a new one.
+Enable specific company features such as enabling **synchronize quantity to platform** in an automated way.
 
-![company-logo-upload-flow](../../../static/img/xstore/settings/company-logo-upload-flow.png)
+![company-sync](../../../static/img/xstore/settings/company-sync.png)
 
 ### Editing Company Details
 
@@ -58,7 +66,7 @@ Click on your current logo to upload a new one.
 
 1. Click the **Update Company Details** button
 
-   ![company-update-details-button](../../../static/img/xstore/settings/company-update-details-button.png)
+   ![company-update-details-button](../../../static/img/xstore/settings/company-update.png)
 
 2. Modify any of the following fields:
 
@@ -69,23 +77,21 @@ Click on your current logo to upload a new one.
 
 3. Click **Save** to apply changes
 
-   ![company-update-details-page](../../../static/img/xstore/settings/company-update-details-page.png)
+![company-form](../../../static/img/xstore/settings/company-form.png)
 
 :::warning Validation Required
-You must provide valid email and phone number formats. Invalid entries will trigger a warning message.
+You must provide valid email and phone number. Invalid entries will trigger a warning message.
 :::
 
-![company-update-details-warning](../../../static/img/xstore/settings/company-update-details-warning.png)
+![company-validate](../../../static/img/xstore/settings/company-validate.png)
 
-**Canceling Changes**
+#### Canceling Changes
 
 If you click **Cancel** after making edits, you'll see a confirmation dialog. Click **Continue** to discard your changes.
 
-![company-update-details-cancel](../../../static/img/xstore/settings/company-update-details-cancel.png)
+![company-cancel](../../../static/img/xstore/settings/company-cancel.png)
 
-## Users Settings
-
-### Overview
+## Users
 
 Manage your team members, including viewing, editing, inviting, and removing users.
 
@@ -181,7 +187,7 @@ Users invited by User ID join the company immediately without needing to accept 
 
 ![user-invitation-email](../../../static/img/xstore/settings/user-invitation-email.png)
 
-**Option 1: Sign in with Passkey**
+### Option 1: Sign in with Passkey
 
 Log in using a Passkey and redirect to the Company List page.
 
@@ -191,19 +197,17 @@ You must register a user account with a passkey before using this method to acce
 
 ![user-invitation-accept-passkey](../../../static/img/xstore/settings/user-invitation-accept-passkey.png)
 
-**Option 2: Sign up with Email**
+### Option 2: Sign up with Email
 
 Register a new account, log in automatically, and redirect to the Company List page.
 
 ![user-invitation-accept-email](../../../static/img/xstore/settings/user-invitation-accept-email.png)
 
-## Permissions Settings
+## Permissions
 
 :::info
 Currently, adding, editing, and deleting roles are not available.
 :::
-
-### Overview
 
 Define and manage roles with specific permissions to control what users can do in the system.
 

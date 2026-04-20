@@ -23,45 +23,44 @@ Pick a time period to see its data. You can choose:
 - **Last 2 Months**
 - **Last 3 Months** (Default view)
 
-### Choose What to See
+### Chart Data
 
-![choose-what-to-see](../../../static/img/xstore/dashboard/dashboard-6.png)
+![chart-data](../../../static/img/xstore/dashboard/dashboard-2.png)
 
-Pick what kind of numbers you want to see:
+Choose what kind of numbers you want to see:
 
 - **Amount**: Show the total money from sales for that time.
 - **Total**: Show the total number of sales for that time.
 
 ### Chart Types
 
-![chart-types](../../../static/img/xstore/dashboard/dashboard-7.png)
+![chart-types](../../../static/img/xstore/dashboard/dashboard-4.png)
 
 Choose how you want the numbers to look:
 
+- **Table**: Shows exact numbers in a list.
 - **Bar Chart**: Shows numbers as vertical bars to compare different times.
 - **Line Chart**: Shows a line to see if sales are going up or down.
 - **Pie Chart**: Shows a circle divided into parts to see which time had more sales.
-- **Table**: Shows exact numbers in a list.
 
 ## Payments Section
 
 This part shows you the money side of your business.
 
-![payments-section](../../../static/img/xstore/dashboard/dashboard-2.png)
+![payments-section](../../../static/img/xstore/dashboard/dashboard-5.png)
 
 ### Main Numbers
 
 - **Total Transactions**: Total number of payments received.
-- **Total Transaction Amounts**: Total amount of money from all payments.
-- **Avg Amount per Transaction**: The average money made from one sale.
+- **Total Amount Received**: Total amount of money from all payments.
 
 ### Payment Chart
 
 A picture showing your payment trends. You can change how it looks using the buttons on the top-right.
 
-**Group by Time**
+#### Group by Time
 
-![group-by-time](../../../static/img/xstore/dashboard/dashboard-8.png)
+![group-by-time](../../../static/img/xstore/dashboard/dashboard-3.png)
 
 Choose how to bundle your payment data:
 
@@ -75,25 +74,24 @@ Choose how to bundle your payment data:
 
 This part shows you how many orders you have and where they come from.
 
-![orders-section](../../../static/img/xstore/dashboard/dashboard-3.png)
-
 ### Order Numbers
 
-- **Total Orders**: The total number of orders you have received.
-- **To Ship**: How many orders are waiting for you to send out.
-- **Orders Today**: How many orders you got today.
+![orders-section](../../../static/img/xstore/dashboard/dashboard-6.png)
 
+- **Total Orders**: The total number of orders you have received.
+- **Orders Today**: How many orders you got today.
+- **To Ship**: How many orders are waiting for you to send out.
 
 ### Order Details
 
-![order-details](../../../static/img/xstore/dashboard/dashboard-10.png)
+![order-details](../../../static/img/xstore/dashboard/dashboard-7.png)
 
-- **Orders by Store**: Shows which individual store (like a specific Lazada or Shopee store) is getting orders.
 - **Orders by Status**: Shows all orders status from all the stores.
+- **Orders by Store**: Shows which individual store (like a specific Lazada or Shopee store) is getting orders.
 - **Orders by Region**: Shows which country or area the orders are coming from (like MY or SG).
 - **Orders by Platform**: Compare how many orders come from Lazada vs Shopee vs other sites.
 
-![orders-chart](../../../static/img/xstore/dashboard/dashboard-13.png)
+![orders-chart](../../../static/img/xstore/dashboard/dashboard-8.png)
 
 - **Orders Chart**: A line or bar showing if you are getting more or fewer orders over time.
 
@@ -101,18 +99,16 @@ This part shows you how many orders you have and where they come from.
 
 Check your stock and how well your items are selling.
 
-![products-section](../../../static/img/xstore/dashboard/dashboard-4.png)
+![products-section](../../../static/img/xstore/dashboard/dashboard-9.png)
 
 ### Stock Numbers
 
 - **Total Products**: How many different types of items you sell.
-- **Total Stock Items**: The total count of all items you have ready to sell.
 - **Total Variants**: The count of different choices for items (like different sizes or colors).
+- **Total Stock Items**: The total count of all items you have ready to sell.
 - **Total Mapped Products**: How many items are correctly linked between your online store and SQL Account.
 
 ### Product Info
-
-![product-info](../../../static/img/xstore/dashboard/dashboard-11.png)
 
 - **Top Selling Products**: A list of your most popular items.
 - **Top Returned Products**: Items that customers send back most often. This helps you find problems with certain products.
@@ -121,7 +117,7 @@ Check your stock and how well your items are selling.
 
 Manage your different selling channels.
 
-![stores-section](../../../static/img/xstore/dashboard/dashboard-5.png)
+![stores-section](../../../static/img/xstore/dashboard/dashboard-10.png)
 
 ### Store Numbers
 
@@ -129,8 +125,6 @@ Manage your different selling channels.
 - **Active Stores**: How many stores are currently working and sharing data.
 
 ### Store Locations
-
-![store-locations](../../../static/img/xstore/dashboard/dashboard-12.png)
 
 - **Stores by Platform**: Shows how many stores you have for Lazada, Shopee, or TikTok and more.
 - **Stores by Region**: Shows where your stores are located (like MY, SG, and more).

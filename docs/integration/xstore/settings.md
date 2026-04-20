@@ -11,6 +11,7 @@ The Settings module consists of three main sections to help you manage your orga
 - **Company** - Manage your organization's profile and configuration
 - **Users** - Control team member access and invitations
 - **Permissions** - Define roles and access control
+- **Repost** - Repost orders to adjust invoices
 
 ## Company
 
@@ -253,3 +254,21 @@ Roles can only be deleted if they're not assigned to any users. If the role is i
 4. Confirm by clicking **Continue**
 
 ![permissions-role-create-dialog](../../../static/img/xstore/settings/permissions-role-create-dialog.png)
+
+## Repost
+
+View posted orders and repost orders to update invoices.
+
+![repost-overview](../../../static/img/xstore/settings/repost-overview.png)
+
+1. You can multiselect the orders and click the **Repost Order** button.
+
+   ![repost-selection](../../../static/img/xstore/settings/repost-selection.png)
+
+2. Click **Continue** in the confirmation dialog to proceed or **Cancel** to discard operation.
+
+   ![repost-confirmation](../../../static/img/xstore/settings/repost-confirmation.png)
+
+3. You can view the status of repost order operation by clicking the **history** icon button besides the **Repost Order** button.
+
+   ![repost-history](../../../static/img/xstore/settings/repost-history.png)

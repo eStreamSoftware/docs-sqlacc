@@ -6,7 +6,7 @@ slug: /integration/xstore/products
 tags: ["e-Commerce", "X-Store", "Inventory", "Products"]
 ---
 
-The **Manage Products** page allows you to view and manage all products across your connected platform stores. X-Store currently supports 5 platforms: **Lazada**, **Shopee**, **TikTok**, **Shopify**, and **WooCommerce**. You can quickly find specific products by searching using **store name**, **product name**, **product id**, **shop sku** or **seller sku**.
+The **Manage Products** page allows you to view and manage all products across your connected platform stores. X-Store currently supports 5 platforms: **Lazada**, **Shopee**, **TikTok**, **Shopify**, and **WooCommerce**. You can quickly find specific products by searching using **product name**, **store name**, **product id**, **shop sku** or **seller sku**.
 
 ![product-overview](../../../../static/img/xstore/products/product-overview.png)
 

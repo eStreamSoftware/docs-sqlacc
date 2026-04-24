@@ -28,6 +28,11 @@ englishList = {[
   "text": "How to Test E Invoice Validation",
   "link": "../e-invoice/en/how-to-test-e-invoice-validation",
   "videoId": "AKLkzWVApLY"
+},
+{
+  "text": "E Inoivce Custom Amount in Cash Book Entry",
+  "link": "../e-invoice/en/submit-custom-amount-in-cashbook",
+  "videoId": "K0O3Yqd6EuY"
 }
 ]}
 

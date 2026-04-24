@@ -102,6 +102,11 @@ englishList = {[
   "text": "MyInvois Transaction",
   "link": "./cloud/how-to-use-myinvois-transaction",
   "videoId": "X3vDnm51y5k"
+},
+{
+  "text": "E Inoivce Custom Amount in Cash Book Entry",
+  "link": "./e-invoice/en/submit-custom-amount-in-cashbook",
+  "videoId": "K0O3Yqd6EuY"
 }
 ]}
 

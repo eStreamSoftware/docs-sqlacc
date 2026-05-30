@@ -24,7 +24,7 @@ Mapping platform products to stock items allows you to manage stock and quantity
 
 1. Go to **Inventory > Stocks**
 
-2. Click the **Map Product** button
+2. Click the **Map Product** button under the **Actions** button
 
    ![multi-stock-item-map](../../../../static/img/xstore/stocks/multi-stock-item-map.png)
 
@@ -44,10 +44,6 @@ Mapping platform products to stock items allows you to manage stock and quantity
 
    ![single-stock-item-map](../../../../static/img/xstore/stocks/single-stock-item-map.png)
 
-   :::info
-   **Location Description** and **Code** are fetched from SQL Account
-   :::
-
 3. Click the **Map Product** button
 
    ![stock-details](../../../../static/img/xstore/stocks/stock-details.png)
@@ -57,9 +53,21 @@ Mapping platform products to stock items allows you to manage stock and quantity
    ![single-stock-item-dialog](../../../../static/img/xstore/stocks/single-stock-item-dialog.png)
 
    :::info
-   Ensure your store is mapped to the correct stock item location, or mapped items won't appear.
+   Ensure your store is mapped to the correct stock item location, or mapped items will be fall under **Unknown Location**.
    To map the location code, please refer to **[Setup](../setup.md#step-4-code-mapping)**
    :::
+
+### Automap Stock Item
+
+1. Go to **Inventory > Stocks**
+
+2. Click the **Auto Mapping** button under the **Actions** button
+
+   ![multi-stock-item-auto-map](../../../../static/img/xstore/stocks/multi-stock-item-auto-map.png)
+
+3. Confirm the mapping is correct, select the platform products, then click the **Auto Map** button to map
+
+   ![multi-stock-item-auto-map-dialog](../../../../static/img/xstore/stocks/multi-stock-item-auto-map-dialog.png)
 
 ## Update Quantity
 

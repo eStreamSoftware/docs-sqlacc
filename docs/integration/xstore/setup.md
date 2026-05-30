@@ -94,6 +94,10 @@ Sync **Stock**, **Customer**, **Location**, and **Payment** codes from SQL Accou
 
 Sync stock items from SQL Account for **product mapping** and **quantity control**.
 
+:::info
+   If an item has been mapped in the **SQL Account E-Commerce module** (using an **Alternative Code**), the mapping information will be used to auto match with the corresponding SKU in X-Store. You does not need to perform mapping action again in **[Stock](./inventory/stocks.md#map-products)**.
+:::
+
 :::warning
    Ensure your store is mapped to the correct stock item location, or mapped items won't appear.
 :::
@@ -112,7 +116,7 @@ Sync stock items from SQL Account for **product mapping** and **quantity control
 
     2. Tick checkboxes and click **Sync Selected**
 
-        ![select-stockSync](../../../static/img/xstore/setup/select-stockSync.png)
+        ![select-stockSync](../../../static/img/xstore/setup/select-stock-sync.png)
 
 4. Synced stock items will appear in the Data Table
 
@@ -138,7 +142,7 @@ If platform data failed to sync during store linking, you can sync manually.
 
     2. Click **Sync Selected**
 
-        ![select-productSync](../../../static/img/xstore/setup/select-productSync.png)
+        ![select-productSync](../../../static/img/xstore/setup/select-product-sync.png)
 
 ### Sync Order Data
 
@@ -152,25 +156,15 @@ If platform data failed to sync during store linking, you can sync manually.
 
 3. A dialog will open:
 
-    1. Sync with **Date Filter**
+    1. Select **Sync Mode** and **Date** (default sync data from past 3 days)
 
-        1. Select date range using the **Date Picker**
+        ![select-sync-date](../../../static/img/xstore/setup/select-sync-date.png)
 
-            ![select-sync-date](../../../static/img/xstore/setup/select-syncDate.png)
+    2. Tick checkboxes to select stores
 
-        2. Tick checkboxes to select stores
+    3. Click **Sync Selected**
 
-        3. Click **Sync Selected**
-
-            ![sync-selected](../../../static/img/xstore/setup/sync-selected.png)
-
-    2. Sync without **Date Filter** (will only sync data from the past 3 days)
-
-        1. Tick checkboxes to select stores
-
-        2. Click **Sync Selected**
-
-            ![select-orderSync](../../../static/img/xstore/setup/select-orderSync.png)
+        ![sync-selected](../../../static/img/xstore/setup/sync-selected.png)
 
 ### Sync Payment Data
 
@@ -184,22 +178,12 @@ If platform data failed to sync during store linking, you can sync manually.
 
 3. A dialog will open:
 
-    1. Sync with **Date Filter**
+    1. Select **Sync Mode** and **Date** (default sync data from past 3 days)
 
-        1. Select date range using the **Date Picker**
+        ![select-sync-date](../../../static/img/xstore/setup/select-sync-date.png)
 
-            ![select-paymentSyncDate](../../../static/img/xstore/setup/select-paymentSyncDate.png)
+    2. Tick checkboxes to select stores
 
-        2. Tick checkboxes to select stores
+    3. Click **Sync Selected**
 
-        3. Click **Sync Selected**
-
-            ![sync-selected](../../../static/img/xstore/setup/sync-selected.png)
-
-    2. Sync without **Date Filter** (will only sync data from the past 3 days)
-
-        1. Tick checkboxes to select stores
-
-        2. Click **Sync Selected**
-
-            ![select-order-sync](../../../static/img/xstore/setup/select-orderSync.png)
+        ![sync-selected](../../../static/img/xstore/setup/sync-selected.png)

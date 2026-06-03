@@ -33,7 +33,7 @@ The Order Details interface allows you to:
 | Section            | Details                                                                                   |
 | -------------------| ------------------------------------------------------------------------------------------|
 | **Order Items**    | The item details in the order, including the status and shipping details                  |
-| **Order Details**  | The other information of the order, including payment details. shipping details, and etc. |
+| **Order Details**  | Other order information, including payment details, shipping details, etc. |
 | **Summary**        | The summary payment information                                                           |
 
 #### Return Order Info
@@ -97,7 +97,7 @@ During **"Request Initiate"** status, process the refund directly to the buyer.
 During **"Buyer Return Item"** status:
   1. Wait for the item to be returned
   2. Click **Confirm Return Receipt** when received
-  3. Refresh or Resync the order to go to next step
+  3. Refresh or resync the order to go to the next step
   4. Process or Reject the refund request
     
     ![lazada-process-refund](../../../../static/img/xstore/order-details/lazada/buyer-return-order-process-refund.png)
@@ -151,7 +151,7 @@ Available for orders in the **New Order** and **To Process** tabs
 
   ![shopee-cancel-order-form](../../../../static/img/xstore/order-details/shopee/seller-cancel-order-form.png)
 
-3. For **Our of stock cancellation**, need to select the out of stock items
+3. For **Out of Stock** cancellation, select the out-of-stock items
 
   ![shopee-cancel-order-out-of-stock](../../../../static/img/xstore/order-details/shopee/seller-cancel-order-outofstock.png)
 
@@ -210,7 +210,7 @@ When you've made an offer and are awaiting buyer response, you can still modify 
 | Section            | Details                                                                                   |
 | -------------------| ------------------------------------------------------------------------------------------|
 | **Order Items**    | The item details in the order, including the status and shipping details                  |
-| **Order Details**  | The other information of the order, including buyer details. payment details, and etc.    |
+| **Order Details**  | Other order information, including buyer details, payment details, etc.    |
 | **Summary**        | The summary payment information                                                           |
 
 #### Cancel Order Info
@@ -272,7 +272,7 @@ The buttons will be shown according to the **Return Type** and **Return Status**
 | Section            | Details                                                                                   |
 | -------------------| ------------------------------------------------------------------------------------------|
 | **Order Items**    | The item details in the order, including the status and shipping details                  |
-| **Order Details**  | The other information of the order, including payment details. shipping details, and etc. |
+| **Order Details**  | Other order information, including payment details, shipping details, etc. |
 | **Summary**        | The summary payment information                                                           |
 
 ### Order Actions
@@ -359,14 +359,14 @@ For buyer-initiated requests, the refund amount cannot be manually adjusted
 | Section            | Details                                                                                   |
 | -------------------| ------------------------------------------------------------------------------------------|
 | **Order Items**    | The item details in the order, including the status and shipping details                  |
-| **Order Details**  | The other information of the order, including payment details. shipping details, and etc. |
+| **Order Details**  | Other order information, including payment details, shipping details, etc. |
 | **Summary**        | The summary payment information                                                           |
 
 ### Order Notes
 
 ![woo-order-note](../../../../static/img/xstore/order-details/woocommerce/order-notes.png)
 
-Allows the seller to add Private or Customer Notes
+This section allows the seller to add Private or Customer notes.
 
 ### Order Actions
 

@@ -8,7 +8,7 @@ tags: ["e-Commerce", "X-Store", "Dashboard"]
 
 ## Dashboard Overview
 
-The **Dashboard** is the main page where you can see how your stores are doing. It shows you latest information on sales, orders, stock, and if your stores are connected properly.
+The **Dashboard** is the main page where you can see how your stores are doing. It shows you the latest information on sales, orders, stock, and whether your stores are connected properly.
 
 ### Date Filter
 
@@ -68,8 +68,6 @@ Choose how to bundle your payment data:
 - **Week**: See total money for each week.
 - **Month**: See total money for each month.
 
-> **Tip**: Try different chart types with different time groups. For example, use a line chart with "Day" to see small changes, or a bar chart with "Month" to see how you did over several months.
-
 ## Orders Section
 
 This part shows you how many orders you have and where they come from.
@@ -86,7 +84,7 @@ This part shows you how many orders you have and where they come from.
 
 ![order-details](../../../static/img/xstore/dashboard/dashboard-7.png)
 
-- **Orders by Status**: Shows all orders status from all the stores.
+- **Orders by Status**: Shows all order statuses from all stores.
 - **Orders by Store**: Shows which individual store (like a specific Lazada or Shopee store) is getting orders.
 - **Orders by Region**: Shows which country or area the orders are coming from (like MY or SG).
 - **Orders by Platform**: Compare how many orders come from Lazada vs Shopee vs other sites.

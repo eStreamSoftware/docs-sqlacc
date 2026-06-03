@@ -6,7 +6,7 @@ slug: /integration/xstore/scrape
 tags: ["e-Commerce", "X-Store", "Inventory", "Scrape Product"]
 ---
 
-Scrape Products from E-Commerce Platforms
+Scrape products from e-commerce platforms.
 
 1. Click **Scrape Product** in the sidebar
 
@@ -34,7 +34,7 @@ Scrape Products from E-Commerce Platforms
 
         ![scrape-success](../../../../static/img/xstore/scrape/scrape-success.png)
 
-6. Can click **Trash** icon to delete the product
+6. Click the **Trash** icon to delete the product.
 
     ![delete-scrape](../../../../static/img/xstore/scrape/delete-scrape.png)
 
@@ -42,7 +42,7 @@ Scrape Products from E-Commerce Platforms
 
     ![delete-confirm](../../../../static/img/xstore/scrape/delete-confirm.png)
 
-8. Can click **Edit** icon to edit the product details
+8. Click the **Edit** icon to edit the product details.
 
     ![edit-scrape](../../../../static/img/xstore/scrape/edit-scrape.png)
 
@@ -52,7 +52,7 @@ Scrape Products from E-Commerce Platforms
 
     ![edit-confirm](../../../../static/img/xstore/scrape/edit-confirm.png)
 
-11. Can click **Create** icon to create the product in the selected store
+11. Click the **Create** icon to create the product in the selected store.
 
     ![create-scrape](../../../../static/img/xstore/scrape/create-scrape.png)
 
@@ -60,9 +60,11 @@ Scrape Products from E-Commerce Platforms
 
     ![select-create](../../../../static/img/xstore/scrape/select-create.png)
 
-📌 For detailed instructions on creating product, navigate to **Integration > XStore > [Products](./products.md)**
+:::info
+For detailed instructions on creating a product, navigate to **Integration > XStore > [Products](./products.md)**
+:::
 
-13. To clear all scrape products, can click **Clear All** button
+13. To clear all scraped products, click the **Clear All** button.
 
     ![clear-scrape](../../../../static/img/xstore/scrape/clear-scrape.png)
 
@@ -70,6 +72,8 @@ Scrape Products from E-Commerce Platforms
 
     ![delete-all](../../../../static/img/xstore/scrape/delete-all.png)
 
-📌 The maximum scrape limit is 5 products. Please delete some products before continuing
+:::info
+The maximum scrape limit is 5 products. Please delete some products before continuing.
 
-    ![scrape-limit](../../../../static/img/xstore/scrape/scrape-limit.png)
+![scrape-limit](../../../../static/img/xstore/scrape/scrape-limit.png)
+:::

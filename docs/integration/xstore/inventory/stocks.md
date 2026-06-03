@@ -53,7 +53,7 @@ Mapping platform products to stock items allows you to manage stock and quantity
    ![single-stock-item-dialog](../../../../static/img/xstore/stocks/single-stock-item-dialog.png)
 
    :::info
-   Ensure your store is mapped to the correct stock item location, or mapped items will be fall under **Unknown Location**.
+   Ensure your store is mapped to the correct stock item location, or mapped items will fall under **Unknown Location**.
    To map the location code, please refer to **[Setup](../setup.md#step-4-code-mapping)**
    :::
 

@@ -102,7 +102,7 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
         ![link-shopeeMain](../../../static/img/xstore/stores/link-shopeeMain.png)
 
-### Tiktok
+### TikTok
 
 1. Select **TikTok** from dropdown
 
@@ -274,7 +274,7 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
         ![woo-completeInfo](../../../static/img/xstore/stores/woo-completeInfo.png)
 
-> 📌**If store authorization expires, click the link icon (🔗) to re-link the store or click Link Store**
+> 📌 If store authorization expires, click the link icon (🔗) to re-link the store, or click **Link Store**.
 
 ![store-expired](../../../static/img/xstore/stores/store-expired.png)
 

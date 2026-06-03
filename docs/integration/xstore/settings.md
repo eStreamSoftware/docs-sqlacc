@@ -2,7 +2,7 @@
 sidebar_position: 9
 title: Settings
 description: Guide to Settings
-slug: /integration/estore/settings
+slug: /integration/xstore/settings
 tags: ["e-Commerce", "X-Store", "Settings"]
 ---
 
@@ -57,7 +57,7 @@ Configure your SQL Account API access by setting up:
 
 #### Company Setting
 
-Enable specific company features such as enabling **synchronize quantity to platform** in an automated way.
+Enable specific company features such as enabling **Auto Synchronize Quantity to Platform**.
 
 ![company-sync](../../../static/img/xstore/settings/company-sync.png)
 
@@ -81,7 +81,7 @@ Enable specific company features such as enabling **synchronize quantity to plat
 ![company-form](../../../static/img/xstore/settings/company-form.png)
 
 :::warning Validation Required
-You must provide valid email and phone number. Invalid entries will trigger a warning message.
+You must provide a valid email address and phone number. Invalid entries will trigger a warning message.
 :::
 
 ![company-validate](../../../static/img/xstore/settings/company-validate.png)
@@ -269,6 +269,6 @@ View posted orders and repost orders to update invoices.
 
    ![repost-confirmation](../../../static/img/xstore/settings/repost-confirmation.png)
 
-3. You can view the status of repost order operation by clicking the **history** icon button besides the **Repost Order** button.
+3. You can view the status of the repost order operation by clicking the **History** icon button beside the **Repost Order** button.
 
    ![repost-history](../../../static/img/xstore/settings/repost-history.png)

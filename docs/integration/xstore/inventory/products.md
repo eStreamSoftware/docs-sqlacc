@@ -6,7 +6,7 @@ slug: /integration/xstore/products
 tags: ["e-Commerce", "X-Store", "Inventory", "Products"]
 ---
 
-The **Manage Products** page allows you to view and manage all products across your connected platform stores. X-Store currently supports 5 platforms: **Lazada**, **Shopee**, **TikTok**, **Shopify**, and **WooCommerce**. You can quickly find specific products by searching using **product name**, **store name**, **product id**, **shop sku** or **seller sku**.
+The **Manage Products** page allows you to view and manage all products across your connected platform stores. X-Store currently supports 5 platforms: **Lazada**, **Shopee**, **TikTok**, **Shopify**, and **WooCommerce**. You can quickly find specific products by searching using **Product Name**, **Store Name**, **Product ID**, **Shop SKU**, or **Seller SKU**.
 
 ![product-overview](../../../../static/img/xstore/products/product-overview.png)
 
@@ -45,7 +45,7 @@ The **Create Product** feature allows you to publish new products to a specific 
 
     - When your product has more than two variant combinations, **Per-Variant Dimensions** allows each combination to have its own dimensions and weight. When enabled, you'll need to fill in the specific dimensions and weight parameters for each variant combination.
 
-    - If multiple variant combinations share similar information, you can use the **Apply to Selected** feature for convenience as you will just need to input information once and the information will automatically apply to all selected variants.
+    - If multiple variant combinations share similar information, you can use the **Apply to Selected** feature for convenience — you only need to enter the information once and it will automatically apply to all selected variants.
 
     ![create-variants](../../../../static/img/xstore/products/create-variants.png)
 

@@ -95,7 +95,7 @@ Sync **Stock**, **Customer**, **Location**, and **Payment** codes from SQL Accou
 Sync stock items from SQL Account for **product mapping** and **quantity control**.
 
 :::info
-   If an item has been mapped in the **SQL Account E-Commerce module** (using an **Alternative Code**), the mapping information will be used to auto match with the corresponding SKU in X-Store. You does not need to perform mapping action again in **[Stock](./inventory/stocks.md#map-products)**.
+   If an item has been mapped in the **SQL Account E-Commerce module** (using an **Alternative Code**), the mapping information will be used to auto match with the corresponding SKU in X-Store. You do not need to perform the mapping action again in **[Stock](./inventory/stocks.md#map-products)**.
 :::
 
 :::warning

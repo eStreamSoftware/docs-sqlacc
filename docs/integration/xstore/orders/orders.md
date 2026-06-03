@@ -109,17 +109,17 @@ Once orders reach **Shipped**, **Delivered**, or **Completed** status, you may p
 
 1. Select orders by clicking the checkbox next to each order
 
-2. Click the **Post Order** button, pop dialog will be shown as below
+2. Click the **Post Order** button; a popup dialog will appear as shown below
    
    ![post-order-dialog](../../../../static/img/xstore/orders/post-order-dialog.png)
 
 3. Select **Include Cancelled Orders** to post the cancelled orders too
 
-4. Once post order finish, toast will be shown as below
+4. Once the post order is complete, a toast notification will appear as shown below
    
    ![post-order-completed](../../../../static/img/xstore/orders/post-order-completed.png)
 
-5. Each order post status can be check in the table under **Post Status** column:
+5. Each order's post status can be checked in the table under the **Post Status** column:
    - **Failed Reason:** there is some error when posting the order
    - **Posted Date:** the order had been posted before. May try to repost in **[Settings > Repost](../settings.md#repost)**
 
@@ -130,7 +130,7 @@ Once orders reach **Shipped**, **Delivered**, or **Completed** status, you may p
 | Feature                         | Description                                                                                             |
 |---------------------------------|---------------------------------------------------------------------------------------------------------|
 | **Search**                      | Find orders by **Order ID**, **Store Name**, **Package ID** or **Tracking Number** using the search bar |
-| **Column Visibility**           | Click the most left button to show/hide specific table columns                                          |
+| **Column Visibility**           | Click the leftmost button to show/hide specific table columns                                           |
 | **Filter by Platform**          | Displays orders based on platform filtered                                                              |
 | **Filter by Platform Status**   | Displays orders based on platform status filtered                                                       |
 | **Filter by Shipment Provider** | Displays orders based on shipment provider filtered                                                     |

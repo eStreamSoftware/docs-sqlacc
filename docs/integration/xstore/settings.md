@@ -61,6 +61,10 @@ Enable specific company features such as enabling **Auto Synchronize Quantity to
 
 ![company-sync](../../../static/img/xstore/settings/company-sync.png)
 
+Set the **System Conversion Date** according to the date defined in SQL Account and click Save.
+
+![company-conversionDate](../../../static/img/xstore/settings/company-conversionDate.png)
+
 ### Editing Company Details
 
 **To update your company information:**

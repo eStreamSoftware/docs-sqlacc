@@ -284,9 +284,10 @@ tags: ["e-Commerce", "X-Store", "Stores"]
 
 | Features                    | Description                                                                            |
 | ----------------------------| -------------------------------------------------------------------------------------- |
-| **1. Search**               | Search for stores by **store name** or **region**.                                     |
-| **2. Pagination**           | Choose to display **50, 100, 150, or 200** records per page.                           |
-| **3. Collapse All**         | **Hide all** child-level details.                                                      |
-| **4. Expand All**           | **Expand all** child-level details to view complete information at once.               |
-| **5. Sorting**              | Sort data in **ascending** or **descending** order.                                    |
-| **6. Column Visibility**    | **Show or hide** specific columns to customize the table view according to preference. |
+| **1. Refresh**              | Click the **refresh** icon to get the latest data.                                     |
+| **2. Search**               | Select a filter and input a value to search stores.                                    |
+| **3. Pagination**           | Choose to display **50, 100, 150, or 200** records per page.                           |
+| **4. Collapse All**         | **Hide all** child-level details.                                                      |
+| **5. Expand All**           | **Expand all** child-level details to view complete information at once.               |
+| **6. Sorting**              | Sort data in **ascending** or **descending** order.                                    |
+| **7. Column Visibility**    | **Show or hide** specific columns to customize the table view according to preference. |

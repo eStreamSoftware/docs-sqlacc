@@ -74,7 +74,7 @@ Sync **Stock**, **Customer**, **Location**, and **Payment** codes from SQL Accou
 
     ![store-sidebar](../../../static/img/xstore/setup/store-sidebar.png)
 
-2. Click the **Config** (⚙️) icon of any store
+2. Click the icon of any store
 
     ![store-config](../../../static/img/xstore/setup/store-config.png)
 
@@ -86,9 +86,17 @@ Sync **Stock**, **Customer**, **Location**, and **Payment** codes from SQL Accou
 
         ![map-codes](../../../static/img/xstore/setup/map-codes.png)
 
-4. A success message will appear once mapping is completed
+    3. To post orders to the SQL Account, a default code must be configured. Without it, orders that include unmapped products cannot be posted.
 
-    ![map-code-success](../../../static/img/xstore/setup/map-success.png)
+        ![default-code](../../../static/img/xstore/setup/default-code.png)
+
+    4. Select **No Default Code** to clear the previously selected default code.
+
+        ![no-code](../../../static/img/xstore/setup/no-code.png)
+
+4. Click the **refresh** icon to get the latest code data.
+
+    ![refresh-code](../../../static/img/xstore/setup/refresh-code.png)
 
 ### Step 5: Sync Stock Items from SQL Account
 

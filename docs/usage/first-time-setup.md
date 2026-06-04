@@ -78,7 +78,9 @@ Watch the tutorial video here: [YouTube](https://www.youtube.com/watch?v=yH8VfNG
 
 ### Maintain Tariff
 
-Go to **Tools** → **Maintain tariff** → **New**
+1. Go to **Tools** → **Maintain tariff** → **New**
+
+2. Tick Default if you only have one tariff code.
 
 Insert your product tariff code here. You can also look up your product tariff code using the Malaysia Customs [JKDM HS Explorer](https://ezhs.customs.gov.my/)
 

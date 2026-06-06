@@ -192,7 +192,7 @@ Users invited by User ID join the company immediately without needing to accept 
 
 ![user-invitation-email](../../../static/img/xstore/settings/user-invitation-email.png)
 
-### Option 1: Sign in with Passkey
+#### Option 1: Sign in with Passkey
 
 Log in using a Passkey and redirect to the Company List page.
 
@@ -202,7 +202,7 @@ You must register a user account with a passkey before using this method to acce
 
 ![user-invitation-accept-passkey](../../../static/img/xstore/settings/user-invitation-accept-passkey.png)
 
-### Option 2: Sign up with Email
+#### Option 2: Sign up with Email
 
 Register a new account, log in automatically, and redirect to the Company List page.
 

@@ -92,14 +92,14 @@ The images below show SST tax code structures and mapping to SST-02:
 
    | No | Tax Code | Description       | Application | Tax Rate | SST-02      |
    |----|----------|-------------------|-------------|----------|-------------|
-   | 01 | SV       | Service Tax 6% / 8% charged to the taxable services based on payment basis                                                          | Service transaction charged at 6% / 8% follow the nature of business. Accounting as payment basis          | 6% / 8%       | B1_10, B2_11C |
-   | 02 | SVA      | Service Tax 6% / 8% charged to the taxable service based on accrual/billing basis. It is used in IMSV tax code to report in SST-02A | Service transaction charged at 6% / 8% follow the nature of business. Accounting as Accrual/Billing basis  | 6% / 8%       | B1_10, B2_11C |
+   | 01 | SV       | Service Tax 6% / 8% charged to the taxable services based on payment basis                                                          | Service transaction charged at 6% / 8% follow the nature of business. Accounting as payment basis          | 6% / 8%       | B1_10, B2_11C/D |
+   | 02 | SVA      | Service Tax 6% / 8% charged to the taxable service based on accrual/billing basis. It is used in IMSV tax code to report in SST-02A | Service transaction charged at 6% / 8% follow the nature of business. Accounting as Accrual/Billing basis  | 6% / 8%       | B1_10, B2_11C/D |
 
 2) **Deemed Supply (Own Used/Disposed)**
 
-   | No | Tax Code | Description                                             | Tax Rate | SST-02       |
-   |----|----------|---------------------------------------------------------|----------|--------------|
-   | 01 | SUV      | Service Own Used charged at 6% on accrual/billing basis | 6%       | B1_9, B2_11C |
+   | No | Tax Code | Description                                                  | Tax Rate | SST-02         |
+   |----|----------|--------------------------------------------------------------|----------|----------------|
+   | 01 | SUV      | Service Own Used charged at 6% / 8% on accrual/billing basis | 6% / 8%  | B1_9, B2_11C/D |
 
 3) **Service Exempted**
 
@@ -121,7 +121,7 @@ The images below show SST tax code structures and mapping to SST-02:
 
    | No | Tax Code | Description                                                                                                                                                                                             | Input Tax | Output Tax | SST-02       | SST-02A (for imported service) |
    |----|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------|--------------|--------------------------------|
-   | 01 | IMSV     | Imported Service Tax, any company in Malaysia who acquire the taxable service from company outside Malaysia. Non-SST & Sales Tax reg. must report in SST-02A. Service tax reg. remains report in SST-02 | PSV (6%)  | SVA (6%)   | B1_10 B2_11C | B10a                           |
+   | 01 | IMSV     | Imported Service Tax, any company in Malaysia who acquire the taxable service from company outside Malaysia. Non-SST & Sales Tax reg. must report in SST-02A. Service tax reg. remains report in SST-02 | PSV (8%)  | SVA (8%)   | B1_10 B2_11C | B10a                           |
    | 02 | IMSVE    | Imported Service Tax Exempted between same service providers in Group G (excluding item j and k) or in Group I item 8 only. Refer to Service Tax (Person Exempted From Payment of Tax) Order 2018       | PSVE      | SVE        | D18C         |                                |
 
 5) **Non-Taxable**

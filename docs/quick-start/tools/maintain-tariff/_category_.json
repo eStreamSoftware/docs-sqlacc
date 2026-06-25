@@ -1,0 +1,9 @@
+{
+    "label": "Maintain Tariff",
+    "position": 1,
+    "link": {
+        "type": "doc",
+        "id": "quick-start/tools/maintain-tariff/intro"
+    },
+    "collapsible": false
+}

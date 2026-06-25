@@ -1,8 +1,8 @@
 ---
 hide_title: true
 hide_table_of_contents: true
-slug: /quick-start/sst
-form_name: TWF_Start_SST
+slug: /quick-start/tools/maintain-tariff
+form_name: "{26C47EF8-132E-4196-AAB7-A0871B2D20F8}"
 ---
 
 import {TOC} from '@src/components/toc.js';
@@ -10,13 +10,8 @@ import {TOC} from '@src/components/toc.js';
 <TOC
 englishList = {[
 {
-  "text": "Activate SST Module",
-  "link": "./sst/activate-sst-module",
-  "videoId": "pHvYom5OcZ8"
-},
-{
   "text": "Steps to Create and Assign Tariff Code",
-  "link": "./tools/create-tariff-code",
+  "link": "./create-tariff-code",
   "videoId": "Hm2TitcNCwM"
 }
 ]}

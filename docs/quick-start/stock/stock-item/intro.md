@@ -23,6 +23,11 @@ englishList = {[
   "text": "LHDN E-Invoice Mandatory Fields Setup in SQL",
   "link": "../e-invoice/en/lhdn-e-invoice-mandatory-fields",
   "videoId": "3HRn76nLFSA"
+},
+{
+  "text": "Steps to Create and Assign Tariff Code",
+  "link": "../tools/create-tariff-code",
+  "videoId": "Hm2TitcNCwM"
 }
 ]}
 

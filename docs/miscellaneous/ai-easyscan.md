@@ -78,6 +78,7 @@ SQL AI EasyScan enables users to manage transactions more efficiently by uploadi
 7. [Save Document](#save-document)
 8. [Attach File or Folder to Existing Document](#attach-file-or-folder-to-existing-document)
 9. [Check Posted File or Folder](#check-posted-file-or-folder)
+10. [Check Duplicate File](#check-duplicate-file)
 
 ### Upload File with WhatsApp
 
@@ -209,11 +210,25 @@ Combine several items into a single item record.
 
     ![36](../../static/img/miscellaneous/ai-easyscan/36.png)
 
-4. The following status will be displayed under the column, **Doc No** will show the posted **Document No.**.
+4. The following status will be displayed under **Posted** column, **Doc No** will show the posted **Document No.**.
 
     ![37](../../static/img/miscellaneous/ai-easyscan/37.png)
 
 5. Double click to open the posted document.
+
+### Check Duplicate File
+
+1. Duplicate file will be highlighted in **yellow** color row.
+
+    ![38](../../static/img/miscellaneous/ai-easyscan/38.png)
+
+2. Click the button at the top-left corner of the grid > Tick the **Duplicate**.
+
+    ![39](../../static/img/miscellaneous/ai-easyscan/39.png)
+
+3. The following status will be displayed under **Duplicate** column.
+
+    ![40](../../static/img/miscellaneous/ai-easyscan/40.png)
 
 ## Additional Information
 
@@ -232,73 +247,73 @@ AI automatically assigns a category to uploaded files based on their content. Fo
 
 1. Go to **Menu Bar** > **Tools** > **Options...**.
 
-    ![38](../../static/img/miscellaneous/ai-easyscan/38.png)
+    ![41](../../static/img/miscellaneous/ai-easyscan/41.png)
 
 2. In **Options**, go to **OCR** to review the **Categories**.
 
-    ![39](../../static/img/miscellaneous/ai-easyscan/39.png)
+    ![42](../../static/img/miscellaneous/ai-easyscan/42.png)
 
 3. Click ➕ to add a new category or ➖ to remove an existing category. When adding a new category, define the category and assign the corresponding account code.
 
-    ![40](../../static/img/miscellaneous/ai-easyscan/40.png)
+    ![43](../../static/img/miscellaneous/ai-easyscan/43.png)
 
 4. Click **Sync** > **Yes** to synchronize the categories with the AI.
 
-    ![41](../../static/img/miscellaneous/ai-easyscan/41.png)
+    ![44](../../static/img/miscellaneous/ai-easyscan/44.png)
 
 5. Dialog shows **"Synced successfully"** indicates that the categories have been updated successfully.
 
-    ![42](../../static/img/miscellaneous/ai-easyscan/42.png)
+    ![45](../../static/img/miscellaneous/ai-easyscan/45.png)
 
 6. Click **OK** to save the changes.
 
-    ![43](../../static/img/miscellaneous/ai-easyscan/43.png)
+    ![46](../../static/img/miscellaneous/ai-easyscan/46.png)
 
 ### Switch System Layout
 
 1.  Go to **Toolbar** > Click **Layout** button > Choose a system layout.
 
-    ![44](../../static/img/miscellaneous/ai-easyscan/44.png)
+    ![47](../../static/img/miscellaneous/ai-easyscan/47.png)
 
 2. Switch to the system layout that suits your personal preference.
 
-    ![45](../../static/img/miscellaneous/ai-easyscan/45.png)
+    ![48](../../static/img/miscellaneous/ai-easyscan/48.png)
 
 ### Edit Filename and Caption
 
 1. **Filename** is editable by selecting the **Name** column in the grid.
 
-    ![46](../../static/img/miscellaneous/ai-easyscan/46.png)
+    ![49](../../static/img/miscellaneous/ai-easyscan/49.png)
 
 2. **Caption** is editable by selecting the **Caption** column in the grid.
 
-    ![47](../../static/img/miscellaneous/ai-easyscan/47.png)
+    ![50](../../static/img/miscellaneous/ai-easyscan/50.png)
 
 ### Batch Edit Doc Type and Caption
 
 1. Select multiple files or folders **(Ctrl + Left Click)** > **Right Click** > **Batch Edit Value**.
 
-    ![48](../../static/img/miscellaneous/ai-easyscan/48.png)
+    ![51](../../static/img/miscellaneous/ai-easyscan/51.png)
 
 2. Select the value you want to change > **Tick** the checkbox to allow the changes to be applied.
 
-    ![49](../../static/img/miscellaneous/ai-easyscan/49.png)
+    ![52](../../static/img/miscellaneous/ai-easyscan/52.png)
 
 3. Make sure all the values you want to change are ticked in the checkboxes > Click **OK**.
 
-    ![50](../../static/img/miscellaneous/ai-easyscan/50.png)
+    ![53](../../static/img/miscellaneous/ai-easyscan/53.png)
 
 4. The system will display a message to show how many records will change > Click **OK**.
 
-    ![51](../../static/img/miscellaneous/ai-easyscan/51.png)
+    ![54](../../static/img/miscellaneous/ai-easyscan/54.png)
 
 5. Click **OK** to proceed.
 
-    ![52](../../static/img/miscellaneous/ai-easyscan/52.png)
+    ![55](../../static/img/miscellaneous/ai-easyscan/55.png)
 
 6. The selected records will be updated with the new values.
 
-    ![53](../../static/img/miscellaneous/ai-easyscan/53.png)
+    ![56](../../static/img/miscellaneous/ai-easyscan/56.png)
 
 ### Delete File
 
@@ -306,15 +321,15 @@ AI automatically assigns a category to uploaded files based on their content. Fo
 
     1. Go to **Toolbar** > Click **Delete** button.
 
-        ![54](../../static/img/miscellaneous/ai-easyscan/54.png)
+        ![57](../../static/img/miscellaneous/ai-easyscan/57.png)
 
     2. **Right Click** > **Delete Files...**.
 
-        ![55](../../static/img/miscellaneous/ai-easyscan/55.png)
+        ![58](../../static/img/miscellaneous/ai-easyscan/58.png)
 
 2. Click **OK** to confirm the deletion.
 
-    ![56](../../static/img/miscellaneous/ai-easyscan/56.png)
+    ![59](../../static/img/miscellaneous/ai-easyscan/59.png)
 
 ### Share File
 
@@ -322,15 +337,15 @@ AI automatically assigns a category to uploaded files based on their content. Fo
 
     1. Go to **Toolbar** > Click **Share** button.
 
-        ![57](../../static/img/miscellaneous/ai-easyscan/57.png)
+        ![60](../../static/img/miscellaneous/ai-easyscan/60.png)
 
     2. **Right Click** > **Share Files...**.
 
-        ![58](../../static/img/miscellaneous/ai-easyscan/58.png)
+        ![61](../../static/img/miscellaneous/ai-easyscan/61.png)
 
 2. Choose one of the following sharing methods to share the file.
 
-    ![59](../../static/img/miscellaneous/ai-easyscan/59.png)
+    ![62](../../static/img/miscellaneous/ai-easyscan/62.png)
 
 ## WhatsApp Interactive List
 
@@ -338,50 +353,50 @@ AI automatically assigns a category to uploaded files based on their content. Fo
 
 2. Type **"/"** to open the help menu.
 
-    ![60](../../static/img/miscellaneous/ai-easyscan/60.png)
+    ![63](../../static/img/miscellaneous/ai-easyscan/63.png)
 
 3. **List Companies** - Lists all companies registered to this mobile number.
 
     1. Click **List Companies**.
 
-        ![61](../../static/img/miscellaneous/ai-easyscan/61.png)
+        ![64](../../static/img/miscellaneous/ai-easyscan/64.png)
 
     2. WhatsApp replies with all registered company names, and **"✅ COMPANY NAME (Active)"** indicates the currently active company.
 
-        ![62](../../static/img/miscellaneous/ai-easyscan/62.png)
+        ![65](../../static/img/miscellaneous/ai-easyscan/65.png)
 
 4. **Switch Company** - Switch to uploading files for a different company.
 
     1. Click **Switch Company**.
 
-        ![63](../../static/img/miscellaneous/ai-easyscan/63.png)
+        ![66](../../static/img/miscellaneous/ai-easyscan/66.png)
 
     2. WhatsApp replies with an interactive dialog to switch company > Click **Select**.
 
-        ![64](../../static/img/miscellaneous/ai-easyscan/64.png)
+        ![67](../../static/img/miscellaneous/ai-easyscan/67.png)
 
     3. Select another linked company > Click **Send**.
 
-        ![65](../../static/img/miscellaneous/ai-easyscan/65.png)
+        ![68](../../static/img/miscellaneous/ai-easyscan/68.png)
 
     4. WhatsApp replies with **"You have successfully switched to COMPANY NAME"** indicates the active company successfully switched.
 
-        ![66](../../static/img/miscellaneous/ai-easyscan/66.png)
+        ![69](../../static/img/miscellaneous/ai-easyscan/69.png)
 
 5. **Unlink Company** - Deregister a company.
 
     1. Click **Unlink Company**.
 
-        ![67](../../static/img/miscellaneous/ai-easyscan/67.png)
+        ![70](../../static/img/miscellaneous/ai-easyscan/70.png)
 
     2. WhatsApp replies with an interactive dialog to deregister company > Click **Select**.
 
-        ![68](../../static/img/miscellaneous/ai-easyscan/68.png)
+        ![71](../../static/img/miscellaneous/ai-easyscan/71.png)
 
     3. Select the target company to deregister > Click **Send**.
 
-        ![69](../../static/img/miscellaneous/ai-easyscan/69.png)
+        ![72](../../static/img/miscellaneous/ai-easyscan/72.png)
 
     4. WhatsApp replies with **"You have successfully unlinked COMPANY NAME"** indicates that the company has been deregistered successfully.
 
-        ![70](../../static/img/miscellaneous/ai-easyscan/70.png)
+        ![73](../../static/img/miscellaneous/ai-easyscan/73.png)

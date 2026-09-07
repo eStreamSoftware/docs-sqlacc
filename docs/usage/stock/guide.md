@@ -101,6 +101,24 @@ tags: ["Inventory Management", "Stock Control", "Product Setup"]
 
 - Related Topic : [How does the Price Tag work?](https://sites.google.com/site/sqlestream/sql-financial-accounting/7-system-setting/7-20-how-is-the-price-tag-work)
 
+### Reorder By Location
+
+Reorder Level by Location allows you to set different inventory parameters for the same item at different locations.
+For each location, you can preset:
+
+- Reorder Level
+- Reorder Quantity
+- Minimum Quantity
+- Maximum Quantity
+- Shelf
+- Lead Time
+
+This gives you greater flexibility to manage stock levels based on the specific requirements of each location.
+
+![mtn-stock-item-reorder-lvel-by-location](../../../static/img/usage/stock/stock-guide/mtn-stock-item-reorder-level-by-location.png)
+
+Please refer to [Reorder Level by Location](#reorder-level-by-location) for setup instructions.
+
 ### BOM
 
 1. Allows you to set up **recipes/ingredients** for a manufactured product.
@@ -544,3 +562,82 @@ Watch tutorial video here: [youtube](https://www.youtube.com/watch?v=uEbCRAftQ4A
     **Qty** = Variance between Physical and Book Quantity, system will auto-adjust then update accordingly. (Physical Qty – Book Qty)
 
     :::
+
+## Reorder Level by Location
+
+### How it works
+
+In **Maintain Stock Item**, a new **Reorder by Location** tab has been added. You can preset different reorder information for each location here.
+
+1. You may define the reorder information here if it differs from the master info.
+
+    ![reorder-by-locaton-reorder-info](../../../static/img/usage/stock/stock-guide/reorder-by-locaton-reorder-info.png)
+
+### Query Reorder Info Priority Sequence
+
+The system will first use the reorder information defined under Reorder by Location.
+
+1. If a location is defined here, the system will use its Min Qty, Max Qty, Reorder Level, Reorder Qty, Shelf, and Lead Time settings.
+2. If no reorder information is defined for the location, the system will use the corresponding master value instead.
+
+### Footer Min Qty and Max Qty Value
+
+This indicates the difference between the total Max/Min Qty defined for all locations and the master Max/Min Qty.
+
+![reorder-by-location-footer](../../../static/img/usage/stock/stock-guide/reorder-by-location-footer.png)
+
+:::info[Example]
+
+```math
+Min Qty = Total Min Qty defined in Reorder by Location − Master Min Qty
+        = 2 - 5
+        = -3
+
+Max Qty = Total Max Qty defined in Reorder by Location − Master Max Qty
+        = 150 - 300
+        = -150
+```
+
+*A negative value indicates that the total quantity defined for the locations is lower than the corresponding master value.*
+:::
+
+### Master Value Changes Automatically Update Reorder by Location
+
+For Reorder Level and Reorder Qty, if the value defined under Reorder by Location is the same as the corresponding Master Value, changing the Master Value will automatically update the Reorder by Location value accordingly.
+
+![reorder-by-location-master-value-changes](../../../static/img/usage/stock/stock-guide/reorder-by-location-master-value-changes.png)
+
+:::info[Example]
+
+```math
+Master Reorder Level = 180
+Reorder by Location Reorder Level = 180
+```
+
+If the Master Reorder Level is changed to 200, the Reorder by Location Reorder Level will also be automatically changed to 200.
+:::
+
+### Print Stock Reorder Advise
+
+- The report will first capture the Reorder Information defined under Reorder by Location for the selected location.
+- If no reorder information is defined for the location, the system will use the corresponding Master Value instead.
+- Added Shelf and Lead Time columns to Print Stock Reorder Advise.
+
+![reorder-by-location-print-stock-reorder-advice](../../../static/img/usage/stock/stock-guide/reorder-by-location-print-stock-reorder-advice.png)
+
+:::info[Example]
+
+- Location `----` and `JB` are **defined** under Reorder by Location.
+  - Therefore, the system will capture all reorder information from the **Reorder by Location** settings.
+- `KL`, `Melaka`, and `Penang` are **not defined** under Reorder by Location.
+  - Therefore, the system will capture the reorder information from the **Master Value**.
+
+:::
+
+### Stock Available Balance (Ctrl + F11)
+
+Stock Level Information is captured based on the selected Location.
+
+![reoder-by-location-stock-avail-balance](../../../static/img/usage/stock/stock-guide/reoder-by-location-stock-avail-balance.png)
+
+Click on a location to view the respective Reorder Level information for that location.

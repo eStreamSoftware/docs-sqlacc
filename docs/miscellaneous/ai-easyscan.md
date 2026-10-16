@@ -88,7 +88,7 @@ AI EasyScan is only available for company databases activated using a valid lice
 
     ![13](../../static/img/miscellaneous/ai-easyscan/13.png)
 
-2. ✅ reaction will appear on the uploaded file, followed by a confirmation message if the upload is successful.
+2. Send it in Whatsapp.
 
     ![14](../../static/img/miscellaneous/ai-easyscan/14.png)
 
